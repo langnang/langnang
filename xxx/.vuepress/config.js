@@ -13,18 +13,6 @@ config.base = "/" + __dirname.split("\\").slice(-2, -1)[0] + "/";
 
 config.title = "VuePress";
 
-config.themeConfig.nav.splice(
-  2,
-  0,
-  {
-    text: "客户端",
-    items: [
-      // { text: "Vue" },
-      // { text: "React" },
-      { text: "VuePress", link: "/client/vuepress/" },
-    ],
-  },
-  { text: "服务端", link: "" }
-);
+config.themeConfig.nav.splice(2, 0, ...[]);
 
 module.exports = config;

@@ -7,7 +7,7 @@ module.exports = {
     { text: "GitHub", link: "https://github.com/langnang/langnang/" },
   ],
   // 侧边栏
-  sidebar: [],
+  sidebar: "auto",
   // 显示所有页面的标题链接
   displayAllHeaders: true,
   // 最后更新时间
