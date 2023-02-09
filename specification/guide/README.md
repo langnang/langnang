@@ -8,6 +8,7 @@ sidebar: auto
 
 - [EditorConfig](./../style/EditorConfig)
 - Prettier
+- [GitIgnore](./../style/GitIgnore.md)
 
 ## 代码检查
 

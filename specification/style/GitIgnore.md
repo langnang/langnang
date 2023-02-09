@@ -1,0 +1,5 @@
+# GitIgnore
+
+`.gitignore`
+
+<<< @/.gitignore
