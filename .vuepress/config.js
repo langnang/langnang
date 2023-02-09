@@ -8,14 +8,31 @@
 // https://v1.vuepress.vuejs.org/config/
 
 module.exports = {
-  title: 'VuePress ',
-  description: 'VuePress starter template ',
-  themeConfig: {
-    nav: [
-      {text: 'Home', link: '/'},
-      {text: 'Guide', link: '/guide/'},
-      {text: 'VuePress', link: 'https://vuepress.vuejs.org/'},
-      {text: 'GitHub', link: 'https://github.com/langnang/langnang/'},
-    ],
+  // 部署站点的基础路径，默认值为'/'
+  base: "/",
+  // 网站的标题
+  title: "VuePress ",
+  // 网站的描述
+  description: "VuePress starter template ",
+  // 额外的需要被注入到当前页面的 HTML <head> 中的标签
+  head: [],
+  // 指定用于 dev server 的主机名
+  host: "0.0.0.0",
+  // 指定 dev server 的端口
+  port: 8080,
+  // 指定 vuepress build 的输出目录
+  dest: ".vuepress/dist",
+  // 提供多语言支持的语言配置
+  locales: [],
+  // 为当前的主题提供一些配置，这些选项依赖于你正在使用的主题
+  themeConfig: require("./themeConfig.js"),
+  plugins: require("./plugins.js"),
+
+  // Markdown configuration
+  markdown: {
+    // 是否在每个代码块的左侧显示行号
+    lineNumbers: true,
+    // markdown-it 插件
+    plugins: [],
   },
 };

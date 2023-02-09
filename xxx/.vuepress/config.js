@@ -7,8 +7,24 @@
 // See the documentation for more information on how to use it
 // https://v1.vuepress.vuejs.org/config/
 
-const config = require('./../../.vuepress/config');
+const config = require("./../../.vuepress/config");
 
-config.title = 'VuePress';
+config.base = "/" + __dirname.split("\\").slice(-2, -1)[0] + "/";
+
+config.title = "VuePress";
+
+config.themeConfig.nav.splice(
+  2,
+  0,
+  {
+    text: "客户端",
+    items: [
+      // { text: "Vue" },
+      // { text: "React" },
+      { text: "VuePress", link: "/client/vuepress/" },
+    ],
+  },
+  { text: "服务端", link: "" }
+);
 
 module.exports = config;
