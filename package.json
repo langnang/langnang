@@ -1,0 +1,28 @@
+{
+  "name": "langnang",
+  "version": "1.0.0",
+  "description": "VuePress starter template",
+  "author": "Langnang<langnang.chen@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "temp:dev": "vuepress dev template",
+    "temp:build": "vuepress build template",
+    "learn:dev": "vuepress dev learning",
+    "learn:build": "vuepress build learning",
+    "spec:dev": "vuepress dev specification",
+    "spec:build": "vuepress build specification",
+    "tech:dev": "vuepress dev technical",
+    "tech:build": "vuepress build technical",
+    "tool:dev": "vuepress dev toolkit",
+    "tool:build": "vuepress build toolkit",
+    "test:dev": "vuepress dev xxx",
+    "test:build": "vuepress build xxx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/langnang/langnang"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.8"
+  }
+}
