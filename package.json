@@ -25,6 +25,7 @@
     "url": "https://github.com/langnang/langnang"
   },
   "devDependencies": {
-    "vuepress": "^1.9.8"
+    "vuepress": "^1.9.8",
+    "vuepress-plugin-mermaidjs": "1.9.1"
   }
 }
