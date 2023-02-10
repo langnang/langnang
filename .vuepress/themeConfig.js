@@ -16,6 +16,7 @@ module.exports = {
         { text: "规范", link: host + "/specification/" },
         { text: "工具", link: host + "/toolkit/" },
         { text: "源码提炼", link: host + "/learning/" },
+        { text: "计算机科学", link: host + "/computer-science/" },
         { text: "知识体系", link: host + "/system/" },
       ],
     },
