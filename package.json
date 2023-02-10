@@ -27,6 +27,9 @@
   "devDependencies": {
     "@xiaopanda/vuepress-plugin-code-copy": "^1.0.3",
     "vuepress": "^1.9.8",
+    "vuepress-plugin-code-switcher": "~1.0",
+    "vuepress-plugin-flowchart": "^1.5.0",
+    "vuepress-plugin-mathjax": "^1.2.8",
     "vuepress-plugin-mermaidjs": "1.9.1"
   }
 }
