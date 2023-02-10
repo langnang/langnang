@@ -17,6 +17,8 @@
     "tool:build": "vuepress build toolkit",
     "sys:dev": "vuepress dev system",
     "sys:build": "vuepress dev system",
+    "cs:dev": "vuepress dev computer-science",
+    "cs:build": "vuepress dev computer-science",
     "test:dev": "vuepress dev xxx",
     "test:build": "vuepress build xxx"
   },
