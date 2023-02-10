@@ -4,7 +4,7 @@
 
 ## 配置
 
-[`config.js`](./../../../.vuepress/config.js)
+`config.js`
 
 <<< @/.vuepress/config.js
 
@@ -13,6 +13,9 @@
 `plugins.js`
 
 <<< @/.vuepress/plugins.js
+
+- [vuepress-plugin-mermaidjs](https://github.com/eFrane/vuepress-plugin-mermaidjs)
+- [@xiaopanda/vuepress-plugin-code-copy](https://github.com/panxingcheng/vuepress-plugin-code-copy)
 
 ## 主题
 
