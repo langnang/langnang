@@ -1,9 +1,24 @@
+const host =
+  process.env.NODE_ENV === "production"
+    ? "http://docs.langnang.ml"
+    : "http://docs.langnang-develop.ml";
+
 module.exports = {
   // 导航栏链接
   nav: [
     { text: "Home", link: "/" },
     { text: "Guide", link: "/guide/" },
-    { text: "VuePress", link: "https://vuepress.vuejs.org/" },
+    {
+      text: "VuePress",
+      items: [
+        { text: "Official", link: "https://vuepress.vuejs.org/" },
+        { text: "模板", link: host + "/template/" },
+        { text: "规范", link: host + "/specification/" },
+        { text: "工具", link: host + "/toolkit/" },
+        { text: "源码提炼", link: host + "/learning/" },
+        { text: "知识体系", link: host + "/system/" },
+      ],
+    },
     { text: "GitHub", link: "https://github.com/langnang/langnang/" },
   ],
   // 侧边栏

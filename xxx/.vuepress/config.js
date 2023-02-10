@@ -9,8 +9,6 @@
 
 const config = require("./../../.vuepress/config");
 
-config.base = "/" + __dirname.split("\\").slice(-2, -1)[0] + "/";
-
 config.title = "VuePress";
 
 config.themeConfig.nav.splice(2, 0, ...[]);
