@@ -1,0 +1,49 @@
+name: Deploy VuePress to Develop
+
+on:
+  push:
+    branches:
+      - "@empty"
+env:
+  dirname: "xxx"
+<<<<<<< HEAD
+  cmd_name: "tool"
+=======
+>>>>>>> db05bb11ca23b090541d4eda92df696b30f79c1d
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          yarn install
+<<<<<<< HEAD
+          yarn run ${{ env.cmd_name }}:build
+=======
+          yarn run test:build
+>>>>>>> db05bb11ca23b090541d4eda92df696b30f79c1d
+
+      - name: Deploy 🚀
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # Folder to upload from, must end with trailing slash /
+          local-dir: ./${{ env.dirname }}/.vuepress/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /docs.langnang-develop.ml/htdocs/${{ env.dirname }}/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.github/**
