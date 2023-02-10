@@ -9,11 +9,7 @@
 
 const config = require("./../../.vuepress/config");
 
-config.base = "/" + __dirname.split("\\").slice(-2, -1)[0] + "/";
-
 config.title = "VuePress";
-
-config.dest = config.base.slice(1) + ".vuepress/dist";
 
 config.themeConfig.nav.splice(2, 0, ...[]);
 
