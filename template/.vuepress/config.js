@@ -19,9 +19,16 @@ config.themeConfig.nav.splice(
   {
     text: "客户端",
     items: [
-      // { text: "Vue" },
-      // { text: "React" },
-      { text: "VuePress", link: "/client/vuepress/" },
+      {
+        items: [
+          // { text: "Vue" },
+          // { text: "React" },
+          { text: "VuePress", link: "/client/vuepress/" },
+        ],
+      },
+      {
+        items: [{ text: "Webpack", link: "/client/webpack/" }],
+      },
     ],
   },
   { text: "服务端", link: "" }

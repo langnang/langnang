@@ -1,10 +1,6 @@
----
-sidebar: auto
----
-
-<!-- @format -->
-
 # VuePress Template
+
+[官网](https://vuepress.vuejs.org/) | [中文网](https://vuepress.vuejs.org/zh/) | [Awesome](https://github.com/vuepress/awesome-vuepress)
 
 ## 配置
 
