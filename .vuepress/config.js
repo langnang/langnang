@@ -9,7 +9,7 @@
 
 module.exports = {
   // 部署站点的基础路径，默认值为'/'
-  base: "/",
+  base: "/" + process.argv[3] + "/",
   // 网站的标题
   title: "VuePress ",
   // 网站的描述
@@ -20,8 +20,8 @@ module.exports = {
   host: "0.0.0.0",
   // 指定 dev server 的端口
   port: 8080,
-  // 指定 vuepress build 的输出目录
-  dest: ".vuepress/dist",
+  // 指定 vuepress build 的输出目录,默认值为 '.vuepress/dist'
+  dest: process.argv[3] + "/.vuepress/dist",
   // 提供多语言支持的语言配置
   locales: [],
   // 为当前的主题提供一些配置，这些选项依赖于你正在使用的主题
