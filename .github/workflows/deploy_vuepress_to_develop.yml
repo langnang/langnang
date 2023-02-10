@@ -3,10 +3,10 @@ name: Deploy VuePress to Develop
 on:
   push:
     branches:
-      - "@empty"
+      - "learning"
 env:
-  dirname: "xxx"
-  cmd_name: "test"
+  dirname: "learning"
+  cmd_name: "learn"
 
 jobs:
   build-and-deploy:
