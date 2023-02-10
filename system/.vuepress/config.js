@@ -9,8 +9,6 @@
 
 const config = require("./../../.vuepress/config");
 
-config.base = "/" + __dirname.split("\\").slice(-2, -1)[0] + "/";
-
 config.title = "System";
 
 config.themeConfig.nav.splice(
@@ -37,7 +35,10 @@ config.themeConfig.nav.splice(
             { text: "操作系统与操作环境", link: "/520/52040/5204020/" },
             { text: "程序设计及其语言", link: "/520/52040/5204030/" },
             { text: "数据库", link: "/520/52040/5204050/" },
-            { text: "软件开发环境与开发技术", link: "/520/52040/5204060/HTML/" },
+            {
+              text: "软件开发环境与开发技术",
+              link: "/520/52040/5204060/HTML/",
+            },
             { text: "软件工程", link: "/520/52040/5204070/" },
           ],
         },
