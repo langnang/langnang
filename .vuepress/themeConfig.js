@@ -3,7 +3,17 @@ module.exports = {
   nav: [
     { text: "Home", link: "/" },
     { text: "Guide", link: "/guide/" },
-    { text: "VuePress", link: "https://vuepress.vuejs.org/" },
+    {
+      text: "VuePress",
+      items: [
+        { text: "Official", link: "https://vuepress.vuejs.org/" },
+        { text: "模板", link: "http://docs.langnang.ml/template/" },
+        { text: "规范", link: "http://docs.langnang.ml/specification/" },
+        { text: "工具", link: "http://docs.langnang.ml/toolkit/" },
+        { text: "源码提炼", link: "http://docs.langnang.ml/learning/" },
+        { text: "知识体系", link: "http://docs.langnang.ml/system/" },
+      ],
+    },
     { text: "GitHub", link: "https://github.com/langnang/langnang/" },
   ],
   // 侧边栏
