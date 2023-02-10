@@ -12,14 +12,13 @@ const config = require("./../../.vuepress/config");
 config.base = "/" + __dirname.split("\\").slice(-2, -1)[0] + "/";
 
 config.title = "Specification";
-config.description = "规范";
 
 config.themeConfig.nav.splice(
   2,
   0,
   ...[
-    { text: "编码风格", link: "/style/" },
-    { text: "代码检查", link: "/inspection/" },
+    { text: "编码风格", link: "/style/EditorConfig" },
+    { text: "代码检查", link: "/inspection/ESLint" },
     { text: "开发规范", link: "/develop/" },
     { text: "部署规范", link: "/deploy/" },
   ]

@@ -7,12 +7,12 @@ sidebar: auto
 ## 编码风格
 
 - [EditorConfig](./../style/EditorConfig)
-- Prettier
+- [Prettier](./../style/Prettier.md)
 - [GitIgnore](./../style/GitIgnore.md)
 
 ## 代码检查
 
-- [ESLint]
+- [ESLint](./../inspection/ESLint.md)
 
 ## 开发
 
