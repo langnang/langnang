@@ -6,10 +6,7 @@ on:
       - "@empty"
 env:
   dirname: "xxx"
-<<<<<<< HEAD
-  cmd_name: "tool"
-=======
->>>>>>> db05bb11ca23b090541d4eda92df696b30f79c1d
+  cmd_name: "test"
 
 jobs:
   build-and-deploy:
@@ -23,11 +20,7 @@ jobs:
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           yarn install
-<<<<<<< HEAD
           yarn run ${{ env.cmd_name }}:build
-=======
-          yarn run test:build
->>>>>>> db05bb11ca23b090541d4eda92df696b30f79c1d
 
       - name: Deploy 🚀
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
