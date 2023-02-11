@@ -17,10 +17,19 @@ module.exports = {
         { text: "工具", link: host + "/toolkit/" },
         { text: "数据结构与算法", link: host + "/dsa/" },
         { text: "前端开发", link: host + "/front-end/" },
-        { text: "后端开发", link: host + "/back-end/" },
+        process.env.NODE_ENV === "production"
+          ? null
+          : { text: "后端开发", link: host + "/back-end/" },
+        process.env.NODE_ENV === "production"
+          ? null
+          : { text: "移动端开发", link: host + "/mobile-terminal/" },
         { text: "源码提炼", link: host + "/learning/" },
-        { text: "计算机科学", link: host + "/computer-science/" },
-        { text: "知识体系", link: host + "/system/" },
+        process.env.NODE_ENV === "production"
+          ? null
+          : { text: "计算机科学", link: host + "/computer-science/" },
+        process.env.NODE_ENV === "production"
+          ? null
+          : { text: "知识体系", link: host + "/system/" },
       ],
     },
     { text: "GitHub", link: "https://github.com/langnang/langnang/" },
