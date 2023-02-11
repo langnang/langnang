@@ -11,6 +11,15 @@ const config = require("./../../.vuepress/config");
 
 config.title = "Front End";
 
-config.themeConfig.nav.splice(2, 0, ...[]);
+config.themeConfig.nav.splice(
+  2,
+  0,
+  ...[
+    { text: "CSS", link: "/CSS/" },
+    { text: "JavaScript", link: "/JavaScript/" },
+    { text: "Vue", link: "/Vue/" },
+    { text: "React", link: "/React/" },
+  ]
+);
 
 module.exports = config;

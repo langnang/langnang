@@ -1,5 +1,10 @@
 # JavaScript
 
+[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
+| [Awesome](https://github.com/sorrycc/awesome-javascript/)
+| [W3Cschool](https://www.w3cschool.cn/jsref/)
+| [DevDocs](https://devdocs.io/javascript/)
+
 ## Keyword 关键字
 
 - `var`
@@ -34,6 +39,7 @@
 ## Reference 参考手册
 
 - JavaScript 对象参考手册
+  - [Array](./../JavaScript/Reference/Global_Objects/Array.md)
 - BOM 浏览器对象模型
 - HTML DOM 参考手册
 - HTML Element 对象参考手册

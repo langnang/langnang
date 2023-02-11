@@ -2,6 +2,9 @@
 
 > 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现[HTML](https://baike.baidu.com/item/HTML)（[标准通用标记语言](https://baike.baidu.com/item/%E6%A0%87%E5%87%86%E9%80%9A%E7%94%A8%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/6805073)的一个应用）或[XML](https://baike.baidu.com/item/XML)（标准通用标记语言的一个子集）等文件样式的计算机语言
 
+[MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
+| [W3Cschool](https://www.w3cschool.cn/cssref/)
+
 ## 属性
 
 - [选择器](docs/CSS%20-%20W3school/Reference/CSS%20选择器参考手册.md)
