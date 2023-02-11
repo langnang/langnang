@@ -13,7 +13,7 @@ module.exports = {
   // 网站的标题
   title: "VuePress ",
   // 网站的描述
-  description: "VuePress starter template ",
+  // description: "VuePress starter template ",
   // 额外的需要被注入到当前页面的 HTML <head> 中的标签
   head: [],
   // 指定用于 dev server 的主机名
