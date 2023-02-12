@@ -40,6 +40,18 @@
 
 - JavaScript 对象
   - [Array](./../JavaScript/Reference/Global_Objects/Array.md)
+  - [Boolean](./../JavaScript/Reference/Global_Objects/Boolean.md)
+  - [Data](./../JavaScript/Reference/Global_Objects/Date.md)
+  - [Function](./../JavaScript/Reference/Global_Objects/Function.md)
+  - [JSON](./../JavaScript/Reference/Global_Objects/JSON.md)
+  - [Map](./../JavaScript/Reference/Global_Objects/Map.md)
+  - [Math](./../JavaScript/Reference/Global_Objects/Math.md)
+  - [Number](./../JavaScript/Reference/Global_Objects/Number.md)
+  - [Object](./../JavaScript/Reference/Global_Objects/Object.md)
+  - [Promise](./../JavaScript/Reference/Global_Objects/Promise.md)
+  - [RegExp](./../JavaScript/Reference/Global_Objects/RegExp.md)
+  - [Set](./../JavaScript/Reference/Global_Objects/Set.md)
+  - [Symbol](./../JavaScript/Reference/Global_Objects/Symbol.md)
 - Bowser 浏览器对象
 - DOM 对象
 - HTML DOM 对象
