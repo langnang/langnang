@@ -16,7 +16,15 @@
     "tool:dev": "vuepress dev toolkit",
     "tool:build": "vuepress build toolkit",
     "sys:dev": "vuepress dev system",
-    "sys:build": "vuepress dev system",
+    "sys:build": "vuepress build system",
+    "dsa:dev": "vuepress dev dsa",
+    "dsa:build": "vuepress build dsa",
+    "front:dev": "vuepress dev front-end",
+    "front:build": "vuepress build front-end",
+    "back:dev": "vuepress dev back-end",
+    "back:build": "vuepress build back-end",
+    "cs:dev": "vuepress dev computer-science",
+    "cs:build": "vuepress build computer-science",
     "test:dev": "vuepress dev xxx",
     "test:build": "vuepress build xxx"
   },
@@ -27,6 +35,9 @@
   "devDependencies": {
     "@xiaopanda/vuepress-plugin-code-copy": "^1.0.3",
     "vuepress": "^1.9.8",
+    "vuepress-plugin-code-switcher": "~1.0",
+    "vuepress-plugin-flowchart": "^1.5.0",
+    "vuepress-plugin-mathjax": "^1.2.8",
     "vuepress-plugin-mermaidjs": "1.9.1"
   }
 }
