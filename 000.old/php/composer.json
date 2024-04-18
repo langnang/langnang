@@ -1,0 +1,19 @@
+{
+    "name": "langnang/php",
+    "description": "",
+    "keywords": [],
+    "type": "helper",
+    "version": "0.0.0.1",
+    "authors": [
+        {
+            "name": "langnang",
+            "email": "langnang.chen@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Langnang\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+<!-- 判断state状态 -->
+<div ng-switch="cfg.mySQL.state">
+	<!-- success -->
+	<div class="alert alert-success" role="alert" ng-switch-when="Success"> <strong>Success!</strong> 数据库链接成功</div>
+
+	<!-- info -->
+	<div class="alert alert-info" role="alert" ng-switch-when="Loading"> <strong>Loading!</strong> 数据库连接中，请稍候。。。 </div>
+
+	<!-- danger -->
+	<div class="alert alert-danger" role="alert"  ng-switch-when="Failed"> <strong>Failed!</strong> 数据库链接失败，请重试。。。 </div> 
+
+	<!-- warning -->
+	<div class="alert alert-warning" role="alert"  ng-switch-default> <strong>Warning!</strong> 数据库链接未测试，请测试链接 </div> 
+</div>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJs</title>
+	<link rel="icon" href="https://angularjs.org/favicon.ico" type="image/x-icon">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../src/css/style.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 affix" style="top:0px;height: 100vh;overflow: auto;">
+				<img src="https://angularjs.org/img/AngularJS-large.png" width="100%" alt="">
+				<div class="row panel-group">
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseStart" aria-expanded="true" aria-controls="collapseStart">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									Start
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseStart" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseAuto" aria-expanded="true" aria-controls="collapseAuto">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									auto
+									<span class="badge pull-right">15</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseAuto" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseGuide" aria-expanded="true" aria-controls="collapseGuide">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									Start
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseGuide" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNg" aria-expanded="true" aria-controls="collapseNg">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNg" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNgDirectives" aria-expanded="true" aria-controls="collapseNgDirectives">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng directives
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNgDirectives" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNgFilters" aria-expanded="true" aria-controls="collapseNgFilters">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng filters
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNgFilters" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNgFunctions" aria-expanded="true" aria-controls="collapseNgFunctions">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng functions
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNgFunctions" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								扩展
+								<span class="badge pull-right">4</span>
+							</h4>
+						</div>
+						<div id="collapseNgFunctions" class="panel-collapse collapse in" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_2/dict" target="_blank">Angular.js 1.2 速查词典</a></li>
+								<li class="list-group-item" class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_3/dict" target="_blank">Angular.js 1.3 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_4/dict" target="_blank">Angular.js 1.4 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_5/dict" target="_blank">Angular.js 1.5 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_6/dict" target="_blank">Angular.js 1.6 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular2/dict" target="_blank">Angular.js 2 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular4/dict" target="_blank">Angular.js 4 速查词典</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-offset-2 col-sm-9">
+				<div class="jumbotron text-center">
+					<img src="https://angularjs.org/img/AngularJS-large.png" height="120px" alt="">
+					<p><small>Angular 是一个开发平台。它能帮你更轻松的构建 Web 应用。</br>
+					Angular 集声明式模板、依赖注入、端到端工具和一些最佳实践于一身，为你解决开发方面的各种挑战。</br>
+				Angular 为开发者提升构建 Web、手机或桌面应用的能力。</small></p>
+				<ul class="list-inline" style="padding-top: 48px;margin-bottom: -30px">
+					<li><a href="https://angularjs.org/" target="_blank">官网/EN</a></li>
+					<li>|</li>
+					<li><a href="https://www.angular.cn" target="_blank">官网/ZH</a></li>
+					<li>|</li>
+					<li><a href="http://www.angularjs.net.cn/" target="_blank">中文网</a></li>
+					<li>|</li>
+					<li><a href="https://www.w3cschool.cn/angularjs/" target="_blank">W3Cschool</a></li>
+					<li>|</li>
+					<li><a href="https://www.runoob.com/angularjs/angularjs-tutorial.html" target="_blank">菜鸟教程</a></li>
+				</ul>
+			</div>
+			<div class="page-header" id="intro">
+				<h1>简介</h1>
+			</div>
+			<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+			<h4>什么是AngularJS？</h4>
+			<ul>
+				<li>AngularJS 是一个 JavaScript 框架。它可通过 &#60;script&#62; 标签添加到 HTML 页面。</li>
+				<li>AngularJS 通过 指令 扩展了 HTML，且通过 表达式 绑定数据到 HTML。</li>
+				<li>AngularJS是为了克服HTML在构建应用上的不足而设计的。</li>
+				<li>AngularJS 使得开发现代的单一页面应用程序（SPAs：Single Page Applications）变得更加容易。 </li>
+			</ul>
+			<h4>AngularJS模块目录</h4>
+			<table class="table">
+				<tbody>
+					<tr>
+						<td>ng (core module)</td>
+						<td>AngularJS的默认模块，包含AngularJS的所有核心组件</td>
+					</tr>
+					<tr>
+						<td>ngRoute</td>
+						<td>AgularJS的路由模块，你能使用ngRoute结合"#"定义你的地址访问。</td>
+					</tr>
+					<tr>
+						<td>ngAnimate</td>
+						<td>AngularJS的动画模块，使用ngAnimate各种核心指令能为你的应用程序提供动画效果。动画可使用css或者JavaScript回调函数。</td>
+					</tr>
+					<tr>
+						<td>ngAria</td>
+						<td>帮助制作 AngularJS 自定义组件的新模块。</td>
+					</tr>
+					<tr>
+						<td>ngResource</td>
+						<td>当查询和发送数据到一个REST 服务器时，使用ngResource模块。</td>
+					</tr>
+					<tr>
+						<td>ngCookies</td>
+						<td>ngCookies模块提供了一个方便的包用于读取和写入浏览器的cookies。</td>
+					</tr>
+					<tr>
+						<td>ngTouch</td>
+						<td>ngTouch模块提供触摸事件，方便的应用于移动触摸设备。它的实现是实现是基于jQuery移动触摸事件处理。</td>
+					</tr>
+					<tr>
+						<td>ngSanitize</td>
+						<td>使用ngSanitize可安全地解析和在你的应用程序中操作HTML数据。</td>
+					</tr>
+					<tr>
+						<td>ngMock</td>
+						<td>AngularJS的动画模块，使用ngAnimate各种核心指令能为你的应用程序提供动画效果。动画可使用css或者JavaScript回调函数。</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr>
+			<h2>ng services</h2>
+			<div class="page-header" id="localNotes">
+				<h1>ng services</h1>
+			</div>
+			<div class="thumbnail">
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+			</div>
+			<div class="thumbnail">
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+			</div>
+
+			<div class="board masonry-brick">
+				<li did="2"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-anchorscroll.html" title="">$anchorScroll</a>
+				</li>
+				<li did="3"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-anchorscroll.html#yOffset" title="">$anchorScroll.yOffset</a>
+				</li>
+				<li did="7"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html" title="">$animate</a>
+				</li>
+				<li did="8"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#addClass" title="">$animate.addClass()</a>
+				</li>
+				<li did="9"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#animate" title="">$animate.animate()</a>
+				</li>
+				<li did="10"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#cancel" title="">$animate.cancel()</a>
+				</li>
+				<li did="11"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#enabled" title="">$animate.enabled()</a>
+				</li>
+				<li did="12"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#enter" title="">$animate.enter()</a>
+				</li>
+				<li did="13"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#leave" title="">$animate.leave()</a>
+				</li>
+				<li did="14"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#move" title="">$animate.move()</a>
+				</li>
+				<li did="15"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#off" title="">$animate.off()</a>
+				</li>
+				<li did="16"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#on" title="">$animate.on()</a>
+				</li>
+				<li did="17"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#pin" title="">$animate.pin()</a>
+				</li>
+				<li did="18"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#removeClass" title="">$animate.removeClass()</a>
+				</li>
+				<li did="19"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animate.html#setClass" title="">$animate.setClass()</a>
+				</li>
+				<li did="20"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-animatecss.html" title="">$animateCss</a>
+				</li>
+				<li did="24"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-cachefactory.html" title="">$cacheFactory</a>
+				</li>
+				<li did="33"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-cachefactory.html#get" title="">$cacheFactory.get()</a>
+				</li>
+				<li did="34"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-cachefactory.html#info" title="">$cacheFactory.info()</a>
+				</li>
+				<li did="35"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-compile.html" title="">$compile</a>
+				</li>
+				<li did="54"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-controller.html" title="">$controller</a>
+				</li>
+				<li did="59"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-document.html" title="">$document</a>
+				</li>
+				<li did="60"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-exceptionhandler.html" title="">$exceptionHandler</a>
+				</li>
+				<li did="61"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-filter.html" title="">$filter</a>
+				</li>
+				<li did="64"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html" title="">$http</a>
+				</li>
+				<li did="65"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#defaults" title="">$http.defaults</a>
+				</li>
+				<li did="66"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#delete" title="">$http.delete()</a>
+				</li>
+				<li did="67"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#get" title="">$http.get()</a>
+				</li>
+				<li did="68"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#head" title="">$http.head()</a>
+				</li>
+				<li did="69"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#jsonp" title="">$http.jsonp()</a>
+				</li>
+				<li did="70"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#patch" title="">$http.patch()</a>
+				</li>
+				<li did="71"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#pendingRequests" title="">$http.pendingRequests</a>
+				</li>
+				<li did="72"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#post" title="">$http.post()</a>
+				</li>
+				<li did="73"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-http.html#put" title="">$http.put()</a>
+				</li>
+				<li did="74"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-httpbackend.html" title="">$httpBackend</a>
+				</li>
+				<li did="75"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-httpparamserializer.html" title="">$httpParamSerializer</a>
+				</li>
+				<li did="76"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-httpparamserializerjqlike.html" title="">$httpParamSerializerJQLike</a>
+				</li>
+				<li did="81"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-interpolate.html" title="">$interpolate</a>
+				</li>
+				<li did="82"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-interpolate.html#endSymbol" title="">$interpolate.endSymbol()</a>
+				</li>
+				<li did="83"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-interpolate.html#startSymbol" title="">$interpolate.startSymbol()</a>
+				</li>
+				<li did="87"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-interval.html" title="">$interval</a>
+				</li>
+				<li did="88"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-interval.html#cancel" title="">$interval.cancel()</a>
+				</li>
+				<li did="89"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-jsonpcallbacks.html" title="">$jsonpCallbacks</a>
+				</li>
+				<li did="90"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-jsonpcallbacks.html#createCallback" title="">$jsonpCallbacks.createCallback()</a>
+				</li>
+				<li did="91"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-jsonpcallbacks.html#getResponse" title="">$jsonpCallbacks.getResponse()</a>
+				</li>
+				<li did="92"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-jsonpcallbacks.html#removeCallback" title="">$jsonpCallbacks.removeCallback()</a>
+				</li>
+				<li did="93"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-jsonpcallbacks.html#wasCalled" title="">$jsonpCallbacks.wasCalled()</a>
+				</li>
+				<li did="94"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-locale.html" title="">$locale</a>
+				</li>
+				<li did="95"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html" title="">$location</a>
+				</li>
+				<li did="96"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#$locationChangeStart" title="">$location.$locationChangeStart</a>
+				</li>
+				<li did="97"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#$locationChangeSuccess" title="">$location.$locationChangeSuccess</a>
+				</li>
+				<li did="98"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#absUrl" title="">$location.absUrl()</a>
+				</li>
+				<li did="99"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#hash" title="">$location.hash()</a>
+				</li>
+				<li did="100"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#host" title="">$location.host()</a>
+				</li>
+				<li did="101"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#path" title="">$location.path()</a>
+				</li>
+				<li did="102"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#port" title="">$location.port()</a>
+				</li>
+				<li did="103"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#protocol" title="">$location.protocol()</a>
+				</li>
+				<li did="104"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#replace" title="">$location.replace()</a>
+				</li>
+				<li did="105"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#search" title="">$location.search()</a>
+				</li>
+				<li did="106"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#state" title="">$location.state()</a>
+				</li>
+				<li did="107"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-location.html#url" title="">$location.url()</a>
+				</li>
+				<li did="111"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-log.html" title="">$log</a>
+				</li>
+				<li did="112"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-log.html#debug" title="">$log.debug()</a>
+				</li>
+				<li did="113"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-log.html#error" title="">$log.error()</a>
+				</li>
+				<li did="114"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-log.html#info" title="">$log.info()</a>
+				</li>
+				<li did="115"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-log.html#log" title="">$log.log()</a>
+				</li>
+				<li did="116"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-log.html#warn" title="">$log.warn()</a>
+				</li>
+				<li did="119"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-parse.html" title="">$parse</a>
+				</li>
+				<li did="123"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-q.html" title="">$q</a>
+				</li>
+				<li did="124"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-q.html#all" title="">$q.all()</a>
+				</li>
+				<li did="125"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-q.html#defer" title="">$q.defer()</a>
+				</li>
+				<li did="126"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-q.html#race" title="">$q.race()</a>
+				</li>
+				<li did="127"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-q.html#reject" title="">$q.reject()</a>
+				</li>
+				<li did="128"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-q.html#resolve" title="">$q.resolve()</a>
+				</li>
+				<li did="129"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-q.html#when" title="">$q.when()</a>
+				</li>
+				<li did="132"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-rootelement.html" title="">$rootElement</a>
+				</li>
+				<li did="133"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-rootscope.html" title="">$rootScope</a>
+				</li>
+				<li did="154"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html" title="">$sce</a>
+				</li>
+				<li did="155"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#getTrusted" title="">$sce.getTrusted()</a>
+				</li>
+				<li did="156"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#getTrustedCss" title="">$sce.getTrustedCss()</a>
+				</li>
+				<li did="157"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#getTrustedHtml" title="">$sce.getTrustedHtml()</a>
+				</li>
+				<li did="158"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#getTrustedJs" title="">$sce.getTrustedJs()</a>
+				</li>
+				<li did="159"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#getTrustedResourceUrl" title="">$sce.getTrustedResourceUrl()</a>
+				</li>
+				<li did="160"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#getTrustedUrl" title="">$sce.getTrustedUrl()</a>
+				</li>
+				<li did="161"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#isEnabled" title="">$sce.isEnabled()</a>
+				</li>
+				<li did="162"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#parseAs" title="">$sce.parseAs()</a>
+				</li>
+				<li did="163"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#parseAsCss" title="">$sce.parseAsCss()</a>
+				</li>
+				<li did="164"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#parseAsHtml" title="">$sce.parseAsHtml()</a>
+				</li>
+				<li did="165"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#parseAsJs" title="">$sce.parseAsJs()</a>
+				</li>
+				<li did="166"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#parseAsResourceUrl" title="">$sce.parseAsResourceUrl()</a>
+				</li>
+				<li did="167"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#parseAsUrl" title="">$sce.parseAsUrl()</a>
+				</li>
+				<li did="168"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#trustAs" title="">$sce.trustAs()</a>
+				</li>
+				<li did="169"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#trustAsCss" title="">$sce.trustAsCss()</a>
+				</li>
+				<li did="170"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#trustAsHtml" title="">$sce.trustAsHtml()</a>
+				</li>
+				<li did="171"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#trustAsJs" title="">$sce.trustAsJs()</a>
+				</li>
+				<li did="172"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#trustAsResourceUrl" title="">$sce.trustAsResourceUrl()</a>
+				</li>
+				<li did="173"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-sce.html#trustAsUrl" title="">$sce.trustAsUrl()</a>
+				</li>
+				<li did="174"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-scedelegate.html" title="">$sceDelegate</a>
+				</li>
+				<li did="175"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-scedelegate.html#getTrusted" title="">$sceDelegate.getTrusted()</a>
+				</li>
+				<li did="176"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-scedelegate.html#trustAs" title="">$sceDelegate.trustAs()</a>
+				</li>
+				<li did="177"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-scedelegate.html#valueOf" title="">$sceDelegate.valueOf()</a>
+				</li>
+				<li did="183"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-templatecache.html" title="">$templateCache</a>
+				</li>
+				<li did="184"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-templaterequest.html" title="">$templateRequest</a>
+				</li>
+				<li did="185"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-templaterequest.html#totalPendingRequests" title="">$templateRequest.totalPendingRequests</a>
+				</li>
+				<li did="188"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-timeout.html" title="">$timeout</a>
+				</li>
+				<li did="189"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-timeout.html#cancel" title="">$timeout.cancel()</a>
+				</li>
+				<li did="190"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-window.html" title="">$window</a>
+				</li>
+				<li did="191"><a target="_blank" href="/doc_angular1_6/angular1_6-api-ng-service-xhrfactory.html" title="">$xhrFactory</a>
+				</li>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

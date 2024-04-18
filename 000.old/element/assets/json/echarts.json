@@ -1,0 +1,1812 @@
+[
+  {
+    "name": "Line",
+    "children": [
+      {
+        "path": "/line-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-simple.webp?_v_=1624430965835",
+        "name": "Basic Line Chart"
+      },
+      {
+        "path": "/line-smooth",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-smooth.webp?_v_=1624430965835",
+        "name": "Smoothed Line Chart"
+      },
+      {
+        "path": "/area-basic",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-basic.webp?_v_=1624430965835",
+        "name": "Basic area chart"
+      },
+      {
+        "path": "/line-stack",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-stack.webp?_v_=1624430965835",
+        "name": "Stacked Line Chart"
+      },
+      {
+        "path": "/area-stack",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-stack.webp?_v_=1624430965835",
+        "name": "Stacked area chart"
+      },
+      {
+        "path": "/area-stack-gradient",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-stack-gradient.webp?_v_=1624430965835",
+        "name": "Gradient Stacked area chart"
+      },
+      {
+        "path": "/line-marker",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-marker.webp?_v_=1624430965835",
+        "name": "Temperature Change in the coming week"
+      },
+      {
+        "path": "/area-pieces",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-pieces.webp?_v_=1624430965835",
+        "name": "Area Pieces"
+      },
+      {
+        "path": "/data-transform-filter",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/data-transform-filter.webp?_v_=1624430965835",
+        "name": "Data Transform Fitler"
+      },
+      {
+        "path": "/line-gradient",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-gradient.webp?_v_=1624430965835",
+        "name": "Line Gradient"
+      },
+      {
+        "path": "/line-sections",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-sections.webp?_v_=1624430965835",
+        "name": "Distribution of Electricity"
+      },
+      {
+        "path": "/area-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-simple.webp?_v_=1624430965835",
+        "name": "Large scale area chart"
+      },
+      {
+        "path": "/confidence-band",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/confidence-band.webp?_v_=1624430965835",
+        "name": "Confidence Band"
+      },
+      {
+        "path": "/grid-multiple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/grid-multiple.webp?_v_=1624430965835",
+        "name": "Rainfall and Water Flow"
+      },
+      {
+        "path": "/line-aqi",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-aqi.webp?_v_=1624430965835",
+        "name": "Beijing AQI"
+      },
+      {
+        "path": "/multiple-x-axis",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/multiple-x-axis.webp?_v_=1624430965835",
+        "name": "Multiple X Axes"
+      },
+      {
+        "path": "/area-rainfall",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-rainfall.webp?_v_=1624430965835",
+        "name": "Rainfall"
+      },
+      {
+        "path": "/area-time-axis",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-time-axis.webp?_v_=1624430965835",
+        "name": "Area Chart with Time Axis"
+      },
+      {
+        "path": "/dynamic-data2",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dynamic-data2.webp?_v_=1624430965835",
+        "name": "Dynamic Data + Time Axis"
+      },
+      {
+        "path": "/line-function",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-function.webp?_v_=1624430965835",
+        "name": "Function Plot"
+      },
+      {
+        "path": "/line-race",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-race.webp?_v_=1624430965835",
+        "name": "Line Race"
+      },
+      {
+        "path": "/line-markline",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-markline.webp?_v_=1624430965835",
+        "name": "Line with Marklines"
+      },
+      {
+        "path": "/line-style",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-style.webp?_v_=1624430965835",
+        "name": "Line Style and Item Style"
+      },
+      {
+        "path": "/line-in-cartesian-coordinate-system",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-in-cartesian-coordinate-system.webp?_v_=1624430965835",
+        "name": "Line Chart in Cartesian Coordinate System"
+      },
+      {
+        "path": "/line-log",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-log.webp?_v_=1624430965835",
+        "name": "Log Axis"
+      },
+      {
+        "path": "/line-step",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-step.webp?_v_=1624430965835",
+        "name": "Step Line"
+      },
+      {
+        "path": "/line-easing",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-easing.webp?_v_=1624430965835",
+        "name": "Line Easing Visualizing"
+      },
+      {
+        "path": "/line-y-category",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-y-category.webp?_v_=1624430965835",
+        "name": "Line Y Category"
+      },
+      {
+        "path": "/line-graphic",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-graphic.webp?_v_=1624430965835",
+        "name": "Custom Graphic Component"
+      },
+      {
+        "path": "/line-pen",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-pen.webp?_v_=1624430965835",
+        "name": "Click to Add Points"
+      },
+      {
+        "path": "/line-draggable",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-draggable.webp?_v_=1624430965835",
+        "name": "Try Dragging these Points"
+      },
+      {
+        "path": "/line-polar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-polar.webp?_v_=1624430965835",
+        "name": "Two Value-Axes in Polar"
+      },
+      {
+        "path": "/line-polar2",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-polar2.webp?_v_=1624430965835",
+        "name": "Two Value-Axes in Polar"
+      },
+      {
+        "path": "/line-tooltip-touch",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-tooltip-touch.webp?_v_=1624430965835",
+        "name": "Tooltip and DataZoom on Mobile"
+      },
+      {
+        "path": "/dataset-link",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-link.webp?_v_=1624430965835",
+        "name": "Share Dataset"
+      }
+    ]
+  },
+  {
+    "name": "Bar",
+    "children": [
+      {
+        "path": "/bar-background",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-background.webp?_v_=1624430965835",
+        "name": "Bar with Background"
+      },
+      {
+        "path": "/bar-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-simple.webp?_v_=1624430965835",
+        "name": "Basic Bar"
+      },
+      {
+        "path": "/bar-tick-align",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-tick-align.webp?_v_=1624430965835",
+        "name": "Axis Align with Tick"
+      },
+      {
+        "path": "/bar-data-color",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-data-color.webp?_v_=1624430965835",
+        "name": "Set Style of Single Bar."
+      },
+      {
+        "path": "/bar-waterfall",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-waterfall.webp?_v_=1624430965835",
+        "name": "Waterfall Chart"
+      },
+      {
+        "path": "/bar-negative2",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-negative2.webp?_v_=1624430965835",
+        "name": "Bar Chart with Negative Value"
+      },
+      {
+        "path": "/bar-y-category",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-y-category.webp?_v_=1624430965835",
+        "name": "World Total Population"
+      },
+      {
+        "path": "/bar-gradient",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-gradient.webp?_v_=1624430965835",
+        "name": "Clickable Column Chart with Gradient"
+      },
+      {
+        "path": "/bar-label-rotation",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-label-rotation.webp?_v_=1624430965835",
+        "name": "Bar Label Rotation"
+      },
+      {
+        "path": "/bar-stack",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-stack.webp?_v_=1624430965835",
+        "name": "Stacked Column Chart"
+      },
+      {
+        "path": "/bar-waterfall2",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-waterfall2.webp?_v_=1624430965835",
+        "name": "Waterfall Chart"
+      },
+      {
+        "path": "/bar-y-category-stack",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-y-category-stack.webp?_v_=1624430965835",
+        "name": "Stacked Horizontal Bar"
+      },
+      {
+        "path": "/bar-brush",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-brush.webp?_v_=1624430965835",
+        "name": "Brush Select on Column Chart"
+      },
+      {
+        "path": "/bar-negative",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-negative.webp?_v_=1624430965835",
+        "name": "Bar Chart with Negative Value"
+      },
+      {
+        "path": "/bar1",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar1.webp?_v_=1624430965835",
+        "name": "Rainfall and Evaporation"
+      },
+      {
+        "path": "/mix-line-bar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/mix-line-bar.webp?_v_=1624430965835",
+        "name": "Mixed Line and Bar"
+      },
+      {
+        "path": "/mix-zoom-on-value",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/mix-zoom-on-value.webp?_v_=1624430965835",
+        "name": "Mix Zoom On Value"
+      },
+      {
+        "path": "/multiple-y-axis",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/multiple-y-axis.webp?_v_=1624430965835",
+        "name": "Multiple Y Axes"
+      },
+      {
+        "path": "/bar-animation-delay",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-animation-delay.webp?_v_=1624430965835",
+        "name": "Animation Delay"
+      },
+      {
+        "path": "/bar-large",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-large.webp?_v_=1624430965835",
+        "name": "Large Scale Bar Chart"
+      },
+      {
+        "path": "/bar-race",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-race.webp?_v_=1624430965835",
+        "name": "Bar Race"
+      },
+      {
+        "path": "/bar-race-country",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-race-country.webp?_v_=1624430965835",
+        "name": "Bar Race"
+      },
+      {
+        "path": "/bar-rich-text",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-rich-text.webp?_v_=1624430965835",
+        "name": "Wheater Statistics"
+      },
+      {
+        "path": "/dynamic-data",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dynamic-data.webp?_v_=1624430965835",
+        "name": "Dynamic Data"
+      },
+      {
+        "path": "/mix-timeline-finance",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/mix-timeline-finance.webp?_v_=1624430965835",
+        "name": "Finance Indices 2002"
+      },
+      {
+        "path": "/watermark",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/watermark.webp?_v_=1624430965835",
+        "name": "Watermark - ECharts Download"
+      },
+      {
+        "path": "/bar-polar-real-estate",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-polar-real-estate.webp?_v_=1624430965835",
+        "name": "Bar Chart on Polar"
+      },
+      {
+        "path": "/bar-polar-stack",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-polar-stack.webp?_v_=1624430965835",
+        "name": "Stacked Bar Chart on Polar"
+      },
+      {
+        "path": "/bar-polar-stack-radial",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-polar-stack-radial.webp?_v_=1624430965835",
+        "name": "Stacked Bar Chart on Polar(Radial)"
+      },
+      {
+        "path": "/polar-roundCap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/polar-roundCap.webp?_v_=1624430965835",
+        "name": "Rounded Bar on Polar"
+      },
+      {
+        "path": "/data-transform-sort-bar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/data-transform-sort-bar.webp?_v_=1624430965835",
+        "name": "Sort Data in Bar Chart"
+      },
+      {
+        "path": "/dataset-encode0",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-encode0.webp?_v_=1624430965835",
+        "name": "Simple Encode"
+      },
+      {
+        "path": "/dataset-series-layout-by",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-series-layout-by.webp?_v_=1624430965835",
+        "name": "Series Layout By Column or Row"
+      },
+      {
+        "path": "/dataset-simple0",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-simple0.webp?_v_=1624430965835",
+        "name": "Simple Example of Dataset"
+      },
+      {
+        "path": "/dataset-simple1",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-simple1.webp?_v_=1624430965835",
+        "name": "Dataset in Object Array"
+      }
+    ]
+  },
+  {
+    "name": "Pie",
+    "children": [
+      {
+        "path": "/pie-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-simple.webp?_v_=1624430965835",
+        "name": "Referer of a website"
+      },
+      {
+        "path": "/pie-borderRadius",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-borderRadius.webp?_v_=1624430965835",
+        "name": "Doughnut Chart with Rounded Corner"
+      },
+      {
+        "path": "/pie-doughnut",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-doughnut.webp?_v_=1624430965835",
+        "name": "Doughnut Chart"
+      },
+      {
+        "path": "/pie-custom",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-custom.webp?_v_=1624430965835",
+        "name": "Customized Pie"
+      },
+      {
+        "path": "/pie-pattern",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-pattern.webp?_v_=1624430965835",
+        "name": "Texture on Pie Chart"
+      },
+      {
+        "path": "/pie-roseType",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-roseType.webp?_v_=1624430965835",
+        "name": "Nightingale's Rose Diagram"
+      },
+      {
+        "path": "/pie-roseType-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-roseType-simple.webp?_v_=1624430965835",
+        "name": "Nightingale's Rose Diagram"
+      },
+      {
+        "path": "/pie-alignTo",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-alignTo.webp?_v_=1624430965835",
+        "name": "Pie Label Align"
+      },
+      {
+        "path": "/pie-labelLine-adjust",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-labelLine-adjust.webp?_v_=1624430965835",
+        "name": "Label Line Adjust"
+      },
+      {
+        "path": "/pie-legend",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-legend.webp?_v_=1624430965835",
+        "name": "Pie with Scrollable Legend"
+      },
+      {
+        "path": "/pie-rich-text",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-rich-text.webp?_v_=1624430965835",
+        "name": "Pie Special Label"
+      },
+      {
+        "path": "/pie-nest",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-nest.webp?_v_=1624430965835",
+        "name": "Nested Pies"
+      },
+      {
+        "path": "/data-transform-multiple-pie",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/data-transform-multiple-pie.webp?_v_=1624430965835",
+        "name": "Partition Data to Pies"
+      },
+      {
+        "path": "/dataset-default",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-default.webp?_v_=1624430965835",
+        "name": "Default arrangement"
+      },
+      {
+        "path": "/calendar-pie",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-pie.webp?_v_=1624430965835",
+        "name": "Calendar Pie"
+      },
+      {
+        "path": "/dataset-link",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-link.webp?_v_=1624430965835",
+        "name": "Share Dataset"
+      }
+    ]
+  },
+  {
+    "name": "Scatter",
+    "children": [
+      {
+        "path": "/scatter-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-simple.webp?_v_=1624430965835",
+        "name": "Basic Scatter Chart"
+      },
+      {
+        "path": "/scatter-anscombe-quartet",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-anscombe-quartet.webp?_v_=1624430965835",
+        "name": "Anscomb's quartet"
+      },
+      {
+        "path": "/scatter-clustering",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-clustering.webp?_v_=1624430965835",
+        "name": "Clustering Process"
+      },
+      {
+        "path": "/scatter-clustering-process",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-clustering-process.webp?_v_=1624430965835",
+        "name": "Clustering Process"
+      },
+      {
+        "path": "/scatter-exponential-regression",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-exponential-regression.webp?_v_=1624430965835",
+        "name": "Exponential Regression"
+      },
+      {
+        "path": "/scatter-effect",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-effect.webp?_v_=1624430965835",
+        "name": "Effect Scatter Chart"
+      },
+      {
+        "path": "/scatter-linear-regression",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-linear-regression.webp?_v_=1624430965835",
+        "name": "Linear Regression"
+      },
+      {
+        "path": "/scatter-polynomial-regression",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-polynomial-regression.webp?_v_=1624430965835",
+        "name": "Polynomial Regression"
+      },
+      {
+        "path": "/scatter-punchCard",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-punchCard.webp?_v_=1624430965835",
+        "name": "Punch Card of Github"
+      },
+      {
+        "path": "/scatter-single-axis",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-single-axis.webp?_v_=1624430965835",
+        "name": "Scatter on Single Axis"
+      },
+      {
+        "path": "/scatter-weight",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-weight.webp?_v_=1624430965835",
+        "name": "Distribution of Height and Weight"
+      },
+      {
+        "path": "/scatter-label-align-right",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-label-align-right.webp?_v_=1624430965835",
+        "name": "Align Label on the Top"
+      },
+      {
+        "path": "/scatter-label-align-top",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-label-align-top.webp?_v_=1624430965835",
+        "name": "Align Label on the Top"
+      },
+      {
+        "path": "/scatter-large",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-large.webp?_v_=1624430965835",
+        "name": "Large Scatter"
+      },
+      {
+        "path": "/scatter-nebula",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-nebula.webp?_v_=1624430965835",
+        "name": "Scatter Nebula"
+      },
+      {
+        "path": "/scatter-stream-visual",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-stream-visual.webp?_v_=1624430965835",
+        "name": "Visual interaction with stream"
+      },
+      {
+        "path": "/bubble-gradient",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bubble-gradient.webp?_v_=1624430965835",
+        "name": "Bubble Chart"
+      },
+      {
+        "path": "/scatter-aqi-color",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-aqi-color.webp?_v_=1624430965835",
+        "name": "Scatter Aqi Color"
+      },
+      {
+        "path": "/scatter-nutrients",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-nutrients.webp?_v_=1624430965835",
+        "name": "Scatter Nutrients"
+      },
+      {
+        "path": "/scatter-nutrients-matrix",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-nutrients-matrix.webp?_v_=1624430965835",
+        "name": "Scatter Nutrients Matrix"
+      },
+      {
+        "path": "/scatter-polar-punchCard",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-polar-punchCard.webp?_v_=1624430965835",
+        "name": "Punch Card of Github"
+      },
+      {
+        "path": "/scatter-life-expectancy-timeline",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-life-expectancy-timeline.webp?_v_=1624430965835",
+        "name": "Life Expectancy and GDP"
+      },
+      {
+        "path": "/scatter-painter-choice",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-painter-choice.webp?_v_=1624430965835",
+        "name": "Master Painter Color Choices Throughout History"
+      },
+      {
+        "path": "/effectScatter-bmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/effectScatter-bmap.webp?_v_=1624430965835",
+        "name": "Air Quality - Baidu Map"
+      },
+      {
+        "path": "/scatter-logarithmic-regression",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-logarithmic-regression.webp?_v_=1624430965835",
+        "name": "Logarithmic Regression"
+      },
+      {
+        "path": "/scatter-matrix",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-matrix.webp?_v_=1624430965835",
+        "name": "Scatter Matrix"
+      },
+      {
+        "path": "/calendar-charts",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-charts.webp?_v_=1624430965835",
+        "name": "Calendar Charts"
+      }
+    ]
+  },
+  {
+    "name": "GEO/Map",
+    "children": [
+      {
+        "path": "/geo-beef-cuts",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/geo-beef-cuts.webp?_v_=1624430965835",
+        "name": "GEO Beef Cuts"
+      },
+      {
+        "path": "/geo-organ",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/geo-organ.webp?_v_=1624430965835",
+        "name": "Organ Data with SVG"
+      },
+      {
+        "path": "/geo-seatmap-flight",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/geo-seatmap-flight.webp?_v_=1624430965835",
+        "name": "Flight Seatmap with SVG"
+      },
+      {
+        "path": "/geo-svg-lines",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/geo-svg-lines.webp?_v_=1624430965835",
+        "name": "GEO SVG Lines"
+      },
+      {
+        "path": "/geo-svg-map",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/geo-svg-map.webp?_v_=1624430965835",
+        "name": "GEO SVG Map"
+      },
+      {
+        "path": "/geo-svg-traffic",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/geo-svg-traffic.webp?_v_=1624430965835",
+        "name": "GEO SVG Traffic"
+      },
+      {
+        "path": "/lines-bmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-bmap.webp?_v_=1624430965835",
+        "name": "A Hiking Trail in Hangzhou - Baidu Map"
+      },
+      {
+        "path": "/lines-bmap-bus",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-bmap-bus.webp?_v_=1624430965835",
+        "name": "Bus Lines of Beijing - Baidu Map"
+      },
+      {
+        "path": "/lines-bmap-effect",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-bmap-effect.webp?_v_=1624430965835",
+        "name": "Bus Lines of Beijing - Line Effect"
+      },
+      {
+        "path": "/lines-ny",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-ny.webp?_v_=1624430965835",
+        "name": "Use lines to draw 1 million ny streets."
+      },
+      {
+        "path": "/map-bin",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/map-bin.webp?_v_=1624430965835",
+        "name": "Binning on Map"
+      },
+      {
+        "path": "/map-HK",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/map-HK.webp?_v_=1624430965835",
+        "name": "Population Density of HongKong (2011)"
+      },
+      {
+        "path": "/map-polygon",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/map-polygon.webp?_v_=1624430965835",
+        "name": "Draw Polygon on Map"
+      },
+      {
+        "path": "/map-usa",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/map-usa.webp?_v_=1624430965835",
+        "name": "USA Population Estimates (2012)"
+      },
+      {
+        "path": "/custom-hexbin",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-hexbin.webp?_v_=1624430965835",
+        "name": "Hexagonal Binning"
+      },
+      {
+        "path": "/effectScatter-bmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/effectScatter-bmap.webp?_v_=1624430965835",
+        "name": "Air Quality - Baidu Map"
+      }
+    ]
+  },
+  {
+    "name": "Candlestick",
+    "children": [
+      {
+        "path": "/candlestick-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/candlestick-simple.webp?_v_=1624430965835",
+        "name": "Basic Candlestick"
+      },
+      {
+        "path": "/custom-ohlc",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-ohlc.webp?_v_=1624430965835",
+        "name": "OHLC Chart"
+      },
+      {
+        "path": "/candlestick-sh",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/candlestick-sh.webp?_v_=1624430965835",
+        "name": "ShangHai Index"
+      },
+      {
+        "path": "/candlestick-large",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/candlestick-large.webp?_v_=1624430965835",
+        "name": "Large Scale Candlestick"
+      },
+      {
+        "path": "/candlestick-touch",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/candlestick-touch.webp?_v_=1624430965835",
+        "name": "Axis Pointer Link and Touch"
+      },
+      {
+        "path": "/candlestick-brush",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/candlestick-brush.webp?_v_=1624430965835",
+        "name": "Candlestick Brush"
+      },
+      {
+        "path": "/candlestick-sh-2015",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/candlestick-sh-2015.webp?_v_=1624430965835",
+        "name": "ShangHai Index, 2015"
+      }
+    ]
+  },
+  {
+    "name": "Radar",
+    "children": [
+      {
+        "path": "/radar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/radar.webp?_v_=1624430965835",
+        "name": "Basic Radar Chart"
+      },
+      {
+        "path": "/radar-aqi",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/radar-aqi.webp?_v_=1624430965835",
+        "name": "AQI - Radar Chart"
+      },
+      {
+        "path": "/radar-custom",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/radar-custom.webp?_v_=1624430965835",
+        "name": "Customized Radar Chart"
+      },
+      {
+        "path": "/radar2",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/radar2.webp?_v_=1624430965835",
+        "name": "Proportion of Browsers"
+      },
+      {
+        "path": "/radar-multiple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/radar-multiple.webp?_v_=1624430965835",
+        "name": "Multiple Radar"
+      }
+    ]
+  },
+  {
+    "name": "Boxplot",
+    "children": [
+      {
+        "path": "/data-transform-aggregate",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/data-transform-aggregate.webp?_v_=1624430965835",
+        "name": "Data Transform Simple Aggregate"
+      },
+      {
+        "path": "/boxplot-light-velocity",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/boxplot-light-velocity.webp?_v_=1624430965835",
+        "name": "Boxplot Light Velocity"
+      },
+      {
+        "path": "/boxplot-light-velocity2",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/boxplot-light-velocity2.webp?_v_=1624430965835",
+        "name": "Boxplot Light Velocity2"
+      },
+      {
+        "path": "/boxplot-multi",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/boxplot-multi.webp?_v_=1624430965835",
+        "name": "Multiple Categories"
+      }
+    ]
+  },
+  {
+    "name": "Heatmap",
+    "children": [
+      {
+        "path": "/heatmap-cartesian",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/heatmap-cartesian.webp?_v_=1624430965835",
+        "name": "Heatmap on Cartesian"
+      },
+      {
+        "path": "/heatmap-large",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/heatmap-large.webp?_v_=1624430965835",
+        "name": "Heatmap - 2w data"
+      },
+      {
+        "path": "/heatmap-large-piecewise",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/heatmap-large-piecewise.webp?_v_=1624430965835",
+        "name": "Heatmap - Discrete Mapping of Color"
+      },
+      {
+        "path": "/heatmap-bmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/heatmap-bmap.webp?_v_=1624430965835",
+        "name": "Heatmap on Baidu Map Extension"
+      },
+      {
+        "path": "/calendar-heatmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-heatmap.webp?_v_=1624430965835",
+        "name": "Calendar Heatmap"
+      },
+      {
+        "path": "/calendar-vertical",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-vertical.webp?_v_=1624430965835",
+        "name": "Calendar Heatmap Vertical"
+      }
+    ]
+  },
+  {
+    "name": "Graph",
+    "children": [
+      {
+        "path": "/graph-force2",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-force2.webp?_v_=1624430965835",
+        "name": "Force Layout"
+      },
+      {
+        "path": "/graph-grid",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-grid.webp?_v_=1624430965835",
+        "name": "Graph on Cartesian"
+      },
+      {
+        "path": "/graph-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-simple.webp?_v_=1624430965835",
+        "name": "Simple Graph"
+      },
+      {
+        "path": "/graph-force",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-force.webp?_v_=1624430965835",
+        "name": "Force Layout"
+      },
+      {
+        "path": "/graph-label-overlap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-label-overlap.webp?_v_=1624430965835",
+        "name": "Hide Overlapped Label"
+      },
+      {
+        "path": "/graph",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph.webp?_v_=1624430965835",
+        "name": "Les Miserables"
+      },
+      {
+        "path": "/graph-circular-layout",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-circular-layout.webp?_v_=1624430965835",
+        "name": "Les Miserables"
+      },
+      {
+        "path": "/graph-force-dynamic",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-force-dynamic.webp?_v_=1624430965835",
+        "name": "Graph Dynamic"
+      },
+      {
+        "path": "/graph-life-expectancy",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-life-expectancy.webp?_v_=1624430965835",
+        "name": "Graph Life Expectancy"
+      },
+      {
+        "path": "/graph-webkit-dep",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-webkit-dep.webp?_v_=1624430965835",
+        "name": "Graph Webkit Dep"
+      },
+      {
+        "path": "/graph-npm",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/graph-npm.webp?_v_=1624430965835",
+        "name": "NPM Dependencies"
+      },
+      {
+        "path": "/calendar-graph",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-graph.webp?_v_=1624430965835",
+        "name": "Calendar Graph"
+      }
+    ]
+  },
+  {
+    "name": "Lines",
+    "children": [
+      {
+        "path": "/lines-bmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-bmap.webp?_v_=1624430965835",
+        "name": "A Hiking Trail in Hangzhou - Baidu Map"
+      },
+      {
+        "path": "/lines-bmap-bus",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-bmap-bus.webp?_v_=1624430965835",
+        "name": "Bus Lines of Beijing - Baidu Map"
+      },
+      {
+        "path": "/lines-bmap-effect",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-bmap-effect.webp?_v_=1624430965835",
+        "name": "Bus Lines of Beijing - Line Effect"
+      },
+      {
+        "path": "/lines-ny",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/lines-ny.webp?_v_=1624430965835",
+        "name": "Use lines to draw 1 million ny streets."
+      }
+    ]
+  },
+  {
+    "name": "Tree",
+    "children": [
+      {
+        "path": "/tree-basic",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/tree-basic.webp?_v_=1624430965835",
+        "name": "From Left to Right Tree"
+      },
+      {
+        "path": "/tree-legend",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/tree-legend.webp?_v_=1624430965835",
+        "name": "Multiple Trees"
+      },
+      {
+        "path": "/tree-orient-bottom-top",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/tree-orient-bottom-top.webp?_v_=1624430965835",
+        "name": "From Bottom to Top Tree"
+      },
+      {
+        "path": "/tree-orient-right-left",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/tree-orient-right-left.webp?_v_=1624430965835",
+        "name": "From Right to Left Tree"
+      },
+      {
+        "path": "/tree-polyline",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/tree-polyline.webp?_v_=1624430965835",
+        "name": "Tree with Polyline Edge"
+      },
+      {
+        "path": "/tree-radial",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/tree-radial.webp?_v_=1624430965835",
+        "name": "Radial Tree"
+      },
+      {
+        "path": "/tree-vertical",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/tree-vertical.webp?_v_=1624430965835",
+        "name": "From Top to Bottom Tree"
+      }
+    ]
+  },
+  {
+    "name": "Treemap",
+    "children": [
+      {
+        "path": "/treemap-disk",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/treemap-disk.webp?_v_=1624430965835",
+        "name": "Disk Usage"
+      },
+      {
+        "path": "/treemap-drill-down",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/treemap-drill-down.webp?_v_=1624430965835",
+        "name": "ECharts Option Query"
+      },
+      {
+        "path": "/treemap-obama",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/treemap-obama.webp?_v_=1624430965835",
+        "name": "How $3.7 Trillion is Spent"
+      },
+      {
+        "path": "/treemap-show-parent",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/treemap-show-parent.webp?_v_=1624430965835",
+        "name": "Show Parent Labels"
+      },
+      {
+        "path": "/treemap-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/treemap-simple.webp?_v_=1624430965835",
+        "name": "Basic Treemap"
+      },
+      {
+        "path": "/treemap-visual",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/treemap-visual.webp?_v_=1624430965835",
+        "name": "Gradient Mapping"
+      }
+    ]
+  },
+  {
+    "name": "Sunburst",
+    "children": [
+      {
+        "path": "/sunburst-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sunburst-simple.webp?_v_=1624430965835",
+        "name": "Basic Sunburst"
+      },
+      {
+        "path": "/sunburst-borderRadius",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sunburst-borderRadius.webp?_v_=1624430965835",
+        "name": "Sunburst with Rounded Corner"
+      },
+      {
+        "path": "/sunburst-label-rotate",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sunburst-label-rotate.webp?_v_=1624430965835",
+        "name": "Sunburst Label Rotate"
+      },
+      {
+        "path": "/sunburst-monochrome",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sunburst-monochrome.webp?_v_=1624430965835",
+        "name": "Monochrome Sunburst"
+      },
+      {
+        "path": "/sunburst-visualMap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sunburst-visualMap.webp?_v_=1624430965835",
+        "name": "Sunburst VisualMap"
+      },
+      {
+        "path": "/sunburst-drink",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sunburst-drink.webp?_v_=1624430965835",
+        "name": "Drink Flavors"
+      },
+      {
+        "path": "/sunburst-book",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sunburst-book.webp?_v_=1624430965835",
+        "name": "Book Records"
+      }
+    ]
+  },
+  {
+    "name": "Parallel",
+    "children": [
+      {
+        "path": "/parallel-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/parallel-simple.webp?_v_=1624430965835",
+        "name": "Basic Parallel"
+      },
+      {
+        "path": "/parallel-aqi",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/parallel-aqi.webp?_v_=1624430965835",
+        "name": "Parallel Aqi"
+      },
+      {
+        "path": "/parallel-nutrients",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/parallel-nutrients.webp?_v_=1624430965835",
+        "name": "Parallel Nutrients"
+      },
+      {
+        "path": "/scatter-matrix",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/scatter-matrix.webp?_v_=1624430965835",
+        "name": "Scatter Matrix"
+      }
+    ]
+  },
+  {
+    "name": "Sankey",
+    "children": [
+      {
+        "path": "/sankey-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sankey-simple.webp?_v_=1624430965835",
+        "name": "Basic Sankey"
+      },
+      {
+        "path": "/sankey-vertical",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sankey-vertical.webp?_v_=1624430965835",
+        "name": "Sankey Orient Vertical"
+      },
+      {
+        "path": "/sankey-itemstyle",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sankey-itemstyle.webp?_v_=1624430965835",
+        "name": "Specify ItemStyle for Each Node in Sankey"
+      },
+      {
+        "path": "/sankey-levels",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sankey-levels.webp?_v_=1624430965835",
+        "name": "Sankey with Levels Setting"
+      },
+      {
+        "path": "/sankey-energy",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sankey-energy.webp?_v_=1624430965835",
+        "name": "Gradient Edge"
+      },
+      {
+        "path": "/sankey-nodeAlign-left",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sankey-nodeAlign-left.webp?_v_=1624430965835",
+        "name": "Node Align Left in Sankey"
+      },
+      {
+        "path": "/sankey-nodeAlign-right",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/sankey-nodeAlign-right.webp?_v_=1624430965835",
+        "name": "Node Align Right in Sankey"
+      }
+    ]
+  },
+  {
+    "name": "Funnel",
+    "children": [
+      {
+        "path": "/funnel",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/funnel.webp?_v_=1624430965835",
+        "name": "Funnel Chart"
+      },
+      {
+        "path": "/funnel-align",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/funnel-align.webp?_v_=1624430965835",
+        "name": "Funnel (align)"
+      },
+      {
+        "path": "/funnel-customize",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/funnel-customize.webp?_v_=1624430965835",
+        "name": "Customized Funnel"
+      },
+      {
+        "path": "/funnel-mutiple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/funnel-mutiple.webp?_v_=1624430965835",
+        "name": "Multiple Funnels"
+      }
+    ]
+  },
+  {
+    "name": "Gauge",
+    "children": [
+      {
+        "path": "/gauge",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge.webp?_v_=1624430965835",
+        "name": "Gauge Basic chart"
+      },
+      {
+        "path": "/gauge-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-simple.webp?_v_=1624430965835",
+        "name": "Simple Gauge"
+      },
+      {
+        "path": "/gauge-speed",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-speed.webp?_v_=1624430965835",
+        "name": "Speed Gauge"
+      },
+      {
+        "path": "/gauge-progress",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-progress.webp?_v_=1624430965835",
+        "name": "Grogress Gauge"
+      },
+      {
+        "path": "/gauge-stage",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-stage.webp?_v_=1624430965835",
+        "name": "Stage Speed Gauge"
+      },
+      {
+        "path": "/gauge-grade",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-grade.webp?_v_=1624430965835",
+        "name": "Grade Gauge"
+      },
+      {
+        "path": "/gauge-multi-title",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-multi-title.webp?_v_=1624430965835",
+        "name": "Multi Title Gauge"
+      },
+      {
+        "path": "/gauge-temperature",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-temperature.webp?_v_=1624430965835",
+        "name": "Temperature Gauge chart"
+      },
+      {
+        "path": "/gauge-ring",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-ring.webp?_v_=1624430965835",
+        "name": "Ring Gauge"
+      },
+      {
+        "path": "/gauge-barometer",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-barometer.webp?_v_=1624430965835",
+        "name": "Gauge Barometer chart"
+      },
+      {
+        "path": "/gauge-clock",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-clock.webp?_v_=1624430965835",
+        "name": "Clock Gauge"
+      },
+      {
+        "path": "/gauge-car",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/gauge-car.webp?_v_=1624430965835",
+        "name": "Gauge Car"
+      }
+    ]
+  },
+  {
+    "name": "PictorialBar",
+    "children": [
+      {
+        "path": "/pictorialBar-body-fill",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pictorialBar-body-fill.webp?_v_=1624430965835",
+        "name": "Water Content"
+      },
+      {
+        "path": "/pictorialBar-dotted",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pictorialBar-dotted.webp?_v_=1624430965835",
+        "name": "Dotted bar"
+      },
+      {
+        "path": "/pictorialBar-forest",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pictorialBar-forest.webp?_v_=1624430965835",
+        "name": "Expansion of forest"
+      },
+      {
+        "path": "/pictorialBar-hill",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pictorialBar-hill.webp?_v_=1624430965835",
+        "name": "Wish List and Mountain Height"
+      },
+      {
+        "path": "/pictorialBar-spirit",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pictorialBar-spirit.webp?_v_=1624430965835",
+        "name": "Spirits"
+      },
+      {
+        "path": "/pictorialBar-vehicle",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pictorialBar-vehicle.webp?_v_=1624430965835",
+        "name": "Vehicles"
+      },
+      {
+        "path": "/pictorialBar-velocity",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pictorialBar-velocity.webp?_v_=1624430965835",
+        "name": "Velocity of Christmas Reindeers"
+      }
+    ]
+  },
+  {
+    "name": "ThemeRiver",
+    "children": [
+      {
+        "path": "/themeRiver-basic",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/themeRiver-basic.webp?_v_=1624430965835",
+        "name": "ThemeRiver"
+      },
+      {
+        "path": "/themeRiver-lastfm",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/themeRiver-lastfm.webp?_v_=1624430965835",
+        "name": "ThemeRiver Lastfm"
+      }
+    ]
+  },
+  {
+    "name": "Calendar",
+    "children": [
+      {
+        "path": "/calendar-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-simple.webp?_v_=1624430965835",
+        "name": "Simple Calendar"
+      },
+      {
+        "path": "/calendar-heatmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-heatmap.webp?_v_=1624430965835",
+        "name": "Calendar Heatmap"
+      },
+      {
+        "path": "/calendar-vertical",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-vertical.webp?_v_=1624430965835",
+        "name": "Calendar Heatmap Vertical"
+      },
+      {
+        "path": "/calendar-horizontal",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-horizontal.webp?_v_=1624430965835",
+        "name": "Calendar Heatmap Horizontal"
+      },
+      {
+        "path": "/calendar-graph",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-graph.webp?_v_=1624430965835",
+        "name": "Calendar Graph"
+      },
+      {
+        "path": "/calendar-lunar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-lunar.webp?_v_=1624430965835",
+        "name": "Calendar Lunar"
+      },
+      {
+        "path": "/calendar-pie",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-pie.webp?_v_=1624430965835",
+        "name": "Calendar Pie"
+      },
+      {
+        "path": "/calendar-charts",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/calendar-charts.webp?_v_=1624430965835",
+        "name": "Calendar Charts"
+      },
+      {
+        "path": "/custom-calendar-icon",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-calendar-icon.webp?_v_=1624430965835",
+        "name": "Custom Calendar Icon"
+      }
+    ]
+  },
+  {
+    "name": "Custom",
+    "children": [
+      {
+        "path": "/bar-histogram",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-histogram.webp?_v_=1624430965835",
+        "name": "Histogram with Custom Series"
+      },
+      {
+        "path": "/custom-profit",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-profit.webp?_v_=1624430965835",
+        "name": "Profit"
+      },
+      {
+        "path": "/custom-error-scatter",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-error-scatter.webp?_v_=1624430965835",
+        "name": "Error Scatter on Catesian"
+      },
+      {
+        "path": "/custom-bar-trend",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-bar-trend.webp?_v_=1624430965835",
+        "name": "Custom Bar Trend"
+      },
+      {
+        "path": "/custom-cartesian-polygon",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-cartesian-polygon.webp?_v_=1624430965835",
+        "name": "Custom Cartesian Polygon"
+      },
+      {
+        "path": "/custom-error-bar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-error-bar.webp?_v_=1624430965835",
+        "name": "Error Bar on Catesian"
+      },
+      {
+        "path": "/custom-profile",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-profile.webp?_v_=1624430965835",
+        "name": "Profile"
+      },
+      {
+        "path": "/cycle-plot",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/cycle-plot.webp?_v_=1624430965835",
+        "name": "Cycle Plot"
+      },
+      {
+        "path": "/custom-gantt-flight",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-gantt-flight.webp?_v_=1624430965835",
+        "name": "Gantt Chart of Airport Flights"
+      },
+      {
+        "path": "/custom-polar-heatmap",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-polar-heatmap.webp?_v_=1624430965835",
+        "name": "Polar Heatmap"
+      },
+      {
+        "path": "/wind-barb",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/wind-barb.webp?_v_=1624430965835",
+        "name": "Wind Barb"
+      },
+      {
+        "path": "/custom-hexbin",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-hexbin.webp?_v_=1624430965835",
+        "name": "Hexagonal Binning"
+      },
+      {
+        "path": "/custom-calendar-icon",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-calendar-icon.webp?_v_=1624430965835",
+        "name": "Custom Calendar Icon"
+      },
+      {
+        "path": "/custom-wind",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-wind.webp?_v_=1624430965835",
+        "name": "Use custom series to draw wind vectors"
+      },
+      {
+        "path": "/custom-aggregate-scatter-bar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-aggregate-scatter-bar.webp?_v_=1624430965835",
+        "name": "Aggregate Morphing Between Scatter and Bar"
+      },
+      {
+        "path": "/custom-aggregate-scatter-pie",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-aggregate-scatter-pie.webp?_v_=1624430965835",
+        "name": "Aggregate Morphing Between Scatter and Pie"
+      },
+      {
+        "path": "/custom-gauge",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-gauge.webp?_v_=1624430965835",
+        "name": "Custom Gauge"
+      },
+      {
+        "path": "/custom-aggregate-scatter-cluster",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-aggregate-scatter-cluster.webp?_v_=1624430965835",
+        "name": "Aggregate Morphing Between Scatter Clustering"
+      },
+      {
+        "path": "/circle-packing-with-d3",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/circle-packing-with-d3.webp?_v_=1624430965835",
+        "name": "Circle Packing with d3"
+      },
+      {
+        "path": "/custom-one-to-one-morph",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-one-to-one-morph.webp?_v_=1624430965835",
+        "name": "One-to-one Morphing"
+      },
+      {
+        "path": "/custom-spiral-race",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-spiral-race.webp?_v_=1624430965835",
+        "name": "Custom Spiral Race"
+      },
+      {
+        "path": "/custom-story-transition",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-story-transition.webp?_v_=1624430965835",
+        "name": "Simple Story Transition"
+      }
+    ]
+  },
+  {
+    "name": "Dataset",
+    "children": [
+      {
+        "path": "/data-transform-sort-bar",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/data-transform-sort-bar.webp?_v_=1624430965835",
+        "name": "Sort Data in Bar Chart"
+      },
+      {
+        "path": "/dataset-encode0",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-encode0.webp?_v_=1624430965835",
+        "name": "Simple Encode"
+      },
+      {
+        "path": "/data-transform-multiple-pie",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/data-transform-multiple-pie.webp?_v_=1624430965835",
+        "name": "Partition Data to Pies"
+      },
+      {
+        "path": "/dataset-default",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-default.webp?_v_=1624430965835",
+        "name": "Default arrangement"
+      },
+      {
+        "path": "/dataset-encode1",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-encode1.webp?_v_=1624430965835",
+        "name": "Encode and Matrix"
+      },
+      {
+        "path": "/dataset-link",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-link.webp?_v_=1624430965835",
+        "name": "Share Dataset"
+      },
+      {
+        "path": "/dataset-series-layout-by",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-series-layout-by.webp?_v_=1624430965835",
+        "name": "Series Layout By Column or Row"
+      },
+      {
+        "path": "/dataset-simple0",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-simple0.webp?_v_=1624430965835",
+        "name": "Simple Example of Dataset"
+      },
+      {
+        "path": "/dataset-simple1",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/dataset-simple1.webp?_v_=1624430965835",
+        "name": "Dataset in Object Array"
+      }
+    ]
+  },
+  {
+    "name": "DataZoom",
+    "children": [
+      {
+        "path": "/custom-error-scatter",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-error-scatter.webp?_v_=1624430965835",
+        "name": "Error Scatter on Catesian"
+      },
+      {
+        "path": "/area-simple",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/area-simple.webp?_v_=1624430965835",
+        "name": "Large scale area chart"
+      },
+      {
+        "path": "/custom-gantt-flight",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-gantt-flight.webp?_v_=1624430965835",
+        "name": "Gantt Chart of Airport Flights"
+      },
+      {
+        "path": "/wind-barb",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/wind-barb.webp?_v_=1624430965835",
+        "name": "Wind Barb"
+      },
+      {
+        "path": "/line-tooltip-touch",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-tooltip-touch.webp?_v_=1624430965835",
+        "name": "Tooltip and DataZoom on Mobile"
+      }
+    ]
+  },
+  {
+    "name": "Drag",
+    "children": [
+      {
+        "path": "/line-draggable",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/line-draggable.webp?_v_=1624430965835",
+        "name": "Try Dragging these Points"
+      },
+      {
+        "path": "/custom-gantt-flight",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/custom-gantt-flight.webp?_v_=1624430965835",
+        "name": "Gantt Chart of Airport Flights"
+      }
+    ]
+  },
+  {
+    "name": "Rich Text",
+    "children": [
+      {
+        "path": "/pie-rich-text",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-rich-text.webp?_v_=1624430965835",
+        "name": "Pie Special Label"
+      },
+      {
+        "path": "/pie-nest",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/pie-nest.webp?_v_=1624430965835",
+        "name": "Nested Pies"
+      },
+      {
+        "path": "/bar-rich-text",
+        "icon-src": "https://echarts.apache.org/examples/data/thumb/bar-rich-text.webp?_v_=1624430965835",
+        "name": "Wheater Statistics"
+      }
+    ]
+  },
+  {
+    "name": "3D Globe",
+    "children": [
+      {
+        "path": "/animating-contour-on-globe&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/animating-contour-on-globe.webp?_v_=1624430965835",
+        "name": "Animating Contour on Globe"
+      },
+      {
+        "path": "/globe-atmosphere&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/globe-atmosphere.webp?_v_=1624430965835",
+        "name": "Globe with Atmosphere"
+      },
+      {
+        "path": "/globe-contour-paint&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/globe-contour-paint.webp?_v_=1624430965835",
+        "name": "Contour Paint"
+      },
+      {
+        "path": "/globe-displacement&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/globe-displacement.webp?_v_=1624430965835",
+        "name": "Globe Displacement"
+      },
+      {
+        "path": "/globe-echarts-gl-hello-world&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/globe-echarts-gl-hello-world.webp?_v_=1624430965835",
+        "name": "ECharts-GL Hello World"
+      },
+      {
+        "path": "/globe-layers&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/globe-layers.webp?_v_=1624430965835",
+        "name": "Globe Layers"
+      },
+      {
+        "path": "/globe-moon&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/globe-moon.webp?_v_=1624430965835",
+        "name": "Moon"
+      },
+      {
+        "path": "/iron-globe&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/iron-globe.webp?_v_=1624430965835",
+        "name": "Iron globe"
+      }
+    ]
+  },
+  {
+    "name": "3D Bar",
+    "children": [
+      {
+        "path": "/bar3d-dataset&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/bar3d-dataset.webp?_v_=1624430965835",
+        "name": "3D Bar with Dataset"
+      },
+      {
+        "path": "/bar3d-global-population&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/bar3d-global-population.webp?_v_=1624430965835",
+        "name": "Bar3D - Global Population"
+      },
+      {
+        "path": "/bar3d-myth&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/bar3d-myth.webp?_v_=1624430965835",
+        "name": "星云"
+      },
+      {
+        "path": "/bar3d-noise-modified-from-marpi-demo&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/bar3d-noise-modified-from-marpi-demo.webp?_v_=1624430965835",
+        "name": "Noise modified from marpi's demo"
+      },
+      {
+        "path": "/bar3d-punch-card&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/bar3d-punch-card.webp?_v_=1624430965835",
+        "name": "Bar3D - Punch Card"
+      },
+      {
+        "path": "/bar3d-simplex-noise&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/bar3d-simplex-noise.webp?_v_=1624430965835",
+        "name": "Bar3D - Simplex Noise"
+      },
+      {
+        "path": "/bar3d-voxelize-image&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/bar3d-voxelize-image.webp?_v_=1624430965835",
+        "name": "Voxelize image"
+      },
+      {
+        "path": "/global-population-bar3d-on-globe&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/global-population-bar3d-on-globe.webp?_v_=1624430965835",
+        "name": "Global Population - Bar3D on Globe"
+      },
+      {
+        "path": "/image-to-bar3d&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/image-to-bar3d.webp?_v_=1624430965835",
+        "name": "Image to Bar3D"
+      },
+      {
+        "path": "/metal-bar3d&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/metal-bar3d.webp?_v_=1624430965835",
+        "name": "Metal Bar3D"
+      },
+      {
+        "path": "/stacked-bar3d&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/stacked-bar3d.webp?_v_=1624430965835",
+        "name": "Stacked Bar3D"
+      },
+      {
+        "path": "/transparent-bar3d&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/transparent-bar3d.webp?_v_=1624430965835",
+        "name": "Transparent Bar3D"
+      }
+    ]
+  },
+  {
+    "name": "3D Scatter",
+    "children": [
+      {
+        "path": "/scatter3d&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/scatter3d.webp?_v_=1624430965835",
+        "name": "Scatter3D"
+      },
+      {
+        "path": "/scatter3D-dataset&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/scatter3D-dataset.webp?_v_=1624430965835",
+        "name": "3D Scatter with Dataset"
+      },
+      {
+        "path": "/scatter3d-globe-population&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/scatter3d-globe-population.webp?_v_=1624430965835",
+        "name": "Scatter3D - Globe Population"
+      },
+      {
+        "path": "/scatter3d-orthographic&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/scatter3d-orthographic.webp?_v_=1624430965835",
+        "name": "三维散点图正交投影"
+      },
+      {
+        "path": "/scatter3d-scatter&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/scatter3d-scatter.webp?_v_=1624430965835",
+        "name": "3D Scatter with Scatter Matrix"
+      },
+      {
+        "path": "/scatter3d-simplex-noise&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/scatter3d-simplex-noise.webp?_v_=1624430965835",
+        "name": "Scatter3D - Simplex Noise"
+      }
+    ]
+  },
+  {
+    "name": "3D Surface",
+    "children": [
+      {
+        "path": "/image-surface-sushuang&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/image-surface-sushuang.webp?_v_=1624430965835",
+        "name": "Image Surface Sushuang"
+      },
+      {
+        "path": "/metal-surface&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/metal-surface.webp?_v_=1624430965835",
+        "name": "Metal Surface"
+      },
+      {
+        "path": "/parametric-surface-rose&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/parametric-surface-rose.webp?_v_=1624430965835",
+        "name": "Parametric Surface Rose"
+      },
+      {
+        "path": "/simple-surface&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/simple-surface.webp?_v_=1624430965835",
+        "name": "Simple Surface"
+      },
+      {
+        "path": "/sphere-parametric-surface&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/sphere-parametric-surface.webp?_v_=1624430965835",
+        "name": "Sphere Parametric Surface"
+      },
+      {
+        "path": "/surface-breather&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/surface-breather.webp?_v_=1624430965835",
+        "name": "Breather"
+      },
+      {
+        "path": "/surface-golden-rose&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/surface-golden-rose.webp?_v_=1624430965835",
+        "name": "Golden Rose"
+      },
+      {
+        "path": "/surface-leather&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/surface-leather.webp?_v_=1624430965835",
+        "name": "皮革材质"
+      },
+      {
+        "path": "/surface-mollusc-shell&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/surface-mollusc-shell.webp?_v_=1624430965835",
+        "name": "Mollusc Shell"
+      },
+      {
+        "path": "/surface-theme-roses&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/surface-theme-roses.webp?_v_=1624430965835",
+        "name": "Theme Roses"
+      },
+      {
+        "path": "/surface-wave&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/surface-wave.webp?_v_=1624430965835",
+        "name": "Surface Wave"
+      }
+    ]
+  },
+  {
+    "name": "3D Map",
+    "children": [
+      {
+        "path": "/map3d-buildings&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/map3d-buildings.webp?_v_=1624430965835",
+        "name": "Buildings"
+      },
+      {
+        "path": "/map3d-wood-city&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/map3d-wood-city.webp?_v_=1624430965835",
+        "name": "Wood City"
+      }
+    ]
+  },
+  {
+    "name": "3D Lines",
+    "children": [
+      {
+        "path": "/lines3d-airline-on-globe&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/lines3d-airline-on-globe.webp?_v_=1624430965835",
+        "name": "Airline on Globe"
+      },
+      {
+        "path": "/lines3d-flights&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/lines3d-flights.webp?_v_=1624430965835",
+        "name": "Flights"
+      },
+      {
+        "path": "/lines3d-flights-gl&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/lines3d-flights-gl.webp?_v_=1624430965835",
+        "name": "Flights GL"
+      },
+      {
+        "path": "/lines3d-flights-on-geo3d&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/lines3d-flights-on-geo3d.webp?_v_=1624430965835",
+        "name": "Flights on Geo3D"
+      }
+    ]
+  },
+  {
+    "name": "3D Line",
+    "children": [
+      {
+        "path": "/line3d-orthographic&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/line3d-orthographic.webp?_v_=1624430965835",
+        "name": "三维折线图正交投影"
+      }
+    ]
+  },
+  {
+    "name": "Scatter GL",
+    "children": [
+      {
+        "path": "/scatterGL-gps&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/scatterGL-gps.webp?_v_=1624430965835",
+        "name": "10 million Bulk GPS points"
+      }
+    ]
+  },
+  {
+    "name": "Lines GL",
+    "children": [
+      {
+        "path": "/linesGL-ny&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/linesGL-ny.webp?_v_=1624430965835",
+        "name": "Use linesGL to draw 1 million ny streets."
+      }
+    ]
+  },
+  {
+    "name": "Flow GL",
+    "children": [
+      {
+        "path": "/flowGL-noise&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/flowGL-noise.webp?_v_=1624430965835",
+        "name": "Flow on the cartesian"
+      },
+      {
+        "path": "/global-wind-visualization&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/global-wind-visualization.webp?_v_=1624430965835",
+        "name": "Global wind visualization"
+      },
+      {
+        "path": "/global-wind-visualization-2&amp;gl=1",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb/global-wind-visualization-2.webp?_v_=1624430965835",
+        "name": "Global Wind Visualization 2"
+      }
+    ]
+  },
+  {
+    "name": "Graph GL",
+    "children": [
+      {
+        "path": "/graphgl-gpu-layout&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/graphgl-gpu-layout.webp?_v_=1624430965835",
+        "name": "GraphGL GPU Layout"
+      },
+      {
+        "path": "/graphgl-large-internet&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/graphgl-large-internet.webp?_v_=1624430965835",
+        "name": "GraphGL - Large Internet"
+      },
+      {
+        "path": "/graphgl-npm-dep&amp;gl=1&amp;theme=dark",
+        "icon-src": "https://echarts.apache.org/examples/data-gl/thumb-dark/graphgl-npm-dep.webp?_v_=1624430965835",
+        "name": "NPM Dependencies with graphGL"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+<form class="container">
+  <h1 class="text-center">{{name}}</h1>
+  <div class="form-group">
+    <textarea name="input" class="form-control" rows="5">请输入需要编码的数据</textarea>
+  </div>
+  <div class="form-group text-center">
+    {{#if encode}}
+      <button type="button" id="encode" class="btn btn-default"><i class="fas fa-angle-double-down"></i> 编码</button>
+    {{/if}}
+    {{#if decode}}
+      <button type="button" id="decode" class="btn btn-default"><i class="fas fa-angle-double-up"></i> 解码</button>
+    {{/if}}
+  </div>
+  <div class="form-group">
+    <textarea name="output" class="form-control" rows="10">请输入需要解码的数据</textarea>
+  </div>
+</form>

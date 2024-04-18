@@ -1,0 +1,64 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="text-center">{{title}}</h1>
+			<p class="alert alert-success" role="report">
+				{{report.description}}
+				<button class="btn btn-warning btn-xs pull-right" type="button" for="bugFeedback" onclick="toggleFeedback()">BUG反馈</button>
+				<button class="btn btn-success btn-xs pull-right" type="button" for="developmentReport" onclick="toggleDevelopment()">开发报告</button>
+				<button class="btn btn-info btn-xs pull-right" type="button" for="logicalThinking" onclick="toggleThinking()">逻辑思路</button>
+			</p>
+			<ul class="list-group" role="logicalThinking" style="display: none;">
+				<li class="list-group-item" ng-repeat="thinking in report.thinking">
+					{{thinking.step}}
+					<span class="label pull-right" ng-class="{success:'label-success'}[thinking.result]">{{thinking.result|uppercase}}</span>
+				</li>
+			</ul>
+			<table class="table table-striped" role="developmentReport" style="display: none;">
+				<caption class="text-center h3">开发报告</caption>
+				<thead>
+					<tr>
+						<th class="text-center">开发步骤</th>
+						<th class="text-center">知识技术</th>
+						<th class="text-center">完成状态</th>
+						<th class="text-center">存在问题</th>
+					</tr>
+				</thead>
+				<tbody class="text-center">
+					<tr>
+						<td>由于AJAX跨域限制，选择使用PHP获取页面[/all]全部数据</td>
+						<td>PHP->>Filesystem函数</td>
+						<td>Success</td>
+						<td>None</td>
+					</tr>
+					<tr>
+						<td>遍历数据结果并获取相应页面中数据</td>
+						<td>PHP:Filesystem函数</td>
+						<td>Success</td>
+						<td>耗时较长</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-striped" role="bugFeedback" style="display: none;">
+				<caption class="text-center h3">BUG反馈</caption>
+				<thead>
+					<tr>
+						<th class="text-center">BUG描述</th>
+						<th class="text-center">状况分析</th>
+						<th class="text-center">操作步骤</th>
+						<th class="text-center">反馈结果</th>
+					</tr>
+				</thead>
+				<tbody class="text-center">
+					<tr>
+						<td>分页最后存在问题：第68页</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+		</div>
+	</div>
+</div>

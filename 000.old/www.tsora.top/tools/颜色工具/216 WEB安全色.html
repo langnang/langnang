@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>216 web安全色</title>
+	<link rel="icon" href="/resources/src/img/icon/tsora.png">
+	<script type="text/javascript" src="/resources/vendor/require/2.3.5/require.min.js"></script>
+	<script type="text/javascript" src="/resources/src/js/require-config.js"></script>
+</head>
+<body>
+	<div class="container" id="bodyVue">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>216 web安全色</h1>
+				<div class="row">
+					<div class="col-sm-3 col-md-2" v-for="c in color">
+						<div class="thumbnail">
+							<div class="caption" v-bind:style="{'background-color': c.html}">
+								<h1>&nbsp;</h1>
+							</div>
+							<p></p>
+							<p><small class="text-muted">{{c.html}}</small><span class="pull-right">HTML</span></p>
+							<p><small class="text-muted">{{c.rgb}}</small><span class="pull-right">RGB</span></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		require(["vue","initialize","bootstrap"],function(Vue){
+			var bodyVue=new Vue({
+				el:"#bodyVue",
+				data:{
+					color:[]
+				},
+				mounted: function () {
+					var color=[];
+					var c=["00","33","66","99","CC","FF"];
+					c.forEach(function(value1){
+						c.forEach(function(value2){
+							c.forEach(function(value3){
+								color.push({"html":"#"+value1+value2+value3,"rgb":changeHexColorToRgb("#"+value1+value2+value3)});
+							})
+						})
+					})
+					this.color=color;
+					// console.log(this.color);
+					// this.$forceUpdate();
+				},
+				watch:{
+					picked:function(newvalue){
+						// console.log(newvalue);
+						document.getElementById("demo").innerHTML= JSON.stringify( XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[newvalue]]) );
+
+					}
+				},
+				methods:{
+
+				}
+
+
+			})
+
+
+			function changeHexColorToRgb(hexColor){
+				var hex = '#f0f0f0';
+				var reg = /^\#[a-fA-f0-9]{6}$/;
+				if (reg.test(hex)){
+					var rgbColor = 'RGB('
+					for (var i = 1; i < hexColor.length; i+=2){
+						var str = hexColor[i] + hexColor[i + 1];
+						if (i < 5){
+							rgbColor += parseInt(str, 16) + ',';
+						}else{
+							rgbColor += parseInt(str, 16) + ')';
+						}
+
+					}
+				}
+
+				return rgbColor;
+			}
+
+			function changeRgbColorToHex(rgbColor){
+
+				var reg = /^rgb\((\s*[1-2]?[0-9]?[0-9]{1}\,)(\s*[1-2]?[0-9]?[0-9]{1}\,)(\s*[1-2]?[0-9]?[0-9]{1})\)$/;
+
+				if (reg.test(rgbColor)){
+					var matches = reg.exec(rgbColor);
+					var hexColor = '#';
+					for (var i = 1; i <= 3; i++){
+						if (parseInt(matches[i]) < 16){
+							hexColor += '0' + parseInt(matches[i]).toString(16)
+						}else{
+							hexColor += parseInt(matches[i]).toString(16);
+						}
+					}
+				}
+
+				return hexColor;
+			}
+		})
+
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- Static Modal -->
+<div class="modal fade" id="grabModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">{{ grab.title }} - Update - SQL</h4>
+      </div>
+      <div class="modal-body">
+        <div>TableName：<input type="text" ng-model="grab.tbname" disabled="">  </div>
+        <div>Step：</div>
+        <div ng-repeat="s in grab.step">
+          <h4>{{ s.id }} : {{ s.description }}</h4>
+          <!-- <p>{{ s.min }} ~~~ {{ s.max }}</p> -->
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active" ng-style="{'width': s.max+'%','margin-left': s.min+'%'}">
+            </div>
+          </div>
+          <!-- 判断result状态 -->
+          <div ng-switch="s.result">
+            <!-- success -->
+            <div class="alert alert-success" role="alert" ng-switch-when="Success"> <strong>Success!</strong> 操作执行成功</div>
+
+            <!-- info -->
+            <div class="alert alert-info" role="alert" ng-switch-when="Loading"> <strong>Loading!</strong> 操作执行中，请稍候。。。 </div>
+
+            <!-- danger -->
+            <div class="alert alert-danger" role="alert"  ng-switch-when="Failed"> <strong>Failed!</strong> 操作执行失败，请重试。。。 </div> 
+
+            <!-- warning -->
+            <div class="alert alert-warning" role="alert"  ng-switch-default> <strong>Warning!</strong> 操作未开始 </div> 
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="update(0)">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

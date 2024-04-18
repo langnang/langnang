@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Echarts</title>
+	<link rel="icon" href="http://echarts.baidu.com/images/favicon.png" type="image/x-icon">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../src/css/style.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 affix" style="top:0px;height: 100vh;overflow: auto;">
+				<img src="http://echarts.baidu.com/images/logo.png" width="100%" alt="">
+				<div class="row panel-group">
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseStart" aria-expanded="true" aria-controls="collapseStart">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									Start
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseStart" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseAuto" aria-expanded="true" aria-controls="collapseAuto">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									auto
+									<span class="badge pull-right">15</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseAuto" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseGuide" aria-expanded="true" aria-controls="collapseGuide">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									Start
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseGuide" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNg" aria-expanded="true" aria-controls="collapseNg">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNg" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNgDirectives" aria-expanded="true" aria-controls="collapseNgDirectives">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng directives
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNgDirectives" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNgFilters" aria-expanded="true" aria-controls="collapseNgFilters">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng filters
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNgFilters" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" href="#collapseNgFunctions" aria-expanded="true" aria-controls="collapseNgFunctions">
+									<i class="fa fa-plus-square-o">&nbsp;</i>
+									ng functions
+									<span class="badge pull-right">4</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseNgFunctions" class="panel-collapse collapse" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+								<li class="list-group-item">Morbi leo risus</li>
+								<li class="list-group-item">Porta ac consectetur ac</li>
+								<li class="list-group-item">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading" role="tab">
+							<h4 class="panel-title">
+								扩展
+								<span class="badge pull-right">4</span>
+							</h4>
+						</div>
+						<div id="collapseNgFunctions" class="panel-collapse collapse in" role="tabpanel">
+							<ul class="list-group">
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_2/dict" target="_blank">Angular.js 1.2 速查词典</a></li>
+								<li class="list-group-item" class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_3/dict" target="_blank">Angular.js 1.3 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_4/dict" target="_blank">Angular.js 1.4 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_5/dict" target="_blank">Angular.js 1.5 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular1_6/dict" target="_blank">Angular.js 1.6 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular2/dict" target="_blank">Angular.js 2 速查词典</a></li>
+								<li class="list-group-item"><a href="https://www.w3cschool.cn/doc_angular4/dict" target="_blank">Angular.js 4 速查词典</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-offset-2 col-sm-9">
+				<div class="jumbotron text-center">
+					<img src="http://echarts.baidu.com/images/logo.png" height="120px" alt="">
+					<p><small>Angular 是一个开发平台。它能帮你更轻松的构建 Web 应用。</br>
+					Angular 集声明式模板、依赖注入、端到端工具和一些最佳实践于一身，为你解决开发方面的各种挑战。</br>
+				Angular 为开发者提升构建 Web、手机或桌面应用的能力。</small></p>
+				<ul class="list-inline" style="padding-top: 48px;margin-bottom: -30px">
+					<li><a href="https://angularjs.org/" target="_blank">官网/EN</a></li>
+					<li>|</li>
+					<li><a href="https://www.angular.cn" target="_blank">官网/ZH</a></li>
+					<li>|</li>
+					<li><a href="http://www.angularjs.net.cn/" target="_blank">中文网</a></li>
+					<li>|</li>
+					<li><a href="https://www.w3cschool.cn/angularjs/" target="_blank">W3Cschool</a></li>
+					<li>|</li>
+					<li><a href="https://www.runoob.com/angularjs/angularjs-tutorial.html" target="_blank">菜鸟教程</a></li>
+				</ul>
+			</div>
+			<div class="page-header" id="intro">
+				<h1>简介</h1>
+			</div>
+			<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+			<h4>什么是AngularJS？</h4>
+			<ul>
+				<li>AngularJS 是一个 JavaScript 框架。它可通过 &#60;script&#62; 标签添加到 HTML 页面。</li>
+				<li>AngularJS 通过 指令 扩展了 HTML，且通过 表达式 绑定数据到 HTML。</li>
+				<li>AngularJS是为了克服HTML在构建应用上的不足而设计的。</li>
+				<li>AngularJS 使得开发现代的单一页面应用程序（SPAs：Single Page Applications）变得更加容易。 </li>
+			</ul>
+			<h4>AngularJS模块目录</h4>
+			<table class="table">
+				<tbody>
+					<tr>
+						<td>ng (core module)</td>
+						<td>AngularJS的默认模块，包含AngularJS的所有核心组件</td>
+					</tr>
+					<tr>
+						<td>ngRoute</td>
+						<td>AgularJS的路由模块，你能使用ngRoute结合"#"定义你的地址访问。</td>
+					</tr>
+					<tr>
+						<td>ngAnimate</td>
+						<td>AngularJS的动画模块，使用ngAnimate各种核心指令能为你的应用程序提供动画效果。动画可使用css或者JavaScript回调函数。</td>
+					</tr>
+					<tr>
+						<td>ngAria</td>
+						<td>帮助制作 AngularJS 自定义组件的新模块。</td>
+					</tr>
+					<tr>
+						<td>ngResource</td>
+						<td>当查询和发送数据到一个REST 服务器时，使用ngResource模块。</td>
+					</tr>
+					<tr>
+						<td>ngCookies</td>
+						<td>ngCookies模块提供了一个方便的包用于读取和写入浏览器的cookies。</td>
+					</tr>
+					<tr>
+						<td>ngTouch</td>
+						<td>ngTouch模块提供触摸事件，方便的应用于移动触摸设备。它的实现是实现是基于jQuery移动触摸事件处理。</td>
+					</tr>
+					<tr>
+						<td>ngSanitize</td>
+						<td>使用ngSanitize可安全地解析和在你的应用程序中操作HTML数据。</td>
+					</tr>
+					<tr>
+						<td>ngMock</td>
+						<td>AngularJS的动画模块，使用ngAnimate各种核心指令能为你的应用程序提供动画效果。动画可使用css或者JavaScript回调函数。</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr>
+			<h2>ng services</h2>
+			<div class="page-header" id="localNotes">
+				<h1>ng services</h1>
+			</div>
+			<div class="thumbnail">
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+			</div>
+			<div class="thumbnail">
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+				<div class="caption">
+					<h3>$anchorScroll</h3>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+
+</body>
+</html>

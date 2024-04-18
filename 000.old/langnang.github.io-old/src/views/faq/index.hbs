@@ -1,0 +1,59 @@
+<div class="site">
+	<div class="page-title sp" style="background-color: beige">
+		<div class="container text-center">
+			<h2>FAQ’s</h2>
+			<p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+		</div>
+	</div>
+	<div class="faq-area-2 sp">
+		<div class="container">
+			<div class="row">
+				<ul class="nav nav-tabs nav-justified" role="tablist">
+					{{#each @root}}
+						{{#if data.total}}
+							<li role="presentation">
+								<a href="#faq_{{prefix}}" aria-controls="faq_{{prefix}}" role="tab" data-toggle="tab">
+									{{prefix}}
+									<span class="badge">{{data.total}}</span>
+								</a>
+							</li>
+						{{/if}}
+					{{/each}}
+				</ul>
+				<br />
+				<div class="tab-content">
+					{{#each @root}}
+						{{#if data.total}}
+							<div role="tabpanel" class="tab-pane" id="faq_{{prefix}}" data-prefix="{{prefix}}">
+								<div class="row">
+									<div class="col-md-9">
+										{{#each data.rows}}
+											<div class="single-faq">
+												<h2><span>{{index @index data.page data.size}}</span>{{title}}</h2>
+											</div>
+										{{/each}}
+									</div>
+									<div class="col-md-3">
+										<div class="faq-sidebar-wrap">
+											<ul class="faq-sidebar">
+												{{#each data.rows}}
+													<li>
+														<span>{{index @index data.page data.size}}.</span>{{title}}
+													</li>
+												{{/each}}
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="row" style="text-align: center;">
+									{{#pagination data.total data.size data.page}}{{/pagination}}
+								</div>
+							</div>
+						{{/if}}
+					{{/each}}
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>

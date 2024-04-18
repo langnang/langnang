@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller="htmlCtrl">
+<head>
+	<meta charset="UTF-8">
+	<title>BootCDN</title>
+	<link rel="icon" href="/resources/src/img/icon/tsora.png">
+	<script type="text/javascript" src="/resources/vendor/require/2.3.5/require.min.js"></script>
+	<script type="text/javascript" src="/resources/src/js/require-config.js"></script>
+	<script type="text/javascript" src="/grab-page-data/src/js/require-main.js"></script>
+
+	<link rel="stylesheet" href="/grab-page-data/src/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">BootCDN</h1>
+				<p class="alert alert-success" role="report">
+					稳定、快速、免费的前端开源项目 CDN 加速服务
+					<small>共收录了 3362 个前端开源项目</small>
+					<button class="btn btn-danger btn-xs pull-right" type="button" for="grabPageData">重新抓取</button>
+					<!-- <button class="btn btn-warning btn-xs pull-right" type="button" for="bugFeedback">BUG反馈</button> -->
+					<!-- <button class="btn btn-success btn-xs pull-right" type="button" for="developmentReport">开发报告</button> -->
+					<!-- <button class="btn btn-info btn-xs pull-right" type="button" for="logicalThinking">逻辑思路</button> -->
+				</p>
+				<form>
+					<div class="form-group has-success has-feedback" style="margin-bottom: 0px;">
+						<input type="text" class="form-control" id="inputSearch">
+						<span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+					</div>
+				</form>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						Cras justo odio
+					</a>
+					<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group-item">Morbi leo risus</a>
+					<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+					<a href="#" class="list-group-item">Vestibulum at eros</a>
+				</div>
+				<!-- <ul class="list-group" role="logicalThinking"  style="display: none;">
+					<li class="list-group-item">
+						提取[https://www.bootcdn.cn/all/]页面中所有插件名称、介绍、热度并存入到数据库
+						<span class="label label-success pull-right">Success</span>
+					</li>
+					<li class="list-group-item">
+						遍历数据库中数据进入详细页面获取插件版本、文件列表
+						<span class="label label-success pull-right">Success</span>
+					</li>
+				</ul>
+				<table class="table table-striped" role="developmentReport" style="display: none;">
+					<caption class="text-center h3">开发报告</caption>
+					<thead>
+						<tr>
+							<th class="text-center">开发步骤</th>
+							<th class="text-center">知识技术</th>
+							<th class="text-center">完成状态</th>
+							<th class="text-center">存在问题</th>
+						</tr>
+					</thead>
+					<tbody class="text-center">
+						<tr>
+							<td>由于AJAX跨域限制，选择使用PHP获取页面[/all]全部数据</td>
+							<td>PHP->>Filesystem函数</td>
+							<td>Success</td>
+							<td>None</td>
+						</tr>
+						<tr>
+							<td>遍历数据结果并获取相应页面中数据</td>
+							<td>PHP:Filesystem函数</td>
+							<td>Success</td>
+							<td>耗时较长</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped" role="bugFeedback" style="display: none;">
+					<caption class="text-center h3">BUG反馈</caption>
+					<thead>
+						<tr>
+							<th class="text-center">BUG描述</th>
+							<th class="text-center">状况分析</th>
+							<th class="text-center">操作步骤</th>
+							<th class="text-center">反馈结果</th>
+						</tr>
+					</thead>
+					<tbody class="text-center">
+						<tr>
+							<td>分页最后存在问题：第68页</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<ul role="grabPageData" style="display: none;">
+					<li>抓取all页面数据</li>
+					<li>遍历抓取详细页面数据</li>
+					<button ng-click="grabPageData()">重新抓取(预计耗时30:00:00)</button>
+				</ul> -->
+				<hr>
+			</div>
+		</div>
+	</div>
+
+	<!-- 页面内容 -->
+	<main class="container-fluid">
+		<div class="row">
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th class="text-center" ng-repeat="th in table.thead" ng-if="th!=='content'">{{th|uppercase}}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="(index,row) in table.tbody" ng-click="showContent(index)"" data-toggle="modal" data-target="#contentModal">
+						<th class="col-sm-1 text-center" scope="row">{{ row.id }}</th>
+						<td class="col-sm-2 text-center">{{ row.name }}</td>
+						<td class="col-sm-6">{{ row.description }}</td>
+						<td class="col-sm-1 text-center"><span class="glyphicon glyphicon-star">{{ row.heat }}</span></td>
+						<td class="col-sm-2 text-center">{{ row.time }}</td>
+					</tr>
+					<!-- <tr class="row" ng-repeat="(index,row) in table.tbody" ng-click="showContent(index)" data-toggle="modal" data-target="#contentModal">
+						<td class="col-sm-1" ng-repeat="th in table.thead" ng-if="th!=='content'&&th=='id'||th=='heat'">{{row[th]}}</td>
+						<td class="col-sm-2" ng-repeat="th in table.thead" ng-if="th!=='content'&&th=='name'||th=='time'">{{row[th]}}</td>
+						<td class="col-sm-6" ng-repeat="th in table.thead" ng-if="th!=='content'&&th=='description'">{{row[th]}}</td>
+						t
+					</tr> -->
+				</tbody>
+			</table>
+			<nav aria-label="Page navigation">
+				<ul class="pager">
+					<li class="previous disabled"><a href="#">第 {{ table.from }} 到 {{ table.to }} 条 {{ table.to / 50 |ceil}} 页</a></li>
+
+					<li ng-click="select_limit_data(1)"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+					<li ng-click="select_limit_data(table.to / 50 - 4 |ceil)" ng-if="table.to / 50 - 4 > 0"><a href="#">{{ table.to / 50 - 4 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.to / 50 - 3 |ceil)" ng-if="table.to / 50 - 3 > 0"><a href="#">{{ table.to / 50 - 3 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.to / 50 - 2 |ceil)" ng-if="table.to / 50 - 2 > 0"><a href="#">{{ table.to / 50 - 2 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.to / 50 - 1 |ceil)" ng-if="table.to / 50 - 1 > 0"><a href="#">{{ table.to / 50 - 1 |ceil}}</a></li>
+					<li class="active disabled"><a class="active" href="#">{{ table.to / 50 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.to / 50 + 1 |ceil)" ng-if="table.to / 50 + 1 <= table.page"><a href="#">{{ table.to / 50 + 1 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.to / 50 + 2 |ceil)" ng-if="table.to / 50 + 2 <= table.page"><a href="#">{{ table.to / 50 + 2 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.to / 50 + 3 |ceil)" ng-if="table.to / 50 + 3 <= table.page"><a href="#">{{ table.to / 50 + 3 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.to / 50 + 4 |ceil)" ng-if="table.to / 50 + 4 <= table.page"><a href="#">{{ table.to / 50 + 4 |ceil}}</a></li>
+					<li ng-click="select_limit_data(table.num /50 |ceil)"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></a></li>
+					<li class="next disabled"><a href="#">共 {{ table.num }} 条 {{ table.page }}页</a></li>
+				</ul>
+			</nav>
+
+		</div>
+		
+	</main>
+
+	<!-- Content Modal -->
+	<div class="modal fade" id="contentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title text-center text-info" id="myModalLabel">{{ content.name }}</h3>
+					<small>{{ content.description }}</small>
+				</div>
+				<div class="modal-body container-fluid">
+					<div class="row" ng-repeat="c in content.content">
+						<div class="col-sm-12 lead text-warning">{{ c.version }}</div>
+						<div class="row" ng-repeat="p in c.package">
+							<div class="col-sm-offset-1 col-sm-10" >
+								<p>{{ p }}</p>
+							</div>
+							<div class="col-sm-1"><span>copy</span></div>
+						</div>
+
+					</div>
+					
+				</div>
+				<div class="modal-footer">
+
+					<small class="text-muted pull-left">{{ content.time }}</small>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		require(["angular","initialize"],function(angular){
+
+			var htmlApp = angular.module('htmlApp', []);
+
+			htmlApp.config(function($httpProvider){
+				$httpProvider.defaults.headers.post = { 'Content-Type': 'application/x-www-form-urlencoded' }
+			});
+
+			htmlApp.filter("ceil", function () {
+				return function(number){
+					return Math.ceil(number);
+				}
+			});
+
+			var htmlCtrl=htmlApp.controller("htmlCtrl",function($scope,$http){
+				// var result=callAPI("/bootcdn/mysqli_select_all");
+				// console.log(result);
+
+			});
+			angular.bootstrap(document, ["htmlApp"]);
+		})
+		// require(["htmlApp",initialize"],function(htmlApp){
+		// 	var bodyCtrl=$("[ng-controller='bodyCtrl']");
+		// 	if(bodyCtrl.scope==undefined){
+		// 		location.reload();
+		// 	}
+		// 	// console.log(bodyCtrl.get);
+		// 	bodyCtrl.scope().title="BootCDN";
+		// 	bodyCtrl.scope().tbname="bootcdn";
+		// 	bodyCtrl.scope().grabPageData=function(){
+		// 		// console.log($);
+		// 		$.ajax({
+		// 			type:"get",
+		// 			url:"/resource/action/api/grab-data/bootcdn.php",
+		// 			success:function(data){
+		// 				// console.log(data);
+		// 			}
+		// 		})
+
+		// 	}
+		// 	bodyCtrl.scope().select_all_column_name();
+		// 	bodyCtrl.scope().select_all_data_count();
+		// 	bodyCtrl.scope().select_limit_data(1);
+		// 	bodyCtrl.scope().showContent=function(index){
+		// 		// console.log(index);
+		// 		// console.log(bodyCtrl.scope().table.tbody[index]);
+		// 		bodyCtrl.scope().content=bodyCtrl.scope().table.tbody[index];
+		// 		bodyCtrl.scope().content.content=$.parseJSON(bodyCtrl.scope().content.content);
+		// 	}
+		// 	// console.log(bodyCtrl.scope());
+
+		// })
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * @name Masonry
+ * @desc 瀑布流
+ */
+@media (min-width: 768px) {
+  .ln-masonry-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .ln-masonry-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .ln-masonry-container {
+    width: 1170px;
+  }
+}
+
+.ln-masonry-container .ln-row {
+  columns: 4;
+  column-gap: 30px;
+}
+.ln-masonry-container .ln-col {
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

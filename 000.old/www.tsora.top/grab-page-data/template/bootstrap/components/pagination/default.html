@@ -1,0 +1,20 @@
+<nav aria-label="Page navigation">
+  <ul class="pager">
+    <li class="previous disabled"><a href="#">第 {{ table.from }} 到 {{ table.to }} 条 {{ table.to / 50 |number:0}} 页</a></li>
+
+    <li ng-click="select_limit_data(1,'vendor_bootcdn')"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+    <li ng-click="select_limit_data(table.to / 50 - 4 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 - 4 > 0"><a href="#">{{ table.to / 50 - 4 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.to / 50 - 3 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 - 3 > 0"><a href="#">{{ table.to / 50 - 3 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.to / 50 - 2 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 - 2 > 0"><a href="#">{{ table.to / 50 - 2 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.to / 50 - 1 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 - 1 > 0"><a href="#">{{ table.to / 50 - 1 |number:0}}</a></li>
+    <li class="active disabled"><a class="active" href="#">{{ table.to / 50 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.to / 50 + 1 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 + 1 <= table.page"><a href="#">{{ table.to / 50 + 1 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.to / 50 + 2 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 + 2 <= table.page"><a href="#">{{ table.to / 50 + 2 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.to / 50 + 3 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 + 3 <= table.page"><a href="#">{{ table.to / 50 + 3 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.to / 50 + 4 |number:0,'vendor_bootcdn')" ng-if="table.to / 50 + 4 <= table.page"><a href="#">{{ table.to / 50 + 4 |number:0}}</a></li>
+    <li ng-click="select_limit_data(table.num /50 |number:0,'vendor_bootcdn')"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></a></li>
+    <li class="next disabled"><a href="#">共 {{ table.num }} 条 {{ table.page }}页</a></li>
+
+  </ul>
+</nav>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<link rel="icon" href="/resources/src/img/icon/tsora.png">
+	<script type="text/javascript" src="/resources/vendor/require/2.3.5/require.min.js"></script>
+	<script type="text/javascript" src="/resources/src/js/require-config.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<ul class="nav nav-pills nav-justified">
+				<li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">总览</a></li>
+				<li role="presentation"><a href="#navbar" aria-controls="navbar" role="tab" data-toggle="tab">导航栏</a></li>
+				<li role="presentation"><a href="#alert" aria-controls="alert" role="tab" data-toggle="tab">警告框</a></li>
+				<li role="presentation"><a href="#modal" aria-controls="modal" role="tab" data-toggle="tab">模态框</a></li>
+				<li role="presentation"><a href="#footer" aria-controls="footer" role="tab" data-toggle="tab">底部</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="overview">
+					<hr>
+					<div class="container">
+						<div class="row">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="inputEmail3" class="col-sm-2 control-label">导航栏</label>
+									<div class="col-sm-10">
+										<div class="btn-group btn-group-justified" data-toggle="buttons">
+											<label class="btn btn-default active">
+												<input type="radio" name="options" id="option1" autocomplete="off" checked> True
+											</label>
+											<label class="btn btn-default">
+												<input type="radio" name="options" id="option2" autocomplete="off"> False
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword3" class="col-sm-2 control-label">警告框</label>
+									<div class="col-sm-10">
+										<div class="btn-group" data-toggle="buttons">
+											<label class="btn btn-default active">
+												<input type="radio" name="options" id="option1" autocomplete="off" checked> True
+											</label>
+											<label class="btn btn-default">
+												<input type="radio" name="options" id="option2" autocomplete="off"> False
+											</label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="navbar">导航栏
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="alert">alert</div>
+				<div role="tabpanel" class="tab-pane" id="modal">modal</div>
+				<div role="tabpanel" class="tab-pane" id="footer">footer</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		require(["ini-default"],function(){
+
+		})
+	</script>
+</body>
+</html>

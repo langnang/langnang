@@ -1,0 +1,85 @@
+/**
+ * @name Button
+ * @desc 按钮
+ */
+.ln-btn {
+  padding: 8px 15px;
+
+  border-radius: 4px;
+  border-width: 1px;
+
+  font-size: 16px;
+  text-align: center;
+  /* 伪类 */
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    border-style: inset;
+  }
+
+  /* 样式类 */
+  &.is-plain {
+    background-color: transparent;
+  }
+
+  &.is-round {
+    border-radius: 9999px;
+  }
+
+  &.is-dashed {
+    border-style: dashed; /* 虚线 */
+  }
+
+  &.is-dotted {
+    border-style: dotted; /* 点线 */
+  }
+
+  &.is-double {
+    border-style: double; /* 双线 */
+  }
+
+  &.is-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    touch-action: none;
+  }
+
+  /* 色彩类 */
+  &.is-primary {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+  }
+
+  &.is-success {
+    color: #fff;
+    background-color: #67c23a;
+    border-color: #67c23a;
+  }
+
+  &.is-info {
+    color: #fff;
+    background-color: #909399;
+    border-color: #909399;
+  }
+
+  &.is-warning {
+    color: #fff;
+    background-color: #e6a23c;
+    border-color: #e6a23c;
+  }
+
+  &.is-danger {
+    color: #fff;
+    background-color: #f56c6c;
+    border-color: #f56c6c;
+  }
+
+  /* 特效类 */
+}
+
+
+
+

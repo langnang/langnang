@@ -1,0 +1,36 @@
+{
+  "name": "Grab Page Data",
+  "description": "自己编写网站数据抓取方法，抓取指定网站数据",
+  "update": "2018/9/28",
+  "basePath": "/grab-page-data",
+  "mySQL": {
+    "host": "localhost",
+    "username": "root",
+    "password": "",
+    "dbname": "tsora",
+    "port": "3306",
+    "state": "Success"
+  },
+  "mysql": {
+    "host": "localhost",
+    "username": "root",
+    "password": "",
+    "connect": "Success",
+    "dbname": "resources",
+    "dblist": [
+      "frame",
+      "grafana",
+      "information_schema",
+      "mysql",
+      "performance_schema",
+      "phpmyadmin",
+      "resources",
+      "tsora"
+    ],
+    "design": true
+  },
+  "alert":{
+    "type":"",
+    "message":""
+  }
+}

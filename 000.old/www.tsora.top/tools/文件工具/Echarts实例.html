@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Echarts实例</title>
+	<link rel="icon" href="/resources/src/img/icon/tsora.png">
+	<script type="text/javascript" src="/resources/vendor/require/2.3.5/require.min.js"></script>
+	<script type="text/javascript" src="/resources/src/js/require-config.js"></script>
+</head>
+<body>
+	<div class="container" id="bodyVue">
+		<div class="row" v-for="(type,index1) in echarts">
+			<div class="col-md-12">
+				<h1 class="text-center">Echarts实例</h1>
+				<hr>
+			</div>
+			<div class="col-md-12">
+				<h3>{{type.filename}}</h3>
+				<hr>
+			</div>
+			<div class="col-sm-3" v-for="(file,index2) in type.list">
+				<div class="thumbnail">
+					<div class="caption">
+						<h4 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+							<a href="#" v-on:click="show(index1,index2)">{{file.filename|filename}}</a>
+						</h4>
+						<a href="#" v-on:click="showInPic(index1,index2)"><i class="glyphicon glyphicon-picture"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		require(["initialize","bootstrap","vue"],function(ini,bootstrap,Vue){
+			var bodyVue=new Vue({
+				el:"#bodyVue",
+				data:{
+					echarts:[]
+				},
+				mounted:function(){
+					// console.log(this);
+					// console.log($.parseJSON(callAPI("fie","openfolder","/resources/data/echarts/")));
+					this.echarts=$.parseJSON(callAPI("fie","openfolder","/resources/data/echarts/"));
+					for(var i=0;i<=this.echarts.length-1;i++){
+						// console.log(this.echarts[i]);
+						this.echarts[i].list=$.parseJSON(callAPI("fie","openfolder","/resources/data/echarts/"+this.echarts[i].filename+"/"));
+					}
+
+				},
+				filters: {
+					filename: function (value) {
+						return value.substring(0,value.lastIndexOf(".js"));
+					}
+				},
+				methods:{
+					show:function(index1,index2){
+						// console.log(this.echarts[index1].filename);
+						// console.log(this.echarts[index1].list[index2].filename);
+						window.open("/tools/代码工具/Echarts代码测试工具.html?dir="+this.echarts[index1].filename+"&file="+this.echarts[index1].list[index2].filename);   
+					},
+					showInPic:function(index1,index2){
+						// console.log(this.echarts[index1].filename);
+						// console.log(this.echarts[index1].list[index2].filename);
+						window.open("/tools/辅助工具/Echarts显示无编辑器版.html?dir="+this.echarts[index1].filename+"&file="+this.echarts[index1].list[index2].filename);   
+					}
+				}
+			});
+			// var bodyVue=new Vue({
+			// 	el:".container",
+			// 	data:{
+			// 		echarts:[]
+			// 	},
+			// 	mounted:function(){
+			// 		$.ajax({
+			// 			type:"post",
+			// 			url:"/resource/action/api/files/opendir.php",
+			// 			data:{"dir":"/resource/data/echarts/"},
+			// 			dataType:"json",
+			// 			success:function(data){
+			// 				// console.log(data);
+			// 				// console.log(bodyVue.echarts);
+			// 				// console.log(this);
+			// 				bodyVue.echarts=data;
+			// 			}
+			// 		})
+			// 	}
+			// })
+
+			// var bodyVue=new Vue({
+			// 	el:".container",
+			// 	data:{
+			// 		echarts:[]
+			// 	},
+			// 	mounted:function(){
+			// 		$.ajax({
+			// 			type:"post",
+			// 			url:"/resource/action/api/files/opendir.php",
+			// 			data:{"dir":"/resource/data/echarts/"},
+			// 			dataType:"json",
+			// 			success:function(data){
+			// 				console.log(data);
+			// 			}
+			// 		})
+			// 	}
+			// })
+
+			
+		});
+	</script>
+</body>
+</html>

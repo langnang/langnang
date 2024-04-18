@@ -1,0 +1,46 @@
+{
+  "name": "vuepress",
+  "version": "develop",
+  "description": "",
+  "scripts": {
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang-temp/vuepress.git"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.9.7",
+    "@vuepress/plugin-back-to-top": "^1.9.7",
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/plugin-google-analytics": "^1.9.7",
+    "@vuepress/plugin-medium-zoom": "^1.9.7",
+    "@vuepress/plugin-nprogress": "^1.9.7",
+    "@vuepress/plugin-pwa": "^1.9.7",
+    "@vuepress/plugin-register-components": "^1.9.7",
+    "@vuepress/plugin-search": "^1.9.7",
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-chart": "^2.0.0-alpha.16",
+    "vuepress-plugin-clean-urls": "^1.1.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-code-switcher": "^1.1.0",
+    "vuepress-plugin-container": "^2.1.5",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-flowchart": "^1.5.0",
+    "vuepress-plugin-git-log": "^1.0.1",
+    "vuepress-plugin-mathjax": "^1.2.8",
+    "vuepress-plugin-merge-pages": "^1.4.0",
+    "vuepress-plugin-migrate": "^1.0.3",
+    "vuepress-plugin-schema2md": "^0.2.2",
+    "vuepress-plugin-table-of-contents": "^1.1.7"
+  },
+  "keywords": [],
+  "author": "Langnang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang-temp/vuepress/issues"
+  },
+  "homepage": "https://github.com/langnang-temp/vuepress#readme"
+}
