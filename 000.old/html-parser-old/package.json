@@ -1,0 +1,23 @@
+{
+  "name": "@langnang/html-parser",
+  "version": "0.0.1",
+  "description": "html parser",
+  "main": "src/core/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/html-parser.git"
+  },
+  "keywords": [
+    "html",
+    "parser"
+  ],
+  "author": "<langnang>",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/langnang/html-parser/issues"
+  },
+  "homepage": "https://github.com/langnang/html-parser#readme"
+}
