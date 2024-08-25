@@ -39,6 +39,23 @@
   --animate-repeat: 1;
 }
 
+/* container */
+.container {}
+
+.container-fluid {}
+
+.row {}
+
+.row-cols-1 {}
+
+.row-cols-2 {}
+
+.row-cols-3 {}
+
+.row-cols-4 {}
+
+.col {}
+
 /* margin */
 .mt-1,
 .my-1 {
@@ -71,6 +88,26 @@
   padding-top: 1rem !important;
 }
 
+/* width */
+.w\:1rem {}
+
+.w\:2rem {}
+
+.w\:3rem {}
+
+.w\:25v {}
+
+.w\:50v {}
+
+.w\:100v {}
+
+.w\:25pct {}
+
+.w\:50pct {}
+
+.w\:100pct {}
+
+/* height */
 
 /* screen */
 /* display */
@@ -126,3 +163,15 @@
   top: 0;
   z-index: 1020;
 }
+
+/* component:alert */
+.alert {}
+
+/* component:badge */
+.badge {}
+
+/* component:card */
+.card {}
+
+/* component:panel */
+.panel {}
