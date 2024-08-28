@@ -2,4 +2,4 @@
 
 namespace App\Support\Facades;
 
-class Pipeline {}
+class Env extends \App\Support\Facade {}
