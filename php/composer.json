@@ -1,0 +1,16 @@
+{
+  "name": "admin/langnang",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Module\\": "Module/"
+    }
+  },
+  "authors": [
+    {
+      "name": "langnang",
+      "email": "langnang.chen@outlook.com"
+    }
+  ],
+  "require": {}
+}
