@@ -2,7 +2,7 @@
 
 
 return [
-  "name" => "",
+  'name' => env('APP_NAME', 'Laravel'),
 
   "version" => "",
 

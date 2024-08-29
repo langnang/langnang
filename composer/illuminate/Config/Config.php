@@ -2,10 +2,14 @@
 
 namespace Illuminate\Config;
 
+/**
+ * 配置项
+ */
+
 class Config
 {
   public $_aliases = [];
-  function __construct()
+  function _autoload()
   {
     foreach (\glob(__DIR__ . '/../../config/*.php') as $file) {
       // var_dump($file);
