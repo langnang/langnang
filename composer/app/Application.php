@@ -6,10 +6,12 @@ class Application
 {
   public $alias = "app";
   public $_aliases = [];
-  function __construct()
+  function __construct($basePath = null)
   {
     // var_dump(__METHOD__);
-
+    if ($basePath) {
+      $this->setBasePath($basePath);
+    }
     // load core modules
     foreach (\glob(__DIR__ . '/../illuminate/*', GLOB_ONLYDIR) as $file) {
       // var_dump($file);
@@ -42,6 +44,19 @@ class Application
         $this->{$alias}->{__FUNCTION__}(...$arguments);
       }
     }
+  }
+  function setBasePath($basePath)
+  {
+    $this->basePath = rtrim($basePath, '\/');
+    return $this;
+  }
+  function resourcePath($path = '')
+  {
+    return $this->basePath . DIRECTORY_SEPARATOR . 'resources' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+  }
+  function databasePath($path = '')
+  {
+    return ($this->databasePath ?: $this->basePath . DIRECTORY_SEPARATOR . 'database') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
   }
   function singleton() {}
   function run()

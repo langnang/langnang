@@ -3,7 +3,7 @@
 
 $app = new \App\Application;
 
-require_once __DIR__ . '/functions.php';
+require_once __DIR__ . '/helpers.php';
 // require_once __DIR__ . '/tests.php';
 
 // var_dump($app);
