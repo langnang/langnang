@@ -12,7 +12,7 @@ class Facade
 
   static function __callStatic($name, $arguments)
   {
-    var_dump(__FUNCTION__, $name);
+    // var_dump(__FUNCTION__, $name);
     global $app;
     $alias = static::$alias;
     if (empty($alias)) {

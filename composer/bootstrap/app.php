@@ -3,10 +3,12 @@
 
 $app = new \App\Application;
 
+require_once __DIR__ . '/functions.php';
+// require_once __DIR__ . '/tests.php';
+
 // var_dump($app);
 $app->_autoload();
 
-require_once __DIR__ . '/functions.php';
 
 // var_dump(App\Core\Application::name());
 

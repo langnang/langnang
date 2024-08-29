@@ -39,6 +39,6 @@ if (!function_exists('app_path')) {
 if (!function_exists('app_path')) {
   function storage_path() {}
 }
-foreach (\glob(__DIR__ . '/../app/Illuminate/*/functions.php') as $file) {
+foreach (\glob(__DIR__ . '/../illuminate/*/functions.php') as $file) {
   require_once $file;
 }

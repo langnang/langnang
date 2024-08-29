@@ -11,11 +11,11 @@ class Application
     // var_dump(__METHOD__);
 
     // load core modules
-    foreach (\glob(__DIR__ . '/Illuminate/*', GLOB_ONLYDIR) as $file) {
+    foreach (\glob(__DIR__ . '/../illuminate/*', GLOB_ONLYDIR) as $file) {
       // var_dump($file);
       $filename = pathinfo($file)['filename'];
       // var_dump($filename);
-      $className = "\App\Illuminate\\$filename\\$filename";
+      $className = "\Illuminate\\$filename\\$filename";
 
       $class = new $className;
       // var_dump($class);

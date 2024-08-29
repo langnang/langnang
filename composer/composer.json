@@ -3,7 +3,8 @@
   "autoload": {
     "psr-4": {
       "App\\": "app/",
-      "Module\\": "Module/"
+      "Illuminate\\": "illuminate/",
+      "Modules\\": "Modules/"
     }
   },
   "authors": [
