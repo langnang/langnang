@@ -12,7 +12,7 @@ class Env
 
   function get($name = null)
   {
-    var_dump(__METHOD__);
+    // var_dump(__METHOD__);
     if (empty($name)) {
       return $this->_env;
     } else {
