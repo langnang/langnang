@@ -16,7 +16,7 @@ class View
 
 
     if (strpos($view, '::')) {
-      var_dump($view);
+      // var_dump($view);
       $keys = explode("::", $view);
       $module = $keys[0];
       $view = $keys[1];

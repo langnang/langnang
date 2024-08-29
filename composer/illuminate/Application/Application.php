@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Illuminate\Application;
 
 class Application
 {
@@ -8,16 +8,17 @@ class Application
   public $_aliases = [];
   function __construct($basePath = null)
   {
-    // var_dump(__METHOD__);
+    // var_dump(__FILE__);
+    // var_dump(__CLASS__);
     if ($basePath) {
       $this->setBasePath($basePath);
     }
     // load core modules
-    foreach (\glob(__DIR__ . '/../illuminate/*', GLOB_ONLYDIR) as $file) {
-      // var_dump($file);
+    foreach (\glob(__DIR__ . '/../*', GLOB_ONLYDIR) as $file) {
       $filename = pathinfo($file)['filename'];
       // var_dump($filename);
       $className = "\Illuminate\\$filename\\$filename";
+      if ($className == '\\' . __CLASS__) continue;
 
       $class = new $className;
       // var_dump($class);
@@ -45,6 +46,12 @@ class Application
       }
     }
   }
+  function path($path = '')
+  {
+    $appPath = $this->appPath ?: $this->basePath . DIRECTORY_SEPARATOR . 'app';
+
+    return $appPath . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+  }
   function setBasePath($basePath)
   {
     $this->basePath = rtrim($basePath, '\/');
@@ -54,10 +61,36 @@ class Application
   {
     return $this->basePath . DIRECTORY_SEPARATOR . 'resources' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
   }
+  function basePath($path = '')
+  {
+    return $this->basePath . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+  }
+
   function databasePath($path = '')
   {
     return ($this->databasePath ?: $this->basePath . DIRECTORY_SEPARATOR . 'database') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
   }
+  function publicPath()
+  {
+    return $this->basePath . DIRECTORY_SEPARATOR . 'public';
+  }
+  function langPath()
+  {
+    if ($this->langPath) {
+      return $this->langPath;
+    }
+
+    if (is_dir($path = $this->resourcePath() . DIRECTORY_SEPARATOR . 'lang')) {
+      return $path;
+    }
+
+    return $this->basePath() . DIRECTORY_SEPARATOR . 'lang';
+  }
+  function configPath($path = '')
+  {
+    return $this->basePath . DIRECTORY_SEPARATOR . 'config' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+  }
+
   function singleton() {}
   function run()
   {
@@ -66,12 +99,15 @@ class Application
 
   function __call($name, $arguments)
   {
+    if (method_exists($this, $name)) {
+      return $this->{$name}(...$arguments);
+    }
     if (in_array($name, $this->_aliases)) {
       if (method_exists($this->{$name}, 'get')) {
         return $this->{$name}->{'get'}(...$arguments);
       }
     }
-    var_dump(__METHOD__, $name, $arguments);
+    // var_dump(__METHOD__, $name, $arguments);
   }
 
   static function __callStatic($name, $arguments)

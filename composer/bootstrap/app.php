@@ -1,14 +1,17 @@
 <?php
 
+require_once __DIR__ . '/../vendor/autoload.php';
 
-$app = new \App\Application;
+$app = new Illuminate\Application\Application(
+  $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
+);
 
-require_once __DIR__ . '/helpers.php';
-// require_once __DIR__ . '/tests.php';
+require_once __DIR__ . '/../illuminate/Application/helpers.php';
+// require_once __DIR__ . '/../illuminate/Application/tests.php';
 
 // var_dump($app);
-$app->_autoload();
 
+$app->_autoload();
 
 // var_dump(App\Core\Application::name());
 

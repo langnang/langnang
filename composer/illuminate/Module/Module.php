@@ -7,26 +7,32 @@ class Module
   public $_aliases = [];
   function _autoload()
   {
+    // var_dump(config('modules.paths.modules'));
+    // var_dump(resource_path());
+    // var_dump(base_path('modules'));
     // var_dump(__METHOD__);
-    foreach (\glob(__DIR__ . '/../../modules/*', GLOB_ONLYDIR) as $module) {
-      // config
-      $filename = pathinfo($module)['filename'];
-      // var_dump($filename);
-      $config = require_once $module . '/Config/config.php';
-      // var_dump($config);
-      if (isset($config['alias'])) $alias = $config['alias'];
-      else $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}_${2}', $filename));
+    foreach ((array)config('modules.paths.modules') as $path) {
 
-      $config['name'] = $filename;
-      $config['alias'] = $alias;
+      foreach (\glob($path . '/*', GLOB_ONLYDIR) as $module) {
+        // config
+        $filename = pathinfo($module)['filename'];
+        // var_dump($filename);
+        $config = require_once $module . '/Config/config.php';
+        // var_dump($config);
+        if (isset($config['alias'])) $alias = $config['alias'];
+        else $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}_${2}', $filename));
 
-      array_push($this->_aliases, $alias);
-      \app('config')->set($alias, $config);
+        $config['name'] = $filename;
+        $config['alias'] = $alias;
 
-      // routes
-      foreach (\glob($module . '/Routes/*.php') as $route) {
-        // var_dump($route);
-        require_once $route;
+        array_push($this->_aliases, $alias);
+        \app('config')->set($alias, $config);
+
+        // routes
+        foreach (\glob($module . '/Routes/*.php') as $route) {
+          // var_dump($route);
+          require_once $route;
+        }
       }
     }
   }
