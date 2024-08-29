@@ -24,7 +24,16 @@ class View
         return !empty($v);
       }));
       if (!empty($dir)) $dir .= '/';
-      $file = __DIR__ . '/../../modules/' . config($module . '.name') . '/Views/' . $dir . $view . '.php';
+
+      foreach ((array)config('modules.paths.modules') as $path) {
+        foreach (\glob($path . '/*', GLOB_ONLYDIR) as $modulePath) {
+          $filename = pathinfo($modulePath)['filename'];
+          if ($filename == config($module . '.name')) {
+            // require_once $module . '/Http/Controllers/' . pathinfo($func[0])['filename'] . '.php';
+            $file = $modulePath . '/Views/' . $dir . $view . '.php';
+          }
+        }
+      }
     } else {
       $dir = implode("-", array_filter([\config('view.template'), \config('view.theme'), \config('view.layout')], function ($v) {
         return !empty($v);

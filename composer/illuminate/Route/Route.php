@@ -28,6 +28,19 @@ class Route extends AdjustUri
       if (sizeof($func) == 0) {
         throw new \Error("Error route $uri callback");
       } else {
+        $moduleAlias = array_slice(preg_split('/\\\|\//', $func[0]), 2, 1)[0];
+        foreach ((array)config('modules.paths.modules') as $path) {
+          foreach (\glob($path . '/*', GLOB_ONLYDIR) as $modulePath) {
+            $filename = pathinfo($modulePath)['filename'];
+            if ($filename == $moduleAlias) {
+              // var_dump($path);
+              // var_dump($module);
+              // var_dump($filename);
+              require_once $modulePath . '/Http/Controllers/' . pathinfo($func[0])['filename'] . '.php';
+            }
+          }
+        }
+
         // require_once __DIR__ . '/../../' . strtolower(substr($func[0], 1, 1)) . str_replace("\\", '/', substr($func[0], 2))  . '.php';
         return (new $func[0])->{$func[1]}(app('request'));
       }

@@ -34,7 +34,10 @@ return [
         |
         */
 
-    'modules' => base_path('modules'),
+    'modules' => [
+      base_path('modules'),
+      base_path('../../41000.simple/projects/WebSpider/composer/langnang-modules'),
+    ],
     /*
         |--------------------------------------------------------------------------
         | Modules assets path

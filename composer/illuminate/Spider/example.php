@@ -1,6 +1,6 @@
 <?php
 
-use App\Illuminate\Spider\Facades\Spider;
+use Illuminate\Spider\Facades\Spider;
 
 $spider = Spider::_init($config);
 

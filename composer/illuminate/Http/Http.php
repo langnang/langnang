@@ -4,7 +4,10 @@ namespace Illuminate\Http;
 
 class Http
 {
-
+  function __set($name, $value)
+  {
+    $this->{$name} = $value;
+  }
   const VERSION = '2.0.1';
 
   public $ch = null;

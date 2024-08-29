@@ -1279,7 +1279,7 @@ class Spider
         $link = $return;
     }
 
-    request()->__set('input_encoding', null);
+    http()->__set('input_encoding', null);
     $html = $this->request_url($url, $link);
     // var_dump($html);
     //记录速度较慢域名花费抓取时间 20180213
@@ -1424,44 +1424,44 @@ class Spider
 
     // 设置了编码就不要让requests去判断了
     if (isset($this->configs['input_encoding'])) {
-      request()->__set('input_encoding', $this->configs['input_encoding']);
+      http()->__set('input_encoding', $this->configs['input_encoding']);
     }
     // 得到的编码如果不是utf-8的要转成utf-8, 因为xpath只支持utf-8
-    request()->output_encoding = 'utf-8';
-    request()->set_timeout($this->configs['timeout']);
-    request()->set_useragent($this->configs['user_agent']);
+    http()->output_encoding = 'utf-8';
+    http()->set_timeout($this->configs['timeout']);
+    http()->set_useragent($this->configs['user_agent']);
 
     // 先删除伪造IP
-    request()->del_client_ip();
+    http()->del_client_ip();
     // 是否设置了伪造IP
     if ($this->configs['client_ip']) {
-      request()->set_client_ip($this->configs['client_ip']);
+      http()->set_client_ip($this->configs['client_ip']);
     }
 
     // 先删除代理，免得前一个URL的代理被带过来了
-    request()->del_proxy();
+    http()->del_proxy();
     // 是否设置了代理
     if ($link['proxy']) {
-      request()->set_proxy($link['proxy']);
+      http()->set_proxy($link['proxy']);
     }
 
     // 如何设置了 HTTP Headers
     if (!empty($link['headers'])) {
       foreach ($link['headers'] as $k => $v) {
-        request()->set_header($k, $v);
+        http()->set_header($k, $v);
       }
     }
     // 限制 http 请求模式为 get 或 post
     $method = trim(strtolower($link['method']));
     $method = ($method == 'post') ? 'post' : 'get';
     $params = empty($link['params']) ? array() : $link['params'];
-    $html = request()->{$method}($url, $params);
+    $html = http()->{$method}($url, $params);
     // 此url附加的数据不为空, 比如内容页需要列表页一些数据, 拼接到后面去
     if ($html && !empty($link['context_data'])) {
       $html .= $link['context_data'];
     }
 
-    $http_code = request()->status_code;
+    $http_code = http()->status_code;
 
     // 请求完成 host 的并发计数减 1 2018-5 BY KEN <a-site@foxmail.com>
     if ($this->configs['max_task_per_host'] > 0) {
@@ -1482,15 +1482,15 @@ class Spider
     if ($http_code != 200) {
       // 如果是301、302跳转, 抓取跳转后的网页内容
       if ($http_code == 301 || $http_code == 302) {
-        $info = request()->info;
+        $info = http()->info;
         //if (isset($info['redirect_url']))
         if (!empty($info['redirect_url'])) {
           $url = $info['redirect_url'];
-          request()->__set('input_encoding', null);
+          http()->__set('input_encoding', null);
 
           $method = empty($link['method']) ? 'get' : strtolower($link['method']);
           $params = empty($link['params']) ? array() : $link['params'];
-          $html = request()->method($url, $params);
+          $html = http()->method($url, $params);
           // 有跳转的就直接获取就好，不要调用自己，容易进入死循环
           //$html = $this->request_url($url, $link);
           if ($html && !empty($link['context_data'])) {
@@ -1971,10 +1971,10 @@ class Spider
             // log::debug("Find attached content page: {$collect_url}");
             $link['url'] = $collect_url;
             $link = $this->link_uncompress($link);
-            request()->__set('input_encoding', null);
+            http()->__set('input_encoding', null);
             $method = empty($link['method']) ? 'get' : strtolower($link['method']);
             $params = empty($link['params']) ? array() : $link['params'];
-            $html = request()->method($url, $params);
+            $html = http()->method($url, $params);
             //$html = $this->request_url($collect_url, $link);
             // 在一个attached_url对应的网页下载完成之后调用. 主要用来对下载的网页进行处理.
             if ($this->on_download_attached_page) {
