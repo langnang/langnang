@@ -42,7 +42,6 @@ class Router
   function get($uri, $func)
   {
     if (!empty($this->_prefix)) $uri = $this->_prefix . '/' . $uri;
-    var_dump($this->_prefix);
     if (!isset($this->_routes[$uri])) $this->_routes[$uri] = [];
     $this->_routes[$uri]['GET'] = $func;
   }
