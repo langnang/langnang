@@ -13,6 +13,6 @@ if (!function_exists('curl_file_create')) {
 if (!function_exists('request')) {
   function request($name = null)
   {
-    return app(__FUNCTION__);
+    return app(__METHOD__);
   }
 }

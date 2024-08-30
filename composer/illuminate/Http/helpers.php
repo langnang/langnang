@@ -2,6 +2,6 @@
 if (!function_exists('http')) {
   function http($name = null)
   {
-    return app(__FUNCTION__);
+    return app(__METHOD__);
   }
 }

@@ -400,7 +400,7 @@ class Spider
   {
     // 产生时钟云，解决php7下面ctrl+c无法停止bug
     declare(ticks=1);
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     // 先打开以显示验证报错内容
     // log::$log_show = true;
     // log::$log_file = isset($configs['log_file']) ? $configs['log_file'] : PATH_DATA . '/phpspider.log';
@@ -546,7 +546,7 @@ class Spider
    */
   public function add_url($url, $options = array(), $depth = 0)
   {
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     // 投递状态
     $status = false;
     //限制最大子域名数量
@@ -901,7 +901,7 @@ class Spider
 
   public function start()
   {
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     $this->parse_command();
 
     // var_dump($this->configs);
@@ -970,7 +970,7 @@ class Spider
 
     if (!empty($this->configs['export'])) {
       $this->export_type = isset($this->configs['export']['type']) ? $this->configs['export']['type'] : '';
-      // var_dump(['function' => __FUNCTION__, 'export_type' => $this->export_type]);
+      // var_dump(['function' => __METHOD__, 'export_type' => $this->export_type]);
       if ($this->export_type == 'csv') {
         // util::put_file($this->export_file, // util::format_csv($fields) . "\n", FILE_APPEND);
       } elseif ($this->export_type == 'sql') {
@@ -1132,7 +1132,7 @@ class Spider
 
   public function do_collect_page()
   {
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     // var_dump($this->queue_lsize());
     while ($queue_lsize = $this->queue_lsize()) {
       // var_dump($queue_lsize);
@@ -1202,7 +1202,7 @@ class Spider
    */
   public function collect_page()
   {
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     //减少非必要 queue_lsize 查询 20180214
     if (isset($this->configs['log_type']) and strstr($this->configs['log_type'], 'info')) {
       // var_dump($this->configs['log_type']);
@@ -1222,13 +1222,13 @@ class Spider
     }
     //顺序提取任务，先进先出(当配置 queue_order = rand ，先进先出无效，都为随机提取任务)
     $link = $this->queue_rpop();
-    // var_dump(__FUNCTION__, $link);
+    // var_dump(__METHOD__, $link);
     if (empty($link)) {
       // log::warn('Task(' . $this->taskid . ') Get Task link Fail...Stand By...');
       return false;
     }
     $link = $this->link_uncompress($link);
-    // var_dump(__FUNCTION__, $link);
+    // var_dump(__METHOD__, $link);
     if (empty($link['url'])) {
       // log::warn('Task(' . $this->taskid . ') Get Task url Fail...Stand By...');
       return false;
@@ -1420,7 +1420,7 @@ class Spider
    */
   public function request_url($url, $link = array())
   {
-    // var_dump(__FUNCTION__, $url, $link);
+    // var_dump(__METHOD__, $url, $link);
     $time_start = microtime(true);
 
     //$url = "http://www.qiushibaike.com/article/117568316";
@@ -1540,7 +1540,7 @@ class Spider
    */
   public function get_urls($html, $collect_url, $depth = 0)
   {
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     //--------------------------------------------------------------------------------
     // 正则匹配出页面中的URL
     //--------------------------------------------------------------------------------
@@ -1847,7 +1847,7 @@ class Spider
    */
   public function get_html_fields($html, $url, $page, $fields = null)
   {
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     $fields = empty($fields) ? $this->get_fields($this->configs['fields'], $html, $url, $page) : $fields;
 
 
@@ -1868,7 +1868,7 @@ class Spider
           $fields = $return;
         }
       }
-      // var_dump([__FUNCTION__, $fields, $this->configs['export']]);
+      // var_dump([__METHOD__, $fields, $this->configs['export']]);
 
       if (isset($fields) && is_array($fields)) {
         $fields_num = $this->incr_fields_num();
@@ -1900,7 +1900,7 @@ class Spider
           $fields[$this->configs['export']['spider_original_url_column']] = $page['url'];
         if (!empty($this->configs['export'])) {
           $this->export_type = isset($this->configs['export']['type']) ? $this->configs['export']['type'] : '';
-          // var_dump([__FUNCTION__, $this->export_type]);
+          // var_dump([__METHOD__, $this->export_type]);
           if ($this->export_type == 'csv') {
             // util::put_file($this->export_file, // util::format_csv($fields) . "\n", FILE_APPEND);
           } elseif ($this->export_type == 'sql') {
@@ -2213,7 +2213,7 @@ class Spider
    */
   public function check_export()
   {
-    // var_dump(__FUNCTION__);
+    // var_dump(__METHOD__);
     // 如果设置了导出选项
     if (!empty($this->configs['export'])) {
       if ($this->export_type == 'csv') {
