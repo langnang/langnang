@@ -9,8 +9,10 @@ trait LifeCycleMethods
   function _autoload(...$arguments)
   {
     if (empty(config('config'))) {
-      $_config = require_once __DIR__ . '/../Config/config.php';
-      $this->aliases['config'] = $_config;
+      $config = require_once __DIR__ . '/../Config/config.php';
+      $config['name'] = "Config";
+      $config['alias'] = "config";
+      $this->aliases['config'] = $config;
     }
     foreach (config('config.paths.configs') as $path) {
       // var_dump($path);
@@ -24,6 +26,8 @@ trait LifeCycleMethods
 
         $alias = $config['alias'] ?? \Str::snake($filename, '-');
         // var_dump($alias);
+        $config['name'] = $filename;
+        $config['alias'] = $alias;
         $this->aliases[$alias] = $config;
       }
     }

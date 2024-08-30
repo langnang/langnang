@@ -14,10 +14,12 @@ trait LifeCycleMethods
     // var_dump(config('config'));
 
     // var_dump(__METHOD__);
-    $routes = [];
-    $controllers = [];
+    $routePaths = [];
+    $configPaths = [];
+    $controllerPaths = [];
     foreach ((array)config('module.paths.modules') as $path) {
       // var_dump($path);
+      array_push($configPaths, $path);
       foreach (\glob($path . DIRECTORY_SEPARATOR . '*', GLOB_ONLYDIR) as $module) {
         // var_dump($module);
         // config
@@ -40,7 +42,7 @@ trait LifeCycleMethods
 
         \Config::set('controller.paths.aliases.' . 'Modules\\' . $filename, $module . DIRECTORY_SEPARATOR . 'Http' . DIRECTORY_SEPARATOR . 'Controllers');
 
-        array_push($routes, $module . DIRECTORY_SEPARATOR . 'Routes');
+        array_push($routePaths, $module . DIRECTORY_SEPARATOR . 'Routes');
 
         // array_push($controllers, $module . DIRECTORY_SEPARATOR . 'Http' . DIRECTORY_SEPARATOR . 'Controllers');
 
@@ -60,7 +62,8 @@ trait LifeCycleMethods
     }
     // var_dump(config('route.paths.routes'));
     // var_dump($routes);
-    \Config::set('route.paths.routes', array_merge(config('route.paths.routes'), $routes));
+    \Config::set('route.paths.routes', array_merge(config('route.paths.routes'), $routePaths));
+    \Config::set('config.paths.configs', array_merge(config('config.paths.configs'), $configPaths));
     // var_dump(config('route.paths.routes'));
     // \Config::set('controller.paths.controllers', array_merge(config('controller.paths.controllers'), $controllers));
     // var_dump(config('controller.paths.controllers'));
