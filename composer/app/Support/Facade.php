@@ -88,6 +88,6 @@ class Facade
 
   function __debugInfo()
   {
-    var_dump(__METHOD__);
+    // var_dump(__METHOD__);
   }
 }

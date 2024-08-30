@@ -11,8 +11,8 @@ trait LifeCycleMethods
   function _autoload(...$arguments)
   {
     foreach ($this->aliases as $alias => $illuminate) {
-      if (method_exists($illuminate, __METHOD__)) {
-        $illuminate->{__METHOD__}(...$arguments);
+      if (method_exists($illuminate, __FUNCTION__)) {
+        $illuminate->{__FUNCTION__}(...$arguments);
       }
     }
   }

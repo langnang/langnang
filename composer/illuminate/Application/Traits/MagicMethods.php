@@ -25,7 +25,7 @@ trait MagicMethods
       // var_dump($class);
 
       if (isset($class->alias)) $alias = $class->alias;
-      else $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}_${2}', $filename));
+      else $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}-${2}', $filename));
 
       $class->alias = $alias;
 
@@ -122,6 +122,6 @@ trait MagicMethods
 
   function __debugInfo()
   {
-    var_dump(__METHOD__);
+    // var_dump(__METHOD__);
   }
 }

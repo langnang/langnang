@@ -9,8 +9,9 @@ Route::get('', function (Request $request) {
 });
 
 
-Route::get('/123123', function () {
-  echo "123";
+Route::get('/test', function () {
+  require_once base_path('illuminate\\Application\\tests.php');
+  View::make('404', ['title' => "404"]);
 });
 Route::get('*', function () {
   View::make('404', ['title' => "404"]);
