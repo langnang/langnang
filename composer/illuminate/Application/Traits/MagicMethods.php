@@ -17,7 +17,7 @@ trait MagicMethods
       // var_dump($filename);
       $className = "Illuminate\\$filename\\$filename";
 
-      class_alias("Illuminate\\$filename\Facades\\$filename", $filename);
+      \class_alias("Illuminate\\$filename\Facades\\$filename", $filename);
 
       if ($className == __CLASS__) continue;
 
@@ -33,7 +33,7 @@ trait MagicMethods
 
       // array_push($this->_aliases, $alias);
 
-      $this->{$alias} = $class;
+      // $this->{$alias} = $class;
       // var_dump($class);
     }
 

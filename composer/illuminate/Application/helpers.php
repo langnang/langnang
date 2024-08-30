@@ -8,7 +8,7 @@ if (!function_exists('app')) {
   {
     global $app;
     if (empty($name)) return $app;
-    return $app->{$name};
+    return $app->aliases[$name];
   }
 }
 
