@@ -36,7 +36,7 @@ return [
 
     'modules' => [
       base_path('modules'),
-      base_path('../../41000.simple/projects/WebSpider/composer/langnang-modules'),
+      base_path('..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '41000.simple' . DIRECTORY_SEPARATOR . 'projects' . DIRECTORY_SEPARATOR . 'WebSpider' . DIRECTORY_SEPARATOR . 'composer' . DIRECTORY_SEPARATOR . 'langnang-modules'),
     ],
     /*
         |--------------------------------------------------------------------------
@@ -58,7 +58,7 @@ return [
         |
         */
 
-    'migration' => base_path('database/migrations'),
+    'migration' => base_path('database' . DIRECTORY_SEPARATOR . 'migrations'),
     /*
         |--------------------------------------------------------------------------
         | Generator path

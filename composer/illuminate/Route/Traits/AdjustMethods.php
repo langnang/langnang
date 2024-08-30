@@ -1,13 +1,12 @@
 <?php
 
-namespace Illuminate\Route\Abstracts;
+namespace Illuminate\Route\Traits;
 
-use Illuminate\Str\Facades\Str;
 
 /**
  * 矫正URI
  */
-abstract class AdjustUri
+trait AdjustMethods
 {
   /**
    * 以`/`开头，不以`/`结尾
@@ -20,7 +19,7 @@ abstract class AdjustUri
     $uri = rtrim($uri, '/');
     // if (Str::endsWith($uri, '/')) $uri = substr($uri, 0, -1);
 
-    if (!Str::startsWith($uri, "/")) $uri = '/' . $uri;
+    if (!\Str::startsWith($uri, "/")) $uri = '/' . $uri;
 
     if (!empty($this->_prefix)) {
       $uri = $this->_prefix .  $uri;

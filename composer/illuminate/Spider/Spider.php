@@ -7,6 +7,9 @@ use \Illuminate\Request\Request;
 use \Illuminate\Selector\Selector;
 use \Illuminate\DB\Facades\DB;
 
+/**
+ * 
+ */
 class Spider
 {
 

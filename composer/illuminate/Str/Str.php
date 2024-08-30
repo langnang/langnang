@@ -11,6 +11,16 @@ use Illuminate\ASCII\Facades\ASCII;
  */
 class Str implements StrInterface
 {
+  /**
+   * 返回字符串中指定值之后的所有内容。如果字符串中不存在这个值，它将返回整个字符串
+   */
+  function after($subject, $search)
+  {
+    return $search === '' ? $subject : array_reverse(explode($search, $subject, 2))[0];
+  }
+  /**
+   * 将字符串转换为 ASCII 值
+   */
   function ascii($value, $language = 'en')
   {
     return ASCII::to_ascii((string) $value, $language);
@@ -24,7 +34,7 @@ class Str implements StrInterface
    */
   function endsWith($value, $end)
   {
-    return substr($value, -strlen($start)) == $end;
+    return substr($value, -strlen($end)) == $end;
   }
   function lower($value)
   {

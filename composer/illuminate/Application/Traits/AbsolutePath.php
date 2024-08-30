@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Application\Abstracts;
+namespace Illuminate\Application\Traits;
 
-abstract class AbsolutePath
+trait AbsolutePath
 {
   function path($path = '')
   {
