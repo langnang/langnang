@@ -3,7 +3,7 @@
 namespace Illuminate\Route;
 
 use Closure;
-use Illuminate\Route\AdjustUri;
+use Illuminate\Route\Abstracts\AdjustUri;
 use Illuminate\Str\Facades\Str;
 
 class Route extends AdjustUri

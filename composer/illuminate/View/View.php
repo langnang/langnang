@@ -4,8 +4,6 @@ namespace Illuminate\View;
 
 class View
 {
-  public $alias = "view";
-
   function render($template)
   {
     echo $template;
@@ -13,7 +11,9 @@ class View
 
   function make($view, $data = [], $mergeData = [])
   {
+    $alias = $this->alias;
 
+    var_dump($alias);
 
     if (strpos($view, '::')) {
       // var_dump($view);
@@ -26,7 +26,9 @@ class View
       if (!empty($dir)) $dir .= '/';
 
       foreach ((array)config('modules.paths.modules') as $path) {
+        var_dump($path);
         foreach (\glob($path . '/*', GLOB_ONLYDIR) as $modulePath) {
+          var_dump($modulePath);
           $filename = pathinfo($modulePath)['filename'];
           if ($filename == config($module . '.name')) {
             // require_once $module . '/Http/Controllers/' . pathinfo($func[0])['filename'] . '.php';
@@ -41,6 +43,8 @@ class View
       if (!empty($dir)) $dir .= '/';
       $file = __DIR__ . '/../../views/' . $dir . $view . '.php';
     }
+
+    var_dump($file);
     if (!file_exists($file)) throw new \Error("file $file not exists");
     $data = array_merge($data, $mergeData);
     foreach ($data as $key => $value) {

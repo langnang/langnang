@@ -14,9 +14,9 @@ class Module
     // var_dump(base_path('modules'));
     // var_dump(__METHOD__);
     foreach ((array)config('modules.paths.modules') as $path) {
-      // var_dump($path);
+      var_dump($path);
       foreach (\glob($path . '/*', GLOB_ONLYDIR) as $module) {
-        // var_dump($module);
+        var_dump($module);
         // config
         $filename = pathinfo($module)['filename'];
         // var_dump($filename);

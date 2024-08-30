@@ -4,13 +4,21 @@ namespace Illuminate\DB;
 
 class DB
 {
-
+  public $alias = 'db';
   public $configs = array();
   public $rsid;
   public $links = array();
   public $link_name = 'default';
   public $autocommiting = false;
 
+  function _autoload()
+  {
+    var_dump(config('database'));
+    $config = config('database.connections.' . config('database.default'));
+
+    var_dump($config);
+    // var_dump($this->alias);
+  }
   function _init()
   {
     // 获取配置

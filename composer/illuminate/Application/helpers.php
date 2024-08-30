@@ -63,6 +63,12 @@ if (!function_exists('storage_path')) {
     return app('path.storage') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
   }
 }
+if (!function_exists('absolute_path')) {
+  function absolute_path($path = '') {}
+}
+if (!function_exists('relative_path')) {
+  function relative_path($path = '') {}
+}
 foreach (\glob(__DIR__ . '/../*/helpers.php') as $file) {
   if (array_slice(preg_split('/\\\|\//', $file), -2, 1)[0] == 'Application') continue;
   require_once $file;

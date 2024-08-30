@@ -2,12 +2,23 @@
 
 namespace Illuminate\Str;
 
+use Illuminate\Str\Interfaces\StrInterface;
+use Illuminate\Support\Stringable;
+use Illuminate\ASCII\Facades\ASCII;
+
 /**
  * 辅助函数：字符串
  */
-class Str
+class Str implements StrInterface
 {
-  public $_str = '';
+  function ascii($value, $language = 'en')
+  {
+    return ASCII::to_ascii((string) $value, $language);
+  }
+  function of($value)
+  {
+    return new Stringable($value);
+  }
   /**
    * 判断指定字符串是否为给定值的结尾
    */
@@ -24,8 +35,27 @@ class Str
    */
   function markdown($value)
   {
-    var_dump(__METHOD__);
     return markdown_to_html($value);
+  }
+  function slug($value, $delimiter = '-', $language = 'en')
+  {
+    $value = $language ? $this->ascii($value, $language) : $value;
+
+    // Convert all dashes/underscores into delimiter
+    $flip = $delimiter === '-' ? '_' : '-';
+
+    $value = preg_replace('![' . preg_quote($flip) . ']+!u', $delimiter, $value);
+
+    // Replace @ with the word 'at'
+    $value = str_replace('@', $delimiter . 'at' . $delimiter, $value);
+
+    // Remove all characters that are not the delimiter, letters, numbers, or whitespace.
+    $value = preg_replace('![^' . preg_quote($delimiter) . '\pL\pN\s]+!u', '', $this->lower($value));
+
+    // Replace all delimiter characters and whitespace by a single delimiter
+    $value = preg_replace('![' . preg_quote($delimiter) . '\s]+!u', $delimiter, $value);
+
+    return trim($value, $delimiter);
   }
   /**
    * 将驼峰的函数名或者字符串转换成 _ 命名的函数或者字符串
