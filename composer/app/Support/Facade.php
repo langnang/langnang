@@ -70,22 +70,12 @@ class Facade
     var_dump(__FUNCTION__);
   }
 
-  function __unserialize()
-  {
-    var_dump(__FUNCTION__);
-  }
-
   function __toString()
   {
     var_dump(__FUNCTION__);
   }
 
   function __invoke()
-  {
-    var_dump(__FUNCTION__);
-  }
-
-  function __set_state()
   {
     var_dump(__FUNCTION__);
   }

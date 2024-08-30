@@ -105,22 +105,12 @@ trait MagicMethods
     var_dump(__METHOD__);
   }
 
-  function __unserialize()
-  {
-    var_dump(__METHOD__);
-  }
-
   function __toString()
   {
     var_dump(__METHOD__);
   }
 
   function __invoke()
-  {
-    var_dump(__METHOD__);
-  }
-
-  function __set_state()
   {
     var_dump(__METHOD__);
   }
