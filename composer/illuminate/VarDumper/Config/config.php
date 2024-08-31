@@ -33,7 +33,7 @@ return [
       ],
       "dumper" => [
         "details" => [
-          "open" => true,
+          "open" => false,
         ],
         "styles" => [
           "container" => [

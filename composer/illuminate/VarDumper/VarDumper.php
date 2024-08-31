@@ -16,7 +16,7 @@ class VarDumper
       switch (gettype($arg)) {
         case "array":
         case "object":
-          $return .= "<details" . ($this->theme('details.open') === true ? ' open' : '') . "><summary><font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font></summary>";
+          $return .= "<details open><summary><font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font></summary>";
           break;
         default:
           $return .= "<font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font>";
@@ -40,7 +40,7 @@ class VarDumper
         $properties = $reflection->getProperties();
         $size = count($properties);
         // var_dump($class, $reflection, $properties, $size);
-        $return = ($depth == 0 ? "" : "\n") . "<details" . ($this->theme('details.open') === true ? ' open' : '') . "><summary><font style='" . $this->getElementStyles('summary') . "'>" . str_repeat("   ", $depth) . "  <font style='" . $this->getElementStyles('object_type') . "'><b>object</b>($class)[" . $size . "]</font></font></summary>";
+        $return = ($depth == 0 ? "" : "\n") . "<details" . ($this->theme('details.open') === true || $depth === 0 ? ' open' : '') . "><summary><font style='" . $this->getElementStyles('summary') . "'>" . str_repeat("   ", $depth) . "  <font style='" . $this->getElementStyles('object_type') . "'><b>object</b>($class)[" . $size . "]</font></font></summary>";
         foreach ($properties as $property) {
           // var_dump($property->getValue($value));
           // $return .= "\n";
@@ -52,20 +52,20 @@ class VarDumper
             $return .= str_repeat("   ", $depth + 1) . "<i>private</i>" . $property->getName() . "' => "  . $this->print_type($property->getValue($value), $depth + 1);
           }
           $return .= "\n";
-          $return .= "</details>";
         }
+        $return .= "</details>";
         break;
 
       case 'array':
         if ($depth > $max_depth) return;
-        $return .= ($depth == 0 ? "" : "\n") . "<details" . ($this->theme('details.open') === true ? ' open' : '') . "><summary><font style='" . $this->getElementStyles('summary') . "'>" .  str_repeat("   ", $depth) . "  <font style='" . $this->getElementStyles('array_type') . "'><b>array</b> <i>(size=" . count($value) . ")</i> </font></font></summary>";
+        $return .= ($depth == 0 ? "" : "\n") . "<details" . ($this->theme('details.open') === true || $depth === 0 ? ' open' : '') . "><summary><font style='" . $this->getElementStyles('summary') . "'>" .  str_repeat("   ", $depth) . "  <font style='" . $this->getElementStyles('array_type') . "'><b>array</b> <i>(size=" . count($value) . ")</i> </font></font></summary>";
         if (count($value) == 0) {
           $return .=  str_repeat("   ", $depth + 1) . "<i><font style='" . $this->getElementStyles('empty') . "'>empty</font></i>";
         } else if ($depth == $max_depth) {
           $return .= str_repeat("   ", $depth + 1) . " ...";
         } else {
           foreach ($value as $k => $v) {
-            $return .=   str_repeat("   ", $depth + 1) . (is_int($k) ? ("<font style='" . $this->getElementStyles('array_key') . "'>$k</font>") : ("'<font style='" . $this->getElementStyles('array_key') . "'>$k</font>'")) . " => " . $this->print_type($v, $depth + 1);
+            $return .= str_repeat("   ", $depth + 1) . (is_int($k) ? ("<font style='" . $this->getElementStyles('array_key') . "'>$k</font>") : ("'<font style='" . $this->getElementStyles('array_key') . "'>$k</font>'")) . " => " . $this->print_type($v, $depth + 1);
             $return .= "\n";
           }
         }
