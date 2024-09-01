@@ -16,7 +16,10 @@ class VarDumper
       switch (gettype($arg)) {
         case "array":
         case "object":
-          $return .= "<details open><summary><font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font></summary>";
+          $return .= "<details open>"
+            . "<summary>"
+            . "<font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font>"
+            . "</summary>";
           break;
         default:
           $return .= "<font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font>";
@@ -40,7 +43,11 @@ class VarDumper
         $properties = $reflection->getProperties();
         $size = count($properties);
         // var_dump($class, $reflection, $properties, $size);
-        $return = ($depth == 0 ? "" : "\n") . "<details" . ($this->theme('details.open') === true || $depth === 0 ? ' open' : '') . "><summary><font style='" . $this->getElementStyles('summary') . "'>" . str_repeat("   ", $depth) . "  <font style='" . $this->getElementStyles('object_type') . "'><b>object</b>($class)[" . $size . "]</font></font></summary>";
+        $return = ($depth == 0 ? "" : "\n") .
+          "<details" . ($this->theme('details.open') === true || $depth === 0 ? ' open' : '') . ">" . "<summary>" . "<font style='" . $this->getElementStyles('summary') . "'>" . str_repeat("   ", $depth)
+          . "  <font style='" . $this->getElementStyles('object_type') . "'><b>object</b>($class)[" . $size . "]</font>"
+          . "</font>"
+          . "</summary>";
         foreach ($properties as $property) {
           // var_dump($property->getValue($value));
           // $return .= "\n";
