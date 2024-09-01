@@ -27,6 +27,7 @@ trait MagicMethods
       if (isset($class->alias)) $alias = $class->alias;
       else $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}-${2}', $filename));
 
+      $class->name = $filename;
       $class->alias = $alias;
 
       $this->aliases[$alias] = $class;

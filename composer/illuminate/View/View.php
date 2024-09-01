@@ -59,6 +59,7 @@ class View
     foreach ($data as $key => $value) {
       $$key = $value;
     }
+    unset($alias, $data, $keys, $view, $path, $mergeData, $value);
     // var_dump($file);
     require_once $file;
   }

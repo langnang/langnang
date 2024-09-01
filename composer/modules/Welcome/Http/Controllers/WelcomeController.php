@@ -10,7 +10,12 @@ class WelcomeController
    */
   public function index()
   {
-    return view('welcome::index');
+    return view('welcome::index', [
+      'title' => "Welcome",
+      "illuminates" => app()->aliases,
+      "modules" => module()
+      // "modules"=>
+    ]);
   }
 
   /**

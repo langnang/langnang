@@ -5,9 +5,8 @@ use Illuminate\Route\Facades\Route;
 use Illuminate\View\Facades\View;
 
 Route::get('', function (Request $request) {
-  view('index', ['title' => "Langnang"]);
+  view('index', ['title' => "Welcome"]);
 });
-
 
 Route::get('/test', function () {
   require_once base_path('illuminate\\Application\\tests.php');
