@@ -18,6 +18,7 @@ trait LifeCycleMethods
       // var_dump($path);
       foreach (\glob($path . '/*/Config/config.php') as $file) {
         $filename = pathinfo(dirname(dirname($file)))['filename'];
+        if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'])) continue;
         // var_dump($file);
         // var_dump($filename);
         $config = require_once $file;

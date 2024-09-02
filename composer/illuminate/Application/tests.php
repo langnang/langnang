@@ -1,5 +1,7 @@
 <?php
-var_dump(app()->aliases);
+if (false) {
+  var_dump(app()->aliases);
+}
 // 
 if (false) {
   foreach (\glob(dirname(__DIR__) . '/*', GLOB_ONLYDIR) as $dir) {
