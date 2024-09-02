@@ -14,6 +14,9 @@ trait MagicMethods
     // load core modules
     foreach (\glob(__DIR__ . DIRECTORY_SEPARATOR . '../../*', GLOB_ONLYDIR) as $file) {
       $filename = pathinfo($file)['filename'];
+
+      if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'])) continue;
+
       // var_dump($filename);
       $className = "Illuminate\\$filename\\$filename";
 
