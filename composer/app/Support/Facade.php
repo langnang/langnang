@@ -17,7 +17,8 @@ class Facade
     $alias = static::$alias;
     if (empty($alias)) {
       // var_dump(static::class);
-      $filename = pathinfo(static::class)['filename'];
+      $filename = array_slice(explode("\\", static::class), -1)[0];
+      // var_dump($filename);
       // var_dump($filename);
       // $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}_${2}', $filename));
       $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}-${2}', $filename));

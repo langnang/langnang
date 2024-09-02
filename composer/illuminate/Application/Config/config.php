@@ -9,4 +9,8 @@ return [
 
   "version" => "",
 
+  "illuminates" => [
+    "ignores" => []
+  ],
+
 ];
