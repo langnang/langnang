@@ -9,5 +9,8 @@ namespace Illuminate\Traitor;
  * 
  * Trait 和 Class 相似，但仅仅旨在用细粒度和一致的方式来组合功能。
  * 无法通过 trait 自身来实例化。它为传统继承增加了水平特性的组合；也就是说，应用的几个 Class 之间不需要继承。
+ * 
+ * @name
+ * @description
  */
 class Traitor {}
