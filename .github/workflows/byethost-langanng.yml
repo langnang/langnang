@@ -48,5 +48,5 @@ jobs:
             **/.git*/**
             **/.github*/**
             **/node_modules/**
-            **/Account/**
-            **/Artisan/**
+            **/illuminate/Account/**
+            **/illuminate/Artisan/**
