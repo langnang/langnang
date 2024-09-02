@@ -61,6 +61,7 @@ class View
     }
     unset($alias, $data, $keys, $view, $path, $mergeData, $value);
     // var_dump($file);
+    $rusage = getrusage(0);
     require_once $file;
   }
 }

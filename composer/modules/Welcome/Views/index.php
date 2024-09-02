@@ -25,7 +25,16 @@
           <div class="card">
             <div class="card-body p-3">
               <h5><?php _e($illuminate->name) ?> <small><i>(<?php _e($illuminate->alias) ?>)</i></small></h5>
-              <p><a href="">Class</a> <a href="">Facade</a></p>
+              <p class="small mb-0">
+                <a href="#<?php _e($illuminate->alias) ?>.adapter">Adapter</a>
+                <a href="#<?php _e($illuminate->alias) ?>.class">Class</a>
+                <a href="#<?php _e($illuminate->alias) ?>.config">Config</a>
+                <a href="#<?php _e($illuminate->alias) ?>.contract">Contract</a>
+                <a href="#<?php _e($illuminate->alias) ?>.driver">Driver</a>
+                <a href="#<?php _e($illuminate->alias) ?>.facade">Facade</a>
+                <a href="#<?php _e($illuminate->alias) ?>.interface">Interface</a>
+                <a href="#<?php _e($illuminate->alias) ?>.trait">Trait</a>
+              </p>
             </div>
           </div>
         </div>
@@ -38,12 +47,22 @@
           <div class="card">
             <div class="card-body p-3">
               <h5><?php _e($module['name']) ?> <small><i>(<?php _e($module['alias']) ?>)</i></small></h5>
-              <p><a href="">Class</a> <a href="">Facade</a></p>
+              <p class="small mb-0">
+                <a href="#<?php _e($module['alias']) ?>.adapter">Adapter</a>
+                <a href="#<?php _e($module['alias']) ?>.class">Class</a>
+                <a href="#<?php _e($module['alias']) ?>.config">Config</a>
+                <a href="#<?php _e($module['alias']) ?>.contract">Contract</a>
+                <a href="#<?php _e($module['alias']) ?>.driver">Driver</a>
+                <a href="#<?php _e($module['alias']) ?>.facade">Facade</a>
+                <a href="#<?php _e($module['alias']) ?>.interface">Interface</a>
+                <a href="#<?php _e($module['alias']) ?>.trait">Trait</a>
+              </p>
             </div>
           </div>
         </div>
       <?php endforeach; ?>
     </div>
+    <?php require_once __DIR__ . '/footer.php' ?>
   </div>
 
   <script crossorigin="anonymous" src="https://unpkg.com/jquery@3.7.1/dist/jquery.slim.min.js"></script>
