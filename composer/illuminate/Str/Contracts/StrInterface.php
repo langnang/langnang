@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Str\Interfaces;
+namespace Illuminate\Str\Contracts;
 
 interface StrInterface
 {

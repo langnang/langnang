@@ -2,4 +2,7 @@
 
 namespace Illuminate\Validator;
 
-class Validator {}
+class Validator
+{
+  function make() {}
+}

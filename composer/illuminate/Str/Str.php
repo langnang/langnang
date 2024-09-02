@@ -9,7 +9,7 @@ use Illuminate\ASCII\Facades\ASCII;
 /**
  * 辅助函数：字符串
  */
-class Str implements StrInterface
+class Str implements Contracts\StrInterface
 {
   /**
    * 返回字符串中指定值之后的所有内容。如果字符串中不存在这个值，它将返回整个字符串

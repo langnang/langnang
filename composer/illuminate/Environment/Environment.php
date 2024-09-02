@@ -1,13 +1,14 @@
 <?php
 
-namespace Illuminate\Env;
+namespace Illuminate\Environment;
 
-class Env
+class Environment
 {
+  public $alias = 'env';
   public $_env = [];
   function __construct()
   {
-    $this->_env = parse_ini_file(__DIR__ . '/../../.env');
+    $this->_env = $_ENV;
   }
 
   function get($name = null)
