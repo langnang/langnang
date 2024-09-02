@@ -51,7 +51,6 @@ class View
     if (!\Str::endsWith($path, DIRECTORY_SEPARATOR)) $path .= DIRECTORY_SEPARATOR;
     // var_dump($path);
     $file = $path . implode(DIRECTORY_SEPARATOR, explode('.', $view)) . '.php';
-    // var_dump($file);
     if (!file_exists($file)) throw new \Error("file $file not exists");
 
     $data = array_merge($data, $mergeData);
