@@ -48,9 +48,7 @@ jobs:
             **/.git*/**
             **/.github*/**
             **/node_modules/**
-            **/illuminate/ASCII/**
             **/illuminate/Account/**
-            **/illuminate/Application/**
             **/illuminate/Arr/**
             **/illuminate/Artisan/**
             **/illuminate/Auth/**
@@ -61,19 +59,15 @@ jobs:
             **/illuminate/Cache/**
             **/illuminate/Collection/**
             **/illuminate/Command/**
-            **/illuminate/Config/**
             **/illuminate/Console/**
             **/illuminate/Container/**
             **/illuminate/Contract/**
             **/illuminate/Controller/**
             **/illuminate/Cookie/**
             **/illuminate/Crypt/**
-            **/illuminate/DB/**
-            **/illuminate/Database/**
             **/illuminate/Date/**
             **/illuminate/Dump/**
             **/illuminate/Eloquent/**
-            **/illuminate/Environment/**
             **/illuminate/Event/**
             **/illuminate/File/**
             **/illuminate/FileSystem/**
@@ -99,9 +93,7 @@ jobs:
             **/illuminate/Queue/**
             **/illuminate/RateLimiter/**
             **/illuminate/Redirect/**
-            **/illuminate/Request/**
             **/illuminate/Response/**
-            **/illuminate/Route/**
             **/illuminate/Schedule/**
             **/illuminate/Schema/**
             **/illuminate/Seeder/**
@@ -109,12 +101,9 @@ jobs:
             **/illuminate/Session/**
             **/illuminate/Spider/**
             **/illuminate/Storage/**
-            **/illuminate/Str/**
             **/illuminate/Traitor/**
             **/illuminate/URL/**
             **/illuminate/Usage/**
             **/illuminate/User/**
             **/illuminate/Validator/**
-            **/illuminate/VarDumper/**
-            **/illuminate/View/**
             **/illuminate/Yielder/**
