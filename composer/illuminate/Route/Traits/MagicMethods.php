@@ -8,9 +8,4 @@ trait MagicMethods
   {
     $this->{$name} = $value;
   }
-
-  function __destruct()
-  {
-    $this->_run();
-  }
 }

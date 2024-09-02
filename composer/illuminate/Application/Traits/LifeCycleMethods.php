@@ -18,8 +18,12 @@ trait LifeCycleMethods
   }
 
 
-  function _run()
+  function _run(...$arguments)
   {
-    // $this->router->run();
+    foreach ($this->aliases as $alias => $illuminate) {
+      if (method_exists($illuminate, __FUNCTION__)) {
+        $illuminate->{__FUNCTION__}(...$arguments);
+      }
+    }
   }
 }

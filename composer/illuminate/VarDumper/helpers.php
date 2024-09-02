@@ -5,7 +5,6 @@ if (!function_exists('_dump')) {
   {
     foreach (debug_backtrace() as $trace) {
       if ($trace['function'] == __FUNCTION__) {
-        var_dump(app('var-dumper'));
         app('var-dumper')->print($trace);
       }
     }

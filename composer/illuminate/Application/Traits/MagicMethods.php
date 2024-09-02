@@ -63,12 +63,6 @@ trait MagicMethods
     var_dump(__METHOD__, $name, $arguments);
   }
 
-  function __destruct()
-  {
-    // var_dump(__METHOD__);
-    $this->_run();
-  }
-
   function __get($name)
   {
     // var_dump(__METHOD__, $name);

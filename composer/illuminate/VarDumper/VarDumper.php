@@ -18,14 +18,16 @@ class VarDumper
         case "object":
           $return .= "<details open>"
             . "<summary>"
-            . "<font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font>"
-            . "</summary>";
+            . "<font style='" . $this->getElementStyles('summary') . "'> $file: $line: </font>"
+            . "</summary>"
+            . $this->print_type($arg)
+            . "</details>";
           break;
         default:
-          $return .= "<font style='" . $this->getElementStyles('summary') . "'> $file:$line:</font>";
+          $return .= "<font style='" . $this->getElementStyles('summary') . "'> $file: $line: </font>";
           break;
       }
-      $return .= $this->print_type($arg) . "</details></pre>";
+      $return .=  "</pre>";
     }
     echo $return;
   }

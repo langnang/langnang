@@ -30,11 +30,6 @@ class Facade
     return app($alias)->{$name}(...$arguments);
   }
 
-  function __destruct()
-  {
-    var_dump(__METHOD__);
-  }
-
   function __get($name)
   {
     var_dump(__METHOD__, $name);

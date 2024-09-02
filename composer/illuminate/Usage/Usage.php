@@ -69,7 +69,7 @@ class Usage
     return memory_get_peak_usage();
   }
 
-  function __destruct()
+  function _run()
   {
     if (config('this.print')) $this->print();
   }
