@@ -18,6 +18,7 @@ trait LifeCycleMethods
       // var_dump($path);
       foreach (\glob($path . '/*/Config/config.php') as $file) {
         $filename = basename(dirname(dirname($file)));
+
         if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'])) continue;
         // var_dump($file);
         // var_dump($filename);
@@ -29,6 +30,7 @@ trait LifeCycleMethods
         // var_dump($alias);
         $config['name'] = $filename;
         $config['alias'] = $alias;
+
         $this->aliases[$alias] = $config;
       }
     }

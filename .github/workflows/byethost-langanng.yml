@@ -62,7 +62,6 @@ jobs:
             **/illuminate/Console/**
             **/illuminate/Container/**
             **/illuminate/Contract/**
-            **/illuminate/Controller/**
             **/illuminate/Cookie/**
             **/illuminate/Crypt/**
             **/illuminate/Date/**

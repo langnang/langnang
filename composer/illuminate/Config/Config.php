@@ -16,7 +16,7 @@ class Config
 
   function get($key = null)
   {
-    var_dump(__METHOD__, $key);
+    // var_dump(__METHOD__, $key);
     if (empty($key)) {
       return $this->aliases;
       // return array_reduce($this->aliases, function ($return, $alias) {
@@ -46,8 +46,8 @@ class Config
         // var_dump($path);
         $filename = basename($path);
         // var_dump($filename);
-        foreach ($this->aliases as $config) {
-          var_dump($config);
+        foreach ($this->aliases as $alias => $config) {
+          // var_dump([$alias, $config]);
           // if(!isset($config['name']) $config['name']=$;
           if ($config['name'] == $filename) break;
         }
