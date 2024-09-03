@@ -6,7 +6,7 @@ trait LifeCycleMethods
 {
   function _run()
   {
-    $uri = $this->adjust_uri($_SERVER['PATH_INFO'] ?? "/");
+    $uri = $this->adjust_uri($_SERVER['REQUEST_URI'] ?? "/");
     $method = $_SERVER['REQUEST_METHOD'];
     if (array_key_exists($uri, $this->_routes) && array_key_exists($method, $this->_routes[$uri])) {
       $func = $this->_routes[$uri][$method];
