@@ -47,6 +47,7 @@ class Config
         $filename = basename($path);
         // var_dump($filename);
         foreach ($this->aliases as $config) {
+          // if(!isset($config['name']) $config['name']=$;
           if ($config['name'] == $filename) break;
         }
         // var_dump($alias, $config);

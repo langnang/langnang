@@ -83,7 +83,6 @@ jobs:
             **/illuminate/Markdown/**
             **/illuminate/Migration/**
             **/illuminate/Model/**
-            **/illuminate/Module/**
             **/illuminate/Notification/**
             **/illuminate/Paginator/**
             **/illuminate/Password/**
