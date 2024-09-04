@@ -2,6 +2,8 @@
 
 namespace Modules\Manual\Http\Controllers;
 
+use Illuminate\Request\Request;
+
 class ManualController
 {
   /**
@@ -17,7 +19,25 @@ class ManualController
       // "modules"=>
     ]);
   }
-
+  public function alias(Request $request, $alias, $file = 'index')
+  {
+    // dump($alias, $dir);
+    $title = app($alias)->name;
+    if (empty($title)) return view('404');
+    // dump($dir);
+    $path = base_path("illuminate\\$title\index.md");
+    if (!file_exists($path)) return view('404');
+    // dump([$path]);
+    $markdown = file_get_contents($path);
+    // dump([$path, $markdown]);
+    $html = \Markdown::make($markdown, []);
+    // var_dump([$path, $markdown, $html]);
+    return view('manual::alias', [
+      "title" => $title,
+      "markdown" => $markdown,
+      "html" => $html,
+    ]);
+  }
   /**
    * Show the form for creating a new resource.
    * @return Renderable

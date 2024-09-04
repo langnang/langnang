@@ -2,4 +2,8 @@
 
 namespace Illuminate\URL;
 
-class URL {}
+class URL
+{
+
+  function make() {}
+}

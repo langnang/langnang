@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bootstrap v4</title>
+  <title>Welcome</title>
 
   <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
   <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.min.css">
@@ -17,7 +17,16 @@
 
 <body>
   <div id="app" class="container">
-    <h1 class="text-center">404</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/manual">Maual</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><?php _e($title) ?></li>
+      </ol>
+    </nav>
+
+    <?php _e($html) ?>
+
+    <?php require_once __DIR__ . '/footer.php' ?>
   </div>
 
   <script crossorigin="anonymous" src="https://unpkg.com/jquery@3.7.1/dist/jquery.slim.min.js"></script>

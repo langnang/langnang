@@ -8,4 +8,6 @@ trait MagicMethods
   {
     $this->{$name} = $value;
   }
+
+  function __log() {}
 }

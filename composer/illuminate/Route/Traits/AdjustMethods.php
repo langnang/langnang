@@ -21,11 +21,21 @@ trait AdjustMethods
 
     if (!\Str::startsWith($uri, "/")) $uri = '/' . $uri;
 
-    if (!empty($this->_prefix)) {
-      $uri = $this->_prefix .  $uri;
+    if (!empty($this->prefix)) {
+      $uri = $this->prefix .  $uri;
       $uri = rtrim($uri, '/');
     }
+    if (preg_match_all("/{(\w+)}/", $uri, $params)) {
+      // dump([$uri, preg_match_all("/{(\w+)}/", $uri, $params)]);
+      // dump([$params]);
+      $pattern = '';
+      $pattern = str_replace($params[0], array_fill(0, count($params[0]), "(\w+)"), $uri);
+    }
 
-    return $uri;
+    return [
+      'uri' => $uri,
+      'pattern' => isset($pattern) ? $pattern : null,
+      'params' => $params[1]
+    ];
   }
 }

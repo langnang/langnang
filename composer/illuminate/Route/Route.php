@@ -3,25 +3,30 @@
 namespace Illuminate\Route;
 
 use Closure;
-use Illuminate\Route\Abstracts\AdjustUri;
-use Illuminate\Str\Facades\Str;
 
 class Route
 {
-  public $_prefix;
-  public $_routes = [];
+  public $prefix;
+  public $routes = [];
 
   use Traits\MagicMethods;
   use Traits\LifeCycleMethods;
   use Traits\AdjustMethods;
 
+  function make() {}
+
   function match($methods, $uri, $func)
   {
     foreach ($methods as $method) {
-      $method = strtolower($method);
-      if (!method_exists($this, $method)) continue;
-      $this->{$method}($uri, $func);
+      $method = strtoupper($method);
+      if (!in_array($method, ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'])) continue;
+      $uri = $this->adjust_uri($uri);
+      if (!isset($this->routes[$uri['uri']])) $this->routes[$uri['uri']] = $uri;
+      $this->routes[$uri['uri']][$method] = [
+        "function" => $func
+      ];
     }
+    return $this;
   }
   function any($uri, $func)
   {
@@ -29,27 +34,19 @@ class Route
   }
   function get($uri, $func)
   {
-    $uri = $this->adjust_uri($uri);
-    if (!isset($this->_routes[$uri])) $this->_routes[$uri] = [];
-    $this->_routes[$uri]['GET'] = $func;
+    return $this->match([__FUNCTION__], $uri, $func);
   }
   function post($uri, $func)
   {
-    $uri = $this->adjust_uri($uri);
-    if (!isset($this->_routes[$uri])) $this->_routes[$uri] = [];
-    $this->_routes[$uri]['POST'] = $func;
+    return $this->match([__FUNCTION__], $uri, $func);
   }
   function put($uri, $func)
   {
-    $uri = $this->adjust_uri($uri);
-    if (!isset($this->_routes[$uri])) $this->_routes[$uri] = [];
-    $this->_routes[$uri]['PUT'] = $func;
+    return $this->match([__FUNCTION__], $uri, $func);
   }
   function patch($uri, $func)
   {
-    $uri = $this->adjust_uri($uri);
-    if (!isset($this->_routes[$uri])) $this->_routes[$uri] = [];
-    $this->_routes[$uri]['patch'] = $func;
+    return $this->match([__FUNCTION__], $uri, $func);
   }
   // static function __callStatic($name, $arguments)
   // {
@@ -59,13 +56,13 @@ class Route
   function prefix($prefix)
   {
     $prefix = $this->adjust_uri($prefix);
-    $this->_prefix = rtrim($prefix, '/');
+    $this->prefix = rtrim($prefix['uri'], '/');
     return $this;
   }
   function group($callback)
   {
     $closure = Closure::bind($callback, $this);
     $closure();
-    $this->_prefix = null;
+    $this->prefix = null;
   }
 }

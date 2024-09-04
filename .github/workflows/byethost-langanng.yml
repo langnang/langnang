@@ -79,7 +79,6 @@ jobs:
             **/illuminate/Js/**
             **/illuminate/Log/**
             **/illuminate/Mail/**
-            **/illuminate/Markdown/**
             **/illuminate/Migration/**
             **/illuminate/Model/**
             **/illuminate/Notification/**

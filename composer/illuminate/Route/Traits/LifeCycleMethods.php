@@ -4,17 +4,66 @@ namespace Illuminate\Route\Traits;
 
 trait LifeCycleMethods
 {
+  /**
+   * 
+   */
   function _run()
   {
-    $uri = $this->adjust_uri($_SERVER['REQUEST_URI'] ?? "/");
+    $uri = strtolower($this->adjust_uri($_SERVER['REQUEST_URI'] ?? "/")['uri']);
+
     $method = $_SERVER['REQUEST_METHOD'];
-    if (array_key_exists($uri, $this->_routes) && array_key_exists($method, $this->_routes[$uri])) {
-      $func = $this->_routes[$uri][$method];
-    } else if (array_key_exists("/*", $this->_routes)) {
-      $func = $this->_routes["/*"][$method];
-    } else {
-      $func = function () {};
+
+    // dump([$uri, $method, preg_match("/{(.+)}/", $uri, $match)]);
+
+    // dump([$uri, preg_match('/^\/manual\/(\\w+)$/', $uri)]);
+    // $func = '';
+    if (array_key_exists($uri, $this->routes) && array_key_exists($method, $this->routes[$uri])) {
+      // $func = $route[$method]['function'];
+      $route = $this->routes[$uri][$method];
     }
+    if (empty($route)) {
+      foreach ($this->routes as $route) {
+        // 匹配请求方法
+        if (!array_key_exists($method, $route)) continue;
+        // 精准匹配
+        if ($route['uri'] === $uri) {
+          $route = $route[$method];
+          // 模糊匹配
+        } else if (!empty($route['pattern'])) {
+          // dump('/^' . htmlspecialchars($route['pattern']) . '$/');
+          // dump($pattern = $route['pattern']);
+          $pattern = '/^' . str_replace('/', '\/', $route['pattern']) . '$/';
+          if (preg_match($pattern, $uri, $params)) {
+            $route = $route[$method];
+            $route['args'] = array_slice($params, 1,);
+            // dump($args);
+            break;
+          }
+          // dump($pattern = preg_quote($pattern));
+          // dump($pattern = str_replace('/', '\/', $pattern));
+          // dump(preg_match_all('/^' . $pattern . '$/', $uri,));
+          // dump(str_replace('/', '\/', preg_quote($route['pattern'])), preg_match_all('/^' . preg_quote($route['pattern']) . '$/', $uri,));
+          // dump($route['pattern'], preg_match_all(htmlspecialchars($route['pattern']), $uri,));
+          // if (preg_match_all($route['pattern'], $uri, $args)) {
+          // dump($args);
+          // }
+        }
+      }
+    }
+    // dump($route);
+    unset($pattern);
+    // 未匹配到路由
+    if (empty($route)) {
+      if (array_key_exists("/*", $this->routes)) {
+        $route = $this->routes["/*"][$method];
+      }
+    }
+    if (empty($route)) {
+      $route = [
+        'function' => function () {}
+      ];
+    }
+    $func = $route['function'];
 
     if (is_string($func)) $func = explode("@", $func);
 
@@ -62,7 +111,7 @@ trait LifeCycleMethods
         // }
 
         // require_once __DIR__ . '/../../' . strtolower(substr($func[0], 1, 1)) . str_replace("\\", '/', substr($func[0], 2))  . '.php';
-        return (new $func[0])->{$func[1]}(app('request'));
+        return (new $func[0])->{$func[1]}(app('request'), ...$route['args'] ?? []);
       }
     }
 
@@ -73,7 +122,6 @@ trait LifeCycleMethods
   }
 
   function _init() {}
-
   function _autoload()
   {
     foreach (config('route.paths.routes') as $path) {

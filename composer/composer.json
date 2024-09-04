@@ -12,8 +12,5 @@
       "name": "langnang",
       "email": "langnang.chen@outlook.com"
     }
-  ],
-  "require": {
-    "symfony/var-dumper": "^5.4"
-  }
+  ]
 }

@@ -1,7 +1,8 @@
 <?php
 
 return [
-  "max_depth" => "3",
+  "visible" => true,
+  "max_depth" => 999,
   "themes" => [
     "default" => "dumper",
     "options" => [
@@ -33,10 +34,11 @@ return [
       ],
       "dumper" => [
         "details" => [
-          "open" => false,
+          "open" => true,
         ],
         "styles" => [
           "container" => [
+            "padding-left" => ".5rem",
             "font-size" => "87.5%",
             "background-color" => "#18171B",
             "color" => "#FF8400",

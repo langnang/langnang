@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists('_dump')) {
-  function _dump(...$arguments)
+  function dump(...$arguments)
   {
     foreach (debug_backtrace() as $trace) {
       if ($trace['function'] == __FUNCTION__) {

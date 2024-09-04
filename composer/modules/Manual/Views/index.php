@@ -24,7 +24,7 @@
         <div class="col my-2 px-2">
           <div class="card">
             <div class="card-body p-3">
-              <h5><?php _e($illuminate->name) ?> <small><i>(<?php _e($illuminate->alias) ?>)</i></small></h5>
+              <h5><a href="./manual/<?php _e($illuminate->alias) ?>"><?php _e($illuminate->name) ?> <small><i>(<?php _e($illuminate->alias) ?>)</i></small></a></h5>
               <p class="small mb-0">
                 <a href="#<?php _e($illuminate->alias) ?>.adapter">Adapter</a>
                 <a href="#<?php _e($illuminate->alias) ?>.class">Class</a>

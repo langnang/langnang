@@ -2,8 +2,6 @@
 
 namespace Illuminate\Config;
 
-use z\debug;
-
 /**
  * 配置项
  */
