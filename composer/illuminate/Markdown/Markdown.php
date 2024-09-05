@@ -5,6 +5,7 @@ namespace Illuminate\Markdown;
 class Markdown
 {
   public $aliases = [
+    // "/\n[]+\n/" => '<p> ${1} </p>',
     // 标题
     '/\n###### (.+)/' => '<h6 id="${1}"> ${1} </h6>',
 
@@ -20,9 +21,10 @@ class Markdown
     // 引用
     "/\n> (.+)/" => '<blockquote> ${1} </blockquote>',
     // 代码块
-    "/\n```(.+)/" => '<pre language="${1}">',
+    "/\n```(.+)\n/" => '<pre><code class="language-${1}">',
 
-    "/\n```/" => '</pre>',
+    "/\n```/" => '</code></pre>',
+    "/`{1}([^`]+)`{1}/" => '<kbd>${1}</kbd>',
     // 链接
     "/\[(.+)\]\((.+)\)/" => '<a href="${2}"> ${1} </a>',
     // 图片

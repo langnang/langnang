@@ -32,7 +32,13 @@ trait MagicMethods
 
       \class_alias("Illuminate\\$filename\Facades\\$filename", $filename);
 
-      if ($className == __CLASS__) continue;
+      if ($className == __CLASS__) {
+        $this->aliases[$this->alias] = new class {
+          public $name = 'Application';
+          public $alias = 'app';
+        };
+        continue;
+      }
 
       $class = new $className;
       // var_dump($class);
