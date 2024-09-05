@@ -22,7 +22,13 @@ Route::prefix('app')->group(function () {
   });
   Route::get('logs/{time}', function (Request $request, $time) {
     // var_dump($time);
-    $path = app()->logPath("app." . $time . ".log");
+    $path = app()->logPath("app." . $time . '.' . substr(md5(serialize([
+      "USERDOMAIN" => $_SERVER["USERDOMAIN"],
+      "USERDOMAIN_ROAMINGPROFILE" => $_SERVER["USERDOMAIN_ROAMINGPROFILE"],
+      "USERNAME" => $_SERVER["USERNAME"],
+      "USERPROFILE" => $_SERVER["USERPROFILE"],
+      "HTTP_USER_AGENT" => $_SERVER["HTTP_USER_AGENT"],
+    ])), 8, 16) . ".log");
     echo str_replace(array("\n"), array('<br/>'), file_get_contents($path));
   });
 });

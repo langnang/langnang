@@ -15,7 +15,7 @@ trait LifeCycleMethods
     // dump($uri);
     $method = $_SERVER['REQUEST_METHOD'];
 
-    app_log(__METHOD__ . json_encode($uri));
+    app_log(__METHOD__ . " " . json_encode($uri));
 
     // dump([$uri, $method, preg_match("/{(.+)}/", $uri, $match)]);
     // dump($this->routes);
@@ -56,7 +56,6 @@ trait LifeCycleMethods
         unset($route);
       }
     }
-    app_log(__METHOD__ . json_encode($route));
     // dump($route);
     unset($pattern);
     // 未匹配到路由
@@ -64,6 +63,8 @@ trait LifeCycleMethods
       if (array_key_exists("/*", $this->routes)) {
         $route = $this->routes["/*"][$method];
       }
+    } else {
+      app_log(__METHOD__ . " " . json_encode($route));
     }
     if (empty($route)) {
       $route = [
