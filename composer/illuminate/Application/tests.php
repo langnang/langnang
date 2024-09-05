@@ -2,14 +2,17 @@
 
 $illuminate = basename(__DIR__);
 
+echo "<a href='?$illuminate&" . (__LINE__ + 1) . "' style='display: block;'>$illuminate&" . (__LINE__ + 1) . "</a>";
 if (array_key_exists($illuminate, $_GET) & isset($_GET[__LINE__])) {
-  var_dump(app()->aliases);
+  dump(app()->aliases);
 }
 
+echo "<a href='?$illuminate&" . (__LINE__ + 1) . "' style='display: block;'>$illuminate&" . (__LINE__ + 1) . "</a>";
 if (array_key_exists($illuminate, $_GET) & isset($_GET[__LINE__])) {
-  var_dump(app()->aliases);
+  dump(app()->aliases);
 }
 // 
+echo "<a href='?$illuminate&" . (__LINE__ + 1) . "' style='display: block;'>$illuminate&" . (__LINE__ + 1) . "</a>";
 if (array_key_exists($illuminate, $_GET) & isset($_GET[__LINE__])) {
   foreach (\glob(dirname(__DIR__) . '/*', GLOB_ONLYDIR) as $dir) {
     echo ('ILLUMINATE_IGNORES[]=' . basename($dir) . PHP_EOL . "<br/>");
@@ -17,6 +20,7 @@ if (array_key_exists($illuminate, $_GET) & isset($_GET[__LINE__])) {
   }
 }
 
+echo "<a href='?$illuminate&" . (__LINE__ + 1) . "' style='display: block;'>$illuminate&" . (__LINE__ + 1) . "</a>";
 if (array_key_exists($illuminate, $_GET) & isset($_GET[__LINE__])) {
   foreach (\glob(dirname(__DIR__) . '/*', GLOB_ONLYDIR) as $dir) {
     echo ('**/illuminate/' . basename($dir) . '/**' . PHP_EOL . "<br/>");
