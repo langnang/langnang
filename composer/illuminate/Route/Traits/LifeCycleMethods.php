@@ -11,16 +11,19 @@ trait LifeCycleMethods
   {
     $uri = strtolower($this->adjust_uri($_SERVER['REQUEST_URI'] ?? "/")['uri']);
 
+    // dump($_SERVER);
+    // dump($uri);
     $method = $_SERVER['REQUEST_METHOD'];
 
     // dump([$uri, $method, preg_match("/{(.+)}/", $uri, $match)]);
-
+    // dump($this->routes);
     // dump([$uri, preg_match('/^\/manual\/(\\w+)$/', $uri)]);
     // $func = '';
-    if (array_key_exists($uri, $this->routes) && array_key_exists($method, $this->routes[$uri])) {
+    if (isset($this->routes[$uri]) && isset($this->routes[$uri][$method])) {
       // $func = $route[$method]['function'];
       $route = $this->routes[$uri][$method];
     }
+    // dump($route);
     if (empty($route)) {
       foreach ($this->routes as $route) {
         // 匹配请求方法
@@ -48,6 +51,7 @@ trait LifeCycleMethods
           // dump($args);
           // }
         }
+        unset($route);
       }
     }
     // dump($route);

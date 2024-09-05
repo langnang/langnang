@@ -42,6 +42,7 @@ return [
             "font-size" => "87.5%",
             "background-color" => "#18171B",
             "color" => "#FF8400",
+            "font-family" => 'BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"'
           ],
           "summary" => [
             "float" => "left",

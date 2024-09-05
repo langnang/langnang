@@ -15,3 +15,5 @@ Route::get('/test', function () {
 Route::get('*', function () {
   View::make('404', ['title' => "404"]);
 });
+
+// dump(app('route'));
