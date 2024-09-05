@@ -28,7 +28,7 @@ class ManualController
       return view('404');
     }
     // dump($dir);
-    $path = base_path("illuminate\\$title\index.md");
+    $path = base_path("illuminate" . DIRECTORY_SEPARATOR . "$title" . DIRECTORY_SEPARATOR . "index.md");
     if (!file_exists($path)) {
       app_log(__METHOD__ . " Error $path");
       return view('404');
