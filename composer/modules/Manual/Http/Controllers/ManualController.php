@@ -23,10 +23,16 @@ class ManualController
   {
     // dump($alias, $dir);
     $title = app($alias)->name;
-    if (empty($title)) return view('404');
+    if (empty($title)) {
+      app_log(__METHOD__ . " Error $title");
+      return view('404');
+    }
     // dump($dir);
     $path = base_path("illuminate\\$title\index.md");
-    if (!file_exists($path)) return view('404');
+    if (!file_exists($path)) {
+      app_log(__METHOD__ . " Error $path");
+      return view('404');
+    }
     // dump([$path]);
     $markdown = file_get_contents($path);
     // dump([$path, $markdown]);
