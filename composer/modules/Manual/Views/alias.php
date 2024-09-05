@@ -19,7 +19,7 @@
   <div id="app" class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/manual">Maual</a></li>
+        <li class="breadcrumb-item"><a href="/manual">Manual</a></li>
         <li class="breadcrumb-item active" aria-current="page"><?php _e($title) ?></li>
       </ol>
     </nav>
