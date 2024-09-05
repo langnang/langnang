@@ -46,7 +46,7 @@
         <div class="col my-2 px-2">
           <div class="card">
             <div class="card-body p-3">
-              <h5><a href=""><?php _e($module['name']) ?> <small><i>(<?php _e($module['alias']) ?>)</i></small></a></h5>
+              <h5><a href="./<?php _e($module['alias']) ?>"><?php _e($module['name']) ?> <small><i>(<?php _e($module['alias']) ?>)</i></small></a></h5>
             </div>
           </div>
         </div>

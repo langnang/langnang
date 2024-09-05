@@ -11,12 +11,15 @@ trait MagicMethods
     if ($basePath) {
       $this->setBasePath($basePath);
     }
+    $this->logPath = $this->basePath("storage" . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR .  "app.log");
+    unlink($this->logPath);
     // load core modules
     foreach (\glob(__DIR__ . DIRECTORY_SEPARATOR . '../../*', GLOB_ONLYDIR) as $file) {
       $filename = pathinfo($file)['filename'];
 
       if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'])) continue;
 
+      // var_dump($this->basePath("storage" . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR . "startup.log"));
       // var_dump($filename);
       $className = "Illuminate\\$filename\\$filename";
 
@@ -34,6 +37,7 @@ trait MagicMethods
       $class->alias = $alias;
 
       $this->aliases[$alias] = $class;
+      $this->_log(__FUNCTION__ . " \"$alias\" => \"$className\"");
 
       // array_push($this->_aliases, $alias);
 
