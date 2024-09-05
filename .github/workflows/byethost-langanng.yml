@@ -65,6 +65,7 @@ jobs:
             **/illuminate/Cookie/**
             **/illuminate/Crypt/**
             **/illuminate/Date/**
+            **/illuminate/DevTool/**
             **/illuminate/Dump/**
             **/illuminate/Eloquent/**
             **/illuminate/Event/**
