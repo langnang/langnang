@@ -11,8 +11,15 @@ trait MagicMethods
     if ($basePath) {
       $this->setBasePath($basePath);
     }
+    // var_dump($_SERVER);
     // var_dump(debug_backtrace());
-    $this->logPath = $this->logPath("app." . \time() . ".log");
+    $this->logPath = $this->logPath("app." . date('Ymd') . '.' . substr(md5(serialize([
+      "USERDOMAIN" => $_SERVER["USERDOMAIN"],
+      "USERDOMAIN_ROAMINGPROFILE" => $_SERVER["USERDOMAIN_ROAMINGPROFILE"],
+      "USERNAME" => $_SERVER["USERNAME"],
+      "USERPROFILE" => $_SERVER["USERPROFILE"],
+      "HTTP_USER_AGENT" => $_SERVER["HTTP_USER_AGENT"],
+    ])), 8, 16) . ".log");
 
     $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
