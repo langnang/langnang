@@ -15,6 +15,8 @@ trait LifeCycleMethods
     // dump($uri);
     $method = $_SERVER['REQUEST_METHOD'];
 
+    app_log(__METHOD__ . json_encode($uri));
+
     // dump([$uri, $method, preg_match("/{(.+)}/", $uri, $match)]);
     // dump($this->routes);
     // dump([$uri, preg_match('/^\/manual\/(\\w+)$/', $uri)]);
@@ -39,7 +41,7 @@ trait LifeCycleMethods
           if (preg_match($pattern, $uri, $params)) {
             $route = $route[$method];
             $route['args'] = array_slice($params, 1,);
-            // dump($args);
+            // dump($route);
             break;
           }
           // dump($pattern = preg_quote($pattern));
@@ -54,6 +56,7 @@ trait LifeCycleMethods
         unset($route);
       }
     }
+    app_log(__METHOD__ . json_encode($route));
     // dump($route);
     unset($pattern);
     // 未匹配到路由
@@ -119,7 +122,7 @@ trait LifeCycleMethods
       }
     }
 
-    return $func(app('request'));
+    return $func(app('request'), ...$route['args'] ?? []);
     // var_dump($_SERVER);
     // $method();
     // $method = $_SERVER['REQUEST_METHOD'];

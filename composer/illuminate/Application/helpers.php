@@ -11,6 +11,13 @@ if (!function_exists('app')) {
     return $app->aliases[$name];
   }
 }
+if (!function_exists('app_log')) {
+  function app_log($text = null)
+  {
+    global $app;
+    return $app->_log($text);
+  }
+}
 
 if (!function_exists('app_path')) {
   function app_path($path = '')

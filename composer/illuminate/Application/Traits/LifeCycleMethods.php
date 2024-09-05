@@ -23,7 +23,7 @@ trait LifeCycleMethods
   {
     foreach ($this->aliases as $alias => $illuminate) {
       if (method_exists($illuminate, __FUNCTION__)) {
-        $this->_log(__FUNCTION__ . " \"$alias\"");
+        $this->_log(__METHOD__ . " \"$alias\"");
         $illuminate->{__FUNCTION__}(...$arguments);
       }
     }
@@ -35,7 +35,7 @@ trait LifeCycleMethods
   {
     foreach ($this->aliases as $alias => $illuminate) {
       if (method_exists($illuminate, __FUNCTION__)) {
-        $this->_log(__FUNCTION__ . " \"$alias\"");
+        $this->_log(__METHOD__ . " \"$alias\"");
         $illuminate->{__FUNCTION__}(...$arguments);
       }
     }

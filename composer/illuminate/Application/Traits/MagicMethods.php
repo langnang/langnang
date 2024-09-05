@@ -44,7 +44,7 @@ trait MagicMethods
       $class->alias = $alias;
 
       $this->aliases[$alias] = $class;
-      $this->_log(__FUNCTION__ . " \"$alias\" => \"$className\"");
+      $this->_log(__METHOD__ . " \"$alias\" => \"$className\"");
 
       // array_push($this->_aliases, $alias);
 
