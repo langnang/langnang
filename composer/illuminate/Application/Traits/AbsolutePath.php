@@ -48,4 +48,12 @@ trait AbsolutePath
   {
     return $this->basePath . DIRECTORY_SEPARATOR . 'config' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
   }
+  function storagePath($path = '')
+  {
+    return $this->basePath . DIRECTORY_SEPARATOR . 'storage' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+  }
+  function logPath($path = '')
+  {
+    return $this->basePath . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'logs' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+  }
 }

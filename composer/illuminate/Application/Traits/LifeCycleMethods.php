@@ -21,24 +21,24 @@ trait LifeCycleMethods
 
   function _autoload(...$arguments)
   {
-    $this->_log(null);
     foreach ($this->aliases as $alias => $illuminate) {
       if (method_exists($illuminate, __FUNCTION__)) {
         $this->_log(__FUNCTION__ . " \"$alias\"");
         $illuminate->{__FUNCTION__}(...$arguments);
       }
     }
+    $this->_log(null);
   }
 
 
   function _run(...$arguments)
   {
-    $this->_log(null);
     foreach ($this->aliases as $alias => $illuminate) {
       if (method_exists($illuminate, __FUNCTION__)) {
         $this->_log(__FUNCTION__ . " \"$alias\"");
         $illuminate->{__FUNCTION__}(...$arguments);
       }
     }
+    $this->_log(null);
   }
 }

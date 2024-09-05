@@ -11,8 +11,15 @@ trait MagicMethods
     if ($basePath) {
       $this->setBasePath($basePath);
     }
-    $this->logPath = $this->basePath("storage" . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR .  "app.log");
-    unlink($this->logPath);
+    // var_dump(debug_backtrace());
+    $this->logPath = $this->logPath("app." . \time() . ".log");
+
+    $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+    // if (file_exists($this->logPath)) unlink($this->logPath);
+
+    $this->_log($url . "\n");
+
     // load core modules
     foreach (\glob(__DIR__ . DIRECTORY_SEPARATOR . '../../*', GLOB_ONLYDIR) as $file) {
       $filename = pathinfo($file)['filename'];
@@ -44,7 +51,7 @@ trait MagicMethods
       // $this->{$alias} = $class;
       // var_dump($class);
     }
-
+    $this->_log(null);
     // var_dump($this->_aliases);
     // load helpers
     // foreach ($cfg['supports'] as $support) {
@@ -78,7 +85,7 @@ trait MagicMethods
 
   function __set($name, $value)
   {
-    // var_dump(__METHOD__);
+    // var_dump([__METHOD__, $name, $value]);
     $this->{$name} = $value;
   }
 
