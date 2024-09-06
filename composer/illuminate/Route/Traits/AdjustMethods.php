@@ -28,11 +28,11 @@ trait AdjustMethods
     // 去除?及后面内容
     $uri = preg_replace('/\?.*$/', '', $uri);
 
-    if (preg_match_all("/{(\w+)}/", $uri, $params)) {
+    if (preg_match_all("/{([\w\.-]+)}/", $uri, $params)) {
       // dump([$uri, preg_match_all("/{(\w+)}/", $uri, $params)]);
       // dump([$params]);
       $pattern = '';
-      $pattern = str_replace($params[0], array_fill(0, count($params[0]), "(\w+)"), $uri);
+      $pattern = str_replace($params[0], array_fill(0, count($params[0]), "([\w\.-]+)"), $uri);
     }
     return [
       'uri' => $uri,

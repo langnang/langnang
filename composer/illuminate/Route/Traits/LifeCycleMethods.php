@@ -9,13 +9,15 @@ trait LifeCycleMethods
    */
   function _run()
   {
-    $uri = strtolower($this->adjust_uri($_SERVER['REQUEST_URI'] ?? "/")['uri']);
+    $_uri = $this->adjust_uri($_SERVER['REQUEST_URI'] ?? "/");
+
+    $uri = strtolower($_uri['uri']);
 
     // dump($_SERVER);
     // dump($uri);
     $method = $_SERVER['REQUEST_METHOD'];
 
-    app_log(__METHOD__ . " " . json_encode($uri));
+    app_log(__METHOD__ . " " . json_encode($_uri));
 
     // dump([$uri, $method, preg_match("/{(.+)}/", $uri, $match)]);
     // dump($this->routes);

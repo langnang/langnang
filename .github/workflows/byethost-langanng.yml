@@ -57,6 +57,7 @@ jobs:
             **/illuminate/Broadcast/**
             **/illuminate/Bus/**
             **/illuminate/Cache/**
+            **/illuminate/Calendar/**
             **/illuminate/Collection/**
             **/illuminate/Command/**
             **/illuminate/Console/**
@@ -68,6 +69,7 @@ jobs:
             **/illuminate/DevTool/**
             **/illuminate/Dump/**
             **/illuminate/Eloquent/**
+            **/illuminate/Error/**
             **/illuminate/Event/**
             **/illuminate/File/**
             **/illuminate/FileSystem/**
@@ -95,9 +97,7 @@ jobs:
             **/illuminate/Schedule/**
             **/illuminate/Schema/**
             **/illuminate/Seeder/**
-            **/illuminate/Selector/**
             **/illuminate/Session/**
-            **/illuminate/Spider/**
             **/illuminate/Storage/**
             **/illuminate/Traitor/**
             **/illuminate/URL/**
