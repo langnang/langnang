@@ -1,26 +1,26 @@
 <?php
 
 use Illuminate\Request\Request;
-use Illuminate\Route\Facades\Route;
+use Illuminate\Router\Facades\Router;
 use Illuminate\View\Facades\View;
 
-Route::get('', function (Request $request) {
+Router::get('', function (Request $request) {
   view('index', ['title' => "Welcome"]);
 });
 
-Route::get('/test', function () {
+Router::get('/test', function () {
   require_once base_path('illuminate\\Application\\tests.php');
   View::make('404', ['title' => "404"]);
 });
-Route::get('/test', function () {
+Router::get('/test', function () {
   require_once base_path('illuminate\\Application\\tests.php');
   View::make('404', ['title' => "404"]);
 });
-Route::prefix('app')->group(function () {
-  Route::get('logs', function () {
+Router::prefix('app')->group(function () {
+  Router::get('logs', function () {
     echo str_replace(array("\n"), array('<br/>'), file_get_contents(app()->logPath));
   });
-  Route::get('logs/{time}', function (Request $request, $time) {
+  Router::get('logs/{time}', function (Request $request, $time) {
     // var_dump($time);
     $path = app()->logPath("app." . $time . '.' . substr(md5(serialize([
       "USERDOMAIN" => $_SERVER["USERDOMAIN"],
@@ -34,7 +34,7 @@ Route::prefix('app')->group(function () {
 });
 
 
-Route::get('*', function () {
+Router::get('*', function () {
   View::make('404', ['title' => "404"]);
 });
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Route\Traits;
+namespace Illuminate\Router\Traits;
 
 trait LifeCycleMethods
 {
@@ -134,7 +134,7 @@ trait LifeCycleMethods
   function _init() {}
   function _autoload()
   {
-    foreach (config('route.paths.routes') as $path) {
+    foreach (config('router.paths.routes') as $path) {
       // var_dump($path);
       foreach (\glob($path . DIRECTORY_SEPARATOR . '*.php') as $file) {
         require_once $file;

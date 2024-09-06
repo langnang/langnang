@@ -78,7 +78,7 @@ if (!function_exists('relative_path')) {
 }
 foreach (\glob(__DIR__ . '/../*/helpers.php') as $file) {
   $filename = array_slice(preg_split('/\\\|\//', $file), -2, 1)[0];
-  if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'])) continue;
+  if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
   if ($filename == 'Application') continue;
   require_once $file;
   unset($file);

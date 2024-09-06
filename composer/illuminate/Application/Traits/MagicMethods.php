@@ -31,7 +31,7 @@ trait MagicMethods
     foreach (\glob(__DIR__ . DIRECTORY_SEPARATOR . '../../*', GLOB_ONLYDIR) as $file) {
       $filename = pathinfo($file)['filename'];
 
-      if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'])) continue;
+      if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
 
       // var_dump($this->basePath("storage" . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR . "startup.log"));
       // var_dump($filename);

@@ -62,14 +62,14 @@ trait LifeCycleMethods
     }
     // var_dump(config('route.paths.routes'));
     // var_dump($routes);
-    \Config::set('route.paths.routes', array_merge(config('route.paths.routes'), $routePaths));
+    \Config::set('router.paths.routes', array_merge(config('router.paths.routes'), $routePaths));
     \Config::set('config.paths.configs', array_merge(config('config.paths.configs'), $configPaths));
     // var_dump(config('route.paths.routes'));
     // \Config::set('controller.paths.controllers', array_merge(config('controller.paths.controllers'), $controllers));
     // var_dump(config('controller.paths.controllers'));
     // var_dump(config('controller.paths.aliases'));
 
-    \Route::_autoload();
+    \Router::_autoload();
     // var_dump();
     // \Config::set('config.paths.configs', array_merge((array)config('config.paths.configs'), (array)config('module.paths.modules')));
 

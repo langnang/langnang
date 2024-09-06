@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Route\Facades\Route;
+use Illuminate\Router\Facades\Router;
 
-Route::prefix(config('welcome.alias'))->group(function () {
-  Route::get('', '\Modules\Welcome\Http\Controllers\WelcomeController@index');
+Router::prefix(config('welcome.alias'))->group(function () {
+  Router::get('', '\Modules\Welcome\Http\Controllers\WelcomeController@index');
 });

@@ -29,7 +29,7 @@ if (array_key_exists($illuminate, $_GET) & isset($_GET[__LINE__])) {
 }
 foreach (\glob(__DIR__ . '/../*/tests.php') as $file) {
   $filename = array_slice(preg_split('/\\\|\//', $file), -2, 1)[0];
-  if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'])) continue;
+  if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
   if ($filename == 'Application') continue;
   require_once $file;
   unset($file);

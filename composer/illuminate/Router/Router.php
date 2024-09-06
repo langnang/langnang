@@ -1,10 +1,10 @@
 <?php
 
-namespace Illuminate\Route;
+namespace Illuminate\Router;
 
 use Closure;
 
-class Route
+class Router
 {
   public $prefix;
   public $routes = [];

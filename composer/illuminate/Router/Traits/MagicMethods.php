@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Route\Traits;
+namespace Illuminate\Router\Traits;
 
 trait MagicMethods
 {
