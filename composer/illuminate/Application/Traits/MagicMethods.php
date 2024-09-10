@@ -28,7 +28,8 @@ trait MagicMethods
     $this->_log($url . "\n");
 
     // load core modules
-    foreach (\glob(__DIR__ . DIRECTORY_SEPARATOR . '../../*', GLOB_ONLYDIR) as $file) {
+    foreach (\glob(dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . '*', GLOB_ONLYDIR) as $file) {
+
       $filename = pathinfo($file)['filename'];
 
       if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
@@ -37,7 +38,10 @@ trait MagicMethods
       // var_dump($filename);
       $className = "Illuminate\\$filename\\$filename";
 
-      \class_alias("Illuminate\\$filename\Facades\\$filename", $filename);
+      foreach (\glob($file . DIRECTORY_SEPARATOR . 'Facades' . DIRECTORY_SEPARATOR . '*.php') as $facade) {
+        $facadeName = pathinfo($facade)['filename'];
+        \class_alias("Illuminate\\$filename\Facades\\$facadeName", $facadeName);
+      }
 
       if ($className == __CLASS__) {
         $this->aliases[$this->alias] = new class {
@@ -83,11 +87,6 @@ trait MagicMethods
         return $illuminate->{'get'}(...$arguments);
       }
     }
-  }
-
-  static function __callStatic($name, $arguments)
-  {
-    var_dump(__METHOD__, $name, $arguments);
   }
 
   function __get($name)

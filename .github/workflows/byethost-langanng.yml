@@ -71,6 +71,7 @@ jobs:
             **/illuminate/Eloquent/**
             **/illuminate/Error/**
             **/illuminate/Event/**
+            **/illuminate/Faker/**
             **/illuminate/File/**
             **/illuminate/FileSystem/**
             **/illuminate/Filter/**

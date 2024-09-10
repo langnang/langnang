@@ -183,7 +183,8 @@ class VarDumper
           } elseif ($property->isProtected()) {
             $return .= "<i>protected</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => "  . $this->print_type($property->getValue($value), $depth + 1);
           } elseif ($property->isPrivate()) {
-            $return .= "<i>private</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => "  . $this->print_type($property->getValue($value), $depth + 1);
+            $return .= "<i>private</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => ";
+            // . $this->print_type($property->getValue($value), $depth + 1);
           }
           $return .= "</div>";
         }

@@ -69,7 +69,7 @@ trait LifeCycleMethods
     // var_dump(config('controller.paths.controllers'));
     // var_dump(config('controller.paths.aliases'));
 
-    \Router::_autoload();
+    app('router')->_autoload();
     // var_dump();
     // \Config::set('config.paths.configs', array_merge((array)config('config.paths.configs'), (array)config('module.paths.modules')));
 

@@ -18,7 +18,8 @@ trait LifeCycleMethods
     fwrite($handle, $text);
     fclose($handle);
   }
-
+  private function _autoloadIlluminate() {}
+  private function _autoloadFacade() {}
   function _autoload(...$arguments)
   {
     foreach ($this->aliases as $alias => $illuminate) {
@@ -27,6 +28,10 @@ trait LifeCycleMethods
         $illuminate->{__FUNCTION__}(...$arguments);
       }
     }
+    // dump(config('app.aliases'));
+    // foreach (config('app.aliases') ?? [] as $alias => $path) {
+    //   $this->aliases[$alias] = $path;
+    // }
     $this->_log(null);
   }
 

@@ -67,7 +67,7 @@ if (!function_exists('resource_path')) {
 if (!function_exists('storage_path')) {
   function storage_path($path = '')
   {
-    return app('path.storage') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+    return config('app.path.storage') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
   }
 }
 if (!function_exists('absolute_path')) {
@@ -81,5 +81,6 @@ foreach (\glob(__DIR__ . '/../*/helpers.php') as $file) {
   if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
   if ($filename == 'Application') continue;
   require_once $file;
-  unset($file);
 }
+unset($file);
+unset($filename);

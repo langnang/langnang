@@ -13,22 +13,40 @@ class Facade
   static function __callStatic($name, $arguments)
   {
     // var_dump(__METHOD__, $name);
+    $class = static::class;
+    // var_dump($class);
     // global $app;
     $alias = static::$alias;
     if (empty($alias)) {
       // var_dump(static::class);
-      $filename = array_slice(explode("\\", static::class), -1)[0];
+
+      $filename = array_slice(explode("\\", $class), -1)[0];
+      // var_dump($filename);
       // var_dump($filename);
       // var_dump($filename);
       // $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}_${2}', $filename));
       $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}-${2}', $filename));
       // throw new \Error(get_called_class() . " not set static \$alias.");
     }
-    // var_dump($app, $alias);
-    if (!method_exists(app($alias), $name)) {
-      throw new \Error("$name not exists.");
+    if (array_key_exists($alias, app()->aliases,)) {
+      // var_dump($app, $alias);
+      if (!method_exists(app($alias), $name)) {
+        throw new \Error("$name not exists.");
+      }
+      return app($alias)->{$name}(...$arguments);
+    } else {
+      // $class = new $class;
+      // var_dump($class);
+      // return $class->{$name}(...$arguments);
+      // var_dump($class);
+      $illuminate = array_slice(explode("\\", $class), -3, 1)[0];
+      $facade = array_slice(explode("\\", $class), -1)[0];
+      // var_dump($illuminate, $facade);
+      $calssName = "Illuminate\\$illuminate\\$facade";
+      $class = new $calssName;
+      return $class->{$name}(...$arguments);
+      // $class
     }
-    return app($alias)->{$name}(...$arguments);
   }
 
   function __get($name)

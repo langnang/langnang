@@ -2,9 +2,49 @@
 
 ## 基本路由
 
+```php
+Route::get('foo', function () {
+    return 'Hello World';
+});
+```
+
+**默认路由文件**
+
+```php
+// routes/web.php
+// routes/api.php
+```
+
+**可用的路由方法**
+
+```php
+Route::get($uri, $callback);
+Route::post($uri, $callback);
+Route::put($uri, $callback);
+Route::patch($uri, $callback);
+Route::delete($uri, $callback);
+Route::options($uri, $callback);
+```
+
+```php
+Route::match(['get', 'post'], '/', function () {
+    //
+});
+
+Route::any('/', function () {
+    //
+});
+```
+
 ### 重定向路由
 
 ### 视图路由
+
+```php
+Route::view('/welcome', 'welcome');
+
+Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
+```
 
 ## 路由参数
 
@@ -68,6 +108,12 @@ Route::get('user/{id}', function ($id) {
 
 ## 路由命名
 
+```php
+Route::get('user/profile', function () {
+    //
+})->name('profile');
+```
+
 ## 路由组
 
 ### 中间件
@@ -76,7 +122,23 @@ Route::get('user/{id}', function ($id) {
 
 ### 路由前缀
 
+```php
+Route::prefix('admin')->group(function () {
+    Route::get('users', function () {
+        // Matches The "/admin/users" URL
+    });
+});
+```
+
 ### 路由名称前缀
+
+```php
+Route::name('admin.')->group(function () {
+    Route::get('users', function () {
+        // Route assigned name "admin.users"...
+    })->name('users');
+});
+```
 
 ## 路由与模型绑定
 

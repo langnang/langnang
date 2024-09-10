@@ -22,3 +22,22 @@
 - Storage:
 - Str: 字符串辅助函数
 - View: 视图
+
+## Facades
+
+## Methods
+
+### MagicMethods
+
+```php
+```
+
+### LifeCycleMethods
+
+```php
+function _(){}
+function _log(){}
+function _init(){}
+function _autoload(){}
+function _run(){}
+```

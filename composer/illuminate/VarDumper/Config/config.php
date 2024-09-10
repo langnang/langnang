@@ -2,7 +2,7 @@
 
 return [
   "visible" => true,
-  "max_depth" => 999,
+  "max_depth" => 4,
   "themes" => [
     "default" => "dumper",
     "options" => [
@@ -34,7 +34,7 @@ return [
       ],
       "dumper" => [
         "details" => [
-          "open" => true,
+          "open" => false,
         ],
         "styles" => [
           "container" => [
@@ -42,7 +42,7 @@ return [
             "font-size" => "87.5%",
             "background-color" => "#18171B",
             "color" => "#FF8400",
-            "font-family" => 'BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"'
+            "font-family" => 'SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace'
           ],
           "summary" => [
             "float" => "left",
