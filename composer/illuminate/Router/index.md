@@ -106,6 +106,26 @@ Route::get('user/{id}', function ($id) {
 
 **全局约束**
 
+```php
+/**
+ *  定义你的路由模型绑定, pattern 过滤器等
+ *
+ * @return void
+ */
+public function boot()
+{
+    Route::pattern('id', '[0-9]+');
+}
+```
+
+一旦定义好之后，便会自动应用这些规则到所有使用该参数名称的路由上：
+
+```php
+Route::get('user/{id}', function ($id) {
+    //只有在 id 为数字时才执行...
+});
+```
+
 ## 路由命名
 
 ```php
@@ -159,3 +179,9 @@ Route::name('admin.')->group(function () {
 ## 访问当前路由
 
 ## 跨域资源共享 (CORS)
+
+## 参考手册
+
+- https://learnku.com/docs/laravel/8.x/routing/9365
+- [`symfony/routing`](https://packagist.org/packages/symfony/routing)
+- [`nikic/fast-route`](https://packagist.org/packages/nikic/fast-route): Fast request router for PHP

@@ -18,6 +18,7 @@ class Route
   public $params;
   public $callback;
   public $prefix;
+
   /**
    * Magic
    */
@@ -136,4 +137,10 @@ class Route
   function handle($request, Closure $next) {}
 
   function helper() {}
+
+  function name($name)
+  {
+    $this->name = $name;
+    return $this;
+  }
 }

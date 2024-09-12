@@ -2,4 +2,7 @@
 
 namespace Illuminate\FileSystem;
 
-class FileSystem {}
+class FileSystem
+{
+  public $alias = 'fs';
+}

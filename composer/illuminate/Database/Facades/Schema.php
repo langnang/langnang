@@ -1,5 +1,8 @@
 <?php
 
-namespace Illuminate\Schema\Facades;
+namespace Illuminate\Database\Facades;
 
+/**
+ * 
+ */
 class Schema extends \App\Support\Facade {}

@@ -41,6 +41,7 @@ trait MagicMethods
       foreach (\glob($file . DIRECTORY_SEPARATOR . 'Facades' . DIRECTORY_SEPARATOR . '*.php') as $facade) {
         $facadeName = pathinfo($facade)['filename'];
         \class_alias("Illuminate\\$filename\Facades\\$facadeName", $facadeName);
+        $this->_log(__METHOD__ . " Facade \"$facadeName\" ");
       }
 
       if ($className == __CLASS__) {

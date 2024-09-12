@@ -13,6 +13,7 @@ class Router
   public $middlewares = [];
   public $aliases = [];
   public $routes = [];
+  public $patterns = [];
 
   function __set($name, $value)
   {
