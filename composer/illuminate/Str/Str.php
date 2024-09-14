@@ -23,7 +23,7 @@ class Str implements Contracts\StrInterface
    */
   function ascii($value, $language = 'en')
   {
-    return ASCII::to_ascii((string) $value, $language);
+    // return ASCII::to_ascii((string) $value, $language);
   }
   function of($value)
   {
@@ -36,6 +36,9 @@ class Str implements Contracts\StrInterface
   {
     return substr($value, -strlen($end)) == $end;
   }
+  /**
+   * 
+   */
   function lower($value)
   {
     return mb_strtolower($value, 'UTF-8');

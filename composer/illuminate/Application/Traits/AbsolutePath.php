@@ -4,6 +4,9 @@ namespace Illuminate\Application\Traits;
 
 trait AbsolutePath
 {
+  public $appPath;
+  public $basePath;
+  public $databasePath;
   function path($path = '')
   {
     $appPath = $this->appPath ?: $this->basePath . DIRECTORY_SEPARATOR . 'app';

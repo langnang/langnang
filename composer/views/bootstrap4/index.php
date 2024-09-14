@@ -20,6 +20,8 @@
     <h1 class="text-center"><?php _e($title) ?></h1>
   </div>
 
+  <?php require_once __DIR__ . '/footer.php' ?>
+
   <script crossorigin="anonymous" src="https://unpkg.com/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script crossorigin="anonymous" src="https://unpkg.com/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script crossorigin="anonymous" src="https://unpkg.com/mockjs@1.1.0/dist/mock-min.js"></script>
