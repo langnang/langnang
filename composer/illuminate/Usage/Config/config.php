@@ -1,5 +1,5 @@
 <?php
 
 return [
-  "print" => false,
+  "print" => true,
 ];

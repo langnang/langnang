@@ -42,6 +42,7 @@ class VarDumper
   {
     $max_depth = config('this.max_depth');
     $return = '';
+    // var_dump(gettype($value));
     switch (gettype($value)) {
       case 'object':
         if ($depth > $max_depth) return;
@@ -226,6 +227,12 @@ class VarDumper
         break;
       case 'integer':
         $return .= "<small>int</small> <font style='" . $this->getElementStyles('integer') . "'>$value</font>";
+        break;
+      case 'double':
+        $return .= "<small>float</small> <font style='" . $this->getElementStyles('integer') . "'>$value</font>";
+        break;
+      case 'boolean':
+        $return .= "<small>boolean</small> <font style='" . $this->getElementStyles('integer') . "'>" . ($value ? 'true' : 'false') . "</font>";
         break;
       case 'NULL':
         $return .= "<font style='" . $this->getElementStyles('null') . "'>null</font>";

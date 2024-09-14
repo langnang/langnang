@@ -1,4 +1,4 @@
-<footer class="fixed-bottom p-3" style="background-color: #18171B;color: aliceblue;">
+<footer class="p-3" style="background-color: #18171B;color: aliceblue;">
   <div class="container">
     <div class="row row-cols-3">
       <div class="col">
@@ -37,6 +37,12 @@
           </div>
         </div>
 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-right">
+        Time: <?php _e(round(microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'], 5)); ?> Sec.
+        Size: <?php _e(round(ob_get_length() / 1024, 5)); ?> KB.
       </div>
     </div>
   </div>

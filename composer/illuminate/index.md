@@ -99,4 +99,8 @@ function _log(){}
  * 调试
  */
 function _debug(){}
+/**
+ * 打印
+ */
+function _print(){}
 ```

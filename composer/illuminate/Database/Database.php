@@ -7,9 +7,9 @@ class Database
   public $db;
   function _autoload()
   {
-    dump(__METHOD__);
+    // dump(__METHOD__);
     $config = config('database.connections.' . config('database.default'));
-    dump($config);
+    // dump($config);
     $this->db = new DB($config);
   }
 

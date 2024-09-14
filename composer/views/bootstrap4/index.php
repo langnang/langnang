@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div id="app" class="container">
+  <div id="app" class="container" style="min-height: calc(100vh - 230px);">
     <h1 class="text-center"><?php _e($title) ?></h1>
   </div>
 

@@ -23,4 +23,5 @@ $app->_autoload();
 // var_dump($app->config());
 
 $app->_run();
+
 return $app;
