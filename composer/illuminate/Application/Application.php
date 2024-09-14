@@ -29,14 +29,14 @@ class Application
       "USERDOMAIN_ROAMINGPROFILE" => $_SERVER["USERDOMAIN_ROAMINGPROFILE"],
       "USERNAME" => $_SERVER["USERNAME"],
       "USERPROFILE" => $_SERVER["USERPROFILE"],
-      "HTTP_USER_AGENT" => $_SERVER["HTTP_USER_AGENT"],
+      "HTTP_USER_AGENT" => $_SERVER["HTTP_USER_AGENT"] ?? '',
     ])), 8, 16) . ".log");
 
-    $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    // $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
     // if (file_exists($this->logPath)) unlink($this->logPath);
 
-    $this->_log($url . "\n");
+    // $this->_log($url . "\n");
 
     // load core modules
     foreach (\glob(dirname(__DIR__) . DIRECTORY_SEPARATOR . '*', GLOB_ONLYDIR) as $file) {
