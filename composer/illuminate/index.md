@@ -36,6 +36,10 @@
 - `toArray`
 - `toString`
 - `toJson`
+- `toHtml`
+- `print`
+- `dump`
+- `singleton`
 <!-- - `toHtml` -->
 
 ## Methods

@@ -8,13 +8,13 @@ trait LifeCycleMethods
 
   function _autoload(...$arguments)
   {
-    if (empty(config('config'))) {
+    if (empty(\config('config'))) {
       $config = require_once __DIR__ . '/../Config/config.php';
       $config['name'] = "Config";
       $config['alias'] = "config";
       $this->aliases['config'] = $config;
     }
-    foreach (config('config.paths.configs') as $path) {
+    foreach (\config('config.paths.configs') as $path) {
       // var_dump($path);
       foreach (\glob($path . '/*/Config/config.php') as $file) {
         $filename = basename(dirname(dirname($file)));

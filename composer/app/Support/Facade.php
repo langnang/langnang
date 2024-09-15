@@ -28,7 +28,7 @@ class Facade
       $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}-${2}', $filename));
       // throw new \Error(get_called_class() . " not set static \$alias.");
     }
-    if (array_key_exists($alias, app()->aliases,)) {
+    if (app()->alias_exists($alias)) {
       // var_dump($app, $alias);
       if (!method_exists(app($alias), $name)) {
         throw new \Error("$name not exists.");

@@ -6,7 +6,7 @@ namespace Illuminate\Config;
  * 配置项
  */
 
-class Config
+class Config extends \App\Support\Illuminate
 {
   public $aliases = [];
 

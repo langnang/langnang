@@ -1,14 +1,10 @@
 <?php
-function _e($str)
-{
-  echo $str;
-}
+
 if (!function_exists('app')) {
   function app($name = null)
   {
     global $app;
-    if (empty($name)) return $app;
-    return $app->aliases[$name];
+    return $app->get($name);
   }
 }
 if (!function_exists('app_log')) {
@@ -76,11 +72,11 @@ if (!function_exists('absolute_path')) {
 if (!function_exists('relative_path')) {
   function relative_path($path = '') {}
 }
-foreach (\glob(__DIR__ . '/../*/helpers.php') as $file) {
-  $filename = array_slice(preg_split('/\\\|\//', $file), -2, 1)[0];
-  if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
-  if ($filename == 'Application') continue;
-  require_once $file;
+
+
+if (!function_exists('appinfo')) {
+  function appinfo()
+  {
+    return app()->_print();
+  }
 }
-unset($file);
-unset($filename);
