@@ -148,7 +148,7 @@ body {background-color: #fff; color: #222; font-family: sans-serif;}
 pre {margin: 0; font-family: monospace;}
 a:link {color: #009; text-decoration: none; background-color: #fff;}
 a:hover {text-decoration: underline;}
-table {border-collapse: collapse; border: 0; width: 934px; box-shadow: 1px 2px 3px #ccc;}
+table {border-collapse: collapse; border: 0; width: 1200px!important; box-shadow: 1px 2px 3px #ccc;}
 .center {text-align: center;}
 .center table {margin: 1em auto; text-align: left;}
 .center th {text-align: center !important;}
@@ -171,13 +171,17 @@ hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
 </td></tr>
 </tbody></table>';
 
-    echo  '<h1> Server </h1>';
+    // phpcredits(CREDITS_ALL);
+
+    echo  '<h1> PHP Server </h1>';
     echo "<table><tbody>";
     foreach ($_SERVER as $key => $value) {
       if ($key == 'Path') $value = implode(";<br/>", explode(";", $value));
-      echo "<tr><td class=\"e\">$key</td><td class=\"v\">$value</td></tr>";
+      echo "<tr><td class=\"e\">$key</td><td class=\"v\">$value</td><td class=\"v\"></td></tr>";
     }
     echo "</tbody></table>";
+
+
 
     echo  '<h1> Illuminates </h1>';
 
@@ -186,17 +190,17 @@ hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
     // aliases
     echo "<table><tbody>";
     // echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
-    echo '<tr class="h"><th colspan="2">Aliases</th></tr>';
+    echo '<tr class="h"><th colspan="2"> Aliases </th><th> Annotation </th></tr>';
     foreach ($this->aliases as $alias => $illuminate) {
-      echo "<tr><td class=\"e\">$illuminate->name</td><td class=\"v\">$alias</td></tr>";
+      echo "<tr><td class=\"e\">$illuminate->name</td><td class=\"v\">$alias</td><td class=\"v\"></td></tr>";
     }
     unset($alias, $illuminate);
     echo "</tbody></table>";
     // facades
     echo "<table><tbody>";
-    echo '<tr class="h"><th colspan="2">Facades</th></tr>';
+    echo '<tr class="h"><th colspan="2"> Facades </th><th> Annotation </th></tr>';
     foreach ($this->facades as $alias => $facade) {
-      echo "<tr><td class=\"e\">$alias</td><td class=\"v\">$facade</td></tr>";
+      echo "<tr><td class=\"e\">$alias</td><td class=\"v\">$facade</td><td class=\"v\"></td></tr>";
     }
     unset($alias, $illuminate);
     echo "</tbody></table>";
@@ -208,7 +212,26 @@ hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
     }
     unset($alias, $illuminate);
 
+    echo  '<h1> Configuration </h1>';
+    $extensions = get_loaded_extensions();
+    foreach ($extensions as $extension) {
+      echo  "<h2> $extension </h2>";
+      // methods
+      echo "<table><tbody>";
+      echo '<tr class="h"><th colspan="2"> Methods </th><th> Annotation </th></tr>';
 
+      // echo '<td class="e">' . implode(", ", get_extension_funcs($extension) ?: [])  . '</td>';
+      foreach (get_extension_funcs($extension) ?: [] as $alias => $method) {
+        echo "<tr><td class=\"e\">$method</td><td class=\"v\"></td><td class=\"v\"></td></tr>";
+      }
+      // foreach (array_values($methods) as $alias => $method) {
+      //   if (preg_match("/^_/", $method)) continue;
+      //   echo "<tr><td class=\"e\">$alias</td><td class=\"v\">$method</td></tr>";
+      // }
+      // unset($methods, $alias, $method);
+      echo "</tbody></table>";
+    }
+    unset($extensions, $extension, $alias, $method);
     echo "</div>";
   }
 

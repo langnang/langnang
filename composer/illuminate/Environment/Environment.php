@@ -8,6 +8,8 @@ class Environment extends \Core\Illuminate
   public $_env = [];
   function __construct()
   {
+    // var_dump($GLOBALS);
+    $_SERVER['System'] = php_uname();
     $this->_env = $_ENV;
   }
 
