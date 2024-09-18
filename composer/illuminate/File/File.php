@@ -5,4 +5,4 @@ namespace Illuminate\File;
 /**
  * 
  */
-class File {}
+class File extends \Core\Illuminate {}

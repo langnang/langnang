@@ -8,15 +8,15 @@ class Illuminate
 
   public $alias;
 
-  private $aliases;
+  // private $aliases;
 
-  private function setName() {}
-  private function getName() {}
-  private function setAlias() {}
-  private function getAlias() {}
+  // private function setName() {}
+  // private function getName() {}
+  // private function setAlias() {}
+  // private function getAlias() {}
 
-  protected function _autoload() {}
-  protected function _run() {}
+  // protected function _autoload() {}
+  // protected function _run() {}
   // protected function _log() {}
   protected function _print()
   {

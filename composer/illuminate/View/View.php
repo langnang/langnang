@@ -2,7 +2,7 @@
 
 namespace Illuminate\View;
 
-class View
+class View extends \Core\Illuminate
 {
   function render($template)
   {

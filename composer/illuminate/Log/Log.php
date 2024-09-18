@@ -2,4 +2,4 @@
 
 namespace Illuminate\Log;
 
-class Log {}
+class Log extends \Core\Illuminate {}

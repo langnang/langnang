@@ -2,7 +2,7 @@
 
 namespace Illuminate\Request;
 
-class Request
+class Request extends \Core\Illuminate
 {
   public $_request = [];
   public $_query = [];

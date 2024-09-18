@@ -2,11 +2,11 @@
 
 namespace Illuminate\Markdown;
 
-class Markdown
+class Markdown extends \Core\Illuminate
 {
   public $catelog = [];
   public $content = [];
-  public $aliases = [
+  private $aliases = [
     // "/\n[]+\n/" => '<p> ${1} </p>',
     // 标题
     "/\n# (.+)\r/" => '<h1 id="${1}" style="margin-left: -1.5rem;"><a href="#">§</a> ${1} </h1>',

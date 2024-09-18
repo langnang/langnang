@@ -5,7 +5,7 @@ namespace Illuminate\RegExp;
 /**
  * 
  */
-class RegExp
+class RegExp extends \Core\Illuminate
 {
   function make() {}
 }

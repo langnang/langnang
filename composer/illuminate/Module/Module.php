@@ -2,7 +2,7 @@
 
 namespace Illuminate\Module;
 
-class Module
+class Module extends \Core\Illuminate
 {
   public $aliases = [];
 

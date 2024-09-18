@@ -4,4 +4,4 @@ namespace Illuminate\Faker;
 
 /**
  */
-class Faker {}
+class Faker extends \Core\Illuminate {}

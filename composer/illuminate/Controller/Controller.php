@@ -2,4 +2,4 @@
 
 namespace Illuminate\Controller;
 
-class Controller {}
+class Controller extends \Core\Illuminate {}

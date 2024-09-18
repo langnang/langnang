@@ -2,4 +2,4 @@
 
 namespace Illuminate\Model;
 
-class Model {}
+class Model extends \Core\Illuminate {}
