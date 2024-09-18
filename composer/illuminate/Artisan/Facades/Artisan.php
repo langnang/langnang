@@ -2,4 +2,4 @@
 
 namespace Illuminate\Artisan\Facades;
 
-class Artisan extends \App\Support\Facade {}
+class Artisan extends \Core\Facade {}

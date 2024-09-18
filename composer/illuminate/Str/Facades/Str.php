@@ -2,4 +2,4 @@
 
 namespace Illuminate\Str\Facades;
 
-class Str extends \App\Support\Facade {}
+class Str extends \Core\Facade {}

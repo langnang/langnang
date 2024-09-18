@@ -2,4 +2,4 @@
 
 namespace Illuminate\Schedule\Facades;
 
-class Schedule extends \App\Support\Facade {}
+class Schedule extends \Core\Facade {}

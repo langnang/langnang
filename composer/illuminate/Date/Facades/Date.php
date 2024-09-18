@@ -2,4 +2,4 @@
 
 namespace Illuminate\Date\Facades;
 
-class Date extends \App\Support\Facade {}
+class Date extends \Core\Facade {}

@@ -2,4 +2,4 @@
 
 namespace Illuminate\Broadcast\Facades;
 
-class Broadcast extends \App\Support\Facade {}
+class Broadcast extends \Core\Facade {}

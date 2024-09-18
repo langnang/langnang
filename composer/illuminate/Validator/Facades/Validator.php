@@ -2,4 +2,4 @@
 
 namespace Illuminate\Validator\Facades;
 
-class Validator extends \App\Support\Facade {}
+class Validator extends \Core\Facade {}

@@ -3,7 +3,7 @@
 namespace Illuminate\Application;
 
 
-class Application extends \App\Support\Illuminate
+class Application extends \Core\Illuminate
 {
   public $name = 'Application';
   public $alias = "app";
@@ -171,6 +171,7 @@ hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
 </td></tr>
 </tbody></table>';
 
+    echo  '<h1> Server </h1>';
     echo "<table><tbody>";
     foreach ($_SERVER as $key => $value) {
       if ($key == 'Path') $value = implode(";<br/>", explode(";", $value));
@@ -184,7 +185,8 @@ hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
 
     // aliases
     echo "<table><tbody>";
-    echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
+    // echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
+    echo '<tr class="h"><th colspan="2">Aliases</th></tr>';
     foreach ($this->aliases as $alias => $illuminate) {
       echo "<tr><td class=\"e\">$illuminate->name</td><td class=\"v\">$alias</td></tr>";
     }
@@ -192,7 +194,7 @@ hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
     echo "</tbody></table>";
     // facades
     echo "<table><tbody>";
-    echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
+    echo '<tr class="h"><th colspan="2">Facades</th></tr>';
     foreach ($this->facades as $alias => $facade) {
       echo "<tr><td class=\"e\">$alias</td><td class=\"v\">$facade</td></tr>";
     }

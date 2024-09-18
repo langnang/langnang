@@ -2,4 +2,4 @@
 
 namespace Illuminate\RegExp\Facades;
 
-class RegExp extends \App\Support\Facade {}
+class RegExp extends \Core\Facade {}

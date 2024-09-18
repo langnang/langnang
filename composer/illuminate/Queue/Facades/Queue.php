@@ -2,4 +2,4 @@
 
 namespace Illuminate\Queue\Facades;
 
-class Queue extends \App\Support\Facade {}
+class Queue extends \Core\Facade {}

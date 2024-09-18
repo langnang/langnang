@@ -2,4 +2,4 @@
 
 namespace Illuminate\Redirect\Facades;
 
-class Redirect extends \App\Support\Facade {}
+class Redirect extends \Core\Facade {}

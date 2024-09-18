@@ -2,4 +2,4 @@
 
 namespace Illuminate\Controller\Facades;
 
-class Controller extends \App\Support\Facade {}
+class Controller extends \Core\Facade {}

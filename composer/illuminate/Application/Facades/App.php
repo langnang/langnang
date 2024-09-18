@@ -2,4 +2,4 @@
 
 namespace Illuminate\Application\Facades;
 
-class App extends \App\Support\Facade {}
+class App extends \Core\Facade {}

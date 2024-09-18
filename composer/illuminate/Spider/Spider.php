@@ -10,7 +10,7 @@ use \Illuminate\DB\Facades\DB;
 /**
  * 
  */
-class Spider
+class Spider extends \Core\Illuminate
 {
 
 

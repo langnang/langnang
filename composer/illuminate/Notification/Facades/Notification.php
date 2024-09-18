@@ -2,4 +2,4 @@
 
 namespace Illuminate\Notification\Facades;
 
-class Notification extends \App\Support\Facade {}
+class Notification extends \Core\Facade {}

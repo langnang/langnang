@@ -2,4 +2,4 @@
 
 namespace Illuminate\Session\Facades;
 
-class Session extends \App\Support\Facade {}
+class Session extends \Core\Facade {}

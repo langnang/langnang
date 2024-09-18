@@ -7,7 +7,7 @@ use Closure;
 /**
  * 路由
  */
-class Router extends \App\Support\Illuminate
+class Router extends \Core\Illuminate
 {
   public $prefix;
   public $middlewares = [];

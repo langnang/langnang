@@ -2,4 +2,4 @@
 
 namespace Illuminate\Migration\Facades;
 
-class Migration extends \App\Support\Facade {}
+class Migration extends \Core\Facade {}

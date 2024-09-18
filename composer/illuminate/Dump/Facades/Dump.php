@@ -2,4 +2,4 @@
 
 namespace Illuminate\Dump\Facades;
 
-class Dump extends \App\Support\Facade {}
+class Dump extends \Core\Facade {}

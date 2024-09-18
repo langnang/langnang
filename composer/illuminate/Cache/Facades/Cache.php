@@ -2,4 +2,4 @@
 
 namespace Illuminate\Cache\Facades;
 
-class Cache extends \App\Support\Facade {}
+class Cache extends \Core\Facade {}

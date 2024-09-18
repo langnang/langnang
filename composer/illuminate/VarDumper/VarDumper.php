@@ -2,7 +2,7 @@
 
 namespace Illuminate\VarDumper;
 
-class VarDumper
+class VarDumper extends \Core\Illuminate
 {
   public $aliases = [
     "summary" => "",

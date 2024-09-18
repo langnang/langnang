@@ -2,4 +2,4 @@
 
 namespace Illuminate\Storage\Facades;
 
-class Storage extends \App\Support\Facade {}
+class Storage extends \Core\Facade {}

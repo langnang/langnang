@@ -2,7 +2,7 @@
 
 namespace Illuminate\Environment;
 
-class Environment
+class Environment extends \Core\Illuminate
 {
   public $alias = 'env';
   public $_env = [];

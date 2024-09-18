@@ -2,4 +2,4 @@
 
 namespace Illuminate\Password\Facades;
 
-class Password extends \App\Support\Facade {}
+class Password extends \Core\Facade {}

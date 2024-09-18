@@ -2,4 +2,4 @@
 
 namespace Illuminate\Container\Facades;
 
-class Container extends \App\Support\Facade {}
+class Container extends \Core\Facade {}

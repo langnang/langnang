@@ -2,7 +2,7 @@
 
 namespace Illuminate\Database;
 
-class Database
+class Database extends \Core\Illuminate
 {
   public $db;
   function _autoload()

@@ -2,4 +2,4 @@
 
 namespace Illuminate\Request\Facades;
 
-class Request extends \App\Support\Facade {}
+class Request extends \Core\Facade {}

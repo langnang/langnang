@@ -2,4 +2,4 @@
 
 namespace Illuminate\Arr\Facades;
 
-class Arr extends \App\Support\Facade {}
+class Arr extends \Core\Facade {}

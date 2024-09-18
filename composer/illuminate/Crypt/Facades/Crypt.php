@@ -2,4 +2,4 @@
 
 namespace Illuminate\Crypt\Facades;
 
-class Crypt extends \App\Support\Facade {}
+class Crypt extends \Core\Facade {}

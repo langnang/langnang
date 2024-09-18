@@ -2,4 +2,4 @@
 
 namespace Illuminate\Collection\Facades;
 
-class Collection extends \App\Support\Facade {}
+class Collection extends \Core\Facade {}

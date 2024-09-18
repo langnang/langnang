@@ -2,4 +2,4 @@
 
 namespace Illuminate\Selector\Facades;
 
-class Selector extends \App\Support\Facade {}
+class Selector extends \Core\Facade {}

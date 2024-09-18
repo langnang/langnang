@@ -2,4 +2,4 @@
 
 namespace Illuminate\Account\Facades;
 
-class Account extends \App\Support\Facade {}
+class Account extends \Core\Facade {}

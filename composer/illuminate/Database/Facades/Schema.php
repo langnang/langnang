@@ -5,4 +5,4 @@ namespace Illuminate\Database\Facades;
 /**
  * 
  */
-class Schema extends \App\Support\Facade {}
+class Schema extends \Core\Facade {}

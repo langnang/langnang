@@ -8,4 +8,4 @@ namespace Illuminate\Router\Facades;
  * @static get
  * @static group
  */
-class Route extends \App\Support\Facade {}
+class Route extends \Core\Facade {}

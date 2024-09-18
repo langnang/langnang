@@ -2,4 +2,4 @@
 
 namespace Illuminate\Paginator\Facades;
 
-class Paginator extends \App\Support\Facade {}
+class Paginator extends \Core\Facade {}

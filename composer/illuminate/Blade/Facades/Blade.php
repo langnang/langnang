@@ -2,4 +2,4 @@
 
 namespace Illuminate\Blade\Facades;
 
-class Blade extends \App\Support\Facade {}
+class Blade extends \Core\Facade {}

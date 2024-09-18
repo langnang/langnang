@@ -2,4 +2,4 @@
 
 namespace Illuminate\File\Facades;
 
-class File extends \App\Support\Facade {}
+class File extends \Core\Facade {}

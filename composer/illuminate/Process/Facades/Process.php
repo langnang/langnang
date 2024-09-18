@@ -2,4 +2,4 @@
 
 namespace Illuminate\Process\Facades;
 
-class Process extends \App\Support\Facade {}
+class Process extends \Core\Facade {}

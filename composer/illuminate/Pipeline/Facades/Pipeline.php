@@ -2,4 +2,4 @@
 
 namespace Illuminate\Pipeline\Facades;
 
-class Pipeline extends \App\Support\Facade {}
+class Pipeline extends \Core\Facade {}

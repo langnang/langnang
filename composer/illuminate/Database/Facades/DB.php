@@ -10,4 +10,4 @@ namespace Illuminate\Database\Facades;
  * @method get
  * @method value
  */
-class DB extends \App\Support\Facade {}
+class DB extends \Core\Facade {}

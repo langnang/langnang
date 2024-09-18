@@ -2,4 +2,4 @@
 
 namespace Illuminate\Event\Facades;
 
-class Event extends \App\Support\Facade {}
+class Event extends \Core\Facade {}

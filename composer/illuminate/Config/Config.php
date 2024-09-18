@@ -6,9 +6,9 @@ namespace Illuminate\Config;
  * 配置项
  */
 
-class Config extends \App\Support\Illuminate
+class Config extends \Core\Illuminate
 {
-  public $aliases = [];
+  private $aliases = [];
 
   use Traits\LifeCycleMethods;
 

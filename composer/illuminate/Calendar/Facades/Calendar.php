@@ -2,4 +2,4 @@
 
 namespace Illuminate\Calendar\Facades;
 
-class Calendar extends \App\Support\Facade {}
+class Calendar extends \Core\Facade {}

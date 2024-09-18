@@ -2,4 +2,4 @@
 
 namespace Illuminate\ASCII\Facades;
 
-class ASCII extends \App\Support\Facade {}
+class ASCII extends \Core\Facade {}

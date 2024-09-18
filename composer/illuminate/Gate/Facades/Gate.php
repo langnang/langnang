@@ -2,4 +2,4 @@
 
 namespace Illuminate\Gate\Facades;
 
-class Gate extends \App\Support\Facade {}
+class Gate extends \Core\Facade {}

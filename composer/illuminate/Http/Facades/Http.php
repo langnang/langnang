@@ -2,4 +2,4 @@
 
 namespace Illuminate\Http\Facades;
 
-class Http extends \App\Support\Facade {}
+class Http extends \Core\Facade {}

@@ -2,4 +2,4 @@
 
 namespace Illuminate\Autoload;
 
-class Autoload {}
+class Autoload extends \Core\Illuminate {}

@@ -2,4 +2,4 @@
 
 namespace Illuminate\Bus\Facades;
 
-class Bus extends \App\Support\Facade {}
+class Bus extends \Core\Facade {}

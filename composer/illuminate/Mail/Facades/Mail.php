@@ -2,4 +2,4 @@
 
 namespace Illuminate\Mail\Facades;
 
-class Mail extends \App\Support\Facade {}
+class Mail extends \Core\Facade {}

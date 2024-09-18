@@ -1,9 +1,19 @@
 <?php
 
-namespace App\Support;
+namespace Core;
 
 class Illuminate
 {
+  public $name;
+
+  public $alias;
+
+  private $aliases;
+
+  private function setName() {}
+  private function getName() {}
+  private function setAlias() {}
+  private function getAlias() {}
 
   protected function _autoload() {}
   protected function _run() {}

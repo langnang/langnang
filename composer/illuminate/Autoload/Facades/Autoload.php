@@ -2,4 +2,4 @@
 
 namespace Illuminate\Autoload\Facades;
 
-class Autoload extends \App\Support\Facade {}
+class Autoload extends \Core\Facade {}

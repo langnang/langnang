@@ -2,4 +2,4 @@
 
 namespace Illuminate\Spider\Facades;
 
-class Spider extends \App\Support\Facade {}
+class Spider extends \Core\Facade {}

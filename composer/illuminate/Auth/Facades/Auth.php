@@ -2,4 +2,4 @@
 
 namespace Illuminate\Auth\Facades;
 
-class Auth extends \App\Support\Facade {}
+class Auth extends \Core\Facade {}

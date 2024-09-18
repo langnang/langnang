@@ -2,4 +2,4 @@
 
 namespace Illuminate\Cookie\Facades;
 
-class Cookie extends \App\Support\Facade {}
+class Cookie extends \Core\Facade {}

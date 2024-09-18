@@ -2,4 +2,4 @@
 
 namespace Illuminate\Response\Facades;
 
-class Response extends \App\Support\Facade {}
+class Response extends \Core\Facade {}

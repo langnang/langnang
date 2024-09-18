@@ -2,4 +2,4 @@
 
 namespace Illuminate\Hash\Facades;
 
-class Hash extends \App\Support\Facade {}
+class Hash extends \Core\Facade {}

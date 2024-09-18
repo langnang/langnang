@@ -2,4 +2,4 @@
 
 namespace Illuminate\Error\Facades;
 
-class Error extends \App\Support\Facade {}
+class Error extends \Core\Facade {}

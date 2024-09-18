@@ -5,4 +5,4 @@ namespace Illuminate\Arr;
 /**
  * 
  */
-class Arr extends \App\Support\Illuminate {}
+class Arr extends \Core\Illuminate {}

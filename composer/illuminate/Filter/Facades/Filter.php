@@ -2,4 +2,4 @@
 
 namespace Illuminate\Filter\Facades;
 
-class Filter extends \App\Support\Facade {}
+class Filter extends \Core\Facade {}
