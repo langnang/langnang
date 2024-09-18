@@ -132,6 +132,7 @@ class Route
     // dump($this->prefix);
     $closure();
     // $this->prefix = null;
+    // var_dump(app('router'));
     app('router')->prefix = $this->prefix = null;
   }
   function handle($request, Closure $next) {}

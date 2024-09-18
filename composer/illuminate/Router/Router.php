@@ -9,16 +9,12 @@ use Closure;
  */
 class Router extends \Core\Illuminate
 {
-  public $prefix;
-  public $middlewares = [];
-  public $aliases = [];
-  public $routes = [];
-  public $patterns = [];
+  protected $prefix;
+  protected $middlewares = [];
+  protected $patterns = [];
+  private $aliases = [];
+  private $routes = [];
 
-  function __set($name, $value)
-  {
-    $this->{$name} = $value;
-  }
   function _init() {}
   function _autoload()
   {
@@ -161,7 +157,6 @@ class Router extends \Core\Illuminate
     // $method();
     // $method = $_SERVER['REQUEST_METHOD'];
   }
-
 
   function make() {}
   function handle($request, Closure $next) {}

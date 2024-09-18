@@ -1,8 +1,11 @@
 <?php
-function _e($str)
-{
-  echo $str;
+if (!function_exists('_e')) {
+  function _e($str)
+  {
+    echo $str;
+  }
 }
+
 
 foreach (\glob(dirname(__DIR__) . '/illuminate/*/helpers.php') as $file) {
   $filename = array_slice(preg_split('/\\\|\//', $file), -2, 1)[0];

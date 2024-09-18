@@ -16,10 +16,6 @@ class Request extends \Core\Illuminate
     $this->_input = array_merge([], $_GET, json_decode(file_get_contents("php://input",), true) ?? []);
   }
 
-  function __set($name, $value)
-  {
-    $this->{$name} = $value;
-  }
   /**
    * 检索输入值
    */
