@@ -8,28 +8,46 @@ namespace Illuminate\Session;
  */
 class Session extends \Core\Illuminate
 {
+  /**
+   * 
+   */
   function start()
   {
     session_start();
   }
+  /**
+   * 
+   */
   function set($name, $value = null)
   {
     $_SESSION[$name] = $value;
   }
+  /**
+   * 
+   */
   function get($name = null)
   {
     if (empty($name)) return $_SESSION;
     if (isset($_SESSION[$name])) return $_SESSION[$name];
     return;
   }
+  /**
+   * 
+   */
   function isset($name)
   {
     return isset($_SESSION[$name]);
   }
+  /**
+   * 
+   */
   function unset($name)
   {
     unset($_SESSION[$name]);
   }
+  /**
+   * 
+   */
   function destory()
   {
     session_destroy();
