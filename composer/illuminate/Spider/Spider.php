@@ -396,6 +396,8 @@ class Spider extends \Core\Illuminate
     $this->_init($configs);
   }
 
+  function make() {}
+
   function _init($configs = [])
   {
     // 产生时钟云，解决php7下面ctrl+c无法停止bug

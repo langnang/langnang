@@ -1,2 +1,6 @@
 *
 !.gitignore
+!Annotation
+!Annotation/**
+!Application
+!Application/**

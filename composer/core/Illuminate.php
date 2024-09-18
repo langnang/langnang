@@ -31,12 +31,12 @@ class Illuminate
     echo "<h2>" . $this->name . "</h2>";
     // vars
     echo "<table><tbody>";
-    echo '<tr class="h"><th> Var </th><th> Local Value </th><th> Annotation </th></tr>';
+    echo '<tr class="h"><th colspan=2> Var </th><th> Local Value </th><th> Annotation </th></tr>';
     $vars = array_filter(array_keys(get_class_vars(get_class($this))), function ($var) {
       return !preg_match("/^_/", $var);
     });
     foreach ($vars as $var) {
-      echo "<tr><td class=\"e\">$var</td><td class=\"v\">" . json_encode($this->{$var}) . "</td><td class=\"v\"></td></tr>";
+      echo "<tr><td class=\"e\">$var</td><td class=\"v\">" . gettype($this->{$var}) . "</td><td class=\"v\">" . json_encode($this->{$var}) . "</td><td class=\"v\"></td></tr>";
     }
     unset($vars, $var);
     echo "</tbody></table>";
