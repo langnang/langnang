@@ -15,7 +15,7 @@ class CreateRelationshipsTable extends Migration
   public function up()
   {
     // 基本关联表
-    Schema::create('relationships', function (Blueprint $table) {
+    Schema::create('_relationships', function (Blueprint $table) {
       $table->integer('mid')->nullable();
       $table->integer('cid')->nullable();
       $table->integer('lid')->nullable();
@@ -29,6 +29,6 @@ class CreateRelationshipsTable extends Migration
    */
   public function down()
   {
-    Schema::dropIfExists('relationships');
+    Schema::dropIfExists('_relationships');
   }
 }
