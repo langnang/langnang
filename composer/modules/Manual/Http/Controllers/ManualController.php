@@ -14,7 +14,7 @@ class ManualController
   {
     return view('manual::index', [
       'title' => "Manual",
-      "illuminates" => app()->aliases,
+      "illuminates" => app()->get_aliases(),
       "modules" => module()
       // "modules"=>
     ]);

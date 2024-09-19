@@ -10,9 +10,9 @@ class MarketController
    */
   public function index()
   {
-    return view('market::index', [
-      'title' => "Market",
-      "illuminates" => app()->aliases,
+    return view('manual::index', [
+      'title' => "Manual",
+      "illuminates" => app()->get_aliases(),
       "modules" => module()
       // "modules"=>
     ]);

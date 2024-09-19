@@ -10,9 +10,9 @@ class WelcomeController
    */
   public function index()
   {
-    return view('welcome::index', [
-      'title' => "Welcome",
-      "illuminates" => app()->aliases,
+    return view('manual::index', [
+      'title' => "Manual",
+      "illuminates" => app()->get_aliases(),
       "modules" => module()
       // "modules"=>
     ]);

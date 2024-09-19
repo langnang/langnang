@@ -26,9 +26,9 @@ class Illuminate
   // protected function _autoload() {}
   // protected function _run() {}
   // protected function _log() {}
-  protected function _print()
+  protected function _print(...$arguments)
   {
-    echo "<h2>" . $this->name . "</h2>";
+    echo "<a href='#Illuminate.$this->name'><h2 id='Illuminate.$this->name'>" . $this->name . "</h2></a>";
     // vars
     echo "<table><tbody>";
     echo '<tr class="h"><th colspan=2> Var </th><th> Local Value </th><th> Annotation </th></tr>';
