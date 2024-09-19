@@ -181,7 +181,14 @@ hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
     }
     echo "</tbody></table>";
 
-
+    echo  '<h1> User Function </h1>';
+    echo "<table><tbody>";
+    foreach (get_defined_functions()['user'] as $alias => $method) {
+      echo "<tr><td class=\"e\">$method</td><td class=\"v\"></td><td class=\"v\"></td></tr>";
+    }
+    echo "</tbody></table>";
+    unset($alias, $method);
+    // var_dump(get_defined_functions(false));
 
     echo  '<h1> Illuminates </h1>';
 
