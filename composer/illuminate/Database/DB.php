@@ -11,9 +11,20 @@ class DB
   public $link_name = 'default';
   public $autocommiting = false;
 
+  private $connection;
+  private $table;
+  private $sql;
   private $adapters = [];
   // use Traits\FacadeMethods;
   // use Traits\LifeCycleMethods;
+
+  function connection($name = null) {}
+  function table($name)
+  {
+    $this->table = $name;
+    return $this;
+  }
+
   function _() {}
 
   function _init()
@@ -66,7 +77,6 @@ class DB
       // $class = __NAMESPACE__.'\Drivers\\'.;
     }
   }
-  function connection() {}
   function select() {}
   function scalar() {}
   /**

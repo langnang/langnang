@@ -4,7 +4,11 @@
 !Annotation/**
 !Application
 !Application/**
+!Database
+!Database/**
 !Lang
 !Lang/**
 !Modular
 !Modular/**
+!Schema
+!Schema/**

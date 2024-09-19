@@ -4,13 +4,17 @@ namespace Illuminate\Database;
 
 class Database extends \Core\Illuminate
 {
-  public $db;
+
+  private $connection;
+  private $drivers = [];
+  private $config = [];
   function _autoload()
   {
     // dump(__METHOD__);
-    $config = config('database.connections.' . config('database.default'));
+    $this->config = $config = config('database.connections.' . config('database.default'));
     // dump($config);
-    $this->db = new DB($config);
+    // $this->db = new DB($config);
+    // dump($this);
   }
 
   function _run() {}

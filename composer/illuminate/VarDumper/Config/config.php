@@ -2,7 +2,7 @@
 
 return [
   "visible" => true,
-  "max_depth" => 4,
+  "max_depth" => 99999,
   "themes" => [
     "default" => "dumper",
     "options" => [

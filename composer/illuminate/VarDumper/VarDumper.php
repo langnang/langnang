@@ -9,6 +9,7 @@ class VarDumper extends \Core\Illuminate
   ];
 
   function make() {}
+
   function print($trace)
   {
     $return = '';
@@ -167,12 +168,11 @@ class VarDumper extends \Core\Illuminate
         ]);
 
         $properties = $reflection->getProperties();
-        $size = count($properties);
         $return = "<div style='padding-left: .5rem;'>"
           . "<details" . ($this->theme('details.open') === true || $depth === 0 ? ' open' : '') . ">"
           . "<summary>"
           . "<font style='" . $this->getElementStyles('summary') . "'>"
-          . "<font style='" . $this->getElementStyles('object_type') . "'><b>object</b>(<i>$class</i>)[" . $size . "] </font>"
+          . "<font style='" . $this->getElementStyles('object_type') . "'><b>object</b>(<i>$class</i>)[" . count($properties) . "] </font>"
           . "</font>"
           . "</summary>";
         foreach ($properties as $property) {
@@ -180,10 +180,14 @@ class VarDumper extends \Core\Illuminate
           // $return .= "\n";
           $return .= "<div style='padding-left: .5rem;'>";
           if ($property->isPublic()) {
-            $return .= "<i>public</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => " . $this->print_type($property->getValue($value), $depth + 1);
+            $return .= "<i>public</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => "
+              . $this->print_type($property->getValue($value), $depth + 1);
           } elseif ($property->isProtected()) {
-            $return .= "<i>protected</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => "  . $this->print_type($property->getValue($value), $depth + 1);
+            $return .= "<i>protected</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => "
+              . $this->print_type($property->getValue($value), $depth + 1);
           } elseif ($property->isPrivate()) {
+            // var_dump($property);
+            // var_dump($value);
             $return .= "<i>private</i> '<font style='" . $this->getElementStyles('object_key') . "'>" . $property->getName() . "</font>' => ";
             // . $this->print_type($property->getValue($value), $depth + 1);
           }
@@ -204,10 +208,13 @@ class VarDumper extends \Core\Illuminate
 
       case 'array':
         if ($depth > $max_depth) return;
+
+        // var_dump($value);
         $return .= "<div style='padding-left: .5rem;'>"
           . "<details" . ($this->theme('details.open') === true || $depth === 0 ? ' open' : '') . "><summary><font style='" . $this->getElementStyles('summary') . "'>"
           . "<font style='" . $this->getElementStyles('array_type') . "'><b>array</b> <i>(size=" . count($value) . ")</i> </font></font></summary>";
         if (count($value) == 0) {
+          // var_dump($value);
           $return .= "<div style='padding-left: .5rem;'><i><font style='" . $this->getElementStyles('empty') . "'>empty</font></i></div>";
         } else if ($depth == $max_depth) {
           $return .=  "<div style='padding-left: .5rem;'>...</div>";
