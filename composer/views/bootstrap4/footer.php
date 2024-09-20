@@ -32,7 +32,7 @@
           </div>
           <div class="list-group bg-transparent list-group-flush">
             <a class="list-group-item list-group-item-action py-1 bg-transparent text-light" href="#">Helpers</a>
-            <a class="list-group-item list-group-item-action py-1 bg-transparent text-light" href="/tests">Tests</a>
+            <a class="list-group-item list-group-item-action py-1 bg-transparent text-light" href="/test">Tests</a>
             <a class="list-group-item list-group-item-action py-1 bg-transparent text-light" href="/app/logs">Logs</a>
             <a class="list-group-item list-group-item-action py-1 bg-transparent text-light" href="/phpinfo.php">PhpInfo</a>
           </div>

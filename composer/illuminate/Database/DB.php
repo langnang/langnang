@@ -15,10 +15,26 @@ class DB
   private $table;
   private $sql;
   private $adapters = [];
+  private $driver;
   // use Traits\FacadeMethods;
   // use Traits\LifeCycleMethods;
 
-  function connection($name = null) {}
+  // function __construct()
+  // {
+  //   dump($this);
+  //   dump(config('database.default'));
+  //   dump(config('database.connections.' . config('database.default') . '.driver'));
+  //   $driver = app('database')->get_drivers(config('database.connections.' . config('database.default') . '.driver'));
+  //   dump($driver);
+  //   return $driver;
+  // }
+  function connection($name = null)
+  {
+    if (!empty($this->driver)) return $this->driver;
+    $this->driver = app('database')->get_drivers(config('database.connections.' . (empty($name) ? config('database.default') : $name) . '.driver'));
+    $this->driver->connection();
+    return $this->driver;
+  }
   function table($name)
   {
     $this->table = $name;
@@ -77,7 +93,11 @@ class DB
       // $class = __NAMESPACE__.'\Drivers\\'.;
     }
   }
-  function select() {}
+  function select(...$values)
+  {
+    $this->connection();
+    $this->driver->{__FUNCTION__}(...$values);
+  }
   function scalar() {}
   /**
    * 重新设置连接
