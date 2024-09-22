@@ -4,6 +4,7 @@ namespace Core\Traits;
 
 trait AliasesTrait
 {
+  private $aliases = [];
   /**
    * set
    */

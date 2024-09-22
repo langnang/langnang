@@ -6,6 +6,7 @@ class Markdown extends \Core\Illuminate
 {
   public $catelog = [];
   public $content = [];
+  public $config = [];
   private $aliases = [
     // "/\n[]+\n/" => '<p> ${1} </p>',
     // 标题
@@ -103,4 +104,6 @@ class Markdown extends \Core\Illuminate
   }
   function toHtml() {}
   function getMenu() {}
+  function of($path) {}
+  function load($mark) {}
 }

@@ -7,7 +7,7 @@ namespace Illuminate\Migration;
  */
 class Migration extends \Core\Illuminate
 {
-  private $aliases = [];
+
   function up() {}
 
   function down() {}

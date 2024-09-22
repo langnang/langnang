@@ -12,10 +12,17 @@ class MySqliDriver
     $this->con = mysqli_connect($config['host'], $config['username'], $config['password'], $config['database'], $config['port'] ?: 3306);
     return $this;
   }
-  function insert(...$values) {}
+  function insert(...$values)
+  {
+    dump(__METHOD__, $values, sprintf(...$values));
+  }
+  private function insert_with_sql($sql)
+  {
+    mysqli_query($this->con, $sql);
+  }
   function select(...$values)
   {
-    dump(__METHOD__, $values);
+    dump(__METHOD__, $values, sprintf(...$values));
   }
   function table($tbname)
   {

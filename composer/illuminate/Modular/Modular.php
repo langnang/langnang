@@ -4,7 +4,7 @@ namespace Illuminate\Modular;
 
 class Modular extends \Core\Illuminate
 {
-  private $aliases = [];
+
 
   use \Core\Traits\AliasesTrait;
 

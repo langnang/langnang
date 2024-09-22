@@ -10,7 +10,9 @@ return [
   "illuminates" => [
     "ignores" => []
   ],
-
+  /**
+  *
+  */
   "aliases" => [
     // "path.storage" => base_path("storage"),
   ],

@@ -9,9 +9,9 @@ class Application extends \Core\Illuminate
   public $alias = "app";
 
 
-  private $aliases = [];
 
   private $facades = [];
+  private $plugins = [];
 
   // public $logs = [];
   use \Core\Traits\AliasesTrait;
@@ -247,4 +247,7 @@ class Application extends \Core\Illuminate
     if (empty($name)) return $this;
     return $this->aliases[$name];
   }
+  private function load_illuminates() {}
+  private function load_plugins() {}
+  private function load_facades() {}
 }

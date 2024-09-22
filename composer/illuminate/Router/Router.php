@@ -12,7 +12,7 @@ class Router extends \Core\Illuminate
   protected $prefix;
   protected $middlewares = [];
   protected $patterns = [];
-  private $aliases = [];
+
   private $routes = [];
 
   function _init() {}

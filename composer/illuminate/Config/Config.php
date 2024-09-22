@@ -8,7 +8,8 @@ namespace Illuminate\Config;
 
 class Config extends \Core\Illuminate
 {
-  private $aliases = [];
+
+  use \Core\Traits\AliasesTrait;
 
   use Traits\LifeCycleMethods;
 

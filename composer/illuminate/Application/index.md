@@ -93,6 +93,8 @@
 #### `_init()`
 
 > 初始化
+>
+#### `_load()`
 
 #### `_autoload()`
 
@@ -109,3 +111,25 @@
 #### `_log()`
 
 > 日志化
+
+### PublicMethods
+
+- `start`
+- `load`
+- `run`
+- `set`
+- `get`
+- `is`
+- `isset`
+- `unset`
+- `exist`
+- `has`
+- `of`
+- `print`
+- `log`
+- `make`
+- `to`
+- `handle`
+- `register`
+- `boot`
+- `schedule`

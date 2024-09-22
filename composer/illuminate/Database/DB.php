@@ -41,6 +41,15 @@ class DB
     return $this;
   }
 
+  function __call($name, $arguments)
+  {
+    $this->connection();
+    if (method_exists($this->driver, $name)) {
+      dump(__METHOD__, $name, $arguments);
+      $this->driver->{$name}(...$arguments);
+    } else {
+    }
+  }
   function _() {}
 
   function _init()
@@ -93,11 +102,11 @@ class DB
       // $class = __NAMESPACE__.'\Drivers\\'.;
     }
   }
-  function select(...$values)
-  {
-    $this->connection();
-    $this->driver->{__FUNCTION__}(...$values);
-  }
+  // function select(...$values)
+  // {
+  //   $this->connection();
+  //   $this->driver->{__FUNCTION__}(...$values);
+  // }
   function scalar() {}
   /**
    * 重新设置连接
