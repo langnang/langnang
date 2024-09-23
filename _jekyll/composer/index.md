@@ -16,7 +16,6 @@ title: Composer
 - Bus
 - Cache
 - Calendar: 日历
-- [Collection]
 - Command
 - [Config](): 配置
 - Console
@@ -45,6 +44,9 @@ title: Composer
   - Pdf  
   - Js
   - Css
+  - Sql
+  - Txt
+  - Zip
 - FileSystem
 - Filter
 - Ftp
@@ -52,6 +54,7 @@ title: Composer
 - Hash
 - Helper: 辅助函数
   - [Arr](./helper.arr.md): 数组
+  - [Collection]
   - Date: 时间日期
   - [Str](./helper.str.md): 字符串
   - Filter: 过滤
@@ -76,6 +79,7 @@ title: Composer
 - RateLimiter
 - Redirect
 - [RegExp](./reg-exp.md): 正则
+  - Validator
 - Request
 - Response: 响应
 - Route: 路由
@@ -89,11 +93,9 @@ title: Composer
 - Spider: 数据采集
   - Selector: DOM 选择器
 - Storage: 存储
-- [Str]
 - Traitor
 - Usage
 - User
-- Validator
 - [VarDumper]
 - [View](): 视图
 - Yielder
