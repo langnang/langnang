@@ -43,6 +43,7 @@ class Facade
       $facade = array_slice(explode("\\", $class), -1)[0];
       // var_dump($illuminate, $facade);
       $calssName = "Illuminate\\$illuminate\\$facade";
+      if (!class_exists($calssName)) throw new Error("class($className) not exist.");
       $class = new $calssName;
       return $class->{$name}(...$arguments);
       // $class

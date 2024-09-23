@@ -4,12 +4,13 @@ title: Composer
 
 ## Illuminate
 
-- Account
+- Account: 账号
 - Annotation: 注释
 - [Application](./app.md): 应用启动器
+  - Facade
+  - Plugin
 - Artisan
 - ASCII
-- Auth: 安全-用户认证
 - Autoload
 - Blade
 - Broadcast
@@ -28,7 +29,6 @@ title: Composer
   - Schema
   - Table
   - Column
-- Date
 - DevTool
 - Eloquent: 数据库-模型关联
 - Environment(env): 环境变量
@@ -46,11 +46,10 @@ title: Composer
   - Css
   - Sql
   - Txt
+  - Json
   - Zip
-- FileSystem
-- Filter
+- FileSystem(fs)
 - Ftp
-- Gate: 安全-用户授权
 - Hash
 - Helper: 辅助函数
   - [Arr](./helper.arr.md): 数组
@@ -60,11 +59,10 @@ title: Composer
   - Filter: 过滤
 - Http
   - Request
-  - Reponse
+  - Response: 响应
 - Internationalization(i18n): 国际化
 - Log: 日志
 - Mail: 邮件
-- Migration
 - [Model]
 - [Modular](): 模块化
 - Notification
@@ -80,22 +78,24 @@ title: Composer
 - Redirect
 - [RegExp](./reg-exp.md): 正则
   - Validator
-- Request
-- Response: 响应
-- Route: 路由
-  - URL
-  - Redirect: 重定向
+- Router: 路由
 - Schedule
 - Schema: 架构
-- Seeder
+  - Migration
+  - Seeder
 - Selector
 - Session
 - Spider: 数据采集
   - Selector: DOM 选择器
 - Storage: 存储
 - Traitor
+- URL
+  - Redirect: 重定向
 - Usage
 - User
+  - Account
+  - Auth: 安全-用户认证
+  - Gate: 安全-用户授权
 - [VarDumper]
 - [View](): 视图
 - Yielder
