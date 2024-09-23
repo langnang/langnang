@@ -1,5 +1,5 @@
 <?php
 
-namespace Illuminate\Str\Facades;
+namespace Illuminate\Helper\Facades;
 
 class Str extends \Core\Facade {}

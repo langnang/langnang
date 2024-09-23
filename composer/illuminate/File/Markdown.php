@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Markdown;
+namespace Illuminate\File;
 
 class Markdown extends \Core\Illuminate
 {

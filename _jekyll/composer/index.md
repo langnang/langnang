@@ -82,8 +82,7 @@ title: Composer
 - Schedule
 - Schema: 架构
   - Migration
-  - Seeder
-- Selector
+  - Seeder: 数据库-数据填充
 - Session
 - Spider: 数据采集
   - Selector: DOM 选择器

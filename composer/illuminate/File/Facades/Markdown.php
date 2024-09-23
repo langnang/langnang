@@ -1,5 +1,5 @@
 <?php
 
-namespace Illuminate\Markdown\Facades;
+namespace Illuminate\File\Facades;
 
 class Markdown extends \Core\Facade {}

@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Str;
+namespace Illuminate\Helper;
 
-use Illuminate\Str\Interfaces\StrInterface;
+use Illuminate\Helper\Interfaces\StrInterface;
 use Illuminate\Support\Stringable;
 use Illuminate\ASCII\Facades\ASCII;
 

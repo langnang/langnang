@@ -1,5 +1,5 @@
 <?php
 
-namespace Illuminate\Request\Facades;
+namespace Illuminate\Http\Facades;
 
 class Request extends \Core\Facade {}

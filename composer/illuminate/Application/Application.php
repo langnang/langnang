@@ -68,6 +68,7 @@ class Application extends \Core\Illuminate
         continue;
       }
 
+      if (!class_exists($className)) continue;
       $class = new $className;
       // var_dump($class);
 

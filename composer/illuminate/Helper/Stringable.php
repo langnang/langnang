@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Str;
+namespace Illuminate\Helper;
 
 class Stringable
 {
