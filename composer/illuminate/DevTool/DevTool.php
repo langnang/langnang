@@ -18,8 +18,8 @@ class DevTool
     $return .= '<li style="display: inline-block;">网络</li>';
     $return .= '</ul>';
     $return .= '</div>';
-    echo $return;
-    dump($this);
+    // echo $return;
+    // dump($this);
   }
 
   function make() {}

@@ -1,3 +1,0 @@
-# Spider
-
-<!-- @>>> './Config/config.php' -->

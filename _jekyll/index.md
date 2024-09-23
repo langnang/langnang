@@ -7,6 +7,6 @@
 - JavaScript
 
 - PHP
-- Composer
+- [Composer](./composer/)
   - Wiki-without-db
   - Blog

@@ -47,7 +47,7 @@ class Application extends \Core\Illuminate
 
       $filename = pathinfo($file)['filename'];
 
-      if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
+      // if (in_array($filename, $_ENV['ILLUMINATE_IGNORES'] ?? [])) continue;
 
       // var_dump($this->basePath("storage" . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR . "startup.log"));
       // var_dump($filename);
