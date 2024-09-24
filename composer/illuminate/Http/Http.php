@@ -428,6 +428,16 @@ class Http
     return strtolower($encoding);
   }
 
+  function _autoload()
+  {
+    // var_dump(__METHOD__);
+    global $app;
+    // var_dump($app);
+    $request = new Request;
+    $request->name = 'Request';
+    $request->alias = 'request';
+    $app->set_aliases($request->alias, $request);
+  }
   /**
    * 移除页面head区域代码
    * @param $html

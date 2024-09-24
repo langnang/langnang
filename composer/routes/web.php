@@ -1,6 +1,6 @@
 <?php
 
-use \Illuminate\Request\Request;
+use \Illuminate\Http\Request;
 
 Route::get('', function (Request $request) {
   view('index', ['title' => "Welcome"]);

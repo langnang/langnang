@@ -248,6 +248,10 @@ class Application extends \Core\Illuminate
     if (empty($name)) return $this;
     return $this->aliases[$name];
   }
+  public function set_aliases($name, $value = null)
+  {
+    $this->aliases[$name] = $value;
+  }
   private function load_illuminates() {}
   private function load_plugins() {}
   private function load_facades() {}

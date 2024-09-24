@@ -38,7 +38,9 @@ class DB
   function table($name)
   {
     $this->table = $name;
-    return $this;
+    $builder = new QueryBuilder();
+    $builder->table($name);
+    return $builder;
   }
 
   function __call($name, $arguments)

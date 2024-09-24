@@ -9,7 +9,7 @@ use Closure;
  */
 class Router extends \Core\Illuminate
 {
-  protected $prefix;
+  public $prefix;
   protected $middlewares = [];
   protected $patterns = [];
 
@@ -148,11 +148,11 @@ class Router extends \Core\Illuminate
         // }
 
         // require_once __DIR__ . '/../../' . strtolower(substr($func[0], 1, 1)) . str_replace("\\", '/', substr($func[0], 2))  . '.php';
-        return (new $func[0])->{$func[1]}(...$route['args'] ?? []);
+        return (new $func[0])->{$func[1]}(app('request'), ...$route['args'] ?? []);
       }
     }
 
-    return $func(...$route['args'] ?? []);
+    return $func(app('request'), ...$route['args'] ?? []);
     // var_dump($_SERVER);
     // $method();
     // $method = $_SERVER['REQUEST_METHOD'];

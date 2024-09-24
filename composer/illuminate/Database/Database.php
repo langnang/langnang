@@ -51,5 +51,6 @@ class Database extends \Core\Illuminate
   {
     return $this->config;
   }
+  function set_connnection($name) {}
   function get_connection($name = null) {}
 }

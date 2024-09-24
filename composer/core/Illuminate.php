@@ -7,15 +7,15 @@ class Illuminate
   public $name;
   public $alias;
 
-  function __set($name, $value = null)
-  {
-    $this->{$name} = $value;
-  }
+  // function __set($name, $value = null)
+  // {
+  //   $this->{$name} = $value;
+  // }
 
-  function __get($name)
-  {
-    return $this->{$name};
-  }
+  // function __get($name)
+  // {
+  //   return $this->{$name};
+  // }
   // private $aliases;
 
   // private function setName() {}
