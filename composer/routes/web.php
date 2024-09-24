@@ -7,7 +7,7 @@ Route::get('', function (Request $request) {
 });
 
 Route::get('/test', function () {
-  require_once base_path('illuminate\\Application\\tests.php');
+  require_once base_path('illuminate' . DIRECTORY_SEPARATOR . 'Application' . DIRECTORY_SEPARATOR . 'tests.php');
   View::make('404', ['title' => "404"]);
 });
 
