@@ -30,9 +30,9 @@ class Environment extends \Core\Illuminate
 
   function is_mobile()
   {
-    if (isset($this->env['HTTP_USER_AGENT'])) {
+    if (isset($_SERVER['HTTP_USER_AGENT'])) {
       foreach ($this->agents['mobile'] as $agent) {
-        if (strpos($this->env['HTTP_USER_AGENT'], $agent) !== false) {
+        if (strpos($_SERVER['HTTP_USER_AGENT'], $agent) !== false) {
           return true;
         }
       }
