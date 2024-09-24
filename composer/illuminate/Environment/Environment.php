@@ -7,7 +7,7 @@ class Environment extends \Core\Illuminate
   public $alias = 'env';
   private $env = [];
   private $agents = [
-    'mobile' => ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'BlackBerry', 'SymbianOS'],
+    'mobile' => ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'BlackBerry', 'SymbianOS', 'Mobile'],
     'pc' => [],
   ];
   function __construct()
