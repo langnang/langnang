@@ -1,5 +1,4 @@
 <?php
-$alias = 'env';
 if (!function_exists('env')) {
   function env($name = null)
   {
@@ -9,7 +8,7 @@ if (!function_exists('env')) {
 if (!function_exists('is_mobile')) {
   function is_mobile()
   {
-    return app($alias)->is_mobile();
+    return app('env')->is_mobile();
   }
 }
 

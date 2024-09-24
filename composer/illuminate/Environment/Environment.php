@@ -6,6 +6,10 @@ class Environment extends \Core\Illuminate
 {
   public $alias = 'env';
   private $env = [];
+  private $agents = [
+    'mobile' => ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'BlackBerry', 'SymbianOS'],
+    'pc' => [],
+  ];
   function __construct()
   {
     // var_dump($GLOBALS);
@@ -27,7 +31,13 @@ class Environment extends \Core\Illuminate
   function is_mobile()
   {
     if (isset($this->env['HTTP_USER_AGENT'])) {
+      foreach ($this->agents['mobile'] as $agent) {
+        if (strpos($this->env['HTTP_USER_AGENT'], $agent) !== false) {
+          return true;
+        }
+      }
     }
+    return false;
   }
   function is_pc() {}
 }
