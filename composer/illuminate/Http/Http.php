@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http;
 
-class Http
+class Http extends \Core\Illuminate
 {
   function __set($name, $value)
   {

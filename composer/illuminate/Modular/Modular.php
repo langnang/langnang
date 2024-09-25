@@ -97,9 +97,8 @@ class Modular extends \Core\Illuminate
     parent::{__FUNCTION__}(...$arguments);
 
     // aliases
-    echo "<table><tbody>";
+    echo "<table><thead><tr class='h'><th colspan='2'> Aliases (" . sizeof($this->aliases) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
     // echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
-    echo '<tr class="h"><th colspan="2"> Aliases </th><th> Annotation </th></tr>';
     foreach ($this->aliases as $alias => $module) {
       echo "<tr><td class=\"e\">" . $module['name'] . "</td><td class=\"v\">$alias</td><td class=\"v\"></td></tr>";
     }

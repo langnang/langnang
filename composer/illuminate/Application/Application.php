@@ -163,7 +163,33 @@ class Application extends \Core\Illuminate
       .v i {color: #999;}
       img {float: right; border: 0;}
       hr {width: 934px; background-color: #ccc; border: 0; height: 1px;}
+      thead {cursor: pointer;}
+      .d-none {display: none;}
       </style>';
+    echo '<script>
+    window.onload=function(){
+      const thead = document.getElementsByTagName("thead");
+      const tbody = document.getElementsByTagName("tbody");
+      // console.log(thead,tbody);
+      Array.from(thead).forEach(function(head){
+        head.addEventListener("click",function(){
+          const body = head.nextElementSibling;
+          const visible = !(new RegExp(" d-none ").test(" "+body.className+" "));
+          if(visible){
+            body.classList.add("d-none");
+          }else{
+            body.classList.remove("d-none")
+          }
+        })
+      })
+      // Array.from(tbody).forEach(function(body){
+      //   body.classList.add("d-none");
+      // })
+      
+    }
+    
+    </script>';
+
     echo '<div class="center">';
 
     echo '<table>
@@ -196,17 +222,19 @@ class Application extends \Core\Illuminate
     parent::{__FUNCTION__}(...$arguments);
 
     // aliases
-    echo "<table><tbody>";
+    echo "<table><thead><tr class='h'><th colspan='2'> Aliases </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
     // echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
-    echo '<tr class="h"><th colspan="2"> Aliases </th><th> Annotation </th></tr>';
     foreach ($this->aliases as $alias => $illuminate) {
+      if (empty($illuminate)) {
+        var_dump($alias);
+        continue;
+      }
       echo "<tr><td class=\"e\">$illuminate->name</td><td class=\"v\">$alias</td><td class=\"v\"></td></tr>";
     }
     unset($alias, $illuminate);
     echo "</tbody></table>";
     // facades
-    echo "<table><tbody>";
-    echo '<tr class="h"><th colspan="2"> Facades </th><th> Annotation </th></tr>';
+    echo "<table><thead><tr class='h'><th colspan='2'> Facades (" . sizeof($this->facades) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
     foreach ($this->facades as $alias => $facade) {
       echo "<tr><td class=\"e\">$alias</td><td class=\"v\">$facade</td><td class=\"v\"></td></tr>";
     }
@@ -225,11 +253,11 @@ class Application extends \Core\Illuminate
     foreach ($extensions as $extension) {
       echo "<a href='#Configuration.$extension'><h2 id='Configuration.$extension'>" . $extension . "</h2></a>";
       // methods
-      echo "<table><tbody>";
-      echo '<tr class="h"><th colspan="2"> Methods </th><th> Annotation </th></tr>';
+      $methods = get_extension_funcs($extension) ?: [];
+      echo "<table><thead><tr class='h'><th colspan='2'> Methods (" . sizeof($methods) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
 
       // echo '<td class="e">' . implode(", ", get_extension_funcs($extension) ?: [])  . '</td>';
-      foreach (get_extension_funcs($extension) ?: [] as $alias => $method) {
+      foreach ($methods as $alias => $method) {
         echo "<tr><td class=\"e\">$method</td><td class=\"v\"></td><td class=\"v\"></td></tr>";
       }
       // foreach (array_values($methods) as $alias => $method) {

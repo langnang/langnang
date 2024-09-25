@@ -44,11 +44,11 @@ class Illuminate
   {
     echo "<a href='#Illuminate.$this->name'><h2 id='Illuminate.$this->name'>" . $this->name . "</h2></a>";
     // vars
-    echo "<table><tbody>";
-    echo '<tr class="h"><th colspan=2> Var </th><th> Local Value </th><th> Annotation </th></tr>';
+
     $vars = array_filter(array_keys(get_class_vars(get_class($this))), function ($var) {
       return !preg_match("/^_/", $var);
     });
+    echo "<table><thead><tr class='h'><th colspan='2'> Vars (" . sizeof($vars) . ") </th><th> Local Value </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
     foreach ($vars as $var) {
       echo "<tr><td class=\"e\">$var</td><td class=\"v\">" . gettype($this->{$var}) . "</td><td class=\"v\">" . json_encode($this->{$var}) . "</td><td class=\"v\"></td></tr>";
     }
@@ -56,12 +56,12 @@ class Illuminate
     echo "</tbody></table>";
 
     // methods
-    echo "<table><tbody>";
-    echo '<tr class="h"><th colspan="2"> Methods </th><th> Annotation </th></tr>';
+
     $methods = array_filter(get_class_methods($this), function ($method) {
       // var_dump($method);
       return !preg_match("/^_/", $method);
     });
+    echo "<table><thead><tr class='h'><th colspan='2'> Methods (" . sizeof($methods) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
     foreach ($methods as $alias => $method) {
       echo "<tr><td class=\"e\">$method</td><td class=\"v\"></td><td class=\"v\"></td></tr>";
     }
