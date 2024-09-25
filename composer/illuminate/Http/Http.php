@@ -432,11 +432,7 @@ class Http
   {
     // var_dump(__METHOD__);
     global $app;
-    // var_dump($app);
-    $request = new Request;
-    $request->name = 'Request';
-    $request->alias = 'request';
-    $app->set_aliases($request->alias, $request);
+    $app->make('Illuminate\Http\Request');
   }
   /**
    * 移除页面head区域代码

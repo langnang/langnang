@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Artisan;
+namespace Illuminate\Console;
 
 class Artisan extends \Core\Illuminate
 {

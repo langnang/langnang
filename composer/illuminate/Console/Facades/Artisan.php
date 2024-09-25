@@ -1,5 +1,5 @@
 <?php
 
-namespace Illuminate\Artisan\Facades;
+namespace Illuminate\Console\Facades;
 
 class Artisan extends \Core\Facade {}

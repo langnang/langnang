@@ -248,9 +248,25 @@ class Application extends \Core\Illuminate
     if (empty($name)) return $this;
     return $this->aliases[$name];
   }
-  public function set_aliases($name, $value = null)
+  public function make($aliasOrClass, $value = null)
   {
-    $this->aliases[$name] = $value;
+    if (class_exists($aliasOrClass)) {
+      // print_r($aliasOrClass);
+      $class = new $aliasOrClass;
+      $filename = pathinfo($aliasOrClass)['filename'];
+      // var_dump($class);
+
+      if (isset($class->alias)) $alias = $class->alias;
+      else $alias = strtolower(preg_replace('/([a-z])([A-Z])/', '${1}-${2}', $filename));
+
+      $class->name = $filename;
+      $class->alias = $alias;
+
+      $this->aliases[$alias] = $class;
+      return $class;
+    } else {
+      $this->aliases[$aliasOrClass] = $value;
+    }
   }
   private function load_illuminates() {}
   private function load_plugins() {}
