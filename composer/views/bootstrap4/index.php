@@ -12,7 +12,7 @@
   <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <link crossorigin="anonymous" rel="stylesheet" href="style.css">
+  <!-- <link crossorigin="anonymous" rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -27,7 +27,7 @@
   <script crossorigin="anonymous" src="https://unpkg.com/mockjs@1.1.0/dist/mock-min.js"></script>
   <script crossorigin="anonymous" src="https://unpkg.com/holderjs@2.9.9/holder.min.js"></script>
 
-  <script crossorigin="anonymous" src="script.js"></script>
+  <!-- <script crossorigin="anonymous" src="script.js"></script> -->
 </body>
 
 </html>

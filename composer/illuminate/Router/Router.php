@@ -32,7 +32,7 @@ class Router extends \Core\Illuminate
   function _run()
   {
     // $_route = new Route(['uri' => $_SERVER['REQUEST_URI'] ?? "/"])->uri;
-    file_put_contents(storage_path("framework" . DIRECTORY_SEPARATOR . "routes.json"), json_encode($this));
+    file_put_contents(storage_path("framework" . DIRECTORY_SEPARATOR . "routes.json"), json_encode($this->routes));
     // dump($this->routes);
     // $_uri = $this->adjust_uri($_SERVER['REQUEST_URI'] ?? "/");
     // 转换标准地址
@@ -43,8 +43,6 @@ class Router extends \Core\Illuminate
     // dump($_SERVER);
     // dump($uri);
     $method = $_SERVER['REQUEST_METHOD'];
-
-    app_log(__METHOD__ . " " . json_encode($_uri));
 
     // dump([$uri, $method, preg_match("/{(.+)}/", $uri, $match)]);
     // dump($this->routes);
@@ -92,8 +90,6 @@ class Router extends \Core\Illuminate
       if (array_key_exists("/*", $this->routes)) {
         $route = $this->routes["/*"][$method];
       }
-    } else {
-      app_log(__METHOD__ . " " . json_encode($route));
     }
     if (empty($route)) {
       $route = [
@@ -148,10 +144,12 @@ class Router extends \Core\Illuminate
         // }
 
         // require_once __DIR__ . '/../../' . strtolower(substr($func[0], 1, 1)) . str_replace("\\", '/', substr($func[0], 2))  . '.php';
+        app_log(__METHOD__ . " " . json_encode($route));
         return (new $func[0])->{$func[1]}(app('request'), ...$route['args'] ?? []);
       }
     }
 
+    app_log(__METHOD__ . " " . json_encode($route));
     return $func(app('request'), ...$route['args'] ?? []);
     // var_dump($_SERVER);
     // $method();
