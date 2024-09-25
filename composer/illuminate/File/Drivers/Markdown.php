@@ -1,9 +1,10 @@
 <?php
 
-namespace Illuminate\File;
+namespace Illuminate\File\Drivers;
 
-class Markdown extends \Core\Illuminate
+class Markdown
 {
+  use \Illuminate\File\Traits\FileDriverTrait;
   public $catelog = [];
   public $content = [];
   public $config = [];

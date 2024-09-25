@@ -14,4 +14,5 @@ class QueryBuilder
   function select() {}
   function get() {}
   function first() {}
+  function exists() {}
 }

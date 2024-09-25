@@ -4,8 +4,22 @@ namespace Core;
 
 class Illuminate
 {
+  /**
+   * 
+   */
   public $name;
+  /**
+   * 
+   */
   public $alias;
+  /**
+   * 
+   */
+  public $error_code;
+  /**
+   * 
+   */
+  public $error_message;
 
   // function __set($name, $value = null)
   // {

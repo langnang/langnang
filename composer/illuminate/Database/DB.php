@@ -486,7 +486,13 @@ class DB
       }
     }
   }
-
+  /**
+   * 
+   */
+  function select($table, $where = null, $return_sql = false) {}
+  /**
+   * 
+   */
   function ping()
   {
     if (!mysqli_ping($this->links[$this->link_name]['conn'])) {
