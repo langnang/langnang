@@ -39,6 +39,26 @@ Options:
   ];
   public function print()
   {
+    $loading = ['.', '..', '...', '....', '.....', '......'];
+    $loadIndex = 0;
+
+    // 模拟一个长时间运行的进程
+    for ($i = 0; $i < 10; $i++) {
+      // 清除之前的输出
+      echo "\r";
+
+      // 输出loading字符
+      echo "Loading " . $loading[$loadIndex] . "  ";
+
+      // 将索引更新为下一个字符
+      $loadIndex = ($loadIndex + 1) % count($loading);
+
+      // 暂停几毫秒
+      usleep(100000);
+    }
+
+    echo "\r"; // 进程结束后换行
+    // echo "完成！";
     foreach ($this->messages as $color_message) {
       $message = $color_message[0];
       $color = $color_message[1] ?? 'reset';
