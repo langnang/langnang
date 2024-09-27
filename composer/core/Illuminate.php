@@ -40,40 +40,37 @@ class Illuminate
   // protected function _autoload() {}
   // protected function _run() {}
   // protected function _log() {}
-  protected function _print(...$arguments)
-  {
-    echo "<a href='#Illuminate.$this->name'><h2 id='Illuminate.$this->name'>" . $this->name . "</h2></a>";
-    // vars
 
-    $vars = array_filter(array_keys(get_class_vars(get_class($this))), function ($var) {
-      return !preg_match("/^_/", $var);
-    });
-    echo "<table><thead><tr class='h'><th colspan='2'> Vars (" . sizeof($vars) . ") </th><th> Local Value </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
-    foreach ($vars as $var) {
-      echo "<tr><td class=\"e\">$var</td><td class=\"v\">" . gettype($this->{$var}) . "</td><td class=\"v\">" . json_encode($this->{$var}) . "</td><td class=\"v\"></td></tr>";
-    }
-    unset($vars, $var);
-    echo "</tbody></table>";
+  // function __construct() {}
+  // function __set($name, $value) {}
+  // function __get($name) {}
 
-    // methods
+  // function _log() {}
+  // function _debug() {}
+  // function _autoload() {}
+  // function _print() {}
 
-    $methods = array_filter(get_class_methods($this), function ($method) {
-      // var_dump($method);
-      return !preg_match("/^_/", $method);
-    });
-    echo "<table><thead><tr class='h'><th colspan='2'> Methods (" . sizeof($methods) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
-    foreach ($methods as $alias => $method) {
-      echo "<tr><td class=\"e\">$method</td><td class=\"v\"></td><td class=\"v\"></td></tr>";
-    }
-    // if (count($methods) > 0) {
-
-    // echo '<td class="e">' . implode(", ", $methods) . '</td>';
-    // foreach (array_values($methods) as $alias => $method) {
-    //   if (preg_match("/^_/", $method)) continue;
-    //   echo "<tr><td class=\"e\">$alias</td><td class=\"v\">$method</td></tr>";
-    // }
-    // }
-    unset($methods, $alias, $method);
-    echo "</tbody></table>";
-  }
+  /**
+   * Resolve the given type from the container.
+   * 从容器中解析给定的类型
+   */
+  // public function make() {}
+  // protected function resolve() {}
+  /**
+   * 
+   */
+  // public function handle() {}
+  /**
+   * 
+   */
+  // public function singleton() {}
+  // public function boot() {}
+  /**
+   * Throw an HttpException with the given data.
+   */
+  // public function abort($code, $message = '', array $headers = []) {}
+  /**
+   * 
+   */
+  // public function register() {}
 }

@@ -72,11 +72,3 @@ if (!function_exists('absolute_path')) {
 if (!function_exists('relative_path')) {
   function relative_path($path = '') {}
 }
-
-
-if (!function_exists('appinfo')) {
-  function appinfo()
-  {
-    return app()->_print();
-  }
-}

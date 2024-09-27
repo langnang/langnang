@@ -103,6 +103,8 @@ title: Composer
 
 - Str
 
+### Methods
+
 - `make`
 - `handle`
 - `set`
@@ -115,10 +117,11 @@ title: Composer
 - `toHtml`
 - `print`
 - `dump`
-- `singleton`
-<!-- - `toHtml` -->
-
-### Methods
+- `registor`
+- `bind`
+- `boot`
+- `abort`
+- `flush`
 
 #### MagicMethods
 

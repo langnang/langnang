@@ -4,7 +4,18 @@ namespace Core\Traits;
 
 trait AliasesTrait
 {
+  /**
+   * The registered type aliases.
+   * 
+   * @var string[]
+   */
   private $aliases = [];
+  /**
+   * The registered aliases keyed by the abstract name.
+   * 
+   * @var array[]
+   */
+  protected $abstractAliases = [];
   /**
    * set
    */
