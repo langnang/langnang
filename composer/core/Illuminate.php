@@ -13,13 +13,19 @@ class Illuminate
    */
   public $alias;
   /**
-   * 
+   * The application instance.
+   *
+   * @var \Illuminate\Application\Application
    */
-  public $error_code;
+  protected $app;
   /**
    * 
    */
-  public $error_message;
+  // public $error_code;
+  /**
+   * 
+   */
+  // public $error_message;
 
   // function __set($name, $value = null)
   // {
@@ -73,4 +79,19 @@ class Illuminate
    * 
    */
   // public function register() {}
+  public function __construct($app = null)
+  {
+    $this->app = $app;
+  }
+
+
+  /**
+   * Flush the container of all bindings and resolved instances.
+   *
+   * @return void
+   */
+  public function flush()
+  {
+    // parent::flush();
+  }
 }

@@ -2,6 +2,9 @@
 title: Composer
 ---
 
+- [开发手册](./dev-manual/)
+- [服务手册](./ref-manual/)
+
 ## Illuminate
 
 - Account: 账号
@@ -29,7 +32,8 @@ title: Composer
   - Schema
   - Table
   - Column
-- DevTool
+- Development: 开发
+- DevTool: 开发控制台
 - Eloquent: 数据库-模型关联
 - Environment(env): 环境变量
 - Err
@@ -66,6 +70,7 @@ title: Composer
 - [Model]
 - [Modular](): 模块化
 - Notification
+- Operation: 运维
 - Paginator: 数据库-数据分页
 - Password
 - Pipeline

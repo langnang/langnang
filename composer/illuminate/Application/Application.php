@@ -25,15 +25,17 @@ class Application extends \Core\Illuminate
     if ($basePath) {
       $this->setBasePath($basePath);
     }
+    $_SERVER['USER_UNIQUE'] = substr(md5(serialize([
+      "USERDOMAIN" => $_SERVER["USERDOMAIN"] ?? '',
+      "USERDOMAIN_ROAMINGPROFILE" => $_SERVER["USERDOMAIN_ROAMINGPROFILE"] ?? '',
+      "USERNAME" => $_SERVER["USERNAME"] ?? '',
+      "USERPROFILE" => $_SERVER["USERPROFILE"] ?? '',
+      "HTTP_USER_AGENT" => $_SERVER["HTTP_USER_AGENT"] ?? '',
+      "HTTP_SEC_CH_UA_PLATFORM" => $_SERVER['HTTP_SEC_CH_UA_PLATFORM'] ?? '',
+    ])), 8, 16);
     // var_dump($_SERVER);
     // var_dump(debug_backtrace());
-    $this->logPath = $this->logPath("app." . date('Ymd') . '.' . substr(md5(serialize([
-      "USERDOMAIN" => $_SERVER["USERDOMAIN"],
-      "USERDOMAIN_ROAMINGPROFILE" => $_SERVER["USERDOMAIN_ROAMINGPROFILE"],
-      "USERNAME" => $_SERVER["USERNAME"],
-      "USERPROFILE" => $_SERVER["USERPROFILE"],
-      "HTTP_USER_AGENT" => $_SERVER["HTTP_USER_AGENT"] ?? '',
-    ])), 8, 16) . ".log");
+    $this->logPath = $this->logPath("app." . date('Ymd') . '.' . $_SERVER['USER_UNIQUE'] . ".log");
 
     // $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
@@ -177,8 +179,10 @@ class Application extends \Core\Illuminate
    */
   protected function registerAlias($abstract)
   {
-    $class = new $abstract;
-    $filename = pathinfo($abstract)['filename'] ?: null;
+    $class = new $abstract($this);
+    // $filename = pathinfo($abstract)['filename'] ?: null;
+    $abstractExploded = explode("\\", $abstract);
+    $filename = end($abstractExploded);
     if (empty($filename)) return;
     // var_dump($class);
 
@@ -196,10 +200,30 @@ class Application extends \Core\Illuminate
    */
   protected function registerFacade($abstract)
   {
-    $filename = pathinfo($abstract)['filename'] ?: null;
+    // $filename = pathinfo($abstract)['filename'] ?: null;
+    // var_dump($abstract);
+    // var_dump(explode("\\", $abstract));
+    $abstractExploded = explode("\\", $abstract);
+    $filename = end($abstractExploded);
     if (empty($filename)) return;
     $this->facades[$filename] = $abstract;
     \class_alias($abstract, $filename);
     $this->_log(__METHOD__ . " \"$abstract\" ");
   }
+  /**
+   * Register a shared binding in the container.
+   *
+   * @param  string  $abstract
+   * @param  \Closure|string|null  $concrete
+   * @return void
+   */
+  public function singleton($abstract, $concrete = null) {}
+  /**
+   * Register a shared binding if it hasn't already been registered.
+   *
+   * @param  string  $abstract
+   * @param  \Closure|string|null  $concrete
+   * @return void
+   */
+  public function singletonIf($abstract, $concrete = null) {}
 }
