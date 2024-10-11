@@ -1,11 +1,11 @@
 <?php
 
-namespace Illuminate\File;
+namespace Illuminate\FileSystem;
 
 /**
  * 
  */
-class File extends \Core\Illuminate
+class File
 {
   /**
    * Summary of filepath

@@ -7,6 +7,7 @@ namespace Illuminate\Router;
  * @name Routes
  * 
  * @var $name
+ * @var $description
  * @var $method
  * @var $uri
  * @var $pattern
@@ -168,6 +169,11 @@ class Route
   function name($name)
   {
     $this->name = $name;
+    return $this;
+  }
+  function description($description)
+  {
+    $this->name = $description;
     return $this;
   }
 }

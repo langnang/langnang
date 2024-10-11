@@ -1,5 +1,5 @@
 <?php
 
-namespace Illuminate\File\Facades;
+namespace Illuminate\FileSystem\Facades;
 
 class File extends \Core\Facade {}
