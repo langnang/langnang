@@ -2,4 +2,14 @@
 
 namespace Illuminate\Autoload;
 
-class Autoload extends \Core\Illuminate {}
+/**
+ * @method facades
+ * @method plugins
+ * @method themes
+ */
+class Autoload extends \Core\Illuminate
+{
+  function facades() {}
+  function plugins() {}
+  function themes() {}
+}

@@ -12,20 +12,54 @@ namespace Illuminate\Application;
  * @method __construct
  * @method __call
  * 
- * @method _log
+ * @method _init
  * @method _autoload
+ * @method _log
  * 
  * @method get
  * @method make
  * @method register
  * @method sigleton
+ * @method get		
+ * @method make		
+ * @method register		
+ * @method singleton		
+ * @method singletonIf		
+ * @method flush		
+ * @method set_aliases		
+ * @method get_aliases		
+ * @method alias_exists		
+ * @method path		
+ * @method setBasePath		
+ * @method resourcePath		
+ * @method basePath		
+ * @method databasePath		
+ * @method publicPath		
+ * @method langPath		
+ * @method configPath		
+ * @method storagePath		
+ * @method logPath		
+ * @method set_facades		
+ * @method get_facades		
+ * @method facade_exists
  */
 class Application extends \Core\Illuminate
 {
+  /**
+   * @var string
+   */
   public $name = 'Application';
+  /**
+   * @var string
+   */
   public $alias = "app";
-
+  /**
+   * @var array
+   */
   private $facades = [];
+  /**
+   * @var array
+   */
   private $plugins = [];
 
   // public $logs = [];

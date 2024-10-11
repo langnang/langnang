@@ -247,6 +247,20 @@ $app = require_once __DIR__ . '/bootstrap/app.php';
 
       switch ($alias) {
         case "config":
+          // aliases
+          echo "<table><thead><tr class='h'><th colspan='2'> Aliases (" . sizeof($illuminate->all()) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
+          // echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
+          foreach ($illuminate->all() as $alias => $aliasValue) {
+            if (empty($aliasValue)) {
+              var_dump($alias);
+              continue;
+            }
+            echo "<tr><td class=\"e\">$alias</td><td class=\"v\"></td><td class=\"v\"></td></tr>";
+          }
+          unset($alias, $aliasValue);
+          echo "</tbody></table>";
+          // aliases
+          break;
         case "modular":
           // aliases
           echo "<table><thead><tr class='h'><th colspan='2'> Aliases (" . sizeof($illuminate->get()) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
@@ -260,7 +274,20 @@ $app = require_once __DIR__ . '/bootstrap/app.php';
           }
           unset($alias, $aliasValue);
           echo "</tbody></table>";
+          break;
+        case "router":
           // aliases
+          echo "<table><thead><tr class='h'><th colspan='2'> Routes (" . sizeof($illuminate->getRoutes()) . ") </th><th> Annotation </th></tr></thead><tbody class='d-none'>";
+          // echo '<tr class="h"><th>memcache support</th><th>enabled</th></tr>';
+          foreach ($illuminate->getRoutes() as $alias => $aliasValue) {
+            if (empty($aliasValue)) {
+              var_dump($alias);
+              continue;
+            }
+            echo "<tr><td class=\"e\">$alias</td><td class=\"v\"></td><td class=\"v\"></td></tr>";
+          }
+          unset($alias, $aliasValue);
+          echo "</tbody></table>";
           break;
         default:
           break;

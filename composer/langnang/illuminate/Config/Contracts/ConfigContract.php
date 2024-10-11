@@ -2,6 +2,16 @@
 
 namespace Illuminate\Config\Contracts;
 
+/**
+ * Summary of ConfigContract
+ * 
+ * @method bool has()
+ * @method mixed get()
+ * @method mixed all()
+ * @method mixed set()
+ * @method mixed prepend()
+ * @method mixed push()
+ */
 interface ConfigContract
 {
   /**

@@ -13,22 +13,32 @@ namespace Illuminate\Config;
  * @method _autoload
  * @method _run
  * 
- * @method \Illuminate\Config\Config\get()
- * @method set
- * @method has
+ * @method has()
+ * @method all()
+ * @method get()
+ * @method set()
+ * @method prepend()
+ * @method push()
  * 
  */
 
-class Config extends \Core\Illuminate
+class Config extends \Core\Illuminate implements Contracts\ConfigContract
 {
 
   use \Core\Traits\AliasesTrait;
 
   use Traits\LifeCycleMethods;
+  public function has($key) {}
+  public function all()
+  {
+    return $this->aliases;
+  }
+  public function prepend($key, $value) {}
+  public function push($key, $value) {}
   /**
    * 
    */
-  function get($key = null)
+  public function get($key, $default = null)
   {
     // var_dump(__METHOD__, $key);
     if (empty($key)) {
@@ -79,7 +89,7 @@ class Config extends \Core\Illuminate
   /**
    * 
    */
-  function set($key, $value = null)
+  public function set($key, $value = null)
   {
     if (empty($key)) return;
 

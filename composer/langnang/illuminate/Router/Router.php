@@ -236,4 +236,9 @@ class Router extends \Core\Illuminate
   //   $closure();
   //   $this->prefix = null;
   // }
+
+  public function getRoutes()
+  {
+    return $this->routes;
+  }
 }
