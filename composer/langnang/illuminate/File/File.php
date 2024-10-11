@@ -7,6 +7,10 @@ namespace Illuminate\File;
  */
 class File extends \Core\Illuminate
 {
+  /**
+   * Summary of filepath
+   * @var string
+   */
   public $filepath;
   /**
    * 
@@ -25,7 +29,13 @@ class File extends \Core\Illuminate
    */
   public $extension;
   /**
-   * 
+   * Summary of name
+   * @var string
+   */
+  public $name;
+  /**
+   * Summary of name
+   * @var string
    */
   public $content;
   /**
