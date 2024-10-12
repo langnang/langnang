@@ -20,13 +20,14 @@ class View extends \Core\Illuminate
     $alias = $this->alias;
 
     // var_dump(config('view.paths'));
-
+    // Module View
     if (strpos($view, '::')) {
       // var_dump($view);
       $keys = explode("::", $view);
       $alias = $keys[0];
       $view = $keys[1];
-      $path = config('view.paths.aliases.' . $alias);
+      // dump(config('view.paths'));
+      $path = config('view.paths.aliases.' . $alias, '');
       // $dir = implode("-", array_filter([\config($module . '.template'), \config($module . '.theme'), \config($module . '.layout')], function ($v) {
       //   return !empty($v);
       // }));
@@ -51,9 +52,11 @@ class View extends \Core\Illuminate
       // if (!empty($dir)) $dir .= '/';
       // $file = __DIR__ . '/../../views/' . $dir . $view . '.php';
     }
+    // dump($path);
     $path .= DIRECTORY_SEPARATOR . implode("-", array_filter([\config($alias . '.template'), \config($alias . '.theme'), \config($alias . '.layout')], function ($v) {
       return !empty($v);
     }));
+    // dump($path);
     if (!\Str::endsWith($path, DIRECTORY_SEPARATOR)) $path .= DIRECTORY_SEPARATOR;
     // var_dump($path);
     $file = $path . implode(DIRECTORY_SEPARATOR, explode('.', $view)) . '.php';

@@ -2,5 +2,6 @@
 
 return [
   "name" => "WebPage",
+  "alias" => "webpage",
   "view" => [],
 ];

@@ -4,7 +4,6 @@ namespace Illuminate\Controller;
 
 class Controller extends \Core\Illuminate
 {
-  // public $alias = "";
   /**
    * Display a listing of the resource.
    * @return Renderable

@@ -8,6 +8,54 @@ use Illuminate\ASCII\Facades\ASCII;
 
 /**
  * 辅助函数：字符串
+ * 
+ * @method void __
+ * @method void class_basename
+ * @method void e
+ * @method void preg_replace_array
+ * @method void Str::after
+ * @method void Str::afterLast
+ * @method void Str::ascii
+ * @method void Str::before
+ * @method void Str::beforeLast
+ * @method void Str::between
+ * @method void Str::camel
+ * @method void Str::contains
+ * @method void Str::containsAll
+ * @method void Str::endsWith
+ * @method void Str::finish
+ * @method void Str::is
+ * @method void Str::isAscii
+ * @method void Str::isUuid
+ * @method void Str::kebab
+ * @method void Str::length
+ * @method void Str::limit
+ * @method void Str::lower
+ * @method void Str::orderedUuid
+ * @method void Str::padBoth
+ * @method void Str::padLeft
+ * @method void Str::padRight
+ * @method void Str::plural
+ * @method void Str::random
+ * @method void Str::replaceArray
+ * @method void Str::replaceFirst
+ * @method void Str::replaceLast
+ * @method void Str::singular
+ * @method void Str::slug
+ * @method void Str::snake
+ * @method void Str::start
+ * @method void Str::startsWith
+ * @method void Str::studly
+ * @method void Str::substr
+ * @method void Str::title
+ * @method void Str::ucfirst
+ * @method void Str::upper
+ * @method void Str::uuid
+ * @method void Str::words
+ * @method void trans
+ * @method void trans_choice
+ * 
+ * @manual https://learnku.com/docs/laravel/8.x/
  */
 class Str extends \Core\Illuminate implements Contracts\StrInterface
 {
@@ -25,9 +73,14 @@ class Str extends \Core\Illuminate implements Contracts\StrInterface
   {
     // return ASCII::to_ascii((string) $value, $language);
   }
-  function of($value)
+  /**
+   * Summary of e
+   * 在指定字符串上运行 PHP 的 htmlspecialchars 函数（ double_encode 选项为 true ）
+   * @return void
+   */
+  public function e(string $value)
   {
-    return new Stringable($value);
+    return htmlspecialchars($value);
   }
   /**
    * 判断指定字符串是否为给定值的结尾
@@ -69,6 +122,10 @@ class Str extends \Core\Illuminate implements Contracts\StrInterface
     $value = preg_replace('![' . preg_quote($delimiter) . '\s]+!u', $delimiter, $value);
 
     return trim($value, $delimiter);
+  }
+  function of($value)
+  {
+    return new Stringable($value);
   }
   /**
    * 将驼峰的函数名或者字符串转换成 _ 命名的函数或者字符串

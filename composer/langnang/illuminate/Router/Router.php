@@ -24,8 +24,15 @@ class Router extends \Core\Illuminate
   protected $patterns = [];
 
   private $routes = [];
-
+  /**
+   * Summary of _init
+   * @return void
+   */
   function _init() {}
+  /**
+   * Summary of _autoload
+   * @return void
+   */
   function _autoload()
   {
     foreach (config('router.paths.routes') as $path) {
@@ -37,7 +44,9 @@ class Router extends \Core\Illuminate
     // dump($this);
   }
   /**
-   * 
+   * Summary of _run
+   * @throws \Error
+   * @return mixed
    */
   function _run()
   {
@@ -155,6 +164,7 @@ class Router extends \Core\Illuminate
 
         // require_once __DIR__ . '/../../' . strtolower(substr($func[0], 1, 1)) . str_replace("\\", '/', substr($func[0], 2))  . '.php';
         app_log(__METHOD__ . " " . json_encode($route));
+        $controller = new $func[0];
         return (new $func[0])->{$func[1]}(app('request'), ...$route['args'] ?? []);
       }
     }

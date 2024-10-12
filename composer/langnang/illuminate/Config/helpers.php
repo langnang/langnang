@@ -1,8 +1,8 @@
 <?php
 
 if (!function_exists('config')) {
-  function config($name = null)
+  function config($key, $default = null)
   {
-    return app(__FUNCTION__)->get($name);
+    return app(__FUNCTION__)->get($key, $default);
   }
 }

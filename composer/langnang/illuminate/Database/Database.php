@@ -7,6 +7,7 @@ class Database extends \Core\Illuminate
 
   private $connection;
 
+	private $db;
 
   public $drivers = [];
 

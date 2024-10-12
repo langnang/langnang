@@ -3,7 +3,24 @@
 namespace Illuminate\FileSystem;
 
 /**
+ * @var string $name
+ * @var string $type
+ * @var string $extension
+ * @var string $content
+ * @var string $path
+ * @var string $dirname
+ * @var int $created_time
+ * @var int $updated_time
+ * @var int $visited_time
+ * @var string $created_at
+ * @var string $updated_at
+ * @var string $visited_at
  * 
+ * 
+ * @method mixed _init
+ * 
+ * @method mixed read
+ * @method mixed write
  */
 class File
 {
@@ -13,19 +30,22 @@ class File
    */
   public $filepath;
   /**
-   * 
+   * @var string
    */
   public $dirname;
   /**
    * 
+   * @var string
    */
   public $basename;
   /**
    * 
+   * @var string
    */
   public $filename;
   /**
    * 
+   * @var string
    */
   public $extension;
   /**
@@ -40,26 +60,28 @@ class File
   public $content;
   /**
    * file size
+   * @var string
    */
   public $size;
   /**
    * file type
+   * @var string
    */
   public $filetype;
   /**
    * inode change time of file
    */
   public $created_time;
+  public $created_at;
   /**
    * file modification time
    */
   public $updated_time;
+  public $updated_at;
   /**
    * last access time of file
    */
   public $visited_time;
-  public $created_at;
-  public $updated_at;
   public $visited_at;
   /**
    * file permissions
