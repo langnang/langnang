@@ -1,4 +1,4 @@
-name: 🚀 Deploy langnang.22web.org on push with FTP
+name: 🚀 Deploy langnang-modules on push with FTP
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    name: 🎉 Deploy to langnang.22web.org
+    name: 🎉 Deploy to langnang.byethost7.com
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -21,13 +21,13 @@ jobs:
       #     node-version: 14.x
 
       # - name: Install node dependencies
-      #   run: cd 200.vue2-ui && yarn install
+      #   run: cd nodejs/vue2-ui && yarn install
 
       # - name: Build pages
-      #   run: cd 200.vue2-ui && npm run build
+      #   run: cd nodejs/vue2-ui && npm run build
 
-      - name: Install composer dependencies
-        run: cd composer && composer install
+      # - name: Install composer dependencies
+      # run: cd composer/laravel8-modules && composer install
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -35,13 +35,13 @@ jobs:
           # ftp server
           server: ftpupload.net
           # ftp username
-          username: b32_28202196
+          username: b7_34048879
           # ftp password
           password: ${{ secrets.ftp_password }}
           # local dir
           local-dir: ./composer/langnang/
           # Path to upload to on the server. Must end with trailing slash /
-          server-dir: /langnang.22web.org/htdocs/
+          server-dir: /htdocs/
           # File to Exclude
           exclude: |
             **/.git*
