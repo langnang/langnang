@@ -2,8 +2,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-
-
 $_ENV = parse_ini_file(__DIR__ . '/../.env');
 // var_dump($_ENV);
 $app = new Illuminate\Application\Application(
