@@ -4,9 +4,9 @@ namespace Core;
 
 /**
  * 
- * @var name
- * @var alias
- * @var app
+ * @var string name
+ * @var string alias
+ * @var object app
  * 
  * @method __construct()
  * @method __call()

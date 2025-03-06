@@ -2,6 +2,9 @@
 
 namespace Illuminate\Faker;
 
+
+require_once __DIR__ . '/../../core/Illuminate.php';
+
 /**
  * 
  * @name \Illuminate\Faker\Faker
@@ -17,7 +20,13 @@ namespace Illuminate\Faker;
  */
 class Faker extends \Core\Illuminate
 {
-  public function title() {}
-  public function titleMale() {}
-  public function titleFemale() {}
+  public function title()
+  {
+  }
+  public function titleMale()
+  {
+  }
+  public function titleFemale()
+  {
+  }
 }

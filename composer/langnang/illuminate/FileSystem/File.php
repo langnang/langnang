@@ -2,6 +2,8 @@
 
 namespace Illuminate\FileSystem;
 
+require_once __DIR__ . '/../../core/Illuminate.php';
+
 /**
  * @var string $name
  * @var string $type
@@ -119,7 +121,8 @@ class File
     if (!file_exists($filepath)) {
       $this->error_message = "file not exist.";
       return $this;
-    };
+    }
+    ;
     foreach (pathinfo($filepath) as $k => $v) {
       $this->{$k} = $v;
     }
@@ -147,9 +150,11 @@ class File
   function setDriver($extension = null)
   {
     $extension = $extension ?: $this->extension;
-    if (empty($extension)) return;
+    if (empty($extension))
+      return;
     $driverClass = config('file.extensions.' . $extension);
-    if (empty($driverClass)) return;
+    if (empty($driverClass))
+      return;
     $driver = new $driverClass($this);
     $this->driver = $driver;
   }
@@ -160,11 +165,25 @@ class File
     fclose($file);
     return $this->content;
   }
-  function write() {}
-  function prepend() {}
-  function append() {}
-  function download() {}
-  function upload() {}
-  function zip() {}
-  function unzip() {}
+  function write()
+  {
+  }
+  function prepend()
+  {
+  }
+  function append()
+  {
+  }
+  function download()
+  {
+  }
+  function upload()
+  {
+  }
+  function zip()
+  {
+  }
+  function unzip()
+  {
+  }
 }
