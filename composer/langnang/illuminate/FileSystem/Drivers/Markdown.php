@@ -126,6 +126,10 @@ class Markdown
       "pattern" => "",
       "replace" => "",
     ],
+    "li" => [
+      "pattern" => "",
+      "replace" => "",
+    ],
     "kbd" => [
       "pattern" => "",
       "replace" => "",
@@ -239,21 +243,39 @@ class Markdown
     $i = 0;
     while ($i < sizeof($exp)) {
       $lineContent = $exp[$i];
-      // 遍历
-      foreach ($this->aliases as $alias => $rule) {
-        if (empty($rule['pattern']))
-          continue;
-        $pattern = "/^" . $rule['pattern'] . "$/";
-        // 匹配
-        if (preg_match($pattern, $lineContent)) {
+      // 去除单行结尾换行符
+      if (substr($lineContent, -strlen("\r")) == "\r") {
+        $lineContent = substr($lineContent, 0, -strlen("\r"));
+      }
 
-          $exp[$i] = array_merge($rule, [
-            'name' => $alias,
-            'pattern' => $pattern,
-            'text' => $lineContent
-          ]);
+      if ($lineContent == '') {
+        $exp[$i] = array_merge($this->aliases['empty'], [
+          'name' => 'empty',
+          'text' => $lineContent,
+          'content' => '',
+        ]);
+      } else {
+        // 遍历
+        foreach ($this->aliases as $alias => $rule) {
+          if (empty($rule['pattern']))
+            continue;
+          $pattern = "/^" . $rule['pattern'] . "$/";
+          // var_dump($lineContent);
+          // var_dump(substr($lineContent, -strlen("\r")) == "\r");
+
+
+          // 匹配
+          if (preg_match($pattern, $lineContent, $matches)) {
+            $exp[$i] = array_merge($rule, [
+              'name' => $alias,
+              'pattern' => $pattern,
+              'text' => $lineContent,
+              'content' => $matches[count($matches) - 1],
+            ]);
+          }
         }
       }
+
       $i++;
     }
     $this->tree = $exp;
