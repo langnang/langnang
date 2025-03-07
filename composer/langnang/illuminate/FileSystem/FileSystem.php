@@ -1,7 +1,6 @@
 <?php
 
 namespace Illuminate\FileSystem;
-require_once __DIR__ . '/../Traits/FileDriverTrait.php';
 
 /**
  * 文件操作系统
