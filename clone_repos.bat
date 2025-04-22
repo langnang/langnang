@@ -9,7 +9,7 @@ git clone git@github.com:langnang-assets/.github.git assets
 
 git clone git@github.com:langnang-configs/.github.git configs
 
-git clone git@github.com:langnang-documents/.github.git documents
+git clone git@github.com:langnang-docs/.github.git docs
 
 git clone git@github.com:langnang-examples/.github.git examples
 
