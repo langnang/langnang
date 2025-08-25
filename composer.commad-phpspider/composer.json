@@ -1,0 +1,17 @@
+{
+    "name": "langnang/composer.phpspider",
+    "autoload": {
+        "psr-4": {
+            "Langnang\\ComposerPhpspider\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "langnang",
+            "email": "langnang.chen@outlook.com"
+        }
+    ],
+    "require": {
+        "owner888/phpspider": "^2.1"
+    }
+}
