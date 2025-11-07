@@ -1,0 +1,10 @@
+title: Software
+slug: software
+subtitle: Software·软件
+description:
+items:
+  - name: Homer
+    docker:
+      image:
+      ports: 8080/tcp,
+      proxy: true
