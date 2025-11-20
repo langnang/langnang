@@ -1,0 +1,17 @@
+services:
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    ports:
+      - "0:8080"
+    # volumes:
+    # - ./plugins:/var/www/html/plugins-enabled
+    # environment:
+    # - ADMINER_DESIGN=hydra
+    # - ADMINER_PLUGINS=login-ldap
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

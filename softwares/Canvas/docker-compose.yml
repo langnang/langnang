@@ -1,0 +1,19 @@
+services:
+  canvas:
+    image: acait/canvas
+    ports:
+      - "0:18080"
+    environment:
+      - CANVAS_URL=http://yourdomain.com
+      - CANVAS_SECRET_KEY=your_secret_key
+      - CANVAS_DATABASE_USERNAME=canvas
+      - CANVAS_DATABASE_PASSWORD=canvas_password
+      - CANVAS_DATABASE_DATABASE=canvas
+    volumes:
+      - ./_/data:/data
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

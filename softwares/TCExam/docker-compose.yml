@@ -1,0 +1,14 @@
+services:
+  tcexam:
+    image: kurenairyu/tcexam
+    container_name: tcexam
+    ports:
+      - 0:80
+    environment:
+      - TZ=Asia/Shanghai
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

@@ -1,0 +1,23 @@
+services:
+  master:
+    image: crawlabteam/crawlab
+    container_name: crawlab_master
+    environment:
+      CRAWLAB_NODE_MASTER: "Y"
+      CRAWLAB_MONGO_HOST: "mongo"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    restart: unless-stopped
+    networks:
+      - software-network
+  mongo:
+    image: mongo:4.2
+    container_name: mongo
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

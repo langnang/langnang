@@ -1,0 +1,12 @@
+services:
+  cookiecloud:
+    image: easychen/cookiecloud:latest
+    container_name: cookiecloud
+    ports:
+      - "0:8088"
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

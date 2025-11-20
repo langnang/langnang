@@ -1,0 +1,28 @@
+services:
+  transmission:
+    image: lscr.io/linuxserver/transmission:latest
+    container_name: transmission
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - TRANSMISSION_WEB_HOME= # 可选
+      - USER= # 可选
+      - PASS= # 可选
+      - WHITELIST= # 可选
+      - PEERPORT= # 可选
+      - HOST_WHITELIST= # 可选
+    volumes:
+      - ./_/config:/config
+      - ./_/downloads:/downloads
+      - ./_/watch:/watch
+    ports:
+      - 0:9091
+      - 0:51413
+      - 0:51413/udp
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

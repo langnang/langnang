@@ -1,0 +1,30 @@
+services:
+  gitlab:
+    image: docker.m.daocloud.io/gitlab/gitlab-ce:16.5.10-ce.0
+    container_name: gitlab
+    # hostname: "10.0.0.20"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://10.0.0.20'
+        gitlab_rails['smtp_enable'] = false
+        gitlab_rails['registry_enabled'] = false
+        registry['enable'] = false
+        prometheus['enable'] = false
+        alertmanager['enable'] = false
+        node_exporter['enable'] = false
+        redis_exporter['enable'] = false
+        postgres_exporter['enable'] = false
+    ports:
+      - "0:22"
+      - "0:443"
+      - "0:80"
+    volumes:
+      - "./_/etc/gitlab:/etc/gitlab"
+      - "./_/var/log/gitlab:/var/log/gitlab"
+      - "./_/var/opt/gitlab:/var/opt/gitlab"
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

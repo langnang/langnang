@@ -1,0 +1,21 @@
+services:
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    ports:
+      - "0:8080" # Web UI 端口
+      - "0:6881" # TCP 连接端口
+      - "0:6881/udp" # UDP 连接端口
+    environment:
+      - PUID=1000 # 用户 ID
+      - PGID=1000 # 用户组 ID
+      - TZ=Asia/Shanghai # 时区设置
+    volumes:
+      - ./_/config:/config
+      - ./_/downloads:/downloads
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

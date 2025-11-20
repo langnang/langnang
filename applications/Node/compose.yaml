@@ -1,0 +1,9 @@
+services:
+  cli:
+    image: node:alpine
+    container_name: node-cli
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - ./~/app:/app

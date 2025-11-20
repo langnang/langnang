@@ -1,0 +1,14 @@
+services:
+  onenav:
+    image: "helloz/onenav"
+    container_name: onenav
+    ports:
+      - "0:80"
+    # volumes:
+    #   - "./data:/data/wwwroot/default/data"
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

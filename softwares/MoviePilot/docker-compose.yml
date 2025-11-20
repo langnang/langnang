@@ -1,0 +1,30 @@
+services:
+  moviepilot-v2:
+    image: jxxghp/moviepilot-v2:latest
+    stdin_open: true
+    tty: true
+    container_name: moviepilot-v2
+    ports:
+      - 0:3000
+    volumes:
+      - "/_/media:/media"
+      - "/_/config:/config"
+      - "/_/moviepilot/.cache/ms-playwright:/moviepilot/.cache/ms-playwright"
+      - "//var/run/docker.sock:/var/run/docker.sock:ro"
+    environment:
+      - "NGINX_PORT=3000" # 别改看下面说明介绍
+      - "PORT=3001"
+      - "PUID=0"
+      - "PGID=0"
+      - "UMASK=000"
+      - "TZ=Asia/Shanghai"
+      - "AUTH_SITE=xxxxx" # 认证站点名称改成自己的
+      - "PTVICOMO_UID=xxxxx" # 认证站点用户ID改成自己的
+      - "PTVICOMO_PASSKEY=xxxxx" # 认证站点秘钥改成自己的
+      - "SUPERUSER=admin" # 超级管理员用户名，默认admin改成自己的
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

@@ -1,0 +1,16 @@
+services:
+  portainer:
+    image: 6053537/portainer-ce:latest
+    ports:
+      - 0:9000
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock
+      - ./_/data:/data
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

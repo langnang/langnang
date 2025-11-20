@@ -1,0 +1,8 @@
+services:
+  mediawiki:
+    image: mediawiki:stable
+    ports:
+      - "0:80"
+    volumes:
+      - ./images:/var/www/html/images
+    restart: unless-stopped

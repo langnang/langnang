@@ -1,0 +1,21 @@
+services:
+  nutch:
+    image: apache/nutch
+    ports:
+      - "0:8080"
+      - "0:4000"
+      - "0:9000"
+    volumes:
+      - ./_/home/nutch/data:/home/nutch/data
+      - ./_/home/nutch/conf:/home/nutch/conf
+    environment:
+      - NUTCH_MASTER_HOST=nutch-master
+      - NUTCH_MASTER_PORT=8080
+      - NUTCH_SOLR_HOST=nutch-solr
+      - NUTCH_SOLR_PORT=8983
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

@@ -1,0 +1,18 @@
+services:
+  homer:
+    image: b4bz/homer:latest
+    container_name: homer
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=Asia/Shanghai
+    # volumes:
+    #   - /share/Container/homer/assets:/www/assets
+    ports:
+      - 0:8080
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

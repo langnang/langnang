@@ -1,4 +1,11 @@
-*/node_modules
-*/vendor
+**/node_modules
+**/vendor
 
-*/.env
+**/.env
+**/_
+**/_ *
+**/.temp
+**/.temp *
+**/.cache
+**/vendor
+**/node_modules

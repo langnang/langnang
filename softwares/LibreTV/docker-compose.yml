@@ -1,0 +1,13 @@
+services:
+  libretv:
+    image: bestzwei/libretv:latest
+    ports:
+      - "0:8080" # 冒号左侧可自定义端口
+    environment:
+      - PASSWORD=123456 # 密码自定义，自己改一个喜欢的，也可以删掉这段，就没有密码了
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

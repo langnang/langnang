@@ -1,0 +1,15 @@
+services:
+  glances:
+    image: nicolargo/glances:latest
+    container_name: glances
+    environment:
+      - TZ=Asia/Shanghai
+      - GLANCES_OPT=-w
+    ports:
+      - 0:61208
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

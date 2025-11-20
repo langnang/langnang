@@ -1,0 +1,17 @@
+services:
+  docker.ui:
+    image: joinsunsoft/docker.ui
+    container_name: docker.ui
+    ports:
+      - 0:8999
+    # environment:
+    #   - TZ=Asia/Shanghai
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock
+      # - ./_/data:/data
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

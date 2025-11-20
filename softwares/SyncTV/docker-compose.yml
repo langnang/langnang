@@ -1,0 +1,11 @@
+services:
+  synctv:
+    image: synctvorg/synctv
+    ports:
+      - "0:8080"
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

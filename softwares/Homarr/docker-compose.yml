@@ -1,0 +1,16 @@
+services:
+  homarr:
+    image: ajnart/homarr:latest
+    container_name: homarr
+    ports:
+      - "0:7575"
+    volumes:
+      # - /data/homarr/configs:/app/data/configs
+      # - /data/homarr/icons:/app/public/icons
+      - //var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

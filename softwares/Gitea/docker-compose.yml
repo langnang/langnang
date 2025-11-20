@@ -1,0 +1,21 @@
+services:
+  gitea:
+    image: gitea/gitea:latest
+    container_name: gitea
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    volumes:
+      - ./_/var/lib/gitea:/var/lib/gitea
+      - ./_/etc/gitea:/etc/gitea
+    #   - /etc/timezone:/etc/timezone:ro
+    #   - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "0:3000" # HTTP access
+      - "0:22" # SSH access
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

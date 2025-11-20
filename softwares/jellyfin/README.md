@@ -1,0 +1,32 @@
+# Software
+
+## Install
+
+### Install for Docker
+
+```shell
+
+```
+
+```yml
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - D:\Videos:/media
+    ports:
+      - 0:8096
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true
+```

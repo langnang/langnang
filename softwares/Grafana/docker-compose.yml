@@ -1,0 +1,14 @@
+services:
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    ports:
+      - "0:3000"
+    volumes:
+      - ./_/var/lib/grafana:/var/lib/grafana
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

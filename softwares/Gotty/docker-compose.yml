@@ -1,0 +1,14 @@
+services:
+  gotty-docker:
+    # image: yudai/gotty
+    image: modenaf360/gotty:latest
+    ports:
+      - 0:8080
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

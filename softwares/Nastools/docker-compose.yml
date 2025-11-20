@@ -1,0 +1,17 @@
+services:
+  nastools:
+    image: flik007/nastools-fixed:latest
+    container_name: nastools
+    ports:
+      - 0:3000
+    # volumes:
+    #   - /Volumes/data/media:/media # 宿主机媒体目录映射到容器内/media
+    #   - ./nastools/config:/config # 可选：配置文件持久化
+    environment:
+      - TZ=Asia/Shanghai # 时区设置（根据需求修改）
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

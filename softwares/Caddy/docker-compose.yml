@@ -1,0 +1,20 @@
+services:
+  caddy:
+    # pull_policy: always
+    image: iarekylew00t/caddy-cloudflare:latest
+    container_name: caddy
+    environment:
+      - TZ=Asia/Shanghai
+      - CF_API_TOKEN=
+    ports:
+      - 0:80
+      - 0:443
+    volumes:
+      - ./_/data:/data
+      # - ./_/etc/caddy:/etc/caddy
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

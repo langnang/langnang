@@ -1,0 +1,14 @@
+services:
+  answer:
+    image: answerdev/answer
+    container_name: answer
+    ports:
+      - "0:80"
+    volumes:
+      - ./_/data:/data
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

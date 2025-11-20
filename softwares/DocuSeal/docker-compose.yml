@@ -1,0 +1,14 @@
+services:
+  docuseal:
+    image: docuseal/docuseal:latest
+    container_name: docuseal
+    ports:
+      - 0:3000
+    # volumes:
+    #   - ./web:/data
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

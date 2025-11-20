@@ -1,0 +1,25 @@
+services:
+  question2answer:
+    image: wiesom/question2answer
+    links:
+      - mariadb:mysql
+    environment:
+      QUESTION2ANSWER_DB_USER: question2answer_user
+      QUESTION2ANSWER_DB_PASSWORD: 123456
+      QUESTION2ANSWER_DB_NAME: question2answer
+    restart: unless-stopped
+    networks:
+      - software-network
+  mariadb:
+    image: mariadb:10.6
+    environment:
+      MYSQL_USER: question2answer_user
+      MYSQL_PASSWORD: 123456
+      MYSQL_DATABASE: question2answer
+      MYSQL_ROOT_PASSWORD: mariadb
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

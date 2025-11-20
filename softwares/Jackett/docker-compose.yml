@@ -1,0 +1,20 @@
+services:
+  jackett:
+    image: lscr.io/linuxserver/jackett:latest
+    container_name: jackett
+    environment:
+      - PUID=1000 # 用户ID
+      - PGID=1000 # 组ID
+      - TZ=Etc/UTC # 时区设置
+      - AUTO_UPDATE=true # 可选：启用自动更新
+    volumes:
+      - ./_/config:/config # 配置文件路径
+      - ./_/downloads:/downloads # 下载路径
+    ports:
+      - 0:9117 # 映射 Web UI 端口
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

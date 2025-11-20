@@ -1,0 +1,26 @@
+services:
+  dockge:
+    image: louislam/dockge:1
+    container_name: dockge
+    ports:
+      - 0:5001
+    volumes:
+      - ./_/app/data:/app/data
+      - //var/run/docker.sock:/var/run/docker.sock
+    #   #   # Stacks Directory
+    #   #   # ⚠️ READ IT CAREFULLY. If you did it wrong, your data could end up writing into a WRONG PATH.
+    #   #   # ⚠️ 1. FULL path only. No relative path (MUST)
+    #   #   # ⚠️ 2. Left Stacks Path === Right Stacks Path (MUST)
+    #   - ./_/opt/stacks:/opt/stacks
+    environment:
+      - DOCKGE_ENABLE_CONSOLE=true
+    #   # Tell Dockge where to find the stacks
+    #   - DOCKGE_STACKS_DIR=/opt/stacks
+    #   - SUBFOLDER=/dockge/
+    restart: unless-stopped
+    privileged: true
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

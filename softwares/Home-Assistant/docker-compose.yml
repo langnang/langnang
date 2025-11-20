@@ -1,0 +1,16 @@
+services:
+  home-assistant:
+    image: homeassistant/home-assistant:latest
+    container_name: home-assistant
+    # volumes:
+    #   - /_/config:/config
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - "0:8123"
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

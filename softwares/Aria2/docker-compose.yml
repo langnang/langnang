@@ -1,0 +1,39 @@
+services:
+  aria2-pro:
+    container_name: aria2-pro
+    image: p3terx/aria2-pro
+    environment:
+      - PUID=65534
+      - PGID=65534
+      - UMASK_SET=022
+      - RPC_SECRET=P3TERX #令牌可以修改成自己需要的
+      - RPC_PORT=6800
+      - LISTEN_PORT=6888
+      - DISK_CACHE=64M
+      - IPV6_MODE=false
+      - UPDATE_TRACKERS=true
+      - CUSTOM_TRACKER_URL=
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./_/config:/config
+      - ./_/downloads:/downloads
+    ports:
+      - 0:6800
+      - 0:6888
+      - 0:6888/udp
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  ariang:
+    container_name: ariang
+    image: p3terx/ariang
+    command: --port 6880 --ipv6
+    ports:
+      - 0:6880 #管理网页的端口可以9040改成自己需要的
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

@@ -1,0 +1,12 @@
+services:
+  smartping:
+    image: qctt/smartping
+    # image: zhongpei/smartping
+    ports:
+      - 0:8899
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

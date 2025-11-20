@@ -1,0 +1,66 @@
+services:
+  sehuatang-crawler:
+    image: wyh3210277395/magnetboard:latest
+    container_name: sehuatang-crawler
+    ports:
+      - "0:8000" # 仅暴露 Web 界面
+    environment:
+      # -----------------------------
+      # 数据库配置（内部连接）
+      # -----------------------------
+      - DATABASE_HOST=postgres
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=sehuatang_db
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=postgres123
+
+      # -----------------------------
+      # 应用配置
+      # -----------------------------
+      - PYTHONPATH=/app/backend
+      - ENVIRONMENT=production
+      - ADMIN_PASSWORD=admin123
+
+      # # -----------------------------
+      # # 代理配置（可选）
+      # # -----------------------------
+      # - HTTP_PROXY=http://your-proxy:port
+      # - HTTPS_PROXY=http://your-proxy:port
+      # - NO_PROXY=localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+
+      # # -----------------------------
+      # # Telegram 机器人配置（可选）
+      # # -----------------------------
+      # - TELEGRAM_BOT_TOKEN=你的Bot_Token
+      # - TELEGRAM_BOT_WEBHOOK_URL=
+      # - TELEGRAM_BOT_WEBHOOK_SECRET=
+
+      # # -----------------------------
+      # # CloudDrive2 配置（可选）
+      # # -----------------------------
+      # - CLOUDDRIVE_HOST=你的CD2主机地址
+      # - CLOUDDRIVE_PORT=你的CD2端口
+
+    volumes:
+      - ./_/app/data:/app/data
+      - ./_/app/logs:/app/logs
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - software-network
+  postgres:
+    image: postgres:15-alpine
+    container_name: sehuatang-postgres
+    environment:
+      - POSTGRES_DB=sehuatang_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres123
+    volumes:
+      - ./_/var/lib/postgresql/data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

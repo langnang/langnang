@@ -1,0 +1,5 @@
+services:
+  open-resume:
+    image: peppershade/open-resume:latest
+    ports:
+      - "0:3000"

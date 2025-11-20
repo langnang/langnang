@@ -1,0 +1,19 @@
+services:
+  heimdall:
+    image: linuxserver/heimdall:latest
+    container_name: heimdall
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    # volumes:
+    #   - /path/to/heimdall/config:/config
+    ports:
+      - 0:80
+      - 0:443
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true
