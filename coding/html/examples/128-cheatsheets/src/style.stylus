@@ -1,0 +1,39 @@
+html, body
+  background #3d444c
+  color #9aeab9
+  margin 0
+  padding 0
+  height 100vh
+  width 100vw
+  display flex
+  justify-content center
+  align-items center
+  font-size 42px
+  
+  .container
+    width 700px
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    
+    ion-icon
+      margin-bottom 4px
+      
+      &:not(.primary)
+        animation fade 1s ease-in-out alternate infinite
+      
+      &.primary
+        color white
+        
+  .check
+    margin-left 1rem
+    
+    ion-icon
+      font-size 3rem
+  
+@keyframes fade
+  from 
+    opacity 1
+  to 
+    opacity .5

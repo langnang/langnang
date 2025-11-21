@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: .25em solid #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header,
+main {
+  display: block;
+}
+
+main {
+  margin-bottom: 5em;
+}
+
+body {
+  font: 100%/1.375 AvenirNext-Medium, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+}
+
+.container {
+  margin: 1em 2.5%;
+  width: auto;
+}
+
+h1 {
+  padding-bottom: .5em;
+  text-transform: capitalize;
+  font: 2em/1 AvenirNextCondensed-medium, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-size: 2em;
+  color: #222;
+}
+
+h1,
+h1 a {
+  color: #222;
+}
+
+h1 a {
+  text-decoration: none;
+  display: block;
+}
+
+h1 a:hover {
+  background-color: #400015;
+  color: #ffefbf;
+}
+
+h1 span {
+  display: inline-block;
+  padding: .25em;
+  margin: .25em .125em;
+}
+
+ul {
+  list-style: none;
+  float: left;
+  width: 100%;
+  font-size: .75rem;
+}
+
+pre {
+  padding: .5em;
+  font-family: Consolas, Monaco, Menlo, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after,
+.clear {
+  clear: both;
+}
+
+.inverted {
+  color: #fff;
+}
+
+.inverted .inverted {
+  color: black;
+}
+
+@media (min-width: 400px) {
+  ul {
+    width: 50%;
+    padding: 0 .25em;
+  }
+
+  li {
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  ul {
+    width: 33.33333%;
+  }
+}
+@media (min-width: 900px) {
+  ul {
+    width: 16.66666%;
+  }
+}
+@media (min-width: 1250px) {
+  ul {
+    font-size: 1rem;
+  }
+}
+.yellow-00 {
+  background-color: #fa0;
+}
+
+.yellow-05 {
+  background-color: #ffbf00;
+}
+
+.yellow-10 {
+  background-color: #ffd500;
+}
+
+.yellow-15 {
+  background-color: #ffea00;
+}
+
+.yellow-20 {
+  background-color: #ff0;
+}
+
+.yellow-25 {
+  background-color: #eaff00;
+}
+
+.yellow-30 {
+  background-color: #d4ff00;
+}
+
+.yellow-35 {
+  background-color: #bfff00;
+}
+
+.green-00 {
+  background-color: #af0;
+}
+
+.green-05 {
+  background-color: #95ff00;
+}
+
+.green-15 {
+  background-color: #80ff00;
+}
+
+.green-20 {
+  background-color: #6aff00;
+}
+
+.green-25 {
+  background-color: #5f0;
+}
+
+.green-30 {
+  background-color: #40ff00;
+}
+
+.green-35 {
+  background-color: #2bff00;
+}
+
+.green-40 {
+  background-color: #15ff00;
+}
+
+.green-45 {
+  background-color: #0f0;
+}
+
+.green-50 {
+  background-color: #00ff15;
+}
+
+.green-55 {
+  background-color: #00ff2b;
+}
+
+.green-60 {
+  background-color: #00ff40;
+}
+
+.green-65 {
+  background-color: #0f5;
+}
+
+.green-70 {
+  background-color: #00ff6a;
+}
+
+.green-75 {
+  background-color: #00ff80;
+}
+
+.green-80 {
+  background-color: #00ff95;
+}
+
+.green-85 {
+  background-color: #0fa;
+}
+
+.green-90 {
+  background-color: #00ffbf;
+}
+
+.blue-00 {
+  background-color: #00ffd5;
+}
+
+.blue-05 {
+  background-color: #00ffea;
+}
+
+.blue-10 {
+  background-color: #0ff;
+}
+
+.blue-15 {
+  background-color: #00eaff;
+}
+
+.blue-20 {
+  background-color: #00d4ff;
+}
+
+.blue-25 {
+  background-color: #00bfff;
+}
+
+.blue-30 {
+  background-color: #0af;
+}
+
+.blue-35 {
+  background-color: #0095ff;
+}
+
+.blue-40 {
+  background-color: #007fff;
+}
+
+.blue-45 {
+  background-color: #006aff;
+}
+
+.blue-50 {
+  background-color: #05f;
+}
+
+.blue-55 {
+  background-color: #0040ff;
+}
+
+.blue-60 {
+  background-color: #002bff;
+}
+
+.blue-65 {
+  background-color: #0015ff;
+}
+
+.blue-70 {
+  background-color: #00f;
+}
+
+.blue-75 {
+  background-color: #1500ff;
+}
+
+.blue-80 {
+  background-color: #2a00ff;
+}
+
+.purple-00 {
+  background-color: #4000ff;
+}
+
+.purple-05 {
+  background-color: #50f;
+}
+
+.purple-10 {
+  background-color: #6a00ff;
+}
+
+.purple-15 {
+  background-color: #7f00ff;
+}
+
+.purple-20 {
+  background-color: #9500ff;
+}
+
+.purple-25 {
+  background-color: #a0f;
+}
+
+.purple-30 {
+  background-color: #bf00ff;
+}
+
+.purple-35 {
+  background-color: #d400ff;
+}
+
+.purple-40 {
+  background-color: #ea00ff;
+}
+
+.purple-45 {
+  background-color: #f0f;
+}
+
+.purple-50 {
+  background-color: #ff00ea;
+}
+
+.purple-55 {
+  background-color: #ff00d4;
+}
+
+.purple-60 {
+  background-color: #ff00bf;
+}
+
+.purple-65 {
+  background-color: #f0a;
+}
+
+.purple-70 {
+  background-color: #ff0095;
+}
+
+.purple-75 {
+  background-color: #ff0080;
+}
+
+.purple-80 {
+  background-color: #ff006a;
+}
+
+.red-00 {
+  background-color: #f05;
+}
+
+.red-05 {
+  background-color: #ff0040;
+}
+
+.red-10 {
+  background-color: #ff002b;
+}
+
+.red-15 {
+  background-color: #ff0015;
+}
+
+.red-20 {
+  background-color: #f00;
+}
+
+.orange-00 {
+  background-color: #ff1500;
+}
+
+.orange-05 {
+  background-color: #ff2b00;
+}
+
+.orange-10 {
+  background-color: #ff4000;
+}
+
+.orange-15 {
+  background-color: #f50;
+}
+
+.orange-20 {
+  background-color: #ff6a00;
+}
+
+.orange-25 {
+  background-color: #ff8000;
+}
+
+.orange-30 {
+  background-color: #ff9500;
+}

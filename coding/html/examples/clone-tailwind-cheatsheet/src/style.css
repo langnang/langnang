@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+.font-ssp {
+  font-family: "Source Sans Pro";
+}
+
+.arrow-up{
+  border-color: #a0aec0 transparent;
+	border-style: solid;
+	border-width: 0px 3px 3px 3px;
+	height: 0px;
+	width: 0px;
+}
+
+.arrow-up-big {
+  border-color: black transparent;
+	border-style: solid;
+	border-width: 0px 5px 5px 5px;
+	height: 0px;
+	width: 0px;
+}
+
+.arrow-down {
+  border-color: #a0aec0 transparent;
+	border-style: solid;
+	border-width: 3px 3px 0px 3px;
+	height: 0px;
+	width: 0px;
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700');
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.active-page {
+	background-color: lightgrey;
+}
+
+.navbar-toggle {
+  background-color: #d3e2ed;
+}
+
+/* highlights the selected page in the navbar */
+.active-page {
+	background-color: #d3f2fd;
+}
+
+.asterisk {
+  font-size: 16px;
+}
+
+.stronger {
+  font-size: 18px;
+  color: darkgrey;
+}
+
+.table-condensed, .table-sm {
+	font-size: 11px;
+}
+
+.table-hide {
+  border-collapse: separate; /*default of collapse overwrites the empty-cells*/
+  empty-cells: hide;
+}
+
+.table-hide th, .table-hide td {
+  border-radius: 5px;
+}
+
+.table-bordered {
+  border: 0px solid #ddd;
+}
+
+.image {
+  border-radius: 15px; /* add a bit of style to the images */
+  box-shadow: 5px 5px 10px #aaa;
+  float: left; /* allow text to wrap around the image on the loremZombie.html and index.html pages */
+  height: 100px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+/* increase Bootstrap 3.3.7 default font size */
+.fontGrow {
+  font-size: 16px;
+}
+
+th {
+  text-align: center;
+}
+
+/* center text in the table on the bs337Grid.html page */
+.is-hidden {
+  text-align: center;
+}
+
+.is-visible {
+  background-color: #dff0d8;
+  color: #468847;
+  text-align: center;
+}
+
+h3 {
+  color: cornflowerblue;
+}

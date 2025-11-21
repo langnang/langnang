@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CSS TEXT - CHEATSHEET</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<table>
+	<thead>
+		<tr>
+			<th>Właściwość</th>
+			<th>Przykładowe wartości</th>
+			<th>Opis</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>color</strong></td>
+			<td><code>red</code>, <code>#00FF00</code>, <code>rgba(255, 0, 0, 0.5)</code></td>
+			<td>Ustala kolor tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>text-overflow</strong></td>
+			<td><code>ellipsis</code>, <code>clip</code></td>
+			<td>Określa, jak ma być wyświetlany tekst, który wykracza poza obszar elementu.</td>
+		</tr>
+		<tr>
+			<td><strong>overflow-wrap</strong></td>
+			<td><code>normal</code>, <code>break-word</code></td>
+			<td>Kontroluje łamanie długich wyrazów na końcach wierszy.</td>
+		</tr>
+		<tr>
+			<td><strong>text-align-last</strong></td>
+			<td><code>auto</code>, <code>start</code>, <code>end</code>, <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code></td>
+			<td>Ustawia wyrównanie ostatniego wiersza tekstu w bloku.</td>
+		</tr>
+		<tr>
+			<td><strong>text-justify</strong></td>
+			<td><code>auto</code>, <code>inter-word</code>, <code>inter-character</code>, <code>none</code></td>
+			<td>Określa metodę justowania tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>text-shadow</strong></td>
+			<td><code>none</code>, <code>1px 1px 2px black</code></td>
+			<td>Dodaje cień do tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>direction</strong></td>
+			<td><code>ltr</code>, <code>rtl</code></td>
+			<td>Ustawia kierunek tekstu (od lewej do prawej lub odwrotnie).</td>
+		</tr>
+		<tr>
+			<td><strong>unicode-bidi</strong></td>
+			<td><code>normal</code>, <code>embed</code>, <code>isolate</code>, <code>bidi-override</code></td>
+			<td>Określa, jak tekst dwuścieżkowy jest wyświetlany.</td>
+		</tr>
+		<tr>
+			<td><strong>hyphens</strong></td>
+			<td><code>auto</code>, <code>manual</code>, <code>none</code></td>
+			<td>Kontroluje dzielenie wyrazów na sylaby.</td>
+		</tr>
+		<tr>
+			<td><strong>tab-size</strong></td>
+			<td><code>4</code>, <code>2</code></td>
+			<td>Ustawia szerokość znaku tabulacji.</td>
+		</tr>
+		<tr>
+			<td><strong>font-family</strong></td>
+			<td><code>Arial</code>, <code>Helvetica</code>, <code>sans-serif</code></td>
+			<td>Ustala rodzinę czcionek dla tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>font-size</strong></td>
+			<td><code>16px</code>, <code>1.2em</code></td>
+			<td>Określa rozmiar czcionki.</td>
+		</tr>
+		<tr>
+			<td><strong>font-weight</strong></td>
+			<td><code>normal</code>, <code>bold</code>, <code>lighter</code>, <code>bolder</code>, <code>100</code>-<code>900</code></td>
+			<td>Ustawia grubość czcionki.</td>
+		</tr>
+		<tr>
+			<td><strong>font-style</strong></td>
+			<td><code>normal</code>, <code>italic</code>, <code>oblique</code></td>
+			<td>Określa styl czcionki (pochylenie).</td>
+		</tr>
+		<tr>
+			<td><strong>font-variant</strong></td>
+			<td><code>normal</code>, <code>small-caps</code></td>
+			<td>Ustawia wariant czcionki, np. małe wersaliki.</td>
+		</tr>
+		<tr>
+			<td><strong>line-height</strong></td>
+			<td><code>1.5</code>, <code>120%</code>, <code>1.2em</code></td>
+			<td>Ustawia wysokość wiersza.</td>
+		</tr>
+		<tr>
+			<td><strong>letter-spacing</strong></td>
+			<td><code>1px</code>, <code>0.2em</code></td>
+			<td>Określa odstęp między literami.</td>
+		</tr>
+		<tr>
+			<td><strong>word-spacing</strong></td>
+			<td><code>2px</code>, <code>0.3em</code></td>
+			<td>Ustawia odstęp między słowami.</td>
+		</tr>
+		<tr>
+			<td><strong>text-align</strong></td>
+			<td><code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>, <code>start</code>, <code>end</code></td>
+			<td>Ustawia wyrównanie tekstu w bloku.</td>
+		</tr>
+		<tr>
+			<td><strong>text-decoration</strong></td>
+			<td><code>none</code>, <code>underline</code>, <code>overline</code>, <code>line-through</code>, <code>blink</code></td>
+			<td>Dodaje ozdobniki do tekstu, takie jak podkreślenie.</td>
+		</tr>
+		<tr>
+			<td><strong>text-transform</strong></td>
+			<td><code>none</code>, <code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code></td>
+			<td>Zmienia wielkość liter tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>text-indent</strong></td>
+			<td><code>20px</code>, <code>2em</code></td>
+			<td>Ustawia wcięcie pierwszej linii tekstu w bloku.</td>
+		</tr>
+		<tr>
+			<td><strong>text-underline-offset</strong></td>
+			<td><code>3px</code>, <code>0.2em</code></td>
+			<td>Określa odległość podkreślenia od tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>text-underline-position</strong></td>
+			<td><code>auto</code>, <code>under</code>, <code>left</code>, <code>right</code></td>
+			<td>Określa pozycję podkreślenia względem tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>text-decoration-color</strong></td>
+			<td><code>blue</code>, <code>rgb(0, 0, 255)</code></td>
+			<td>Ustawia kolor podkreślenia tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>text-decoration-line</strong></td>
+			<td><code>underline</code>, <code>overline</code>, <code>line-through</code></td>
+			<td>Określa rodzaj ozdobnika tekstu (np. podkreślenie).</td>
+		</tr>
+		<tr>
+			<td><strong>text-decoration-style</strong></td>
+			<td><code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code></td>
+			<td>Ustawia styl ozdobnika tekstu (np. kreska ciągła).</td>
+		</tr>
+		<tr>
+			<td><strong>text-orientation</strong></td>
+			<td><code>mixed</code>, <code>upright</code>, <code>sideways</code></td>
+			<td>Ustawia orientację tekstu w pionie lub poziomie.</td>
+		</tr>
+		<tr>
+			<td><strong>text-rendering</strong></td>
+			<td><code>auto</code>, <code>optimizeSpeed</code>, <code>optimizeLegibility</code>, <code>geometricPrecision</code></td>
+			<td>Określa sposób renderowania tekstu dla optymalizacji.</td>
+		</tr>
+		<tr>
+			<td><strong>writing-mode</strong></td>
+			<td><code>horizontal-tb</code>, <code>vertical-rl</code>, <code>vertical-lr</code></td>
+			<td>Ustawia kierunek pisania tekstu (pionowy lub poziomy).</td>
+		</tr>
+		<tr>
+			<td><strong>text-combine-upright</strong></td>
+			<td><code>none</code>, <code>all</code>, <code>digits</code>, <code>digits 2</code></td>
+			<td>Kombinuje znaki tekstu pionowego w jeden glif.</td>
+		</tr>
+		<tr>
+			<td><strong>line-break</strong></td>
+			<td><code>auto</code>, <code>loose</code>, <code>normal</code>, <code>strict</code></td>
+			<td>Kontroluje sposób łamania linii tekstu.</td>
+		</tr>
+		<tr>
+			<td><strong>hanging-punctuation</strong></td>
+			<td><code>none</code>, <code>first</code>, <code>last</code>, <code>allow-end</code>, <code>force-end</code></td>
+			<td>Określa, jak interpunkcja ma być traktowana na końcu linii.</td>
+		</tr>
+		<tr>
+			<td><strong>text-align-all</strong></td>
+			<td><code>start</code>, <code>end</code>, <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code></td>
+			<td>Ustawia wyrównanie tekstu we wszystkich liniach bloku.</td>
+		</tr>
+	</tbody>
+</table>
+<!-- partial -->
+  
+</body>
+</html>

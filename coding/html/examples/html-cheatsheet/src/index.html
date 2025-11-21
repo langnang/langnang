@@ -1,0 +1,226 @@
+<div class="container">
+  <div id="copied">Copied to clipboard</div>
+  
+  <h1>HTML Cheatsheet</h1>
+  <div class="flex">
+  <section class="tags">
+    <h2>Commonly Used Tags</h2>
+    <div class="sh">DIV Section</div>
+    <textarea class="code">
+<div>This element goes on its own line.</div></textarea>
+    <div class="sh">Span Section</div>
+    <textarea class="code">
+<span>This element goes on the same line as other elements.</span>
+    </textarea>
+    <div class="sh">Paragraph</div>
+    <textarea class="code">
+<p>This is a paragraph.</p></textarea>
+    <div class="sh">Line-break</div>
+    <textarea class="code">
+<br></textarea>
+    <div class="sh">Images</div>
+    <textarea class="code">
+<img src="my-image.jpg" alt="desc"></textarea>
+    <div class="sh">Links</div>
+    <div class="ssh">Same Tab</div>
+    <textarea class="code">
+<a href="https://yesterweb.org/">Yesterweb.org</a></textarea>
+    <div class="ssh">New Tab</div>
+    <textarea class="code">
+<a href="https://yesterweb.org/" target="_blank">Yesterweb.org</a></textarea>
+    
+    <div class="sh">Headings</div>
+    <textarea class="code">
+<h1>Heading</h1>
+<h2>Heading</h2>
+<h3>Heading</h3>
+<h4>Heading</h4>
+<h5>Heading</h5>
+<h6>Heading</h6></textarea>
+    <div class="sh">Lists</div>
+    <strong class="ssh">Ordered (Numbers)</strong>
+    <textarea class="code">
+<ol>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+</ol></textarea>
+    <div class="ssh">Unordered (Bullets)</div>
+    <textarea class="code">
+<ul>
+  <li>Item</li>
+  <li>Item</li>
+  <li>Item</li>
+</ul></textarea>
+
+    <div class="sh">Comments</div>
+    <textarea class="code">
+<!-- This is a comment! --></textarea>
+    <div class="sh">Anchor Links</div>
+    <textarea class="code">
+<a href="#links">Click to jump to section</a>
+<div id="links">Welcome to the new section!</div></textarea>
+    <div class="sh">Horizontal Rule</div>
+    <div class="ssh">This displays a horizontal line across the screen.</div>
+    <textarea class="code">
+<hr></textarea>
+  
+    
+    <div class="sh">Summary/Details</div>
+    <div class="ssh">This allows you to expand more text upon clicking the summary.</div>
+    <textarea class="code">
+<details>
+  <summary>Click to read more...</summary>
+  <p>Here is the rest of the text!</p>
+</details></textarea>
+   
+    <div class="sh">Marquee</div>
+    <div class="ssh">Text that scrolls across the screen</div>
+    <textarea class="code">
+<marquee>This text is scrolling!</marquee></textarea>
+    <div class="sh">Button</div>
+    <textarea class="code">
+<button>Click here</button></textarea>
+    
+        <div class="sh">Mark</div>
+    <textarea class="code">
+<mark>This text will be highlighted.</mark></textarea>
+
+
+    
+     </section> 
+  <!-- tags section end -->
+  
+  <div class="col">
+    <section class="boilerplate">
+      <h2>Page Structure</h2>
+      <div class="sh">Boilerplate HTML Template</div>
+      <textarea class="code">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title here!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p>My content here!</p>
+  </body>
+</html>
+      </textarea>
+      
+      
+    </section>
+    <section class="og">
+      <h2>Open Graph Tags</h2>
+      <div class="sh">Open Graph</div>
+      <div class="ssh">These display previews when you share your website on certain sites. They go in your &lthead&gt;&lt;/head&gt; tag.</div>
+      <textarea class="code">
+<meta property="og:title" content="Your Website">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com/">
+<meta property="og:image" content="https://yourwebsite.com/images/og-preview.jpg">
+<meta property="og:description" content="A brief page description">
+<meta property="twitter:card" content="summary_large_image"></textarea>
+    </section>
+    <section class="table">
+      <h2>Tables</h2>
+      <div class="sh">Tables</div>
+      <textarea class="code">
+<table>
+  <caption>Table Caption</caption>
+  <thead>
+    <th>Col Name</th>
+    <th>Col Name</th>
+    <th>Col Name</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+  </tbody>
+</table></textarea>
+    </section>
+    <section class="noscript">
+      <h2>Noscript</h2>
+      <div class="sh">Noscript</div>
+      <div class="ssh">This tag should be used on pages with JavaScript</div>
+      <textarea class="code">
+<noscript>This page requires JavaScript.</noscript></textarea>
+    </div>
+  <div class="col">
+    <section class="semantic">
+      <h2>Semantic HTML</h2>
+      <div class="sh">Semantic HTML</div>
+      <div class="ssh">This makes websites more accessible with screen readers.</div>
+      <textarea class="code">
+<body>
+  <header>
+    <h1>Welcome to my website!</h1>
+    <nav>
+      <ul>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>Title of my page</h2>
+      <p>Writing here!</p>
+    </article>
+    <aside>
+      <h3>This is my sidebar!</h3>
+      <section>
+        <p>First section...</p>
+        <p>Second section...</p>
+      </section>
+    </aside>
+    <footer>
+      <p>Footer text here...</p>
+    </footer>
+  </main>
+</body></textarea>
+    </section>
+    <section class="imagecaps">
+      <h3>Images w/ Captions</h3>
+      <div class="sh">Images w/ captions</div>
+      <textarea class="code">
+ <figure>
+   <img src="image.jpg" alt="desc">
+   <figcaption>Image caption here</figcaption>
+</figure></textarea>
+      </section>
+      <section class="media">
+        <h4>Embedded Media</h4>
+          <div class="sh">iFrame</div>
+    <textarea class="code">
+<iframe src="page.html" width="200" height="200"></iframe></textarea>
+            <div class="sh">Audio</div>
+    <textarea class="code">
+<audio controls>
+  <source src="https://yourwebsite.mp3" type="audio/mpeg">
+</audio></textarea>
+    <div class="sh">Video Player</div>
+    <textarea class="code">
+<video width="300" height="150" controls>
+   <source src="https://yourwebsite.com/video.mp4" type="video/mp4">
+</video></textarea>
+      </section>
+    
+    <section class="lorem"><h4>Lorem Ipsum</h4>
+      <div class="sh">Lorem Ipsum</div>
+    <textarea class="code">
+<p>Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida, orci amet iaculis aptent blandit quam accumsan donec in facilisis, cursus ante curabitur aliquet condimentum tincidunt facilisis non cubilia lorem et pretium aliquam phasellus ipsum metus quisque auctor tristique donec nibh, praesent congue ultricies aenean ornare ligula sagittis proin sed vestibulum purus tempus aenean neque aliquam curae vivamus purus egestas ligula tincidunt nullam.</p>
+<p>Dolor id fringilla ut lacinia sem ut pretium ante, luctus hendrerit porttitor etiam malesuada eleifend vel suscipit fusce molestie posuere venenatis pellentesque fusce eros, etiam amet est netus nostra suspendisse condimentum, nulla felis inceptos id quam velit integer orci pretium placerat maecenas ante congue purus enim sociosqu odio erat eleifend vestibulum euismod, quam convallis posuere habitasse odio vitae quisque faucibus vulputate primis integer tellus fusce.</p>
+<p>Suscipit conubia volutpat potenti eu nostra eleifend hac neque tellus nisl, curae nunc porta turpis aptent donec litora velit elit sagittis, dolor non dapibus luctus gravida donec ultrices leo scelerisque risus eleifend vehicula morbi orci ultrices lacinia platea consectetur, dictum curabitur habitant turpis dapibus volutpat metus mollis habitasse, eget venenatis arcu congue potenti imperdiet varius.</p>
+<p>Placerat ultrices lacus elementum eu purus, proin ullamcorper class sagittis molestie, aliquam tempor nec maecenas varius sem neque metus nostra ut tortor et auctor augue feugiat, taciti justo sapien lobortis vivamus taciti malesuada accumsan egestas.</p>
+<p>Leo sed dolor quam feugiat ut suscipit praesent fusce bibendum magna mattis, mi laoreet eu orci integer pretium sapien litora sit quisque velit torquent ut aenean per conubia velit, dictum gravida viverra nibh curabitur, donec platea lobortis leo tincidunt.</p>
+<p>Interdum congue class ipsum suspendisse eu libero malesuada lobortis facilisis, leo platea tempor ad sit nisi dapibus aliquam nibh, integer pellentesque commodo tellus ipsum ut facilisis aliquam bibendum hac bibendum quis nulla sodales augue himenaeos ipsum felis donec dapibus etiam congue.</p></textarea>
+ </div>
+  </div>
+</div>

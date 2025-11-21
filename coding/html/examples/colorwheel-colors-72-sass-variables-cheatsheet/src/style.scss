@@ -1,0 +1,254 @@
+@import "compass/css3";
+
+$yellow-00: #fa0;
+$yellow-05: #ffbf00;
+$yellow-10: #ffd500;
+$yellow-15: #ffea00; 
+$yellow-20: #ff0;
+$yellow-25: #eaff00;
+$yellow-30: #d4ff00;
+$yellow-35: #bfff00;
+$green-00: #af0;
+$green-05: #95ff00;
+$green-15: #80ff00;
+$green-20: #6aff00;
+$green-25: #5f0;
+$green-30: #40ff00;
+$green-35: #2bff00;
+$green-40: #15ff00;
+$green-45: #0f0;
+$green-50: #00ff15;
+$green-55: #00ff2b;
+$green-60: #00ff40;
+$green-65: #0f5;
+$green-70: #00ff6a;
+$green-75: #00ff80;
+$green-80: #00ff95;
+$green-85: #0fa;
+$green-90: #00ffbf;
+$blue-00: #00ffd5;
+$blue-05: #00ffea;
+$blue-10: #0ff;
+$blue-15: #00eaff;
+$blue-20: #00d4ff;
+$blue-25: #00bfff;
+$blue-30: #0af;
+$blue-35: #0095ff;
+$blue-40: #007fff;
+$blue-45: #006aff;
+$blue-50: #05f;
+$blue-55: #0040ff;
+$blue-60: #002bff;
+$blue-65: #0015ff;
+$blue-70: #00f;
+$blue-75: #1500ff;
+$blue-80: #2a00ff;
+$purple-00: #4000ff;
+$purple-05: #50f;
+$purple-10: #6a00ff;
+$purple-15: #7f00ff;
+$purple-20: #9500ff;
+$purple-25: #a0f;
+$purple-30: #bf00ff;
+$purple-35: #d400ff;
+$purple-40: #ea00ff;
+$purple-45: #f0f;
+$purple-50: #ff00ea;
+$purple-55: #ff00d4;
+$purple-60: #ff00bf;
+$purple-65: #f0a;
+$purple-70: #ff0095;
+$purple-75: #ff0080;
+$purple-80: #ff006a;
+$red-00: #f05;
+$red-05: #ff0040;
+$red-10: #ff002b;
+$red-15: #ff0015;
+$red-20: #f00;
+$orange-00: #ff1500;
+$orange-05: #ff2b00;
+$orange-10: #ff4000;
+$orange-15: #f50;
+$orange-20: #ff6a00;
+$orange-25: #ff8000;
+$orange-30: #ff9500;
+
+$fontfam-sans:  AvenirNext-Medium, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+$fontfam-heading: AvenirNextCondensed-medium, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif; 
+$fontfam-monospace: Consolas, Monaco, Menlo, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: .25em solid #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header,
+main {
+  display: block;
+}
+main {
+  margin-bottom: 5em;
+}
+body {
+  font: 100%/1.375 $fontfam-sans;
+  color: #000;
+  background-color: #fff; 
+  text-align: center; 
+}
+.container {
+  margin: 1em 2.5%;
+  width: auto;
+}
+h1 {
+  padding-bottom: .5em;
+  text-transform: capitalize;
+  font: 2em/1 $fontfam-heading;
+  font-size: 2em;
+  color: #222; 
+}
+h1,
+h1 a { 
+  color: #222; 
+} 
+h1 a { 
+  text-decoration: none;
+  display: block;
+} 
+h1 a:hover { 
+  background-color: shade($red-00,75%);
+  color: tint($yellow-05,75%);
+}
+h1 span {
+  display: inline-block; 
+  padding: .25em;
+  margin: .25em .125em;
+}
+ul { 
+  list-style: none; 
+  float: left;
+  width: 100%;
+  font-size: .75rem;
+} 
+pre {
+  padding: .5em;
+  font-family: $fontfam-monospace;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+} 
+.cf:after,
+.clear{
+  clear: both;
+}
+.inverted {
+  color: #fff; 
+} 
+.inverted .inverted { 
+  color: black;
+}
+@media (min-width: 400px) {
+  ul { 
+    width: 50%;
+    padding: 0 .25em; 
+  }
+  li { 
+    display: block;
+  } 
+} 
+@media (min-width: 600px) {
+  ul { 
+    width: 33.33333%;
+  }
+} 
+@media (min-width: 900px) {
+  ul { 
+    width: 16.66666%;
+  }
+}
+
+@media (min-width: 1250px) {
+  ul { 
+    font-size: 1rem;
+  }
+}
+
+.yellow-00 { background-color: $yellow-00; }
+.yellow-05 { background-color: $yellow-05; }
+.yellow-10 { background-color: $yellow-10; }
+.yellow-15 { background-color: $yellow-15;  }
+.yellow-20 { background-color: $yellow-20; }
+.yellow-25 { background-color: $yellow-25; }
+.yellow-30 { background-color: $yellow-30; }
+.yellow-35 { background-color: $yellow-35; }
+.green-00 { background-color: $green-00; }
+.green-05 { background-color: $green-05; }
+.green-15 { background-color: $green-15; }
+.green-20 { background-color: $green-20; }
+.green-25 { background-color: $green-25; }
+.green-30 { background-color: $green-30; }
+.green-35 { background-color: $green-35; }
+.green-40 { background-color: $green-40; }
+.green-45 { background-color: $green-45; }
+.green-50 { background-color: $green-50; }
+.green-55 { background-color: $green-55; }
+.green-60 { background-color: $green-60; }
+.green-65 { background-color: $green-65; }
+.green-70 { background-color: $green-70; }
+.green-75 { background-color: $green-75; }
+.green-80 { background-color: $green-80; }
+.green-85 { background-color: $green-85; }
+.green-90 { background-color: $green-90; }
+.blue-00 { background-color: $blue-00; }
+.blue-05 { background-color: $blue-05; }
+.blue-10 { background-color: $blue-10; }
+.blue-15 { background-color: $blue-15; }
+.blue-20 { background-color: $blue-20; }
+.blue-25 { background-color: $blue-25; }
+.blue-30 { background-color: $blue-30; }
+.blue-35 { background-color: $blue-35; }
+.blue-40 { background-color: $blue-40; }
+.blue-45 { background-color: $blue-45; }
+.blue-50 { background-color: $blue-50; }
+.blue-55 { background-color: $blue-55; }
+.blue-60 { background-color: $blue-60; }
+.blue-65 { background-color: $blue-65; }
+.blue-70 { background-color: $blue-70; }
+.blue-75 { background-color: $blue-75; }
+.blue-80 { background-color: $blue-80; }
+.purple-00 { background-color: $purple-00; }
+.purple-05 { background-color: $purple-05; }
+.purple-10 { background-color: $purple-10; }
+.purple-15 { background-color: $purple-15; }
+.purple-20 { background-color: $purple-20; }
+.purple-25 { background-color: $purple-25; }
+.purple-30 { background-color: $purple-30; }
+.purple-35 { background-color: $purple-35; }
+.purple-40 { background-color: $purple-40; }
+.purple-45 { background-color: $purple-45; }
+.purple-50 { background-color: $purple-50; }
+.purple-55 { background-color: $purple-55; }
+.purple-60 { background-color: $purple-60; }
+.purple-65 { background-color: $purple-65; }
+.purple-70 { background-color: $purple-70; }
+.purple-75 { background-color: $purple-75; }
+.purple-80 { background-color: $purple-80; }
+.red-00 { background-color: $red-00; }
+.red-05 { background-color: $red-05; }
+.red-10 { background-color: $red-10; }
+.red-15 { background-color: $red-15; }
+.red-20 { background-color: $red-20; }
+.orange-00 { background-color: $orange-00; }
+.orange-05 { background-color: $orange-05; }
+.orange-10 { background-color: $orange-10; }
+.orange-15 { background-color: $orange-15; }
+.orange-20 { background-color: $orange-20; }
+.orange-25 { background-color: $orange-25; }
+.orange-30 { background-color: $orange-30; }

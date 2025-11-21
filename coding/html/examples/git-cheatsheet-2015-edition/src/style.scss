@@ -1,0 +1,209 @@
+/// Main length
+/// @type Number
+$baseline: 1.5em;
+
+/// Default border
+/// @type List
+$line: 2px solid rgba(black, .2);
+
+/// Border-radius to be used
+/// @type Number
+$radius: 3px;
+
+/// Main color
+/// @type Color
+$color: #666;
+
+/// Light color
+/// @type Color
+/// @require $color
+$light-color: lighten($color, 30%);
+
+html { 
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Main title
+ */
+h1 {
+  width: min-content;
+  margin: ($baseline / 2) auto;
+  margin-bottom: ($baseline / 2);
+  
+  text-align: center;
+  color: $color;
+  border-bottom: 5px double $color;
+  white-space: nowrap;
+}
+
+/**
+ * Code snippets
+ */
+code {
+  font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Courier New', monotype;
+}
+
+/**
+ * Main container
+ */
+.stages {
+  list-style: none;
+  padding: $baseline;
+  margin: 0;
+  
+  text-align: center;
+  color: $color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**
+ * Central items
+ */
+.stages__item {
+  display: block;
+  position: relative; 
+  width: ($baseline * 10);
+  height: ($baseline * 3); 
+  margin: 0 auto ($baseline * 3); 
+  line-height: 1;
+  border-radius: $radius;
+  border: $line;
+
+  /**
+   * External lines
+   */
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%; 
+    height: calc(100% + #{$baseline} * 2);
+    top: ($baseline * 2);
+    border: inherit;
+    border-style: dotted;
+    border-color: $light-color;
+    border-radius: inherit;
+  }
+
+  /**
+   * External lines from the right
+   */
+  &::after {
+    left: 100%;
+    border-left: none;
+  }
+
+  /**
+   * External lines from the left
+   */
+  &::before {
+    right: 100%; 
+    border-right: none;
+  }
+}
+
+/**
+ * State names
+ */
+.stages__item-name {
+  display: block;
+  font-weight: bold;
+  padding: $baseline;
+
+  /**
+   * Little arrows
+   */
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-top:    ($baseline / 3) solid transparent;
+    border-bottom: ($baseline / 3) solid transparent;
+    z-index: 2;
+  }
+
+  /**
+   * Little arrows from the left
+   */
+  &::before {
+    border-left:  ($baseline / 3) solid $light-color;
+    margin-left: -($baseline / 3);
+    left: 0;
+    bottom: ($baseline / 2);
+  }
+
+  /**
+   * Little arrows from the right
+   */
+  &::after {
+    border-right:  ($baseline / 3) solid $light-color; 
+    margin-right: -($baseline / 3);
+    right: 0;
+    top: ($baseline / 2); 
+  }
+}
+
+/**
+ * Removing extra arrows/lines that should not be displayed
+ */
+.stages__item:last-of-type::before,
+.stages__item:last-of-type::after,
+.stages__item:last-of-type .stages__item-name::before,
+.stages__item:first-of-type .stages__item-name::after {
+  content: none;
+}
+
+/**
+ * Code snippets
+ */
+.stages__item-prev,
+.stages__item-next {
+  position: absolute;
+  background: white;
+  border: inherit;
+  width:   ($baseline * 12);
+  padding: ($baseline / 2) 0;
+  z-index: 2;
+  background: #EFEFEF;
+  font-size: .8em;
+  border-radius: inherit;
+}
+
+/**
+ * Code snippets from the left
+ */
+.stages__item-prev {
+  right: 100%;
+  bottom: calc(100% + #{$baseline});
+}
+
+/**
+ * Code snippets from the right
+ */
+.stages__item-next {
+  left: 100%;
+  top: calc(100% + #{$baseline});
+}
+
+/**
+ * Making sure there is no line wrap
+ */
+.stages__item-prev,
+.stages__item-next,
+.stages__item-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+table{
+  margin: 0  auto;
+  display: table;
+}

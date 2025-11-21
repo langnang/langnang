@@ -1,0 +1,180 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Main title
+ */
+h1 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0.75em auto;
+  margin-bottom: 0.75em;
+  text-align: center;
+  color: #666;
+  border-bottom: 5px double #666;
+  white-space: nowrap;
+}
+
+/**
+ * Code snippets
+ */
+code {
+  font-family: "Consolas", "Monaco", "Andale Mono", "Courier New", monotype;
+}
+
+/**
+ * Main container
+ */
+.stages {
+  list-style: none;
+  padding: 1.5em;
+  margin: 0;
+  text-align: center;
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+}
+
+/**
+ * Central items
+ */
+.stages__item {
+  display: block;
+  position: relative;
+  width: 15em;
+  height: 4.5em;
+  margin: 0 auto 4.5em;
+  line-height: 1;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  /**
+   * External lines
+   */
+  /**
+   * External lines from the right
+   */
+  /**
+   * External lines from the left
+   */
+}
+.stages__item::before, .stages__item::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: calc(100% + 1.5em * 2);
+  top: 3em;
+  border: inherit;
+  border-style: dotted;
+  border-color: #b3b3b3;
+  border-radius: inherit;
+}
+.stages__item::after {
+  left: 100%;
+  border-left: none;
+}
+.stages__item::before {
+  right: 100%;
+  border-right: none;
+}
+
+/**
+ * State names
+ */
+.stages__item-name {
+  display: block;
+  font-weight: bold;
+  padding: 1.5em;
+  /**
+   * Little arrows
+   */
+  /**
+   * Little arrows from the left
+   */
+  /**
+   * Little arrows from the right
+   */
+}
+.stages__item-name::before, .stages__item-name::after {
+  content: "";
+  position: absolute;
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+  z-index: 2;
+}
+.stages__item-name::before {
+  border-left: 0.5em solid #b3b3b3;
+  margin-left: -0.5em;
+  left: 0;
+  bottom: 0.75em;
+}
+.stages__item-name::after {
+  border-right: 0.5em solid #b3b3b3;
+  margin-right: -0.5em;
+  right: 0;
+  top: 0.75em;
+}
+
+/**
+ * Removing extra arrows/lines that should not be displayed
+ */
+.stages__item:last-of-type::before,
+.stages__item:last-of-type::after,
+.stages__item:last-of-type .stages__item-name::before,
+.stages__item:first-of-type .stages__item-name::after {
+  content: none;
+}
+
+/**
+ * Code snippets
+ */
+.stages__item-prev,
+.stages__item-next {
+  position: absolute;
+  background: white;
+  border: inherit;
+  width: 18em;
+  padding: 0.75em 0;
+  z-index: 2;
+  background: #EFEFEF;
+  font-size: 0.8em;
+  border-radius: inherit;
+}
+
+/**
+ * Code snippets from the left
+ */
+.stages__item-prev {
+  right: 100%;
+  bottom: calc(100% + 1.5em);
+}
+
+/**
+ * Code snippets from the right
+ */
+.stages__item-next {
+  left: 100%;
+  top: calc(100% + 1.5em);
+}
+
+/**
+ * Making sure there is no line wrap
+ */
+.stages__item-prev,
+.stages__item-next,
+.stages__item-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+table {
+  margin: 0 auto;
+  display: table;
+}
