@@ -1,0 +1,45 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Langnang
+ * @Date: 2021-05-22 14:47:19
+ * @LastEditors: Langnang
+ * @LastEditTime: 2021-05-23 13:11:42
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue 源码解析</title>
+</head>
+
+<body>
+  <div id="app">
+    {{count}}
+    <button @click="count++">count++</button>
+  </div>
+  <script src="./../2.6.12/dist/vue.js"></script>
+
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        count: 1,
+      },
+      created() {
+        // setInterval(() => {
+        //   vm.count++;
+        //   console.log(vm.count);
+        // }, 5000)
+      },
+    })
+  </script>
+  <script type="module">
+    import Vue from './../2.6.12/src/core/instance/index.js'
+  </script>
+</body>
+
+</html>

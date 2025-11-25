@@ -1,0 +1,75 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Langnang
+ * @Date: 2021-05-22 14:47:19
+ * @LastEditors: Langnang
+ * @LastEditTime: 2021-05-22 16:18:22
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>响应式原理 - Vue 源码解析</title>
+</head>
+
+<body>
+  <div id="app">
+    {{count}}
+  </div>
+  <script src="./../2.6.12/dist/vue.js"></script>
+
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        count: 1,
+      },
+      mounted() {
+        console.log(this);
+      },
+    })
+  </script>
+  <script>
+    let _vm = {
+      data: {
+        count: 0,
+      },
+      _data: {
+      }
+    }
+    let keys = Object.keys(_vm.data);
+    let i = keys.length;
+
+    while (i--) {
+      const key = keys[i];
+      proxy(_vm, `_data`, key);
+    }
+    function proxy(target, sourceKey, key) {
+      target[sourceKey][key] = target.data[key];
+    }
+    function observe(value) {
+      const keys = Object.keys(value);
+      for (let i = 0; i < keys.length; i++) {
+        Object.defineProperty(_vm.data, keys[i], {
+          get: function () {
+            return _vm._data[keys[i]];
+          },
+          set: function (val) {
+            return _vm._data[keys[i]] = val;
+          }
+        })
+      }
+    }
+    observe(_vm.data);
+    setInterval(function () {
+      _vm.data.count++;
+      console.log(_vm);
+    }, 1000)
+  </script>
+</body>
+
+</html>
