@@ -1,0 +1,30 @@
+{
+  "users": {
+    "comment": "用户表",
+    "columns": {}
+  },
+  "options": {
+    "comment": "配置表",
+    "columns": {}
+  },
+  "metas": {
+    "comment": "标识表",
+    "columns": {}
+  },
+  "contents": {
+    "comment": "内容表",
+    "columns": {}
+  },
+  "relationships": {
+    "comment": "标识与内容关联表",
+    "columns": {}
+  },
+  "comments": {
+    "comment": "评论回复表",
+    "columns": {}
+  },
+  "links": {
+    "comment": "友链表",
+    "columns": {}
+  }
+}

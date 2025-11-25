@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Vue",
+    "slug": "vue",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "VuePress v1",
+    "slug": "vuepress-1"
+  },
+  {
+    "name": "VuePress v2",
+    "slug": "vuepress-2"
+  },
+  {
+    "name": "GitHub Vue",
+    "slug": "github-vue",
+    "git": "https://github.com/opendigg/awesome-github-vue",
+    "homepage": ""
+  }
+]

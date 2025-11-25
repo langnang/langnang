@@ -1,0 +1,19 @@
+{
+  "options": [
+    {
+      "name": "character_description",
+      "value": "角色"
+    }
+  ],
+  "_content": {
+    "name": "",
+    "nameCn": "",
+    "race": "",
+    "raceCn": "种族",
+    "": "职介",
+    "profession": "职业",
+    "level": "等级",
+    "class": "阶级",
+    "equipments": "装备"
+  }
+}

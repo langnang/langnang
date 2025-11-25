@@ -1,0 +1,14 @@
+.vscode/
+.idea/
+.temp/
+vendor/
+node_modules/
+composer.lock
+package.lock
+pnpm-lock.yaml
+*.css.map
+*.js.map
+*.min.map
+*.log
+.md
+.txt

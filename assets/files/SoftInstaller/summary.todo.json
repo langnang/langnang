@@ -1,0 +1,1328 @@
+[
+	{
+		"name": "WordPress",
+		"logo": {
+			"icon": "fab fa-wordpress"
+		},
+		"category": "Blogs"
+	},
+	{
+		"name": "Typecho",
+		"logo": {
+			"svg": "<path d=\"M512 1024C132.647385 1024 0 891.313231 0 512S132.647385 0 512 0s512 132.686769 512 512-132.647385 512-512 512zM236.307692 354.461538h551.384616V275.692308H236.307692v78.76923z m0 196.923077h393.846154v-78.76923H236.307692v78.76923z m0 196.923077h472.615385v-78.76923H236.307692v78.76923z\" fill=\"#614CAA\"></path>"
+		},
+		"category": "Blogs"
+	},
+	{
+		"name": "Pubvana",
+		"category": "Blogs"
+	},
+	{
+		"name": "Serendipity",
+		"category": "Blogs"
+	},
+	{
+		"name": "Dotclear",
+		"category": "Blogs"
+	},
+	{
+		"name": "b2evolution",
+		"category": "Blogs"
+	},
+	{
+		"name": "Textpattern",
+		"category": "Blogs"
+	},
+	{
+		"name": "Nibbleblog",
+		"category": "Blogs"
+	},
+	{
+		"name": "HTMLy",
+		"category": "Blogs"
+	},
+	{
+		"name": "Nucleus",
+		"category": "Blogs"
+	},
+	{
+		"name": "Chyrp",
+		"category": "Blogs"
+	},
+	{
+		"name": "FlatPress",
+		"category": "Blogs"
+	},
+	{
+		"name": "PivotX",
+		"category": "Blogs"
+	},
+	{
+		"name": "Leafpub",
+		"category": "Blogs"
+	},
+	{
+		"name": "Joomla",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Open Real Estate",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Concrete CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "MODX",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "e107",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Xoops",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "CMS Made Simple",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Drupal",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "PHP-Fusion",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Geeklog",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Composr",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Zikula",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "WebsiteBaker",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "PyroCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "SilverStripe",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "ProcessWire",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Subrion",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Contao",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Sitemagic CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "ImpressPages",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Redaxscript",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Quick.CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "PopojiCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Microweber",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "OctoberCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "ImpressCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Monstra",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "phpwcms",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "WonderCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Open Business Card",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Bludit",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "SiteCake",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Pimcore",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "liveSite",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Mahara",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "TYPO3",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "PluXml",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Fork",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Bolt",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Jamroom",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Pagekit",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "ExpressionEngine",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Kopage",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "CSZ CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Typesetter",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Kirby",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Tiki Wiki CMS Groupware",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Fiyo CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "razorCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "WBCE CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Directus",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "NukeViet CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Koken",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Atlantis CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "ClassicPress",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Plikli CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Croogo",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Pluck",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Backdrop CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Cotonti",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "WinterCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Zenario",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Hotaru CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "LEPTON",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Anchor",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "SCHLIX CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "CMSimple",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "appRain",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "GeniXCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Saurus",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Precurio",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "ClipperCMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "Wolf CMS",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "SofaWiki",
+		"category": "Portals/CMS"
+	},
+	{
+		"name": "phpBB",
+		"category": "Forums"
+	},
+	{
+		"name": "SMF",
+		"category": "Forums"
+	},
+	{
+		"name": "MyBB",
+		"category": "Forums"
+	},
+	{
+		"name": "AEF",
+		"category": "Forums"
+	},
+	{
+		"name": "Vanilla",
+		"category": "Forums"
+	},
+	{
+		"name": "PunBB",
+		"category": "Forums"
+	},
+	{
+		"name": "FluxBB",
+		"category": "Forums"
+	},
+	{
+		"name": "XMB",
+		"category": "Forums"
+	},
+	{
+		"name": "bbPress",
+		"category": "Forums"
+	},
+	{
+		"name": "Phorum",
+		"category": "Forums"
+	},
+	{
+		"name": "ElkArte",
+		"category": "Forums"
+	},
+	{
+		"name": "Flarum",
+		"category": "Forums"
+	},
+	{
+		"name": "FUDforum",
+		"category": "Forums"
+	},
+	{
+		"name": "miniBB",
+		"category": "Forums"
+	},
+	{
+		"name": "Carbon Forum",
+		"category": "Forums"
+	},
+	{
+		"name": "LayerBB",
+		"category": "Forums"
+	},
+	{
+		"name": "my little forum",
+		"category": "Forums"
+	},
+	{
+		"name": "Beehive",
+		"category": "Forums"
+	},
+	{
+		"name": "TangoBB",
+		"category": "Forums"
+	},
+	{
+		"name": "Unclassified NewsBoard",
+		"category": "Forums"
+	},
+	{
+		"name": "Flatboard",
+		"category": "Forums"
+	},
+	{
+		"name": "Gallery",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "Piwigo",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "Coppermine",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "Zenphoto",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "TinyWebGallery",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "Lychee",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "4images",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "iGalerie",
+		"category": "Image Galleries"
+	},
+	{
+		"name": "DokuWiki",
+		"category": "Wikis",
+		"logo": {
+			"img": "https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png"
+		}
+	},
+	{
+		"name": "MediaWiki",
+		"category": "Wikis"
+	},
+	{
+		"name": "PmWiki",
+		"category": "Wikis"
+	},
+	{
+		"name": "WikkaWiki",
+		"category": "Wikis"
+	},
+	{
+		"name": "pH7Builder",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Dolphin",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Oxwall",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Jcow",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Etano",
+		"category": "Social Networking"
+	},
+	{
+		"name": "HumHub",
+		"category": "Social Networking"
+	},
+	{
+		"name": "UNA",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Family Connections",
+		"category": "Social Networking"
+	},
+	{
+		"name": "GNU social",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Hubzilla",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Elgg 3",
+		"category": "Social Networking"
+	},
+	{
+		"name": "Revive Adserver",
+		"category": "Ad Management"
+	},
+	{
+		"name": "Yclas",
+		"category": "Ad Management"
+	},
+	{
+		"name": "WebCalendar",
+		"category": "Calendars"
+	},
+	{
+		"name": "Booked",
+		"category": "Calendars"
+	},
+	{
+		"name": "LuxCal",
+		"category": "Calendars"
+	},
+	{
+		"name": "SuperCali",
+		"category": "Calendars"
+	},
+	{
+		"name": "Nuked Klan",
+		"category": "Gaming"
+	},
+	{
+		"name": "SquirrelMail",
+		"category": "Mails"
+	},
+	{
+		"name": "OpenNewsletter",
+		"category": "Mails"
+	},
+	{
+		"name": "Postfix Admin",
+		"category": "Mails"
+	},
+	{
+		"name": "LimeSurvey",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Matomo",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "LittlePoll",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Simple PHP Poll",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Advanced Poll",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Open Web Analytics",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "EasyPoll",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Logaholic",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "CJ Dynamic Poll",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Little Software Stats",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Framadate",
+		"category": "Polls and Analytics"
+	},
+	{
+		"name": "Feng Office",
+		"category": "Project Management"
+	},
+	{
+		"name": "Rukovoditel",
+		"category": "Project Management"
+	},
+	{
+		"name": "Collabtive",
+		"category": "Project Management"
+	},
+	{
+		"name": "qdPM",
+		"category": "Project Management"
+	},
+	{
+		"name": "dotProject",
+		"category": "Project Management"
+	},
+	{
+		"name": "Mantis Bug Tracker",
+		"category": "Project Management"
+	},
+	{
+		"name": "ProjectPier",
+		"category": "Project Management"
+	},
+	{
+		"name": "The Bug Genie",
+		"category": "Project Management"
+	},
+	{
+		"name": "Snipe-IT",
+		"category": "Project Management"
+	},
+	{
+		"name": "Kanboard",
+		"category": "Project Management"
+	},
+	{
+		"name": "PHProjekt",
+		"category": "Project Management"
+	},
+	{
+		"name": "TaskFreak",
+		"category": "Project Management"
+	},
+	{
+		"name": "SOPlanning",
+		"category": "Project Management"
+	},
+	{
+		"name": "ProjeQtOr",
+		"category": "Project Management"
+	},
+	{
+		"name": "phpCollab",
+		"category": "Project Management"
+	},
+	{
+		"name": "Admidio",
+		"category": "Project Management"
+	},
+	{
+		"name": "ZenTao",
+		"category": "Project Management"
+	},
+	{
+		"name": "Traq",
+		"category": "Project Management"
+	},
+	{
+		"name": "WebCollab",
+		"category": "Project Management"
+	},
+	{
+		"name": "Bugs",
+		"category": "Project Management"
+	},
+	{
+		"name": "Eventum",
+		"category": "Project Management"
+	},
+	{
+		"name": "Manage Your Team",
+		"category": "Project Management"
+	},
+	{
+		"name": "TestLink",
+		"category": "Project Management"
+	},
+	{
+		"name": "Burden",
+		"category": "Project Management"
+	},
+	{
+		"name": "AbanteCart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "WHMCS",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "OpenCart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "CE Phoenix",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "osCommerce",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Zen Cart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Magento",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "BoxBilling",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Loaded Commerce",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "LiteCart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "thirty bees",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Invoice Ninja",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "PrestaShop",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "CubeCart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Open Source Point of Sale",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Quick.Cart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Blesta",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "InvoicePlane",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Arastta",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "AlegroCart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Open eShop",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Avactis",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "SeoToaster",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Thelia 2",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Zeuscart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "ClientExec",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Logic Invoice",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "ClicShopping",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Bagisto",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "PEEL SHOPPING",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "WhatACart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Maian Cart",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "QloApps",
+		"category": "E-Commerce"
+	},
+	{
+		"name": "Vtiger",
+		"category": "ERP"
+	},
+	{
+		"name": "Akaunting",
+		"category": "ERP"
+	},
+	{
+		"name": "YetiForce",
+		"category": "ERP"
+	},
+	{
+		"name": "SugarCRM",
+		"category": "ERP"
+	},
+	{
+		"name": "SuiteCRM",
+		"category": "ERP"
+	},
+	{
+		"name": "FrontAccounting",
+		"category": "ERP"
+	},
+	{
+		"name": "EPESI",
+		"category": "ERP"
+	},
+	{
+		"name": "OrangeHRM",
+		"category": "ERP"
+	},
+	{
+		"name": "EspoCRM",
+		"category": "ERP"
+	},
+	{
+		"name": "X2CRM",
+		"category": "ERP"
+	},
+	{
+		"name": "EGroupware",
+		"category": "ERP"
+	},
+	{
+		"name": "Zurmo",
+		"category": "ERP"
+	},
+	{
+		"name": "webERP",
+		"category": "ERP"
+	},
+	{
+		"name": "Group Office",
+		"category": "ERP"
+	},
+	{
+		"name": "ChurchCRM",
+		"category": "ERP"
+	},
+	{
+		"name": "Tine 2.0",
+		"category": "ERP"
+	},
+	{
+		"name": "Sentrifugo",
+		"category": "ERP"
+	},
+	{
+		"name": "Zenbership",
+		"category": "ERP"
+	},
+	{
+		"name": "IceHrm",
+		"category": "ERP"
+	},
+	{
+		"name": "Jorani",
+		"category": "ERP"
+	},
+	{
+		"name": "VX Guestbook",
+		"category": "Guest Books"
+	},
+	{
+		"name": "RicarGBooK",
+		"category": "Guest Books"
+	},
+	{
+		"name": "PHP Address Book",
+		"category": "Guest Books"
+	},
+	{
+		"name": "osTicket",
+		"category": "Customer Support"
+	},
+	{
+		"name": "HESK",
+		"category": "Customer Support"
+	},
+	{
+		"name": "Sales Syntax",
+		"category": "Customer Support"
+	},
+	{
+		"name": "Faveo Helpdesk",
+		"category": "Customer Support"
+	},
+	{
+		"name": "Vision Helpdesk",
+		"category": "Customer Support"
+	},
+	{
+		"name": "HelpDeskZ",
+		"category": "Customer Support"
+	},
+	{
+		"name": "OpenSupports",
+		"category": "Customer Support"
+	},
+	{
+		"name": "phpMyFAQ",
+		"category": "Customer Support"
+	},
+	{
+		"name": "Maian Support",
+		"category": "Customer Support"
+	},
+	{
+		"name": "FreeScout",
+		"category": "Customer Support"
+	},
+	{
+		"name": "UVdesk",
+		"category": "Customer Support"
+	},
+	{
+		"name": "HelpDEZk",
+		"category": "Customer Support"
+	},
+	{
+		"name": "Attendize",
+		"category": "Customer Support"
+	},
+	{
+		"name": "Handesk",
+		"category": "Customer Support"
+	},
+	{
+		"name": "Lumen",
+		"category": "Micro Frameworks",
+		"summary": "基于Laravel的微型框架"
+	},
+	{
+		"name": "Silex",
+		"category": "Micro Frameworks",
+		"summary": "基于Symphony2组件的微型框架"
+	},
+	{
+		"name": "Silex Skeleton",
+		"category": "Micro Frameworks",
+		"summary": "用于Silex的项目框架"
+	},
+	{
+		"name": "Silex Web Profiler",
+		"category": "Micro Frameworks",
+		"summary": "用于Silex的Web调试工具条"
+	},
+	{
+		"name": "Slim",
+		"category": "Micro Frameworks",
+		"summary": "另一个简单的微型框架"
+	},
+	{
+		"name": "Slim Skeleton",
+		"category": "Micro Frameworks",
+		"summary": "用于Slim的框架"
+	},
+	{
+		"name": "Slim View",
+		"category": "Micro Frameworks",
+		"summary": "Slim的自定义视图集"
+	},
+	{
+		"name": "Slim Middleware",
+		"category": "Micro Frameworks",
+		"summary": "Slim的自定义中间件集合"
+	},
+	{
+		"name": "slim-skeleton",
+		"category": "Micro Frameworks",
+		"summary": "Slim基础上实现了MVC及一些组件"
+	},
+	{
+		"name": "Bullet PHP",
+		"category": "Micro Frameworks",
+		"summary": "用于构建REST APIs的微型框架"
+	},
+	{
+		"name": "Proton",
+		"category": "Micro Frameworks",
+		"summary": "一个微型PHP框架"
+	},
+	{
+		"name": "blink",
+		"category": "Micro Frameworks",
+		"summary": "一个为构建 “long running” 服务而生的 Web 微型高性能框架"
+	},
+	{
+		"name": "flight",
+		"category": "Micro Frameworks",
+		"summary": "一个可扩展的PHP微框架"
+	},
+	{
+		"name": "typecho/framework",
+		"category": "Micro Frameworks",
+		"summary": "Typecho Framework整体框架 (github.com)"
+	},
+	{
+		"name": "Laravel",
+		"category": "Frameworks"
+	},
+	{
+		"name": "ThinkPHP",
+		"category": "Frameworks"
+	},
+	{
+		"name": "CodeIgniter",
+		"category": "Frameworks"
+	},
+	{
+		"name": "yii"
+	},
+	{
+		"name": "Bootstrap"
+	},
+	{
+		"name": "CakePHP"
+	},
+	{
+		"name": "Symfony"
+	},
+	{
+		"name": "Zend"
+	},
+	{
+		"name": "Kohana"
+	},
+	{
+		"name": "UIkit"
+	},
+	{
+		"name": "Smarty"
+	},
+	{
+		"name": "UserSpice"
+	},
+	{
+		"name": "FuelPHP"
+	},
+	{
+		"name": "HTML Purifier"
+	},
+	{
+		"name": "Webasyst"
+	},
+	{
+		"name": "PRADO",
+		"category": "Frameworks"
+	},
+	{
+		"name": "Moodle",
+		"category": "Educational"
+	},
+	{
+		"name": "Chamilo"
+	},
+	{
+		"name": "Claroline"
+	},
+	{
+		"name": "TCExam"
+	},
+	{
+		"name": "Omeka"
+	},
+	{
+		"name": "ATutor"
+	},
+	{
+		"name": "Gibbon"
+	},
+	{
+		"name": "Forma LMS"
+	},
+	{
+		"name": "Xerte Online Toolkits"
+	},
+	{
+		"name": "Savsoft Quiz"
+	},
+	{
+		"name": "openSIS",
+		"category": "Educational"
+	},
+	{
+		"name": "phpMyAdmin",
+		"category": "DB Tools"
+	},
+	{
+		"name": "MyWebSQL"
+	},
+	{
+		"name": "SIDU"
+	},
+	{
+		"name": "Adminer"
+	},
+	{
+		"name": "SQLiteManager"
+	},
+	{
+		"name": "phpLiteAdmin"
+	},
+	{
+		"name": "Vty",
+		"category": "DB Tools"
+	},
+	{
+		"name": "Impleo",
+		"category": "Audio"
+	},
+	{
+		"name": "ClipBucket",
+		"category": "Video"
+	},
+	{
+		"name": "CumulusClips",
+		"category": "Video"
+	},
+	{
+		"name": "Tiny Tiny RSS",
+		"category": "RSS"
+	},
+	{
+		"name": "selfoss"
+	},
+	{
+		"name": "SimplePie"
+	},
+	{
+		"name": "FreshRSS"
+	},
+	{
+		"name": "Miniflux"
+	},
+	{
+		"name": "Reader Self",
+		"category": "RSS"
+	},
+	{
+		"name": "Arfooo",
+		"category": "File Management"
+	},
+	{
+		"name": "OpenDocMan",
+		"category": "File Management"
+	},
+	{
+		"name": "SkyCaiji",
+		"category": "Collector",
+		"summary": "蓝天采集器_云端部署大数据采集爬虫系统，免费无限制自动化采集软件"
+	},
+	{
+		"name": "WebFTP",
+		"category": "FTP"
+	},
+	{
+		"name": "Monsta FTP",
+		"category": "FTP"
+	},
+	{
+		"name": "Seo Panel"
+	},
+	{
+		"name": "SLiMS"
+	},
+	{
+		"name": "Open Journal Systems"
+	},
+	{
+		"name": "Question2Answer"
+	},
+	{
+		"name": "WeBid"
+	},
+	{
+		"name": "Form Tools"
+	},
+	{
+		"name": "SPIP"
+	},
+	{
+		"name": "GLPI"
+	},
+	{
+		"name": "PASTE"
+	},
+	{
+		"name": "Soholaunch"
+	},
+	{
+		"name": "webtrees"
+	},
+	{
+		"name": "wallabag"
+	},
+	{
+		"name": "PhpGedView"
+	},
+	{
+		"name": "InfiniteWP"
+	},
+	{
+		"name": "Firefly III"
+	},
+	{
+		"name": "Agora-Project"
+	},
+	{
+		"name": "u-Auctions"
+	},
+	{
+		"name": "Commentics"
+	},
+	{
+		"name": "DomainMOD"
+	},
+	{
+		"name": "Kimai"
+	},
+	{
+		"name": "EasyAppointments"
+	},
+	{
+		"name": "XCloner"
+	},
+	{
+		"name": "TastyIgniter"
+	},
+	{
+		"name": "Fusio"
+	},
+	{
+		"name": "LibreHealth EHR"
+	},
+	{
+		"name": "phpDocumentor"
+	},
+	{
+		"name": "Omeka S"
+	},
+	{
+		"name": "HuMo-genealogy"
+	},
+	{
+		"name": "Open Monograph Press"
+	},
+	{
+		"name": "XMS"
+	},
+	{
+		"name": "Unmark"
+	},
+	{
+		"name": "Open Preprint Systems"
+	}
+]

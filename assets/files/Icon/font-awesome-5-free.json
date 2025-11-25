@@ -1,0 +1,4376 @@
+[
+  {
+    "class": "fa-500px"
+  },
+  {
+    "class": "fa-accessible-icon"
+  },
+  {
+    "class": "fa-accusoft"
+  },
+  {
+    "class": "fa-acquisitions-incorporated"
+  },
+  {
+    "class": "fa-ad"
+  },
+  {
+    "class": "fa-address-book"
+  },
+  {
+    "class": "fa-address-card"
+  },
+  {
+    "class": "fa-adjust"
+  },
+  {
+    "class": "fa-adn"
+  },
+  {
+    "class": "fa-adversal"
+  },
+  {
+    "class": "fa-affiliatetheme"
+  },
+  {
+    "class": "fa-air-freshener"
+  },
+  {
+    "class": "fa-airbnb"
+  },
+  {
+    "class": "fa-algolia"
+  },
+  {
+    "class": "fa-align-center"
+  },
+  {
+    "class": "fa-align-justify"
+  },
+  {
+    "class": "fa-align-left"
+  },
+  {
+    "class": "fa-align-right"
+  },
+  {
+    "class": "fa-alipay"
+  },
+  {
+    "class": "fa-allergies"
+  },
+  {
+    "class": "fa-amazon"
+  },
+  {
+    "class": "fa-amazon-pay"
+  },
+  {
+    "class": "fa-ambulance"
+  },
+  {
+    "class": "fa-american-sign-language-interpreting"
+  },
+  {
+    "class": "fa-amilia"
+  },
+  {
+    "class": "fa-anchor"
+  },
+  {
+    "class": "fa-android"
+  },
+  {
+    "class": "fa-angellist"
+  },
+  {
+    "class": "fa-angle-double-down"
+  },
+  {
+    "class": "fa-angle-double-left"
+  },
+  {
+    "class": "fa-angle-double-right"
+  },
+  {
+    "class": "fa-angle-double-up"
+  },
+  {
+    "class": "fa-angle-down"
+  },
+  {
+    "class": "fa-angle-left"
+  },
+  {
+    "class": "fa-angle-right"
+  },
+  {
+    "class": "fa-angle-up"
+  },
+  {
+    "class": "fa-angry"
+  },
+  {
+    "class": "fa-angrycreative"
+  },
+  {
+    "class": "fa-angular"
+  },
+  {
+    "class": "fa-ankh"
+  },
+  {
+    "class": "fa-app-store"
+  },
+  {
+    "class": "fa-app-store-ios"
+  },
+  {
+    "class": "fa-apper"
+  },
+  {
+    "class": "fa-apple"
+  },
+  {
+    "class": "fa-apple-alt"
+  },
+  {
+    "class": "fa-apple-pay"
+  },
+  {
+    "class": "fa-archive"
+  },
+  {
+    "class": "fa-archway"
+  },
+  {
+    "class": "fa-arrow-alt-circle-down"
+  },
+  {
+    "class": "fa-arrow-alt-circle-left"
+  },
+  {
+    "class": "fa-arrow-alt-circle-right"
+  },
+  {
+    "class": "fa-arrow-alt-circle-up"
+  },
+  {
+    "class": "fa-arrow-circle-down"
+  },
+  {
+    "class": "fa-arrow-circle-left"
+  },
+  {
+    "class": "fa-arrow-circle-right"
+  },
+  {
+    "class": "fa-arrow-circle-up"
+  },
+  {
+    "class": "fa-arrow-down"
+  },
+  {
+    "class": "fa-arrow-left"
+  },
+  {
+    "class": "fa-arrow-right"
+  },
+  {
+    "class": "fa-arrow-up"
+  },
+  {
+    "class": "fa-arrows-alt"
+  },
+  {
+    "class": "fa-arrows-alt-h"
+  },
+  {
+    "class": "fa-arrows-alt-v"
+  },
+  {
+    "class": "fa-artstation"
+  },
+  {
+    "class": "fa-assistive-listening-systems"
+  },
+  {
+    "class": "fa-asterisk"
+  },
+  {
+    "class": "fa-asymmetrik"
+  },
+  {
+    "class": "fa-at"
+  },
+  {
+    "class": "fa-atlas"
+  },
+  {
+    "class": "fa-atlassian"
+  },
+  {
+    "class": "fa-atom"
+  },
+  {
+    "class": "fa-audible"
+  },
+  {
+    "class": "fa-audio-description"
+  },
+  {
+    "class": "fa-autoprefixer"
+  },
+  {
+    "class": "fa-avianex"
+  },
+  {
+    "class": "fa-aviato"
+  },
+  {
+    "class": "fa-award"
+  },
+  {
+    "class": "fa-aws"
+  },
+  {
+    "class": "fa-baby"
+  },
+  {
+    "class": "fa-baby-carriage"
+  },
+  {
+    "class": "fa-backspace"
+  },
+  {
+    "class": "fa-backward"
+  },
+  {
+    "class": "fa-bacon"
+  },
+  {
+    "class": "fa-bacteria"
+  },
+  {
+    "class": "fa-bacterium"
+  },
+  {
+    "class": "fa-bahai"
+  },
+  {
+    "class": "fa-balance-scale"
+  },
+  {
+    "class": "fa-balance-scale-left"
+  },
+  {
+    "class": "fa-balance-scale-right"
+  },
+  {
+    "class": "fa-ban"
+  },
+  {
+    "class": "fa-band-aid"
+  },
+  {
+    "class": "fa-bandcamp"
+  },
+  {
+    "class": "fa-barcode"
+  },
+  {
+    "class": "fa-bars"
+  },
+  {
+    "class": "fa-baseball-ball"
+  },
+  {
+    "class": "fa-basketball-ball"
+  },
+  {
+    "class": "fa-bath"
+  },
+  {
+    "class": "fa-battery-empty"
+  },
+  {
+    "class": "fa-battery-full"
+  },
+  {
+    "class": "fa-battery-half"
+  },
+  {
+    "class": "fa-battery-quarter"
+  },
+  {
+    "class": "fa-battery-three-quarters"
+  },
+  {
+    "class": "fa-battle-net"
+  },
+  {
+    "class": "fa-bed"
+  },
+  {
+    "class": "fa-beer"
+  },
+  {
+    "class": "fa-behance"
+  },
+  {
+    "class": "fa-behance-square"
+  },
+  {
+    "class": "fa-bell"
+  },
+  {
+    "class": "fa-bell-slash"
+  },
+  {
+    "class": "fa-bezier-curve"
+  },
+  {
+    "class": "fa-bible"
+  },
+  {
+    "class": "fa-bicycle"
+  },
+  {
+    "class": "fa-biking"
+  },
+  {
+    "class": "fa-bimobject"
+  },
+  {
+    "class": "fa-binoculars"
+  },
+  {
+    "class": "fa-biohazard"
+  },
+  {
+    "class": "fa-birthday-cake"
+  },
+  {
+    "class": "fa-bitbucket"
+  },
+  {
+    "class": "fa-bitcoin"
+  },
+  {
+    "class": "fa-bity"
+  },
+  {
+    "class": "fa-black-tie"
+  },
+  {
+    "class": "fa-blackberry"
+  },
+  {
+    "class": "fa-blender"
+  },
+  {
+    "class": "fa-blender-phone"
+  },
+  {
+    "class": "fa-blind"
+  },
+  {
+    "class": "fa-blog"
+  },
+  {
+    "class": "fa-blogger"
+  },
+  {
+    "class": "fa-blogger-b"
+  },
+  {
+    "class": "fa-bluetooth"
+  },
+  {
+    "class": "fa-bluetooth-b"
+  },
+  {
+    "class": "fa-bold"
+  },
+  {
+    "class": "fa-bolt"
+  },
+  {
+    "class": "fa-bomb"
+  },
+  {
+    "class": "fa-bone"
+  },
+  {
+    "class": "fa-bong"
+  },
+  {
+    "class": "fa-book"
+  },
+  {
+    "class": "fa-book-dead"
+  },
+  {
+    "class": "fa-book-medical"
+  },
+  {
+    "class": "fa-book-open"
+  },
+  {
+    "class": "fa-book-reader"
+  },
+  {
+    "class": "fa-bookmark"
+  },
+  {
+    "class": "fa-bootstrap"
+  },
+  {
+    "class": "fa-border-all"
+  },
+  {
+    "class": "fa-border-none"
+  },
+  {
+    "class": "fa-border-style"
+  },
+  {
+    "class": "fa-bowling-ball"
+  },
+  {
+    "class": "fa-box"
+  },
+  {
+    "class": "fa-box-open"
+  },
+  {
+    "class": "fa-box-tissue"
+  },
+  {
+    "class": "fa-boxes"
+  },
+  {
+    "class": "fa-braille"
+  },
+  {
+    "class": "fa-brain"
+  },
+  {
+    "class": "fa-bread-slice"
+  },
+  {
+    "class": "fa-briefcase"
+  },
+  {
+    "class": "fa-briefcase-medical"
+  },
+  {
+    "class": "fa-broadcast-tower"
+  },
+  {
+    "class": "fa-broom"
+  },
+  {
+    "class": "fa-brush"
+  },
+  {
+    "class": "fa-btc"
+  },
+  {
+    "class": "fa-buffer"
+  },
+  {
+    "class": "fa-bug"
+  },
+  {
+    "class": "fa-building"
+  },
+  {
+    "class": "fa-bullhorn"
+  },
+  {
+    "class": "fa-bullseye"
+  },
+  {
+    "class": "fa-burn"
+  },
+  {
+    "class": "fa-buromobelexperte"
+  },
+  {
+    "class": "fa-bus"
+  },
+  {
+    "class": "fa-bus-alt"
+  },
+  {
+    "class": "fa-business-time"
+  },
+  {
+    "class": "fa-buy-n-large"
+  },
+  {
+    "class": "fa-buysellads"
+  },
+  {
+    "class": "fa-calculator"
+  },
+  {
+    "class": "fa-calendar"
+  },
+  {
+    "class": "fa-calendar-alt"
+  },
+  {
+    "class": "fa-calendar-check"
+  },
+  {
+    "class": "fa-calendar-day"
+  },
+  {
+    "class": "fa-calendar-minus"
+  },
+  {
+    "class": "fa-calendar-plus"
+  },
+  {
+    "class": "fa-calendar-times"
+  },
+  {
+    "class": "fa-calendar-week"
+  },
+  {
+    "class": "fa-camera"
+  },
+  {
+    "class": "fa-camera-retro"
+  },
+  {
+    "class": "fa-campground"
+  },
+  {
+    "class": "fa-canadian-maple-leaf"
+  },
+  {
+    "class": "fa-candy-cane"
+  },
+  {
+    "class": "fa-cannabis"
+  },
+  {
+    "class": "fa-capsules"
+  },
+  {
+    "class": "fa-car"
+  },
+  {
+    "class": "fa-car-alt"
+  },
+  {
+    "class": "fa-car-battery"
+  },
+  {
+    "class": "fa-car-crash"
+  },
+  {
+    "class": "fa-car-side"
+  },
+  {
+    "class": "fa-caravan"
+  },
+  {
+    "class": "fa-caret-down"
+  },
+  {
+    "class": "fa-caret-left"
+  },
+  {
+    "class": "fa-caret-right"
+  },
+  {
+    "class": "fa-caret-square-down"
+  },
+  {
+    "class": "fa-caret-square-left"
+  },
+  {
+    "class": "fa-caret-square-right"
+  },
+  {
+    "class": "fa-caret-square-up"
+  },
+  {
+    "class": "fa-caret-up"
+  },
+  {
+    "class": "fa-carrot"
+  },
+  {
+    "class": "fa-cart-arrow-down"
+  },
+  {
+    "class": "fa-cart-plus"
+  },
+  {
+    "class": "fa-cash-register"
+  },
+  {
+    "class": "fa-cat"
+  },
+  {
+    "class": "fa-cc-amazon-pay"
+  },
+  {
+    "class": "fa-cc-amex"
+  },
+  {
+    "class": "fa-cc-apple-pay"
+  },
+  {
+    "class": "fa-cc-diners-club"
+  },
+  {
+    "class": "fa-cc-discover"
+  },
+  {
+    "class": "fa-cc-jcb"
+  },
+  {
+    "class": "fa-cc-mastercard"
+  },
+  {
+    "class": "fa-cc-paypal"
+  },
+  {
+    "class": "fa-cc-stripe"
+  },
+  {
+    "class": "fa-cc-visa"
+  },
+  {
+    "class": "fa-centercode"
+  },
+  {
+    "class": "fa-centos"
+  },
+  {
+    "class": "fa-certificate"
+  },
+  {
+    "class": "fa-chair"
+  },
+  {
+    "class": "fa-chalkboard"
+  },
+  {
+    "class": "fa-chalkboard-teacher"
+  },
+  {
+    "class": "fa-charging-station"
+  },
+  {
+    "class": "fa-chart-area"
+  },
+  {
+    "class": "fa-chart-bar"
+  },
+  {
+    "class": "fa-chart-line"
+  },
+  {
+    "class": "fa-chart-pie"
+  },
+  {
+    "class": "fa-check"
+  },
+  {
+    "class": "fa-check-circle"
+  },
+  {
+    "class": "fa-check-double"
+  },
+  {
+    "class": "fa-check-square"
+  },
+  {
+    "class": "fa-cheese"
+  },
+  {
+    "class": "fa-chess"
+  },
+  {
+    "class": "fa-chess-bishop"
+  },
+  {
+    "class": "fa-chess-board"
+  },
+  {
+    "class": "fa-chess-king"
+  },
+  {
+    "class": "fa-chess-knight"
+  },
+  {
+    "class": "fa-chess-pawn"
+  },
+  {
+    "class": "fa-chess-queen"
+  },
+  {
+    "class": "fa-chess-rook"
+  },
+  {
+    "class": "fa-chevron-circle-down"
+  },
+  {
+    "class": "fa-chevron-circle-left"
+  },
+  {
+    "class": "fa-chevron-circle-right"
+  },
+  {
+    "class": "fa-chevron-circle-up"
+  },
+  {
+    "class": "fa-chevron-down"
+  },
+  {
+    "class": "fa-chevron-left"
+  },
+  {
+    "class": "fa-chevron-right"
+  },
+  {
+    "class": "fa-chevron-up"
+  },
+  {
+    "class": "fa-child"
+  },
+  {
+    "class": "fa-chrome"
+  },
+  {
+    "class": "fa-chromecast"
+  },
+  {
+    "class": "fa-church"
+  },
+  {
+    "class": "fa-circle"
+  },
+  {
+    "class": "fa-circle-notch"
+  },
+  {
+    "class": "fa-city"
+  },
+  {
+    "class": "fa-clinic-medical"
+  },
+  {
+    "class": "fa-clipboard"
+  },
+  {
+    "class": "fa-clipboard-check"
+  },
+  {
+    "class": "fa-clipboard-list"
+  },
+  {
+    "class": "fa-clock"
+  },
+  {
+    "class": "fa-clone"
+  },
+  {
+    "class": "fa-closed-captioning"
+  },
+  {
+    "class": "fa-cloud"
+  },
+  {
+    "class": "fa-cloud-download-alt"
+  },
+  {
+    "class": "fa-cloud-meatball"
+  },
+  {
+    "class": "fa-cloud-moon"
+  },
+  {
+    "class": "fa-cloud-moon-rain"
+  },
+  {
+    "class": "fa-cloud-rain"
+  },
+  {
+    "class": "fa-cloud-showers-heavy"
+  },
+  {
+    "class": "fa-cloud-sun"
+  },
+  {
+    "class": "fa-cloud-sun-rain"
+  },
+  {
+    "class": "fa-cloud-upload-alt"
+  },
+  {
+    "class": "fa-cloudflare"
+  },
+  {
+    "class": "fa-cloudscale"
+  },
+  {
+    "class": "fa-cloudsmith"
+  },
+  {
+    "class": "fa-cloudversify"
+  },
+  {
+    "class": "fa-cocktail"
+  },
+  {
+    "class": "fa-code"
+  },
+  {
+    "class": "fa-code-branch"
+  },
+  {
+    "class": "fa-codepen"
+  },
+  {
+    "class": "fa-codiepie"
+  },
+  {
+    "class": "fa-coffee"
+  },
+  {
+    "class": "fa-cog"
+  },
+  {
+    "class": "fa-cogs"
+  },
+  {
+    "class": "fa-coins"
+  },
+  {
+    "class": "fa-columns"
+  },
+  {
+    "class": "fa-comment"
+  },
+  {
+    "class": "fa-comment-alt"
+  },
+  {
+    "class": "fa-comment-dollar"
+  },
+  {
+    "class": "fa-comment-dots"
+  },
+  {
+    "class": "fa-comment-medical"
+  },
+  {
+    "class": "fa-comment-slash"
+  },
+  {
+    "class": "fa-comments"
+  },
+  {
+    "class": "fa-comments-dollar"
+  },
+  {
+    "class": "fa-compact-disc"
+  },
+  {
+    "class": "fa-compass"
+  },
+  {
+    "class": "fa-compress"
+  },
+  {
+    "class": "fa-compress-alt"
+  },
+  {
+    "class": "fa-compress-arrows-alt"
+  },
+  {
+    "class": "fa-concierge-bell"
+  },
+  {
+    "class": "fa-confluence"
+  },
+  {
+    "class": "fa-connectdevelop"
+  },
+  {
+    "class": "fa-contao"
+  },
+  {
+    "class": "fa-cookie"
+  },
+  {
+    "class": "fa-cookie-bite"
+  },
+  {
+    "class": "fa-copy"
+  },
+  {
+    "class": "fa-copyright"
+  },
+  {
+    "class": "fa-cotton-bureau"
+  },
+  {
+    "class": "fa-couch"
+  },
+  {
+    "class": "fa-cpanel"
+  },
+  {
+    "class": "fa-creative-commons"
+  },
+  {
+    "class": "fa-creative-commons-by"
+  },
+  {
+    "class": "fa-creative-commons-nc"
+  },
+  {
+    "class": "fa-creative-commons-nc-eu"
+  },
+  {
+    "class": "fa-creative-commons-nc-jp"
+  },
+  {
+    "class": "fa-creative-commons-nd"
+  },
+  {
+    "class": "fa-creative-commons-pd"
+  },
+  {
+    "class": "fa-creative-commons-pd-alt"
+  },
+  {
+    "class": "fa-creative-commons-remix"
+  },
+  {
+    "class": "fa-creative-commons-sa"
+  },
+  {
+    "class": "fa-creative-commons-sampling"
+  },
+  {
+    "class": "fa-creative-commons-sampling-plus"
+  },
+  {
+    "class": "fa-creative-commons-share"
+  },
+  {
+    "class": "fa-creative-commons-zero"
+  },
+  {
+    "class": "fa-credit-card"
+  },
+  {
+    "class": "fa-critical-role"
+  },
+  {
+    "class": "fa-crop"
+  },
+  {
+    "class": "fa-crop-alt"
+  },
+  {
+    "class": "fa-cross"
+  },
+  {
+    "class": "fa-crosshairs"
+  },
+  {
+    "class": "fa-crow"
+  },
+  {
+    "class": "fa-crown"
+  },
+  {
+    "class": "fa-crutch"
+  },
+  {
+    "class": "fa-css3"
+  },
+  {
+    "class": "fa-css3-alt"
+  },
+  {
+    "class": "fa-cube"
+  },
+  {
+    "class": "fa-cubes"
+  },
+  {
+    "class": "fa-cut"
+  },
+  {
+    "class": "fa-cuttlefish"
+  },
+  {
+    "class": "fa-d-and-d"
+  },
+  {
+    "class": "fa-d-and-d-beyond"
+  },
+  {
+    "class": "fa-dailymotion"
+  },
+  {
+    "class": "fa-dashcube"
+  },
+  {
+    "class": "fa-database"
+  },
+  {
+    "class": "fa-deaf"
+  },
+  {
+    "class": "fa-deezer"
+  },
+  {
+    "class": "fa-delicious"
+  },
+  {
+    "class": "fa-democrat"
+  },
+  {
+    "class": "fa-deploydog"
+  },
+  {
+    "class": "fa-deskpro"
+  },
+  {
+    "class": "fa-desktop"
+  },
+  {
+    "class": "fa-dev"
+  },
+  {
+    "class": "fa-deviantart"
+  },
+  {
+    "class": "fa-dharmachakra"
+  },
+  {
+    "class": "fa-dhl"
+  },
+  {
+    "class": "fa-diagnoses"
+  },
+  {
+    "class": "fa-diaspora"
+  },
+  {
+    "class": "fa-dice"
+  },
+  {
+    "class": "fa-dice-d20"
+  },
+  {
+    "class": "fa-dice-d6"
+  },
+  {
+    "class": "fa-dice-five"
+  },
+  {
+    "class": "fa-dice-four"
+  },
+  {
+    "class": "fa-dice-one"
+  },
+  {
+    "class": "fa-dice-six"
+  },
+  {
+    "class": "fa-dice-three"
+  },
+  {
+    "class": "fa-dice-two"
+  },
+  {
+    "class": "fa-digg"
+  },
+  {
+    "class": "fa-digital-ocean"
+  },
+  {
+    "class": "fa-digital-tachograph"
+  },
+  {
+    "class": "fa-directions"
+  },
+  {
+    "class": "fa-discord"
+  },
+  {
+    "class": "fa-discourse"
+  },
+  {
+    "class": "fa-disease"
+  },
+  {
+    "class": "fa-divide"
+  },
+  {
+    "class": "fa-dizzy"
+  },
+  {
+    "class": "fa-dna"
+  },
+  {
+    "class": "fa-dochub"
+  },
+  {
+    "class": "fa-docker"
+  },
+  {
+    "class": "fa-dog"
+  },
+  {
+    "class": "fa-dollar-sign"
+  },
+  {
+    "class": "fa-dolly"
+  },
+  {
+    "class": "fa-dolly-flatbed"
+  },
+  {
+    "class": "fa-donate"
+  },
+  {
+    "class": "fa-door-closed"
+  },
+  {
+    "class": "fa-door-open"
+  },
+  {
+    "class": "fa-dot-circle"
+  },
+  {
+    "class": "fa-dove"
+  },
+  {
+    "class": "fa-download"
+  },
+  {
+    "class": "fa-draft2digital"
+  },
+  {
+    "class": "fa-drafting-compass"
+  },
+  {
+    "class": "fa-dragon"
+  },
+  {
+    "class": "fa-draw-polygon"
+  },
+  {
+    "class": "fa-dribbble"
+  },
+  {
+    "class": "fa-dribbble-square"
+  },
+  {
+    "class": "fa-dropbox"
+  },
+  {
+    "class": "fa-drum"
+  },
+  {
+    "class": "fa-drum-steelpan"
+  },
+  {
+    "class": "fa-drumstick-bite"
+  },
+  {
+    "class": "fa-drupal"
+  },
+  {
+    "class": "fa-dumbbell"
+  },
+  {
+    "class": "fa-dumpster"
+  },
+  {
+    "class": "fa-dumpster-fire"
+  },
+  {
+    "class": "fa-dungeon"
+  },
+  {
+    "class": "fa-dyalog"
+  },
+  {
+    "class": "fa-earlybirds"
+  },
+  {
+    "class": "fa-ebay"
+  },
+  {
+    "class": "fa-edge"
+  },
+  {
+    "class": "fa-edge-legacy"
+  },
+  {
+    "class": "fa-edit"
+  },
+  {
+    "class": "fa-egg"
+  },
+  {
+    "class": "fa-eject"
+  },
+  {
+    "class": "fa-elementor"
+  },
+  {
+    "class": "fa-ellipsis-h"
+  },
+  {
+    "class": "fa-ellipsis-v"
+  },
+  {
+    "class": "fa-ello"
+  },
+  {
+    "class": "fa-ember"
+  },
+  {
+    "class": "fa-empire"
+  },
+  {
+    "class": "fa-envelope"
+  },
+  {
+    "class": "fa-envelope-open"
+  },
+  {
+    "class": "fa-envelope-open-text"
+  },
+  {
+    "class": "fa-envelope-square"
+  },
+  {
+    "class": "fa-envira"
+  },
+  {
+    "class": "fa-equals"
+  },
+  {
+    "class": "fa-eraser"
+  },
+  {
+    "class": "fa-erlang"
+  },
+  {
+    "class": "fa-ethereum"
+  },
+  {
+    "class": "fa-ethernet"
+  },
+  {
+    "class": "fa-etsy"
+  },
+  {
+    "class": "fa-euro-sign"
+  },
+  {
+    "class": "fa-evernote"
+  },
+  {
+    "class": "fa-exchange-alt"
+  },
+  {
+    "class": "fa-exclamation"
+  },
+  {
+    "class": "fa-exclamation-circle"
+  },
+  {
+    "class": "fa-exclamation-triangle"
+  },
+  {
+    "class": "fa-expand"
+  },
+  {
+    "class": "fa-expand-alt"
+  },
+  {
+    "class": "fa-expand-arrows-alt"
+  },
+  {
+    "class": "fa-expeditedssl"
+  },
+  {
+    "class": "fa-external-link-alt"
+  },
+  {
+    "class": "fa-external-link-square-alt"
+  },
+  {
+    "class": "fa-eye"
+  },
+  {
+    "class": "fa-eye-dropper"
+  },
+  {
+    "class": "fa-eye-slash"
+  },
+  {
+    "class": "fa-facebook"
+  },
+  {
+    "class": "fa-facebook-f"
+  },
+  {
+    "class": "fa-facebook-messenger"
+  },
+  {
+    "class": "fa-facebook-square"
+  },
+  {
+    "class": "fa-fan"
+  },
+  {
+    "class": "fa-fantasy-flight-games"
+  },
+  {
+    "class": "fa-fast-backward"
+  },
+  {
+    "class": "fa-fast-forward"
+  },
+  {
+    "class": "fa-faucet"
+  },
+  {
+    "class": "fa-fax"
+  },
+  {
+    "class": "fa-feather"
+  },
+  {
+    "class": "fa-feather-alt"
+  },
+  {
+    "class": "fa-fedex"
+  },
+  {
+    "class": "fa-fedora"
+  },
+  {
+    "class": "fa-female"
+  },
+  {
+    "class": "fa-fighter-jet"
+  },
+  {
+    "class": "fa-figma"
+  },
+  {
+    "class": "fa-file"
+  },
+  {
+    "class": "fa-file-alt"
+  },
+  {
+    "class": "fa-file-archive"
+  },
+  {
+    "class": "fa-file-audio"
+  },
+  {
+    "class": "fa-file-code"
+  },
+  {
+    "class": "fa-file-contract"
+  },
+  {
+    "class": "fa-file-csv"
+  },
+  {
+    "class": "fa-file-download"
+  },
+  {
+    "class": "fa-file-excel"
+  },
+  {
+    "class": "fa-file-export"
+  },
+  {
+    "class": "fa-file-image"
+  },
+  {
+    "class": "fa-file-import"
+  },
+  {
+    "class": "fa-file-invoice"
+  },
+  {
+    "class": "fa-file-invoice-dollar"
+  },
+  {
+    "class": "fa-file-medical"
+  },
+  {
+    "class": "fa-file-medical-alt"
+  },
+  {
+    "class": "fa-file-pdf"
+  },
+  {
+    "class": "fa-file-powerpoint"
+  },
+  {
+    "class": "fa-file-prescription"
+  },
+  {
+    "class": "fa-file-signature"
+  },
+  {
+    "class": "fa-file-upload"
+  },
+  {
+    "class": "fa-file-video"
+  },
+  {
+    "class": "fa-file-word"
+  },
+  {
+    "class": "fa-fill"
+  },
+  {
+    "class": "fa-fill-drip"
+  },
+  {
+    "class": "fa-film"
+  },
+  {
+    "class": "fa-filter"
+  },
+  {
+    "class": "fa-fingerprint"
+  },
+  {
+    "class": "fa-fire"
+  },
+  {
+    "class": "fa-fire-alt"
+  },
+  {
+    "class": "fa-fire-extinguisher"
+  },
+  {
+    "class": "fa-firefox"
+  },
+  {
+    "class": "fa-firefox-browser"
+  },
+  {
+    "class": "fa-first-aid"
+  },
+  {
+    "class": "fa-first-order"
+  },
+  {
+    "class": "fa-first-order-alt"
+  },
+  {
+    "class": "fa-firstdraft"
+  },
+  {
+    "class": "fa-fish"
+  },
+  {
+    "class": "fa-fist-raised"
+  },
+  {
+    "class": "fa-flag"
+  },
+  {
+    "class": "fa-flag-checkered"
+  },
+  {
+    "class": "fa-flag-usa"
+  },
+  {
+    "class": "fa-flask"
+  },
+  {
+    "class": "fa-flickr"
+  },
+  {
+    "class": "fa-flipboard"
+  },
+  {
+    "class": "fa-flushed"
+  },
+  {
+    "class": "fa-fly"
+  },
+  {
+    "class": "fa-folder"
+  },
+  {
+    "class": "fa-folder-minus"
+  },
+  {
+    "class": "fa-folder-open"
+  },
+  {
+    "class": "fa-folder-plus"
+  },
+  {
+    "class": "fa-font"
+  },
+  {
+    "class": "fa-font-awesome"
+  },
+  {
+    "class": "fa-font-awesome-alt"
+  },
+  {
+    "class": "fa-font-awesome-flag"
+  },
+  {
+    "class": "fa-font-awesome-logo-full"
+  },
+  {
+    "class": "fa-fonticons"
+  },
+  {
+    "class": "fa-fonticons-fi"
+  },
+  {
+    "class": "fa-football-ball"
+  },
+  {
+    "class": "fa-fort-awesome"
+  },
+  {
+    "class": "fa-fort-awesome-alt"
+  },
+  {
+    "class": "fa-forumbee"
+  },
+  {
+    "class": "fa-forward"
+  },
+  {
+    "class": "fa-foursquare"
+  },
+  {
+    "class": "fa-free-code-camp"
+  },
+  {
+    "class": "fa-freebsd"
+  },
+  {
+    "class": "fa-frog"
+  },
+  {
+    "class": "fa-frown"
+  },
+  {
+    "class": "fa-frown-open"
+  },
+  {
+    "class": "fa-fulcrum"
+  },
+  {
+    "class": "fa-funnel-dollar"
+  },
+  {
+    "class": "fa-futbol"
+  },
+  {
+    "class": "fa-galactic-republic"
+  },
+  {
+    "class": "fa-galactic-senate"
+  },
+  {
+    "class": "fa-gamepad"
+  },
+  {
+    "class": "fa-gas-pump"
+  },
+  {
+    "class": "fa-gavel"
+  },
+  {
+    "class": "fa-gem"
+  },
+  {
+    "class": "fa-genderless"
+  },
+  {
+    "class": "fa-get-pocket"
+  },
+  {
+    "class": "fa-gg"
+  },
+  {
+    "class": "fa-gg-circle"
+  },
+  {
+    "class": "fa-ghost"
+  },
+  {
+    "class": "fa-gift"
+  },
+  {
+    "class": "fa-gifts"
+  },
+  {
+    "class": "fa-git"
+  },
+  {
+    "class": "fa-git-alt"
+  },
+  {
+    "class": "fa-git-square"
+  },
+  {
+    "class": "fa-github"
+  },
+  {
+    "class": "fa-github-alt"
+  },
+  {
+    "class": "fa-github-square"
+  },
+  {
+    "class": "fa-gitkraken"
+  },
+  {
+    "class": "fa-gitlab"
+  },
+  {
+    "class": "fa-gitter"
+  },
+  {
+    "class": "fa-glass-cheers"
+  },
+  {
+    "class": "fa-glass-martini"
+  },
+  {
+    "class": "fa-glass-martini-alt"
+  },
+  {
+    "class": "fa-glass-whiskey"
+  },
+  {
+    "class": "fa-glasses"
+  },
+  {
+    "class": "fa-glide"
+  },
+  {
+    "class": "fa-glide-g"
+  },
+  {
+    "class": "fa-globe"
+  },
+  {
+    "class": "fa-globe-africa"
+  },
+  {
+    "class": "fa-globe-americas"
+  },
+  {
+    "class": "fa-globe-asia"
+  },
+  {
+    "class": "fa-globe-europe"
+  },
+  {
+    "class": "fa-gofore"
+  },
+  {
+    "class": "fa-golf-ball"
+  },
+  {
+    "class": "fa-goodreads"
+  },
+  {
+    "class": "fa-goodreads-g"
+  },
+  {
+    "class": "fa-google"
+  },
+  {
+    "class": "fa-google-drive"
+  },
+  {
+    "class": "fa-google-pay"
+  },
+  {
+    "class": "fa-google-play"
+  },
+  {
+    "class": "fa-google-plus"
+  },
+  {
+    "class": "fa-google-plus-g"
+  },
+  {
+    "class": "fa-google-plus-square"
+  },
+  {
+    "class": "fa-google-wallet"
+  },
+  {
+    "class": "fa-gopuram"
+  },
+  {
+    "class": "fa-graduation-cap"
+  },
+  {
+    "class": "fa-gratipay"
+  },
+  {
+    "class": "fa-grav"
+  },
+  {
+    "class": "fa-greater-than"
+  },
+  {
+    "class": "fa-greater-than-equal"
+  },
+  {
+    "class": "fa-grimace"
+  },
+  {
+    "class": "fa-grin"
+  },
+  {
+    "class": "fa-grin-alt"
+  },
+  {
+    "class": "fa-grin-beam"
+  },
+  {
+    "class": "fa-grin-beam-sweat"
+  },
+  {
+    "class": "fa-grin-hearts"
+  },
+  {
+    "class": "fa-grin-squint"
+  },
+  {
+    "class": "fa-grin-squint-tears"
+  },
+  {
+    "class": "fa-grin-stars"
+  },
+  {
+    "class": "fa-grin-tears"
+  },
+  {
+    "class": "fa-grin-tongue"
+  },
+  {
+    "class": "fa-grin-tongue-squint"
+  },
+  {
+    "class": "fa-grin-tongue-wink"
+  },
+  {
+    "class": "fa-grin-wink"
+  },
+  {
+    "class": "fa-grip-horizontal"
+  },
+  {
+    "class": "fa-grip-lines"
+  },
+  {
+    "class": "fa-grip-lines-vertical"
+  },
+  {
+    "class": "fa-grip-vertical"
+  },
+  {
+    "class": "fa-gripfire"
+  },
+  {
+    "class": "fa-grunt"
+  },
+  {
+    "class": "fa-guilded"
+  },
+  {
+    "class": "fa-guitar"
+  },
+  {
+    "class": "fa-gulp"
+  },
+  {
+    "class": "fa-h-square"
+  },
+  {
+    "class": "fa-hacker-news"
+  },
+  {
+    "class": "fa-hacker-news-square"
+  },
+  {
+    "class": "fa-hackerrank"
+  },
+  {
+    "class": "fa-hamburger"
+  },
+  {
+    "class": "fa-hammer"
+  },
+  {
+    "class": "fa-hamsa"
+  },
+  {
+    "class": "fa-hand-holding"
+  },
+  {
+    "class": "fa-hand-holding-heart"
+  },
+  {
+    "class": "fa-hand-holding-medical"
+  },
+  {
+    "class": "fa-hand-holding-usd"
+  },
+  {
+    "class": "fa-hand-holding-water"
+  },
+  {
+    "class": "fa-hand-lizard"
+  },
+  {
+    "class": "fa-hand-middle-finger"
+  },
+  {
+    "class": "fa-hand-paper"
+  },
+  {
+    "class": "fa-hand-peace"
+  },
+  {
+    "class": "fa-hand-point-down"
+  },
+  {
+    "class": "fa-hand-point-left"
+  },
+  {
+    "class": "fa-hand-point-right"
+  },
+  {
+    "class": "fa-hand-point-up"
+  },
+  {
+    "class": "fa-hand-pointer"
+  },
+  {
+    "class": "fa-hand-rock"
+  },
+  {
+    "class": "fa-hand-scissors"
+  },
+  {
+    "class": "fa-hand-sparkles"
+  },
+  {
+    "class": "fa-hand-spock"
+  },
+  {
+    "class": "fa-hands"
+  },
+  {
+    "class": "fa-hands-helping"
+  },
+  {
+    "class": "fa-hands-wash"
+  },
+  {
+    "class": "fa-handshake"
+  },
+  {
+    "class": "fa-handshake-alt-slash"
+  },
+  {
+    "class": "fa-handshake-slash"
+  },
+  {
+    "class": "fa-hanukiah"
+  },
+  {
+    "class": "fa-hard-hat"
+  },
+  {
+    "class": "fa-hashtag"
+  },
+  {
+    "class": "fa-hat-cowboy"
+  },
+  {
+    "class": "fa-hat-cowboy-side"
+  },
+  {
+    "class": "fa-hat-wizard"
+  },
+  {
+    "class": "fa-hdd"
+  },
+  {
+    "class": "fa-head-side-cough"
+  },
+  {
+    "class": "fa-head-side-cough-slash"
+  },
+  {
+    "class": "fa-head-side-mask"
+  },
+  {
+    "class": "fa-head-side-virus"
+  },
+  {
+    "class": "fa-heading"
+  },
+  {
+    "class": "fa-headphones"
+  },
+  {
+    "class": "fa-headphones-alt"
+  },
+  {
+    "class": "fa-headset"
+  },
+  {
+    "class": "fa-heart"
+  },
+  {
+    "class": "fa-heart-broken"
+  },
+  {
+    "class": "fa-heartbeat"
+  },
+  {
+    "class": "fa-helicopter"
+  },
+  {
+    "class": "fa-highlighter"
+  },
+  {
+    "class": "fa-hiking"
+  },
+  {
+    "class": "fa-hippo"
+  },
+  {
+    "class": "fa-hips"
+  },
+  {
+    "class": "fa-hire-a-helper"
+  },
+  {
+    "class": "fa-history"
+  },
+  {
+    "class": "fa-hive"
+  },
+  {
+    "class": "fa-hockey-puck"
+  },
+  {
+    "class": "fa-holly-berry"
+  },
+  {
+    "class": "fa-home"
+  },
+  {
+    "class": "fa-hooli"
+  },
+  {
+    "class": "fa-hornbill"
+  },
+  {
+    "class": "fa-horse"
+  },
+  {
+    "class": "fa-horse-head"
+  },
+  {
+    "class": "fa-hospital"
+  },
+  {
+    "class": "fa-hospital-alt"
+  },
+  {
+    "class": "fa-hospital-symbol"
+  },
+  {
+    "class": "fa-hospital-user"
+  },
+  {
+    "class": "fa-hot-tub"
+  },
+  {
+    "class": "fa-hotdog"
+  },
+  {
+    "class": "fa-hotel"
+  },
+  {
+    "class": "fa-hotjar"
+  },
+  {
+    "class": "fa-hourglass"
+  },
+  {
+    "class": "fa-hourglass-end"
+  },
+  {
+    "class": "fa-hourglass-half"
+  },
+  {
+    "class": "fa-hourglass-start"
+  },
+  {
+    "class": "fa-house-damage"
+  },
+  {
+    "class": "fa-house-user"
+  },
+  {
+    "class": "fa-houzz"
+  },
+  {
+    "class": "fa-hryvnia"
+  },
+  {
+    "class": "fa-html5"
+  },
+  {
+    "class": "fa-hubspot"
+  },
+  {
+    "class": "fa-i-cursor"
+  },
+  {
+    "class": "fa-ice-cream"
+  },
+  {
+    "class": "fa-icicles"
+  },
+  {
+    "class": "fa-icons"
+  },
+  {
+    "class": "fa-id-badge"
+  },
+  {
+    "class": "fa-id-card"
+  },
+  {
+    "class": "fa-id-card-alt"
+  },
+  {
+    "class": "fa-ideal"
+  },
+  {
+    "class": "fa-igloo"
+  },
+  {
+    "class": "fa-image"
+  },
+  {
+    "class": "fa-images"
+  },
+  {
+    "class": "fa-imdb"
+  },
+  {
+    "class": "fa-inbox"
+  },
+  {
+    "class": "fa-indent"
+  },
+  {
+    "class": "fa-industry"
+  },
+  {
+    "class": "fa-infinity"
+  },
+  {
+    "class": "fa-info"
+  },
+  {
+    "class": "fa-info-circle"
+  },
+  {
+    "class": "fa-innosoft"
+  },
+  {
+    "class": "fa-instagram"
+  },
+  {
+    "class": "fa-instagram-square"
+  },
+  {
+    "class": "fa-instalod"
+  },
+  {
+    "class": "fa-intercom"
+  },
+  {
+    "class": "fa-internet-explorer"
+  },
+  {
+    "class": "fa-invision"
+  },
+  {
+    "class": "fa-ioxhost"
+  },
+  {
+    "class": "fa-italic"
+  },
+  {
+    "class": "fa-itch-io"
+  },
+  {
+    "class": "fa-itunes"
+  },
+  {
+    "class": "fa-itunes-note"
+  },
+  {
+    "class": "fa-java"
+  },
+  {
+    "class": "fa-jedi"
+  },
+  {
+    "class": "fa-jedi-order"
+  },
+  {
+    "class": "fa-jenkins"
+  },
+  {
+    "class": "fa-jira"
+  },
+  {
+    "class": "fa-joget"
+  },
+  {
+    "class": "fa-joint"
+  },
+  {
+    "class": "fa-joomla"
+  },
+  {
+    "class": "fa-journal-whills"
+  },
+  {
+    "class": "fa-js"
+  },
+  {
+    "class": "fa-js-square"
+  },
+  {
+    "class": "fa-jsfiddle"
+  },
+  {
+    "class": "fa-kaaba"
+  },
+  {
+    "class": "fa-kaggle"
+  },
+  {
+    "class": "fa-key"
+  },
+  {
+    "class": "fa-keybase"
+  },
+  {
+    "class": "fa-keyboard"
+  },
+  {
+    "class": "fa-keycdn"
+  },
+  {
+    "class": "fa-khanda"
+  },
+  {
+    "class": "fa-kickstarter"
+  },
+  {
+    "class": "fa-kickstarter-k"
+  },
+  {
+    "class": "fa-kiss"
+  },
+  {
+    "class": "fa-kiss-beam"
+  },
+  {
+    "class": "fa-kiss-wink-heart"
+  },
+  {
+    "class": "fa-kiwi-bird"
+  },
+  {
+    "class": "fa-korvue"
+  },
+  {
+    "class": "fa-landmark"
+  },
+  {
+    "class": "fa-language"
+  },
+  {
+    "class": "fa-laptop"
+  },
+  {
+    "class": "fa-laptop-code"
+  },
+  {
+    "class": "fa-laptop-house"
+  },
+  {
+    "class": "fa-laptop-medical"
+  },
+  {
+    "class": "fa-laravel"
+  },
+  {
+    "class": "fa-lastfm"
+  },
+  {
+    "class": "fa-lastfm-square"
+  },
+  {
+    "class": "fa-laugh"
+  },
+  {
+    "class": "fa-laugh-beam"
+  },
+  {
+    "class": "fa-laugh-squint"
+  },
+  {
+    "class": "fa-laugh-wink"
+  },
+  {
+    "class": "fa-layer-group"
+  },
+  {
+    "class": "fa-leaf"
+  },
+  {
+    "class": "fa-leanpub"
+  },
+  {
+    "class": "fa-lemon"
+  },
+  {
+    "class": "fa-less"
+  },
+  {
+    "class": "fa-less-than"
+  },
+  {
+    "class": "fa-less-than-equal"
+  },
+  {
+    "class": "fa-level-down-alt"
+  },
+  {
+    "class": "fa-level-up-alt"
+  },
+  {
+    "class": "fa-life-ring"
+  },
+  {
+    "class": "fa-lightbulb"
+  },
+  {
+    "class": "fa-line"
+  },
+  {
+    "class": "fa-link"
+  },
+  {
+    "class": "fa-linkedin"
+  },
+  {
+    "class": "fa-linkedin-in"
+  },
+  {
+    "class": "fa-linode"
+  },
+  {
+    "class": "fa-linux"
+  },
+  {
+    "class": "fa-lira-sign"
+  },
+  {
+    "class": "fa-list"
+  },
+  {
+    "class": "fa-list-alt"
+  },
+  {
+    "class": "fa-list-ol"
+  },
+  {
+    "class": "fa-list-ul"
+  },
+  {
+    "class": "fa-location-arrow"
+  },
+  {
+    "class": "fa-lock"
+  },
+  {
+    "class": "fa-lock-open"
+  },
+  {
+    "class": "fa-long-arrow-alt-down"
+  },
+  {
+    "class": "fa-long-arrow-alt-left"
+  },
+  {
+    "class": "fa-long-arrow-alt-right"
+  },
+  {
+    "class": "fa-long-arrow-alt-up"
+  },
+  {
+    "class": "fa-low-vision"
+  },
+  {
+    "class": "fa-luggage-cart"
+  },
+  {
+    "class": "fa-lungs"
+  },
+  {
+    "class": "fa-lungs-virus"
+  },
+  {
+    "class": "fa-lyft"
+  },
+  {
+    "class": "fa-magento"
+  },
+  {
+    "class": "fa-magic"
+  },
+  {
+    "class": "fa-magnet"
+  },
+  {
+    "class": "fa-mail-bulk"
+  },
+  {
+    "class": "fa-mailchimp"
+  },
+  {
+    "class": "fa-male"
+  },
+  {
+    "class": "fa-mandalorian"
+  },
+  {
+    "class": "fa-map"
+  },
+  {
+    "class": "fa-map-marked"
+  },
+  {
+    "class": "fa-map-marked-alt"
+  },
+  {
+    "class": "fa-map-marker"
+  },
+  {
+    "class": "fa-map-marker-alt"
+  },
+  {
+    "class": "fa-map-pin"
+  },
+  {
+    "class": "fa-map-signs"
+  },
+  {
+    "class": "fa-markdown"
+  },
+  {
+    "class": "fa-marker"
+  },
+  {
+    "class": "fa-mars"
+  },
+  {
+    "class": "fa-mars-double"
+  },
+  {
+    "class": "fa-mars-stroke"
+  },
+  {
+    "class": "fa-mars-stroke-h"
+  },
+  {
+    "class": "fa-mars-stroke-v"
+  },
+  {
+    "class": "fa-mask"
+  },
+  {
+    "class": "fa-mastodon"
+  },
+  {
+    "class": "fa-maxcdn"
+  },
+  {
+    "class": "fa-mdb"
+  },
+  {
+    "class": "fa-medal"
+  },
+  {
+    "class": "fa-medapps"
+  },
+  {
+    "class": "fa-medium"
+  },
+  {
+    "class": "fa-medium-m"
+  },
+  {
+    "class": "fa-medkit"
+  },
+  {
+    "class": "fa-medrt"
+  },
+  {
+    "class": "fa-meetup"
+  },
+  {
+    "class": "fa-megaport"
+  },
+  {
+    "class": "fa-meh"
+  },
+  {
+    "class": "fa-meh-blank"
+  },
+  {
+    "class": "fa-meh-rolling-eyes"
+  },
+  {
+    "class": "fa-memory"
+  },
+  {
+    "class": "fa-mendeley"
+  },
+  {
+    "class": "fa-menorah"
+  },
+  {
+    "class": "fa-mercury"
+  },
+  {
+    "class": "fa-meteor"
+  },
+  {
+    "class": "fa-microblog"
+  },
+  {
+    "class": "fa-microchip"
+  },
+  {
+    "class": "fa-microphone"
+  },
+  {
+    "class": "fa-microphone-alt"
+  },
+  {
+    "class": "fa-microphone-alt-slash"
+  },
+  {
+    "class": "fa-microphone-slash"
+  },
+  {
+    "class": "fa-microscope"
+  },
+  {
+    "class": "fa-microsoft"
+  },
+  {
+    "class": "fa-minus"
+  },
+  {
+    "class": "fa-minus-circle"
+  },
+  {
+    "class": "fa-minus-square"
+  },
+  {
+    "class": "fa-mitten"
+  },
+  {
+    "class": "fa-mix"
+  },
+  {
+    "class": "fa-mixcloud"
+  },
+  {
+    "class": "fa-mixer"
+  },
+  {
+    "class": "fa-mizuni"
+  },
+  {
+    "class": "fa-mobile"
+  },
+  {
+    "class": "fa-mobile-alt"
+  },
+  {
+    "class": "fa-modx"
+  },
+  {
+    "class": "fa-monero"
+  },
+  {
+    "class": "fa-money-bill"
+  },
+  {
+    "class": "fa-money-bill-alt"
+  },
+  {
+    "class": "fa-money-bill-wave"
+  },
+  {
+    "class": "fa-money-bill-wave-alt"
+  },
+  {
+    "class": "fa-money-check"
+  },
+  {
+    "class": "fa-money-check-alt"
+  },
+  {
+    "class": "fa-monument"
+  },
+  {
+    "class": "fa-moon"
+  },
+  {
+    "class": "fa-mortar-pestle"
+  },
+  {
+    "class": "fa-mosque"
+  },
+  {
+    "class": "fa-motorcycle"
+  },
+  {
+    "class": "fa-mountain"
+  },
+  {
+    "class": "fa-mouse"
+  },
+  {
+    "class": "fa-mouse-pointer"
+  },
+  {
+    "class": "fa-mug-hot"
+  },
+  {
+    "class": "fa-music"
+  },
+  {
+    "class": "fa-napster"
+  },
+  {
+    "class": "fa-neos"
+  },
+  {
+    "class": "fa-network-wired"
+  },
+  {
+    "class": "fa-neuter"
+  },
+  {
+    "class": "fa-newspaper"
+  },
+  {
+    "class": "fa-nimblr"
+  },
+  {
+    "class": "fa-node"
+  },
+  {
+    "class": "fa-node-js"
+  },
+  {
+    "class": "fa-not-equal"
+  },
+  {
+    "class": "fa-notes-medical"
+  },
+  {
+    "class": "fa-npm"
+  },
+  {
+    "class": "fa-ns8"
+  },
+  {
+    "class": "fa-nutritionix"
+  },
+  {
+    "class": "fa-object-group"
+  },
+  {
+    "class": "fa-object-ungroup"
+  },
+  {
+    "class": "fa-octopus-deploy"
+  },
+  {
+    "class": "fa-odnoklassniki"
+  },
+  {
+    "class": "fa-odnoklassniki-square"
+  },
+  {
+    "class": "fa-oil-can"
+  },
+  {
+    "class": "fa-old-republic"
+  },
+  {
+    "class": "fa-om"
+  },
+  {
+    "class": "fa-opencart"
+  },
+  {
+    "class": "fa-openid"
+  },
+  {
+    "class": "fa-opera"
+  },
+  {
+    "class": "fa-optin-monster"
+  },
+  {
+    "class": "fa-orcid"
+  },
+  {
+    "class": "fa-osi"
+  },
+  {
+    "class": "fa-otter"
+  },
+  {
+    "class": "fa-outdent"
+  },
+  {
+    "class": "fa-page4"
+  },
+  {
+    "class": "fa-pagelines"
+  },
+  {
+    "class": "fa-pager"
+  },
+  {
+    "class": "fa-paint-brush"
+  },
+  {
+    "class": "fa-paint-roller"
+  },
+  {
+    "class": "fa-palette"
+  },
+  {
+    "class": "fa-palfed"
+  },
+  {
+    "class": "fa-pallet"
+  },
+  {
+    "class": "fa-paper-plane"
+  },
+  {
+    "class": "fa-paperclip"
+  },
+  {
+    "class": "fa-parachute-box"
+  },
+  {
+    "class": "fa-paragraph"
+  },
+  {
+    "class": "fa-parking"
+  },
+  {
+    "class": "fa-passport"
+  },
+  {
+    "class": "fa-pastafarianism"
+  },
+  {
+    "class": "fa-paste"
+  },
+  {
+    "class": "fa-patreon"
+  },
+  {
+    "class": "fa-pause"
+  },
+  {
+    "class": "fa-pause-circle"
+  },
+  {
+    "class": "fa-paw"
+  },
+  {
+    "class": "fa-paypal"
+  },
+  {
+    "class": "fa-peace"
+  },
+  {
+    "class": "fa-pen"
+  },
+  {
+    "class": "fa-pen-alt"
+  },
+  {
+    "class": "fa-pen-fancy"
+  },
+  {
+    "class": "fa-pen-nib"
+  },
+  {
+    "class": "fa-pen-square"
+  },
+  {
+    "class": "fa-pencil-alt"
+  },
+  {
+    "class": "fa-pencil-ruler"
+  },
+  {
+    "class": "fa-penny-arcade"
+  },
+  {
+    "class": "fa-people-arrows"
+  },
+  {
+    "class": "fa-people-carry"
+  },
+  {
+    "class": "fa-pepper-hot"
+  },
+  {
+    "class": "fa-perbyte"
+  },
+  {
+    "class": "fa-percent"
+  },
+  {
+    "class": "fa-percentage"
+  },
+  {
+    "class": "fa-periscope"
+  },
+  {
+    "class": "fa-person-booth"
+  },
+  {
+    "class": "fa-phabricator"
+  },
+  {
+    "class": "fa-phoenix-framework"
+  },
+  {
+    "class": "fa-phoenix-squadron"
+  },
+  {
+    "class": "fa-phone"
+  },
+  {
+    "class": "fa-phone-alt"
+  },
+  {
+    "class": "fa-phone-slash"
+  },
+  {
+    "class": "fa-phone-square"
+  },
+  {
+    "class": "fa-phone-square-alt"
+  },
+  {
+    "class": "fa-phone-volume"
+  },
+  {
+    "class": "fa-photo-video"
+  },
+  {
+    "class": "fa-php"
+  },
+  {
+    "class": "fa-pied-piper"
+  },
+  {
+    "class": "fa-pied-piper-alt"
+  },
+  {
+    "class": "fa-pied-piper-hat"
+  },
+  {
+    "class": "fa-pied-piper-pp"
+  },
+  {
+    "class": "fa-pied-piper-square"
+  },
+  {
+    "class": "fa-piggy-bank"
+  },
+  {
+    "class": "fa-pills"
+  },
+  {
+    "class": "fa-pinterest"
+  },
+  {
+    "class": "fa-pinterest-p"
+  },
+  {
+    "class": "fa-pinterest-square"
+  },
+  {
+    "class": "fa-pizza-slice"
+  },
+  {
+    "class": "fa-place-of-worship"
+  },
+  {
+    "class": "fa-plane"
+  },
+  {
+    "class": "fa-plane-arrival"
+  },
+  {
+    "class": "fa-plane-departure"
+  },
+  {
+    "class": "fa-plane-slash"
+  },
+  {
+    "class": "fa-play"
+  },
+  {
+    "class": "fa-play-circle"
+  },
+  {
+    "class": "fa-playstation"
+  },
+  {
+    "class": "fa-plug"
+  },
+  {
+    "class": "fa-plus"
+  },
+  {
+    "class": "fa-plus-circle"
+  },
+  {
+    "class": "fa-plus-square"
+  },
+  {
+    "class": "fa-podcast"
+  },
+  {
+    "class": "fa-poll"
+  },
+  {
+    "class": "fa-poll-h"
+  },
+  {
+    "class": "fa-poo"
+  },
+  {
+    "class": "fa-poo-storm"
+  },
+  {
+    "class": "fa-poop"
+  },
+  {
+    "class": "fa-portrait"
+  },
+  {
+    "class": "fa-pound-sign"
+  },
+  {
+    "class": "fa-power-off"
+  },
+  {
+    "class": "fa-pray"
+  },
+  {
+    "class": "fa-praying-hands"
+  },
+  {
+    "class": "fa-prescription"
+  },
+  {
+    "class": "fa-prescription-bottle"
+  },
+  {
+    "class": "fa-prescription-bottle-alt"
+  },
+  {
+    "class": "fa-print"
+  },
+  {
+    "class": "fa-procedures"
+  },
+  {
+    "class": "fa-product-hunt"
+  },
+  {
+    "class": "fa-project-diagram"
+  },
+  {
+    "class": "fa-pump-medical"
+  },
+  {
+    "class": "fa-pump-soap"
+  },
+  {
+    "class": "fa-pushed"
+  },
+  {
+    "class": "fa-puzzle-piece"
+  },
+  {
+    "class": "fa-python"
+  },
+  {
+    "class": "fa-qq"
+  },
+  {
+    "class": "fa-qrcode"
+  },
+  {
+    "class": "fa-question"
+  },
+  {
+    "class": "fa-question-circle"
+  },
+  {
+    "class": "fa-quidditch"
+  },
+  {
+    "class": "fa-quinscape"
+  },
+  {
+    "class": "fa-quora"
+  },
+  {
+    "class": "fa-quote-left"
+  },
+  {
+    "class": "fa-quote-right"
+  },
+  {
+    "class": "fa-quran"
+  },
+  {
+    "class": "fa-r-project"
+  },
+  {
+    "class": "fa-radiation"
+  },
+  {
+    "class": "fa-radiation-alt"
+  },
+  {
+    "class": "fa-rainbow"
+  },
+  {
+    "class": "fa-random"
+  },
+  {
+    "class": "fa-raspberry-pi"
+  },
+  {
+    "class": "fa-ravelry"
+  },
+  {
+    "class": "fa-react"
+  },
+  {
+    "class": "fa-reacteurope"
+  },
+  {
+    "class": "fa-readme"
+  },
+  {
+    "class": "fa-rebel"
+  },
+  {
+    "class": "fa-receipt"
+  },
+  {
+    "class": "fa-record-vinyl"
+  },
+  {
+    "class": "fa-recycle"
+  },
+  {
+    "class": "fa-red-river"
+  },
+  {
+    "class": "fa-reddit"
+  },
+  {
+    "class": "fa-reddit-alien"
+  },
+  {
+    "class": "fa-reddit-square"
+  },
+  {
+    "class": "fa-redhat"
+  },
+  {
+    "class": "fa-redo"
+  },
+  {
+    "class": "fa-redo-alt"
+  },
+  {
+    "class": "fa-registered"
+  },
+  {
+    "class": "fa-remove-format"
+  },
+  {
+    "class": "fa-renren"
+  },
+  {
+    "class": "fa-reply"
+  },
+  {
+    "class": "fa-reply-all"
+  },
+  {
+    "class": "fa-replyd"
+  },
+  {
+    "class": "fa-republican"
+  },
+  {
+    "class": "fa-researchgate"
+  },
+  {
+    "class": "fa-resolving"
+  },
+  {
+    "class": "fa-restroom"
+  },
+  {
+    "class": "fa-retweet"
+  },
+  {
+    "class": "fa-rev"
+  },
+  {
+    "class": "fa-ribbon"
+  },
+  {
+    "class": "fa-ring"
+  },
+  {
+    "class": "fa-road"
+  },
+  {
+    "class": "fa-robot"
+  },
+  {
+    "class": "fa-rocket"
+  },
+  {
+    "class": "fa-rocketchat"
+  },
+  {
+    "class": "fa-rockrms"
+  },
+  {
+    "class": "fa-route"
+  },
+  {
+    "class": "fa-rss"
+  },
+  {
+    "class": "fa-rss-square"
+  },
+  {
+    "class": "fa-ruble-sign"
+  },
+  {
+    "class": "fa-ruler"
+  },
+  {
+    "class": "fa-ruler-combined"
+  },
+  {
+    "class": "fa-ruler-horizontal"
+  },
+  {
+    "class": "fa-ruler-vertical"
+  },
+  {
+    "class": "fa-running"
+  },
+  {
+    "class": "fa-rupee-sign"
+  },
+  {
+    "class": "fa-rust"
+  },
+  {
+    "class": "fa-sad-cry"
+  },
+  {
+    "class": "fa-sad-tear"
+  },
+  {
+    "class": "fa-safari"
+  },
+  {
+    "class": "fa-salesforce"
+  },
+  {
+    "class": "fa-sass"
+  },
+  {
+    "class": "fa-satellite"
+  },
+  {
+    "class": "fa-satellite-dish"
+  },
+  {
+    "class": "fa-save"
+  },
+  {
+    "class": "fa-schlix"
+  },
+  {
+    "class": "fa-school"
+  },
+  {
+    "class": "fa-screwdriver"
+  },
+  {
+    "class": "fa-scribd"
+  },
+  {
+    "class": "fa-scroll"
+  },
+  {
+    "class": "fa-sd-card"
+  },
+  {
+    "class": "fa-search"
+  },
+  {
+    "class": "fa-search-dollar"
+  },
+  {
+    "class": "fa-search-location"
+  },
+  {
+    "class": "fa-search-minus"
+  },
+  {
+    "class": "fa-search-plus"
+  },
+  {
+    "class": "fa-searchengin"
+  },
+  {
+    "class": "fa-seedling"
+  },
+  {
+    "class": "fa-sellcast"
+  },
+  {
+    "class": "fa-sellsy"
+  },
+  {
+    "class": "fa-server"
+  },
+  {
+    "class": "fa-servicestack"
+  },
+  {
+    "class": "fa-shapes"
+  },
+  {
+    "class": "fa-share"
+  },
+  {
+    "class": "fa-share-alt"
+  },
+  {
+    "class": "fa-share-alt-square"
+  },
+  {
+    "class": "fa-share-square"
+  },
+  {
+    "class": "fa-shekel-sign"
+  },
+  {
+    "class": "fa-shield-alt"
+  },
+  {
+    "class": "fa-shield-virus"
+  },
+  {
+    "class": "fa-ship"
+  },
+  {
+    "class": "fa-shipping-fast"
+  },
+  {
+    "class": "fa-shirtsinbulk"
+  },
+  {
+    "class": "fa-shoe-prints"
+  },
+  {
+    "class": "fa-shopify"
+  },
+  {
+    "class": "fa-shopping-bag"
+  },
+  {
+    "class": "fa-shopping-basket"
+  },
+  {
+    "class": "fa-shopping-cart"
+  },
+  {
+    "class": "fa-shopware"
+  },
+  {
+    "class": "fa-shower"
+  },
+  {
+    "class": "fa-shuttle-van"
+  },
+  {
+    "class": "fa-sign"
+  },
+  {
+    "class": "fa-sign-in-alt"
+  },
+  {
+    "class": "fa-sign-language"
+  },
+  {
+    "class": "fa-sign-out-alt"
+  },
+  {
+    "class": "fa-signal"
+  },
+  {
+    "class": "fa-signature"
+  },
+  {
+    "class": "fa-sim-card"
+  },
+  {
+    "class": "fa-simplybuilt"
+  },
+  {
+    "class": "fa-sink"
+  },
+  {
+    "class": "fa-sistrix"
+  },
+  {
+    "class": "fa-sitemap"
+  },
+  {
+    "class": "fa-sith"
+  },
+  {
+    "class": "fa-skating"
+  },
+  {
+    "class": "fa-sketch"
+  },
+  {
+    "class": "fa-skiing"
+  },
+  {
+    "class": "fa-skiing-nordic"
+  },
+  {
+    "class": "fa-skull"
+  },
+  {
+    "class": "fa-skull-crossbones"
+  },
+  {
+    "class": "fa-skyatlas"
+  },
+  {
+    "class": "fa-skype"
+  },
+  {
+    "class": "fa-slack"
+  },
+  {
+    "class": "fa-slack-hash"
+  },
+  {
+    "class": "fa-slash"
+  },
+  {
+    "class": "fa-sleigh"
+  },
+  {
+    "class": "fa-sliders-h"
+  },
+  {
+    "class": "fa-slideshare"
+  },
+  {
+    "class": "fa-smile"
+  },
+  {
+    "class": "fa-smile-beam"
+  },
+  {
+    "class": "fa-smile-wink"
+  },
+  {
+    "class": "fa-smog"
+  },
+  {
+    "class": "fa-smoking"
+  },
+  {
+    "class": "fa-smoking-ban"
+  },
+  {
+    "class": "fa-sms"
+  },
+  {
+    "class": "fa-snapchat"
+  },
+  {
+    "class": "fa-snapchat-ghost"
+  },
+  {
+    "class": "fa-snapchat-square"
+  },
+  {
+    "class": "fa-snowboarding"
+  },
+  {
+    "class": "fa-snowflake"
+  },
+  {
+    "class": "fa-snowman"
+  },
+  {
+    "class": "fa-snowplow"
+  },
+  {
+    "class": "fa-soap"
+  },
+  {
+    "class": "fa-socks"
+  },
+  {
+    "class": "fa-solar-panel"
+  },
+  {
+    "class": "fa-sort"
+  },
+  {
+    "class": "fa-sort-alpha-down"
+  },
+  {
+    "class": "fa-sort-alpha-down-alt"
+  },
+  {
+    "class": "fa-sort-alpha-up"
+  },
+  {
+    "class": "fa-sort-alpha-up-alt"
+  },
+  {
+    "class": "fa-sort-amount-down"
+  },
+  {
+    "class": "fa-sort-amount-down-alt"
+  },
+  {
+    "class": "fa-sort-amount-up"
+  },
+  {
+    "class": "fa-sort-amount-up-alt"
+  },
+  {
+    "class": "fa-sort-down"
+  },
+  {
+    "class": "fa-sort-numeric-down"
+  },
+  {
+    "class": "fa-sort-numeric-down-alt"
+  },
+  {
+    "class": "fa-sort-numeric-up"
+  },
+  {
+    "class": "fa-sort-numeric-up-alt"
+  },
+  {
+    "class": "fa-sort-up"
+  },
+  {
+    "class": "fa-soundcloud"
+  },
+  {
+    "class": "fa-sourcetree"
+  },
+  {
+    "class": "fa-spa"
+  },
+  {
+    "class": "fa-space-shuttle"
+  },
+  {
+    "class": "fa-speakap"
+  },
+  {
+    "class": "fa-speaker-deck"
+  },
+  {
+    "class": "fa-spell-check"
+  },
+  {
+    "class": "fa-spider"
+  },
+  {
+    "class": "fa-spinner"
+  },
+  {
+    "class": "fa-splotch"
+  },
+  {
+    "class": "fa-spotify"
+  },
+  {
+    "class": "fa-spray-can"
+  },
+  {
+    "class": "fa-square"
+  },
+  {
+    "class": "fa-square-full"
+  },
+  {
+    "class": "fa-square-root-alt"
+  },
+  {
+    "class": "fa-squarespace"
+  },
+  {
+    "class": "fa-stack-exchange"
+  },
+  {
+    "class": "fa-stack-overflow"
+  },
+  {
+    "class": "fa-stackpath"
+  },
+  {
+    "class": "fa-stamp"
+  },
+  {
+    "class": "fa-star"
+  },
+  {
+    "class": "fa-star-and-crescent"
+  },
+  {
+    "class": "fa-star-half"
+  },
+  {
+    "class": "fa-star-half-alt"
+  },
+  {
+    "class": "fa-star-of-david"
+  },
+  {
+    "class": "fa-star-of-life"
+  },
+  {
+    "class": "fa-staylinked"
+  },
+  {
+    "class": "fa-steam"
+  },
+  {
+    "class": "fa-steam-square"
+  },
+  {
+    "class": "fa-steam-symbol"
+  },
+  {
+    "class": "fa-step-backward"
+  },
+  {
+    "class": "fa-step-forward"
+  },
+  {
+    "class": "fa-stethoscope"
+  },
+  {
+    "class": "fa-sticker-mule"
+  },
+  {
+    "class": "fa-sticky-note"
+  },
+  {
+    "class": "fa-stop"
+  },
+  {
+    "class": "fa-stop-circle"
+  },
+  {
+    "class": "fa-stopwatch"
+  },
+  {
+    "class": "fa-stopwatch-20"
+  },
+  {
+    "class": "fa-store"
+  },
+  {
+    "class": "fa-store-alt"
+  },
+  {
+    "class": "fa-store-alt-slash"
+  },
+  {
+    "class": "fa-store-slash"
+  },
+  {
+    "class": "fa-strava"
+  },
+  {
+    "class": "fa-stream"
+  },
+  {
+    "class": "fa-street-view"
+  },
+  {
+    "class": "fa-strikethrough"
+  },
+  {
+    "class": "fa-stripe"
+  },
+  {
+    "class": "fa-stripe-s"
+  },
+  {
+    "class": "fa-stroopwafel"
+  },
+  {
+    "class": "fa-studiovinari"
+  },
+  {
+    "class": "fa-stumbleupon"
+  },
+  {
+    "class": "fa-stumbleupon-circle"
+  },
+  {
+    "class": "fa-subscript"
+  },
+  {
+    "class": "fa-subway"
+  },
+  {
+    "class": "fa-suitcase"
+  },
+  {
+    "class": "fa-suitcase-rolling"
+  },
+  {
+    "class": "fa-sun"
+  },
+  {
+    "class": "fa-superpowers"
+  },
+  {
+    "class": "fa-superscript"
+  },
+  {
+    "class": "fa-supple"
+  },
+  {
+    "class": "fa-surprise"
+  },
+  {
+    "class": "fa-suse"
+  },
+  {
+    "class": "fa-swatchbook"
+  },
+  {
+    "class": "fa-swift"
+  },
+  {
+    "class": "fa-swimmer"
+  },
+  {
+    "class": "fa-swimming-pool"
+  },
+  {
+    "class": "fa-symfony"
+  },
+  {
+    "class": "fa-synagogue"
+  },
+  {
+    "class": "fa-sync"
+  },
+  {
+    "class": "fa-sync-alt"
+  },
+  {
+    "class": "fa-syringe"
+  },
+  {
+    "class": "fa-table"
+  },
+  {
+    "class": "fa-table-tennis"
+  },
+  {
+    "class": "fa-tablet"
+  },
+  {
+    "class": "fa-tablet-alt"
+  },
+  {
+    "class": "fa-tablets"
+  },
+  {
+    "class": "fa-tachometer-alt"
+  },
+  {
+    "class": "fa-tag"
+  },
+  {
+    "class": "fa-tags"
+  },
+  {
+    "class": "fa-tape"
+  },
+  {
+    "class": "fa-tasks"
+  },
+  {
+    "class": "fa-taxi"
+  },
+  {
+    "class": "fa-teamspeak"
+  },
+  {
+    "class": "fa-teeth"
+  },
+  {
+    "class": "fa-teeth-open"
+  },
+  {
+    "class": "fa-telegram"
+  },
+  {
+    "class": "fa-telegram-plane"
+  },
+  {
+    "class": "fa-temperature-high"
+  },
+  {
+    "class": "fa-temperature-low"
+  },
+  {
+    "class": "fa-tencent-weibo"
+  },
+  {
+    "class": "fa-tenge"
+  },
+  {
+    "class": "fa-terminal"
+  },
+  {
+    "class": "fa-text-height"
+  },
+  {
+    "class": "fa-text-width"
+  },
+  {
+    "class": "fa-th"
+  },
+  {
+    "class": "fa-th-large"
+  },
+  {
+    "class": "fa-th-list"
+  },
+  {
+    "class": "fa-the-red-yeti"
+  },
+  {
+    "class": "fa-theater-masks"
+  },
+  {
+    "class": "fa-themeco"
+  },
+  {
+    "class": "fa-themeisle"
+  },
+  {
+    "class": "fa-thermometer"
+  },
+  {
+    "class": "fa-thermometer-empty"
+  },
+  {
+    "class": "fa-thermometer-full"
+  },
+  {
+    "class": "fa-thermometer-half"
+  },
+  {
+    "class": "fa-thermometer-quarter"
+  },
+  {
+    "class": "fa-thermometer-three-quarters"
+  },
+  {
+    "class": "fa-think-peaks"
+  },
+  {
+    "class": "fa-thumbs-down"
+  },
+  {
+    "class": "fa-thumbs-up"
+  },
+  {
+    "class": "fa-thumbtack"
+  },
+  {
+    "class": "fa-ticket-alt"
+  },
+  {
+    "class": "fa-tiktok"
+  },
+  {
+    "class": "fa-times"
+  },
+  {
+    "class": "fa-times-circle"
+  },
+  {
+    "class": "fa-tint"
+  },
+  {
+    "class": "fa-tint-slash"
+  },
+  {
+    "class": "fa-tired"
+  },
+  {
+    "class": "fa-toggle-off"
+  },
+  {
+    "class": "fa-toggle-on"
+  },
+  {
+    "class": "fa-toilet"
+  },
+  {
+    "class": "fa-toilet-paper"
+  },
+  {
+    "class": "fa-toilet-paper-slash"
+  },
+  {
+    "class": "fa-toolbox"
+  },
+  {
+    "class": "fa-tools"
+  },
+  {
+    "class": "fa-tooth"
+  },
+  {
+    "class": "fa-torah"
+  },
+  {
+    "class": "fa-torii-gate"
+  },
+  {
+    "class": "fa-tractor"
+  },
+  {
+    "class": "fa-trade-federation"
+  },
+  {
+    "class": "fa-trademark"
+  },
+  {
+    "class": "fa-traffic-light"
+  },
+  {
+    "class": "fa-trailer"
+  },
+  {
+    "class": "fa-train"
+  },
+  {
+    "class": "fa-tram"
+  },
+  {
+    "class": "fa-transgender"
+  },
+  {
+    "class": "fa-transgender-alt"
+  },
+  {
+    "class": "fa-trash"
+  },
+  {
+    "class": "fa-trash-alt"
+  },
+  {
+    "class": "fa-trash-restore"
+  },
+  {
+    "class": "fa-trash-restore-alt"
+  },
+  {
+    "class": "fa-tree"
+  },
+  {
+    "class": "fa-trello"
+  },
+  {
+    "class": "fa-trophy"
+  },
+  {
+    "class": "fa-truck"
+  },
+  {
+    "class": "fa-truck-loading"
+  },
+  {
+    "class": "fa-truck-monster"
+  },
+  {
+    "class": "fa-truck-moving"
+  },
+  {
+    "class": "fa-truck-pickup"
+  },
+  {
+    "class": "fa-tshirt"
+  },
+  {
+    "class": "fa-tty"
+  },
+  {
+    "class": "fa-tumblr"
+  },
+  {
+    "class": "fa-tumblr-square"
+  },
+  {
+    "class": "fa-tv"
+  },
+  {
+    "class": "fa-twitch"
+  },
+  {
+    "class": "fa-twitter"
+  },
+  {
+    "class": "fa-twitter-square"
+  },
+  {
+    "class": "fa-typo3"
+  },
+  {
+    "class": "fa-uber"
+  },
+  {
+    "class": "fa-ubuntu"
+  },
+  {
+    "class": "fa-uikit"
+  },
+  {
+    "class": "fa-umbraco"
+  },
+  {
+    "class": "fa-umbrella"
+  },
+  {
+    "class": "fa-umbrella-beach"
+  },
+  {
+    "class": "fa-uncharted"
+  },
+  {
+    "class": "fa-underline"
+  },
+  {
+    "class": "fa-undo"
+  },
+  {
+    "class": "fa-undo-alt"
+  },
+  {
+    "class": "fa-uniregistry"
+  },
+  {
+    "class": "fa-unity"
+  },
+  {
+    "class": "fa-universal-access"
+  },
+  {
+    "class": "fa-university"
+  },
+  {
+    "class": "fa-unlink"
+  },
+  {
+    "class": "fa-unlock"
+  },
+  {
+    "class": "fa-unlock-alt"
+  },
+  {
+    "class": "fa-unsplash"
+  },
+  {
+    "class": "fa-untappd"
+  },
+  {
+    "class": "fa-upload"
+  },
+  {
+    "class": "fa-ups"
+  },
+  {
+    "class": "fa-usb"
+  },
+  {
+    "class": "fa-user"
+  },
+  {
+    "class": "fa-user-alt"
+  },
+  {
+    "class": "fa-user-alt-slash"
+  },
+  {
+    "class": "fa-user-astronaut"
+  },
+  {
+    "class": "fa-user-check"
+  },
+  {
+    "class": "fa-user-circle"
+  },
+  {
+    "class": "fa-user-clock"
+  },
+  {
+    "class": "fa-user-cog"
+  },
+  {
+    "class": "fa-user-edit"
+  },
+  {
+    "class": "fa-user-friends"
+  },
+  {
+    "class": "fa-user-graduate"
+  },
+  {
+    "class": "fa-user-injured"
+  },
+  {
+    "class": "fa-user-lock"
+  },
+  {
+    "class": "fa-user-md"
+  },
+  {
+    "class": "fa-user-minus"
+  },
+  {
+    "class": "fa-user-ninja"
+  },
+  {
+    "class": "fa-user-nurse"
+  },
+  {
+    "class": "fa-user-plus"
+  },
+  {
+    "class": "fa-user-secret"
+  },
+  {
+    "class": "fa-user-shield"
+  },
+  {
+    "class": "fa-user-slash"
+  },
+  {
+    "class": "fa-user-tag"
+  },
+  {
+    "class": "fa-user-tie"
+  },
+  {
+    "class": "fa-user-times"
+  },
+  {
+    "class": "fa-users"
+  },
+  {
+    "class": "fa-users-cog"
+  },
+  {
+    "class": "fa-users-slash"
+  },
+  {
+    "class": "fa-usps"
+  },
+  {
+    "class": "fa-ussunnah"
+  },
+  {
+    "class": "fa-utensil-spoon"
+  },
+  {
+    "class": "fa-utensils"
+  },
+  {
+    "class": "fa-vaadin"
+  },
+  {
+    "class": "fa-vector-square"
+  },
+  {
+    "class": "fa-venus"
+  },
+  {
+    "class": "fa-venus-double"
+  },
+  {
+    "class": "fa-venus-mars"
+  },
+  {
+    "class": "fa-vest"
+  },
+  {
+    "class": "fa-vest-patches"
+  },
+  {
+    "class": "fa-viacoin"
+  },
+  {
+    "class": "fa-viadeo"
+  },
+  {
+    "class": "fa-viadeo-square"
+  },
+  {
+    "class": "fa-vial"
+  },
+  {
+    "class": "fa-vials"
+  },
+  {
+    "class": "fa-viber"
+  },
+  {
+    "class": "fa-video"
+  },
+  {
+    "class": "fa-video-slash"
+  },
+  {
+    "class": "fa-vihara"
+  },
+  {
+    "class": "fa-vimeo"
+  },
+  {
+    "class": "fa-vimeo-square"
+  },
+  {
+    "class": "fa-vimeo-v"
+  },
+  {
+    "class": "fa-vine"
+  },
+  {
+    "class": "fa-virus"
+  },
+  {
+    "class": "fa-virus-slash"
+  },
+  {
+    "class": "fa-viruses"
+  },
+  {
+    "class": "fa-vk"
+  },
+  {
+    "class": "fa-vnv"
+  },
+  {
+    "class": "fa-voicemail"
+  },
+  {
+    "class": "fa-volleyball-ball"
+  },
+  {
+    "class": "fa-volume-down"
+  },
+  {
+    "class": "fa-volume-mute"
+  },
+  {
+    "class": "fa-volume-off"
+  },
+  {
+    "class": "fa-volume-up"
+  },
+  {
+    "class": "fa-vote-yea"
+  },
+  {
+    "class": "fa-vr-cardboard"
+  },
+  {
+    "class": "fa-vuejs"
+  },
+  {
+    "class": "fa-walking"
+  },
+  {
+    "class": "fa-wallet"
+  },
+  {
+    "class": "fa-warehouse"
+  },
+  {
+    "class": "fa-watchman-monitoring"
+  },
+  {
+    "class": "fa-water"
+  },
+  {
+    "class": "fa-wave-square"
+  },
+  {
+    "class": "fa-waze"
+  },
+  {
+    "class": "fa-weebly"
+  },
+  {
+    "class": "fa-weibo"
+  },
+  {
+    "class": "fa-weight"
+  },
+  {
+    "class": "fa-weight-hanging"
+  },
+  {
+    "class": "fa-weixin"
+  },
+  {
+    "class": "fa-whatsapp"
+  },
+  {
+    "class": "fa-whatsapp-square"
+  },
+  {
+    "class": "fa-wheelchair"
+  },
+  {
+    "class": "fa-whmcs"
+  },
+  {
+    "class": "fa-wifi"
+  },
+  {
+    "class": "fa-wikipedia-w"
+  },
+  {
+    "class": "fa-wind"
+  },
+  {
+    "class": "fa-window-close"
+  },
+  {
+    "class": "fa-window-maximize"
+  },
+  {
+    "class": "fa-window-minimize"
+  },
+  {
+    "class": "fa-window-restore"
+  },
+  {
+    "class": "fa-windows"
+  },
+  {
+    "class": "fa-wine-bottle"
+  },
+  {
+    "class": "fa-wine-glass"
+  },
+  {
+    "class": "fa-wine-glass-alt"
+  },
+  {
+    "class": "fa-wix"
+  },
+  {
+    "class": "fa-wizards-of-the-coast"
+  },
+  {
+    "class": "fa-wodu"
+  },
+  {
+    "class": "fa-wolf-pack-battalion"
+  },
+  {
+    "class": "fa-won-sign"
+  },
+  {
+    "class": "fa-wordpress"
+  },
+  {
+    "class": "fa-wordpress-simple"
+  },
+  {
+    "class": "fa-wpbeginner"
+  },
+  {
+    "class": "fa-wpexplorer"
+  },
+  {
+    "class": "fa-wpforms"
+  },
+  {
+    "class": "fa-wpressr"
+  },
+  {
+    "class": "fa-wrench"
+  },
+  {
+    "class": "fa-x-ray"
+  },
+  {
+    "class": "fa-xbox"
+  },
+  {
+    "class": "fa-xing"
+  },
+  {
+    "class": "fa-xing-square"
+  },
+  {
+    "class": "fa-y-combinator"
+  },
+  {
+    "class": "fa-yahoo"
+  },
+  {
+    "class": "fa-yammer"
+  },
+  {
+    "class": "fa-yandex"
+  },
+  {
+    "class": "fa-yandex-international"
+  },
+  {
+    "class": "fa-yarn"
+  },
+  {
+    "class": "fa-yelp"
+  },
+  {
+    "class": "fa-yen-sign"
+  },
+  {
+    "class": "fa-yin-yang"
+  },
+  {
+    "class": "fa-yoast"
+  },
+  {
+    "class": "fa-youtube"
+  },
+  {
+    "class": "fa-youtube-square"
+  },
+  {
+    "class": "fa-zhihu"
+  }
+]

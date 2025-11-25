@@ -1,0 +1,463 @@
+{
+  "npmjs.com": {
+    "alias": ["www.npmjs.com"],
+    "cdns": [
+      "https://classic.yarnpkg.com",
+      "https://npmjs.com/",
+      "https://cdnjs.com/",
+      "https://jsdelivr.com/",
+      "https://unpkg.com/",
+      "https://bootcdn.cn/"
+    ],
+    "packages": {
+      "": {
+        "description": "",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "",
+        "versions": {}
+      },
+      "": {
+        "description": "",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "",
+        "versions": {}
+      },
+      "": {
+        "description": "",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "",
+        "versions": {}
+      },
+      "": {
+        "description": "",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "",
+        "versions": {}
+      },
+      "": {
+        "description": "",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "",
+        "versions": {}
+      },
+      "": {
+        "description": "",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "",
+        "versions": {}
+      },
+      "": {
+        "description": "",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "",
+        "versions": {}
+      },
+      "createjs": {
+        "description": "A suite of modular libraries and tools which work together or independently to enable rich interactive content on open web technologies via HTML5.",
+        "github": "",
+        "homepage": "",
+        "keywords": [
+          "createjs, easeljs, tweenjs, soundjs, preloadjs, zoe, gskinner, flash, javascript, canvas, html5, animate"
+        ],
+        "name": "createjs",
+        "versions": {}
+      },
+      "three": {
+        "description": "JavaScript 3D library",
+        "github": "",
+        "homepage": "",
+        "keywords": [
+          "three, three.js, javascript, 3d, virtual-reality, augmented-reality, webgl, webgl2, webaudio, webgpu, webxr, canvas, svg, html5"
+        ],
+        "name": "three",
+        "versions": {}
+      },
+      "phaser": {
+        "description": "A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers from the team at Phaser Studio Inc.",
+        "github": "",
+        "homepage": "https://phaser.io/",
+        "keywords": [
+          "2d",
+          "HTML5",
+          "WebGL",
+          "canvas",
+          "game",
+          "javascript",
+          "physics",
+          "tweens",
+          "typescript",
+          "web audio"
+        ],
+        "name": "phaser",
+        "versions": {}
+      },
+      "pixi.js": {
+        "description": "The HTML5 Creation Engine",
+        "github": "",
+        "homepage": "http://pixijs.com/",
+        "keywords": [],
+        "name": "pixi.js",
+        "versions": {}
+      },
+      "ora": {
+        "description": "Elegant terminal spinner",
+        "github": "sindresorhus/ora",
+        "homepage": "",
+        "keywords": [],
+        "name": "ora",
+        "versions": {}
+      },
+      "sortablejs": {
+        "description": "JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Knockout and any CSS library, e.g. Bootstrap.",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "sortablejs",
+        "versions": {}
+      },
+      "mermaid": {
+        "description": "Markdown-ish syntax for generating flowcharts, mindmaps, sequence diagrams, class diagrams, gantt charts, git graphs and more.",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "mermaid",
+        "versions": {}
+      },
+      "cli-spinners": {
+        "description": "Spinners for use in the terminal",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "cli-spinners",
+        "versions": {}
+      },
+      "handle-thing": {
+        "description": "Wrap Streams2 instance into a HandleWrap",
+        "github": "",
+        "homepage": "",
+        "keywords": ["handle", "net", "streams2"],
+        "name": "handle-thing",
+        "versions": {}
+      },
+      "@fortawesome/fontawesome-common-types": {},
+      "@fortawesome/fontawesome-free": {},
+      "@fortawesome/fontawesome-svg-core": {},
+      "@fortawesome/free-brands-svg-icons": {},
+      "@fortawesome/free-regular-svg-icons": {},
+      "@fortawesome/free-solid-svg-icons": {},
+      "@fortawesome/react-fontawesome": {},
+      "@fortawesome/vue-fontawesome": {},
+      "@supabase/functions-js": {},
+      "@supabase/node-fetch": {},
+      "@supabase/postgrest-js": {},
+      "@supabase/realtime-js": {},
+      "@supabase/storage-js": {},
+      "@supabase/supabase-js": {},
+      "@types/crypto-js": {},
+      "@xterm/xterm": {
+        "github": ""
+      },
+      "ace-builds": {},
+      "admin-lte": {},
+      "animate.css": {
+        "description": "",
+        "homepage": "https://animate.style/",
+        "keywords": []
+      },
+      "animejs": {
+        "description": "JavaScript animation engine",
+        "homepage": "http://animejs.com/",
+        "keywords": [
+          "anime",
+          "animation",
+          "javascript",
+          "CSS",
+          "transforms",
+          "SVG",
+          "canvas"
+        ]
+      },
+      "async": {},
+      "autosize": {
+        "description": "Autosize is a small, stand-alone script to automatically adjust textarea height to fit text.",
+        "homepage": "http://www.jacklmoore.com/autosize",
+        "keywords": ["textarea", "form", "ui"]
+      },
+      "axios": {},
+      "babel-core": {},
+      "bootstrap": {},
+      "bootstrap-icons": {},
+      "bootstrap-vue": {},
+      "chart.js": {},
+      "codemirror": {},
+      "crypto-js": {
+        "description": "JavaScript library of crypto standards.",
+        "homepage": "https://cryptojs.gitbook.io/docs/",
+        "keywords": [
+          "security",
+          "crypto",
+          "Hash",
+          "MD5",
+          "SHA1",
+          "SHA-1",
+          "SHA256",
+          "SHA-256",
+          "RC4",
+          "Rabbit",
+          "AES",
+          "DES",
+          "PBKDF2",
+          "HMAC",
+          "OFB",
+          "CFB",
+          "CTR",
+          "CBC",
+          "Base64",
+          "Base64url"
+        ],
+        "versions": {
+          "4.2.0": ["crypto-js.js"]
+        }
+      },
+      "d3": {},
+      "debug": {},
+      "dependency-tree": {
+        "description": "Get the dependency tree of a module",
+        "github": "",
+        "homepage": "",
+        "keywords": [
+          "dependency",
+          "tree",
+          "graph",
+          "module",
+          "ast",
+          "requirejs",
+          "AMD",
+          "commonjs",
+          "es6",
+          "sass",
+          "stylus",
+          "less",
+          "typescript"
+        ],
+        "name": "dependency-tree",
+        "versions": {}
+      },
+      "detective-amd": {
+        "description": "Find all dependencies within a JavaScript file using AMD module syntax",
+        "github": "",
+        "homepage": "",
+        "keywords": [
+          "amd",
+          "detective",
+          "dependencies",
+          "ast",
+          "static analysis",
+          "requirejs",
+          "jsx",
+          "module"
+        ],
+        "name": "detective-amd",
+        "versions": {}
+      },
+      "dplayer": {},
+      "echarts": {},
+      "element-ui": {},
+      "fancybox": {},
+      "font-awesome": {},
+      "font-awesome-animation": {},
+      "fork-awesome": {},
+      "gsap": {},
+      "gulp": {},
+      "handlebars": {
+        "description": "Handlebars provides the power necessary to let you build semantic templates effectively with no frustration",
+        "homepage": "https://www.handlebarsjs.com/",
+        "keywords": ["handlebars", "mustache", "template", "html"],
+        "versions": {}
+      },
+      "highlight.js": {},
+      "highlightjs-copy": {},
+      "holderjs": {},
+      "ionicons": {},
+      "jquery": {},
+      "jquery-ui": {},
+      "jquery.terminal": {},
+      "lazyload": {},
+      "less": {},
+      "lodash": {},
+      "lozad": {},
+      "markdown-it": {},
+      "masonry-layout": {
+        "description": "Cascading grid layout library",
+        "homepage": "https://masonry.desandro.com/",
+        "keywords": ["DOM", "browser", "grid", "layout", "outlayer"]
+      },
+      "mathjax": {},
+      "mockjs": {},
+      "moment": {},
+      "monaco-editor": {},
+      "normalize.css": {},
+      "perfect-scrollbar": {},
+      "popper.js": {},
+      "qs": {
+        "description": "A querystring parser that supports nesting and arrays, with a depth limit",
+        "keywords": ["querystring", "qs", "query", "url", "parse", "stringify"]
+      },
+      "react": {},
+      "react-bootstrap": {},
+      "react-input-autosize": {},
+      "react-textarea-autosize": {},
+      "require-from-string": {},
+      "requirejs": {
+        "description": "Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimizer",
+        "keywords": []
+      },
+      "requirejs-config-file": {
+        "description": "A small api to read and write your requirejs config file",
+        "github": "",
+        "homepage": "",
+        "keywords": ["requirejs", "config"],
+        "name": "requirejs-config-file",
+        "versions": {}
+      },
+      "requirejs-text": {
+        "description": "An AMD loader plugin for loading text resources.",
+        "github": "",
+        "homepage": "",
+        "keywords": [],
+        "name": "requirejs-text",
+        "versions": {}
+      },
+      "requires-port": {},
+      "sass": {},
+      "simple-icons": {},
+      "simple-line-icons": {},
+      "tailwindcss-animate": {},
+      "terminal-link": {},
+      "typescript": {},
+      "v-contextmenu": {},
+      "vanilla-lazyload": {},
+      "vant": {},
+      "video.js": {},
+      "vue": {},
+      "vue-router": {},
+      "vuex": {}
+    }
+  },
+  "packagist.p2hp.com": {
+    "alias": [],
+    "cdns": [],
+    "packages": {
+      "doctrine/dbal": {},
+      "doctrine/sql-formatter": {},
+      "facade/ignition": {},
+      "fakerphp/faker": {},
+      "fruitcake/laravel-cors": {},
+      "guzzlehttp/guzzle": {},
+      "intervention/image": {},
+      "jaeger/querylist": {},
+      "laravel/framework": {},
+      "laravel/laravel": {},
+      "laravel/lumen": {},
+      "laravel/sail": {},
+      "laravel/sanctum": {},
+      "laravel/tinker": {},
+      "laravel/ui": {},
+      "league/flysystem": {},
+      "livewire/livewire": {},
+      "mockery/mockery": {},
+      "monolog/monolog": {},
+      "nikic/fast-route": {},
+      "nunomaduro/collision": {},
+      "nwidart/laravel-modules": {},
+      "owner888/phpspider": {},
+      "phpmyadmin/sql-parser": {},
+      "phpoffice/phpspreadsheet": {},
+      "phpunit/phpunit": {},
+      "ramsey/uuid": {},
+      "rmccue/requests": {},
+      "sebastian/environment": {},
+      "symfony/filesystem": {},
+      "symfony/var-dumper": {},
+      "twig/twig": {},
+      "vlucas/phpdotenv": {},
+      "wapmorgan/unified-archive": {},
+      "wazaari/monolog-mysql": {},
+      "zircote/swagger-php": {}
+    }
+  },
+  "pypi.org": {
+    "alias": ["www.pypi.org"],
+    "cdns": [],
+    "packages": []
+  },
+
+  "rubygems.org": {
+    "alias": ["www.rubygems.org"],
+    "cdns": [],
+    "packages": {
+      "github-pages": {},
+      "github-pages-health-check": {},
+      "html-pipeline": {},
+      "jekyll": {},
+      "jekyll-avatar": {},
+      "jekyll-coffeescript": {},
+      "jekyll-commonmark-ghpages": {},
+      "jekyll-default-layout": {},
+      "jekyll-feed": {},
+      "jekyll-get-json": {},
+      "jekyll-gist": {},
+      "jekyll-github-metadata": {},
+      "jekyll-include-cache": {},
+      "jekyll-mentions": {},
+      "jekyll-optional-front-matter": {},
+      "jekyll-paginate": {},
+      "jekyll-readme-index": {},
+      "jekyll-redirect-from": {},
+      "jekyll-relative-links": {},
+      "jekyll-remote-theme": {},
+      "jekyll-sass-converter": {},
+      "jekyll-seo-tag": {},
+      "jekyll-sitemap": {},
+      "jekyll-swiss": {},
+      "jekyll-theme-architect": {},
+      "jekyll-theme-cayman": {},
+      "jekyll-theme-dinky": {},
+      "jekyll-theme-hacker": {},
+      "jekyll-theme-leap-day": {},
+      "jekyll-theme-merlot": {},
+      "jekyll-theme-midnight": {},
+      "jekyll-theme-minimal": {},
+      "jekyll-theme-modernist": {},
+      "jekyll-theme-primer": {},
+      "jekyll-theme-slate": {},
+      "jekyll-theme-tactile": {},
+      "jekyll-theme-time-machine": {},
+      "jekyll-titles-from-headings": {},
+      "jemoji": {},
+      "kramdown": {},
+      "kramdown-parser-gfm": {},
+      "liquid": {},
+      "minima": {},
+      "nokogiri": {},
+      "rouge": {},
+      "ruby": {},
+      "safe_yaml": {},
+      "sass": {}
+    }
+  }
+}

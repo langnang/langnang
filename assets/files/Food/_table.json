@@ -1,0 +1,13 @@
+{
+  "foods": {},
+  "food_metas": {
+    "records": ["菜系", "口味", "食材"]
+  },
+  "food_relationships": {},
+  "food_ingredients": {
+    "comment": "食材"
+  },
+  "food_recipes": {
+    "comment": "食谱"
+  }
+}

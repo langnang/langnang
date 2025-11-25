@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "openapi": "3.0.3",
+  "title": "Swagger Petstore - OpenAPI 3.0",
+  "description": "",
+  "contact_email": "apiteam@swagger.io",
+  "license_name": "Apache 2.0",
+  "license_url": "http://www.apache.org/licenses/LICENSE-2.0.html",
+  "version": "1.0.11"
+}

@@ -1,0 +1,33 @@
+{
+  "_content": {
+    "title": "",
+    "slug": "",
+    "titleCn": "",
+    "storage": "img/ico/{{$slug}}.ico"
+  },
+  "contents": [
+    {
+      "title": "SEVEN",
+      "slug": "svnmdn",
+      "titleCn": "柒牌SEVEN",
+      "storage": "img/ico/svnmdn.ico"
+    },
+    {
+      "title": "Langnang",
+      "slug": "langnang",
+      "titleCn": "",
+      "storage": "img/ico/langnang.ico"
+    },
+    {
+      "title": "OneDrive",
+      "slug": "onedrive",
+      "storage": "img/ico/onedrive.ico"
+    },
+    {
+      "title": "SeptWolves",
+      "slug": "sptwolves",
+      "titleCn": "七匹狼男装",
+      "storage": "img/ico/sptwolves.ico"
+    }
+  ]
+}

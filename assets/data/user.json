@@ -1,0 +1,39 @@
+{
+  "contents": {
+    "langnang": {
+      "name": "Langnang",
+      "nameCn": "陈朗朗",
+      "telephone": [],
+      "mobilephone": [],
+      "address": [],
+      "email": "langnang.chen@outlook.com",
+      "educations": [{ "daterage": ["2014-09", "2018-07"] }],
+      "skills": [
+        { "name": "HTML" },
+        { "name": "Vue" },
+        { "name": "PHP" },
+        { "name": "MySQL" }
+      ],
+      "experiences": [],
+      "works": [
+        {
+          "company": "复深蓝",
+          "daterang": ["2021-04"],
+          "job": "前端开发",
+          "responsibilities": [],
+          "projects": []
+        },
+        {
+          "company": "研华科技",
+          "job": "前端开发",
+          "daterang": ["2018-07", "2021-04"],
+          "responsibilities": [],
+          "projects": []
+        }
+      ],
+      "projects": {},
+      "accounts": {}
+    }
+  },
+  "langnang.github.io": "langnang"
+}

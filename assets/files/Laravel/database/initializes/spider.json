@@ -1,0 +1,11 @@
+{
+    "spiders": [
+        {
+            "name": "东方资讯",
+            "slug": "mini.eastday.com",
+            "domains": ["eastday.com", "mini.eastday.com"],
+            "scan_urls": ["https://mini.eastday.com/"],
+            "spider_fileds": []
+        }
+    ]
+}

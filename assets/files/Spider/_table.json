@@ -1,0 +1,24 @@
+{
+  "spiders": {
+    "columns": {
+      "id": {},
+      "name": {},
+      "slug": {},
+      "description": {},
+      "domains": {},
+      "scan_urls": {},
+      "list_url_regexes": {},
+      "content_url_regexes": {},
+      "type": {},
+      "status": {},
+      "parent": {
+        "type": "int"
+      }
+    }
+  },
+  "spider_metas": {},
+  "spider_relationships": {},
+  "spider_fields": {},
+  "spider_options": {},
+  "spider_logs": {}
+}

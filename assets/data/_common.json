@@ -1,0 +1,68 @@
+{
+  "_": {},
+  "_meta": {
+    "count": 0,
+    "created_at": "",
+    "deleted_at": "",
+    "description": "",
+    "ico": "",
+    "mid": null,
+    "name": "",
+    "order": 0,
+    "parent": 0,
+    "release_at": "",
+    "slug": "",
+    "updated_at": ""
+  },
+  "_content": {
+    "cid": null,
+    "count": 0,
+    "created_at": "",
+    "deleted_at": "",
+    "description": "",
+    "ico": "",
+    "order": 0,
+    "parent": 0,
+    "release_at": "",
+    "slug": "",
+    "text": "",
+    "title": "",
+    "type": "",
+    "updated_at": ""
+  },
+  "_link": {
+    "count": 0,
+    "created_at": "",
+    "deleted_at": "",
+    "description": "",
+    "ico": "",
+    "keywords": "",
+    "lid": null,
+    "order": 0,
+    "parent": 0,
+    "release_at": "",
+    "slug": "",
+    "title": "",
+    "updated_at": ""
+  },
+  "_relationship": {
+    "cid": null,
+    "lid": null,
+    "mid": null
+  },
+  "_tables": {
+    "contents": {},
+    "metas": {},
+    "links": {},
+    "relationships": {},
+    "fields": {}
+  },
+  "_sqls": {},
+  "127.0.0.1": {},
+  "localhost": {},
+  "metas": {},
+  "contents": {},
+  "relationships": {},
+  "categories": {},
+  "tags": {}
+}

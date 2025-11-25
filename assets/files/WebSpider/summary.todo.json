@@ -1,0 +1,51 @@
+[
+  {
+    "category": "Video Episode"
+  },
+  {
+    "category": "Novel Discover"
+  },
+  {
+    "category": "Novel Search"
+  },
+  {
+    "category": "Novel Detail"
+  },
+  {
+    "category": "Novel Catalog"
+  },
+  {
+    "category": "Novel Chapter"
+  },
+  {
+    "name": "豆瓣读书",
+    "slug": "douban_book",
+    "category": "Book",
+    "tags": [],
+    "search": "",
+    "discover": "",
+    "catalog": "",
+    "detail": "",
+    "chapter": "",
+    "download": "",
+    "comment": ""
+  },
+  {
+    "name": "豆瓣电影",
+    "slug": "douban_movie",
+    "category": "Video"
+  },
+  {
+    "name": "豆瓣音乐",
+    "slug": "douban_music",
+    "category": "Audio"
+  },
+  {
+    "name": "豆瓣同城",
+    "slug": "douban_location"
+  },
+  {
+    "name": "豆瓣阅读",
+    "slug": "douban_read"
+  }
+]

@@ -1,0 +1,946 @@
+{
+  "": {},
+  "contents": {
+    "": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "",
+      "titleCn": ""
+    },
+    "": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "",
+      "titleCn": ""
+    },
+    "": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "",
+      "titleCn": ""
+    },
+    "Admin": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Admin",
+      "titleCn": ""
+    },
+    "Album": {
+      "_url": {
+        "http://localhost": "/simple/projects/album/html/bootstrap4/"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Album",
+      "titleCn": "相册"
+    },
+    "AllForOne": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "AllForOne",
+      "titleCn": "全即一"
+    },
+    "Api": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Api",
+      "titleCn": ""
+    },
+    "Audio": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Audio",
+      "titleCn": "音频"
+    },
+    "Awesome": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Awesome",
+      "titleCn": ""
+    },
+    "Blog": {
+      "_url": {
+        "http://localhost": "/simple/projects/blog/html/bootstrap4/"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Blog",
+      "titleCn": "博客"
+    },
+    "Brand": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Brand",
+      "titleCn": "品牌"
+    },
+    "Calendar": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Calendar",
+      "titleCn": "日历"
+    },
+    "Card": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Card",
+      "titleCn": ""
+    },
+    "Charts": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Charts",
+      "titleCn": "图表"
+    },
+    "Chat": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Chat",
+      "titleCn": "交流聊天"
+    },
+    "CheatSheet": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "CheatSheet",
+      "titleCn": "速查表"
+    },
+    "Collection": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Collection",
+      "titleCn": ""
+    },
+    "Comic": {
+      "_url": {
+        "http://127.0.0.1": "/simple/projects/comic/html/bootstrap4/",
+        "http://localhost": "/simple/projects/comic/html/bootstrap4/"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Comic",
+      "titleCn": "漫画"
+    },
+    "Commodity": {
+      "_url": {
+        "http://127.0.0.1": "/simple/projects/commodity/html/bootstrap4/",
+        "http://localhost": "/simple/projects/commodity/html/bootstrap4/"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Commodity",
+      "titleCn": "商品"
+    },
+    "Editor": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Editor",
+      "titleCn": "编辑器"
+    },
+    "eMail": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "eMail",
+      "titleCn": "邮件"
+    },
+    "Form": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Form",
+      "titleCn": "表单"
+    },
+    "Forum": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Forum",
+      "titleCn": "论坛"
+    },
+    "Game": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Game",
+      "titleCn": "游戏"
+    },
+    "Gist": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Gist",
+      "titleCn": ""
+    },
+    "GUI": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "GUI",
+      "titleCn": ""
+    },
+    "Home": {
+      "config": {
+        "layout": "",
+        "template": "bootstrap4"
+      },
+      "options": {},
+      "_script": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "_style": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Home",
+      "titleCn": ""
+    },
+    "Icon": {
+      "_data": ["icon.json"],
+      "_dependencies": [],
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "keywords": "",
+      "title": "Icon",
+      "titleCn": "图标"
+    },
+    "Knowledge": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Knowledge",
+      "titleCn": ""
+    },
+    "Langnang": {
+      "_url": {
+        "http://127.0.0.1": "/langnang/composer",
+        "http://localhost": "/langnang/composer"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Langnang",
+      "titleCn": ""
+    },
+    "Lauguage": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Lauguage",
+      "titleCn": "语言"
+    },
+    "Library": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Library",
+      "titleCn": "图书馆"
+    },
+    "Manual": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Manual",
+      "titleCn": "手册"
+    },
+    "Market": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Market",
+      "titleCn": "市场"
+    },
+    "Material": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Material",
+      "titleCn": "素材"
+    },
+    "Media": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Media",
+      "titleCn": "多媒体"
+    },
+    "News": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "News",
+      "titleCn": "资讯"
+    },
+    "Note": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Note",
+      "titleCn": "笔记"
+    },
+    "Noun": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Noun",
+      "titleCn": "名词"
+    },
+    "Novel": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Novel",
+      "titleCn": "小说"
+    },
+    "Office": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Office",
+      "titleCn": "办公"
+    },
+    "OneForAll": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "OneForAll",
+      "titleCn": "一即全"
+    },
+    "Palette": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Palette",
+      "titleCn": "调色板"
+    },
+    "Price": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Price",
+      "titleCn": ""
+    },
+    "Profession": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Profession",
+      "titleCn": "职业"
+    },
+    "ProgrammingLanguage": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "ProgrammingLanguage",
+      "titleCn": "编程语言"
+    },
+    "Question": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Question",
+      "titleCn": "试题"
+    },
+    "Quote": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Quote",
+      "titleCn": "语录"
+    },
+    "Recipe": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Recipe",
+      "titleCn": "配方"
+    },
+    "Reply": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Reply",
+      "titleCn": "回复"
+    },
+    "Resume": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Resume",
+      "titleCn": "简历"
+    },
+    "Roadmap": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Roadmap",
+      "titleCn": ""
+    },
+    "Rule": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Rule",
+      "titleCn": "规范"
+    },
+    "School": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "School",
+      "titleCn": ""
+    },
+    "Script": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Script",
+      "titleCn": "脚本"
+    },
+    "Shop": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Shop",
+      "titleCn": "商场"
+    },
+    "Snippet": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Snippet",
+      "titleCn": "片段"
+    },
+    "SoftInstaller": {
+      "_url": {
+        "http://127.0.0.1": "/43000.projects/306.soft-installer/",
+        "http://localhost": "/43000.projects/306.soft-installer/"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "SoftInstaller",
+      "titleCn": ""
+    },
+    "Storage": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Storage",
+      "titleCn": ""
+    },
+    "Story": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Story",
+      "titleCn": "故事"
+    },
+    "Strategy": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Strategy",
+      "titleCn": "攻略"
+    },
+    "Syntax": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Syntax",
+      "titleCn": "语法"
+    },
+    "ToDoList": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "ToDoList",
+      "titleCn": "代办"
+    },
+    "Toolkit": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Toolkit",
+      "titleCn": "工具"
+    },
+    "Video": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Video",
+      "titleCn": "视频"
+    },
+    "WebFrame": {
+      "_url": {
+        "http://127.0.0.1": "/simple/projects/webframe/html/bootstrap4-vue2/",
+        "http://localhost": "/simple/projects/webframe/html/bootstrap4-vue2/"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "WebFrame",
+      "titleCn": ""
+    },
+    "WebFtp": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "WebFtp",
+      "titleCn": ""
+    },
+    "WebHunt": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "WebHunt",
+      "titleCn": ""
+    },
+    "WebNav": {
+      "config": {
+        "layout": "bootstrap4",
+        "theme": ""
+      },
+      "_url": {
+        "http://127.0.0.1": "/simple/projects/webnav/html/bootstrap4/",
+        "http://localhost": "/simple/projects/webnav/html/bootstrap4/"
+      },
+      "_data": ["webnav"],
+      "description": "",
+      "keywords": "",
+      "title": "WebNav",
+      "titleCn": "网址导航"
+    },
+    "WebPage": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "WebPage",
+      "titleCn": ""
+    },
+    "WebShell": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "WebShell",
+      "titleCn": ""
+    },
+    "WebSpider": {
+      "config": {
+        "layout": "",
+        "template": "bootstrap4"
+      },
+      "_data": ["webnav", "phpspider"],
+      "_url": {
+        "http://127.0.0.1": "/simple/projects/WebSpider/php/phpspider",
+        "http://localhost": "/simple/projects/WebSpider/php/phpspider"
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "WebSpider",
+      "titleCn": ""
+    },
+    "WebTerminal": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "WebTerminal",
+      "titleCn": ""
+    },
+    "Wiki": {
+      "_url": {
+        "http://127.0.0.1": "",
+        "http://localhost": ""
+      },
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "title": "Wiki",
+      "titleCn": "百科"
+    }
+  },
+  "requirejs": {
+    "baseUrl": "https://unpkg.com/",
+    "bundles": {},
+    "config": {},
+    "define": {
+      "bootstrap3": [],
+      "bootstrap3-vue2": [],
+      "bootstrap3-vue3": [],
+      "bootstrap4": [
+        "bootstrap4",
+        "holderjs",
+        "mockjs",
+        "handlebars",
+        "feather-icons",
+        "lozad",
+        "css!normalize_css",
+        "css!animate_css",
+        "css!bootstrap-icons@1.11.3/font/bootstrap-icons.min"
+      ],
+      "bootstrap4-vue2": [],
+      "bootstrap4-vue3": [],
+      "bootstrap5": [],
+      "bootstrap5-vue2": [],
+      "bootstrap5-vue3": [],
+      "example-bootstrap4": [],
+      "original": [],
+      "simple-bootstrap4": []
+    },
+    "map": {
+      "*": {
+        "css": "require-css@0.1.10/css.min",
+        "json": "requirejs-json@0.0.3/json",
+        "text": "requirejs-text@2.0.16/text"
+      }
+    },
+    "packages": [],
+    "paths": {
+      "$": "jquery@3.7.1/dist/jquery.slim.min",
+      "@langnang": "https://raw.gitmirror.com/langnang/langnang/master/js/langnang",
+      "ace": "",
+      "animate": "",
+      "animate_css": "animate.css@4.1.1/animate.min",
+      "animation": "",
+      "backbone": "",
+      "bootstrap": "",
+      "bootstrap3": "",
+      "bootstrap4": "bootstrap@4.6.2/dist/js/bootstrap.bundle.min",
+      "bootstrap5": "",
+      "fontawesome": "",
+      "handlebars": "handlebars@4.7.8/dist/handlebars.min",
+      "holderjs": "holderjs@2.9.9/holder.min",
+      "jquery": "jquery@3.7.1/dist/jquery.slim.min",
+      "lodash": "",
+      "lozad": "lozad@1.16.0/dist/lozad.min",
+      "mockjs": "mockjs@1.1.0/dist/mock-min",
+      "moment": "",
+      "feather-icons": "feather-icons@4.29.2/dist/feather.min",
+      "normalize_css": "normalize.css@8.0.1/normalize",
+      "underscore": ""
+    },
+    "shim": {
+      "@langnang": {
+        "deps": [
+          "css!https://cdn.jsdelivr.net/gh/langnang/langnang/css/langnang"
+        ]
+      },
+      "handlebars": {
+        "exports": "Handlebars"
+      },
+      "backbone": {
+        "deps": ["underscore", "jquery"],
+        "exports": "Backbone"
+      },
+      "backbone.layoutmanager": {
+        "deps": ["backbone"],
+        "exports": "Backbone.LayoutManager"
+      },
+      "lozad": {
+        "exports": "lozad"
+      },
+      "bootstrap4": {
+        "deps": ["css!bootstrap@4.6.2/dist/css/bootstrap.min", "jquery"]
+      },
+      "jquery.colorize": {
+        "deps": ["jquery"],
+        "exports": "jQuery.fn.colorize"
+      },
+      "jquery.scroll": {
+        "deps": ["jquery"],
+        "exports": "jQuery.fn.scroll"
+      },
+      "feather-icons": {
+        "deps": [],
+        "exports": "feather"
+      },
+      "mockjs": {
+        "exports": "Mock"
+      },
+      "lodash": {
+        "exports": "_"
+      },
+      "underscore": {
+        "exports": "_"
+      }
+    }
+  }
+}

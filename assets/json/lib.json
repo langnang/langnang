@@ -1,0 +1,23 @@
+{
+  "_content": [
+    {
+      "name": "",
+      "versions": [],
+      "github": ""
+    }
+  ],
+  "contents": [
+    {
+      "name": "@fortawesome/fontawesome-free",
+      "versions": [
+        "6.5.1"
+      ],
+      "github": ""
+    },
+    {
+      "name": "jquery",
+      "versions": [],
+      "github": ""
+    }
+  ]
+}

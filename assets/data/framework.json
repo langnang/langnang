@@ -1,0 +1,15 @@
+{
+  "composer": {
+    "laravel": {},
+    "lumen": {},
+    "thinkphp": {}
+  },
+  "html": {},
+  "nodejs": {
+    "angular": {},
+    "bootstrap-vue": {},
+    "react": {},
+    "vue": {}
+  },
+  "php": {}
+}

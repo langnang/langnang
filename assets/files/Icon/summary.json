@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Font Awesome 6 Free",
+    "slug": "font-awesome-6-free",
+    "git": "https://github.com/FortAwesome/Font-Awesome",
+    "homepage": "https://fontawesome.com/",
+    "total": 2452
+  },
+  {
+    "name": "Font Awesome 5 Free",
+    "slug": "font-awesome-5-free",
+    "git": "https://github.com/FortAwesome/Font-Awesome",
+    "homepage": "https://fontawesome.com/",
+    "total": 1458
+  },
+  {
+    "name": "Material Design icons",
+    "slug": "material-design-icons",
+    "git": "https://github.com/google/material-design-icons",
+    "homepage": "http://google.github.io/material-design-icons/"
+  },
+  {
+    "name": "Simple Icons",
+    "slug": "simple-icons",
+    "git": "https://github.com/simple-icons/simple-icons",
+    "homepage": "https://simpleicons.org/"
+  }
+]

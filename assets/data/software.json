@@ -1,0 +1,12 @@
+{
+  "contents": {
+    "vs": {
+      "title": "Visual Studio",
+      "extensions": []
+    },
+    "vscode": {
+      "title": "Visual Studio Code",
+      "extensions": []
+    }
+  }
+}

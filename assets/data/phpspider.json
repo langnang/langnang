@@ -1,0 +1,367 @@
+{
+  "contents": {
+    "site:info": {
+      "description": "网页基本信息",
+      "fields": {
+        "title": {
+          "name": "title",
+          "selector": "//head//title"
+        },
+        "description": {
+          "name": "description",
+          "selector": "//head//meta[@name='description']/@content"
+        },
+        "keywords": {
+          "name": "keywords",
+          "selector": "//head//meta[@name='keywords']/@content"
+        },
+        "ico": {
+          "name": "ico",
+          "selector": "//head//link[contains(@rel,'icon')]/@href"
+        }
+      }
+    },
+    "site:urls": {
+      "description": "网页内所有URL地址",
+      "fields": {
+        "site": {
+          "name": "site",
+          "children": {
+            "title": {
+              "name": "title",
+              "selector": "//head//title"
+            },
+            "description": {
+              "name": "description",
+              "selector": "//head//meta[@name='description']/@content"
+            },
+            "keywords": {
+              "name": "keywords",
+              "selector": "//head//meta[@name='keywords']/@content"
+            },
+            "ico": {
+              "name": "ico",
+              "selector": "//head//link[contains(@rel,'icon')]/@href"
+            }
+          }
+        }
+      }
+    },
+    "site:site_urls": {
+      "description": "网页内当前站点URL地址",
+      "site": {
+        "name": "site",
+        "children": {
+          "title": {
+            "name": "title",
+            "selector": "//head//title"
+          },
+          "description": {
+            "name": "description",
+            "selector": "//head//meta[@name='description']/@content"
+          },
+          "keywords": {
+            "name": "keywords",
+            "selector": "//head//meta[@name='keywords']/@content"
+          },
+          "ico": {
+            "name": "ico",
+            "selector": "//head//link[contains(@rel,'icon')]/@href"
+          }
+        }
+      }
+    },
+    "site:other_urls": {
+      "description": "网页内非当前站点URL地址",
+      "site": {
+        "name": "site",
+        "children": {
+          "title": {
+            "name": "title",
+            "selector": "//head//title"
+          },
+          "description": {
+            "name": "description",
+            "selector": "//head//meta[@name='description']/@content"
+          },
+          "keywords": {
+            "name": "keywords",
+            "selector": "//head//meta[@name='keywords']/@content"
+          },
+          "ico": {
+            "name": "ico",
+            "selector": "//head//link[contains(@rel,'icon')]/@href"
+          }
+        }
+      }
+    },
+    "site:images": {
+      "description": "网页内图片资源",
+      "site": {
+        "name": "image",
+        "children": {
+          "title": {
+            "name": "title",
+            "selector": "//head//title"
+          },
+          "description": {
+            "name": "description",
+            "selector": "//head//meta[@name='description']/@content"
+          },
+          "keywords": {
+            "name": "keywords",
+            "selector": "//head//meta[@name='keywords']/@content"
+          },
+          "ico": {
+            "name": "ico",
+            "selector": "//head//link[contains(@rel,'icon')]/@href"
+          }
+        }
+      }
+    },
+    "bilianku": {
+      "title": "http://www.bilianku.com/",
+      "slug": "bilianku",
+      "domains": ["bilianku.com", "www.bilianku.com"],
+      "scan_urls": ["http://www.bilianku.com/shiti-58203/"],
+      "list_url_regexes": [],
+      "content_url_regexes": ["http://www.bilianku.com/shiti-\\d+/"],
+      "max_fields": 0,
+      "updated_at": "2024-08-29 14:04:37",
+      "deleted_at": "",
+      "fields": {
+        "title": {
+          "name": "title",
+          "selector": "//div[@class='list_text']//text()|trim",
+          "required": true,
+          "filter": "trim"
+        }
+      }
+    },
+    "asklib": {
+      "name": "asklib",
+      "domains": ["asklib.com", "www.asklib.com"],
+      "scan_urls": ["https://www.asklib.com/view/1e05e29c.html"],
+      "": "https://www.asklib.com/",
+      "list_url_regexes": ["https://www.asklib.com/.+"],
+      "content_url_regexes": ["https://www.asklib.com/view/.+"],
+      "max_fields": 1,
+      "fields": {
+        "title": {
+          "name": "title",
+          "selector": "//div[contains(@class,'essaytitle')]//h1"
+        },
+        "description": {
+          "name": "description",
+          "selector": "//div[contains(@class,'essaytitle')]//h2"
+        },
+        "text": {
+          "name": "text",
+          "selector": "//div[contains(@class,'essaytitle')]//p[position()=1]"
+        }
+      }
+    },
+    "jiandati": {
+      "name": "jiandati",
+      "domains": ["jiandati.com", "www.jiandati.com"],
+      "scan_urls": [
+        "https://www.jiandati.com/",
+        "https://www.jiandati.com/q/gtzl2he3"
+      ],
+      "list_url_regexes": [],
+      "content_url_regexes": ["https://www.jiandati.com/q/\\S+"],
+      "fields": {
+        "title": {
+          "name": "title",
+          "selector": "//h1[@class='ask_title']",
+          "required": true
+        },
+        "description": {
+          "name": "description"
+        },
+        "text": {
+          "name": "text",
+          "selector": "//div[contains(@class,'ask_context')]"
+        },
+        "type": {
+          "name": "type",
+          "selector": "//*[@class='sub_type']",
+          "required": true
+        },
+        "answer": {
+          "name": "answer",
+          "selector": "//div[contains(@class,'question-content')]//text()",
+          "required": true
+        },
+        "metas": {
+          "name": "metas",
+          "selector": "(//div[@class='jdtnew_bread']/a)[position()>1]",
+          "repeated": true
+        }
+      }
+    },
+    "juejin": {
+      "name": "juejin",
+      "domains": ["juejin.cn", "www.juejin.cn"],
+      "scan_urls": [
+        "https://juejin.cn/post/7338721296866656296",
+        "https://juejin.cn/..."
+      ],
+      "list_url_regexes": [
+        "https://juejin.cn/.+...",
+        "_https://juejin.cn/post/\\d+"
+      ],
+      "content_url_regexes": ["https://juejin.cn/post/\\d+"],
+      "max_fields": 1,
+      "fields": {
+        "title": {
+          "name": "title",
+          "selector": "//h1[@class='article-title']/text()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "selector": "//time[@class='time']/text()"
+        },
+        "views": {
+          "name": "views",
+          "selector": "//span[@class='views-count']/text()"
+        },
+        "content": {
+          "name": "content",
+          "selector": "//div[@id='article-root']//text()"
+        }
+      }
+    },
+    "qidian:book": {
+      "name": "qidian_book",
+      "domains": ["qidian.com", "www.qidian.com"],
+      "scan_urls": [
+        "https://www.qidian.com",
+        "https://www.qidian.com/book/1039628035/"
+      ],
+      "list_url_regexes": ["https://www.qidian.com/\\.+"],
+      "content_url_regexes": ["https://www.qidian.com/book/\\d+/"],
+      "max_fields": 5,
+      "fields": {
+        "name": {},
+        "author": {},
+        "updated_at": {},
+        "latest_chapter": {},
+        "intro": {}
+      }
+    },
+    "newduba": {
+      "name": "newduba",
+      "domains": ["newduba.cn", "www.newduba.cn"],
+      "scan_urls": ["https://www.newduba.cn/"],
+      "max_fields": 1,
+      "fields": {
+        "contents": {
+          "name": "contents",
+          "selector": "//div[@class='second_nav_tabs']//li | //ul[contains(@class,'hot_top')]/li | //ul[contains(@class,'site_cool_list')]/li",
+          "repeated": true,
+          "children": {
+            "title": {
+              "name": "title",
+              "selector": "//a//text()"
+            },
+            "url": {
+              "name": "url",
+              "selector": "//a/@href"
+            },
+            "ico": {
+              "name": "ico",
+              "selector": "//a[contains(@class,'has_prev_icon')]/@style"
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": {
+    "WebSpider": {
+      "name": "WebSpider",
+      "contents": []
+    }
+  },
+  "_content": {
+    "name": "phpspider",
+    "log_show": false,
+    "log_file": "./log/phpspider/{$name}_{$timestamp}.log",
+    "log_type": "error",
+    "$log_type": "error,debug",
+    "input_encoding": null,
+    "output_encoding": null,
+    "tasknum": 1,
+    "multiserver": false,
+    "serverid": 1,
+    "save_running_state": false,
+    "queue_config": {
+      "host": "127.0.0.1",
+      "port": 6379,
+      "pass": "",
+      "db": 5,
+      "prefix": "phpspider",
+      "timeout": 30
+    },
+    "proxy": [],
+    "interval": 1000,
+    "timeout": 5,
+    "max_try": 3,
+    "max_depth": 0,
+    "max_fields": 0,
+    "user_agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G34 Safari/601.1",
+      "Mozilla/5.0 (Linux; U; Android 6.0.1;zh_cn; Le X820 Build/FEXCNFN5801507014S) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/49.0.0.0 Mobile Safari/537.36 EUI Browser/5.8.015S"
+    ],
+    "client_ip": ["192.168.0.2", "192.168.0.3", "192.168.0.4"],
+    "export": {
+      "type": "csv",
+      "file": "./csv/phpspider/{$name}_{$timestamp}.csv"
+    },
+    "db_config": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "user": "root",
+      "pass": "root",
+      "name": "demo"
+    },
+    "domains": [],
+    "scan_urls": [],
+    "list_url_regexes": [],
+    "content_url_regexes": [],
+    "fields": {
+      "_title": {
+        "name": "_title",
+        "selector_type": "xpath",
+        "selector": "//title",
+        "required": false,
+        "repeated": false
+      },
+      "_ico": {
+        "name": "_ico",
+        "selector_type": "xpath",
+        "selector": "//link[contains(@rel,'icon')]/@href",
+        "required": false,
+        "repeated": false
+      },
+      "_keywords": {
+        "name": "_keywords",
+        "selector_type": "xpath",
+        "selector": "//meta[@name='keywords']/@content",
+        "required": false,
+        "repeated": false
+      },
+      "_description": {
+        "name": "_description",
+        "selector_type": "xpath",
+        "selector": "//meta[@name='description']/@content",
+        "required": false,
+        "repeated": false
+      }
+    }
+  },
+  "http://127.0.0.1": {},
+  "http://localhost": {}
+}

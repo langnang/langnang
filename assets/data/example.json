@@ -1,0 +1,275 @@
+{
+  "categories": {
+    "bootstrap3": {},
+    "bootstrap4": {
+      "children": [
+        {
+          "contents": [
+            "bootstrap4:album",
+            "bootstrap4:pricing",
+            "bootstrap4:checkout",
+            "bootstrap4:product",
+            "bootstrap4:cover",
+            "bootstrap4:carousel",
+            "bootstrap4:blog",
+            "bootstrap4:dashboard",
+            "bootstrap4:sign-in",
+            "bootstrap4:sticky-footer",
+            "bootstrap4:sticky-footer-navbar"
+          ],
+          "description": "Brand new components and templates to help folks quickly get started with Bootstrap and demonstrate best practices for adding onto the framework.",
+          "name": "Custom Components",
+          "slug": "custom-components",
+          "type": "category"
+        },
+        {
+          "contents": [
+            "bootstrap4:starter-template",
+            "bootstrap4:grid",
+            "bootstrap4:jumbotron"
+          ],
+          "description": "Examples that focus on implementing uses of built -in components provided by Bootstrap.",
+          "name": "Framework",
+          "slug": "framework",
+          "type": "category"
+        },
+        {
+          "contents": [
+            "bootstrap4:navbars",
+            "bootstrap4:navbar-static",
+            "bootstrap4:navbar-fixed",
+            "bootstrap4:navbar-bottom"
+          ],
+          "description": "Taking the default navbar component and showing how it can be moved, placed, and extended.",
+          "name": "Navbars",
+          "slug": "navbars",
+          "type": "category"
+        },
+        {
+          "contents": ["bootstrap4:floating-labels", "bootstrap4:offcanvas"],
+          "description": "Examples that focus on future-friendly features or techniques.",
+          "name": "Experiments",
+          "slug": "experiments",
+          "type": "category"
+        },
+        {
+          "contents": [],
+          "description": "",
+          "name": "Bootstrap v3",
+          "slug": "bootstrap-v3",
+          "type": "tag"
+        },
+        {
+          "contents": [
+            "bootstrap4:album",
+            "bootstrap4:blog",
+            "bootstrap4:carousel",
+            "bootstrap4:checkout",
+            "bootstrap4:cover",
+            "bootstrap4:dashboard",
+            "bootstrap4:floating-labels",
+            "bootstrap4:grid",
+            "bootstrap4:jumbotron",
+            "bootstrap4:navbar-bottom",
+            "bootstrap4:navbar-fixed",
+            "bootstrap4:navbar-static",
+            "bootstrap4:navbars",
+            "bootstrap4:offcanvas",
+            "bootstrap4:pricing",
+            "bootstrap4:product",
+            "bootstrap4:sign-in",
+            "bootstrap4:starter-template",
+            "bootstrap4:sticky-footer",
+            "bootstrap4:sticky-footer-navbar"
+          ],
+          "description": "",
+          "name": "Bootstrap v4",
+          "slug": "bootstrap-v4",
+          "type": "tag"
+        },
+        {
+          "contents": [],
+          "description": "",
+          "name": "Bootstrap v5",
+          "slug": "bootstrap-v5",
+          "type": "tag"
+        }
+      ],
+      "slug": ""
+    },
+    "bootstrap5": {},
+    "element-ui": {},
+    "jquery": {},
+    "vue2": {},
+    "vue3": {}
+  },
+  "contents": {
+    "bootstrap4:loading": {},
+    "bootstrap4:album": {
+      "description": "Simple one-page template for photo galleries, portfolios, and more.",
+      "screenshot": "",
+      "slug": "album",
+      "title": "Album",
+      "url": ""
+    },
+    "bootstrap4:blog": {
+      "description": "Magazine like blog template with header, navigation, featured content.",
+      "screenshot": "",
+      "slug": "blog",
+      "title": "Blog",
+      "url": ""
+    },
+    "bootstrap4:carousel": {
+      "description": "Customize the navbar and carousel, then add some new components.",
+      "screenshot": "",
+      "slug": "carousel",
+      "title": "Carousel",
+      "url": ""
+    },
+    "bootstrap4:checkout": {
+      "description": "Custom checkout form showing our form components and their validation features.",
+      "screenshot": "",
+      "slug": "checkout",
+      "title": "Checkout",
+      "url": ""
+    },
+    "bootstrap4:cover": {
+      "description": "A one-page template for building simple and beautiful home pages.",
+      "screenshot": "",
+      "slug": "cover",
+      "title": "Cover",
+      "url": ""
+    },
+    "bootstrap4:dashboard": {
+      "description": "Basic admin dashboard shell with fixed sidebar and navbar.",
+      "screenshot": "",
+      "slug": "dashboard",
+      "title": "Dashboard",
+      "url": ""
+    },
+    "bootstrap4:floating-labels": {
+      "description": "Beautifully simple forms with floating labels over your inputs.",
+      "screenshot": "",
+      "slug": "floating-labels",
+      "title": "Floating labels",
+      "url": ""
+    },
+    "bootstrap4:grid": {
+      "description": "Multiple examples of grid layouts with all four tiers, nesting, and more.",
+      "screenshot": "",
+      "slug": "grid",
+      "title": "Grid",
+      "url": ""
+    },
+    "bootstrap4:jumbotron": {
+      "description": "Build around the jumbotron with a navbar and some basic grid columns.",
+      "screenshot": "",
+      "slug": "jumbotron",
+      "title": "Jumbotron",
+      "url": ""
+    },
+    "bootstrap4:navbar-bottom": {
+      "description": "Single navbar example with a bottom navbar along with some additional content.",
+      "screenshot": "",
+      "slug": "navbar-bottom",
+      "title": "Navbar bottom",
+      "url": ""
+    },
+    "bootstrap4:navbar-fixed": {
+      "description": "Single navbar example with a fixed top navbar along with some additional content.",
+      "screenshot": "",
+      "slug": "navbar-fixed",
+      "title": "Navbar fixed",
+      "url": ""
+    },
+    "bootstrap4:navbar-static": {
+      "description": "Single navbar example of a static top navbar along with some additional content.",
+      "screenshot": "",
+      "slug": "navbar-static",
+      "title": "Navbar static",
+      "url": ""
+    },
+    "bootstrap4:navbars": {
+      "description": "Demonstration of all responsive and container options for the navbar.",
+      "screenshot": "",
+      "slug": "navbars",
+      "title": "Navbars",
+      "url": ""
+    },
+    "bootstrap4:offcanvas": {
+      "description": "Turn your expandable navbar into a sliding offcanvas menu.",
+      "screenshot": "",
+      "slug": "offcanvas",
+      "title": "Offcanvas",
+      "url": ""
+    },
+    "bootstrap4:pricing": {
+      "description": "Example pricing page built with Cards and featuring a custom header and footer.",
+      "screenshot": "",
+      "slug": "pricing",
+      "title": "Pricing",
+      "url": ""
+    },
+    "bootstrap4:product": {
+      "description": "Lean product-focused marketing page with extensive grid and image work.",
+      "screenshot": "",
+      "slug": "product",
+      "title": "Product",
+      "url": ""
+    },
+    "bootstrap4:sign-in": {
+      "description": "Custom form layout and design for a simple sign in form.",
+      "screenshot": "",
+      "slug": "sign-in",
+      "title": "Sign-in",
+      "url": ""
+    },
+    "bootstrap4:starter-template": {
+      "description": "Nothing but the basics: compiled CSS and JavaScript.",
+      "screenshot": "",
+      "slug": "starter-template",
+      "title": "Starter template",
+      "url": ""
+    },
+    "bootstrap4:sticky-footer": {
+      "description": "Attach a footer to the bottom of the viewport when page content is short.",
+      "screenshot": "",
+      "slug": "sticky-footer",
+      "title": "Sticky footer",
+      "url": ""
+    },
+    "bootstrap4:sticky-footer-navbar": {
+      "description": "Attach a footer to the bottom of the viewport with a fixed top navbar.",
+      "screenshot": "",
+      "slug": "sticky-footer-navbar",
+      "title": "Sticky footer navbar",
+      "url": ""
+    }
+  },
+  "metas": {},
+  "tags": {
+    "alert": {},
+    "badge": {},
+    "breadcrumb": {},
+    "button": {},
+    "button-group": {},
+    "card": {},
+    "carousel": {},
+    "collapse": {},
+    "flex": {},
+    "grid": {},
+    "jumbotron": {},
+    "loading": {},
+    "masonry": {},
+    "modal": {},
+    "navbar": {},
+    "navs": {},
+    "pagination": {},
+    "popovers": {},
+    "progress": {},
+    "scrollspy": {},
+    "spinners": {},
+    "toasts": {},
+    "tooltips": {}
+  }
+}

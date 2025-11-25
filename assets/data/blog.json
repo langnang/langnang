@@ -1,0 +1,19 @@
+{
+  "_sqls": {},
+  "_tables": {
+    "contents": {},
+    "fields": {},
+    "links": {},
+    "metas": {},
+    "relationships": {}
+  },
+  "contents": {},
+  "http://localhost": {
+    "alias": ["http://127.0.0.1"],
+    "categories": [],
+    "tags": {}
+  },
+  "https://langnang.github.io": {},
+  "metas": {},
+  "relationships": {}
+}

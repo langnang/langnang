@@ -1,0 +1,70 @@
+{
+  "openapi_contents": {
+    "columns": {
+      "cid": {},
+      "name": {},
+      "slug": {},
+      "title": {},
+      "summary": {},
+      "description": {},
+      "contact_name": {},
+      "contact_url": {},
+      "contact_email": {},
+      "license_name": {},
+      "license_identifier": {},
+      "license_url": {},
+      "version": {},
+      "openapi": {
+        "default": "3.0.3"
+      }
+    }
+  },
+  "openapi_metas": {
+    "columns": {
+      "mid": {},
+      "name": {},
+      "slug": {},
+      "description": {}
+    }
+  },
+  "openapi_paths": {
+    "columns": {
+      "pid": {},
+      "cid": {},
+      "path": {},
+      "method": {}
+    }
+  },
+  "openapi_schemas": {
+    "comment": "",
+    "columns": {
+      "pid": {},
+      "prid": {}
+    }
+  },
+  "openapi_properties": {
+    "columns": {
+      "prid": {}
+    }
+  },
+  "openapi_relationships": {
+    "columns": {
+      "cid": {},
+      "mid": {}
+    }
+  },
+  "openapi_components": {
+    "columns": {}
+  },
+  "openapi_globales": {
+    "columns": {}
+  },
+  "openapi_extend_docs": {},
+  "openapi_licenses": {},
+  "openapi_options": {
+    "columns": {}
+  },
+  "openapi_logs": {
+    "columns": {}
+  }
+}

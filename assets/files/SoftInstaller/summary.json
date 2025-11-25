@@ -1,0 +1,30 @@
+[
+	{
+		"name": "WordPress",
+		"logo": {
+			"icon": "fab fa-wordpress"
+		},
+		"category": "Blogs"
+	},
+	{
+		"name": "Typecho",
+		"logo": {
+			"svg": "<path d=\"M512 1024C132.647385 1024 0 891.313231 0 512S132.647385 0 512 0s512 132.686769 512 512-132.647385 512-512 512zM236.307692 354.461538h551.384616V275.692308H236.307692v78.76923z m0 196.923077h393.846154v-78.76923H236.307692v78.76923z m0 196.923077h472.615385v-78.76923H236.307692v78.76923z\" fill=\"#614CAA\"></path>"
+		},
+		"category": "Blogs"
+	},
+	{
+		"name": "Laravel",
+		"logo": {
+			"icon": "fab fa-laravel"
+		},
+		"category": "Framework"
+	},
+	{
+		"name": "Lumen",
+		"logo": {
+			"img": "https://lumen.golaravel.com/img/favicons/favicon-32x32.png"
+		},
+		"category": "Micro Framework"
+	}
+]

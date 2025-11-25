@@ -1,0 +1,68 @@
+{
+  "contents": [
+    {
+      "nameCn": "盗贼"
+    },
+    {
+      "nameCn": "强盗"
+    },
+    {
+      "nameCn": "匪徒"
+    },
+    {
+      "nameCn": "暴徒"
+    },
+    {
+      "name": "slime",
+      "nameCn": "史莱姆"
+    },
+    {
+      "name": "goblin",
+      "nameCn": "哥布林"
+    },
+    {
+      "name": "minotaur",
+      "nameCn": "牛头人"
+    },
+    {
+      "nameCn": "狗头人"
+    },
+    {
+      "nameCn": "矮人"
+    },
+    {
+      "nameCn": "地精"
+    },
+    {
+      "nameCn": "恶魔",
+      "raceCn": "恶魔族"
+    },
+    {
+      "nameCn": "蠕虫",
+      "raceCn": "深渊族"
+    },
+    {
+      "nameCn": "精灵",
+      "raceCn": "精灵族"
+    },
+    {
+      "nameCn": "天使",
+      "raceCn": "天使族"
+    }
+  ],
+  "options": [
+    {
+      "name": "monster_description",
+      "value": "怪物"
+    }
+  ],
+  "_content": {
+    "name": "",
+    "nameCn": "",
+    "race": "",
+    "raceCn": "种族",
+    "prefix": "前缀：普通级、精英级、BOSS 级、领主级、霸主级",
+    "suffix": "后缀：投掷手、弓箭手、魔法师、队长、小队长、精英、BOSS、领主、霸主",
+    "entries": "词条：坚固的"
+  }
+}

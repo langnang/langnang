@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Material Design icons",
+    "slug": "material-design-icons",
+    "git": "https://github.com/google/material-design-icons",
+    "homepage": "http://google.github.io/material-design-icons/"
+  },
+  {
+    "name": "Simple Icons",
+    "slug": "simple-icons",
+    "git": "https://github.com/simple-icons/simple-icons",
+    "homepage": "https://simpleicons.org/"
+  },
+  {
+    "name": "Tabler Icons",
+    "slug": "tabler-icons",
+    "git": "https://github.com/tabler/tabler-icons",
+    "homepage": "https://tabler-icons.io/"
+  },
+  {
+    "name": "IconPark",
+    "slug": "iconpark",
+    "git": "https://github.com/bytedance/IconPark",
+    "homepage": "http://iconpark.bytedance.com/"
+  },
+  {
+    "name": "flag-icons",
+    "slug": "flag-icons",
+    "git": "https://github.com/lipis/flag-icons",
+    "homepage": "https://flagicons.lipis.dev/"
+  },
+  {
+    "name": "Bootstrap Icons",
+    "slug": "bootstrap-icons",
+    "git": "https://github.com/twbs/icons",
+    "homepage": "https://icons.getbootstrap.com/"
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  },
+  {
+    "name": "",
+    "slug": "",
+    "git": "",
+    "homepage": ""
+  }
+]

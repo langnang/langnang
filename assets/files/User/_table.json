@@ -1,0 +1,172 @@
+{
+  "users": {
+    "comment": "用户基本信息表",
+    "columns": {
+      "id": {
+        "comment": "编号",
+        "type": "int",
+        "length": "11",
+        "nullable": false,
+        "autoincrement": true
+      },
+      "name": {
+        "comment": "名称",
+        "type": "varchar"
+      },
+      "slug": {
+        "comment": "标识",
+        "type": "varchar"
+      },
+      "passwrod": {
+        "comment": "密码",
+        "type": "varchar"
+      },
+      "description": {
+        "comment": "描述",
+        "type": "varchar"
+      },
+      "email": {
+        "comment": "邮箱",
+        "type": "varchar"
+      },
+      "email_verified_at": {
+        "comment": "验证邮箱时间",
+        "type": "timestamp"
+      },
+      "token": {},
+      "telephone": {
+        "comment": "固定电话"
+      },
+      "mobilephone": {
+        "comment": "手机电话"
+      },
+      "gender": {
+        "comment": "性别"
+      },
+      "address_present": {
+        "comment": "现居住地"
+      },
+      "created_at": {
+        "comment": "创建时间",
+        "type": "timestamp"
+      },
+      "updated_at": {
+        "comment": "更新时间",
+        "type": "timestamp"
+      },
+      "visited_at": {
+        "comment": "访问时间",
+        "type": "timestamp"
+      },
+      "deleted_at": {
+        "comment": "删除时间",
+        "type": "timestamp"
+      }
+    },
+    "records": [],
+    "primary_keys": ["id"],
+    "indexes": {},
+    "logs": {
+      "insert_user": {},
+      "update_user": {},
+      "delete_user": {},
+      "login_user": {},
+      "logout_user": {},
+      "insert_user_token": {},
+      "delete_user_token": {}
+    }
+  },
+  "user_roles": {
+    "comment": "用户账户角色表",
+    "columns": {},
+    "records": []
+  },
+  "user_premissions": {
+    "comment": "用户权限控制表",
+    "columns": {},
+    "records": []
+  },
+  "user_educations": {
+    "comment": "用户教育背景表",
+    "columns": {
+      "id": {},
+      "uid": {},
+      "timerange": {}
+    },
+    "records": []
+  },
+  "user_skills": {
+    "comment": "用户知识技能表",
+    "columns": {
+      "id": {},
+      "uid": {},
+      "text": {}
+    },
+    "records": [],
+    "logs": {
+      "insert_user_skill": {},
+      "update_user_skill": {}
+    }
+  },
+  "user_works": {
+    "comment": "用户工作经历表",
+    "columns": {
+      "id": {},
+      "uid": {},
+      "timerange": {},
+      "text": {
+        "comment": "内容"
+      },
+      "created_at": {}
+    },
+    "records": []
+  },
+  "user_projects": {
+    "comment": "用户项目经验表",
+    "columns": {},
+    "records": []
+  },
+  "user_certificates": {
+    "comment": "用户获证证书表",
+    "columns": {},
+    "records": []
+  },
+  "user_link_accounts": {
+    "comment": "用户关联账号表",
+    "columns": {},
+    "records": []
+  },
+  "user_options": {
+    "comment": "用户基本配置表",
+    "columns": {
+      "id": {},
+      "uid": {
+        "default": 0
+      },
+      "name": {},
+      "text": {}
+    },
+    "records": []
+  },
+  "user_identifications": {
+    "comment": "用户实名信息表",
+    "columns": {
+      "registered_residence": {
+        "comment": "户籍地址"
+      }
+    }
+  },
+  "user_logs": {
+    "comment": "用户操作日志表",
+    "columns": {
+      "id": {},
+      "uid": {},
+      "level": {},
+      "type": {},
+      "operate": {},
+      "text": {},
+      "created_at": {}
+    },
+    "records": []
+  }
+}

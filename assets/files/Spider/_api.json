@@ -1,0 +1,47 @@
+{
+  "paths": {
+    "/api/spider": {
+      "get": {}
+    },
+    "/api/spider/start": {
+      "post": {}
+    },
+    "/api/spider/stop": {
+      "post": {}
+    },
+    "/api/spider/progress": {},
+    "/api/spider/insert": {
+      "post": {}
+    },
+    "/api/spider/insert_list": {
+      "post": {}
+    },
+    "/api/spider/delete": {
+      "post": {}
+    },
+    "/api/spider/delete_list": {
+      "post": {}
+    },
+    "/api/spider/update": {
+      "post": {}
+    },
+    "/api/spider/info": {
+      "post": {}
+    },
+    "/api/spider/list": {
+      "post": {}
+    },
+    "/api/spider/tree": {
+      "post": {}
+    },
+    "/api/spider/options": {
+      "post": {}
+    },
+    "/api/spider/relationships": {
+      "post": {}
+    },
+    "/api/spider/logs": {
+      "post": {}
+    }
+  }
+}
