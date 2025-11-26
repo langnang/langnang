@@ -1,0 +1,14 @@
+services:
+  ~:
+    image:
+    container_name:
+    ports:
+      -
+    volumes:
+      -
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

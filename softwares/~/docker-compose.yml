@@ -1,0 +1,14 @@
+services:
+  ~:
+    image:
+    # container_name: software
+    ports:
+      - 0:
+    environment:
+      - TZ=Asia/Shanghai
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true
