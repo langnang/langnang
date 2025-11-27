@@ -1,0 +1,12 @@
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "debug": true,
+  "experimental": true,
+  "hosts": ["tcp://0.0.0.0:2375"],
+  "registry-mirrors": ["https://docker.1ms.run", "https://docker.xuanyuan.me", "https://dislabaiot.xyz", "https://docker.sunzishaokao.com", "https://hub.rat.dev", "https://doublezonline.cloud", "https://dislabaiot.xyz", "https://docker.m.daocloud.io", "https://docker.1panel.live", "https://hub.rat.dev", "http://docker.m.daocloud.io", "http://docker.imgdb.de", "http://docker.hlmirror.com", "http://lispy.org", "https://docker.m.daocloud.io", "https://docker.1panel.live", "http://mirrors.ustc.edu.cn", "https://hub.rat.dev", "https://cr.console.aliyun.com"]
+}
