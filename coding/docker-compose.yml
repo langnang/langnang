@@ -1,0 +1,15 @@
+services:
+  html:
+    image: nginx:alpine
+    ports:
+      - 0:80
+    volumes:
+      - ./~/index.html:/usr/share/nginx/html/index.html
+      - ./html:/usr/share/nginx/html/html
+      - ./html.bootstrap3:/usr/share/nginx/html/html.bootstrap3
+      - ./html.bootstrap4:/usr/share/nginx/html/html.bootstrap4
+      - ./html.bootstrap5:/usr/share/nginx/html/html.bootstrap5
+  node-20:
+    image: nginx
+  php-8.2:
+    image: php-fmp
