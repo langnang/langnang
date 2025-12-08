@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://homer-demo.netlify.app/ -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    body {
+      transition: opacity ease-in 0.2s;
+    }
+
+    body[unresolved] {
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
+
+  <link rel="icon" href="https://homer-demo.netlify.app/assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="https://homer-demo.netlify.app/assets/icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="mask-icon" href="https://homer-demo.netlify.app/assets/icons/logo.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <title>Demo dashboard | Homer</title>
+  <script type="module" crossorigin="" src="./assets/index-Dx4X4Vp9.js"></script>
+  <link rel="stylesheet" crossorigin="" href="./assets/index-C_2-L8Rm.css">
+  <link rel="manifest" href="https://homer-demo.netlify.app/assets/manifest.json" crossorigin="use-credentials">
+  <script id="vite-plugin-pwa:register-sw" src="./assets/registerSW.js"></script>
+  <style type="text/css">
+    .DraggableTags {
+      position: relative;
+      height: 100%;
+      touch-action: none;
+    }
+
+    .DraggableTags::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .DraggableTags-tag {
+      display: inline-block;
+      position: relative;
+      color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .DraggableTags-undraggable {
+      cursor: no-drop;
+    }
+
+    .DraggableTags-tag-drag {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .hotspot-9485743 {
+      cursor: move;
+    }
+
+    .excludedInHotspot-9485743 {
+      cursor: default;
+    }
+  </style>
+  <meta property="pagenote:url" content="https://homer-demo.netlify.app/">
+  <meta property="pagenote:pageUrl" content="https://homer-demo.netlify.app/">
+  <meta property="pagenote:table" content="html">
+  <style id="init-pagenote-style">
+    pagenote-root {
+      display: none;
+    }
+  </style>
+  <meta property="pagenote:did" content="fcb2aca6-38fe-4c61-926c-4dbdab3402fc">
+  <meta property="pagenote:version" content="0.29.22">
+  <meta property="pagenote:platform" content="edge">
+  <meta property="pagenote:pageKey" content="https://homer-demo.netlify.app/">
+  <style data-source="custom-pagenote-style"></style>
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://homer-demo.netlify.app/resources/OctoPrint-DkUT9jE9.js">
+  <link rel="stylesheet" crossorigin="" href="./assets/OctoPrint-DqTJwI-L.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://homer-demo.netlify.app/resources/PiHole-C01nvXly.js">
+  <link rel="stylesheet" crossorigin="" href="./assets/PiHole-tWFI9dge.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://homer-demo.netlify.app/resources/Proxmox-lMaE8CLc.js">
+  <link rel="stylesheet" crossorigin="" href="./assets/Proxmox-B7Ne6yNU.css">
+  <link rel="modulepreload" as="script" crossorigin=""
+    href="https://homer-demo.netlify.app/resources/OpenWeather-wdTLdvo6.js">
+  <link rel="stylesheet" crossorigin="" href="./assets/OpenWeather-CGFhy5zp.css">
+</head>
+
+<body data-pagenote="1">
+  <div id="app-mount" data-v-app="">
+    <div id="app" class="theme-default page-default light"><!---->
+      <div id="bighead">
+        <section class="first-line">
+          <div class="container">
+            <div class="logo"><a href="https://homer-demo.netlify.app/#"><img src="./assets/logo.png"
+                  alt="dashboard logo"></a><!----></div>
+            <div class="dashboard-title"><span class="headline">Homer</span>
+              <h1>Demo dashboard</h1>
+            </div>
+          </div>
+        </section>
+        <div data-v-62dfe85f="" class="container-fluid">
+          <nav data-v-62dfe85f="" class="navbar" role="navigation" aria-label="main navigation">
+            <div data-v-62dfe85f="" class="container">
+              <div data-v-62dfe85f="" class="navbar-brand"><a data-v-62dfe85f="" role="button" aria-label="menu"
+                  aria-expanded="false" class="navbar-burger"><span data-v-62dfe85f="" aria-hidden="true"></span><span
+                    data-v-62dfe85f="" aria-hidden="true"></span><span data-v-62dfe85f="" aria-hidden="true"></span></a>
+              </div>
+              <div data-v-62dfe85f="" class="navbar-menu">
+                <div data-v-62dfe85f="" class="navbar-start"><a data-v-62dfe85f="" class="navbar-item" rel="noreferrer"
+                    href="https://github.com/bastienwirtz/homer" target="_blank"><i data-v-62dfe85f=""
+                      class="fa-fw fab fa-github"></i> Contribute!</a><a data-v-62dfe85f="" class="navbar-item"
+                    rel="noreferrer"
+                    href="https://github.com/bastienwirtz/homer/blob/main/README.md#table-of-contents"><i
+                      data-v-62dfe85f="" class="fa-fw fas fa-book"></i> Documentation</a><a data-v-62dfe85f=""
+                    class="navbar-item" rel="noreferrer" href="https://homer-demo.netlify.app/#additional-page"><i
+                      data-v-62dfe85f="" class="fa-fw fas fa-file-alt"></i> another page!</a></div>
+                <div data-v-62dfe85f="" class="navbar-end"><a aria-label="Toggle dark mode"
+                    class="navbar-item is-inline-block-mobile"><i class="fas fa-adjust fa-fw"
+                      title="Auto-switch"></i></a><a class="navbar-item is-inline-block-mobile"><span><i
+                        class="fas fa-fw fa-columns"></i></span></a>
+                  <search class="search-bar navbar-item is-inline-block-mobile">
+                    <form role="search"><label for="search" class="search-label"></label><input id="search"
+                        name="search" type="search"></form>
+                  </search>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <section id="main-section" class="section">
+        <div class="container"><!----><!---->
+          <div>
+            <article class="message is-dark">
+              <div class="message-header">
+                <p><!----> 👋 Welcome!</p>
+              </div>
+              <div class="message-body">Homer is a dead simple static HOMepage for your servER (or anything else) to
+                keep your services and favorite links on hand, based on a simple yaml configuration file.<br> Learn more
+                at <a href="https://github.com/bastienwirtz/homer">github.com/bastienwirtz/homer</a></div>
+            </article>
+            <div class="columns is-multiline">
+              <h2 class="column is-full group-title"><i class="fa-fw fa-solid fa-arrow-right"></i> Try Homer</h2>
+              <div data-v-28ce3c2c="" class="column is-4">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://github.com/bastienwirtz/homer?tab=readme-ov-file#get-started" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-solid fa-download" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Get started</p><!---->
+                          <p data-v-28ce3c2c="" class="subtitle">Start using Homer in a few minutes</p>
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c="" class="tag-text">#setup</strong>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" class="column is-4">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-solid fa-sliders" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Configuration</p><!---->
+                          <p data-v-28ce3c2c="" class="subtitle">Configuration options documentation</p>
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c="" class="tag-text">#setup</strong>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" class="column is-4">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://github.com/bastienwirtz/homer/blob/main/docs/theming.md" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-solid fa-palette" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Theming</p><!---->
+                          <p data-v-28ce3c2c="" class="subtitle">Customize Homer appearance</p>
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c="" class="tag-text">#theming</strong>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" class="column is-4">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://github.com/bastienwirtz/homer/blob/main/docs/customservices.md" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-solid fa-palette" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Smart cards</p><!---->
+                          <p data-v-28ce3c2c="" class="subtitle">Displays dynamic information or actions.</p>
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c="" class="tag-text">#setup</strong>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" class="column is-4">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://homer-demo.netlify.app/" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media no-subtitle"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-solid fa-icons" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Dashboard icons</p>
+                          <p data-v-28ce3c2c="" class="quicklinks"><a data-v-28ce3c2c="" href="https://selfh.st/icons/"
+                              target="_blank" rel="noreferrer" style=""><span data-v-28ce3c2c=""><i data-v-28ce3c2c=""
+                                  class="fa-fw fa-solid fa-arrow-up-right-from-square"
+                                  style="font-size: 12px;"></i></span> selfh.st</a><a data-v-28ce3c2c=""
+                              href="https://github.com/homarr-labs/dashboard-icons" target="_blank" rel="noreferrer"
+                              style=""><span data-v-28ce3c2c=""><i data-v-28ce3c2c=""
+                                  class="fa-fw fa-solid fa-arrow-up-right-from-square"
+                                  style="font-size: 12px;"></i></span> homarr-labs</a></p><!---->
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c="" class="tag-text">#setup</strong>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" class="column is-4">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://www.buymeacoffee.com/bastien" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-solid fa-mug-hot" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Buy me a coffee!</p><!---->
+                          <p data-v-28ce3c2c="" class="subtitle">Sponsor this project</p>
+                        </div>
+                      </div><!---->
+                    </div>
+                  </a></div>
+              </div>
+              <h2 class="highlight-purple column is-full group-title"><i class="fa-fw fa-solid fa-brain"></i> Smart
+                cards showcase</h2>
+              <div data-v-28ce3c2c="" data-v-43c7bc8f="" class="column is-4 highlight-purple" title="Printing">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c="" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media no-subtitle">
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><img data-v-28ce3c2c=""
+                              src="./assets/3112529.png" alt="Octoprint logo"></figure>
+                        </div><!---->
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-43c7bc8f="" class="title is-4">Octoprint</p>
+                          <p data-v-43c7bc8f="" class="subtitle is-6"><!----><i data-v-43c7bc8f=""
+                              class="fa-solid fa-gear mr-1"></i><b data-v-43c7bc8f="">27%</b><span data-v-43c7bc8f=""
+                              class="separator mx-1"> | </span><span data-v-43c7bc8f="" title="01h 16m 52s left"><i
+                                data-v-43c7bc8f="" class="fa-solid fa-stopwatch mr-1"></i> 07m
+                              40s</span><!----><!----><!----></p>
+                        </div><i data-v-43c7bc8f="" class="status in-progress" title="Printing"></i>
+                      </div><!---->
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" data-v-ad9ceed1="" class="column is-4 highlight-purple">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c="" href="https://pi-hole.net/"
+                    rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media no-subtitle">
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><img data-v-28ce3c2c=""
+                              src="./assets/pi-hole.png" alt="Pi-hole logo"></figure>
+                        </div><!---->
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-ad9ceed1="" class="title is-4">Pi-hole</p>
+                          <p data-v-ad9ceed1="" class="subtitle is-6"><!----></p>
+                        </div>
+                        <div data-v-ad9ceed1="" class="status enabled">enabled</div>
+                      </div><!---->
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" data-v-1d9cfb8e="" class="column is-4 highlight-purple">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c="" href="https://www.proxmox.com/en/"
+                    rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media no-subtitle">
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><img data-v-28ce3c2c=""
+                              src="./assets/proxmox.png" alt="Proxmox - Node1 logo"></figure>
+                        </div><!---->
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-1d9cfb8e="" class="title is-4">Proxmox - Node1</p>
+                          <p data-v-1d9cfb8e="" class="subtitle is-6">
+                          <div data-v-1d9cfb8e="" class="metrics"><span data-v-1d9cfb8e="" class="margined">VMs: <span
+                                data-v-1d9cfb8e="" class="is-number"><span data-v-1d9cfb8e=""
+                                  class="has-text-weight-bold">2</span><span
+                                  data-v-1d9cfb8e="">/2</span></span></span><span data-v-1d9cfb8e=""
+                              class="margined">LXCs: <span data-v-1d9cfb8e="" class="is-number"><span data-v-1d9cfb8e=""
+                                  class="has-text-weight-bold">2</span><span
+                                  data-v-1d9cfb8e="">/2</span></span></span><span data-v-1d9cfb8e=""
+                              class="margined">Disk: <span data-v-1d9cfb8e=""
+                                class="has-text-weight-bold is-number healthy">17.1%</span></span><span
+                              data-v-1d9cfb8e="" class="margined">Mem: <span data-v-1d9cfb8e=""
+                                class="has-text-weight-bold is-number warning">50.6%</span></span><span
+                              data-v-1d9cfb8e="" class="margined">CPU: <span data-v-1d9cfb8e=""
+                                class="has-text-weight-bold is-number healthy">0.4%</span></span></div>
+                          </p>
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c="" class="tag-text">#sys</strong>
+                      </div>
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" class="column is-4 highlight-purple">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://github.com/Brandawg93/PeaNUT" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media no-subtitle">
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><img data-v-28ce3c2c=""
+                              src="./assets/peanut.png" alt="PeaNUT logo"></figure>
+                        </div><!---->
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p class="title is-4">PeaNUT</p>
+                          <p class="subtitle is-6">50.0% UPS Load </p>
+                        </div>
+                        <div class="status online">online</div>
+                      </div><!---->
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-4a11befb="" class="column is-4 highlight-purple">
+                <div data-v-4a11befb="" class="card"><a data-v-4a11befb=""
+                    href="https://openweathermap.org/city/2998324" rel="noreferrer">
+                    <div data-v-4a11befb="" class="card-content">
+                      <div data-v-4a11befb="" class="media">
+                        <div data-v-4a11befb="" class="media-left">
+                          <figure data-v-4a11befb="" class="image is-48x48"><img data-v-4a11befb=""
+                              src="./assets/01d@2x.png" alt="clear sky" title="clear sky"></figure>
+                        </div>
+                        <div data-v-4a11befb="" class="media-content">
+                          <div data-v-4a11befb="">
+                            <p data-v-4a11befb="" class="title is-4">Lille</p>
+                            <p data-v-4a11befb="" class="subtitle is-6"><span data-v-4a11befb="">287.0 °C</span><span
+                                data-v-4a11befb="" class="location-time">04:58</span></p>
+                          </div>
+                        </div><!---->
+                      </div><!---->
+                    </div>
+                  </a></div>
+              </div>
+              <h2 class="highlight-inverted column is-full group-title"><i class="fa-fw fa-regular fa-bookmark"></i>
+                Ressources</h2>
+              <div data-v-28ce3c2c="" class="column is-4 highlight-inverted">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://homer-demo.netlify.app/" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media no-subtitle"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-brands fa-reddit-alien" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Selfhosted community</p>
+                          <p data-v-28ce3c2c="" class="quicklinks"><a data-v-28ce3c2c=""
+                              href="https://www.reddit.com/r/selfhosted/" target="_blank" rel="noreferrer"
+                              style=""><span data-v-28ce3c2c=""><i data-v-28ce3c2c=""
+                                  class="fa-fw fa-solid fa-arrow-up-right-from-square"
+                                  style="font-size: 12px;"></i></span> r/selfhosted</a><a data-v-28ce3c2c=""
+                              href="https://lemmy.world/c/selfhosted" target="_blank" rel="noreferrer" style=""><span
+                                data-v-28ce3c2c=""><i data-v-28ce3c2c=""
+                                  class="fa-fw fa-solid fa-arrow-up-right-from-square"
+                                  style="font-size: 12px;"></i></span> c/selfhosted</a></p><!---->
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c=""
+                          class="tag-text">#community</strong></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div data-v-28ce3c2c="" class="column is-4 highlight-inverted">
+                <div data-v-28ce3c2c="" class="card" style=""><a data-v-28ce3c2c=""
+                    href="https://github.com/awesome-selfhosted/awesome-selfhosted" rel="noreferrer">
+                    <div data-v-28ce3c2c="" class="card-content">
+                      <div data-v-28ce3c2c="" class="media"><!---->
+                        <div data-v-28ce3c2c="" class="media-left">
+                          <figure data-v-28ce3c2c="" class="image is-48x48"><i data-v-28ce3c2c=""
+                              class="fa-fw fa-solid fa-star" style="font-size: 32px;"></i></figure>
+                        </div>
+                        <div data-v-28ce3c2c="" class="media-content">
+                          <p data-v-28ce3c2c="" class="title">Awesome selfhosted</p><!---->
+                          <p data-v-28ce3c2c="" class="subtitle">Another application</p>
+                        </div>
+                      </div>
+                      <div data-v-28ce3c2c="" class="tag"><strong data-v-28ce3c2c=""
+                          class="tag-text">#awesome-list</strong></div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">Bulma</a>, <a
+                href="https://vuejs.org/">Vue.js</a> &amp; <a href="https://fontawesome.com/">font awesome</a> // Fork
+              me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <pagenote-root><pagenote-bar
+      data-pagenote="sidebar"></pagenote-bar><pagenote-annotations></pagenote-annotations></pagenote-root>
+</body>
+
+</html>
