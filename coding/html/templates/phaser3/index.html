@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common</title>
+
+  <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+  <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.min.css">
+
+  <link crossorigin="anonymous" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid" id="app">
+    <h1>Common HTML</h1>
+  </div>
+  <script crossorigin="anonymous" src="https://unpkg.com/axios@1.7.4/dist/axios.min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/mockjs@1.1.0/dist/mock-min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/moment@2.30.1/min/moment.min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/holderjs@2.9.9/holder.min.js"></script>
+
+  <script crossorigin="anonymous" src="https://unpkg.com/phaser@3.85.1/dist/phaser-arcade-physics.min.js"></script>
+
+  <script crossorigin="anonymous" src="script.js"></script>
+  <script>
+    class Example extends Phaser.Scene {
+      preload() {
+        this.load.setBaseURL('https://labs.phaser.io');
+
+        this.load.image('sky', 'assets/skies/space3.png');
+        this.load.image('logo', 'assets/sprites/phaser3-logo.png');
+        this.load.image('red', 'assets/particles/red.png');
+      }
+
+      create() {
+        this.add.image(400, 300, 'sky');
+
+        const particles = this.add.particles(0, 0, 'red', {
+          speed: 100,
+          scale: { start: 1, end: 0 },
+          blendMode: 'ADD'
+        });
+
+        const logo = this.physics.add.image(400, 100, 'logo');
+
+        logo.setVelocity(100, 200);
+        logo.setBounce(1, 1);
+        logo.setCollideWorldBounds(true);
+
+        particles.startFollow(logo);
+      }
+    }
+
+    const config = {
+      type: Phaser.AUTO,
+      width: 800,
+      height: 600,
+      scene: Example,
+      physics: {
+        default: 'arcade',
+        arcade: {
+          gravity: { y: 200 }
+        }
+      }
+    };
+
+    const game = new Phaser.Game(config);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common</title>
+
+  <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+  <link crossorigin="anonymous" rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.min.css">
+
+  <link crossorigin="anonymous" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+  </div>
+  <script crossorigin="anonymous" src="https://unpkg.com/axios@1.7.4/dist/axios.min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/mockjs@1.1.0/dist/mock-min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/moment@2.30.1/min/moment.min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
+  <script crossorigin="anonymous" src="https://unpkg.com/holderjs@2.9.9/holder.min.js"></script>
+
+  <script crossorigin="anonymous" src="https://unpkg.com/pixi.js@7.4.2/dist/pixi.min.js"></script>
+
+  <script crossorigin="anonymous" src="script.js"></script>
+
+  <script>
+    const { Application, Sprite, Assets } = PIXI;
+    (async () => {
+
+      const app = new PIXI.Application({ background: '#1099bb', resizeTo: window });
+
+      document.body.appendChild(app.view);
+
+      const container = new PIXI.Container();
+
+      app.stage.addChild(container);
+
+      // Create a new texture
+      const texture = PIXI.Texture.from('https://pixijs.com/assets/bunny.png');
+
+      // Create a 5x5 grid of bunnies
+      for (let i = 0; i < 25; i++) {
+        const bunny = new PIXI.Sprite(texture);
+
+        bunny.anchor.set(0.5);
+        bunny.x = (i % 5) * 40;
+        bunny.y = Math.floor(i / 5) * 40;
+        container.addChild(bunny);
+      }
+
+      // Move container to the center
+      container.x = app.screen.width / 2;
+      container.y = app.screen.height / 2;
+
+      // Center bunny sprite in local container coordinates
+      container.pivot.x = container.width / 2;
+      container.pivot.y = container.height / 2;
+
+      // Listen for animate update
+      app.ticker.add((delta) => {
+        // rotate the container!
+        // use delta to create frame-independent transform
+        container.rotation -= 0.01 * delta;
+      });
+
+    })();
+  </script>
+</body>
+
+</html>

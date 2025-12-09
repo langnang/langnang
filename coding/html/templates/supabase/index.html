@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link crossorigin="anonymous" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <script crossorigin="anonymous" type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+    const supabase = createClient('https://xyzcompany.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlnYWNwcG9jd25nZ3R4a2RrY3ZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQxMTg2MTYsImV4cCI6MjAzOTY5NDYxNn0.ryMD8HrY2yCr1J4obL5dK5DHvAGxLi2F7eNq7p5EF4s')
+
+    console.log('Supabase Instance: ', supabase)
+
+    const { data, error } = await supabase
+      .from('countries')
+      .select()
+    console.log('Supabase Instance: ', { data, error })
+
+  </script>
+
+  <script crossorigin="anonymous" src="script.js"></script>
+
+</body>
+
+</html>
