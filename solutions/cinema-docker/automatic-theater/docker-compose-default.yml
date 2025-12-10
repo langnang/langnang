@@ -1,0 +1,214 @@
+version: "3"
+networks:
+  network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.128.2.0/24
+
+services:
+  heimdall:
+    image: linuxserver/heimdall:latest
+    # container_name: heimdall
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/heimdall:/config
+    ports:
+      - 0:80
+      - 0:443
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.11
+
+  portainer:
+    image: 6053537/portainer-ce:latest
+    # container_name: portainer
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./config/portainer:/data
+    ports:
+      - 0:9000
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.12
+
+  flaresolverr:
+    image: flaresolverr/flaresolverr:latest
+    # container_name: flaresolverr
+    restart: unless-stopped
+    environment:
+      # - LOG_LEVEL=${LOG_LEVEL:-info}
+      # - LOG_HTML=${LOG_HTML:-false}
+      # - CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none}
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    ports:
+      - 0:8191
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.13
+
+  prowlarr:
+    image: linuxserver/prowlarr:develop
+    # container_name: prowlarr
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/prowlarr:/config
+    ports:
+      - 0:9696
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.23
+
+  jproxy:
+    image: luckypuppy514/jproxy:latest
+    # container_name: jproxy
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - JAVA_OPTS=-Xms512m -Xmx512m
+    volumes:
+      - ./config/jproxy/database:/app/database
+    ports:
+      - 0:8117
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.15
+
+  jellyseerr:
+    image: fallenbagel/jellyseerr:develop
+    # container_name: jellyseerr
+    restart: unless-stopped
+    environment:
+      - LOG_LEVEL=info
+      - JELLYFIN_TYPE=emby
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/jellyseerr:/app/config
+    ports:
+      - 0:5055
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.16
+    depends_on:
+      - sonarr
+      - radarr
+
+  radarr:
+    image: linuxserver/radarr:latest
+    # container_name: radarr
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/radarr:/config
+      - ./media/video:/media/video
+    ports:
+      - 0:7878
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.17
+    depends_on:
+      - jproxy
+      - qbittorrent
+
+  sonarr:
+    image: linuxserver/sonarr:develop
+    # container_name: sonarr
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/sonarr:/config
+      - ./media/video:/media/video
+    ports:
+      - 0:8989
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.18
+    depends_on:
+      - jproxy
+      - qbittorrent
+
+  qbittorrent:
+    image: linuxserver/qbittorrent:latest
+    # container_name: qbittorrent
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - WEBUI_PORT=60219
+    volumes:
+      - ./config/qbittorrent:/config
+      - ./media/video:/media/video
+    ports:
+      - 0:60219
+      - 0:6881
+      - 0:6881/udp
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.19
+
+  chinesesubfinder:
+    image: allanpk716/chinesesubfinder:latest-lite
+    # container_name: chinesesubfinder
+    restart: unless-stopped
+    volumes:
+      - ./config/chinesesubfinder:/config
+      - ./media/video:/media/video
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - PERMS=true
+      - UMASK=022
+    hostname: chinesesubfinder
+    ports:
+      - 0:19035
+      - 0:19037
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.21
+
+  emby:
+    image: emby/embyserver:latest
+    # container_name: emby
+    restart: unless-stopped
+    environment:
+      - UID=0
+      - GID=0
+      - GIDLIST=0
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/emby:/config
+      - ./media/video:/media/video
+    ports:
+      - 0:8096
+    # networks:
+    #   network:
+    #     ipv4_address: 172.128.2.20

@@ -1,0 +1,12 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electorn main.js"
+  },
+  "license": "",
+  "devDependencies": {
+    "electron": "^17.1.2"
+  }
+}

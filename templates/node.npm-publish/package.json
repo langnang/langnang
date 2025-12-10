@@ -1,0 +1,29 @@
+{
+  "name": "@langnang/npm-publish",
+  "version": "0.0.1",
+  "description": "Template of publish npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "build": "echo \"success\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang-temp/npm-publish.git"
+  },
+  "keywords": [
+    "npm",
+    "publish",
+    "langnang",
+    "template"
+  ],
+  "author": {
+    "name": "langnang",
+    "email": "langnang.chen@outlook.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang-temp/npm-publish/issues"
+  },
+  "homepage": "https://github.com/langnang-temp/npm-publish#readme"
+}

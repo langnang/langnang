@@ -1,0 +1,27 @@
+{
+  "name": "admin/300.composer-package",
+  "autoload": {
+    "psr-4": {
+      "Admin\\300ComposerPackage\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "langnang",
+      "email": "langnang.chen@outlook.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "sebastian/environment": "^5.1",
+    "vlucas/phpdotenv": "^5.5",
+    "symfony/var-dumper": "^5.4",
+    "doctrine/dbal": "^3.3",
+    "wapmorgan/unified-archive": "^1.2"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.9.1",
+    "mockery/mockery": "^1.3.1",
+    "phpunit/phpunit": "^9.5.10"
+  }
+}

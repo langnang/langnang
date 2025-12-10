@@ -1,0 +1,22 @@
+{
+  "name": "@langnang/vuepress-plugin-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang-temp/vuepress-plugin-package.git"
+  },
+  "keywords": [],
+  "author": "Langnang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang-temp/vuepress-plugin-package/issues"
+  },
+  "homepage": "https://github.com/langnang-temp/vuepress-plugin-package#readme"
+}

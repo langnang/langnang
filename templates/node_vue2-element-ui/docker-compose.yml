@@ -1,0 +1,14 @@
+services:
+  node_vue2-element-ui:
+    image: node:14-alpine
+    container_name: vue2-element-ui
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - /app/node_modules # 避免覆盖容器内的node_modules
+    ports:
+      - '58080:8080'
+    environment:
+      - NODE_ENV=development
+    command: sh -c "yarn install && npm run start" # 自动安装依赖并启动
+    network_mode: bridge

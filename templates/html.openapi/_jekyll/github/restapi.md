@@ -1,0 +1,354 @@
+# GitHub REST API
+
+> https://docs.github.com/en/rest
+
+- Actions
+- Activity
+- Apps
+- Billing
+- Branches
+  - Branches
+    - List branches
+      - `https://api.github.com/`
+    - Get a branch
+      - `https://api.github.com/`
+    - Rename a branch
+      - `https://api.github.com/`
+    - Sync a fork branch with the upstream repository
+      - `https://api.github.com/`
+    - Merge a branch
+      - `https://api.github.com/`
+  - Protected branches
+    - Get branch protection
+      - `https://api.github.com/`
+    - Update branch protection
+      - `https://api.github.com/`
+    - Delete branch protection
+      - `https://api.github.com/`
+    - Get admin branch protection
+      - `https://api.github.com/`
+    - Set admin branch protection
+      - `https://api.github.com/`
+    - Delete admin branch protection
+      - `https://api.github.com/`
+    - Get pull request review protection
+      - `https://api.github.com/`
+    - Update pull request review protection
+      - `https://api.github.com/`
+    - Delete pull request review protection
+      - `https://api.github.com/`
+    - Get commit signature protection
+      - `https://api.github.com/`
+    - Create commit signature protection
+      - `https://api.github.com/`
+    - Delete commit signature protection
+      - `https://api.github.com/`
+    - Get status checks protection
+      - `https://api.github.com/`
+    - Update status check protection
+      - `https://api.github.com/`
+    - Remove status check protection
+      - `https://api.github.com/`
+    - Get all status check contexts
+      - `https://api.github.com/`
+    - Add status check contexts
+      - `https://api.github.com/`
+    - Set status check contexts
+      - `https://api.github.com/`
+    - Remove status check contexts
+      - `https://api.github.com/`
+    - Get access restrictions
+      - `https://api.github.com/`
+    - Delete access restrictions
+      - `https://api.github.com/`
+    - Get apps with access to the protected branch
+      - `https://api.github.com/`
+    - Add app access restrictions
+      - `https://api.github.com/`
+    - Set app access restrictions
+      - `https://api.github.com/`
+    - Remove app access restrictions
+      - `https://api.github.com/`
+    - Get teams with access to the protected branch
+      - `https://api.github.com/`
+    - Add team access restrictions
+      - `https://api.github.com/`
+    - Set team access restrictions
+      - `https://api.github.com/`
+    - Remove team access restrictions
+      - `https://api.github.com/`
+    - Get users with access to the protected branch
+      - `https://api.github.com/`
+    - Add user access restrictions
+      - `https://api.github.com/`
+    - Set user access restrictions
+      - `https://api.github.com/`
+    - Remove user access restrictions
+      - `https://api.github.com/`
+- Checks
+- Classroom
+- Code scanning
+- Code security settings
+- Codes of conduct
+- Codespaces
+- Collaborators
+- Commits
+  - Commits
+    - List commits
+      - `https://api.github.com/`
+    - List branches for HEAD commit
+      - `https://api.github.com/`
+    - List pull requests associated with a commit
+      - `https://api.github.com/`
+    - Get a commit
+      - `https://api.github.com/`
+    - Compare two commits
+      - `https://api.github.com/`
+  - Commit comments
+    - About commit comments
+      - `https://api.github.com/`
+    - List commit comments for a repository
+      - `https://api.github.com/`
+    - Get a commit comment
+      - `https://api.github.com/`
+    - Update a commit comment
+      - `https://api.github.com/`
+    - Delete a commit comment
+      - `https://api.github.com/`
+    - List commit comments
+      - `https://api.github.com/`
+    - Create a commit comment
+      - `https://api.github.com/`
+  - Commit statuses
+    - About commit statuses
+      - `https://api.github.com/`
+    - Get the combined status for a specific reference
+      - `https://api.github.com/`
+    - List commit statuses for a reference
+      - `https://api.github.com/`
+    - Create a commit status
+      - `https://api.github.com/`
+- Copilot
+- Dependabot
+- Dependency graph
+- Deploy keys
+- Deployments
+- Emojis
+- Gists
+- Git database
+- Gitignore
+- Interactions
+- Issues
+  - Issues
+    - List issues assigned to the authenticated user
+      - `https://api.github.com/`
+    - List organization issues assigned to the authenticated user
+      - `https://api.github.com/`
+    - List repository issues
+      - `https://api.github.com/`
+    - Create an issue
+      - `https://api.github.com/`
+    - Get an issue
+      - `https://api.github.com/`
+    - Update an issue
+      - `https://api.github.com/`
+    - Lock an issue
+      - `https://api.github.com/`
+    - Unlock an issue
+      - `https://api.github.com/`
+    - List user account issues assigned to the authenticated user
+      - `https://api.github.com/`
+  - Assignees
+    - About issue and pull request assignees
+      - `https://api.github.com/`
+    - List assignees
+      - `https://api.github.com/`
+    - Check if a user can be assigned
+      - `https://api.github.com/`
+    - Add assignees to an issue
+      - `https://api.github.com/`
+    - Remove assignees from an issue
+      - `https://api.github.com/`
+    - Check if a user can be assigned to a issue
+      - `https://api.github.com/`
+  - Comments
+    - About issue and pull request comments
+    - List issue comments for a repository
+    - Get an issue comment
+    - Update an issue comment
+    - Delete an issue comment
+    - List issue comments
+    - Create an issue comment
+  - Events
+    - About events
+    - List issue events for a repository
+    - Get an issue event
+    - List issue events
+  - Labels
+    - About labels
+    - List labels for an issue
+    - Add labels to an issue
+    - Set labels for an issue
+    - Remove all labels from an issue
+    - Remove a label from an issue
+    - List labels for a repository
+    - Create a label
+    - Get a label
+    - Update a label
+    - Delete a label
+    - List labels for issues in a milestone
+  - Milestones
+    - List milestones
+    - Create a milestone
+    - Get a milestone
+    - Update a milestone
+    - Delete a milestone
+  - Timeline
+    - About timeline events
+    - List timeline events for an issue
+- Licenses
+- Markdown
+- Meta
+- Metrics
+- Migrations
+- Organizations
+- Packages
+- Pages
+  - Pages
+    - Get a GitHub Pages site
+    - Create a GitHub Pages site
+    - Update information about a GitHub Pages site
+    - Delete a GitHub Pages site
+    - List GitHub Pages builds
+    - Request a GitHub Pages build
+    - Get latest Pages build
+    - Get GitHub Pages build
+    - Create a GitHub Pages deployment
+    - Get the status of a GitHub Pages deployment
+    - Cancel a GitHub Pages deployment
+    - Get a DNS health check for GitHub Pages
+- Projects (classic)
+- Pull requests
+- Rate limit
+- Reactions
+- Releases
+- Repositories
+  - Autolinks
+    - About repository autolinks
+    - Get all autolinks of a repository
+    - Create an autolink reference for a repository
+    - Get an autolink reference of a repository
+    - Delete an autolink reference from a repository
+  - Contents
+    - Get repository content
+    - Create or update file contents
+    - Delete a file
+    - Get a repository README
+    - Get a repository README for a directory
+    - Download a repository archive (tar)
+    - Download a repository archive (zip)
+  - Custom properties
+    - About custom properties
+    - Get all custom property values for a repository
+    - Create or update custom property values for a repository
+  - Forks
+    - List forks
+    - Create a fork
+  - Repositories
+    - List organization repositories
+      - `https://api.github.com/orgs/ORG/repos`
+    - Create an organization repository
+      - `https://api.github.com/orgs/ORG/repos`
+    - Get a repository
+      - `https://api.github.com/repos/OWNER/REPO`
+    - Update a repository
+      - `https://api.github.com/`
+    - Delete a repository
+      - `https://api.github.com/`
+    - List repository activities
+      - `https://api.github.com/`
+    - Create an attestation
+      - `https://api.github.com/`
+    - List attestations
+      - `https://api.github.com/`
+    - Check if automated security fixes are enabled for a repository
+      - `https://api.github.com/`
+    - Enable automated security fixes
+      - `https://api.github.com/`
+    - Disable automated security fixes
+      - `https://api.github.com/`
+    - List CODEOWNERS errors
+      - `https://api.github.com/`
+    - List repository contributors
+      - `https://api.github.com/`
+    - Create a repository dispatch event
+      - `https://api.github.com/`
+    - List repository languages
+      - `https://api.github.com/`
+    - Check if private vulnerability reporting is enabled for a repository
+      - `https://api.github.com/`
+    - Enable private vulnerability reporting for a repository
+      - `https://api.github.com/`
+    - Disable private vulnerability reporting for a repository
+      - `https://api.github.com/`
+    - List repository tags
+      - `https://api.github.com/`
+    - List repository teams
+      - `https://api.github.com/`
+    - Get all repository topics
+      - `https://api.github.com/`
+    - Replace all repository topics
+      - `https://api.github.com/`
+    - Transfer a repository
+      - `https://api.github.com/`
+    - Check if vulnerability alerts are enabled for a repository
+      - `https://api.github.com/`
+    - Enable vulnerability alerts
+      - `https://api.github.com/`
+    - Disable vulnerability alerts
+      - `https://api.github.com/`
+    - Create a repository using a template
+      - `https://api.github.com/`
+    - List public repositories
+      - `https://api.github.com/`
+    - List repositories for the authenticated user
+      - `https://api.github.com/`
+    - Create a repository for the authenticated user
+      - `https://api.github.com/`
+    - List repositories for a user
+      - `https://api.github.com/`
+  - Rule suites
+    - List repository rule suites
+    - Get a repository rule suite
+  - Rules
+    - Get rules for a branch
+    - Get all repository rulesets
+    - Create a repository ruleset
+    - Get a repository ruleset
+    - Update a repository ruleset
+    - Delete a repository ruleset
+  - Tags
+    - Deprecated - List tag protection states for a repository
+    - Deprecated - Create a tag protection state for a repository
+    - Deprecated - Delete a tag protection state for a repository
+  - Webhooks
+    - About repository webhooks
+    - List repository webhooks
+    - Create a repository webhook
+    - Get a repository webhook
+    - Update a repository webhook
+    - Delete a repository webhook
+    - Get a webhook configuration for a repository
+    - Update a webhook configuration for a repository
+    - List deliveries for a repository webhook
+    - Get a delivery for a repository webhook
+    - Redeliver a delivery for a repository webhook
+    - Ping a repository webhook
+    - Test the push repository webhook
+- Search
+- Secret scanning
+- Security advisories
+- Teams
+- Users
+
+## Reference

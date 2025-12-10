@@ -1,0 +1,212 @@
+name: 🚀 Deploy nodejs directory on push with FTP
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "nodejs/**"
+
+jobs:
+  deploy_vue2_ui:
+    name: 🎉 Deploy vue2-ui to langnang.byethost32.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install && Build
+        run: |
+          cd nodejs/vue2-ui
+          yarn install
+          npm run build
+
+      # - name: Install composer dependencies
+      # run: cd composer/lumen8-modules && composer install
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./nodejs/vue2-ui/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /htdocs/templates/nodejs/vue2-ui/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**
+
+  deploy_vue3_ui:
+    name: 🎉 Deploy vue3-ui to langnang.byethost32.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+
+      - name: Install && Build
+        run: |
+          cd nodejs/vue3-ui
+          yarn install
+          npm run build
+
+      # - name: Install composer dependencies
+      # run: cd composer/lumen8-modules && composer install
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./nodejs/vue3-ui/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /htdocs/templates/nodejs/vue3-ui/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**
+
+  deploy_react18_ui:
+    name: 🎉 Deploy react18-ui to langnang.byethost32.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+
+      - name: Install && Build
+        run: |
+          cd nodejs/react18-ui
+          yarn install
+          npm run build
+
+      # - name: Install composer dependencies
+      # run: cd composer/lumen8-modules && composer install
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./nodejs/react18-ui/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /htdocs/templates/nodejs/react18-ui/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**
+  deploy_vue2_element_admin:
+    name: 🎉 Deploy vue2-element-admin to langnang.byethost32.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+
+      - name: Install && Build
+        run: |
+          cd nodejs/vue2-element-admin
+          yarn install
+          npm run build
+
+      # - name: Install composer dependencies
+      # run: cd composer/lumen8-modules && composer install
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./nodejs/vue2-element-admin/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /htdocs/templates/nodejs/vue2-element-admin/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**
+  deploy_vue2_element_ui:
+    name: 🎉 Deploy vue2-element-ui to langnang.byethost32.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install && Build
+        run: |
+          cd nodejs/vue2-element-ui
+          yarn install
+          npm run build
+
+      # - name: Install composer dependencies
+      # run: cd composer/lumen8-modules && composer install
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./nodejs/vue2-element-ui/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /htdocs/templates/nodejs/vue2-element-ui/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**

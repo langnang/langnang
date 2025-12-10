@@ -1,0 +1,52 @@
+services:
+  node_created:
+    image: node:latest
+    working_dir: /app
+    volumes:
+      - ./node__:/usr/src/app
+    command: npx hexo init new-hexo-app # 自动安装依赖并启动
+  node_vue2-ui:
+    image: node:14-alpine
+    working_dir: /app
+    volumes:
+      - ./node_vue2-ui:/app
+      - /app/node_modules # 避免覆盖容器内的node_modules
+    ports:
+      - "0:8080"
+    command: sh -c "npm install && npm run serve" # 自动安装依赖并启动
+  node_vue2-element-ui:
+    image: node:14-alpine
+    working_dir: /app
+    volumes:
+      - ./node_vue2-element-ui:/app
+      - /app/node_modules # 避免覆盖容器内的node_modules
+    ports:
+      - "0:8080"
+    command: sh -c "npm install && npm run start" # 自动安装依赖并启动
+  node_vue2-element-admin:
+    image: node:14-alpine
+    working_dir: /app
+    volumes:
+      - ./node_vue2-element-admin:/app
+      - /app/node_modules # 避免覆盖容器内的node_modules
+    ports:
+      - "0:9528"
+    command: sh -c "npm install && npm run start" # 自动安装依赖并启动
+  node_vue3-ui:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./node_vue3-ui:/app
+      - /app/node_modules # 避免覆盖容器内的node_modules
+    ports:
+      - "0:5173"
+    command: sh -c "npm install && npm run dev" # 自动安装依赖并启动
+  ruby_jekyll:
+    image: jekyll/jekyll
+    volumes:
+      - ./ruby_jekyll:/srv/jekyll
+      # - jekyll-srv:/srv/jekyll
+      - /usr/local/bundle
+    ports:
+      - "0:4000"
+    command: sh -c "bundle install && jekyll serve --watch --force_polling --verbose --trace"
