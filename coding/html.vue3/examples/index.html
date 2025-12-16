@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script crossorigin="anonymous" src="https://unpkg.com/vue@3.5.25/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="overview">
+      {{RootProps}}
+      <Parent :mes="RootProps" />
+    </div>
+
+    <template id="Parent">
+      {{mes}}
+      <Children :sub="mes+'阿斯顿撒'" />
+    </template>
+
+    <template id="Children">{{sub}}</template>
+  </body>
+  <script>
+    const { createApp, ref, computed, watch, defineComponent } = Vue;
+
+    const Children = defineComponent({
+      template: '#Children',
+      name: 'Children',
+      props: {
+        sub: String
+      },
+      setup(props, context) {
+        console.log('我是子组件', props);
+      }
+    });
+
+    const Parent = defineComponent({
+      template: '#Parent',
+      components: {
+        Children
+      },
+      props: {
+        mes: String
+      },
+      setup(props, context) {
+        console.log('我是父组件', props);
+      }
+    });
+
+    const RootProps = ref('RootProps string');
+
+    const app = createApp({
+      components: { Parent },
+      setup() {
+        return {
+          RootProps
+        };
+      }
+    });
+
+    app.mount('#overview');
+  </script>
+</html>

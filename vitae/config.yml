@@ -1,16 +1,16 @@
 # 基本信息
 baseinfo:
   user_post: 前端开发
-  user_name: 陈朗朗
+  user_name:
   user_addr: 上海市宝山区
   user_mail: langnang.chen@outlook.com
   user_bday: 1995.07
 # 教育背景
 educations:
-  - 2014.09~2018.06
-    江苏科技大学
-    信息管理与信息系统
-    本科
+  - daterange: 2014.09~2018.06
+    school: 江苏科技大学
+    course: 信息管理与信息系统
+    degree: 本科
 # 职业技能
 professional:
   - 熟练 HTML、DIV+CSS 的页面布局，能根据设计图完成页面制作；
@@ -24,6 +24,7 @@ professional:
 # 工作经历
 works:
   - company: 上海复深蓝软件股份有限公司
+    daterange: 2021.04 ~ 至今
   - company: 研华科技(中国)有限公司
   - company: 金舟软件有限责任公司
 # 项目经验

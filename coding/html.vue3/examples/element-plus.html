@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-plus@2.12.0/dist/index.css" />
+
+    <script crossorigin="anonymous" src="https://unpkg.com/vue@3.5.25/dist/vue.global.js"></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/vue-router@4.6.4/dist/vue-router.global.js"></script>
+    <script src="https://unpkg.com/element-plus@2.12.0/dist/index.full.js"></script>
+  </head>
+  <body style="height: 100vh; width: 100vw; overflow: hidden">
+    <div id="overview">
+      <h1>{{WelcomeMessage}}</h1>
+      <router-link to="Home">Go to Home&nbsp;&nbsp;&nbsp;</router-link>
+      <router-link to="TablePage">Go to TablePage</router-link>
+      <router-view></router-view>
+    </div>
+    <template id="TablePage">
+      <div class="common-layout">
+        <el-container>
+          <el-main>
+            <el-table :data="tableData" style="width: 100%">
+              <el-table-column prop="date" label="Date"></el-table-column>
+              <el-table-column prop="name" label="Name"></el-table-column>
+              <el-table-column prop="address" label="Address"></el-table-column>
+            </el-table>
+          </el-main>
+        </el-container>
+      </div>
+    </template>
+    <template id="HomePage">
+      <p style="color: red">我是HomePage</p>
+    </template>
+  </body>
+  <script>
+    const { createApp, ref, computed, watch, defineComponent } = Vue;
+    const { createRouter, createWebHistory, createWebHashHistory } = VueRouter;
+    const WelcomeMessage = ref('Hello Vue App!');
+
+    const tableData = ref([
+      {
+        date: '2016-05-03',
+        name: 'Tom',
+        address: 'No. 189, Grove St, Los Angeles'
+      },
+      {
+        date: '2016-05-02',
+        name: 'Tom',
+        address: 'No. 189, Grove St, Los Angeles'
+      },
+      {
+        date: '2016-05-04',
+        name: 'Tom',
+        address: 'No. 189, Grove St, Los Angeles'
+      },
+      {
+        date: '2016-05-01',
+        name: 'Tom',
+        address: 'No. 189, Grove St, Los Angeles'
+      }
+    ]);
+
+    const TablePage = defineComponent({
+      template: '#TablePage',
+      name: 'TablePage',
+
+      setup(props, context) {
+        console.log('我是TablePage组件', props);
+        return {
+          tableData
+        };
+      }
+    });
+
+    const HomePage = defineComponent({
+      template: '#HomePage',
+      name: 'HomePage',
+      setup(props, context) {
+        console.log('我是TablePage组件', props);
+      }
+    });
+
+    const routes = [
+      { path: '/Home', component: HomePage },
+      { path: '/TablePage', component: TablePage }
+    ];
+    const router = new createRouter({
+      history: createWebHashHistory(),
+      routes
+    });
+
+    const app = createApp({
+      setup() {
+        return {
+          tableData,
+          WelcomeMessage
+        };
+      }
+    });
+    app.use(router);
+    app.use(ElementPlus);
+    app.mount('#overview');
+  </script>
+</html>
