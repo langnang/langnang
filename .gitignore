@@ -7,5 +7,7 @@
 **/.temp
 **/.temp *
 **/.cache
+**/*.zip
+**/*.rar
 **/vendor
 **/node_modules

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考试题库练习系统</title>
+    <script src="css/tailwindcss.min.js"></script>
+    <script src="js/xlsx.full.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">考试题库练习系统</h1>
+        
+        <!-- 功能按钮区域 -->
+        <div class="flex flex-wrap gap-3 mb-8 justify-center">
+            <button id="importBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg min-w-[100px]">
+                导入题库
+            </button>
+            <button id="exportBtn" class="bg-green-500 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg min-w-[100px]">
+                导出题库
+            </button>
+            <button id="templateBtn" class="bg-yellow-500 hover:bg-yellow-700 text-white font-medium py-2 px-4 rounded-lg min-w-[100px]">
+                导出模板
+            </button>
+            <button id="resetBtn" class="bg-red-500 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg min-w-[100px]">
+                重置题库
+            </button>
+        </div>
+        
+        <!-- 已导入题库信息和题目类型选择 -->
+        <div class="flex flex-col md:flex-row gap-6 mb-6">
+            <!-- 已导入题库信息 -->
+            <div id="importedFileInfo" class="flex-1 hidden">
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 h-full">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <span class="text-blue-700 font-medium">已导入题库: </span>
+                        <span id="fileName" class="ml-2 text-blue-900 font-semibold"></span>
+                    </div>
+                    <div class="mt-2 text-right">
+                        <span class="text-xs text-blue-500 bg-blue-100 px-2 py-1 rounded">题库数量: <span id="questionCount">0</span> 题</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 题目类型选择 -->
+            <div id="questionTypeFilter" class="flex-1 hidden">
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 h-full">
+                    <h3 class="text-lg font-medium text-gray-800 mb-3">选择题目类型</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="questionType" value="单选题" class="rounded text-indigo-600 focus:ring-indigo-500">
+                            <span class="ml-2 text-gray-700">单选题</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="questionType" value="多选题" class="rounded text-indigo-600 focus:ring-indigo-500">
+                            <span class="ml-2 text-gray-700">多选题</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="questionType" value="判断题" class="rounded text-indigo-600 focus:ring-indigo-500">
+                            <span class="ml-2 text-gray-700">判断题</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="questionType" value="填空题" class="rounded text-indigo-600 focus:ring-indigo-500">
+                            <span class="ml-2 text-gray-700">填空题</span>
+                        </label>
+                        <button id="selectAllTypes" class="ml-4 text-sm text-indigo-600 hover:text-indigo-800 font-medium">全选</button>
+                        <button id="clearAllTypes" class="text-sm text-gray-600 hover:text-gray-800 font-medium">清空</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 模式选择 -->
+        <div class="flex flex-wrap gap-3 mb-8 justify-center items-center">
+            <div class="flex flex-col items-center">
+                <button id="practiceBtn" class="bg-purple-500 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg min-w-[120px]">
+                    练习模式
+                </button>
+                <div id="practiceModeIndicator" class="w-24 h-1 bg-purple-500 mt-1 hidden"></div>
+            </div>
+            <div class="flex flex-col items-center">
+                <button id="examBtn" class="bg-indigo-500 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg min-w-[120px]">
+                    考试模式
+                </button>
+                <div id="examModeIndicator" class="w-24 h-1 bg-indigo-500 mt-1 hidden"></div>
+            </div>
+            <div class="flex flex-col items-center">
+                <button id="wrongQuestionsBtn" class="bg-red-500 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg min-w-[120px]">
+                    查看错题集
+                </button>
+                <div id="wrongQuestionsModeIndicator" class="w-24 h-1 bg-red-500 mt-1 hidden"></div>
+            </div>
+            <div class="flex items-center ml-2">
+                <span class="mr-3 text-sm font-medium text-gray-700">显示答案</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="toggleAnswerDisplay" class="hidden">
+                    <label for="toggleAnswerDisplay" class="cursor-pointer flex items-center w-12 h-6 bg-gray-300 rounded-full transition duration-300 ease-in-out">
+                        <span class="toggle-slider bg-white w-5 h-5 rounded-full shadow-md transform transition duration-300 ease-in-out ml-0.5"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex items-center ml-4">
+                <span class="mr-3 text-sm font-medium text-gray-700">答题后显示</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="toggleShowAfterAnswer" class="hidden">
+                    <label for="toggleShowAfterAnswer" class="cursor-pointer flex items-center w-12 h-6 bg-gray-300 rounded-full transition duration-300 ease-in-out">
+                        <span class="toggle-slider bg-white w-5 h-5 rounded-full shadow-md transform transition duration-300 ease-in-out ml-0.5"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex items-center ml-4">
+                <span class="mr-3 text-sm font-medium text-gray-700">仅未做题和错题</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="toggleUnansweredAndWrong" class="hidden">
+                    <label for="toggleUnansweredAndWrong" class="cursor-pointer flex items-center w-12 h-6 bg-gray-300 rounded-full transition duration-300 ease-in-out">
+                        <span class="toggle-slider bg-white w-5 h-5 rounded-full shadow-md transform transition duration-300 ease-in-out ml-0.5"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 题目显示区域 -->
+        <div id="questionArea" class="bg-white rounded-lg shadow-md p-6 mb-8 hidden">
+            <div class="flex flex-col md:flex-row gap-6">
+                <!-- 左侧主要内容区 -->
+                <div class="w-full md:w-4/5 pr-6 border-r border-gray-200">
+                    <div class="mb-4 flex items-center">
+                        <span id="questionTypeIcon" class="inline-block w-6 h-6 rounded-full mr-2 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </span>
+                        <span id="questionType" class="inline-block rounded-full px-3 py-1 text-sm font-semibold mr-2"></span>
+                        <span id="questionIndex" class="text-gray-600"></span>
+                    </div>
+                    <h3 id="questionStem" class="text-xl font-semibold mb-4"></h3>
+                    <div id="optionsContainer" class="mb-4"></div>
+                    <div id="answerSection" class="hidden mt-4 pt-4 border-t">
+                        <p class="font-semibold">正确答案: <span id="correctAnswer" class="text-green-600"></span></p>
+                        <p class="mt-2"><span class="font-semibold">解析:</span> <span id="analysis"></span></p>
+                    </div>
+                    <div class="flex justify-center gap-4 mt-6">
+                        <button id="prevQuestion" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-4 rounded-lg min-w-[80px]">
+                            上一题
+                        </button>
+                        <button id="checkAnswer" class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg min-w-[100px]">
+                            查看答案
+                        </button>
+                        <button id="nextQuestion" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-4 rounded-lg min-w-[80px]">
+                            下一题
+                        </button>
+                        <button id="finishExamEarly" class="bg-red-500 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg min-w-[100px] hidden">
+                            结束考试
+                        </button>
+                    </div>
+                </div>
+                <!-- 右侧题目进度区 -->
+                <div class="w-full md:w-1/5 pl-6">
+                    <div id="questionProgressIndicator" class="">
+                        <h4 class="text-lg font-medium mb-3">题目进度:</h4>
+                        <div id="questionBoxes" class="grid grid-cols-10 gap-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 考试结果区域 -->
+        <div id="examResultArea" class="bg-white rounded-lg shadow-md p-6 mb-8 hidden">
+            <h2 class="text-2xl font-bold mb-4">考试结果</h2>
+            <p class="text-xl mb-4">总题数: <span id="totalQuestions"></span> | 正确题数: <span id="correctCount"></span> | 正确率: <span id="accuracyRate"></span>%</p>
+            <div class="text-center mt-6">
+                <button id="viewExamWrongQuestions" class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg mr-4 hidden">
+                    查看错题
+                </button>
+                <button id="finishExam" class="bg-green-500 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-lg">
+                    结束考试
+                </button>
+
+
+
+
+
+                
+                
+            </div>
+        </div>
+        
+        <!-- 文件上传隐藏输入框 -->
+        <input type="file" id="fileInput" accept=".xlsx,.xls" class="hidden">
+    </div>
+    
+    <!-- 错题集模态框 -->
+    <div id="wrongQuestionsModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-4xl max-h-screen overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">错题集</h2>
+                    <div class="flex items-center space-x-4">
+                        <button id="deleteAllWrongQuestionsBtn" class="bg-red-500 hover:bg-red-700 text-white font-medium py-1 px-3 rounded-lg text-sm hidden">
+                            全部删除
+                        </button>
+                        <button id="exportWrongQuestionsBtn" class="bg-green-500 hover:bg-green-700 text-white font-medium py-1 px-3 rounded-lg text-sm hidden">
+                            导出Excel
+                        </button>
+                        <button id="redoWrongQuestionsBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-medium py-1 px-3 rounded-lg text-sm hidden">
+                            重做错题
+                        </button>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" id="autoRemoveToggle" class="rounded" checked>
+                            <span class="ml-2">作对3次后自动删除</span>
+                        </label>
+                    </div>
+                    <button id="closeWrongQuestionsModal" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="wrongQuestionsContainer" class="mt-4">
+                    <p class="text-center text-gray-500">暂无错题</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 分值设置模态框 -->
+    <div id="scoreSettingModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md max-h-screen overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">分值设置</h2>
+                    <button id="closeScoreSettingModal" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="scoreSettingContainer" class="mt-4">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <label class="text-gray-700 font-medium">单选题:</label>
+                            <input type="number" id="singleChoiceScore" min="0" value="1" class="w-20 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span class="text-gray-500 ml-2">分</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <label class="text-gray-700 font-medium">多选题:</label>
+                            <input type="number" id="multipleChoiceScore" min="0" value="2" class="w-20 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span class="text-gray-500 ml-2">分</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <label class="text-gray-700 font-medium">判断题:</label>
+                            <input type="number" id="trueFalseScore" min="0" value="1" class="w-20 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span class="text-gray-500 ml-2">分</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <label class="text-gray-700 font-medium">填空题:</label>
+                            <input type="number" id="fillBlankScore" min="0" value="2" class="w-20 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span class="text-gray-500 ml-2">分</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-end space-x-3">
+                        <button id="cancelScoreSetting" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300">取消</button>
+                        <button id="saveScoreSetting" class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 考试错题模态框 -->
+    <div id="examWrongQuestionsModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-4xl max-h-screen overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">本次考试错题</h2>
+                    <button id="closeExamWrongQuestionsModal" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="examWrongQuestionsContainer" class="mt-4">
+                    <p class="text-center text-gray-500">暂无错题</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 考试设置模态框 -->
+    <div id="examSettingModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-2xl max-h-screen overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">考试设置</h2>
+                    <button id="closeExamSettingModal" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="examSettingContainer" class="mt-4">
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-medium mb-2">总分:</label>
+                        <div class="flex items-center">
+                            <input type="number" id="totalScore" min="1" value="100" class="w-2/5 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <div id="selectedTotalScore" class="ml-4 text-red-500 font-medium"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold mb-3">题目类型及数量:</h3>
+                        <div id="questionTypeSettings" class="space-y-3">
+                            <!-- 题目类型设置项将在这里动态生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 flex justify-end space-x-3">
+                        <button id="cancelExamSetting" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300">取消</button>
+                        <button id="startExamWithSettings" class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600">开始考试</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/Quiz.js"></script>
+</body>
+</html>
