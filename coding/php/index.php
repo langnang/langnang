@@ -16,6 +16,11 @@ echo phpversion();
 <body>
   <h2>Classes</h2>
   <h2>Helpers</h2>
+  <h2>Practices</h2>
+  <ul>
+    <li><a href="./practices/homer/">Homer</a></li>
+  </ul>
+  <h2>Projects</h2>
   <h2>Scripts</h2>
   <h2>Units</h2>
   <ul>

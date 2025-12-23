@@ -7,8 +7,8 @@ if (!function_exists('request')) {
     var_dump($opts);
   }
 }
-if (!function_exists('get')) {
-  function get($url, $opts = [])
+if (!function_exists('request_get')) {
+  function request_get($url, $opts = [])
   {
     $headers = [
       'Content-Type' => 'application/json'
@@ -28,11 +28,23 @@ if (!function_exists('get')) {
     return $return;
   }
 }
-if (!function_exists('post')) {
-  function post($opts) {}
+if (!function_exists('request_post')) {
+  function request_post($opts) {}
 }
-if (!function_exists('put')) {
-  function put($opts) {}
+if (!function_exists('request_put')) {
+  function request_put($opts) {}
+}
+if (!function_exists('request_delete')) {
+  function request_delete($opts) {}
+}
+if (!function_exists('request_patch')) {
+  function request_patch($opts) {}
+}
+if (!function_exists('request_head')) {
+  function request_head($opts) {}
+}
+if (!function_exists('request_options')) {
+  function request_options($opts) {}
 }
 
 function curlPing($url)

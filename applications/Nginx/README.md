@@ -22,3 +22,7 @@ services:
     restart: always
     network_mode: bridge
 ```
+
+## Configure
+
+### Rewrite
