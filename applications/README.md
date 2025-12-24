@@ -13,6 +13,8 @@ description: 一般指直接运行于操作系统（Windows,MacOS,Linux,Android,
 - [下载之家](https://www.downza.cn/soft/)
 - [MSDN](https://msdn.itellyou.cn/)
 
+- Postman
+
 ## 操作系统
 
 | Name                | Docker/Linux/Win/Mac/ | Android/iPhone |
@@ -253,7 +255,8 @@ description: 一般指直接运行于操作系统（Windows,MacOS,Linux,Android,
 - Kali: 渗透测试工具包
 - Microsoft Office: 办公软件套装
 - nodepad++: 代码编辑器
-- Postman: 接口测试工具
+- ~~Postman: 接口测试工具~~
+  - 自动安装至 C 盘，无法手动选择
 - ProcessOn: 专业在线作图工具
   - <https://www.processon.com/>
 - R-Studio: 文件数据恢复软件

@@ -2,8 +2,9 @@
 
 class Request
 {
-    function get() {}
-    function post() {}
-    function put() {}
-    function option() {}
+  function get() {}
+  function post() {}
+  function put() {}
+  function option() {}
+  function delete() {}
 }
