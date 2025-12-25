@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 必须的 meta 标签 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Games</title>
+
+  <link rel="stylesheet" href="./lib/normalize.css@8.0.1/normalize.css">
+
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="./lib/bootstrap@4.6.2/bootstrap.min.css" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="./assets/app/css/app.css">
+
+  <style>
+    #layout-main .col .card,
+    #layout-main .col-3 .card {
+      padding-top: 100%;
+
+    }
+
+    #layout-main .col-6 .card {
+      padding-top: calc(50% - .25rem);
+    }
+
+    .card>.progress {
+      padding-top: 100%;
+      margin-top: calc(-100% - 2px);
+      border: 1px solid #e9ecef;
+    }
+
+    .card>.progress>.progress-bar {
+      padding-top: 100%;
+      margin-top: calc(-100% - 2px);
+    }
+
+    .pt-100pct {
+      padding-top: 100%;
+    }
+
+    .pt-50pct {
+      padding-top: calc(50% - .25rem) !important;
+    }
+
+    .pt-200pct {
+      padding-top: calc(200% + .25rem) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid" id="app">
+
+    {{> layoutHeader}}
+
+    <main class="container" id="layout-main">
+      <div class="row justify-content-center">
+        <div class="col-5">
+
+          <div class="row row-cols-4">
+            {{#each map }}
+            <div class="col-{{this.0}} p-1">
+              <div class="card">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+            <div class="col-6 p-1">
+              <div class="card">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col p-1">
+              <div class="card pt-200pct"></div>
+            </div>
+            <div class="col p-1">
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
+            <div class="col p-1">
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
+            <div class="col p-1">
+              <div class="card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {{> layoutFooter}}
+
+  </div>
+  <!-- JavaScript 文件是可选的。从以下两种建议中选择一个即可！ -->
+
+  <!-- 选项 1：jQuery 和 Bootstrap 集成包（集成了 Popper） -->
+  <script src="./lib/jquery@3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="./lib/bootstrap@4.6.2/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <!-- 选项 2：Popper 和 Bootstrap 的 JS 插件各自独立 -->
+  <!--
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    -->
+  <script src="./lib/holderjs@2.9.9/holder.min.js"></script>
+
+  <script src="./lib/handlebars@4.7.8/handlebars.min.js"></script>
+
+  <script src="./assets/app/js/app.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      render({
+        title: "地下城 | Games",
+        map: [[3, 1], [3, 1], [3, 1], [3, 1], [3, 1], [3, 1], [3, 1],],
+        paginator: [
+          { title: "2048", subtitle: "subtitle", description: "...", url: "./2048.html" },
+          { title: "井字棋", subtitle: "subtitle", description: "...", url: "./tictactoe.html" },
+          { title: "推箱子", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "俄罗斯方块", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "数独", subtitle: "subtitle", description: "...", url: "./sudoku.html" },
+          { title: "来找茬", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "谁是卧底", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "小黑屋", subtitle: "A Dark Room", description: "...", url: "./adarkroom.html" },
+          { title: "迷宫", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "沙盒", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "贪吃蛇", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "坦克大战", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "斗地主", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "五子棋", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "连连看", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "消消乐", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "扫雷", subtitle: "subtitle", description: "...", url: "#" },
+          { title: "象棋", subtitle: "subtitle", description: "...", url: "#" },
+        ],
+        styles: [],
+        scripts: [],
+        dependencies: [
+          { title: "animate.css@4.1.1", url: "#" },
+          { title: "animejs@3.2.2", url: "#" },
+          { title: "bootstrap@4.6.2", url: "#" },
+          { title: "handlebars@4.7.8", url: "#" },
+          { title: "holderjs@2.9.9", url: "#" },
+          { title: "jquery@3.7.1", url: "#" },
+          { title: "lazyload@2.0.0-rc.2", url: "#" },
+          { title: "lodash@4.17.21", url: "#" },
+          { title: "moment@2.30.1", url: "#" },
+          { title: "normalize.css@8.0.1", url: "#" },
+          { title: "perfect-scrollbar@1.5.5", url: "#" },
+        ],
+        references: [
+        ],
+      });
+    })
+  </script>
+</body>
+
+</html>

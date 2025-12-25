@@ -1,0 +1,272 @@
+# Faker
+
+[![Packagist Downloads](https://img.shields.io/packagist/dm/FakerPHP/Faker)](https://packagist.org/packages/fakerphp/faker)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/FakerPHP/Faker/Continuous%20Integration/main)](https://github.com/FakerPHP/Faker/actions)
+
+Faker is a PHP library that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.
+
+It's heavily inspired by Perl's [Data::Faker](https://metacpan.org/pod/Data::Faker), and by Ruby's [Faker](https://rubygems.org/gems/faker).
+
+## Installation
+
+Faker requires PHP >= 7.1.
+
+```shell
+composer require fakerphp/faker
+```
+
+## Basic Usage
+
+### Autoloading
+
+Faker supports both `PSR-0` as `PSR-4` autoloaders.
+
+```php
+// when installed via composer
+require_once 'vendor/autoload.php';
+```
+
+You can also load `Fakers` shipped `PSR-0` autoloader
+
+```php
+// load Faker autoloader
+require_once '/path/to/Faker/src/autoload.php';
+```
+
+*alternatively, you can use any other PSR-4 compliant autoloader*
+
+### Create fake data
+
+Use `Faker\Factory::create()` to create and initialize a faker generator, which can generate data by calling methods named after the type of data you want.
+
+```php
+require_once 'vendor/autoload.php';
+
+// use the factory to create a Faker\Generator instance
+$faker = Faker\Factory::create();
+// generate data by calling methods
+echo $faker->name();
+// 'Vince Sporer'
+echo $faker->email();
+// 'walter.sophia@hotmail.com'
+echo $faker->text();
+// 'Numquam ut mollitia at consequuntur inventore dolorem.'
+```
+
+Each call to `$faker->name()` yields a different (random) result. This is because Faker uses `__call()` magic, and forwards `Faker\Generator->$method()` calls to `Faker\Generator->format($method, $attributes)`.
+
+```php
+for ($i = 0; $i < 3; $i++) {
+    echo $faker->name() . "\n";
+}
+
+// 'Cyrus Boyle'
+// 'Alena Cummerata'
+// 'Orlo Bergstrom'
+```
+
+## Modifiers
+
+Faker provides three special providers, `unique()`, `optional()`, and `valid()`, to be called before any provider.
+
+```php
+// unique() forces providers to return unique values
+$values = [];
+for ($i = 0; $i < 10; $i++) {
+    // get a random digit, but always a new one, to avoid duplicates
+    $values []= $faker->unique()->randomDigit();
+}
+print_r($values); // [4, 1, 8, 5, 0, 2, 6, 9, 7, 3]
+
+// providers with a limited range will throw an exception when no new unique value can be generated
+$values = [];
+try {
+    for ($i = 0; $i < 10; $i++) {
+        $values []= $faker->unique()->randomDigitNotNull();
+    }
+} catch (\OverflowException $e) {
+    echo "There are only 9 unique digits not null, Faker can't generate 10 of them!";
+}
+
+// you can reset the unique modifier for all providers by passing true as first argument
+$faker->unique($reset = true)->randomDigitNotNull(); // will not throw OverflowException since unique() was reset
+// tip: unique() keeps one array of values per provider
+
+// optional() sometimes bypasses the provider to return a default value instead (which defaults to NULL)
+$values = [];
+for ($i = 0; $i < 10; $i++) {
+    // get a random digit, but also null sometimes
+    $values []= $faker->optional()->randomDigit();
+}
+print_r($values); // [1, 4, null, 9, 5, null, null, 4, 6, null]
+
+// optional() accepts a weight argument to specify the probability of receiving the default value.
+// 0 will always return the default value; 1.0 will always return the provider. Default weight is 0.5 (50% chance).
+// Please note that the weight can be provided as float (0 / 1.0) or int (0 / 100)
+
+// As float
+$faker->optional($weight = 0.1)->randomDigit(); // 90% chance of NULL
+$faker->optional($weight = 0.9)->randomDigit(); // 10% chance of NULL
+
+// As int
+$faker->optional($weight = 10)->randomDigit; // 90% chance of NULL
+$faker->optional($weight = 100)->randomDigit; // 0% chance of NULL
+
+// optional() accepts a default argument to specify the default value to return.
+// Defaults to NULL.
+$faker->optional($weight = 0.5, $default = false)->randomDigit(); // 50% chance of FALSE
+$faker->optional($weight = 0.9, $default = 'abc')->word(); // 10% chance of 'abc'
+
+// valid() only accepts valid values according to the passed validator functions
+$values = [];
+$evenValidator = function($digit) {
+	return $digit % 2 === 0;
+};
+for ($i = 0; $i < 10; $i++) {
+	$values []= $faker->valid($evenValidator)->randomDigit();
+}
+print_r($values); // [0, 4, 8, 4, 2, 6, 0, 8, 8, 6]
+
+// just like unique(), valid() throws an overflow exception when it can't generate a valid value
+$values = [];
+try {
+    $faker->valid($evenValidator)->randomElement([1, 3, 5, 7, 9]);
+} catch (\OverflowException $e) {
+    echo "Can't pick an even number in that set!";
+}
+```
+
+If you would like to use a modifier with a value not generated by Faker, use the `passthrough()` method. `passthrough()`
+simply returns whatever value it was given.
+
+```php
+$faker->optional()->passthrough(mt_rand(5, 15));
+```
+
+## Localization
+
+`Faker\Factory` can take a locale as an argument, to return localized data. If no localized provider is found, the
+factory falls back to the default locale (en_US).
+
+```php
+// create a French faker
+$faker = Faker\Factory::create('fr_FR');
+for ($i = 0; $i < 3; $i++) {
+    echo $faker->name() . "\n";
+}
+
+// Luce du Coulon
+// Auguste Dupont
+// Roger Le Voisin
+```
+
+You can check available Faker locales in the source code, [under the `Provider` directory](https://github.com/FakerPHP/Faker/tree/main/src/Faker/Provider). The localization of Faker is an ongoing process, for which we need your help. Don't hesitate to create localized providers to your own locale and submit a PR!
+
+## Seeding the Generator
+
+You may want to always get the same generated data - for instance when using Faker for unit testing purposes. The generator offers a `seed()` method, which seeds the random number generator. Calling the same script twice with the same seed produces the same results.
+
+```php
+$faker = Faker\Factory::create();
+$faker->seed(1234);
+
+echo $faker->name(); // 'Jess Mraz I';
+```
+
+???+ tip
+
+    DateTime formatters won't reproduce the same fake data if you don't fix the `$max` value:
+
+    ```php
+    // even when seeded, this line will return different results because $max varies
+    $faker->dateTime(); // equivalent to $faker->dateTime($max = 'now')
+    // make sure you fix the $max parameter
+    $faker->dateTime('2014-02-25 08:37:17'); // will return always the same date when seeded
+    ```
+
+???+ tip
+
+    Formatters won't reproduce the same fake data if you use the `rand()` php function. Use `$faker` or `mt_rand()` instead:
+
+    ```php
+    // bad
+    $faker->realText(rand(10, 20));
+    // good
+    $faker->realText($faker->numberBetween(10, 20));
+    ```
+
+## Faker Internals: Understanding Providers
+
+A `Faker\Generator` alone can't do much generation. It needs `Faker\Provider` objects to delegate the data generation to them. `Faker\Factory::create()` actually creates a `Faker\Generator` bundled with the default providers. Here is what happens under the hood:
+
+```php
+$faker = new Faker\Generator();
+$faker->addProvider(new Faker\Provider\en_US\Person($faker));
+$faker->addProvider(new Faker\Provider\en_US\Address($faker));
+$faker->addProvider(new Faker\Provider\en_US\PhoneNumber($faker));
+$faker->addProvider(new Faker\Provider\en_US\Company($faker));
+$faker->addProvider(new Faker\Provider\Lorem($faker));
+$faker->addProvider(new Faker\Provider\Internet($faker));
+```
+
+Whenever you try to access a property on the `$faker` object, the generator looks for a method with the same name in all the providers attached to it. For instance, calling `$faker->name` triggers a call to `Faker\Provider\Person::name()`. And since Faker starts with the last provider, you can easily override existing formatters: just add a provider containing methods named after the formatters you want to override.
+
+That means that you can easily add your own providers to a `Faker\Generator` instance. A provider is usually a class extending `\Faker\Provider\Base`. This parent class allows you to use methods like `lexify()` or `randomNumber()`; it also gives you access to formatters of other providers, through the protected `$generator` property. The new formatters are the public methods of the provider class.
+
+Here is an example provider for populating Book data:
+
+```php
+namespace Faker\Provider;
+
+class Book extends \Faker\Provider\Base
+{
+  public function title($nbWords = 5)
+  {
+    $sentence = $this->generator->sentence($nbWords);
+    return substr($sentence, 0, strlen($sentence) - 1);
+  }
+
+  public function ISBN()
+  {
+    return $this->generator->ean13();
+  }
+}
+```
+
+To register this provider, just add a new instance of `\Faker\Provider\Book` to an existing generator:
+
+```php
+$faker->addProvider(new \Faker\Provider\Book($faker));
+```
+
+Now you can use the two new formatters like any other Faker formatter:
+
+```php
+$book = new Book();
+$book->setTitle($faker->title());
+$book->setISBN($faker->ISBN());
+$book->setSummary($faker->text());
+$book->setPrice($faker->randomNumber(2));
+```
+
+???+ tip
+
+    A provider can also be a Plain Old PHP Object. In that case, all the public methods of the provider become available to the generator.
+
+## Language specific formatters
+
+Supported locales can be found under the "Locales" header on the left.
+
+### Misnamed locales
+
+| Current name | Correct name |
+| - | - |
+| `at_AT` | `de_AT` |
+| `zh_CN` | `zh_Hans_CN` |
+| `zh_TW` | `zh_Hant_TW` |
+
+Source: <https://www.localeplanet.com/icu/>
+
+## License
+
+Faker is released under the MIT License. See the bundled LICENSE file for details.

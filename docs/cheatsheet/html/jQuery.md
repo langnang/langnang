@@ -1,0 +1,4 @@
+---
+title: jQuery
+layout: cheatsheet
+---

@@ -1,0 +1,5 @@
+*
+!.gitignore
+!Gemfile
+!Gemfile.lock
+!data/*
