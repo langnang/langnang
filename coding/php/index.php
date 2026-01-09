@@ -29,6 +29,7 @@
     <ul>
       <li><a href="./utils/cpolar.php">Cpolar</a></li>
       <li><a href="./utils/frps.php">FrpS</a></li>
+      <li><a href="./utils/ping.php">Ping</a></li>
       <li><a href="./utils/postman.php">Postman</a></li>
     </ul>
     <footer class="fixed-bottom">
