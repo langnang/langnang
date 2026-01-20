@@ -42,42 +42,13 @@ description: 一般指直接运行于操作系统（Windows,MacOS,Linux,Android,
 
 #### 硬件检测
 
-- ⭐ DiskGenius: 硬盘分区及数据恢复软件
-- MSI Afterburner: 微星小飞机，一款倍受欢迎的显卡超频与监测软件
-- CPU-Z
-- GPU-Z
-- HWiNFO64
-- AIDA64
-
 #### U 盘工具
-
-- 微 PE：支持灵活部署和制作可启动 U 盘，兼容多种操作系统。
-- ⭐ Rufus：用于格式化和创建 USB 启动盘，支持多种引导 ISO 文件。
-- Ventoy：开源工具，允许用户将 ISO 文件直接拷贝到 U 盘，无需反复格式化。
-- USM 魔术师、老毛桃、大白菜等其他工具也被推荐用于制作启动盘。
 
 ### 网络应用
 
-- AnyDesk: 快速远程桌面
-- Wireshark:
-- Charles: 网络抓包工具
-
 #### 服务器区
 
-- Nginx
-- Apache
-- Putty
-- phpstudy
-- phpts
-- XAMPP
-
 #### 网页浏览
-
-- Google Chrome: 网络浏览器
-- Firefox
-- 世界之窗
-- Mozilla Firefox: 网络浏览器
-- Microsoft Edge: 网络浏览器
 
 #### 聊天工具
 
@@ -232,49 +203,6 @@ description: 一般指直接运行于操作系统（Windows,MacOS,Linux,Android,
   - <https://www.typora.net/>
 
 #### 其它软件
-
-- WinMerge
-- WinCHM
-- WinPcap
-- Attribute Changer
-- WinMerge: 文件比较/合并工具
-- ⭐ Geek Uninstaller: 专业卸载软件
-- Adobe XD:
-- Apache: Web 服务器软件
-- Apifox: 接口测试工具
-  - <https://apifox.com/>
-- Attribute Changer: 文件属性修改工具
-- Baidu Naotu: 百度脑图
-- Bandizip: 压缩软件
-- 7-ZIP:
-- Blumind: 思维导图工具
-- ClickCharts: 图表流程图软件
-- Cloudflare
-- GitHub Desktop
-- Jenkins: 持续集成工具
-- Kali: 渗透测试工具包
-- Microsoft Office: 办公软件套装
-- nodepad++: 代码编辑器
-- ~~Postman: 接口测试工具~~
-  - 自动安装至 C 盘，无法手动选择
-- ProcessOn: 专业在线作图工具
-  - <https://www.processon.com/>
-- R-Studio: 文件数据恢复软件
-- Recuva: 文件数据恢复工具
-- Shadowsocks: 网络代理工具
-- Sublime Text: 代码编辑器
-- SumatraPDF: PDF 阅读器
-- Supabase:
-- SVN: 版本控制系统
-  - TortoiseSVN:
-- ⭐ Teleport Ultra: 网站离线浏览软件
-- Thunder Network: 资源下载工具
-- Unity: 游戏制作软件
-- VeraCrypt: 磁盘加密软件
-- WinPcap: 公共的网络访问系统
-  - <https://www.winpcap.org/>
-- Wireshark: 网络封包分析软件
-- Worktile
 
 ## Android
 

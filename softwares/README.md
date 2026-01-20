@@ -16,70 +16,20 @@
 
 ### 交流博客 Blogs
 
-| Name             | language/framework | Docker/Linux/Windows | Proxy |
-| ---------------- | :----------------: | :------------------: | :---: |
-| php.typecho-v1.2 |                    |                      |       |
-| php.wordpress-v6 |                    |                      |       |
-| WordPress        |                    |                      |       |
-| Pubvana          |                    |                      |       |
-| Serendipity      |                    |                      |       |
-| Dotclear         |                    |                      |       |
-| Textpattern      |                    |                      |       |
-| b2evolution      |                    |                      |       |
-| HTMLy            |                    |                      |       |
-| Nibbleblog       |                    |                      |       |
-| Nucleus          |                    |                      |       |
-| Chyrp            |                    |                      |       |
-| FlatPress        |                    |                      |       |
-| PivotX           |                    |                      |       |
-| Leafpub          |                    |                      |       |
-| mediawiki        |                    |                      |       |
-| typecho          |                    |                      |       |
-| wordpress        |                    |                      |       |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
 
 ### 社交论坛 Forums
 
-| Name                   | language/framework | Docker/Linux/Windows | Proxy |
-| ---------------------- | :----------------: | :------------------: | :---: |
-| phpBB                  |                    |                      |       |
-| SMF                    |                    |                      |       |
-| MyBB                   |                    |                      |       |
-| AEF                    |                    |                      |       |
-| Vanilla                |                    |                      |       |
-| PunBB                  |                    |                      |       |
-| bbPress                |                    |                      |       |
-| FluxBB                 |                    |                      |       |
-| XMB                    |                    |                      |       |
-| Phorum                 |                    |                      |       |
-| Flarum                 |                    |                      |       |
-| ElkArte                |                    |                      |       |
-| FUDforum               |                    |                      |       |
-| miniBB                 |                    |                      |       |
-| Carbon Forum           |                    |                      |       |
-| my little forum        |                    |                      |       |
-| TidyBB                 |                    |                      |       |
-| TangoBB                |                    |                      |       |
-| Beehive                |                    |                      |       |
-| Unclassified NewsBoard |                    |                      |       |
-| Flatboard              |                    |                      |       |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
 
 ### 社交网络 Social Networking
 
 > 在线上建立和维护个人和商业关系的活动。
 
-| Name               | language/framework | Docker/Linux/Windows | Proxy |
-| ------------------ | :----------------: | :------------------: | :---: |
-| pH7Builder         |                    |                      |       |
-| Dolphin            |                    |                      |       |
-| Oxwall             |                    |                      |       |
-| Jcow               |                    |                      |       |
-| HumHub             |                    |                      |       |
-| Etano              |                    |                      |       |
-| UNA                |                    |                      |       |
-| Family Connections |                    |                      |       |
-| Hubzilla           |                    |                      |       |
-| GNU social         |                    |                      |       |
-| Elgg               |                    |                      |       |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
 
 ## 即时沟通
 
@@ -99,76 +49,40 @@
 
 ## 云盘挂载 Disk Mounting
 
-| Name       | language/framework | Docker/Linux/Windows | Proxy |
-| ---------- | :----------------: | :------------------: | :---: |
-| php        |                    |                      |       |
-| OneIndex   |                    |                      |       |
-| OneManager |                    |                      |       |
-| alist      |                    |                      |       |
-| cuteone    |                    |                      |       |
-| alist      |                    |                      |       |
-| cuteone    |                    |                      |       |
-| cuteoneP   |                    |                      |       |
-| olaindex   |                    |                      |       |
-| oneindex   |                    |                      |       |
-| oneindexM  |                    |                      |       |
-
-## 知识百科 Wikis
-
-| Name      | language/framework | Docker/Linux/Windows | Proxy |
-| --------- | :----------------: | :------------------: | :---: |
-| DokuWiki  |                    |                      |       |
-| PmWiki    |                    |                      |       |
-| WikkaWiki |                    |                      |       |
-| MediaWiki |                    |                      |       |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
 
 ## 学习教育 Educational
 
-| Name         | language/framework | Docker/Linux/Windows | Proxy |
-| ------------ | :----------------: | :------------------: | :---: |
-| Moodle       |                    |                      |       |
-| Chamilo      |                    |                      |       |
-| RosarioSIS   |                    |                      |       |
-| Claroline    |                    |                      |       |
-| TCExam       |                    |                      |       |
-| Gibbon       |                    |                      |       |
-| Omeka        |                    |                      |       |
-| ATutor       |                    |                      |       |
-| Forma LMS    |                    |                      |       |
-| Savsoft Quiz |                    |                      |       |
-| openSIS      |                    |                      |       |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
 
-## 试题问卷 Exam
+### 知识百科 Wikis
+
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
+
+### 试题问卷 Exam
 
 > 民意调研 Polls and Analytics
 
 | Name                        | language/framework | Docker/Linux/Windows | Proxy |
 | --------------------------- | :----------------: | :------------------: | :---: |
 | [SurveyKing](./SurveyKing/) |                    |       ✔️/❔/❔       |  ❌   |
-| aishuati                    |                    |                      |       |
-| LimeSurvey                  |                    |                      |       |
-| Matomo                      |                    |                      |       |
-| LittlePoll                  |                    |                      |       |
-| Open Web Analytics          |                    |                      |       |
-| Advanced Poll               |                    |                      |       |
-| Simple PHP Poll             |                    |                      |       |
-| EasyPoll                    |                    |                      |       |
-| Logaholic                   |                    |                      |       |
-| CJ Dynamic Poll             |                    |                      |       |
-| Little Software Stats       |                    |                      |       |
-| Framadate                   |                    |                      |       |
 | X-School                    |                    |       ❌/❔/❔       |       |
 | ExamSystem                  |                    |       ❌/❔/❔       |       |
 | EasyExam                    |                    |       ❌/❔/❔       |       |
 | [TCExam](./TCExam/)         |                    |       ✔️/❔/❔       |       |
 | [Answer](./Answer/)         |                    |       ✔️/❔/❔       |  ❌   |
-| LearningSystem              |                    |                      |       |
-| sunlicp/topic               |                    |                      |       |
 | Question2Answer             |                    |       ❔/❔/❔       |       |
 | [Canvas](./Canvas/)         |                    |       ✔️/❔/❔       |       |
 |                             |                    |                      |       |
 
-## 图像画廊 Image Galleries
+## 娱乐放松
+
+> 影音媒体
+
+### 图像画廊 Image Galleries
 
 | Name           | language/framework | Docker/Linux/Windows | Proxy |
 | -------------- | :----------------: | :------------------: | :---: |
@@ -180,10 +94,6 @@
 | Lychee         |                    |                      |       |
 | 4images        |                    |                      |       |
 | iGalerie       |                    |                      |       |
-
-## 娱乐放松
-
-> 影音媒体
 
 ### 视频 Video
 
