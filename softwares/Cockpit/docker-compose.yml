@@ -1,9 +1,9 @@
 services:
-  ~:
-    image:
+  cockpit:
+    image: cockpit/websocket-bridge
     # container_name: software
     ports:
-      - 0:80
+      - 0:9090
     environment:
       - TZ=Asia/Shanghai
     # volumes:

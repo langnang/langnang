@@ -1,13 +1,21 @@
 services:
-  ~:
-    image:
+  baota:
+    image: btpanel/baota:latest
     # container_name: software
     ports:
+      - 0:8888
+      - 0:888
       - 0:80
+      - 0:443
+      - 0:20
+      - 0:21
     environment:
       - TZ=Asia/Shanghai
     # volumes:
-    #   - ./_/:/
+    #   - ./_/wwwroot:/wwwroot
+    #   - ./_/backup:/backup
+    #   - ./_/wwwlogs:/wwwlogs
+    #   - ./_/server:/server
     restart: unless-stopped
     networks:
       - software-network

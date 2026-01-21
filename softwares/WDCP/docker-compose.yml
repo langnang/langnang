@@ -1,6 +1,6 @@
 services:
-  ~:
-    image:
+  wdcp:
+    image: wdcp/wdcp
     # container_name: software
     ports:
       - 0:80

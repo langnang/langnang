@@ -1,9 +1,10 @@
 services:
-  ~:
-    image:
+  phpstudy:
+    image: phpstudy/phpstudy:latest
     # container_name: software
     ports:
       - 0:80
+      - 0:3306
     environment:
       - TZ=Asia/Shanghai
     # volumes:

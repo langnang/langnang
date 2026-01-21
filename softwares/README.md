@@ -548,89 +548,22 @@
 
 ## 管理面板
 
+### Linux 管理面板
+
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
+
 ### Docker 管理面板
 
-| Name                              | language/framework | Docker/Linux/Windows | Proxy |
-| --------------------------------- | :----------------: | :------------------: | :---: |
-| [1Panel](./1Panel/)               |                    |       ✔️/❔/❔       |  ❌   |
-| [DockerCopilot](./DockerCopilot/) |                    |       ✔️/❔/❔       |  ❌   |
-| [DockerUI](./DockerUI/)           |                    |       ✔️/❔/❔       |  ❌   |
-| [Dockge](./Dockge/)               |                    |       ✔️/❔/❔       |  ❌   |
-| [DPanel](./DPanel/)               |                    |       ✔️/❔/❔       |  ❌   |
-| [Portainer](./Portainer/)         |                    |       ✔️/❔/❔       |  ✔️   |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
 
 ### Nginx 管理面板
 
-| Name                                          | language/framework | Docker/Linux/Windows | Proxy |
-| --------------------------------------------- | :----------------: | :------------------: | :---: |
-| NginxWebUI                                    |                    |       ✔️/❔/❔       |  ❌   |
-| NginxUI                                       |                    |       ✔️/❔/❔       |  ❌   |
-| [Nginx Proxy Manager](./Nginx_Proxy_Manager/) |                    |       ✔️/❔/❔       |  ❌   |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
 
 ## 其它 Others
 
-| Name                                        | language/framework | Docker/Linux/Windows | Proxy |
-| ------------------------------------------- | :----------------: | :------------------: | :---: |
-| Audibookshelf: 有声读物和播客服务器         |                    |                      |       |
-| Cat                                         |                    |                      |       |
-| Open WebUI: 基于 ollama 的 AI 工作站        |                    |                      |       |
-| HomeAssistant: HA 智能中枢                  |                    |       ✔️/❔/❔       |  ❌   |
-| TV-Helper: 基于远程 ADB 的安卓 APK 安装工具 |                    |                      |       |
-| Seo Panel                                   |                    |                      |       |
-| SLiMS                                       |                    |                      |       |
-| Open Journal Systems                        |                    |                      |       |
-| Question2Answer                             |                    |                      |       |
-| WeBid                                       |                    |                      |       |
-| Form Tools                                  |                    |                      |       |
-| SPIP                                        |                    |                      |       |
-| GLPI                                        |                    |                      |       |
-| PASTE                                       |                    |                      |       |
-| webtrees                                    |                    |                      |       |
-| Soholaunch                                  |                    |                      |       |
-| wallabag                                    |                    |                      |       |
-| Firefly III                                 |                    |                      |       |
-| PhpGedView                                  |                    |                      |       |
-| InfiniteWP                                  |                    |                      |       |
-| Agora-Project                               |                    |                      |       |
-| EasyAppointments                            |                    |                      |       |
-| Kimai                                       |                    |                      |       |
-| DomainMOD                                   |                    |                      |       |
-| u-Auctions                                  |                    |                      |       |
-| Commentics                                  |                    |                      |       |
-| Fusio                                       |                    |                      |       |
-| TastyIgniter                                |                    |                      |       |
-| XCloner                                     |                    |                      |       |
-| Omeka S                                     |                    |                      |       |
-| LibreHealth EHR                             |                    |                      |       |
-| HuMo-genealogy                              |                    |                      |       |
-| phpDocumentor                               |                    |                      |       |
-| Open Monograph Press                        |                    |                      |       |
-| XMS                                         |                    |                      |       |
-| Unmark                                      |                    |                      |       |
-| Open Preprint Systems                       |                    |                      |       |
-| baszel                                      |                    |                      |       |
-| carbon-forum                                |                    |                      |       |
-| coolify                                     |                    |                      |       |
-| flarum                                      |                    |                      |       |
-| froxlor                                     |                    |                      |       |
-| gitea                                       |                    |                      |       |
-| gitlab                                      |                    |                      |       |
-| iptvnator                                   |                    |                      |       |
-| jenkins                                     |                    |                      |       |
-| jupter                                      |                    |                      |       |
-| lychee                                      |                    |                      |       |
-| mantic                                      |                    |                      |       |
-| mybb                                        |                    |                      |       |
-| nginx                                       |                    |                      |       |
-| nginxwebui                                  |                    |                      |       |
-| pocketMine-MP                               |                    |                      |       |
-| PrestaShop                                  |                    |                      |       |
-| redmine                                     |                    |                      |       |
-| speedtest-x                                 |                    |                      |       |
-| sqlbuddy                                    |                    |                      |       |
-| wallos                                      |                    |                      |       |
-| Nastools: 流媒体影音资源搜索、下载工具      |                    |                      |       |
-| CookieCloud: CK 同步工具                    |                    |                      |       |
-| UpSnap: WOL 工具                            |                    |                      |       |
-| WatchTower: 容器更新工具                    |                    |                      |       |
-| QD: 签到                                    |                    |                      |       |
+| Name | language/framework | Docker/Linux/Windows | Proxy |
+| ---- | :----------------: | :------------------: | :---: |
