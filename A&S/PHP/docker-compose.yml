@@ -1,11 +1,21 @@
 services:
   v7.4.33:
     image: php:7.4.33-fpm
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - ./:/app
     restart: unless-stopped
     networks:
       - software-network
   v8.2:
     image: php:8.2-fpm
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - ./:/app
     restart: unless-stopped
     networks:
       - software-network
