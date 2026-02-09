@@ -7,3 +7,20 @@ services:
     working_dir: /app
     volumes:
       - ./~/app:/app
+  latest:
+    image: node:latest
+    working_dir: /usr/src/app
+    volumes:
+      - ./node-created:/usr/src/app
+    command: npx hexo init new-hexo-app # 自动安装依赖并启动
+  v20:
+    image: node:20-alpine
+    working_dir: /usr/src/app
+    ports:
+      - "0:3000"
+    volumes:
+      # - ./node-20:/usr/src/app
+      - /use/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: sh -c "npm init -y && node index.js" # 自动安装依赖并启动
