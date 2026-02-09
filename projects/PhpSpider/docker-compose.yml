@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  php:
+    build: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "9000:9000" # 将容器的 9000 端口映射到宿主机的 9000 端口
+  webserver:
+    image: nginx:alpine
+    ports:
+      - "8080:80" # 将容器的 80 端口映射到宿主机的 8080 端口
+    volumes:
+      - .:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf # Nginx 配置文件路径，如果有的话

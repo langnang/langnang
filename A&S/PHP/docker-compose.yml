@@ -1,0 +1,14 @@
+services:
+  v7.4.33:
+    image: php:7.4.33-fpm
+    restart: unless-stopped
+    networks:
+      - software-network
+  v8.2:
+    image: php:8.2-fpm
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true
