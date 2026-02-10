@@ -6,8 +6,14 @@
 **/_ *
 **/.temp
 **/.temp *
+**/cache
 **/.cache
 **/*.zip
 **/*.rar
-**/vendor
-**/node_modules
+*/cache
+**/data
+**/lock
+**/log
+**/logs
+**/temp
+

@@ -1,0 +1,27 @@
+services:
+  php-v7.4.33-fpm:
+    build:
+      context: ./../A&S/php
+      dockerfile: Dockerfile.php-7.4.33-fpm
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - ./php.phpspider:/app/php.phpspider
+      - ./../../_configs/phpspider:/app/php.phpspider/configs
+    restart: unless-stopped
+    networks:
+      - software-network
+  php-v8.2-fpm:
+    image: php:8.2-fpm
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - ./:/app
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

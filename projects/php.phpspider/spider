@@ -1,0 +1,69 @@
+<?php
+
+// 引入PATH_DATA
+require_once __DIR__ . '/app/helpers/constants.php';
+
+require_once __DIR__ . '/app/controllers/util.php';
+require_once __DIR__ . '/app/controllers/log.php';
+require_once __DIR__ . '/app/controllers/db.php';
+require_once __DIR__ . '/app/controllers/requests.php';
+require_once __DIR__ . '/app/controllers/selector.php';
+require_once __DIR__ . '/app/controllers/phpspider.php';
+require_once __DIR__ . '/app/controllers/queue.php';
+
+require_once __DIR__ . '/src/helpers.php';
+
+use app\controllers\log;
+use app\controllers\phpspider;
+
+// 设置时区
+date_default_timezone_set("Asia/Shanghai");
+header("Content-Type: text/html; charset=utf-8");
+
+
+$_ENV = parse_ini_file(__DIR__ . '/.env');
+$commandConfig = require_once __DIR__ . '/src/commands.php';
+
+log::$log_show = $_ENV[strtoupper('log_show')] ?? $commandConfig['log_show'] ?? false;
+log::$log_type = $_ENV[strtoupper('log_type')] ?? $commandConfig['log_type'] ?? "error";
+
+log::step("程序加载中...");
+
+// log::step("加载环境: ");
+// log::step($_ENV, 2);
+// var_dump($_ENV);
+// var_dump($argv);
+/**
+ * 爬虫执行文件
+ * start: php -f spider start {$key} {$mode} {$env}
+ * @param command 执行的命令 list info start stop status kill test restart debug
+ * @param id 需要执行的任务
+ * @param mode create | insert | update | replace
+ * @param staus to start | starting | started | running | to pause | paused | to stop | stopping | stopped
+ */
+
+// if (!empty($currentConfig['beforeGetConfig'])) $currentConfig['beforeGetConfig']($commandConfig);
+
+$currentConfig = require_once __DIR__ . '/src/standard.php';
+
+if (!empty($currentConfig['afterGetConfig']))    @call_user_func($currentConfig['afterGetConfig'], $currentConfig, $commandConfig);
+
+require_once __DIR__ . '/src/tables.php';
+
+if (!empty($currentConfig['afterSyncTable']))    @call_user_func($currentConfig['afterSyncTable'], $currentConfig, $commandConfig);
+
+/* Do NOT delete this comment */
+/* 不要删除这段注释 */
+
+$spider = new phpspider($currentConfig);
+
+if (!empty($currentConfig['afterCreateSpider'])) @call_user_func($currentConfig['afterCreateSpider'], $spider, $currentConfig, $commandConfig);
+
+require_once __DIR__ . '/src/methods.php';
+
+if (!empty($currentConfig['beforeStartSpider'])) @call_user_func($currentConfig['afterCreateSpider'], $spider, $currentConfig, $commandConfig);
+
+$spider->start();
+
+
+// php spider start image:meitu131
