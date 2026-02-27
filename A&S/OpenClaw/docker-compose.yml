@@ -1,0 +1,17 @@
+networks:
+  software-network:
+    external: true
+services:
+  openclaw:
+    image: ghcr.io/phioranex/openclaw-docker:latest # 中文版镜像
+    ports:
+      - "0:3000" # 控制台端口。
+      - "0:18789" # 服务通信端口。
+    environment:
+      - CLAUDE_API_KEY=your_api_key_here # 替换为阿里云百炼 API Key。
+    volumes:
+      - openclaw_data:/app/data
+    networks:
+      - software-network
+volumes:
+  openclaw_data:
