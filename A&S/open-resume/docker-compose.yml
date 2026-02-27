@@ -1,5 +1,10 @@
+networks:
+  software-network:
+    external: true
 services:
   open-resume:
     image: peppershade/open-resume:latest
     ports:
       - "0:3000"
+    networks:
+      - software-network
