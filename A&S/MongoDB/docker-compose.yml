@@ -1,0 +1,9 @@
+networks:
+  software-network:
+    external: true
+services:
+  mongo:
+    image: mongo:4.2
+    restart: unless-stopped
+    networks:
+      - software-network

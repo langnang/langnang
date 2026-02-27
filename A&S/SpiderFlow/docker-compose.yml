@@ -1,7 +1,9 @@
+networks:
+  software-network:
+    external: true
 services:
   spider-flow:
     image: wbsu2003/spider-flow
-    container_name: spider-flow
     ports:
       - 0:8088
     environment:
@@ -9,8 +11,6 @@ services:
       - SPRING_DATASOURCE_USERNAME=spider
       - SPRING_DATASOURCE_PASSWORD=YourStrongPassword
       - SPRING_DATASOURCE_URL=jdbc:mysql://spider-db/spiderflow?useSSL=false&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&allowPublicKeyRetrieval=true
-    depends_on:
-      - spider-db
     restart: unless-stopped
     networks:
       - software-network
@@ -33,6 +33,3 @@ services:
     restart: unless-stopped
     networks:
       - software-network
-networks:
-  software-network:
-    external: true
