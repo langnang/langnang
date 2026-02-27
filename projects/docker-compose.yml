@@ -1,18 +1,38 @@
+networks:
+  software-network:
+    external: true
 services:
-  php-v7.4.33-fpm:
-    build:
-      context: ./../A&S/php
-      dockerfile: Dockerfile.php-7.4.33-fpm
+  node-alpine:
+    image: node-alpine
     stdin_open: true # docker run -i
     tty: true # docker run -t
+    ports:
+      - 0:5173
     working_dir: /app
     volumes:
-      - ./php.phpspider:/app/php.phpspider
+      - ./node.vue2-audio-play:/app/node.vue2-audio-play
+      - /app/node.vue2-audio-play/node_modules
+    networks:
+      - software-network
+  php-7.4.33-fpm:
+    image: php-7.4.33-fpm
+    # build:
+    #   context: ./../A&S/php
+    #   dockerfile: Dockerfile.php-7.4.33-fpm
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    ports:
+      - 0:80
+    working_dir: /app
+    volumes:
+      - ./:/app
+      # - ./php.phpspider:/app/php.phpspider
       - ./../../_configs/phpspider:/app/php.phpspider/configs
+    command: sh -c "php -S 0.0.0.0:80"
     restart: unless-stopped
     networks:
       - software-network
-  php-v8.2-fpm:
+  php-8.2-fpm:
     image: php:8.2-fpm
     stdin_open: true # docker run -i
     tty: true # docker run -t
@@ -22,6 +42,3 @@ services:
     restart: unless-stopped
     networks:
       - software-network
-networks:
-  software-network:
-    external: true

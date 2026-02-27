@@ -1,0 +1,9 @@
+networks:
+  software-network:
+    external: true
+services:
+  ffmpeg:
+    image: jrottenberg/ffmpeg:4.4-ubuntu
+    restart: unless-stopped
+    networks:
+      - software-network

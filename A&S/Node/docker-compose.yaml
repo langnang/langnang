@@ -1,3 +1,6 @@
+networks:
+  software-network:
+    external: true
 services:
   alpine:
     image: node:alpine
@@ -5,7 +8,16 @@ services:
     tty: true # docker run -t
     working_dir: /app
     volumes:
-      - ./~:/app
+      - alpine:/app
+    networks:
+      - software-network
+  slim:
+    image: node:slim
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - slim:/app
     networks:
       - software-network
   latest:
@@ -14,16 +26,47 @@ services:
     tty: true # docker run -t
     working_dir: /app
     volumes:
-      - ./~:/app
+      - latest:/app
     # command: npx hexo init new-hexo-app # 自动安装依赖并启动
     networks:
       - software-network
-  v20:
+  bookworm:
+    image: node:bookworm
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - bookworm:/app
+    # command: npx hexo init new-hexo-app # 自动安装依赖并启动
+    networks:
+      - software-network
+  trixie:
+    image: node:trixie
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - trixie:/app
+    # command: npx hexo init new-hexo-app # 自动安装依赖并启动
+    networks:
+      - software-network
+  current:
+    image: node:current
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - current:/app
+    # command: npx hexo init new-hexo-app # 自动安装依赖并启动
+    networks:
+      - software-network
+  20-alpine:
     image: node:20-alpine
     working_dir: /app
     ports:
       - "0:3000"
     volumes:
+      - 20-alpine:/app
       # - ./node-20:/usr/src/app
       - /use/src/app/node_modules
     environment:
@@ -31,6 +74,12 @@ services:
     command: sh -c "npm init -y && node index.js" # 自动安装依赖并启动
     networks:
       - software-network
-networks:
-  software-network:
-    external: true
+
+volumes:
+  alpine:
+  slim:
+  latest:
+  bookworm:
+  trixie:
+  current:
+  20-alpine:

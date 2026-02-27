@@ -1,0 +1,67 @@
+{
+  "name": "@langnang/vue-audio-player",
+  "description": "Vue 音频播放器组件",
+  "homepage": "https://github.com/langnang/vue-audio-player#readme",
+  "version": "0.1.9",
+  "main": "lib/vue-audio-player.umd.min.js",
+  "private": false,
+  "keywords": [
+    "langnang",
+    "vue-audio-player",
+    "vue-audio",
+    "audio-player",
+    "audio",
+    "vue",
+    "component"
+  ],
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:publish": "npm run lib && npm publish --access public",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-audio-player --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.4",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/vue-audio-player.git"
+  },
+  "author": "langnang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang/vue-audio-player/issues"
+  }
+}

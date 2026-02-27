@@ -1,7 +1,10 @@
 # 使用官方 PHP 镜像作为基础镜像
 FROM php:7.4.33-fpm
 
+RUN apt-get update
 
+# Git
+RUN apt-get install -y git
 
 # /usr/src/
 # 存放 php 源码。在初始状态只有源码压缩包，安装过程会生成 ./php 源码文件夹。
@@ -13,8 +16,6 @@ FROM php:7.4.33-fpm
 # docker-php 扩展安装脚本文件所在处。
 
 
-# https://pecl.php.net/
-# RUN apt-get update
 
 # RUN docker-php-ext-install pdo pdo_mysql 
 # RUN docker-php-ext-configure pcntl --enable-pcntl && docker-php-ext-install pcntl
@@ -23,6 +24,7 @@ FROM php:7.4.33-fpm
 
 # RUN docker-php-ext-install gd
 
+# https://pecl.php.net/
 
 RUN apt-get update \
     && apt-get install -y libzip-dev zlib1g-dev \
@@ -33,6 +35,7 @@ RUN apt-get update \
     && pecl install redis \
     && docker-php-ext-configure pcntl --enable-pcntl \
     && docker-php-ext-enable redis
+
 
 COPY php.ini /usr/local/etc/php/
 

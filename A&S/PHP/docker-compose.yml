@@ -1,24 +1,27 @@
+networks:
+  software-network:
+    external: true
 services:
-  v7.4.33:
-    image: php:7.4.33-fpm
-    stdin_open: true # docker run -i
-    tty: true # docker run -t
-    working_dir: /app
-    volumes:
-      - ./:/app
-    restart: unless-stopped
-    networks:
-      - software-network
-  v8.2:
+  8.2-fpm:
     image: php:8.2-fpm
     stdin_open: true # docker run -i
     tty: true # docker run -t
     working_dir: /app
     volumes:
-      - ./:/app
+      - 8.2-fpm:/app
     restart: unless-stopped
     networks:
       - software-network
-networks:
-  software-network:
-    external: true
+  7.4.33-fpm:
+    image: php:7.4.33-fpm
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - 7.4.33-fpm:/app
+    restart: unless-stopped
+    networks:
+      - software-network
+volumes:
+  8.2-fpm:
+  7.4.33-fpm:

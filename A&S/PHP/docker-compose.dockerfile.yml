@@ -1,0 +1,11 @@
+networks:
+  software-network:
+    external: true
+services:
+  7.4.33-fpm:
+    build:
+      context: .
+      dockerfile: Dockerfile.php-7.4.33-fpm
+    restart: unless-stopped
+    networks:
+      - software-network

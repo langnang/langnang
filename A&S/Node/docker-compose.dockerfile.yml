@@ -1,0 +1,18 @@
+networks:
+  software-network:
+    external: true
+services:
+  alpine:
+    build:
+      context: .
+      dockerfile: Dockerfile.node-alpine
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - alpine:/app
+    restart: unless-stopped
+    networks:
+      - software-network
+volumes:
+  alpine:

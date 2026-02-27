@@ -1,0 +1,11 @@
+# 使用官方 Node 镜像作为基础镜像
+FROM node:alpine
+
+# RUN apt-get update
+
+# Git
+# RUN apt-get install -y git
+
+RUN npm install -g @vue/cli
+
+CMD ["node"]
