@@ -3,14 +3,11 @@ networks:
     external: true
 services:
   latest:
-    image:
-    # container_name: software
-    ports:
-      - 0:80
+    image: ghcr.io/sillytavern/sillytavern
     environment:
       - TZ=Asia/Shanghai
-    # volumes:
-    #   - ./_/:/
+    ports:
+      - 0:8000
     restart: unless-stopped
     networks:
       - software-network

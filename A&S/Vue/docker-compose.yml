@@ -2,7 +2,25 @@ networks:
   software-network:
     external: true
 services:
-  latest-app:
+  v2-html-unpkg:
+    image: ghcr.io/azurbluetw/v2-html-unpkg:latest
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - 0:80
+    restart: unless-stopped
+    networks:
+      - software-network
+  v3-html-unpkg:
+    image: ghcr.io/azurbluetw/v3-html-unpkg:latest
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - 0:80
+    restart: unless-stopped
+    networks:
+      - software-network
+  alpine:
     image: node:alpine
     ports:
       - 0:5173

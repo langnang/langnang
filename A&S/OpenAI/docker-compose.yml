@@ -3,14 +3,11 @@ networks:
     external: true
 services:
   latest:
-    image:
-    # container_name: software
-    ports:
-      - 0:80
+    image: missuo/freegpt35
     environment:
       - TZ=Asia/Shanghai
-    # volumes:
-    #   - ./_/:/
+    ports:
+      - 0:3040
     restart: unless-stopped
     networks:
       - software-network
