@@ -1,0 +1,10 @@
+services:
+  cryptofolio:
+    image: xtrendence/cryptofolio:latest
+    container_name: cryptofolio
+    labels:
+      yantr.app: "cryptofolio"
+      yantr.service: "Crypto Portfolio"
+    ports:
+      - "80"
+    restart: unless-stopped

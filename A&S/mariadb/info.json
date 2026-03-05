@@ -1,0 +1,32 @@
+{
+  "name": "MariaDB",
+  "logo": "Qmegk86ebzbktv7YWCMnVrueBpfpZHm9wktuUSdQBHvHQx",
+  "tags": [
+    "database",
+    "storage",
+    "utility",
+    "self-hosted",
+    "homelab",
+    "docker",
+    "mysql",
+    "sql"
+  ],
+  "ports": [
+    { "port": 3306, "protocol": "TCP", "label": "Database" }
+  ],
+  "short_description": "Fast, open-source MySQL-compatible database with enhanced features and better performance.",
+  "description": "MariaDB is an open-source relational database server that is a drop-in replacement for MySQL. It offers more features, better performance, and stricter security than MySQL while maintaining compatibility. It's the default database for many popular applications including WordPress, Nextcloud, and many self-hosted apps. Features include multiple storage engines (InnoDB, Aria, ColumnStore), horizontal scaling with MariaDB ColumnStore, real-time analytics with MariaDB ColumnStore, JSON support, GIS support, and compatibility with MySQL protocols and tools.",
+  "usecases": [
+    "Run the database backend for Nextcloud, WordPress, or other PHP applications.",
+    "Store application data for your custom projects with full SQL capabilities.",
+    "Use as a drop-in replacement for MySQL in existing applications.",
+    "Build analytics databases with ColumnStore for real-time aggregations."
+  ],
+  "website": "https://github.com/MariaDB/server",
+  "dependencies": [],
+  "notes": [
+    "MySQL-compatible - most MySQL clients and tools work directly",
+    "Set MYSQL_ROOT_PASSWORD environment variable for root access",
+    "Data persists in the mariadb_data volume"
+  ]
+}

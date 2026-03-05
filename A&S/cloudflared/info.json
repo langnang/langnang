@@ -1,0 +1,30 @@
+{
+  "name": "Cloudflared",
+  "logo": "Qmcyr4xpG4SZdBp9VorVjRrvHqHoQzCu9YHCQZGNC5ck8T",
+  "tags": [
+    "network",
+    "security",
+    "vpn",
+    "privacy",
+    "self-hosted",
+    "homelab",
+    "tunnel",
+    "remote-access"
+  ],
+  "ports": [],
+  "short_description": "Secure tunnel from your server to Cloudflare for remote access without opening firewall ports.",
+  "description": "Cloudflared (Cloudflare Tunnel) creates a secure connection between your server and Cloudflare's global network, allowing you to expose services to the internet without opening firewall ports. This means you can access your self-hosted apps from anywhere while keeping your server protected. Features include zero-trust access controls, authentication via Cloudflare Access, automatic TLS certificates, and support for multiple services through one tunnel. It's the easiest way to securely expose your homelab services to the internet without dealing with port forwarding or dynamic DNS.",
+  "usecases": [
+    "Access your home server from anywhere without router port forwarding.",
+    "Expose Jellyfin, Nextcloud, or other services securely with Cloudflare authentication.",
+    "Get free automatic HTTPS for your self-hosted services.",
+    "Set up zero-trust access - require login before reaching your services."
+  ],
+  "website": "https://github.com/cloudflare/cloudflared",
+  "dependencies": [],
+  "notes": [
+    "Requires a Cloudflare account and tunnel token",
+    "No ports need to be opened on your firewall",
+    "Traffic routed through Cloudflare for DDoS protection"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "LibreSpeed",
+  "logo": "QmSPU6HmY4jRjanybWFDGQapEbSoY6ii4nc7MSUjicS5Xd",
+  "tags": [
+    "network",
+    "tools",
+    "utility",
+    "speedtest",
+    "self-hosted",
+    "homelab",
+    "bandwidth"
+  ],
+  "ports": [
+    { "port": 8080, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "Self-hosted internet speed test with detailed metrics and no tracking.",
+  "description": "LibreSpeed is a free, open-source speed test that you can self-host on your server. It measures download and upload speeds, ping, and jitter with detailed results - no ads, no tracking, and no Flash required. Features include simple installation, multiple test files, ISP info detection, results history (when using a backend), and a clean interface. Perfect for testing your home network performance, comparing ISP speeds, or monitoring network quality over time. Can also be used to test speed between locations.",
+  "usecases": [
+    "Test your home internet connection speed privately.",
+    "Monitor network performance over time with regular tests.",
+    "Test speed between different network locations.",
+    "Share a private speed test with your ISP for troubleshooting."
+  ],
+  "website": "https://github.com/librespeed/speedtest",
+  "dependencies": [],
+  "notes": [
+    "No tracking or data collection - runs entirely locally",
+    "Works on desktop and mobile browsers",
+    "Multiple test file sizes available"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Fireshare",
+  "logo": "QmZ31p6GWvGNm2mJTmVyCUr68PAJoax6mCVfgw4DEHbTQk",
+  "tags": [
+    "media",
+    "gaming",
+    "streaming",
+    "video",
+    "self-hosted",
+    "homelab",
+    "sharing"
+  ],
+  "ports": [
+    { "port": 80, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "Self-hosted video sharing designed for game clips.",
+  "description": "Fireshare is a self-hosted video sharing platform designed for sharing game clips with friends. Upload clips from the web interface or drop them into the video folder, then view and share them. Provides OpenGraph metadata for previews on social media and chat apps. Supports linking with SteamGridDB for per-game categorization, and making videos public so anyone who views the site can see them.",
+  "usecases": [
+    "Share game clips with your friends.",
+    "Categorize clips by game with data from SteamGridDB.",
+    "Post your clips on social media or in chat with rich previews."
+  ],
+  "website": "https://github.com/ShaneIsrael/fireshare",
+  "dependencies": [],
+  "notes": [
+    "Watch folder for automatic processing",
+    "Gallery-style video organization",
+    "Streaming playback"
+  ]
+}

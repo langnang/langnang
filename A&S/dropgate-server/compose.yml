@@ -1,0 +1,21 @@
+services:
+  dropgate-server:
+    image: willtda/dropgate-server:latest
+    container_name: dropgate-server
+    labels:
+      yantr.app: "dropgate-server"
+      yantr.service: "Secure Share"
+    ports:
+      - "52443"
+    environment:
+      ENABLE_UPLOAD: ${ENABLE_UPLOAD:-false}
+      ENABLE_P2P: ${ENABLE_P2P:-true}
+      UPLOAD_PRESERVE_UPLOADS: "true"
+      UPLOAD_MAX_FILE_SIZE_MB: ${UPLOAD_MAX_FILE_SIZE_MB:-100}
+      UPLOAD_MAX_STORAGE_GB: ${UPLOAD_MAX_STORAGE_GB:-10}
+    volumes:
+      - dropgate_uploads:/usr/src/app/uploads
+    restart: unless-stopped
+
+volumes:
+  dropgate_uploads:

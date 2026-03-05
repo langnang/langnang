@@ -1,0 +1,32 @@
+{
+  "name": "noStrudel",
+  "logo": "QmQd78JBNgAnVAAk6Ux6Jo3tHUXLyzjYeaRZ1EXwMFzHNe",
+  "tags": [
+    "social",
+    "nostr",
+    "decentralized",
+    "self-hosted",
+    "homelab",
+    "docker",
+    "bitcoin",
+    "zapping"
+  ],
+  "ports": [
+    { "port": 80, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "Feature-rich Nostr web client for exploring the protocol, viewing events, and managing keys.",
+  "description": "noStrudel is a powerful and feature-rich Nostr web client designed for exploring the Nostr protocol. It allows users to view raw events, manage multiple accounts, explore relays, and understand the inner workings of the decentralized social network. Features include NIP-49 encrypted key storage, Blossom media uploads, Zap streaming integration with Zap.Stream, badge showcases, animated emoji support, list management (mute lists), powerful search functionality, thread tabs showing replies, quotes, zaps, and a launchpad for notifications and messages. It's designed for power users who want deep insight into how Nostr works.",
+  "usecases": [
+    "Explore the Nostr protocol by viewing raw events and understanding how data flows through relays.",
+    "Post, reply, zap, and interact with the Nostr social network using your keys.",
+    "Manage multiple Nostr accounts and switch between them easily.",
+    "Stream live content from Zap.Stream directly within the client interface."
+  ],
+  "website": "https://github.com/hzrd149/nostrudel",
+  "dependencies": [],
+  "notes": [
+    "Requires a CORS proxy service for full functionality",
+    "Supports NIP-49 encrypted private key storage with password protection",
+    "Can connect to multiple relays simultaneously"
+  ]
+}

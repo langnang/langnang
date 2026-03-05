@@ -1,0 +1,31 @@
+{
+  "name": "Heimdall",
+  "logo": "QmURGit77px6MrQiuco9TGGgg3z9rkhcWs3MZ5pfSpzCE4",
+  "tags": [
+    "dashboard",
+    "organization",
+    "monitoring",
+    "utility",
+    "homepage",
+    "self-hosted",
+    "launcher"
+  ],
+  "ports": [
+    { "port": 80, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "Clean application dashboard with icons for quick access to your self-hosted services.",
+  "description": "Heimdall is a beautiful, minimalist dashboard that provides quick access to your applications via customizable icons. It's designed to be your homelab's launchpad, allowing you to organize and access all your self-hosted services from one clean interface. Features include drag-and-drop organization, built-in icons for popular services, custom background images, search functionality, keyboard shortcuts, and the ability to show tabs or status indicators. It's lighter and simpler than Homarr, perfect for those who want a clean start page without the complexity.",
+  "usecases": [
+    "Create a unified homepage with one-click access to all your self-hosted apps.",
+    "Use as your browser's start page for quick access to homelab services.",
+    "Organize services by category with tabs for different areas (Media, Dev, Admin).",
+    "Add custom links to external services, bookmarks, or frequently visited sites."
+  ],
+  "website": "https://github.com/linuxserver/Heimdall",
+  "dependencies": [],
+  "notes": [
+    "Simple YAML-based configuration for adding apps",
+    "Built-in icons for 200+ popular applications",
+    "Lightweight and fast - minimal resource usage"
+  ]
+}

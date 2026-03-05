@@ -1,0 +1,17 @@
+services:
+  wiki-js:
+    image: linuxserver/wikijs:latest
+    container_name: wiki-js
+    labels:
+      yantr.app: "wiki-js"
+      yantr.service: "Wiki"
+    ports:
+      - "3000"
+    volumes:
+      - wikijs_config:/config
+      - wikijs_data:/data
+    restart: unless-stopped
+
+volumes:
+  wikijs_config:
+  wikijs_data:
