@@ -1,0 +1,32 @@
+{
+  "name": "Element",
+  "logo": "QmWMcjdA7izomrqwuW6D8JT8y75K7jCANqnDMYxZRzmzHU",
+  "tags": [
+    "productivity",
+    "security",
+    "chat",
+    "messaging",
+    "communication",
+    "self-hosted",
+    "matrix",
+    "decentralized"
+  ],
+  "ports": [
+    { "port": 80, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "Feature-rich Matrix client for secure, decentralized chat, voice, and video communication.",
+  "description": "Element (formerly Riot.im) is a secure, decentralized chat application built on the Matrix open protocol. It provides end-to-end encrypted messaging, group chats, voice and video calls, and integration with the broader Matrix network. Features include direct messages and group rooms, end-to-end encryption by default, message history synchronization across devices, file sharing, threaded conversations, bridges to other chat networks (Slack, Discord, Telegram), and the ability to host your own server (homeserver) for complete control. It's a privacy-focused alternative to Discord, Slack, and WhatsApp.",
+  "usecases": [
+    "Set up a private family chat server with end-to-end encryption.",
+    "Create a team communication platform for your projects without data leaving your infrastructure.",
+    "Join the wider Matrix network to communicate with users on other servers.",
+    "Use bridges to connect with Slack, Discord, Telegram, and other platforms."
+  ],
+  "website": "https://element.io",
+  "dependencies": [],
+  "notes": [
+    "This is just the web client - requires a Matrix homeserver (Synapse) for full functionality",
+    "End-to-end encrypted by default for direct messages and group chats",
+    "Can connect to the public Matrix network or your own private server"
+  ]
+}

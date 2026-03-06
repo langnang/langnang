@@ -1,0 +1,16 @@
+networks:
+  software-network:
+    external: true
+services:
+  latest:
+    image: ghcr.io/besoeasy/yantr:latest
+    ports:
+      - "5252"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - latest_app:/app
+    restart: unless-stopped
+    networks:
+      - software-network
+volumes:
+  latest_app:

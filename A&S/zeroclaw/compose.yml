@@ -1,0 +1,18 @@
+services:
+  zeroclaw:
+    image: ghcr.io/theonlyhennygod/zeroclaw:latest
+    container_name: zeroclaw
+    restart: unless-stopped
+    environment:
+      API_KEY: ${API_KEY:-}
+      PROVIDER: ${PROVIDER:-openrouter}
+    ports:
+      - "3000"
+    volumes:
+      - zeroclaw_data:/data
+    labels:
+      yantr.app: "zeroclaw"
+      yantr.service: "AI Assistant"
+
+volumes:
+  zeroclaw_data:

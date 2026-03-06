@@ -1,0 +1,30 @@
+{
+  "name": "MeTube",
+  "logo": "QmVHF6jueKh11T7LVbBC6NCCs2tuMo7Af7tKfWJEdXSkwQ",
+  "tags": [
+    "media",
+    "tools",
+    "utility",
+    "music",
+    "audio",
+    "download",
+    "youtube"
+  ],
+  "ports": [
+    { "port": 8081, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "Web UI for yt-dlp - download videos/audio from YouTube and 1700+ sites.",
+  "description": "MeTube is a web frontend for yt-dlp, the powerful video/audio downloader. It allows you to download videos and audio from YouTube and 1700+ other sites through a clean web interface. Features include URL queue, download progress, automatic format selection, playlist support, authentication for premium content, and simple queue management.",
+  "usecases": [
+    "Download YouTube videos for offline viewing.",
+    "Extract audio as MP3 from videos.",
+    "Download entire playlists."
+  ],
+  "website": "https://github.com/alexta69/metube",
+  "dependencies": [],
+  "notes": [
+    "Based on yt-dlp - supports 1700+ sites",
+    "Queue-based downloading",
+    "Audio extraction support"
+  ]
+}

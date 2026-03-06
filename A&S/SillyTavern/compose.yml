@@ -1,0 +1,13 @@
+networks:
+  software-network:
+    external: true
+services:
+  latest:
+    image: ghcr.io/sillytavern/sillytavern
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - 0:8000
+    restart: unless-stopped
+    networks:
+      - software-network

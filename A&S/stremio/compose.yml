@@ -1,0 +1,19 @@
+services:
+  stremio:
+    image: stremio/server:latest
+    container_name: stremio
+    restart: unless-stopped
+    ports:
+      - "11470"
+      - "12470" # HTTPS port
+    volumes:
+      - stremio-data:/root/.stremio-server
+    environment:
+      NO_CORS: 1
+      HTTPS: 1
+    labels:
+      yantr.app: "stremio"
+      yantr.service: "Media Center"
+
+volumes:
+  stremio-data:

@@ -1,0 +1,30 @@
+{
+  "name": "OpenCode",
+  "logo": "Qma92doZsMdGrS46v8GqXCgvzomrXKZPm3fFgjmwd8k9RA",
+  "tags": [
+    "development",
+    "productivity",
+    "ai",
+    "terminal",
+    "utility",
+    "ssh",
+    "coding"
+  ],
+  "ports": [
+    { "port": 4096, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "AI coding assistant in browser - edit files, run commands, and get AI help.",
+  "description": "OpenCode is an AI-powered coding environment that runs in your browser. It combines a code editor with AI assistance for writing, debugging, and explaining code. Features include file browser, terminal emulator, AI chat for code help, git integration, and cloud development environment capabilities. Perfect for coding on the go or sharing development environments.",
+  "usecases": [
+    "Code from any browser.",
+    "Get AI assistance with coding.",
+    "Collaborative development."
+  ],
+  "website": "https://github.com/anomalyco/opencode",
+  "dependencies": [],
+  "notes": [
+    "Browser-based IDE",
+    "AI assistant integration",
+    "Terminal access"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Pastefy",
+  "logo": "QmdxTLj7i7cdJW7VPeeYnxsjC2ZXr6SZYgMkHW3pwNwB7C",
+  "tags": [
+    "tools",
+    "productivity",
+    "git",
+    "development",
+    "devops",
+    "self-hosted",
+    "pastebin"
+  ],
+  "ports": [
+    { "port": 80, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "Beautiful, feature-rich pastebin with folders, encryption, and API support.",
+  "description": "Pastefy is a modern, feature-rich pastebin application for storing and sharing code snippets, notes, and text. Features include folder organization, syntax highlighting+ languages, public/private pastes, burn-after-reading, password for 190 protection, API access, import/export, real-time collaborative editing, and a clean dark-mode interface. Perfect for sharing code snippets, configuration files, logs, or any text content with colleagues or the public.",
+  "usecases": [
+    "Share code snippets with syntax highlighting.",
+    "Create encrypted pastes with optional password protection.",
+    "Organize pastes into folders for personal knowledge management.",
+    "Use the API to create pastes from scripts or CI/CD pipelines."
+  ],
+  "website": "https://docs.pastefy.app",
+  "dependencies": [],
+  "notes": [
+    "Supports both guest and authenticated users",
+    "API available for automation",
+    "Syntax highlighting for 190+ languages"
+  ]
+}

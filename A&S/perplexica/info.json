@@ -1,0 +1,30 @@
+{
+  "name": "Perplexica",
+  "logo": "QmXkTfV5b7aUepUyRLpo9C26P34LWrRyNcQTewFSZjezYc",
+  "tags": [
+    "ai",
+    "search",
+    "privacy",
+    "utility",
+    "self-hosted",
+    "homelab",
+    "llm"
+  ],
+  "ports": [
+    { "port": 3000, "protocol": "HTTP", "label": "Web UI" }
+  ],
+  "short_description": "AI-powered search with LLM responses - open-source Perplexity alternative.",
+  "description": "Perplexica is an AI-powered search engine that uses LLMs to provide conversational answers with sources. It's an open-source alternative to Perplexity AI. Features include web search integration, source citations, multiple AI models, image search, and privacy-focused design. Uses SearXNG for search and connects to Ollama or OpenAI for LLM responses.",
+  "usecases": [
+    "AI-powered answers with sources.",
+    "Alternative to Perplexity.",
+    "Private AI search."
+  ],
+  "website": "https://github.com/ItzCrazyKns/Perplexica",
+  "dependencies": [],
+  "notes": [
+    "Requires Ollama or OpenAI API",
+    "Uses SearXNG for search",
+    "Source citations included"
+  ]
+}

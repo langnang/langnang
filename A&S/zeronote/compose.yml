@@ -1,0 +1,16 @@
+services:
+  zeronote:
+    image: ghcr.io/besoeasy/zeronote:main
+    container_name: zeronote
+    hostname: zeronote
+    volumes:
+      - zeronote_data:/app/data
+    ports:
+      - "8000"
+    restart: unless-stopped
+    labels:
+      yantr.app: "zeronote"
+      yantr.service: "Encrypted Notes"
+
+volumes:
+  zeronote_data:

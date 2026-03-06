@@ -4,13 +4,14 @@
 **/.env
 **/_
 **/_ *
+**/~*
 **/.temp
 **/.temp *
 **/cache
 **/.cache
 **/*.zip
 **/*.rar
-*/cache
+**/cache
 **/data
 **/lock
 **/log
