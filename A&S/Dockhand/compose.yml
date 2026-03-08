@@ -1,0 +1,20 @@
+networks:
+  software-network:
+    external: true
+services:
+  latest:
+    image: fnsys/dockhand:latest
+    # container_name: software
+    ports:
+      - "3000"
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - latest_app:/app
+    restart: unless-stopped
+    networks:
+      - software-network
+
+volumes:
+  latest_app:
