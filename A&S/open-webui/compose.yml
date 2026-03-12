@@ -1,24 +1,25 @@
+networks:
+  software-network:
+    external: true
+
 services:
-  open-webui:
+  main:
     image: ghcr.io/open-webui/open-webui:main
-    container_name: open-webui
     labels:
-      yantr.app: "open-webui"
-      yantr.service: "AI UI"
+      software.app: "open-webui"
+      software.service: "AI UI"
+      software.homepage: https://github.com/open-webui/open-webui
+      software.package-url: https://github.com/open-webui/open-webui/pkgs/container/open-webui
+      software.repository-url: https://github.com/open-webui/open-webui
     ports:
       - "8080"
     environment:
-      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+      OLLAMA_BASE_URL: http://ollama:11434
     volumes:
-      - open_webui_data:/app/backend/data
+      - main_data:/app/backend/data
     restart: unless-stopped
     networks:
-      - ollama_network
+      - software-network
 
 volumes:
-  open_webui_data:
-
-networks:
-  ollama_network:
-    name: ollama_network
-    external: true
+  main_data:

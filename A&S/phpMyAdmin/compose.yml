@@ -1,0 +1,21 @@
+networks:
+  software-network:
+    external: true
+services:
+  5.2.3:
+    image: phpmyadmin:5.2.3
+    # container_name: ${CONTAINER_NAME}
+    ports:
+      - 80
+    environment:
+      - PMA_ARBITRARY=1
+    # volumes:
+    #   - ./conf.d/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    #   - ./conf.inc/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+    labels:
+      createdBy: "Apps"
+    restart: unless-stopped
+    networks:
+      - software-network
+volumes:
+  data:

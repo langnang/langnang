@@ -1,5 +1,5 @@
 services:
-  ollama:
+  latest:
     image: ollama/ollama
     container_name: ollama
     labels:
