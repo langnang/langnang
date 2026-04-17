@@ -1,3 +1,6 @@
+networks:
+  software-network:
+    external: true
 services:
   latest:
     image: composer:latest
@@ -16,6 +19,16 @@ services:
     #   - ./composer-created:/usr/src/app
     # command: composer init --name docker/composer-create --author docker --stability alpha --license MIT
     # command: composer create-project --prefer-dist laravel/laravel ./laravel5 5.5.
-networks:
-  software-network:
-    external: true
+  lts:
+    image: composer:lts
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    working_dir: /app
+    volumes:
+      - ./:/app
+    # command: composer init --name docker/composer-create --author docker --stability alpha --license MIT
+    command: composer init
+    restart: unless-stopped
+    networks:
+      - software-network
+
