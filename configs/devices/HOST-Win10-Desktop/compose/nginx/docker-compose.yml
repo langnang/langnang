@@ -1,0 +1,17 @@
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 80:80
+      - 88:88
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./mime.types:/etc/nginx/mime.types
+      - ./upstream.d:/etc/nginx/upstream.d
+      - ./conf.d:/etc/nginx/conf.d
+    restart: unless-stopped
+    networks:
+      - software-network
+networks:
+  software-network:
+    external: true

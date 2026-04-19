@@ -1,0 +1,35 @@
+{
+    "name": "frameworks",
+    "metas": [
+        {
+            "name": "",
+            "slug": "",
+            "ico": "",
+            "description": "",
+            "type": "",
+            "status": "private"
+        }
+    ],
+    "contents": [
+        {
+            "title": "Static",
+            "slug": "1xx"
+        },
+        {
+            "title": "Node",
+            "slug": "2xx"
+        },
+        {
+            "title": "PHP",
+            "slug": "3xx"
+        },
+        {
+            "title": "ASP.NET Core",
+            "slug": "4xx"
+        },
+        {
+            "title": "Uni App",
+            "slug": "5xx"
+        }
+    ]
+}

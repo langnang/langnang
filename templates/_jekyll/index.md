@@ -1,60 +1,130 @@
-# Templates
+---
+title: 框架（Frameworks）
+---
+> 框架（Frameworks），一般指提供了软件开发的基础框架，使开发更具工程性、简便性和稳定性。
 
 ## HTML
 
-- ⭐common
-- bootstrap3
-- bootstrap3-handlebars
-- bootstrap3-vue2
-- bootstrap3-vue3
-- bootstrap4
-- bootstrap4-handlebars
-- bootstrap4-vue2
-- bootstrap4-vue3
-- bootstrap5
-- phaser3
-- pixijs7
-- supabase
+- bootstrap-v3
+- bootstrap-v4
+- bootstrap-v5
+- layui
 - vue2-ui
 - vue3-ui
+- handlebars
+
+### CSS/UI
+
+- [Bootstrap](https://www.bootcss.com/)
+- [Tailwind CSS](https://www.tailwindcss.cn/)
+- [Foundation](https://get.foundation/)
+- Bulma
+- UIKit
+- Materialize
+- Skeleton
+- Open Props
+- Layui
+- Semantic UI
+- PureCSS
+- Ant Design
+- Element UI
+- Tachyons
+- Primer
+- Material Design for Bootstrap (MDB)
+- Material Design Lite Framework (MDL)
+
+### JavaScript
+
+- vue
+- react
+- angular
+- lodash
+- axios
+- webpack
+- rollup
+- handlebars
+
+### static-ui
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Static UI</title>
+    <!-- CSS -->
+    <link rel="stylesheet" crossorigin="anonymous" href="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- JavsScript -->
+    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" src="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+```
+
+### handlebars-bootstrap4
+
+```html
+<!-- index.html -->
+```
 
 ## NodeJs
 
-- common
-- hexo
-- npm-package
-- react18-ui
-- [vue2-ui](./nodejs/vue2-ui.md)
-- vue2-element-ui
-- vue2-element-admin
-- vue3-ui
+```sh
+npm init
+```
+
+- express-server
+- vuepress-docs
 
 ## PHP
 
-- 300.composer-package
-- 301.lumen8-modules
-- [302.laravel8-modules](./302.laravel8-modules/)
+- [BasicPhp]
+- Typecho
+
+### Composer
 
 ```sh
 composer init
-
-composer dump-autoload
 ```
 
-- laravel8-modules
-- lumen8-modules
+- [Laravel](./composer/laravel/)
+- [Lumen](./composer/lumen/)
+- [Symfony](https://symfony.com/)
+- ThinkPHP
+- Yii
+- CodeIgniter
+- CakePHP
+- Zend
+- Phalcon
+- FuelPHP
+- Slim
+- Phalcon
+- Aura
+- Kohana
+- Typo3
+- Flight
+- PHPixie
+- GoAOP
+- Flarum
+- Nova
+- Spiral
+- Themosis
+- Vanilo
 
-## Composer
+**Features**
 
-### laravel-modules
+### PHP Redevelop
 
-### lumen8-modules
+- [BasicPhp]
+- [Laravel Modules]()
+- [Lumen Modules]()
 
-```sh
-composer require owner888/phpspider
-```
+## ASP.NET Code
 
-## Ruby
-
-- [Jekyll](./ruby/jekyll.md)
-  - https://jekyllcn.com/
+## UniApp

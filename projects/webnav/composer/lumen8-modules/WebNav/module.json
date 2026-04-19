@@ -1,0 +1,13 @@
+{
+    "name": "WebStack",
+    "alias": "webstack",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WebStack\\Providers\\WebStackServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

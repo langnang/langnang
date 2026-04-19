@@ -1,0 +1,121 @@
+{
+    "name": "webstack",
+    "metas": [
+        {
+            "mid": "1",
+            "name": "推荐类",
+            "slug": "",
+            "description": "",
+            "type": "category",
+            "status": "publish",
+            "children": [
+                {
+                    "mid": "101",
+                    "name": "快捷导航",
+                    "slug": "",
+                    "description": "",
+                    "type": "category",
+                    "status": "publish"
+                },
+                {
+                    "mid": "102",
+                    "name": "快捷导航",
+                    "slug": "",
+                    "description": "",
+                    "type": "category",
+                    "status": "publish"
+                },
+                {
+                    "mid": "103",
+                    "name": "快捷导航",
+                    "slug": "",
+                    "description": "",
+                    "type": "category",
+                    "status": "publish"
+                },
+                {
+                    "mid": "104",
+                    "name": "快捷导航",
+                    "slug": "",
+                    "description": "",
+                    "type": "category",
+                    "status": "publish"
+                },
+                {
+                    "mid": "105",
+                    "name": "快捷导航",
+                    "slug": "",
+                    "description": "",
+                    "type": "category",
+                    "status": "publish"
+                }
+            ]
+        },
+        {
+            "mid": "2",
+            "name": "工具类",
+            "slug": "",
+            "description": "",
+            "type": "category",
+            "status": "publish"
+        },
+        {
+            "mid": "3",
+            "name": "依赖类",
+            "slug": "",
+            "description": "",
+            "type": "category",
+            "status": "publish",
+            "children": [
+                {
+                    "mid": "301",
+                    "name": "NPM",
+                    "slug": "",
+                    "description": "",
+                    "type": "category",
+                    "status": "publish"
+                },
+                {
+                    "mid": "302",
+                    "name": "Composer",
+                    "slug": "",
+                    "description": "",
+                    "type": "category",
+                    "status": "publish"
+                }
+            ]
+        },
+        {
+            "mid": "4",
+            "name": "生活类",
+            "slug": "",
+            "description": "",
+            "type": "category",
+            "status": "publish"
+        },
+        {
+            "mid": "5",
+            "name": "娱乐类",
+            "slug": "",
+            "description": "",
+            "type": "category",
+            "status": "publish"
+        }
+    ],
+    "contents": [
+        {
+            "title": "WebStack",
+            "ico": "./../.storage/img/favicon.png",
+            "description": "收集国内外优秀设计网站、UI设计资源网站、灵感创意网站、素材资源网站，定时更新分享优质产品设计书签。",
+            "href": "webstack.cc",
+            "metas": [
+                "101",
+                "102",
+                "103",
+                "104"
+            ]
+        }
+    ],
+    "fields": [],
+    "relationships": []
+}

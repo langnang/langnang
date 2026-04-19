@@ -1,0 +1,55 @@
+links:
+  - name: "Home"
+    icon: "fas fa-home"
+    url: "#"
+  - name: "Nodes"
+    icon: "fas fa-layer-group"
+    url: "#subs/nodes"
+
+services:
+  - name: "Components"
+    icon: "fas fa-cloud"
+    items:
+      - name: Brand
+      - name: Panel
+      - name: Progress
+
+  - name: "Dependencies"
+    icon: "fas fa-cloud"
+    items:
+
+  - name: "Examples"
+    icon: "fas fa-cloud"
+    items:
+
+  - name: "Frameworks"
+    icon: "fas fa-cloud"
+    items:
+
+  - name: "Helpers"
+    icon: "fas fa-cloud"
+    items:
+
+  - name: "Scripts"
+    icon: "fas fa-cloud"
+    items:
+
+  - name: "Standards"
+    icon: "fas fa-cloud"
+    items:
+
+  - name: "Templates"
+    icon: "fas fa-cloud"
+    items:
+      - name: Homepage
+      - name: Admin
+
+  - name: "Units"
+    icon: "fas fa-cloud"
+    items:
+
+  - name: "Utils"
+    icon: "fas fa-cloud"
+    items:
+      - name: php.frps-dashboard
+      - name: php.cpolar-dashboard

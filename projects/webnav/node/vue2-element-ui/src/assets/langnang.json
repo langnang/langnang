@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Project"
+  },
+  {
+    "name": "Tempalte",
+    "web": [
+      {
+        "title": "Vue UI"
+      },
+      {
+        "title": "Vue Element UI"
+      },
+      {
+        "title": "Vue Element WebStack"
+      },
+      {
+        "title": "Vue Element Admin"
+      },
+      {
+        "title": "VuePress"
+      },
+      {
+        "title": "PHP Server"
+      }
+    ]
+  },
+  {
+    "name": "Packages",
+    "web": []
+  },
+  {
+    "name": "Services",
+    "web": [
+      {
+        "title": "Guide"
+      },
+      {
+        "title": "Netdisk"
+      },
+      {
+        "title": "Blog"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+**/.cache
+# **/.env
+**/.temp
+**/node_modules
+**/vendor
+**/tempCodeRunnerFile.sh
+**/cache
+**/tem
+**/temp
+**/log
+**/logs
+**/db
+**/files
+**/*.db
+**/*.log
+**/*.sqlite3
+**/*.sqlite3-shm
+**/*.sqlite3-wal
+**/ipc-socket
+**/-
+**/_
+**/~
+!devices/-

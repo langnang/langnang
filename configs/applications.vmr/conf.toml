@@ -1,0 +1,7 @@
+ProxyUri = ''
+ReverseProxy = ''
+SDKIntallationDir = 'D:\Programs'
+VersionHostUrl = 'https://gh-proxy.com/raw.githubusercontent.com/gvcgo/vsources/main/'
+ThreadNum = 0
+UseCustomedMirrors = false
+AllowNestedSessions = false

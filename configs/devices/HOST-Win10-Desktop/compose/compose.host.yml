@@ -1,0 +1,45 @@
+networks:
+  software-network:
+    external: true
+services:
+  frpc:
+    image: snowdreamtech/frpc
+    environment:
+      - DEVICE_NAME=HOST-Win10-Desktop
+      - DEVICE_CODE=11
+    volumes:
+      - ./frpc/frpc.toml:/etc/frp/frpc.toml
+      - frpc_data:/etc/frp
+    restart: unless-stopped
+    networks:
+      - software-network
+  dpanel:
+    image: dpanel/dpanel:lite
+    ports:
+      - "8080" # 替换 8807 可更改面板访问端口
+    # environment:
+    #   - USER_NAME=admin # 替换 admin 可更改默认用户名
+    #   - USER_PASS=langnang.com # 替换 admin 可更改默认密码
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock
+      - dpanel_app:/dpanel # 将 /home/dpanel 更改为你想要挂载的宿主机目录
+      # - ./dpanel/dpanel.db:/dpanel/dpanel.db
+    restart: unless-stopped
+    networks:
+      - software-network
+  portainer-ce:
+    image: 6053537/portainer-ce:latest
+    ports:
+      - "9000"
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock
+      - portainer-ce_data:/data
+    restart: unless-stopped
+    networks:
+      - software-network
+volumes:
+  frpc_data:
+  dpanel_app:
+  portainer-ce_data:

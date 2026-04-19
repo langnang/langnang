@@ -1,0 +1,84 @@
+ftp:
+  code: 21
+  name: FTP
+  addr: host.docker.internal
+  port: 21
+ssh:
+  code: 22
+  name: SSH
+  addr: host.docker.internal
+  port: 22
+docker:
+  port: 2375
+rdp:
+  name: RDP
+  addr: host.docker.internal
+  port: 3389
+cpolar:
+  code: 92
+  name: Cpolar
+  addr: host.docker.internal
+  port: 9200
+1panel: 10086
+adminer: 8080
+answer: 80
+ariang: 6880
+dashy: 8080
+code-server: 8080
+cookiecloud: 8088
+docker.ui: 8999
+dockerCopilot: 12712
+dockge: 5001
+dpanel: 8080
+emby: 8096
+flare: 5005
+gitea: 3000
+glances: 61208
+gotty: 8080
+gotty-docker: 1234
+grafana: 3000
+heimdall: 80
+home-assistant: 8123
+homepage: 3000
+homer:
+  port: 8080
+  commands:
+jackett: 9117
+jellyfin: 8096
+jekyll: 4000
+jenkins:
+  port: 8080
+  suffix: jenkins/
+jupyter: 8888
+kettle: 8080
+mysql: 3306
+moviepilot: 3000
+moviepilot-v2: 3000
+nastools: 3000
+nginx: 80
+nginx-80:
+  code: 8
+  slug: nginx
+  name: Nginx-80
+  port: 80
+nginx-proxy-manager: 81
+nginxwebui: 8080
+onenav: 80
+plex: 32400
+portainer: 9000
+portainer-agent:
+  code: 91
+  name: PortainterAgent
+  port: 9001
+qbittorrent: 8080
+reader: 8080
+redmine: 3000
+reference: 3000
+smartping: 8899
+sun-panel: 3002
+surveyking: 1991
+tcexam: 80
+transmission: 9091
+typecho: 80
+vaultwarden: 80
+whodb: 8080

@@ -1,0 +1,46 @@
+name: 🚀 Deploy composer-package on push with FTP
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: 🎉 Deploy to tools.22web.org
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Switch to corresponding directory
+        run: cd 300.composer-package
+
+      # - name: Install node dependencies
+      #   run: yarn install
+
+      # - name: Laravel mix
+      #   run: npm run prod
+
+      - name: Install composer dependencies
+        run: cd 300.composer-package && composer install
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./300.composer-package/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /tools.22web.org/htdocs/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**

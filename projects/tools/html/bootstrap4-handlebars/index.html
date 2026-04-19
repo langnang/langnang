@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 必须的 meta 标签 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Tools</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.min.css">
+
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+
+    {{> layoutHeader}}
+
+    <main class="container" id="layout-main">
+      <div class="row">
+        <div class="col">
+          <form action="">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row row-cols-3">
+        {{#each paginator}}
+        <div class="col px-1 my-1">
+          <a href="{{this.url}}" class="card text-decoration-none">
+            <div class="card-body p-2">
+              <div class="media">
+                <svg class="bd-placeholder-img mr-2" width="60" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                </svg>
+                <div class="media-body">
+                  <h5 class="card-title mt-0">{{this.title}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{this.subtitle}}</h6>
+                </div>
+              </div>
+              <p class="card-text text-nowrap text-truncate w-100">{{this.description}}</p>
+            </div>
+          </a>
+        </div>
+        {{/each}}
+      </div>
+    </main>
+
+    {{> layoutFooter}}
+
+  </div>
+  <!-- JavaScript 文件是可选的。从以下两种建议中选择一个即可！ -->
+
+  <!-- 选项 1：jQuery 和 Bootstrap 集成包（集成了 Popper） -->
+  <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- 选项 2：Popper 和 Bootstrap 的 JS 插件各自独立 -->
+  <!--
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    -->
+  <script crossorigin="anonymous" src="https://unpkg.com/holderjs@2.9.9/holder.min.js"></script>
+
+  <script src="https://unpkg.com/handlebars@4.7.8/dist/handlebars.min.js"></script>
+
+  <script src="script.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      render({
+        title: "Tools",
+        titleCn: "工具",
+        paginator: [
+          { url: "", title: "MD5", subtitle: "md5", description: "..." },
+          { title: "Create Sql", subtitle: "Create Sql", description: "...", url: "./create-sql/" }
+        ],
+      });
+    })
+  </script>
+</body>
+
+</html>

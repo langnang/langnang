@@ -1,0 +1,37 @@
+name: 🚀 Deploy website to develop on push with FTP
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy: # 任务
+    runs-on: ubuntu-latest # 运行环境
+    steps: # 运行步骤
+      - name: Checkout
+        uses: actions/checkout@master # 获取源码
+
+      - name: Set Node Version
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Folder to upload from, must end with trailing slash /
+          local-dir: ./dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /langnang-develop.ml/htdocs/vue-element-webstack/

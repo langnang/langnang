@@ -1,0 +1,114 @@
+---
+# Additional page configuration
+
+# Additional configurations are loaded using its file name, minus the extension, as an anchor (https://<mydashboad>#<config>).
+# `config.yml` is still used as a base configuration, and all values here will overwrite it, so you don't have to re-defined everything
+
+# subtitle: "devices of langan"
+
+# This overwrites message config. Setting it to empty to remove message from this page and keep it only in the main one:
+# message: ~
+
+# as we want to include a differente link here (so we can get back to home page), we need to replicate all links or they will be revome when overwriting the links field:
+links:
+  - name: "Home"
+    icon: "fas fa-home"
+    url: "#"
+
+services:
+  - name: "Host"
+    icon: "fa-solid fa-signs-post"
+    items:
+      - name: "(11) Win10-Desktop"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:811/"
+      - name: "(12) Win10-Laptop"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:812/"
+      - name: "(13) fnOS-135"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:813/"
+  - name: "VM-Windows"
+    icon: "fa-solid fa-signs-post"
+    items:
+      - name: "(31) VM-Windows-7"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:813/"
+      - name: "(32) VM-WindowsServer-2008"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:813/"
+      - name: "(33) VM-WindowsServer-2016"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:813/"
+      - name: "(34) VM-WindowsServer-2019"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:813/"
+      - name: "(35) VM-WindowsServer-2022"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:813/"
+  # - name: "VM-WindowsServer"
+  #   icon: "fa-solid fa-signs-post"
+  #   items:
+  - name: "VM-Linux"
+    icon: "fa-solid fa-signs-post"
+    items:
+      - name: "(51) VM-fnOS-37"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:851/"
+      - name: "(52) VM-Debian-13"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:852/"
+      - name: "(53) VM-Ubuntu-24"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:853/"
+
+  - name: "VM-LinuxServer"
+    icon: "fa-solid fa-signs-post"
+    items:
+      - name: "(71) VM-UbuntuServer-18"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:871/"
+      - name: "(72) VM-UbuntuServer-22"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:872/"
+      - name: "(73) VM-UbuntuServer-24"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:873/"
+      - name: "(74) VM-FedoraServer-42"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:874/"
+      - name: "(75) VM-FedoraServer-40"
+        type: Ping
+        logo: "assets/tools/sample.png"
+        target: "_blank"
+        url: "http://101.126.135.139:875/"

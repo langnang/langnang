@@ -1,0 +1,713 @@
+actions:
+  set--:
+  set--hostname:
+    commands:
+      - sudo hostnamectl set-hostname $DEVICE_NAME
+  get--:
+  has--:
+  is--:
+  is--linux:
+  is--windows:
+  can--:
+  info--hostname:
+    commands:
+      - hostname
+  info--ipconfig:
+    commands:
+      - ipconfig
+  info--ifconfig:
+    commands:
+      - ifconfig
+  ping--baidu:
+    commands:
+      - "ping www.baidu.com"
+      - "ping www.kuake.com"
+      - "ping www.google.com"
+  install--cpolar:
+    commands:
+      - curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo -S bash
+      - cpolar version
+      - sudo systemctl enable cpolar
+      - sudo systemctl start cpolar
+      - sudo systemctl status cpolar
+  install--docker:
+    commands:
+  install--frpc:
+    commands:
+  install--frps:
+    commands:
+  reboot:
+    commands:
+      - "reboot"
+  upgrade--hostname:
+    commands:
+  upgrade--disk:
+    commands:
+  deploy--compose:
+    commands:
+  make--homer:
+    commands:
+  make--nginx:
+    commands:
+  docker-run--portainer_agent:
+    commands:
+  upload:
+  dnload:
+  conf--ssh:
+commands:
+  ssh: ssh $USER_NAME@$DEVICE_ADDR
+  scp:
+applications:
+  cpolar:
+  docker:
+softwares:
+  1panel: 10086
+  adminer: 8080
+  answer: 80
+  ariang: 6880
+  dashy: 8080
+  code-server: 8080
+  cookiecloud: 8088
+  docker.ui: 8999
+  dockerCopilot: 12712
+  dockge: 5001
+  dpanel: 8080
+  emby: 8096
+  flare: 5005
+  gitea: 3000
+  glances: 61208
+  gotty: 8080
+  gotty-docker: 1234
+  grafana: 3000
+  heimdall: 80
+  home-assistant: 8123
+  homepage: 3000
+  homer: 8080
+  jackett: 9117
+  jellyfin: 8096
+  jekyll: 4000
+  jenkins:
+    port: 8080
+    suffix: jenkins/
+  jupyter: 8888
+  kettle: 8080
+  mysql: 3306
+  moviepilot: 3000
+  moviepilot-v2: 3000
+  nastools: 3000
+  nginx: 80
+  nginx-proxy-manager: 81
+  nginxwebui: 8080
+  onenav: 80
+  plex: 32400
+  portainer: 9000
+  portainer-agent: 9001
+  qbittorrent: 8080
+  reader: 8080
+  redmine: 3000
+  reference: 3000
+  smartping: 8899
+  sun-panel: 3002
+  surveyking: 1991
+  tcexam: 80
+  transmission: 9091
+  typecho: 80
+  vaultwarden: 80
+  whodb: 8080
+types:
+  Linux:
+    applications:
+    softwares:
+  LinuxServer:
+    applications:
+    softwares:
+  Windows:
+    applications:
+    softwares:
+  WindowsServer:
+    applications:
+    softwares:
+devices:
+  # 01
+  ECS-VolcEngine-Debian-12:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: root
+      pass: chenLL!995
+    device:
+      code:
+      addr: 101.126.135.139
+      name: ECS-VolcEngine-Debian-12
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frps
+        name:
+  # 11
+  HOST-Win10-Desktop:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 12
+  HOST-Win10-Laptop:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 13
+  HOST-fnOS-135:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 31
+  VM-Windows:
+  VM-Windows-7:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 32
+  VM-Windows-8:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 33
+  VM-Windows-10:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  VM-WindowsServer:
+  # 34
+  VM-WindowsServer-2008:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 35
+  VM-WindowsServer-2016:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 36
+  VM-WindowsServer-2019:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 37
+  VM-WindowsServer-2022:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name:
+      pass:
+    device:
+      code:
+      addr:
+      name:
+      type:
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  VM-Linux:
+  # 51
+  VM-CentOS-8:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.146
+      name:
+      type: Linux
+    applications:
+      - code: openssh
+        name:
+        vern:
+        keys:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 52
+  VM-Debian-13:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.154
+      name:
+      type: Linux
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 53
+  VM-fnOS-37:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.143
+      name:
+      type: LinuxServer
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 54
+  VM-Ubuntu-24:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.135
+      name:
+      type: Linux
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  VM-LinuxServer:
+  # 71
+  VM-FedoraServer-40:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.162
+      name: VM-FedoraServer-40
+      type: LinuxServer
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 72
+  VM-FedoraServer-42:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.155
+      name: VM-FedoraServer-42
+      type: LinuxServer
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+
+  # 73
+  VM-UbuntuServer-18:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.130
+      name: VM-UbuntuServer-18
+      type: LinuxServer
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  VM-UbuntuServer-20:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.131
+      name: VM-UbuntuServer-20
+      type: LinuxServer
+  # 74
+  VM-UbuntuServer-22:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.148
+      name: VM-UbuntuServer-22
+      type: LinuxServer
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:
+  # 75
+  VM-UbuntuServer-24:
+    root:
+      code:
+      name:
+      pass:
+    user:
+      code:
+      name: administrator
+      pass: root
+    device:
+      code:
+      addr: 192.168.194.128
+      name: VM-UbuntuServer-24
+      type: LinuxServer
+    applications:
+      - code: cpolar
+        name:
+        vern:
+      - code: docker
+        name:
+        vern:
+      - code: docker-compose
+        name:
+        vern:
+    softwares:
+      - code: frpc
+        name:

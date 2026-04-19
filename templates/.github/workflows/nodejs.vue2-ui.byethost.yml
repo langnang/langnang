@@ -1,0 +1,58 @@
+name: 🚀 Deploy Vue2-UI(nodejs) directory on push with FTP
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "nodejs/vue2-ui/**"
+
+jobs:
+  deploy:
+    name: 🎉 Deploy vue2-ui to langnang.byethost32.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Create Vue@2 App
+        run: |
+          npm install -g @vue/cli
+          mkdir remote
+          cd remote
+          vue create vue2-ui -d --merge
+
+      - name: Migrate Configuration files
+        run: |
+          cp -rf nodejs/vue2-ui remote
+
+      - name: Install && Build
+        run: |
+          cd remote/vue2-ui
+          yarn install
+          npm run build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./remote/vue2-ui/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /htdocs/frameworks/nodejs/vue2-ui/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**

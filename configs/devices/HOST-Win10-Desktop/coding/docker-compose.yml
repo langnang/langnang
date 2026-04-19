@@ -1,0 +1,48 @@
+networks:
+  software-network:
+    external: true
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 50080:80
+      - 54000:4000
+      - 59074:9074
+      - 59082:9082
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/mime.types:/etc/nginx/mime.types
+      - ./nginx/upstream.d:/etc/nginx/upstream.d
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./html:/usr/share/nginx/html
+      - ./../../../../../langnang/docs:/usr/share/nginx/markdown
+      - ./../../../../../_docs:/usr/share/nginx/markdown/_docs
+      - ./../../../../../langnang/coding/html:/usr/share/nginx/html/html
+      - ./../../../../../langnang/coding/html.bootstrap3:/usr/share/nginx/html/html.bootstrap3
+      - ./../../../../../langnang/coding/html.bootstrap4:/usr/share/nginx/html/html.bootstrap4
+      - ./../../../../../langnang/coding/html.bootstrap5:/usr/share/nginx/html/html.bootstrap5
+    restart: unless-stopped
+    networks:
+      - software-network
+  php74:
+    image: php:7.4.33-fpm
+    volumes:
+      - ./../../../../../langnang/coding/php:/var/www/html
+      - ./../../../../../langnang/coding/html/templates/bootstrap4/style.css:/var/www/html/style.css
+      - ./php/.env:/var/www/html/.env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    networks:
+      - software-network
+  php82:
+    image: php:8.2-fpm
+    volumes:
+      - ./../../../../../langnang/coding/php:/var/www/html
+      - ./../../../../../langnang/coding/html/templates/bootstrap4/style.css:/var/www/html/style.css
+      - ./php/.env:/var/www/html/.env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    networks:
+      - software-network

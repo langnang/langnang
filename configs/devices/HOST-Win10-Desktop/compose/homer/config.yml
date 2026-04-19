@@ -1,0 +1,320 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/search for icons options
+
+title: "Langnang"
+# subtitle: "Homer"
+logo: "logo.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/icons">font awesome</a> & <a href="https://simpleicons.org/">Simple Icons</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+
+columns: "4" # "auto" or number (must be a factor of 12: 1, 2, 3, 4, 6, 12)
+
+# Set the default layout and color scheme
+defaults:
+  layout: list # Either 'columns', or 'list'
+  colorTheme: auto # One of 'auto', 'light', or 'dark'
+
+# Optional theme customization
+theme: default # 'default', 'walkxcode', or 'neon' see files in 'src/assets/themes'.
+
+# Optional theme customization (color overrrides)
+# overrrides can also be done using CSS vars
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+stylesheet:
+  - "assets/custom.css"
+
+# Optional message
+# message:
+#   #url: https://b4bz.io
+#   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+#   title: "Demo !"
+#   icon: "fa fa-grin"
+#   content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+# links:
+# - name: "Contribute"
+#   icon: "fab fa-github"
+#   url: "https://github.com/bastienwirtz/homer"
+#   target: "_blank" # optional html a tag target attribute
+# - name: "Wiki"
+#   icon: "fas fa-book"
+#   url: "https://www.wikipedia.org/"
+# - name: "Components"
+#   icon: "fas fa-file-alt"
+#   url: "#components"
+# this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+# see url field and assets/additional-page.yml.dist used in this example:
+# - name: "another page!"
+#   icon: "fas fa-file-alt"
+#   url: "#subs/additional-page"
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  # - name: "Applications"
+  #   icon: "fas fa-cloud"
+  #   items:
+  #     - name: "Get started"
+  #       icon: "fa-solid fa-download"
+  #       subtitle: "Start using Homer in a few minutes"
+  #       tag: "setup"
+  #       url: "https://github.com/bastienwirtz/homer?tab=readme-ov-file#get-started"
+  #     - name: "Configuration"
+  #       icon: "fa-solid fa-sliders"
+  #       subtitle: "Configuration options documentation"
+  #       tag: "setup"
+  #       url: "https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md"
+  #     - name: "Theming"
+  #       icon: "fa-solid fa-palette"
+  #       subtitle: "Customize Homer appearance"
+  #       tag: "theming"
+  #       url: "https://github.com/bastienwirtz/homer/blob/main/docs/theming.md"
+  #     - name: "Smart cards"
+  #       icon: "fa-solid fa-palette"
+  #       subtitle: "Displays dynamic information or actions."
+  #       tag: "setup"
+  #       url: "https://github.com/bastienwirtz/homer/blob/main/docs/customservices.md"
+  #     - name: "Dashboard icons"
+  #       icon: "fa-solid fa-icons"
+  #       subtitle: "Dashboard icons"
+  #       tag: "setup"
+  #       url: "https://github.com/walkxcode/dashboard-icons"
+
+  - name: "Langnang"
+    icon: "fas fa-cloud"
+    items:
+      - name: "langnang.github.io"
+        icon: "fab fa-github"
+        target: "_blank"
+      - name: "langnang"
+        icon: "fab fa-github"
+        target: "_blank"
+      - name: "docs"
+        type: "Ping"
+        icon: "fab fa-github"
+        target: "_blank"
+        url: "http://101.126.135.139:4000/README.md"
+
+  - name: "Solutions"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Cinema"
+        type: "Ping"
+        icon: "fa-solid fa-video"
+        url: "./cinema//"
+        target: "_blank" # optional html tag target attribute
+      - name: "Music"
+        type: "Ping"
+        icon: "fa-solid fa-music"
+        url: "./music//"
+        target: "_blank"
+      - name: "Library"
+        type: "Ping"
+        icon: "fa-solid fa-book"
+        url: "./book//"
+        target: "_blank"
+      - name: "School"
+        type: "Ping"
+        icon: "fa-solid fa-school-flag"
+        url: "./school//"
+        target: "_blank"
+      - name: "Exam"
+        type: "Ping"
+        icon: "fa-solid fa-circle-question"
+        url: "./exam//"
+        target: "_blank"
+
+  - name: "Proxies"
+    icon: "fa-solid fa-layer-group"
+    items:
+      - name: "Glances"
+        type: "Glances"
+        icon: "fa-solid fa-heart-pulse"
+        # logo: "assets/icons/glances.png"
+        url: "./glances//"
+        stats: [load, cpu, mem, swap] # Options: load, cpu, mem, swap
+        target: "_blank"
+      - name: "Gotty"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "./gotty//"
+        target: "_blank"
+      - name: "Portainer"
+        type: "Portainer"
+        logo: "assets/tools/sample2.png"
+        # url: https://my-service.url
+        url: "./portainer//"
+        target: "_blank"
+        # apikey: "<---insert-api-key-here--->"
+        apikey: "ptr_Yfx3iVM155MnqU21ADZkP9ZUsRLLoAyDpE586zSrq2s="
+        environments: # optional: specific environments to check
+          - "raspberry"
+          - "local"
+      - name: "Reference"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "./reference//"
+        target: "_blank"
+      - name: "Vaultwarden"
+        type: "Vaultwarden"
+        logo: "assets/tools/sample2.png"
+        url: "./vaultwarden//"
+        target: "_blank"
+      - name: "Emby"
+        type: "Emby"
+        url: "./emby//"
+        logo: "assets/tools/sample2.png"
+        apikey: "<---insert-api-key-here--->"
+        libraryType: "movies" # Choose which stats to show. Can be one of: music, series or movies.
+        target: "_blank"
+      - name: "Jellyfin"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "./jellyfin//"
+        target: "_blank"
+      - name: "Reader"
+        type: Ping
+        url: "./reader//"
+        logo: "assets/tools/sample2.png"
+        target: "_blank"
+      - name: "Jenkins"
+        type: Ping
+        url: "./jenkins//"
+        logo: "assets/tools/sample2.png"
+        target: "_blank"
+      - name: "Adminer"
+        type: Ping
+        url: "./adminer//"
+        logo: "assets/tools/sample2.png"
+        target: "_blank"
+      - name: "SmartPing"
+        type: Ping
+        url: "./smartping//"
+        logo: "assets/tools/sample2.png"
+        target: "_blank"
+      - name: "qBittorrent"
+        type: "qBittorrent"
+        logo: "assets/tools/sample2.png"
+        # url: https://my-service.url # Your rTorrent web UI, f.e. ruTorrent or Flood.
+        url: "./qbittorrent//"
+        target: "_blank"
+        rateInterval: 2000 # Interval for updating the download and upload rates.
+        torrentInterval: 5000 # Interval for updating the torrent count.
+
+  - name: "Softwares"
+    icon: "fa-solid fa-signs-post"
+    items:
+      - name: "SurveyKing::1991"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:1991/"
+        target: "_blank"
+      - name: "Redmine::3000"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:3000/"
+        target: "_blank"
+      - name: "SpiderFlow::8088"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:8088/"
+        target: "_blank"
+      - name: "Crawlab::8089"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:8089/"
+        target: "_blank"
+      - name: "Grafana::3003"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:3003/"
+        target: "_blank"
+      - name: "Answer::19001"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:19001/"
+        target: "_blank"
+      - name: "DPanel::8807"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:8807/"
+        target: "_blank"
+
+  - name: "Applications"
+    icon: "fa-solid fa-signs-post"
+    items:
+      - name: "Cpolar"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:8807/"
+        target: "_blank"
+      - name: "FTP"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:8807/"
+        target: "_blank"
+      - name: "SSH"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:8807/"
+        target: "_blank"
+      - name: "RDP"
+        type: Ping
+        logo: "assets/tools/sample2.png"
+        url: "http://101.126.135.139:8807/"
+        target: "_blank"
+  - name: "Database"
+    icon: "fa-solid fa-database"
+    items:
+      - name: "MySQL::3306"
+        logo: "https://cdn.simpleicons.org/mysql"
+        url: "./adminer//?server=host.docker.internal"
+        target: "_blank"
+      - name: "PostgreSQL::5432"
+        logo: "https://cdn.simpleicons.org/postgresql"
+        target: "_blank"
+      - name: "Redis::6379"
+        logo: "https://cdn.simpleicons.org/Redis"
+        target: "_blank"
+      - name: "MongoDB::27017"
+        logo: "https://cdn.simpleicons.org/MongoDB"
+        target: "_blank"
+      - name: "InfluxDB::8086"
+        logo: "https://cdn.simpleicons.org/InfluxDB"
+        target: "_blank"
+      - name: "Memcached::11211"
+        logo: "assets/tools/sample2.png"
+        target: "_blank"

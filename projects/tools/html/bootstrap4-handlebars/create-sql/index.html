@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 必须的 meta 标签 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Create Sql | Tools</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.min.css">
+
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="./../style.css">
+</head>
+
+<body>
+  <div id="app">
+
+    {{> layoutHeader}}
+
+    <main class="container" id="layout-main">
+      <form action="">
+        <div class="form-group">
+          <label>父本编码</label>
+          <input type="text" class="form-control" name="parent_code" value="{{form.parent_code}}">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>名称</label>
+            <input type="text" class="form-control" name="name" value="{{form.name}}">
+          </div>
+          <div class="form-group col-md-4">
+            <label>编码</label>
+            <input type="text" class="form-control" name="code" value="{{form.code}}">
+          </div>
+          <div class="form-group col-md-2">
+            <label>权重</label>
+            <input type="number" class="form-control" name="order" value="{{form.order}}">
+          </div>
+        </div>
+        <div class="form-group row">
+          <legend class="col-form-label col-sm-1 float-sm-left pt-0">角色</legend>
+          <div class="col-sm-11">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0001">
+              <label class="form-check-label" for="gridCheck">
+                管理员
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0002">
+              <label class="form-check-label" for="gridCheck">
+                报价主管
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0003">
+              <label class="form-check-label" for="gridCheck">
+                核价核损员
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0004">
+              <label class="form-check-label" for="gridCheck">
+                报价员
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0005">
+              <label class="form-check-label" for="gridCheck">
+                区域主管
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0006">
+              <label class="form-check-label" for="gridCheck">
+                工时维护
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0007">
+              <label class="form-check-label" for="gridCheck">
+                工时审核
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0008">
+              <label class="form-check-label" for="gridCheck">
+                配件工时主管
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0009">
+              <label class="form-check-label" for="gridCheck">
+                业务管理员
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0010">
+              <label class="form-check-label" for="gridCheck">
+                换修逻辑主管
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0011">
+              <label class="form-check-label" for="gridCheck">
+                数据管理员
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0012">
+              <label class="form-check-label" for="gridCheck">
+                SBU审核
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="roles[]" value="CX_PT18AFL_0013">
+              <label class="form-check-label" for="gridCheck">
+                风控规则维护
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="generateSql()">Submit</button>
+      </form>
+
+      <div class="form-group mt-3">
+        <textarea class="form-control form-control-sm" id="form_result" rows="15" disabled> </textarea>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control form-control-sm" id="form_result_rbk" rows="5" disabled> </textarea>
+      </div>
+    </main>
+
+    {{> layoutFooter}}
+
+  </div>
+  <!-- JavaScript 文件是可选的。从以下两种建议中选择一个即可！ -->
+
+  <!-- 选项 1：jQuery 和 Bootstrap 集成包（集成了 Popper） -->
+  <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- 选项 2：Popper 和 Bootstrap 的 JS 插件各自独立 -->
+  <!--
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    -->
+  <script crossorigin="anonymous" src="https://unpkg.com/holderjs@2.9.9/holder.min.js"></script>
+
+  <script src="https://unpkg.com/handlebars@4.7.8/dist/handlebars.min.js"></script>
+
+  <script src="./../script.js"></script>
+
+  <script>
+    function generateSql() {
+      console.log(`generateSql`)
+      console.log($('form').serializeArray())
+      let form = {};
+      $.each($('form').serializeArray(), function (index, field) {
+        form[field.name] = field.value;
+      });
+      // console.log($("[name='roles[]']:checked").attr('value'))
+      // console.log($('input[name="roles[]"][type=checkbox]:checked').map(function (el) {
+      //   return ($(this).val());
+      // }))
+      // let form = Object.fromEntries((new URLSearchParams(location.search)).entries());
+      let sql = `-- ${form.name}
+INSERT INTO PJAS.CAF_FUNCTION (ID, CODE, NAME, STATUS, TYPE, URL, PARENT_ID, SORT)
+  VALUES
+  (
+  sys_guid(),
+  '${form.code}',
+  '${form.name}',
+  '1',
+  'MENU',
+  NULL,
+  (SELECT ID FROM PJAS.CAF_FUNCTION WHERE TYPE = 'MENU' AND CODE = '${form.parent_code}'),
+  ${form.order}
+  );`+ [...$('input[name="roles[]"][type=checkbox]:checked')].reduce(function (total, el) {
+        // console.log($(el).val());
+        const code = $(el).val();
+        return total + `\n-- ${code}
+INSERT INTO PJAS.CAF_ROLEFUNCTION (ID,FUNCTION_ID,ROLE_ID)
+  SELECT sys_guid(),
+  (SELECT ID FROM CAF_FUNCTION WHERE CODE = '${form.code}'),
+  (SELECT ID FROM CAF_ROLE WHERE CODE = '${code}')
+  FROM DUAL
+  WHERE NOT EXISTS
+  (
+    SELECT 1 FROM CAF_ROLEFUNCTION
+    WHERE FUNCTION_ID IN
+      (SELECT ID FROM CAF_FUNCTION WHERE CODE = '${form.code}')
+    AND ROLE_ID = (SELECT ID FROM CAF_ROLE WHERE CODE = '${code}')
+  );
+`;
+        // return ($(this).val());
+      }, '');
+      $('#form_result').val(sql);
+
+      $("#form_result_rbk").val(`\n-- ${form.name} 角色配置 回滚
+DELETE FROM PJAS.CAF_ROLEFUNCTION WHERE FUNCTION_ID=(SELECT ID FROM CAF_FUNCTION WHERE CODE = '${form.code}');
+-- ${form.name} 回滚
+DELETE FROM PJAS.CAF_FUNCTION WHERE CODE = '${form.code}';
+`)
+
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      console.log(Object.fromEntries((new URLSearchParams(location.search)).entries()))
+      render({
+        title: "Create Sql | Tools",
+        form: { ...Object.fromEntries((new URLSearchParams(location.search)).entries()) },
+        sql: ``,
+      });
+
+    })
+  </script>
+</body>
+
+</html>

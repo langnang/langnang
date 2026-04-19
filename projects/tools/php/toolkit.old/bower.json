@@ -1,0 +1,17 @@
+{
+  "name": "@langnang/toolkit",
+  "homepage": "https://github.com/langnang/toolkit",
+  "authors": [
+    "langnang <langnang.chen@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

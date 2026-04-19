@@ -1,0 +1,190 @@
+{
+  "---": {
+    "latest": {
+      "main": {
+        "style": "",
+        "script": ""
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "@fortawesome/fontawesome-free": {
+    "6.5.1": {
+      "main": {
+        "style": "css/all.min.css"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "admin-lte": {
+    "3.2.0": {
+      "main": {
+        "style": "css/adminlte.min.css",
+        "script": "js/adminlte.min.js"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "axios": {
+    "0.21.4": {}
+  },
+  "bootstrap": {
+    "4.6.2": {
+      "main": {
+        "style": "css/{$name}.min.css",
+        "script": "js/{$name}.min.js"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "bootstrap-icons": {},
+  "github-markdown-css": {
+    "5.8.1": {
+      "main": {
+        "style": "github-markdown.css"
+      }
+    }
+  },
+  "googlefonts": {
+    "latest": {
+      "main": {
+        "style": "Roboto.css"
+      },
+      "styles": [
+        "Nunito.css",
+        "Roboto.css"
+      ],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "holderjs": {
+    "2.9.9": {
+      "main": {
+        "style": "{$name}.min.js",
+        "script": "{$name}.min.js"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "icheck-bootstrap": {
+    "3.0.1": {
+      "main": {
+        "style": "{$name}.min.css"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "ionicons": {
+    "2.0.1": {
+      "main": {
+        "style": "css/{$name}.min.css"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "jquery": {
+    "3.7.1": {
+      "main": {
+        "script": "{$name}.min.js"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "jquery-ui": {
+    "1.13.0": {
+      "main": {
+        "script": "{$name}.min.js"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "normalize.css": {
+    "8.0.1": {
+      "main": {
+        "style": "{$name}"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "select2": {
+    "4.0.13": {
+      "main": {
+        "style": "css/{$name}.min.css",
+        "script": "js/{$name}.min.js"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  },
+  "select2-bootstrap4-theme": {
+    "latest": {
+      "main": {
+        "style": "select2-bootstrap4.min.css"
+      },
+      "styles": [],
+      "scripts": [],
+      "svgs": [],
+      "images": [],
+      "webfonts": [],
+      "other": []
+    }
+  }
+}

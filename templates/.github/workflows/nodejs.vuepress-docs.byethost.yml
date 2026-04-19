@@ -1,0 +1,52 @@
+name: 🚀 Deploy VuePress-Docs(nodejs) directory on push with FTP
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "nodejs/vuepress-docs/**"
+
+jobs:
+  deploy:
+    name: 🎉 Deploy vuepress-docs to langnang.byethost32.com
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+
+      - name: Create VuePress App
+        run: |
+          cd nodejs
+          npm create vuepress created-vuepress-docs
+
+      - name: Install && Build
+        run: |
+          cd nodejs/created-vuepress-docs
+          npm install
+          npm run build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./nodejs/created-vuepress-docs/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /htdocs/frameworks/nodejs/vuepress-docs/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**

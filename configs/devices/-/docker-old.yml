@@ -1,0 +1,123 @@
+stacks:
+  # - _desktop
+  - VM-Debian-13
+  - VM-fnOS-37
+  - VM-Ubuntu-24
+  - VM-UbuntuServer-18
+  - VM-UbuntuServer-22
+  - VM-UbuntuServer-24
+  - VolcEngine-ECS-Debian-12
+  # - network_software
+  # - solution_cinema
+  # - solution_library
+  # - solution_school
+
+softwares:
+  1panel: 10086
+  adminer: 8080
+  answer: 80
+  ariang: 6880
+  dashy: 8080
+  code-server: 8080
+  cookiecloud: 8088
+  docker.ui: 8999
+  dockerCopilot: 12712
+  dockge: 5001
+  dpanel: 8080
+  emby: 8096
+  flare: 5005
+  gitea: 3000
+  glances: 61208
+  gotty: 8080
+  gotty-docker: 1234
+  grafana: 3000
+  heimdall: 80
+  home-assistant: 8123
+  homepage: 3000
+  homer: 8080
+  jackett: 9117
+  jellyfin: 8096
+  jekyll: 4000
+  jenkins:
+    port: 8080
+    suffix: jenkins/
+  jupyter: 8888
+  kettle: 8080
+  mysql: 3306
+  moviepilot: 3000
+  moviepilot-v2: 3000
+  nastools: 3000
+  nginx: 80
+  nginx-proxy-manager: 81
+  nginxwebui: 8080
+  onenav: 80
+  plex: 32400
+  portainer: 9000
+  portainer-agent: 9001
+  qbittorrent: 8080
+  reader: 8080
+  redmine: 3000
+  reference: 3000
+  smartping: 8899
+  sun-panel: 3002
+  surveyking: 1991
+  tcexam: 80
+  transmission: 9091
+  typecho: 80
+  vaultwarden: 80
+  whodb: 8080
+
+_desktop:
+  commands:
+    - docker restart desktop-nginx-1
+    - docker restart desktop-frpc-1
+
+_laptop:
+  commands:
+    - docker restart desktop-nginx-1
+    - docker restart desktop-frpc-1
+
+VolcEngine-ECS-Debian-12:
+  commands:
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/docker-compose.yml root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/docker-compose.host.yml root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/frpc root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/frps root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/homer root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/nginx root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/portainer root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/smartping root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/vaultwarden root@101.126.135.139:/app/
+    # - scp -r D:/wwwroot/@Langnang/_configs/@docker/esc-debian-12/prometheus root@101.126.135.139:/app/
+    # - ssh root@101.126.135.139 "cd /app; docker compose -f docker-compose.yml up -d --build;"
+    # - ssh root@101.126.135.139 "cd /app; docker compose -f docker-compose.host.yml up -d  --build;"
+    # - ssh root@101.126.135.139 "cd /app; docker restart app-frps-1;"
+    # - docker-compose -f 'D:\wwwroot\@Langnang\_configs\@docker\esc-debian-12\docker-compose.yml' up -d --build
+    # - docker-compose -f 'D:\wwwroot\@Langnang\_configs\@docker\esc-debian-12\docker-compose.host.yml' up -d --build
+    # - docker restart esc-debian-12-nginx-1
+network_software:
+  # docker_services:
+  append_softwares:
+    # - transmission
+    # - moviepilot-v2
+    - qbittorrent
+    - grafana
+    - ariang
+    # - jackett
+    # - home-assistant
+    # - surveyking
+    - nginx-proxy-manager
+  softwares:
+    homer:
+      config:
+  commands:
+    - compose -f 'D:\wwwroot\@Langnang\_configs\@docker\network_software\docker-compose.yml' up -d --build
+    - docker restart network_software-nginx-1
+
+solution_cinema:
+  vmware: Ubuntu-Server-24
+  commands:
+    - scp -r D:/wwwroot/@Langnang/_configs/@docker/solution_cinema/docker-compose.yml administrator@192.168.194.133:/app/
+    - scp -r D:/wwwroot/@Langnang/_configs/@docker/solution_cinema/homer administrator@192.168.194.133:/app/
+    - scp -r D:/wwwroot/@Langnang/_configs/@docker/solution_cinema/nginx administrator@192.168.194.133:/app/
+    - ssh administrator@192.168.194.133 "cd /app; docker compose up -d;"

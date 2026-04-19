@@ -1,0 +1,39 @@
+# services:
+#   adminer:
+#     image: adminer:latest
+#     # ports:
+#     #   - 0:8080
+#     # volumes:
+#     #   - adminer-plugins:/var/www/html/plugins-enabled
+#     # environment:
+#     #   - ADMINER_DESIGN=hydra
+#     #   - ADMINER_PLUGINS=login-ldap
+#     restart: unless-stopped
+#   glances:
+#     image: nicolargo/glances:latest
+#     environment:
+#       - TZ=Asia/Shanghai
+#       - GLANCES_OPT=-w
+#     # ports:
+#     #   - 0:61208
+#     restart: unless-stopped
+#   gotty:
+#     image: modenaf360/gotty:latest
+#     # ports:
+#     #   - 0:8080
+#     tty: true
+#     stdin_open: true
+#     restart: unless-stopped
+#   homer:
+#     image: b4bz/homer:latest
+#     environment:
+#       - PUID=1000
+#       - PGID=100
+#       - TZ=Asia/Shanghai
+#     volumes:
+#       - ./homer/subs:/www/assets/subs
+#       - ./homer/custom.css:/www/assets/custom.css
+#       - ./homer/config.yml:/www/assets/config.yml
+#     # ports:
+#     #   - 8580:8080
+#     restart: unless-stopped

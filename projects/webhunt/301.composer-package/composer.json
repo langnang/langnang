@@ -1,0 +1,17 @@
+{
+    "name": "admin/300.composer-package",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "langnang",
+            "email": "langnang.chen@outlook.com"
+        }
+    ],
+    "require": {
+        "owner888/phpspider": "^2.1"
+    }
+}

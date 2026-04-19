@@ -1,0 +1,13 @@
+{
+    "name": "WebSpider",
+    "alias": "webspider",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WebSpider\\Providers\\WebSpiderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

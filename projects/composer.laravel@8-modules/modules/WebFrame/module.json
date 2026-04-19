@@ -1,0 +1,13 @@
+{
+    "name": "WebFrame",
+    "alias": "webframe",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WebFrame\\Providers\\WebFrameServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,47 @@
+# GitHub Actions
+name: Create Vue App and Deploy # 名称
+on:
+  push:
+    branches:
+      - master # master 分支发生push事件时触发
+jobs:
+  build-and-deploy: # 任务
+    runs-on: ubuntu-latest # 运行环境
+    steps: # 运行步骤
+      - name: Checkout
+        uses: actions/checkout@master # 获取源码
+
+      - name: Set Node Version
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Create Vue@2 Project
+        run: |
+          npm install -g @vue/cli
+          vue create 200.vue2-ui -d --merge
+
+      - name: Install and Build
+        run: |
+          cd 200.vue2-ui
+          npm run build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # ftp server
+          server: ftpupload.net
+          # ftp username
+          username: b32_28202196
+          # ftp password
+          password: ${{ secrets.ftp_password }}
+          # local dir
+          local-dir: ./200.vue2-ui/dist/
+          # Path to upload to on the server. Must end with trailing slash /
+          server-dir: /frameworks.22web.org/htdocs/200.vue2-ui/
+          # File to Exclude
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*/**
+            **/node_modules/**

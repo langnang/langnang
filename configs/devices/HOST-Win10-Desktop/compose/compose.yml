@@ -1,0 +1,153 @@
+networks:
+  software-network:
+    external: true
+include:
+  - ./compose.develop.yml
+  - ./compose.host.yml
+  - ./compose.proxy.yml
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "880"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/mime.types:/etc/nginx/mime.types
+      - ./nginx/upstream.d:/etc/nginx/upstream.d
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  surveyking:
+    image: surveyking/surveyking
+    ports:
+      - "1991" # 冒号左侧可改
+    volumes:
+      - surveyking_db:/app/db
+      - surveyking_files:/app/files
+      - surveyking_logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - software-network
+  synctv:
+    image: synctvorg/synctv
+    ports:
+      - "8080"
+    volumes:
+      - synctv_data:/root/.synctv
+    restart: unless-stopped
+    networks:
+      - software-network
+  spider-flow:
+    image: wbsu2003/spider-flow
+    ports:
+      - "8088"
+    environment:
+      - SPRING_DATASOURCE_DRIVER-CLASS-NAME=com.mysql.jdbc.Driver
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=phpts
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal/spiderflow?useSSL=false&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&allowPublicKeyRetrieval=true
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  crawlab:
+    image: crawlabteam/crawlab
+    environment:
+      CRAWLAB_NODE_MASTER: "Y"
+      # CRAWLAB_MONGO_HOST: "127.0.0.1" # mongo host address. 在 Docker-Compose 网络中，直接引用 service 名称
+      # CRAWLAB_MONGO_HOST: "host.docker.internal"
+      CRAWLAB_MONGO_HOST: mongodb
+      CRAWLAB_MONGO_PORT: 27017 # mongo port
+      CRAWLAB_MONGO_DB: crawlab # mongo database
+      CRAWLAB_MONGO_USERNAME: mongodb # mongo username
+      CRAWLAB_MONGO_PASSWORD: langnang.com # mongo password
+      CRAWLAB_MONGO_AUTHSOURCE: admin # mongo auth source
+      # CRAWLAB_REDIS_ADDRESS: "172.24.0.1"
+    ports:
+      - "8080"
+    volumes:
+      - "./crawlab/master:/root/.crawlab" # 持久化 crawlab 元数据
+      - "./crawlab/data:/data" # 持久化 crawlab 数据
+      - "./crawlab/logs:/var/log/crawlab" # 持久化 crawlab 任务日志
+      # - "./crawlab/working_dir:/app/backend"
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  answer:
+    image: answerdev/answer
+    ports:
+      - "80"
+    volumes:
+      - answer_data:/data
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  grafana:
+    image: grafana/grafana-enterprise
+    ports:
+      - "3000"
+    volumes:
+      - grafana_app:/var/lib/grafana
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    ports:
+      - "9100"
+    volumes:
+      - ./node-exporter/host/proc:/host/proc
+      - ./node-exporter/host/sys:/host/sys
+      - ./node-exporter/rootfs:/rootfs
+    command:
+      - "--path.procfs=/host/proc"
+      - "--path.sysfs=/host/sys"
+      - "--path.rootfs=/rootfs"
+      - "--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)"
+    restart: unless-stopped
+    networks:
+      - software-network
+  redmine:
+    image: redmine:latest
+    ports:
+      - "3000"
+    volumes:
+      - redmine_files:/usr/src/redmine/files
+      - redmine_plugins:/usr/src/redmine/plugins
+      - redmine_sqlite:/usr/src/redmine/sqlite
+      - redmine_themes:/usr/src/redmine/public/themes
+    restart: unless-stopped
+    networks:
+      - software-network
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    ports:
+      - "8096"
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - jellyfin_cache:/cache
+      - jellyfin_config:/config
+      - D:\Videos:/media
+    restart: unless-stopped
+    networks:
+      - software-network
+volumes:
+  answer_data:
+  grafana_app:
+  jellyfin_cache:
+  jellyfin_config:
+  jenkins_config:
+  redmine_files:
+  redmine_plugins:
+  redmine_sqlite:
+  redmine_themes:
+  surveyking_db:
+  surveyking_files:
+  surveyking_logs:
+  synctv_data:

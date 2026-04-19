@@ -1,5 +1,0 @@
----
-title: Batch
----
-
-# Program.Batch

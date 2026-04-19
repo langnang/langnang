@@ -1,0 +1,13 @@
+{
+    "name": "PublicApi",
+    "alias": "publicapi",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PublicApi\\Providers\\PublicApiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

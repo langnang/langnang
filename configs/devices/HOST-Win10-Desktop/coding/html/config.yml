@@ -1,0 +1,420 @@
+title: Coding
+theme: list # default
+columns: 4
+styles:
+  - https://unpkg.com/normalize.css@8.0.1/normalize.css
+  - https://unpkg.com/animate.css@4.1.1/animate.min.css
+  - https://unpkg.com/bootstrap@4.6.2/dist/css/bootstrap.min.css
+  - https://unpkg.com/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css
+scripts:
+  - https://unpkg.com/jquery@3.7.1/dist/jquery.slim.min.js
+  - https://unpkg.com/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js
+  - https://unpkg.com/mockjs@1.1.0/dist/mock-min.js
+  - https://unpkg.com/holderjs@2.9.9/holder.min.js
+  - https://unpkg.com/js-yaml@4.1.1/dist/js-yaml.min.js
+
+data:
+icons:
+
+logos:
+  iconfont:
+
+proxy:
+  devp:
+    - http://localhost:50080/
+    - http://127.0.0.1:50080/
+  test:
+  prod:
+
+items:
+  - name: 应用 · Applications
+    items:
+      - name: 7-Zip
+        logo: https://cdn.simpleicons.org/7zip
+      - name: Anydesk
+        logo: https://cdn.simpleicons.org/anydesk
+      - name: Apache
+        logo: https://cdn.simpleicons.org/apache
+      - name: Apifox
+        logo: https://cdn.simpleicons.org/apifox
+      - name: Cpolar
+        logo: https://cdn.simpleicons.org/simpleicons
+      - name: Docker
+        logo: https://cdn.simpleicons.org/docker
+      - name: Everything
+        logo: https://cdn.simpleicons.org/simpleicons
+      - name: FileZilla
+        logo: https://cdn.simpleicons.org/filezilla
+      - name: Git
+        logo: https://cdn.simpleicons.org/gitforwindows
+      - name: Nginx
+        logo: https://cdn.simpleicons.org/nginx
+      - name: Notepad++
+        logo: https://cdn.simpleicons.org/notepadplusplus
+      - name: Postman
+        logo: https://cdn.simpleicons.org/postman
+      - name: Typora
+        logo: https://cdn.simpleicons.org/simpleicons
+      - name: Visual Studio
+        logo: https://cdn.simpleicons.org/simpleicons
+      - name: Visual Studio Code
+        logo: https://cdn.simpleicons.org/simpleicons
+      - name: Windows Terminal
+        logo: https://cdn.simpleicons.org/simpleicons
+      - name: VMware Workstation
+        logo: https://cdn.simpleicons.org/vmware
+      - name: Android Studio
+        logo: https://cdn.simpleicons.org/androidstudio
+  - name: 推荐 · Awesome
+  - name: 编程 · Coding
+    icon: bi bi-code
+    items:
+      - name: HTML
+        logo: https://cdn.simpleicons.org/html5
+      - name: CSS
+        logo: https://cdn.simpleicons.org/css
+      - name: JavaScript
+        logo: https://cdn.simpleicons.org/javascript
+      - name: PHP
+        logo: https://cdn.simpleicons.org/php
+      - name: Composer
+        logo: https://cdn.simpleicons.org/composer
+      - name: Node
+        logo: https://cdn.simpleicons.org/nodedotjs
+      - name: Python
+        logo: https://cdn.simpleicons.org/python
+      - name: Ruby
+        logo: https://cdn.simpleicons.org/ruby
+
+      - name: Batch
+        logo: https://cdn.simpleicons.org/bat
+      - name: Shell
+        logo: https://cdn.simpleicons.org/shell
+      - name: .Net
+        logo: https://cdn.simpleicons.org/dotnet
+      - name: UniApp
+        logo: https://cdn.simpleicons.org/uv
+  - name: 速查 · CheatSheet
+  - name: 组件 · Components
+    tags:
+      - Basic
+      - Form
+      - Data
+      - Notice
+      - Navigation
+      - Others
+    items:
+      - name: Container 容器
+      - name: Color 色彩
+      - name: Typography 字体
+      - name: Link 链接
+      - name: Radio 单选
+      - name: Checkbox 多选
+      - name: InputNumber 计数
+      - name: Select 选择
+      - name: Cascader 级联
+      - name: Switch 开关
+      - name: Slider 滑块
+      - name: TimePicker 时间选择器
+      - name: DatePicker 日期选择器
+      - name: DateTimePicker 日期时间选择器
+      - name: Upload 上传
+      - name: Rate 评分
+      - name: ColorPicker 颜色选择器
+      - name: Transfer 穿梭框
+      - name: Tag 标签
+      - name: Tree 树形控件
+      - name: Skeleton 骨架屏
+      - name: Empty 空状态
+      - name: Descriptions 描述列表
+      - name: Result 结果
+      - name: Statistic 统计数值
+      - name: MessageBox 弹框
+      - name: Notification 通知
+      - name: NavMenu 导航菜单
+      - name:
+      - name:
+      - name:
+      - name:
+      - name:
+      - name:
+      - name: Loading 加载
+      - name: Alert 警告
+      - name: Avatar 头像
+      - name: Backtop 回到顶部
+      - name: Badge 标记
+      - name: Border 边框
+      - name: Breadcrumb 面包屑
+      - name: Button 按钮
+      - name: Calendar 日历
+      - name: Card 卡片
+      - name: Carousel 走马灯
+      - name: Code 代码
+      - name: Collapse 折叠面板
+      - name: Confirm 确认提示
+      - name: Divider 分割线
+      - name: Drawer 抽屉
+      - name: Dropdown 下拉菜单
+      - name: Figure 画像
+      - name: Form 表单
+      - name: Image 图片
+      - name: InfiniteScroll 无限滚动
+      - name: Input 输入
+      - name: Jumbotron
+      - name: Layout 布局
+      - name: List 列表
+      - name: Media 媒体对象
+      - name: Message 消息提示
+      - name: Modal 模态框
+      - name: Navs 导航
+      - name: Navbar 导航栏
+      - name: Notify
+      - name: PageHeader 页头
+      - name: Pagination 分页
+      - name: Popover 弹出框
+      - name: PopConfirm 气泡确认框
+      - name: Progress 进度条
+      - name: Scrollspy 滚动监听
+      - name: Spinner 旋转图标
+      - name: Steps 步骤条
+      - name: Table 表格
+      - name: Tabs 标签页
+      - name: Text 文本
+      - name: Timeline 时间线
+      - name: Toast 轻量弹框
+      - name: Tooltip 文字提示
+  - name: 集合 · Collections
+  - name: 依赖 · Dependencies
+    items:
+      - name: NPM
+        logo: https://cdn.simpleicons.org/npm
+        url: https://www.npmjs.com/
+      - name: npm.webpack
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.rollup
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.vite
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.vuex
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.vue-router
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.element-ui
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.typescript
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.lodash
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.moment
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.mockjs
+      - name: npm.gulp
+        logo: https://cdn.simpleicons.org/gulp
+      - name: npm.sass
+        logo: https://cdn.simpleicons.org/sass
+      - name: npm.less
+        logo: https://cdn.simpleicons.org/less
+      - name: npm.handlebars
+        logo: https://cdn.simpleicons.org/npm
+        url: http://www.handlebarsjs.com/
+      - name: npm.underscore
+        logo: https://cdn.simpleicons.org/npm
+        url: http://jashkenas.github.io/underscore/
+      - name: npm.nunjucks
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.fastify
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.Chart
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.axios
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.stylus
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.preact
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.ant-design
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.alpinejs
+        logo: https://cdn.simpleicons.org/npm
+      - name: npm.tailwindcss
+        logo: https://cdn.simpleicons.org/npm
+
+      - name: Packagist
+        logo: https://cdn.simpleicons.org/packagist
+        url: https://packagist.p2hp.com/
+      - name: composer.phpspider
+        logo: https://cdn.simpleicons.org/simpleicons
+
+      - name: PyPI
+        logo: https://cdn.simpleicons.org/pypi
+        url: https://pypi.org/
+      - name: RubyGems
+        logo: https://cdn.simpleicons.org/rubygems
+        url: https://rubygems.org/
+  - name: 范例 · Examples
+    items:
+  - name: 模板 · Templates
+    items:
+      - name: html.bootstrap3
+        logo: https://cdn.simpleicons.org/bootstrap
+        items:
+      - name: html.bootstrap4
+        logo: https://cdn.simpleicons.org/bootstrap
+        items:
+      - name: html.bootstrap5
+        logo: https://cdn.simpleicons.org/bootstrap
+        items:
+      - name: node.vue2
+      - name: node.vue2-ts
+      - name: node.vue3
+      - name: node.vue3-ts
+      - name: node.react
+      - name: node.vuepress
+      - name: ruby.jekyll
+  - name: 框架 · Frameworks
+    items:
+      - name: html.bootstrap
+        logo: https://cdn.simpleicons.org/bootstrap
+        items:
+      - name: html.jquery
+        logo: https://cdn.simpleicons.org/jquery
+        items:
+      - name: html.vue
+        logo: https://cdn.simpleicons.org/vuedotjs
+        items:
+      - name: html.react
+        logo: https://cdn.simpleicons.org/react
+        items:
+      - name: html.angular
+        logo: https://cdn.simpleicons.org/angular
+        items:
+      - name: composer.laravel
+        logo: https://cdn.simpleicons.org/laravel
+        items:
+      - name: composer.lumen
+        logo: https://cdn.simpleicons.org/lumen
+        items:
+  - name: 图标 · Icon
+    items:
+      - name: Font Awesome
+        logo: https://cdn.simpleicons.org/fontawesome
+        url: https://fontawesome.com/
+      - name: Simple Icons
+        logo: https://cdn.simpleicons.org/simpleicons
+        url: https://simpleicons.org/
+      - name: iconfont
+        url: http://www.iconfont.cn/
+      - name: Bootstrap Icons
+        logo: https://cdn.simpleicons.org/bootstrap
+        url: https://icons.bootcss.com/
+
+      - name: Cikonss
+        url: http://www.bootcss.com/p/cikonss/index.html
+      - name: Glyph Icons
+        url: http://glyphicons.com/
+      - name: Material Design Iconic Font
+        url: http://zavoloklom.github.io/material-design-iconic-font/index.html
+      - name: Weather Icons
+        url: http://erikflowers.github.io/weather-icons/
+      - name: Simple Line Icons
+        logo:
+        url: https://thesabbir.github.io/simple-line-icons/
+      - name: Ionicons
+        logo:
+        url: http://ionicons.com/
+      - name: Themify
+        logo:
+        url: http://themify.me/themify-icons
+      - name:
+        logo:
+        url:
+      - name:
+        logo:
+        url:
+      - name:
+        logo:
+        url:
+  - name: 标识 · Logo
+  - name: 手册 · Manuals
+  - name: 接口 · OpenAPI
+    items:
+      - name: Swagger
+        logo: https://cdn.simpleicons.org/swagger
+  - name: 封包 · Packages
+  - name: 平台 · Platforms
+    items:
+      - name: GitHub
+        logo: https://cdn.simpleicons.org/gitHub
+      - name: Gitee
+        logo: https://cdn.simpleicons.org/gitee
+      - name: GitLab
+        logo: https://cdn.simpleicons.org/gitlab
+      - name: Bitbucket
+        logo: https://cdn.simpleicons.org/bitbucket
+      - name: 分发 · CDNs
+        icon: bi bi-circle-fill
+        class:
+        style:
+        attrs:
+        items:
+          - name: UNPKG
+            url: https://unpkg.com/
+          - name: jsDelivr
+            url: https://www.jsdelivr.com/
+          - name: BootCDN
+            url: https://www.bootcdn.cn/
+          - name: cdnjs
+            url: https://cdnjs.com/
+  - name: 实践 · Practices
+    items:
+      - name: php.phpspider
+      - name: composer.phpspider
+  - name: 项目 · Projects
+  - name: 参考 · References
+  - name: 脚本 · Scripts
+    items:
+      - name: batch.sync-reporistories
+      - name: batch.install-dependencies
+      - name: shell.install-docker
+      - name: shell.install-cpolar
+  - name: 软件 · Softwares
+    items:
+      - name: OneIndex
+        logo: https://cdn.simpleicons.org/php
+      - name: SkyCaiji
+        logo: https://cdn.simpleicons.org/php
+        url: https://www.skycaiji.com/
+      - name: Typecho
+  - name: 标准 · Standards
+    items:
+      - name: HTML
+      - name: CSS
+      - name: JavaScript
+      - name: PHP
+      - name: Markdown
+  - name: 语法 · Syntax
+  - name: 教程 · Tutorials
+  - name: 测试 · Units
+    items:
+      - name: php.phpinfo
+        url: http://localhost:59074/units/phpinfo.php
+      - name: php.progress
+        url: http://localhost:59074/units/progress.php
+  - name: 工具 · Utils
+    items:
+      - name: php.cpolar
+        url: http://localhost:59074/utils/cpolar.php
+      - name: php.frps
+        url: http://localhost:59074/utils/frps.php
+      - name: php.postman
+        logo: https://cdn.simpleicons.org/postman
+        url: http://localhost:59074/utils/postman.php
+children:
+  - name: html
+    items:
+  - name: html.bootstrap3
+    items:
+  - name: html.bootstrap4
+    items:
+  - name: html.bootstrap5
+    items:

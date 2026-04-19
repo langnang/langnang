@@ -1,0 +1,154 @@
+networks:
+  software-network:
+    external: true
+services:
+  adminer:
+    image: adminer:latest
+    ports:
+      - "8080"
+    volumes:
+      - adminer_app:/var/www/html
+    # environment:
+    #   - ADMINER_DESIGN=hydra
+    #   - ADMINER_PLUGINS=login-ldap
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  emby:
+    image: emby/embyserver:latest
+    ports:
+      - "8096"
+    environment:
+      - LANG=zh_CN.UTF-8
+    volumes:
+      - ./emby/config:/config
+      - D:\Videos:/media
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  glances:
+    image: nicolargo/glances:latest
+    ports:
+      - "61208"
+    environment:
+      - TZ=Asia/Shanghai
+      - GLANCES_OPT=-w
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  gotty:
+    image: modenaf360/gotty:latest
+    ports:
+      - "8080"
+    volumes:
+      - //var/run/docker.sock:/var/run/docker.sock
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  homer:
+    image: b4bz/homer:latest
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=Asia/Shanghai
+    labels:
+      - Homepage
+    ports:
+      - "8080"
+    volumes:
+      - ./homer/subs:/www/assets/subs
+      - ./homer/custom.css:/www/assets/custom.css
+      - ./homer/config.yml:/www/assets/config.yml
+      - ./homer/develop.yml:/www/assets/develop.yml
+    restart: unless-stopped
+    networks:
+      - software-network
+  jenkins:
+    image: jenkins/jenkins:latest
+    ports:
+      - "8080"
+    volumes:
+      - ./jenkins/var/jenkins_home:/var/jenkins_home
+    environment:
+      - JENKINS_PREFIX=/jenkins
+      - JAVA_OPTS=-Xmx256m
+    command: --prefix=/jenkins
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    ports:
+      - "8080" # Web UI 端口
+      # - "6881" # TCP 连接端口
+      # - "6881/udp" # UDP 连接端口
+    environment:
+      - PUID=1000 # 用户 ID
+      - PGID=1000 # 用户组 ID
+      - TZ=Asia/Shanghai # 时区设置
+    volumes:
+      - qbittorrent_config:/config
+      - D:\Downloads:/downloads
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  reader:
+    image: hectorqin/reader
+    ports:
+      - "8080"
+    volumes:
+      - reader_storage:/storage
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  smartping:
+    image: qctt/smartping
+    ports:
+      - "8899"
+    volumes:
+      - ./smartping/conf:/smartping/conf
+      - ./smartping/html:/smartping/html
+      - ./smartping/assets:/smartping/assets
+    restart: unless-stopped
+    networks:
+      - software-network
+
+  vaultwarden:
+    image: vaultwarden/server:latest
+    environment:
+      # DOMAIN: "https://vaultwarden.example.com" # 使用反向代理时必填；您的域名；Vaultwarden 需要知道它是 https 才能正确处理附件
+      # - SIGNUPS_ALLOWED=false # 创建账户后，使用 "false" 停用此选项，这样就不会有陌生人注册了
+      - WEBSOCKET_ENABLED=false
+    ports:
+      - "80" # 您可以将 11001 替换为您喜欢的端口
+    volumes:
+      - vaultwarden_data:/data # : 前面的路径可以修改
+    restart: unless-stopped
+    networks:
+      - software-network
+  reference:
+    image: wcjiang/reference
+    ports:
+      - "3000"
+    volumes:
+      - reference_data:/home/static
+    restart: unless-stopped
+    networks:
+      - software-network
+volumes:
+  adminer_app:
+  qbittorrent_config:
+  reader_storage:
+  reference_data:
+  vaultwarden_data:

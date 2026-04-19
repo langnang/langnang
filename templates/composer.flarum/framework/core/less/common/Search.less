@@ -1,0 +1,146 @@
+.Search {
+  position: relative;
+}
+
+.DiscussionSearchResult {
+  > .DiscussionListItem {
+    --discussion-list-item-bg-hover: var(--control-bg);
+    margin: 0 -16px;
+    border-radius: 0;
+
+    > .DiscussionListItem-content {
+      opacity: 1;
+    }
+  }
+
+  &.active > .DiscussionListItem {
+    background-color: var(--discussion-list-item-bg-hover);
+  }
+}
+
+.UserSearchResult {
+  margin: 0 -16px;
+
+  .badges {
+    margin-inline-start: 4px;
+  }
+  > a {
+    gap: 6px;
+    padding: 12px 15px;
+    border-radius: 0;
+  }
+  .Avatar {
+    --size: 36px;
+  }
+  .username {
+    font-size: 15px;
+  }
+}
+
+.SearchModal {
+  &-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+
+  &-tabs {
+    &-nav + .Modal-divider {
+      margin-top: 0;
+    }
+
+    &-nav {
+      margin-bottom: -1px;
+      display: flex;
+      column-gap: 4px;
+      padding: 0 14px;
+
+      > .Button {
+        border-radius: 0;
+        font-size: 15px;
+        padding: 12px 8px;
+        border-bottom: 2px solid;
+        border-color: transparent;
+
+        &[active] {
+          --button-color: var(--text-color);
+          --link-color: var(--text-color);
+          border-color: var(--primary-color);
+          font-weight: bold;
+        }
+      }
+    }
+
+    &-content {
+      .Dropdown--expanded();
+
+      .Dropdown-header {
+        color: var(--muted-more-color);
+      }
+
+      > .SearchModal-section:first-of-type .Modal-divider {
+        margin-top: -1px;
+      }
+    }
+  }
+
+  &-input {
+    background: transparent !important;
+    height: 42px;
+    border-color: var(--form-control-color);
+  }
+
+  &-results {
+    mark {
+      background: none;
+      padding: 0;
+      font-weight: bold;
+      color: inherit;
+      box-shadow: none;
+    }
+
+    .Badge {
+      --packing-space: 8px;
+      --size: 18px;
+      box-shadow: none;
+    }
+  }
+
+  &-fullPage .LinkButton {
+    font-weight: bold;
+  }
+
+  .Dropdown-menu>li>a, .Dropdown-menu>li>button, .Dropdown-menu>li>span {
+    border-radius: var(--border-radius);
+  }
+
+  .Input {
+    z-index: 0;
+  }
+}
+
+.SearchModal-visual-wrapper {
+  position: absolute;
+  inset: 0;
+  margin-left: 34px;
+  margin-right: 32px;
+  line-height: 42px;
+  color: transparent;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.SearchModal-visual-input {
+  position: absolute;
+  inset: 0;
+  white-space: pre;
+}
+
+.SearchModal-visual-input mark {
+  margin: 0;
+  padding: 0;
+  background-color: var(--control-bg-shaded);
+  color: transparent;
+}
+

@@ -1,0 +1,115 @@
+
+[common]
+# server_addr为FRPS服务器IP地址
+server_addr = 101.126.135.139
+# server_port为服务端监听端口，bind_port
+server_port = 7000
+# 身份验证
+token = langnang.com
+
+[Desktop::FTP]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 21
+remote_port = 21
+
+# 内网穿透 SSH:22 端口
+[Desktop::SSH]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 22
+
+# 内网穿透 Nginx:80 端口
+[Desktop::Nginx]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 80
+remote_port = 80
+
+[Desktop::MySQL]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 3306
+remote_port = 3306
+
+[Desktop::PostgreSQL]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 5432
+remote_port = 5432
+
+[Desktop::Redis]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 6379
+remote_port = 6379
+
+[Desktop::Memcached]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 11211
+remote_port = 11211
+
+[Desktop::InfluxDB]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8086
+remote_port = 8086
+
+[Desktop::MongoDB]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 27017
+remote_port = 27017
+
+# 内网穿透 Markdown:4000 端口
+[Desktop::Markdown]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 4000
+remote_port = 4000
+
+# 内网穿透 SurveyKing:1991 端口
+[Desktop::SurveyKing]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 1991
+remote_port = 1991
+
+[Desktop::Redmine]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 3000
+remote_port = 3000
+
+[Desktop::Crawlab]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8089
+remote_port = 8089
+
+[Desktop::Grafana]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 3003
+remote_port = 3003
+
+[Desktop::SpiderFlow]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8088
+remote_port = 8088
+
+
+[Desktop::Answer]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 19001
+remote_port = 19001
+
+[Desktop::DPanel]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 8807
+remote_port = 8807

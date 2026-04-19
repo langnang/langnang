@@ -1,0 +1,724 @@
+{
+  "_content": {
+    "description": "",
+    "ico": "",
+    "slug": "",
+    "status": "",
+    "text": "",
+    "title": "",
+    "type": ""
+  },
+  "_link": {
+    "description": "",
+    "ico": "",
+    "keywords": "",
+    "slug": "",
+    "status": "public",
+    "title": "",
+    "type": "site",
+    "url": ""
+  },
+  "_meta": {
+    "description": "",
+    "ico": "",
+    "name": "",
+    "slug": "",
+    "status": "",
+    "type": ""
+  },
+  "_module:alias": {
+    "contents": [],
+    "links": [],
+    "metas": []
+  },
+  "_option": {
+    "name": "",
+    "type": "",
+    "user": 0,
+    "value": ""
+  },
+  "_user": {
+    "email": "",
+    "name": "",
+    "password": "",
+    "premissions": [],
+    "roles": []
+  },
+  "_webhunt": {
+    "description": "",
+    "ico": "",
+    "slug": "",
+    "status": "",
+    "text": {
+      "content_fields": [],
+      "export_table": "",
+      "fields": [],
+      "groups": [],
+      "list_fields": [],
+      "urls": []
+    },
+    "title": "",
+    "type": ""
+  },
+  "_webpage": {
+    "description": "",
+    "html": "",
+    "ico": "",
+    "script": "",
+    "slug": "",
+    "style": "",
+    "title": ""
+  },
+  "contents": [],
+  "links": [],
+  "links[type=file&status=public]": [],
+  "links[type=site&status=public]": [
+    {
+      "description": "Bootstrap 是全球最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。",
+      "ico": "https://v4.bootcss.com/docs/4.6/assets/img/favicons/favicon-32x32.png",
+      "keywords": "",
+      "slug": "bootstrap-docs@4",
+      "title": "Bootstrap v4 中文文档",
+      "url": "https://v4.bootcss.com/"
+    },
+    {
+      "description": "Bootstrap 官方开源图标（icon）库",
+      "ico": "https://icons.bootcss.com/assets/img/favicons/favicon-32x32.png",
+      "keywords": "",
+      "slug": "bootstrap-icons",
+      "title": "Bootstrap 图标库",
+      "url": "https://icons.bootcss.com/"
+    },
+    {
+      "description": "Packagist中文网 PHP软件包仓库",
+      "ico": "http://packagist.p2hp.com/favicon.ico",
+      "keywords": "",
+      "slug": "packagist-p2hp",
+      "title": "Packagist 中文网",
+      "url": "http://packagist.p2hp.com/"
+    },
+    {
+      "description": "",
+      "ico": "https://gstatic.gitbook.com/images/b1c4c86ca817a71628d2debe73be9a64.ico",
+      "keywords": "",
+      "slug": "phpspider",
+      "title": "phpspider 开发文档",
+      "url": "https://doc.phpspider.org/"
+    },
+    {
+      "description": "",
+      "ico": "https://unpkg.com/favicon.ico",
+      "keywords": "",
+      "slug": "unpkg",
+      "title": "UNPKG",
+      "url": "https://unpkg.com/"
+    },
+    {
+      "description": "",
+      "ico": "https://static-production.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png",
+      "keywords": "",
+      "slug": "npmjs",
+      "title": "NPM",
+      "url": "https://www.npmjs.com/"
+    },
+    {
+      "description": "",
+      "ico": "https://laravelmodules.com/favicon.ico",
+      "keywords": "",
+      "slug": "laravel-modules",
+      "title": "laravel-modules",
+      "url": "https://laravelmodules.com/"
+    },
+    {
+      "description": "Simplify API development for users, teams, and enterprises with our open source and professional toolset. Find out how Swagger can help you and get started today.",
+      "ico": "https://swagger.io/favicon.ico",
+      "keywords": "",
+      "slug": "swagger",
+      "title": "Swagger",
+      "url": "https://swagger.io/"
+    },
+    {
+      "description": "Documentation for FakerPHP / Faker",
+      "ico": "https://fakerphp.org/images/favicon.ico",
+      "keywords": "",
+      "slug": "fakerphp",
+      "title": "FakerPHP/Faker",
+      "url": "https://fakerphp.org/"
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "baidu",
+      "title": "百度一下",
+      "url": "https://www.baidu.com/"
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "bing",
+      "title": "必应",
+      "url": "https://www.bing.com/"
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    },
+    {
+      "description": "",
+      "ico": "",
+      "keywords": "",
+      "slug": "",
+      "title": "",
+      "url": ""
+    }
+  ],
+  "meta": {},
+  "meta[slug=module:admin]": {},
+  "meta[slug=module:webframe]": {
+    "chidren[type=module]": []
+  },
+  "metas": [],
+  "metas[type=category&status=public]": [],
+  "metas[type=module&status=public]": [],
+  "metas[type=tag&status=public]": [
+    {
+      "name": "Admin",
+      "slug": "admin"
+    },
+    {
+      "name": "Audio",
+      "slug": "audio"
+    },
+    {
+      "name": "CheatSheet",
+      "slug": "cheatsheet"
+    }
+  ],
+  "module:admin": {
+    "metas": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "ico": "",
+                "name": "Metas",
+                "slug": "admin:ssential:metas:create",
+                "status": "private",
+                "type": "category"
+              },
+              {
+                "ico": "",
+                "name": "Metas",
+                "slug": "admin:ssential:metas:{id}",
+                "status": "private",
+                "type": "category"
+              },
+              {
+                "ico": "",
+                "name": "Metas",
+                "slug": "admin:ssential:metas:batch",
+                "status": "private",
+                "type": "category"
+              },
+              {
+                "ico": "",
+                "name": "Metas",
+                "slug": "admin:ssential:metas:import",
+                "status": "private",
+                "type": "category"
+              }
+            ],
+            "ico": "",
+            "name": "Metas",
+            "slug": "admin:ssential:metas",
+            "status": "public",
+            "type": "category"
+          },
+          {
+            "ico": "",
+            "name": "Contents",
+            "slug": "admin:ssential:contents",
+            "status": "public",
+            "type": "category"
+          },
+          {
+            "ico": "",
+            "name": "Links",
+            "slug": "admin:ssential:links",
+            "status": "public",
+            "type": "category"
+          },
+          {
+            "ico": "",
+            "name": "Options",
+            "slug": "admin:ssential:options",
+            "status": "public",
+            "type": "category"
+          },
+          {
+            "ico": "",
+            "name": "Logs",
+            "slug": "admin:ssential:logs",
+            "status": "public",
+            "type": "category"
+          }
+        ],
+        "ico": "fas fa-tachometer-alt",
+        "name": "Essential",
+        "slug": "admin:ssential",
+        "status": "public",
+        "type": "category"
+      },
+      {
+        "children": [],
+        "ico": "fas fa-tachometer-alt",
+        "name": "Modules",
+        "slug": "admin:modules",
+        "status": "public",
+        "type": "category"
+      },
+      {
+        "children": [
+          {
+            "ico": "",
+            "name": "Migrations",
+            "slug": "admin:laravel:migrations",
+            "status": "public",
+            "type": "category"
+          },
+          {
+            "ico": "",
+            "name": "Seeders",
+            "slug": "admin:laravel:seeders",
+            "status": "public",
+            "type": "category"
+          }
+        ],
+        "ico": "fas fa-tachometer-alt",
+        "name": "Laravel",
+        "slug": "admin:laravel",
+        "status": "public",
+        "type": "category"
+      },
+      {
+        "children": [],
+        "ico": "fas fa-tachometer-alt",
+        "name": "Personal",
+        "slug": "admin:personal",
+        "status": "public",
+        "type": "category"
+      },
+      {
+        "children": [],
+        "ico": "fas fa-tachometer-alt",
+        "name": "System",
+        "slug": "admin:system",
+        "status": "public",
+        "type": "category"
+      }
+    ]
+  },
+  "option[name=table_global]": {},
+  "option[name=table_meta.status]": {},
+  "option[name=table_meta.type]": {},
+  "option[name=table_meta]": {},
+  "options": [
+    {
+      "name": "global.type",
+      "type": "",
+      "user": 0,
+      "value": ""
+    },
+    {
+      "name": "global.status",
+      "type": "",
+      "user": 0,
+      "value": ""
+    }
+  ],
+  "user": {},
+  "users": [
+    {
+      "email": "langnang.chen@outlook.com",
+      "name": "Langnang",
+      "password": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi"
+    }
+  ],
+  "webhunts": [],
+  "webhunts[type=post&status=public]": [
+    {
+      "description": "豆瓣电影提供最新的电影介绍及评论包括上映影片的影讯查询及购票服务。你可以记录想看、在看和看过的电影电视剧，顺便打分、写影评。根据你的口味，豆瓣电影会推荐好电影给你。",
+      "ico": "",
+      "slug": "movie.douban.com",
+      "text": {},
+      "title": "豆瓣电影"
+    },
+    {
+      "description": "免费小说推荐,更多好看的小说阅读尽在书本网，书本网是国内全集全本完结TXT电子书免费下载分享平台，大家可以把好看的完结电子书免费上传到这里，也可下载其他书友的全集txt小说，快来书本网分享你的优秀电子书吧！",
+      "ico": "",
+      "slug": "cdrcxg",
+      "text": {
+        "content_fields": [],
+        "content_url_regexes": [
+          "https: //www.cdrcxg.com/tn/\\d+/"
+        ],
+        "domains": [
+          "cdrcxg.com",
+          "www.cdrcxg.com"
+        ],
+        "export": {
+          "table": "novels",
+          "type": "db"
+        },
+        "export_table": "novels",
+        "fields": [
+          {
+            "name": "title",
+            "required": true,
+            "seletor": "//*[@id='newscontent']/div/ul/li[1]/span[2]/a"
+          },
+          {
+            "name": "latest_chapter",
+            "seletor": "//*[@id='newscontent']/div/ul/li[1]/span[3]/a"
+          },
+          {
+            "name": "author",
+            "seletor": "//*[@id='newscontent']/div/ul/li[1]/span[4]"
+          },
+          {
+            "name": "created_at",
+            "seletor": "//*[@id='newscontent']/div/ul/li[1]/span[5]"
+          }
+        ],
+        "groups": [
+          {
+            "additional_url": "/class/1_1/",
+            "name": "玄幻奇幻"
+          },
+          {
+            "additional_url": "/class/2_1/",
+            "name": "武侠仙侠"
+          },
+          {
+            "additional_url": "/class/3_1/",
+            "name": "女频言情"
+          },
+          {
+            "additional_url": "/class/4_1/",
+            "name": "现代都市"
+          },
+          {
+            "additional_url": "/class/5_1/",
+            "name": "历史军事"
+          },
+          {
+            "additional_url": "/class/6_1/",
+            "name": "游戏竞技"
+          },
+          {
+            "additional_url": "/class/7_1/",
+            "name": "科幻灵异"
+          },
+          {
+            "additional_url": "/class/8_1/",
+            "name": "美文同人"
+          },
+          {
+            "additional_url": "/class/9_1/",
+            "name": "其他类型"
+          }
+        ],
+        "list_fields": [],
+        "list_url_regexes": [
+          "https: //www.cdrcxg.com/\\.+"
+        ],
+        "scan_urls": [
+          "https: //www.cdrcxg.com/"
+        ],
+        "urls": [
+          "https://www.cdrcxg.com/"
+        ]
+      },
+      "title": "书本网-免费全本小说"
+    },
+    {
+      "description": "",
+      "ico": "https://www.xb6v.com/images/favicon.ico",
+      "slug": "xb6v",
+      "text": {
+        "export_table": "videos",
+        "groups": [
+          {
+            "additional_url": "/xijupian/index_{$page}.html",
+            "name": "喜剧片",
+            "next": "videos",
+            "params": {}
+          },
+          {
+            "additional_url": "/dongzuopian/index_{$page}.html",
+            "name": "动作片",
+            "next": "videos"
+          },
+          {
+            "additional_url": "/dianshiju/index_{$page}.html",
+            "name": "电视剧",
+            "next": "videos"
+          },
+          {
+            "additional_url": "/dianshiju/guoju/index_{$page}.html",
+            "name": "电视剧-国剧",
+            "next": "videos"
+          },
+          {
+            "additional_url": "/dianshiju/guoju/index_{$page}.html",
+            "name": "电视剧-短剧",
+            "next": "videos"
+          },
+          {
+            "additional_url": "/dianshiju/duanju/index_{$page}.html",
+            "name": "电视剧-国剧",
+            "next": "videos"
+          },
+          {
+            "additional_url": "/dianshiju/rihanju/index_{$page}.html",
+            "name": "电视剧-日韩剧",
+            "next": "videos"
+          },
+          {
+            "additional_url": "/dianshiju/oumeiju/index_{$page}.html",
+            "name": "电视剧-欧美剧",
+            "next": "videos"
+          }
+        ],
+        "novel_categories": {
+          "fields": [],
+          "next": "novel_chapters"
+        },
+        "novel_chapters": {
+          "fields": []
+        },
+        "novels": {
+          "fields": [],
+          "next": "novel_categories"
+        },
+        "url": "https://www.xb6v.com/",
+        "video_seasons": {
+          "fields": [],
+          "next": "videos_episodes"
+        },
+        "videos": {
+          "fields": [
+            {
+              "children": [
+                {
+                  "name": "title",
+                  "selector": "//div[2]/h2/a"
+                },
+                {
+                  "name": "url",
+                  "selector": "//div[2]/h2/a/@href"
+                },
+                {
+                  "name": "ico",
+                  "selector": "//div[1]/a/img"
+                },
+                {
+                  "name": "description",
+                  "selector": "//div[2]/div[1]/p"
+                }
+              ],
+              "name": "items",
+              "repeated": true,
+              "selector": "//*[@id=\"post_container\"]/li"
+            },
+            {
+              "name": "page",
+              "selector": "/html/body/div[6]/div/a[contains(@class,\"current\")]"
+            },
+            {
+              "name": "lastPage",
+              "selector": "/html/body/div[6]/div/a[last()-2]"
+            },
+            {
+              "name": "total"
+            }
+          ],
+          "next": "video_seasons"
+        },
+        "videos_episodes": {
+          "fields": []
+        }
+      },
+      "title": "6v电影-新版"
+    },
+    {
+      "description": "Age动漫专业的在线动漫网站，动漫免费在线观看，高品质画质，实时更新，追番利器!",
+      "ico": "https://www.agedm.org/favicon.ico",
+      "slug": "www.agedm.org",
+      "text": {},
+      "title": "AGE 动漫"
+    }
+  ],
+  "webpages[type=post&status=public]": [
+    {
+      "description": "",
+      "html": "<section> <header>Header</header> <main>Main</main> </section>",
+      "ico": "",
+      "script": "",
+      "slug": "HM",
+      "style": "body{font-size: 2rem;}header{height: 80px;background-color: #b3c0d1;color: #333;text-align: center;line-height: 80px;}main{background-color: #e9eef3;color: #333;text-align: center;line-height: calc(100vh - 80px);}",
+      "title": "header-main"
+    },
+    {
+      "description": "",
+      "html": "<section> <header>Header</header> <main>Main</main> <footer>Footer</footer> </section>",
+      "ico": "",
+      "script": "",
+      "slug": "HMF",
+      "style": "body{font-size: 2rem;}header{height: 80px;background-color: #b3c0d1;color: #333;text-align: center;line-height: 80px;}main{background-color: #e9eef3;color: #333;text-align: center;line-height: calc(100vh - 200px);}footer{background-color: #b3c0d1;color: #333;text-align: center;line-height: 120px;height: 120px;}",
+      "title": "header-main-footer"
+    },
+    {
+      "description": "",
+      "html": "<section> <aside>Aside</aside> <main>Main</main> </section>",
+      "ico": "",
+      "script": "",
+      "slug": "SM",
+      "style": "body{font-size: 2rem;}aside{float: left;width: 200px;background-color: #d3dce6;text-align: center;line-height: calc(100vh);}main{float: right;width: calc(100vw - 200px);background-color: #e9eef3;color: #333;text-align: center;line-height: calc(100vh);}",
+      "title": "side-main"
+    },
+    {
+      "description": "",
+      "html": "<section> <header>Header</header> <section><aside>Aside</aside> <main>Main</main></section></section>",
+      "ico": "",
+      "script": "",
+      "slug": "HSM",
+      "style": "body{font-size: 2rem;}header{height: 80px;background-color: #b3c0d1;color: #333;text-align: center;line-height: 80px;}aside{float: left;width: 200px;background-color: #d3dce6;text-align: center;line-height: calc(100vh - 80px);}main{float: right;width: calc(100vw - 200px);background-color: #e9eef3;color: #333;text-align: center;line-height: calc(100vh - 80px);}",
+      "title": "header-side-main"
+    },
+    {
+      "description": "",
+      "html": "<section><header>Header</header> <section><aside>Aside</aside> <section style=\"float: right;\"><main>Main</main> <footer>Footer</footer></section></section></section>",
+      "ico": "",
+      "script": "",
+      "slug": "HSMF",
+      "style": "body{font-size: 2rem;}header{height: 80px;background-color: #b3c0d1;color: #333;text-align: center;line-height: 80px;}aside{float: left;width: 200px;background-color: #d3dce6;text-align: center;line-height: calc(100vh - 80px);}main{width: calc(100vw - 200px);background-color: #e9eef3;color: #333;text-align: center;line-height: calc(100vh - 200px);}footer{background-color: #b3c0d1;color: #333;text-align: center;line-height: 120px;height: 120px;}",
+      "title": "header-side-main-footer"
+    },
+    {
+      "description": "",
+      "html": "<section> <aside>Aside</aside> <section style=\"float: right;\"><header>Header</header> <main>Main</main></section></section>",
+      "ico": "",
+      "script": "",
+      "slug": "SHM",
+      "style": "body{font-size: 2rem;}header{height: 80px;background-color: #b3c0d1;color: #333;text-align: center;line-height: 80px;}aside{float: left;width: 200px;background-color: #d3dce6;text-align: center;line-height: calc(100vh);}main{width: calc(100vw - 200px);background-color: #e9eef3;color: #333;text-align: center;line-height: calc(100vh - 80px);}footer{background-color: #b3c0d1;color: #333;text-align: center;line-height: 120px;height: 120px;}",
+      "title": "side-header-main"
+    },
+    {
+      "description": "",
+      "html": "<section> <aside>Aside</aside> <section style=\"float: right;\"><header>Header</header> <main>Main</main> <footer>Footer</footer></section></section>",
+      "ico": "",
+      "script": "",
+      "slug": "SHMF",
+      "style": "body{font-size: 2rem;}header{height: 80px;background-color: #b3c0d1;color: #333;text-align: center;line-height: 80px;}aside{float: left;width: 200px;background-color: #d3dce6;text-align: center;line-height: calc(100vh);}main{width: calc(100vw - 200px);background-color: #e9eef3;color: #333;text-align: center;line-height: calc(100vh - 200px);}footer{background-color: #b3c0d1;color: #333;text-align: center;line-height: 120px;height: 120px;}",
+      "title": "side-header-main-footer"
+    },
+    {
+      "description": "",
+      "html": "",
+      "ico": "",
+      "script": "",
+      "slug": "",
+      "style": "",
+      "title": ""
+    },
+    {
+      "description": "",
+      "html": "",
+      "ico": "",
+      "script": "",
+      "slug": "",
+      "style": "",
+      "title": ""
+    }
+  ]
+}

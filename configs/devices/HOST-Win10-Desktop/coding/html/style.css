@@ -1,0 +1,90 @@
+@import url(https://fonts.font.im/css?family=Roboto);
+@import url(https://unpkg.com/normalize.css@8.0.1/normalize.css);
+@import url(https://unpkg.com/animate.css@4.1.1/animate.min.css);
+@import url(https://unpkg.com/bootstrap@4.6.2/dist/css/bootstrap.min.css);
+@import url(https://unpkg.com/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css);
+
+:root {
+
+  --blue: #007bff;
+  --hsl-blue: hsl(211, 100%, 50%);
+  --hwb-blue: hwb(211 0% 0%);
+  --lab-blue: lab(53.37% 21.92 -73.11);
+  --lch-blue: lch(53.37% 76.33 286.69);
+  --oklab-blue: oklab(60.483% -0.04788 -0.21128);
+  --oklch-blue: oklch(60.483% 0.21664 257.23);
+  --rgb-blue: rgb(0, 123, 255);
+
+  --rgb-indigo: rgb(102, 16, 242);
+  --rgb-purple: rgb(111, 66, 193);
+  --rgb-pink: rgb(232, 62, 140);
+  --rgb-red: rgb(220, 53, 69);
+  --rgb-orange: rgb(253, 126, 20);
+  --rgb-yellow: rgb(255, 193, 7);
+  --rgb-green: rgb(40, 167, 69);
+  --rgb-teal: rgb(32, 201, 151);
+  --rgb-cyan: rgb(23, 162, 184);
+  --rgb-white: rgb(255, 255, 255);
+  --rgb-gray: rgb(108, 117, 125);
+  --rgb-gray-dark: rgb(52, 58, 64);
+  --rgb-primary: rgb(0, 123, 255);
+  --rgb-secondary: rgb(108, 117, 125);
+  --rgb-success: rgb(40, 167, 69);
+  --rgb-info: rgb(23, 162, 184);
+  --rgb-warning: rgb(255, 193, 7);
+  --rgb-danger: rgb(220, 53, 69);
+  --rgb-light: rgb(248, 249, 250);
+  --rgb-dark: rgb(52, 58, 64);
+
+  --highlight-blue: #444b6e;
+  --highlight-red: #c83e4d;
+  --highlight-pink: #ff6392;
+  --highlight-orange: #ff8a08;
+  --highlight-green: #22a699;
+  --highlight-purple: #711db0;
+}
+
+.font-roboto {
+  /*   Segoe UI, Arial, Roboto, "PingFang SC", "miui", "Hiragino Sans GB", "Microsoft Yahei", */
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.bg-info--2 {
+  /* background-color: rgba(108, 117, 125, .2); */
+  background-color: #f5f5f5;
+}
+
+.rounded--3 {
+  border-radius: 1rem !important;
+}
+
+.theme-default {}
+
+.theme-default>main .col {
+  margin-bottom: 1rem;
+}
+
+.theme-default .media>img,
+.theme-default .media>i {
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.theme-list {}
+
+.theme-list>main .col {
+  margin-bottom: 0.5rem;
+}
+
+.theme-list .media>img,
+.theme-list .media>i {
+  width: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.theme-list .card-text {
+  display: none;
+}
