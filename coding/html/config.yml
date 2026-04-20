@@ -1,8 +1,0 @@
-name:
-
-services:
-  - name: Frameworks
-  - name: Examples
-    items:
-      - name: 128-cheatsheets
-        url: ./examples/128-cheatsheets/

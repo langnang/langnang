@@ -1,3 +1,0 @@
-# React Template
-
-React Template
