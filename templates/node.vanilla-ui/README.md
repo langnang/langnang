@@ -1,2 +1,0 @@
-# vanilla
-Vanilla Template

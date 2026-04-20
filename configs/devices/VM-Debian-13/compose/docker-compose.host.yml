@@ -1,9 +1,0 @@
-services:
-  frpc:
-    image: snowdreamtech/frpc
-    environment:
-      - DEVICE_NAME=VM-Debian-13
-      - DEVICE_SLUG=52
-    volumes:
-      - ./../../../-Linux/docker/compose/frpc/frpc.toml:/etc/frp/frpc.toml
-    restart: unless-stopped

@@ -1,1 +1,0 @@
-@extends('webstack.layout')

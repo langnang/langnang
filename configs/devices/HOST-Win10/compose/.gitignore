@@ -1,9 +1,0 @@
-*
-!.gitignore
-!.compose
-!.compose/*
-!docker-compose*
-!Dockerfile*
-!main.sh
-!homer
-!homer/*

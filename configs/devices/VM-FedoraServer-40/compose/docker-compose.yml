@@ -1,9 +1,0 @@
-services:
-  frpc:
-    image: snowdreamtech/frpc
-    environment:
-      - DEVICE_NAME=VM-FedoraServer-40
-      - DEVICE_CODE=75
-    volumes:
-      - ./../../../-LinuxServer/docker/compose/frpc/frpc.toml:/etc/frp/frpc.toml
-    restart: unless-stopped

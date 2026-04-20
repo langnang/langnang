@@ -1,3 +1,0 @@
-# Assets
-
-- [ ] lib.bootstrap
