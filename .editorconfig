@@ -14,8 +14,9 @@ insert_final_newline = false
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{yml,yaml,html,hbs,js,json,css,md,php}]
+[*.{yml,yaml,html,js,json,css,md,php}]
 indent_size = 2
+max_line_length = 3600
 
 [docker-compose.yml]
-indent_size = 2
+indent_size = 4
