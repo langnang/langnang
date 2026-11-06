@@ -12,17 +12,19 @@
         "title": "SingleFile",
         "type": "category",
         "contents": [],
-        "links": [],
+        "links": [
+          "hemanruc.OmniPage"
+        ],
         "files": []
       }
     },
     "contents": {},
     "links": {
-      "AMiner": {
-        "name": "AMiner",
-        "url": "https://www.aminer.cn/",
+      "hemanruc.OmniPage": {
+        "name": "hemanruc/OmniPage",
+        "github": "hemanruc/OmniPage",
         "description": "学术搜索与分析",
-        "keywords": "示例"
+        "keywords": "导航 试题"
       },
       "X-MOL": {
         "name": "X-MOL",
