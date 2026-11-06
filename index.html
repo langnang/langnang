@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <title>OneNav</title>
   <style>
 /* ========== 主题变量与基础 ========== */
@@ -1125,20 +1126,52 @@ textarea.json-area:focus {
   <script>
 (function (global, factory) {
   class OneNav {
+    el = "#app";
     title = "OneNav";
     STORAGE_KEY = 'onenav_data';
     MOBILE_BREAKPOINT = 900;
     editable = false;             // 是否允许编辑
+    importable = false;           // 是否允许导入
+    exportable = false;           // 是否允许导出
+
+
     isEditing = false;            // 是否处于编辑模式
     appData = null;               // 当前生效的数据
     tempData = null;              // 编辑前的快照（用于取消时还原）
     dragSrc = null;               // 当前拖拽源 { type, catIdx, linkIdx }
     currentExportFormat = 'json'; // 导出格式
+
     sidebarOpen = false;          // 移动端侧栏展开状态
+
     scrollObserver = null;        // 滚动高亮观察器
+
+    showSidebar = true;  // 左侧导航栏
+    showNavbar = false; // 顶部菜单栏
+    showFooter = true;  // 底部信息
+    showGuide = false;  // 指南信息
+
+    showSearch = true;  // 搜索组件
+    showCalendar = true;      // 日历组件
+
+    showCategoryHeader = true;
+    showCategoryFooter = true;
+    showLinkIco = true;
+    showLinkDescription = true;
+    showLinkKeywords = true;
+
+    onInsertCategory = null;
+    onDeleteCategory = null;
+    onUpdateCategory = null;
+    onInsertLink = null;
+    onDeleteLink = null;
+    onUpdateLink = null;
+
+
+    innerHTML = "";
     constructor(options) {
-      this.title = options.title || "OneNav";
-      this.editable = options.editable || false;
+      this.el = options.el || this.el;
+      this.title = options.title || this.title;
+      this.editable = options.editable || this.editable;
       this.render();
       init();
     }
@@ -1146,7 +1179,8 @@ textarea.json-area:focus {
 
     }
     render() {
-      $("#app").innerHTML = `<!-- 左侧导航栏 -->
+      document.title = this.title;
+      $(this.el).innerHTML = `<!-- 左侧导航栏 -->
   <nav class="sidebar" id="sidebar">
     <div class="sidebar-title">${this.title}</div>
     <div id="navList"></div>
@@ -1156,7 +1190,7 @@ textarea.json-area:focus {
       <button class="btn btn-secondary" id="btnCancel" onclick="cancelEdit()" style="display:none">取消</button>
         ` : ``}
       <button class="btn btn-secondary" onclick="exportData()">导出</button>
-      ${this.editable ? `<button class="btn btn-secondary" onclick="showImport()">导入</button>` : ``}
+      <button class="btn btn-secondary" onclick="showImport()">导入</button>
       <button class="btn btn-secondary" onclick="checkAllLinks()">检查链接</button>
       <button class="btn btn-secondary" onclick="showGuide()" style="display:none">功能介绍</button>
     </div>
