@@ -38,7 +38,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
 /* ========== 左侧导航栏 ========== */
@@ -139,8 +139,8 @@ body {
 /* ========== 顶部日历 ========== */
 .calendar-bar {
   max-width: 800px;
-  margin: 24px auto 0;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 24px 20px 0;
   text-align: center;
 }
 
@@ -1112,6 +1112,37 @@ textarea.json-area:focus {
   }
 }
 
+.tag-group {
+  display: flex;
+  align-items: center;
+}
+
+.tag-item {
+  background-color: #ecf5ff;
+  display: inline-block;
+  height: 24px;
+  padding: 0 6px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #409eff;
+  border: 1px solid #d9ecff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tag-item:hover,
+.tag-item.active {
+  background-color: #409eff;
+  border-color: #409eff;
+  color: #fff;
+}
+
+.tag-item+.tag-item {
+  margin-left: 4px;
+}
+
 /* ========== 底部信息 ========== */
 #mainFooter {
   text-align: center;
@@ -1125,9 +1156,70 @@ textarea.json-area:focus {
 
 <body>
   <div id="app"></div>
-  <script src="https://unpkg.com/create-dom@1.0.0/index.js"></script>
+
   <script>
-(function () {
+(function (global, factory) {
+  const array_unique = array => [...new Set(array)];
+
+  const array_to_tree = (array, root = 0) => array
+    .filter(item => item.parent === root)
+    .map(item => ({
+      ...item,
+      children: arrayToTreeRecursive(arr, item.id)
+    }));
+  global.$oneNav = {
+    fetchData: () => fetch('./repository.json')
+      .then(response => response.json())
+      .then(data => {
+        let $return = {
+          title: data.title || "OneNav",
+        };
+        document.title = $return.title;
+        let $data = data.onenav;
+        // console.log(`assemblyData`, data);
+        // console.log(`assemblyData`, data.onenav.metas);
+        $return.categories = Object.values(data.onenav.metas || [])
+          .filter(v => v.type == 'category')
+          .map(v => {
+            v.tags = array_unique([...v.tags || [], ...Object.values($data.metas).filter(v_m => v_m.type == 'tag' && v_m.parent == 'v.id')])
+              .reduce((t, v_m) => $data.metas[v_m] ? [...t, $data.metas[v_m]] : t, []);
+            v.relationships = $data.relationships.filter(v_r => v_r.meta == v.id);
+            v.contents = array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.content).map(v_r => v_r.content)])
+              .reduce((t, v_c) => $data.contents[v_c] ? [...t, $data.contents[v_c]] : t, []);
+            v.links = array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.link).map(v_r => v_r.link)])
+              .reduce((t, v_l) => $data.links[v_l] ? [...t, $data.links[v_l]] : t, [])
+              .map(v_l => ({ ...v_l, url: v_l.url || (v_l.github ? 'https://github.com/' + v_l.github : ''), }));
+            v.files = array_unique([...v.files || [], ...v.relationships.filter(v_r => v_r.file).map(v_r => v_r.file)])
+              .reduce((t, v_f) => $data.files[v_f] ? [...t, $data.files[v_f]] : t, []);
+            return v;
+          })
+          .sort((a, b) => a.order - b.order);
+        // console.log(`assemblyData`, $return);
+        // defaultData = $return;
+        // console.log(`assemblyData`, defaultData);
+        // localStorage.setItem('onenav_data', JSON.stringify($return));
+        // init();
+        // new OneNav(defaultData);
+        return $return;
+      })
+      .catch(error => {
+        console.error('Error fetch data:', error);
+      })
+  }
+
+})(this, function () {
+  'use strict';
+});
+</script>
+  <script type="module">
+    import { dom_to_json } from "./../../packages.node.scripts/src/js/dom_to_json.js";
+    console.log(dom_to_json);
+
+
+    window.dom_to_json = dom_to_json;
+  </script>
+  <script>
+(function (global, factory) {
   "use strict";
   /* ============================================================
    * 农历数据（1900–2100 年）
@@ -1154,67 +1246,68 @@ textarea.json-area:focus {
    * 默认书签数据（首次使用或数据损坏时加载）
    * ============================================================ */
   const defaultData = {
+    "title": "OneNav",
     "categories": [
-      {
-        "id": "useful",
-        "title": "常用网站",
-        "links": [
-          {
-            "name": "AMiner",
-            "url": "https://www.aminer.cn/",
-            "desc": "学术搜索与分析",
-            "keywords": "示例"
-          },
-          {
-            "name": "X-MOL",
-            "url": "https://www.x-mol.com/",
-            "desc": "学术资讯平台",
-            "keywords": "示例"
-          }
-        ]
-      },
-      {
-        "id": "journals",
-        "title": "期刊官网",
-        "links": [
-          {
-            "name": "Nature",
-            "url": "https://www.nature.com/",
-            "desc": "",
-            "keywords": ""
-          },
-          {
-            "name": "Science",
-            "url": "https://www.science.org/",
-            "desc": "",
-            "keywords": ""
-          }
-        ]
-      },
-      {
-        "id": "scholars",
-        "title": "关注学者",
-        "links": [
-          {
-            "name": "张希",
-            "url": "http://zhangxigroup.com/",
-            "desc": "清华大学",
-            "keywords": "超分子"
-          },
-          {
-            "name": "裴坚",
-            "url": "http://www.chem.pku.edu.cn/pei/",
-            "desc": "北京大学",
-            "keywords": "有机电子"
-          },
-          {
-            "name": "鲍哲楠",
-            "url": "http://baogroup.stanford.edu/",
-            "desc": "斯坦福大学",
-            "keywords": "柔性电子"
-          }
-        ]
-      }
+      //   {
+      //     "id": "useful",
+      //     "title": "常用网站",
+      //     "links": [
+      //       {
+      //         "name": "AMiner",
+      //         "url": "https://www.aminer.cn/",
+      //         "desc": "学术搜索与分析",
+      //         "keywords": "示例"
+      //       },
+      //       {
+      //         "name": "X-MOL",
+      //         "url": "https://www.x-mol.com/",
+      //         "desc": "学术资讯平台",
+      //         "keywords": "示例"
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     "id": "journals",
+      //     "title": "期刊官网",
+      //     "links": [
+      //       {
+      //         "name": "Nature",
+      //         "url": "https://www.nature.com/",
+      //         "desc": "",
+      //         "keywords": ""
+      //       },
+      //       {
+      //         "name": "Science",
+      //         "url": "https://www.science.org/",
+      //         "desc": "",
+      //         "keywords": ""
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     "id": "scholars",
+      //     "title": "关注学者",
+      //     "links": [
+      //       {
+      //         "name": "张希",
+      //         "url": "http://zhangxigroup.com/",
+      //         "desc": "清华大学",
+      //         "keywords": "超分子"
+      //       },
+      //       {
+      //         "name": "裴坚",
+      //         "url": "http://www.chem.pku.edu.cn/pei/",
+      //         "desc": "北京大学",
+      //         "keywords": "有机电子"
+      //       },
+      //       {
+      //         "name": "鲍哲楠",
+      //         "url": "http://baogroup.stanford.edu/",
+      //         "desc": "斯坦福大学",
+      //         "keywords": "柔性电子"
+      //       }
+      //     ]
+      //   }
     ]
   };
 
@@ -1482,6 +1575,8 @@ textarea.json-area:focus {
     const container = $('#mainContainer');
     container.innerHTML = '';
 
+
+    console.log(`render`, appData)
     appData.categories.forEach((cat, catIdx) => {
       const section = document.createElement('div');
       section.className = 'category' + (isEditing ? ' editing' : '');
@@ -1507,6 +1602,23 @@ textarea.json-area:focus {
         `<button class="btn-xs btn-danger" onclick="deleteCategory(${catIdx})">删除</button>` +
         `</div>`
         : `<span class="cat-deco"></span><div class="cat-title">${escapeHtml(cat.title)}</div>`;
+      if (!isEditing) {
+        const tagList = document.createElement('div');
+        tagList.className = 'tag-group';
+        (cat.tags || []).forEach(tag => {
+          const span = document.createElement('span');
+          span.innerHTML = tag;
+          span.className = 'tag-item';
+          span.addEventListener('click', e => {
+            const target = e.currentTarget;
+            [...target.parentNode.children].filter(child => child !== target).forEach(e_v => e_v.classList.remove('active'));
+            target.classList.toggle('active', !e.currentTarget.classList.contains('active'));
+          });
+          tagList.appendChild(span);
+        })
+        header.appendChild(tagList);
+      }
+
       section.appendChild(header);
 
       // 分类主体
@@ -1955,20 +2067,48 @@ textarea.json-area:focus {
 
   function handleFileImport(input) {
     const file = input.files[0];
+    console.log(file);
     if (!file) return;
     const reader = new FileReader();
     reader.onload = (e) => {
       $('#jsonArea').value = e.target.result;
+      $('#jsonArea').setAttribute('filename', file.name);
+      $('#jsonArea').setAttribute('filetype', file.type);
+      $('#jsonArea').setAttribute('filesize', file.size);
     };
     reader.readAsText(file);
     input.value = '';
   }
 
+
   function confirmImport() {
     const text = $('#jsonArea').value.trim();
+    const filename = $('#jsonArea').getAttribute('filename');
+    const filetype = $('#jsonArea').getAttribute('filetype');
+    const filesize = $('#jsonArea').getAttribute('filesize');
     if (!text) return;
     try {
-      const data = JSON.parse(text);
+      let data = null;
+      if (filetype == 'application/json') {
+        data = JSON.parse(text);
+      } else if (filetype == 'text/html') {
+        var doc = (new DOMParser()).parseFromString(text, filetype);
+        console.log(doc);
+        let categories = [];
+        doc.querySelectorAll("body>dl>dt").forEach(el => {
+          categories.push(dom_to_json(el, (dom, obj) => {
+            if (dom.nodeName == 'DT') {
+              const linkNode = obj.children.find(v => v.nodeName == 'A');
+              if (linkNode) {
+                obj = linkNode;
+              }
+            }
+            return obj
+          }));
+        })
+        console.log(categories);
+        return;
+      }
       if (!data.categories || !Array.isArray(data.categories)) throw new Error('格式错误');
       appData = data;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
@@ -1977,6 +2117,7 @@ textarea.json-area:focus {
       closeModal();
       showToast('导入成功');
     } catch (e) {
+      console.error(`confirmImport: ${e}`);
       alert('JSON 格式错误，请检查文本内容');
     }
   }
@@ -2044,8 +2185,10 @@ textarea.json-area:focus {
   /* ============================================================
    * 初始化
    * ============================================================ */
-  function init() {
-    appData = loadData();
+  function init(options = null) {
+    appData = options || loadData();
+    console.log(`init`, appData);
+
     $("#app").innerHTML = `<!-- 左侧导航栏 -->
     <nav class="sidebar" id="sidebar">
       <div class="sidebar-title">${appData.title}</div>
@@ -2063,6 +2206,7 @@ textarea.json-area:focus {
     <button class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebar()">☰</button>
 
     <div class="main-wrap">
+      <main class="main" style="height: calc(100vh - 61px);overflow-y: auto;">
       <!-- 顶部日历 -->
       <div class="calendar-bar">
         <div class="calendar-card" id="calendarDate"></div>
@@ -2087,12 +2231,13 @@ textarea.json-area:focus {
 
       <!-- 分类与链接（由 JS 渲染） -->
       <div class="container" id="mainContainer"></div>
+      </main>
 
       <!-- 底部信息 -->
-      <div id="mainFooter">
+      <footer id="mainFooter">
         develop by <a target="_blank" href="https://github.com/langnang">langnang</a> fork from <a target="_blank"
           href="https://github.com/hemanruc/OmniPage">hemanruc/OmniPage</a>
-      </div>
+      </footer>
 
       <div class="add-cat-bar" id="addCatBar">
         <button class="btn btn-primary" onclick="addCategory()">添加新分类</button>
@@ -2255,7 +2400,7 @@ textarea.json-area:focus {
             </div>
           </div>
           <div class="file-input-wrap" id="importFileWrap" style="display:none">
-            <input type="file" id="importFile" accept=".json" onchange="handleFileImport(this)">
+            <input type="file" id="importFile" accept=".htm,.html,.json" onchange="handleFileImport(this)">
             <button class="btn btn-secondary" onclick="document.getElementById('importFile').click()">上传文件</button>
           </div>
           <textarea class="json-area" id="jsonArea" placeholder=""></textarea>
@@ -2279,62 +2424,23 @@ textarea.json-area:focus {
   /* ============================================================
    * 启动
    * ============================================================ */
-
   init();
-})();
-</script>
-  <script>
-(function (global, factory) {
-  const array_unique = array => [...new Set(array)];
+  if (global.$oneNav) {
+    appData = global.$oneNav;
+    if (appData.fetchData) {
+      appData.fetchData().then(res => {
+        // console.log(`fetchData`, res);
+        appData = { ...appData, ...res };
+        render();
+        renderNav();
+      })
+    }
+  }
 
-  const array_to_tree = (array, root = 0) => array
-    .filter(item => item.parent === root)
-    .map(item => ({
-      ...item,
-      children: arrayToTreeRecursive(arr, item.id)
-    }));
-  fetch('./repository.json')
-    .then(response => response.json())
-    .then(data => {
-      let $return = {
-        title: data.title || "OneNav",
-      };
-      document.title = $return.title;
-      let $data = data.onenav;
-      // console.log(`assemblyData`, data);
-      // console.log(`assemblyData`, data.onenav.metas);
-      $return['categories'] = Object.values(data.onenav.metas || [])
-        .filter(v => v.type == 'category')
-        .map(v => {
-          v.tags = array_unique([...v.tags || [], ...Object.values($data.metas).filter(v_m => v_m.type == 'tag' && v_m.parent == 'v.id')])
-            .reduce((t, v_m) => $data.metas[v_m] ? [...t, $data.metas[v_m]] : t, []);
-          v.relationships = $data.relationships.filter(v_r => v_r.meta == v.id);
-          v.contents = array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.content).map(v_r => v_r.content)])
-            .reduce((t, v_c) => $data.contents[v_c] ? [...t, $data.contents[v_c]] : t, []);
-          v.links = array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.link).map(v_r => v_r.link)])
-            .reduce((t, v_l) => $data.links[v_l] ? [...t, $data.links[v_l]] : t, [])
-            .map(v_l => ({ ...v_l, url: v_l.url || (v_l.github ? 'https://github.com/' + v_l.github : ''), }));
-          v.files = array_unique([...v.files || [], ...v.relationships.filter(v_r => v_r.file).map(v_r => v_r.file)])
-            .reduce((t, v_f) => $data.files[v_f] ? [...t, $data.files[v_f]] : t, []);
-          return v;
-        })
-        .sort((a, b) => a.order - b.order);
-      // console.log(`assemblyData`, $return);
-      defaultData = $return;
-      console.log(`assemblyData`, defaultData);
-      localStorage.setItem('onenav_data', JSON.stringify($return));
-      // init();
-      // new OneNav(defaultData);
-      return $return;
-    })
-    .catch(error => {
-      console.error('Error loading repository.json:', error);
-    });
 })(this, function () {
   'use strict';
 });
 </script>
-
 </body>
 
 </html>

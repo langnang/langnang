@@ -16,6 +16,94 @@
           "hemanruc.OmniPage"
         ],
         "files": []
+      },
+      "audio": {
+        "id": "audio",
+        "title": "Audio",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "awesome": {
+        "id": "awesome",
+        "title": "Awesome",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "cheatsheet": {
+        "id": "cheatsheet",
+        "title": "CheatSheet",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "dependency": {
+        "id": "dependency",
+        "title": "Dependency",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "material": {
+        "id": "material",
+        "title": "material",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "question": {
+        "id": "question",
+        "title": "question",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "program": {
+        "id": "program",
+        "title": "program",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "video": {
+        "id": "video",
+        "title": "video",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "template": {
+        "id": "template",
+        "title": "template",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "extension": {
+        "id": "extension",
+        "title": "extension",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "magent": {
+        "id": "magent",
+        "title": "Magent·磁力",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
       }
     },
     "contents": {},
