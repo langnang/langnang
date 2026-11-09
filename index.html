@@ -1152,6 +1152,15 @@ textarea.json-area:focus {
   font-size: 14px;
 }
 </style>
+  <style>
+
+</style>
+  <style>
+
+</style>
+  <script>
+    const AppName = 'OneNav', AppSlug = 'onenav';
+  </script>
 </head>
 
 <body>
@@ -1167,51 +1176,61 @@ textarea.json-area:focus {
       ...item,
       children: arrayToTreeRecursive(arr, item.id)
     }));
-  global.$oneNav = {
+  global['$' + AppSlug] = {
     fetchData: () => fetch('./repository.json')
       .then(response => response.json())
       .then(data => {
         let $return = {
-          title: data.title || "OneNav",
+          title: data.title || AppName,
+          ...data[AppSlug],
         };
         document.title = $return.title;
-        let $data = data.onenav;
+        let $data = data[AppSlug];
         // console.log(`assemblyData`, data);
         // console.log(`assemblyData`, data.onenav.metas);
-        $return.categories = Object.values(data.onenav.metas || [])
+        $return['categories'] = Object.values(data[AppSlug].metas || [])
           .filter(v => v.type == 'category')
           .map(v => {
-            v.tags = array_unique([...v.tags || [], ...Object.values($data.metas).filter(v_m => v_m.type == 'tag' && v_m.parent == 'v.id')])
-              .reduce((t, v_m) => $data.metas[v_m] ? [...t, $data.metas[v_m]] : t, []);
-            v.relationships = $data.relationships.filter(v_r => v_r.meta == v.id);
-            v.contents = array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.content).map(v_r => v_r.content)])
-              .reduce((t, v_c) => $data.contents[v_c] ? [...t, $data.contents[v_c]] : t, []);
-            v.links = array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.link).map(v_r => v_r.link)])
-              .reduce((t, v_l) => $data.links[v_l] ? [...t, $data.links[v_l]] : t, [])
-              .map(v_l => ({ ...v_l, url: v_l.url || (v_l.github ? 'https://github.com/' + v_l.github : ''), }));
-            v.files = array_unique([...v.files || [], ...v.relationships.filter(v_r => v_r.file).map(v_r => v_r.file)])
-              .reduce((t, v_f) => $data.files[v_f] ? [...t, $data.files[v_f]] : t, []);
+            v.tags =
+              array_unique([...v.tags || [], ...Object.values($data.metas).filter(v_m => v_m.type == 'tag' && v_m.parent == 'v.id')])
+                .reduce((t, v_m) => typeof v_m == 'string' ? ($data.contents[v_m] ? [...t, $data.links[v_m]] : t) : [...t, v_m], [])
+              ;
+
+            v.relationships = $data.relationships.filter(v_r => v_r.meta == v.id)
+              ;
+
+            v.contents =
+              array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.content).map(v_r => v_r.content)])
+                .reduce((t, v_c) => typeof v_c == 'string' ? ($data.contents[v_c] ? [...t, $data.links[v_c]] : t) : [...t, v_c], [])
+              ;
+
+            v.links =
+              array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.link).map(v_r => v_r.link)])
+                .reduce((t, v_l) => typeof v_l == 'string' ? ($data.links[v_l] ? [...t, $data.links[v_l]] : t) : [...t, v_l], [])
+                .map(v_l => ({ ...v_l, url: v_l.url || (v_l.github ? 'https://github.com/' + v_l.github : ''), }))
+              ;
+
+            v.files =
+              array_unique([...v.files || [], ...v.relationships.filter(v_r => v_r.file).map(v_r => v_r.file)])
+                .reduce((t, v_f) => typeof v_f == 'string' ? ($data.contents[v_f] ? [...t, $data.links[v_f]] : t) : [...t, v_f], [])
+              ;
+
             return v;
           })
           .sort((a, b) => a.order - b.order);
-        // console.log(`assemblyData`, $return);
-        // defaultData = $return;
-        // console.log(`assemblyData`, defaultData);
-        // localStorage.setItem('onenav_data', JSON.stringify($return));
-        // init();
-        // new OneNav(defaultData);
         return $return;
       })
       .catch(error => {
-        console.error('Error fetch data:', error);
+        console.error('Error loading repository.json:', error);
       })
   }
-
 })(this, function () {
   'use strict';
 });
 </script>
+  <script>
 
+</script>
   <script>
 (function (global, factory) {
   "use strict";
@@ -2419,12 +2438,13 @@ textarea.json-area:focus {
    * 启动
    * ============================================================ */
   init();
-  if (global.$oneNav) {
-    appData = global.$oneNav;
+  if (global.$onenav) {
+    appData = global.$onenav;
     if (appData.fetchData) {
       appData.fetchData().then(res => {
         // console.log(`fetchData`, res);
         appData = { ...appData, ...res };
+        $(".sidebar-title").innerText = appData.title;
         render();
         renderNav();
       })
