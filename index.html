@@ -1169,7 +1169,14 @@ textarea.json-area:focus {
   <script>
 (function (global, factory) {
   const array_unique = array => [...new Set(array)];
+  const array_get = (object, path, defaultValue) => {
+    // 将路径分割成数组
+    const pathArray = Array.isArray(path) ? path : path.split('.');
 
+    // 使用 Array.prototype.reduce 遍历路径数组，逐级访问对象属性
+    return pathArray.reduce((obj, key) =>
+      (obj && typeof obj[key] !== 'undefined') ? obj[key] : defaultValue, object);
+  }
   const array_to_tree = (array, root = 0) => array
     .filter(item => item.parent === root)
     .map(item => ({
@@ -1189,6 +1196,12 @@ textarea.json-area:focus {
             .reduce((t, v_c) => typeof v_c == 'string' ? (obj.contents[v_c] ? [...t, obj.links[v_c]] : t) : [...t, v_c], [])
           ;
 
+        if (v.fetch_links) {
+          fetch(v.fetch_links.url).then(res => {
+
+          })
+        }
+
         v.links =
           array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.link).map(v_r => v_r.link)])
             .reduce((t, v_l) => typeof v_l == 'string' ? (obj.links[v_l] ? [...t, obj.links[v_l]] : t) : [...t, v_l], [])
@@ -1200,7 +1213,7 @@ textarea.json-area:focus {
             .reduce((t, v_f) => typeof v_f == 'string' ? (obj.contents[v_f] ? [...t, obj.links[v_f]] : t) : [...t, v_f], [])
           ;
         if (type == 'category') {
-          v.children = [];
+          v.children = rebuild_metas(obj, 'category', [...v.children || []]);
           v.tags = rebuild_metas(obj, null,
             array_unique([...v.tags || [], ...Object.values(obj.metas).filter(v_m => v_m.type == 'tag' && v_m.parent == 'v.id')])
               .reduce((t, v_m) => typeof v_m == 'string' ? (obj.contents[v_m] ? [...t, obj.links[v_m]] : t) : [...t, v_m], [])
@@ -1217,12 +1230,18 @@ textarea.json-area:focus {
   function rebuild_files(obj, array, type,) { }
 
   global['$' + AppSlug] = {
-    fetchData: () => fetch('./repository.json')
+    fetch: () => fetch('./repository.json')
       .then(response => response.json())
       .then(data => {
         let $return = {
           title: data.title || AppName,
           ...data[AppSlug],
+          before_render_categor() {
+
+          },
+          after_render_category() {
+
+          },
         };
         document.title = $return.title;
         let $data = data[AppSlug];
@@ -2461,9 +2480,9 @@ textarea.json-area:focus {
   init();
   if (global.$onenav) {
     appData = global.$onenav;
-    if (appData.fetchData) {
-      appData.fetchData().then(res => {
-        // console.log(`fetchData`, res);
+    if (appData.fetch) {
+      appData.fetch().then(res => {
+        // console.log(`fetch`, res);
         appData = { ...appData, ...res };
         $(".sidebar-title").innerText = appData.title;
         render();
