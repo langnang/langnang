@@ -1120,10 +1120,10 @@ textarea.json-area:focus {
 .tag-item {
   background-color: #ecf5ff;
   display: inline-block;
-  height: 24px;
+  height: 25px;
   padding: 0 6px;
-  line-height: 22px;
-  font-size: 12px;
+  line-height: 23px;
+  font-size: 14px;
   color: #409eff;
   border: 1px solid #d9ecff;
   border-radius: 4px;
@@ -1176,6 +1176,46 @@ textarea.json-area:focus {
       ...item,
       children: arrayToTreeRecursive(arr, item.id)
     }));
+  function rebuild_metas(obj, type, array) {
+    return Object.values(array || obj.metas || [])
+      .filter(v => type ? v.type == type : v)
+      .map(v => {
+
+        v.relationships = obj.relationships.filter(v_r => v_r.meta == v.id)
+          ;
+
+        v.contents =
+          array_unique([...v.contents || [], ...v.relationships.filter(v_r => v_r.content).map(v_r => v_r.content)])
+            .reduce((t, v_c) => typeof v_c == 'string' ? (obj.contents[v_c] ? [...t, obj.links[v_c]] : t) : [...t, v_c], [])
+          ;
+
+        v.links =
+          array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.link).map(v_r => v_r.link)])
+            .reduce((t, v_l) => typeof v_l == 'string' ? (obj.links[v_l] ? [...t, obj.links[v_l]] : t) : [...t, v_l], [])
+            .map(v_l => ({ ...v_l, url: v_l.url || (v_l.github ? 'https://github.com/' + v_l.github : ''), }))
+          ;
+
+        v.files =
+          array_unique([...v.files || [], ...v.relationships.filter(v_r => v_r.file).map(v_r => v_r.file)])
+            .reduce((t, v_f) => typeof v_f == 'string' ? (obj.contents[v_f] ? [...t, obj.links[v_f]] : t) : [...t, v_f], [])
+          ;
+        if (type == 'category') {
+          v.children = [];
+          v.tags = rebuild_metas(obj, null,
+            array_unique([...v.tags || [], ...Object.values(obj.metas).filter(v_m => v_m.type == 'tag' && v_m.parent == 'v.id')])
+              .reduce((t, v_m) => typeof v_m == 'string' ? (obj.contents[v_m] ? [...t, obj.links[v_m]] : t) : [...t, v_m], [])
+            ,
+          )
+        }
+
+        return v;
+      })
+      .sort((a, b) => a.order - b.order);
+  }
+  function rebuild_contents(obj, array, type,) { }
+  function rebuild_links(obj, array, type,) { }
+  function rebuild_files(obj, array, type,) { }
+
   global['$' + AppSlug] = {
     fetchData: () => fetch('./repository.json')
       .then(response => response.json())
@@ -1188,36 +1228,7 @@ textarea.json-area:focus {
         let $data = data[AppSlug];
         // console.log(`assemblyData`, data);
         // console.log(`assemblyData`, data.onenav.metas);
-        $return['categories'] = Object.values(data[AppSlug].metas || [])
-          .filter(v => v.type == 'category')
-          .map(v => {
-            v.tags =
-              array_unique([...v.tags || [], ...Object.values($data.metas).filter(v_m => v_m.type == 'tag' && v_m.parent == 'v.id')])
-                .reduce((t, v_m) => typeof v_m == 'string' ? ($data.contents[v_m] ? [...t, $data.links[v_m]] : t) : [...t, v_m], [])
-              ;
-
-            v.relationships = $data.relationships.filter(v_r => v_r.meta == v.id)
-              ;
-
-            v.contents =
-              array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.content).map(v_r => v_r.content)])
-                .reduce((t, v_c) => typeof v_c == 'string' ? ($data.contents[v_c] ? [...t, $data.links[v_c]] : t) : [...t, v_c], [])
-              ;
-
-            v.links =
-              array_unique([...v.links || [], ...v.relationships.filter(v_r => v_r.link).map(v_r => v_r.link)])
-                .reduce((t, v_l) => typeof v_l == 'string' ? ($data.links[v_l] ? [...t, $data.links[v_l]] : t) : [...t, v_l], [])
-                .map(v_l => ({ ...v_l, url: v_l.url || (v_l.github ? 'https://github.com/' + v_l.github : ''), }))
-              ;
-
-            v.files =
-              array_unique([...v.files || [], ...v.relationships.filter(v_r => v_r.file).map(v_r => v_r.file)])
-                .reduce((t, v_f) => typeof v_f == 'string' ? ($data.contents[v_f] ? [...t, $data.links[v_f]] : t) : [...t, v_f], [])
-              ;
-
-            return v;
-          })
-          .sort((a, b) => a.order - b.order);
+        $return['categories'] = rebuild_metas($data, 'category');
         return $return;
       })
       .catch(error => {
@@ -1268,13 +1279,13 @@ textarea.json-area:focus {
       //       {
       //         "name": "AMiner",
       //         "url": "https://www.aminer.cn/",
-      //         "desc": "学术搜索与分析",
+      //         "description": "学术搜索与分析",
       //         "keywords": "示例"
       //       },
       //       {
       //         "name": "X-MOL",
       //         "url": "https://www.x-mol.com/",
-      //         "desc": "学术资讯平台",
+      //         "description": "学术资讯平台",
       //         "keywords": "示例"
       //       }
       //     ]
@@ -1286,13 +1297,13 @@ textarea.json-area:focus {
       //       {
       //         "name": "Nature",
       //         "url": "https://www.nature.com/",
-      //         "desc": "",
+      //         "description": "",
       //         "keywords": ""
       //       },
       //       {
       //         "name": "Science",
       //         "url": "https://www.science.org/",
-      //         "desc": "",
+      //         "description": "",
       //         "keywords": ""
       //       }
       //     ]
@@ -1304,19 +1315,19 @@ textarea.json-area:focus {
       //       {
       //         "name": "张希",
       //         "url": "http://zhangxigroup.com/",
-      //         "desc": "清华大学",
+      //         "description": "清华大学",
       //         "keywords": "超分子"
       //       },
       //       {
       //         "name": "裴坚",
       //         "url": "http://www.chem.pku.edu.cn/pei/",
-      //         "desc": "北京大学",
+      //         "description": "北京大学",
       //         "keywords": "有机电子"
       //       },
       //       {
       //         "name": "鲍哲楠",
       //         "url": "http://baogroup.stanford.edu/",
-      //         "desc": "斯坦福大学",
+      //         "description": "斯坦福大学",
       //         "keywords": "柔性电子"
       //       }
       //     ]
@@ -1620,12 +1631,14 @@ textarea.json-area:focus {
         tagList.className = 'tag-group';
         (cat.tags || []).forEach(tag => {
           const span = document.createElement('span');
-          span.innerHTML = tag;
+          span.innerHTML = tag.title;
           span.className = 'tag-item';
           span.addEventListener('click', e => {
             const target = e.currentTarget;
+            const active = e.currentTarget.classList.contains('active');
             [...target.parentNode.children].filter(child => child !== target).forEach(e_v => e_v.classList.remove('active'));
-            target.classList.toggle('active', !e.currentTarget.classList.contains('active'));
+            target.classList.toggle('active', !active);
+            section.replaceChild(buildCategoryBody(active ? cat : tag, catIdx), $(`div[data-cat-idx='${catIdx}']`));
           });
           tagList.appendChild(span);
         })
@@ -1634,28 +1647,8 @@ textarea.json-area:focus {
 
       section.appendChild(header);
 
-      // 分类主体
-      const body = document.createElement('div');
-      body.className = 'cat-body';
-      body.dataset.catIdx = catIdx;
-      if (isEditing) {
-        body.addEventListener('dragover', e => handleLinkDragOver(e, catIdx));
-        body.addEventListener('drop', e => handleLinkDrop(e, catIdx));
-      }
 
-      const grid = document.createElement('div');
-      grid.className = 'links-grid';
-      if (cat.links && cat.links.length > 0) {
-        cat.links.forEach((link, linkIdx) => {
-          grid.appendChild(isEditing
-            ? buildEditCard(link, catIdx, linkIdx)
-            : buildLinkCard(link));
-        });
-      } else if (!isEditing) {
-        grid.innerHTML = '<div class="empty-state">暂无链接</div>';
-      }
-      body.appendChild(grid);
-      section.appendChild(body);
+      section.appendChild(buildCategoryBody(cat, catIdx));
 
       // 编辑模式下的「添加链接」栏
       if (isEditing) {
@@ -1670,21 +1663,45 @@ textarea.json-area:focus {
 
     setupScrollSpy();
   }
+  function buildCategoryBody(cat, catIdx) {
+    // 分类主体
+    const body = document.createElement('div');
+    body.className = 'cat-body';
+    body.dataset.catIdx = catIdx;
+    if (isEditing) {
+      body.addEventListener('dragover', e => handleLinkDragOver(e, catIdx));
+      body.addEventListener('drop', e => handleLinkDrop(e, catIdx));
+    }
 
+    const grid = document.createElement('div');
+    grid.className = 'links-grid';
+    const links = [...cat.links, ...(cat.tags || []).reduce((t, v) => [...t, ...v.links], [])]
+    if (links && links.length > 0) {
+      links.forEach((link, linkIdx) => {
+        grid.appendChild(isEditing
+          ? buildEditCard(link, catIdx, linkIdx)
+          : buildLinkCard(link));
+      });
+    } else if (!isEditing) {
+      grid.innerHTML = '<div class="empty-state">暂无链接</div>';
+    }
+    body.appendChild(grid);
+    return body;
+  }
   /** 浏览模式下的链接卡片 */
   function buildLinkCard(link) {
     const a = document.createElement('a');
     a.className = 'link-card';
     a.href = link.url;
     a.target = '_blank';
-    a.title = link.url + (link.desc ? ' — ' + link.desc : '') + (link.keywords ? ' [' + link.keywords + ']' : '');
+    a.title = link.url + (link.description ? ' — ' + link.description : '') + (link.keywords ? ' [' + link.keywords + ']' : '');
     const deadDot = link._dead
       ? '<span class="link-status show" style="display:block"></span>'
       : '<span class="link-status"></span>';
     a.innerHTML =
       `<div style="overflow:hidden;width:100%">` +
       `<div class="link-name">${escapeHtml(link.name)}</div>` +
-      (link.desc ? `<div class="link-desc">${escapeHtml(link.desc)}</div>` : '') +
+      (link.description ? `<div class="link-desc">${escapeHtml(link.description)}</div>` : '') +
       (link.keywords ? `<div class="link-keywords">${escapeHtml(link.keywords)}</div>` : '') +
       `</div>` + deadDot;
     return a;
@@ -1709,7 +1726,7 @@ textarea.json-area:focus {
       `<div class="edit-row">` +
       field('姓名/名称', 'name', link.name) +
       field('URL', 'url', link.url) +
-      field('备注', 'desc', link.desc || '') +
+      field('备注', 'desc', link.description || '') +
       field('关键词', 'keywords', link.keywords || '') +
       `<div class="edit-actions"><button class="btn-xs btn-danger" onclick="deleteLink(${catIdx}, ${linkIdx})">删除</button></div>` +
       `</div>`;
@@ -1870,7 +1887,7 @@ textarea.json-area:focus {
   }
 
   function addLink(catIdx) {
-    appData.categories[catIdx].links.push({ name: '新链接', url: 'https://', desc: '', keywords: '' });
+    appData.categories[catIdx].links.push({ name: '新链接', url: 'https://', description: '', keywords: '' });
     render();
   }
 
@@ -2022,7 +2039,7 @@ textarea.json-area:focus {
         lines.push(`【${cat.title}】`);
         if (cat.links && cat.links.length > 0) {
           cat.links.forEach(link => {
-            lines.push(link.name || '', link.url || '', link.desc || '', link.keywords || '', '');
+            lines.push(link.name || '', link.url || '', link.description || '', link.keywords || '', '');
           });
         } else {
           lines.push('(暂无链接)', '');
@@ -2170,6 +2187,8 @@ textarea.json-area:focus {
     $("#btnImport").onclick = () => showImport();
     $("#btnCheckLinks").onclick = () => checkAllLinks();
 
+    $("#sidebarToggle").onclick = () => toggleSidebar();
+
     $("#searchInput").onkeydown = (event) => { if (event.key === 'Enter') doSearch(); }
     $("#btnSearch").onclick = () => doSearch();
 
@@ -2237,6 +2256,8 @@ textarea.json-area:focus {
           <span class="engine-tag" data-url="https://www.baidu.com/s?wd=">百度</span>
           <span class="engine-tag" data-url="https://cn.bing.com/search?q=">必应</span>
           <span class="engine-tag" data-url="https://www.google.com.hk/search?q=">谷歌</span>
+          <span class="engine-tag" data-url="https://github.com/search?q=">GitHub</span>
+          
           <span class="engine-tag" data-url="https://s.taobao.com/search?q=" style="display:none">淘宝</span>
           <span class="engine-tag" data-url="https://search.jd.com/Search?keyword=" style="display:none">京东</span>
         </div>

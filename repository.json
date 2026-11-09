@@ -7,19 +7,9 @@
     "styles": {},
     "scripts": {},
     "metas": {
-      "singlefile": {
-        "id": "singlefile",
-        "title": "SingleFile",
-        "type": "category",
-        "contents": [],
-        "links": [
-          "hemanruc.OmniPage"
-        ],
-        "files": []
-      },
       "audio": {
         "id": "audio",
-        "title": "Audio",
+        "title": "Audio·音频",
         "type": "category",
         "contents": [],
         "links": [],
@@ -27,7 +17,7 @@
       },
       "awesome": {
         "id": "awesome",
-        "title": "Awesome",
+        "title": "Awesome·推荐",
         "type": "category",
         "contents": [],
         "links": [],
@@ -35,7 +25,7 @@
       },
       "cheatsheet": {
         "id": "cheatsheet",
-        "title": "CheatSheet",
+        "title": "CheatSheet·速查",
         "type": "category",
         "contents": [],
         "links": [],
@@ -43,7 +33,7 @@
       },
       "dependency": {
         "id": "dependency",
-        "title": "Dependency",
+        "title": "Dependency·依赖",
         "type": "category",
         "contents": [],
         "links": [],
@@ -51,7 +41,7 @@
       },
       "material": {
         "id": "material",
-        "title": "material",
+        "title": "Material·素材",
         "type": "category",
         "contents": [],
         "links": [],
@@ -59,7 +49,7 @@
       },
       "question": {
         "id": "question",
-        "title": "question",
+        "title": "Question·试题",
         "type": "category",
         "contents": [],
         "links": [],
@@ -67,7 +57,23 @@
       },
       "program": {
         "id": "program",
-        "title": "program",
+        "title": "Program·程序",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "cloud": {
+        "id": "cloud",
+        "title": "Cloud·云端",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "navigation": {
+        "id": "navigation",
+        "title": "Navigation·导航",
         "type": "category",
         "contents": [],
         "links": [],
@@ -75,7 +81,15 @@
       },
       "video": {
         "id": "video",
-        "title": "video",
+        "title": "Video·视频",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "util": {
+        "id": "util",
+        "title": "Util·工具",
         "type": "category",
         "contents": [],
         "links": [],
@@ -83,7 +97,7 @@
       },
       "template": {
         "id": "template",
-        "title": "template",
+        "title": "Template·模板",
         "type": "category",
         "contents": [],
         "links": [],
@@ -91,7 +105,15 @@
       },
       "extension": {
         "id": "extension",
-        "title": "extension",
+        "title": "Extension·拓展",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "recipe": {
+        "id": "recipe",
+        "title": "Recipe·食谱",
         "type": "category",
         "contents": [],
         "links": [],
@@ -108,12 +130,6 @@
     },
     "contents": {},
     "links": {
-      "hemanruc.OmniPage": {
-        "name": "hemanruc/OmniPage",
-        "github": "hemanruc/OmniPage",
-        "description": "学术搜索与分析",
-        "keywords": "导航 试题"
-      },
       "X-MOL": {
         "name": "X-MOL",
         "url": "https://www.x-mol.com/",
