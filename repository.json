@@ -39,6 +39,22 @@
         "links": [],
         "files": []
       },
+      "entertainment": {
+        "id": "entertainment",
+        "title": "Entertainment·娱乐",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "life": {
+        "id": "life",
+        "title": "Life·生活",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
       "material": {
         "id": "material",
         "title": "Material·素材",
