@@ -1,0 +1,226 @@
+{
+  "name": "langnang/langnang",
+  "title": "langnang",
+  "onenav": {
+    "el": "#app",
+    "editable": false,
+    "styles": {},
+    "scripts": {},
+    "metas": {
+      "audio": {
+        "id": "audio",
+        "title": "Audio·音频",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "awesome": {
+        "id": "awesome",
+        "title": "Awesome·推荐",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "cheatsheet": {
+        "id": "cheatsheet",
+        "title": "CheatSheet·速查",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "dependency": {
+        "id": "dependency",
+        "title": "Dependency·依赖",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "entertainment": {
+        "id": "entertainment",
+        "title": "Entertainment·娱乐",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "life": {
+        "id": "life",
+        "title": "Life·生活",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "material": {
+        "id": "material",
+        "title": "Material·素材",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "question": {
+        "id": "question",
+        "title": "Question·试题",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "program": {
+        "id": "program",
+        "title": "Program·程序",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "cloud": {
+        "id": "cloud",
+        "title": "Cloud·云端",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "navigation": {
+        "id": "navigation",
+        "title": "Navigation·导航",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "video": {
+        "id": "video",
+        "title": "Video·视频",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "util": {
+        "id": "util",
+        "title": "Util·工具",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "template": {
+        "id": "template",
+        "title": "Template·模板",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "extension": {
+        "id": "extension",
+        "title": "Extension·拓展",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "recipe": {
+        "id": "recipe",
+        "title": "Recipe·食谱",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      },
+      "magent": {
+        "id": "magent",
+        "title": "Magent·磁力",
+        "type": "category",
+        "contents": [],
+        "links": [],
+        "files": []
+      }
+    },
+    "contents": {},
+    "links": {
+      "X-MOL": {
+        "name": "X-MOL",
+        "url": "https://www.x-mol.com/",
+        "description": "学术资讯平台",
+        "keywords": "示例"
+      },
+      "Nature": {
+        "name": "Nature",
+        "url": "https://www.nature.com/",
+        "description": "",
+        "keywords": ""
+      },
+      "Science": {
+        "name": "Science",
+        "url": "https://www.science.org/",
+        "description": "",
+        "keywords": ""
+      },
+      "张希": {
+        "name": "张希",
+        "url": "http://zhangxigroup.com/",
+        "description": "清华大学",
+        "keywords": "超分子"
+      },
+      "裴坚": {
+        "name": "裴坚",
+        "url": "http://www.chem.pku.edu.cn/pei/",
+        "description": "北京大学",
+        "keywords": "有机电子"
+      },
+      "鲍哲楠": {
+        "name": "鲍哲楠",
+        "url": "http://baogroup.stanford.edu/",
+        "description": "斯坦福大学",
+        "keywords": "柔性电子"
+      }
+    },
+    "files": {},
+    "relationships": [
+      {
+        "meta": "useful",
+        "link": "AMiner"
+      },
+      {
+        "meta": "useful",
+        "link": "X-MOL"
+      },
+      {
+        "meta": "useful",
+        "link": "Nature"
+      },
+      {
+        "meta": "useful",
+        "link": "X-MOL"
+      },
+      {
+        "meta": "journals",
+        "link": "Nature"
+      },
+      {
+        "meta": "journals",
+        "link": "Science"
+      },
+      {
+        "meta": "scholars",
+        "link": "张希"
+      },
+      {
+        "meta": "scholars",
+        "link": "裴坚"
+      },
+      {
+        "meta": "scholars",
+        "link": "鲍哲楠"
+      }
+    ]
+  }
+}
